@@ -19,4 +19,4 @@ jobs:
         run: |
           set -eo pipefail
           pod lib lint --allow-warnings
-      pod     trunk push roam-ios.podspec --allow-warnings
+          pod trunk push roam-ios.podspec --allow-warnings
