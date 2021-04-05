@@ -2,15 +2,21 @@ name: CocoaPod Publish
 on:
   release:
     types: [published]
-    
+
 jobs:
   build:
   runs-on: macOS-latest
-    
+
     steps:
     - uses: actions/checkout@v1
-    - name: Publish to CocoaPod register
+    
+    - name: Install Cocoapods
+      run: gem install cocoapods
+
+    - name: Publish to Cocoapods
       env:
         COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
       run: |
-        pod trunk push roam-ios.podspec
+        set -eo pipefail
+        pod lib lint --allow-warnings
+        pod trunk push roam-ios.podspec --allow-warnings
