@@ -10,6 +10,8 @@
 # Official Roam iOS SDK
 This is the official [Roam](https://roam.ai) iOS SDK developed and maintained by Roam B.V
 
+Note: Before you get started [signup to our dashboard](https://roam.ai) to get your API Keys. 
+
 ## Quickstart
 The Roam iOS SDK makes it quick and easy to build a location tracker for your iOS app. We provide powerful and customizable tracking modes and features that can be used to collect your users’ location updates.
 
