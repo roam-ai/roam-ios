@@ -5,7 +5,7 @@
   <br />
 </p>
 
-[![Pod version](https://badge.fury.io/co/roam-ios.svg)](https://badge.fury.io/co/roam-ios)
+[![Pod version](https://badge.fury.io/co/roam-ios.svg)](https://badge.fury.io/co/roam-ios) [![CocoaPod Publish](https://github.com/roam-ai/roam-ios/actions/workflows/publish.yml/badge.svg?branch=0.0.1)](https://github.com/roam-ai/roam-ios/actions/workflows/publish.yml)
 
 # Official Roam iOS SDK
 This is the official [Roam](https://roam.ai) iOS SDK developed and maintained by Roam B.V
