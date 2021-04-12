@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="TripTableViewCell" customModule="Motion__Test" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Rz8-UV-jbs">
+                        <rect key="frame" x="20" y="10" width="280" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfy-mV-JQR">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af2-Lj-cJw">
+                                <rect key="frame" x="0.0" y="21" width="280" height="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="M0d-87-Jci"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BnB-TX-Lkg">
+                        <rect key="frame" x="10" y="55" width="300" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8D-uN-EY0" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startStopAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MY3-YN-puD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-SL-32C" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="155" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startStopAction1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cp5-fZ-cQf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="jKn-YR-wDP"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pij-PW-b3z">
+                        <rect key="frame" x="10" y="95" width="300" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY4-1j-wGu" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pauseResumeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0p7-Po-fgL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn2-9U-fJi" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="155" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Resume">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pauseResumeAction1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JoZ-ha-bPa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Rfb-GE-rUq"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-DF-Fdy">
+                        <rect key="frame" x="10" y="135" width="300" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-Hs-rHC" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="grK-QO-DpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-HN-2YN" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                                <rect key="frame" x="155" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sync ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="synsAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lGc-o8-68v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="cQS-If-UsQ"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c8Q-DF-Fdy" firstAttribute="top" secondItem="pij-PW-b3z" secondAttribute="bottom" constant="10" id="Ebt-tE-7Wa"/>
+                    <constraint firstItem="c8Q-DF-Fdy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GEm-C2-UCK"/>
+                    <constraint firstAttribute="trailing" secondItem="Rz8-UV-jbs" secondAttribute="trailing" constant="20" id="InU-Q8-3mX"/>
+                    <constraint firstItem="pij-PW-b3z" firstAttribute="top" secondItem="BnB-TX-Lkg" secondAttribute="bottom" constant="10" id="Lux-Aj-WLc"/>
+                    <constraint firstItem="Rz8-UV-jbs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Nrd-Qn-by9"/>
+                    <constraint firstAttribute="bottom" secondItem="c8Q-DF-Fdy" secondAttribute="bottom" constant="10" id="XuS-d7-QeZ"/>
+                    <constraint firstAttribute="trailing" secondItem="c8Q-DF-Fdy" secondAttribute="trailing" constant="10" id="Z6U-c7-5VI"/>
+                    <constraint firstAttribute="trailing" secondItem="BnB-TX-Lkg" secondAttribute="trailing" constant="10" id="cPX-Aq-W1A"/>
+                    <constraint firstAttribute="trailing" secondItem="pij-PW-b3z" secondAttribute="trailing" constant="10" id="e2C-FC-bsp"/>
+                    <constraint firstItem="Rz8-UV-jbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="euJ-VY-u5F"/>
+                    <constraint firstItem="pij-PW-b3z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gRx-1b-xFc"/>
+                    <constraint firstItem="BnB-TX-Lkg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lxe-yO-upO"/>
+                    <constraint firstItem="BnB-TX-Lkg" firstAttribute="top" secondItem="Rz8-UV-jbs" secondAttribute="bottom" constant="10" id="oDX-hB-GsO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="delete" destination="nBI-Hs-rHC" id="y3n-5u-sgB"/>
+                <outlet property="pauseResume" destination="xY4-1j-wGu" id="5Yd-JB-Smr"/>
+                <outlet property="pauseResume1" destination="Nn2-9U-fJi" id="fnP-pj-Ha4"/>
+                <outlet property="startStop" destination="W8D-uN-EY0" id="Cd0-KM-nAR"/>
+                <outlet property="startStop1" destination="jIx-SL-32C" id="nyH-oU-oGU"/>
+                <outlet property="sync" destination="D4u-HN-2YN" id="mp7-TK-8M4"/>
+                <outlet property="tripCreated" destination="af2-Lj-cJw" id="GJy-M8-rzE"/>
+                <outlet property="tripId" destination="Pfy-mV-JQR" id="wWK-LO-Ct0"/>
+            </connections>
+            <point key="canvasLocation" x="-214" y="29"/>
+        </tableViewCell>
+    </objects>
+</document>
