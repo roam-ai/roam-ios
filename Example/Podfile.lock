@@ -1,18 +1,18 @@
 PODS:
-  - AWSAuthCore (2.23.2):
-    - AWSCore (= 2.23.2)
-  - AWSCognitoIdentityProvider (2.23.2):
-    - AWSCognitoIdentityProviderASF (= 2.23.2)
-    - AWSCore (= 2.23.2)
-  - AWSCognitoIdentityProviderASF (2.23.2)
-  - AWSCore (2.23.2)
-  - AWSIoT (2.23.2):
-    - AWSCore (= 2.23.2)
-  - AWSMobileClient (2.23.2):
-    - AWSAuthCore (= 2.23.2)
-    - AWSCognitoIdentityProvider (= 2.23.2)
-    - AWSCognitoIdentityProviderASF (= 2.23.2)
-    - AWSCore (= 2.23.2)
+  - AWSAuthCore (2.24.1):
+    - AWSCore (= 2.24.1)
+  - AWSCognitoIdentityProvider (2.24.1):
+    - AWSCognitoIdentityProviderASF (= 2.24.1)
+    - AWSCore (= 2.24.1)
+  - AWSCognitoIdentityProviderASF (2.24.1)
+  - AWSCore (2.24.1)
+  - AWSIoT (2.24.1):
+    - AWSCore (= 2.24.1)
+  - AWSMobileClient (2.24.1):
+    - AWSAuthCore (= 2.24.1)
+    - AWSCognitoIdentityProvider (= 2.24.1)
+    - AWSCognitoIdentityProviderASF (= 2.24.1)
+    - AWSCore (= 2.24.1)
 
 DEPENDENCIES:
   - AWSIoT
@@ -28,12 +28,12 @@ SPEC REPOS:
     - AWSMobileClient
 
 SPEC CHECKSUMS:
-  AWSAuthCore: 59770d4c2c1b3dbb183b95d1867e3584b4816e54
-  AWSCognitoIdentityProvider: 5bd6988ea7c8f9ee43151e19bdd8e803558ad45f
-  AWSCognitoIdentityProviderASF: 30ccb19228b6e743805bf15a72278ca9f399bc21
-  AWSCore: 70f79e95ee30f8eefa7122391d76ace516778f22
-  AWSIoT: 90114d327cb086c0322a730c6eca7cf2b3f64a16
-  AWSMobileClient: 54fd215e76e34a8edb3cb1199788a69543cebc95
+  AWSAuthCore: a4400758dd1467e655bd859ee87aab1888ec9a4d
+  AWSCognitoIdentityProvider: ee2baffabe894407f5da7cd43aee7a0608680c24
+  AWSCognitoIdentityProviderASF: ffc62276197db5c41d8f7ce952443fb29e2967cc
+  AWSCore: f6cfada8b48d569c11b94e49e8fb184b9c1a2e7e
+  AWSIoT: eb8bd932d731ffe5a8f12a0387d1413ffd4e9c0e
+  AWSMobileClient: b39ba2044701c4d013814bab148550d10b47f8b3
 
 PODFILE CHECKSUM: dfbbece36757a35a1996b4002b0d37bacc59deca
 
