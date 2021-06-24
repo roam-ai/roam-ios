@@ -1,0 +1,284 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target x86_64-apple-ios9.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name AWSMobileClientXCF
+import AWSCognitoIdentityProvider
+@_exported import AWSMobileClientXCF
+import Foundation
+import Swift
+@_inheritsConvenienceInitializers @objc public class SignInUIOptions : NSObject {
+  @objc final public let canCancel: Bool
+  @objc final public let logoImage: UIImage?
+  @objc final public let backgroundColor: UIColor?
+  @objc final public let secondaryBackgroundColor: UIColor?
+  @objc final public let primaryColor: UIColor?
+  @objc final public let disableSignUpButton: Bool
+  @objc public init(canCancel: Bool = false, logoImage: UIImage? = nil, backgroundColor: UIColor? = nil, secondaryBackgroundColor: UIColor? = nil, primaryColor: UIColor? = .systemBlue, disableSignUpButton: Bool = false)
+  @objc override convenience dynamic public init()
+  @objc deinit
+}
+public struct SignOutOptions {
+  public init(signOutGlobally: Bool = false, invalidateTokens: Bool = true)
+}
+public struct FederatedSignInOptions {
+  public init(cognitoIdentityId: String? = nil, customRoleARN: String? = nil)
+}
+public struct HostedUIOptions {
+  public init(disableFederation: Bool = false, scopes: [String]? = nil, identityProvider: String? = nil, idpIdentifier: String? = nil, federationProviderName: String? = nil, signInURIQueryParameters: [String : String]? = nil, tokenURIQueryParameters: [String : String]? = nil, signOutURIQueryParameters: [String : String]? = nil, signInPrivateSession: Bool = false)
+}
+public enum IdentityProvider : String {
+  case facebook
+  case google
+  case twitter
+  case amazon
+  case developer
+  case apple
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Device {
+  public let attributes: [String : String]?
+  public let createDate: Date?
+  public let deviceKey: String?
+  public let lastAuthenticatedDate: Date?
+  public let lastModifiedDate: Date?
+}
+public struct ListDevicesResult {
+  public let devices: [Device]?
+  public let paginationToken: String?
+}
+public struct UpdateDeviceStatusResult {
+}
+@_hasMissingDesignatedInitializers public class DeviceOperations {
+  public func list(limit: Int = 60, paginationToken: String? = nil, completionHandler: @escaping ((ListDevicesResult?, Error?) -> Void))
+  public func updateStatus(deviceId: String, remembered: Bool, completionHandler: @escaping ((UpdateDeviceStatusResult?, Error?) -> Void))
+  public func updateStatus(remembered: Bool, completionHandler: @escaping ((UpdateDeviceStatusResult?, Error?) -> Void))
+  public func get(deviceId: String, completionHandler: @escaping ((Device?, Error?) -> Void))
+  public func get(_ completionHandler: @escaping ((Device?, Error?) -> Void))
+  public func forget(deviceId: String, completionHandler: @escaping ((Error?) -> Void))
+  public func forget(_ completionHandler: @escaping ((Error?) -> Void))
+  @objc deinit
+}
+public enum AWSMobileClientError : Error {
+  case aliasExists(message: String)
+  case codeDeliveryFailure(message: String)
+  case codeMismatch(message: String)
+  case expiredCode(message: String)
+  case groupExists(message: String)
+  case internalError(message: String)
+  case invalidLambdaResponse(message: String)
+  case invalidOAuthFlow(message: String)
+  case invalidParameter(message: String)
+  case invalidPassword(message: String)
+  case invalidUserPoolConfiguration(message: String)
+  case limitExceeded(message: String)
+  case mfaMethodNotFound(message: String)
+  case notAuthorized(message: String)
+  case passwordResetRequired(message: String)
+  case resourceNotFound(message: String)
+  case scopeDoesNotExist(message: String)
+  case softwareTokenMFANotFound(message: String)
+  case tooManyFailedAttempts(message: String)
+  case tooManyRequests(message: String)
+  case unexpectedLambda(message: String)
+  case userLambdaValidation(message: String)
+  case userNotConfirmed(message: String)
+  case userNotFound(message: String)
+  case usernameExists(message: String)
+  case unknown(message: String)
+  case notSignedIn(message: String)
+  case identityIdUnavailable(message: String)
+  case guestAccessNotAllowed(message: String)
+  case federationProviderExists(message: String)
+  case cognitoIdentityPoolNotConfigured(message: String)
+  case unableToSignIn(message: String)
+  case invalidState(message: String)
+  case userPoolNotConfigured(message: String)
+  case userCancelledSignIn(message: String)
+  case badRequest(message: String)
+  case expiredRefreshToken(message: String)
+  case errorLoadingPage(message: String)
+  case securityFailed(message: String)
+  case idTokenNotIssued(message: String)
+  case idTokenAndAcceessTokenNotIssued(message: String)
+  case invalidConfiguration(message: String)
+  case deviceNotRemembered(message: String)
+}
+extension AWSMobileClientError {
+  public static func makeMobileClientError(from error: Error) -> Error
+  public static func makeMobileClientError(from cognitoAuthError: AWSCognitoAuthClientErrorType) -> AWSMobileClientError
+}
+public enum SignInState : String {
+  case unknown
+  case smsMFA
+  case passwordVerifier
+  case customChallenge
+  case deviceSRPAuth
+  case devicePasswordVerifier
+  case adminNoSRPAuth
+  case newPasswordRequired
+  case signedIn
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum ForgotPasswordState {
+  case done, confirmationCodeSent
+  public static func == (a: AWSMobileClientXCF.ForgotPasswordState, b: AWSMobileClientXCF.ForgotPasswordState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct ForgotPasswordResult {
+  public let forgotPasswordState: ForgotPasswordState
+  public let codeDeliveryDetails: UserCodeDeliveryDetails?
+}
+public enum SignUpConfirmationState {
+  case confirmed, unconfirmed, unknown
+  public static func == (a: AWSMobileClientXCF.SignUpConfirmationState, b: AWSMobileClientXCF.SignUpConfirmationState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct SignInResult {
+  public let signInState: SignInState
+  public let parameters: [String : String]
+  public let codeDetails: UserCodeDeliveryDetails?
+}
+public struct SignUpResult {
+  public let codeDeliveryDetails: UserCodeDeliveryDetails?
+  public let signUpConfirmationState: SignUpConfirmationState
+}
+public enum UserCodeDeliveryMedium {
+  case sms, email, unknown
+  public static func == (a: AWSMobileClientXCF.UserCodeDeliveryMedium, b: AWSMobileClientXCF.UserCodeDeliveryMedium) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public struct UserCodeDeliveryDetails {
+  public let deliveryMedium: UserCodeDeliveryMedium
+  public let destination: String?
+  public let attributeName: String?
+  public static func getUserCodeDeliveryDetails(_ deliveryDetails: AWSCognitoIdentityProviderCodeDeliveryDetailsType) -> UserCodeDeliveryDetails
+}
+public enum UserState : String {
+  case signedIn, signedOut, signedOutFederatedTokensInvalid, signedOutUserPoolsTokenInvalid, guest, unknown
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public typealias UserStateChangeCallback = (UserState, [String : String]) -> Void
+@objc @_inheritsConvenienceInitializers final public class AWSMobileClient : _AWSMobileClient {
+  final public var currentUserState: UserState
+  final public var deviceOperations: DeviceOperations
+  final public var username: String? {
+    get
+  }
+  final public var userSub: String? {
+    get
+  }
+  @objc override final public var identityId: String? {
+    @objc get
+  }
+  @objc final public var isSignedIn: Bool {
+    @objc get
+  }
+  @available(*, deprecated, renamed: "default")
+  @objc override final public class func sharedInstance() -> AWSMobileClient
+  @objc final public class func `default`() -> AWSMobileClient
+  final public func handleAuthResponse(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any)
+  final public func initialize(_ completionHandler: @escaping (UserState?, Error?) -> Void)
+  final public func addUserStateListener(_ object: AnyObject, _ callback: @escaping UserStateChangeCallback)
+  final public func removeUserStateListener(_ object: AnyObject)
+  @available(iOS 13, *)
+  final public func showSignIn(presentationAnchor: ASPresentationAnchor, hostedUIOptions: HostedUIOptions, _ completionHandler: @escaping (UserState?, Error?) -> Void)
+  final public func showSignIn(navigationController: UINavigationController, signInUIOptions: SignInUIOptions = SignInUIOptions(), hostedUIOptions: HostedUIOptions? = nil, _ completionHandler: @escaping (UserState?, Error?) -> Void)
+  @objc deinit
+  @objc override dynamic public init(configuration config: [Swift.String : Any])
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, identityPoolId: Swift.String)
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, identityPoolId: Swift.String, identityPoolConfiguration configuration: AWSCore.AWSServiceConfiguration)
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, identityPoolId: Swift.String, identityProviderManager: AWSCore.AWSIdentityProviderManager?)
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, identityProvider: AWSCore.AWSCognitoCredentialsProviderHelperProtocol)
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, unauthRoleArn: Swift.String?, authRoleArn: Swift.String?, identityProvider: AWSCore.AWSCognitoCredentialsProviderHelperProtocol)
+  @objc override dynamic public init(regionType: AWSCore.AWSRegionType, identityPoolId: Swift.String, unauthRoleArn: Swift.String?, authRoleArn: Swift.String?, identityProviderManager: AWSCore.AWSIdentityProviderManager?)
+  @objc override dynamic public init()
+}
+extension AWSMobileClient {
+  @objc override final public func credentials() -> AWSTask<AWSCredentials>
+  @objc override final public func invalidateCachedTemporaryCredentials()
+  @objc override final public func getIdentityId() -> AWSTask<NSString>
+  @objc override final public func clearCredentials()
+  @objc override final public func clearKeychain()
+}
+extension AWSMobileClient {
+  public static func updateCognitoService(userPoolConfiguration: AWSServiceConfiguration?, identityPoolConfiguration: AWSServiceConfiguration?)
+}
+public struct SessionToken {
+  public let tokenString: String?
+  public var claims: [String : AnyObject]? {
+    get
+  }
+}
+public struct Tokens {
+  public let idToken: SessionToken?
+  public let accessToken: SessionToken?
+  public let refreshToken: SessionToken?
+  public let expiration: Date?
+}
+extension AWSMobileClient : AWSIdentityProviderManager {
+  @objc final public func logins() -> AWSTask<NSDictionary>
+}
+extension AWSMobileClient {
+  final public func signIn(username: String, password: String, validationData: [String : String]? = nil, clientMetaData: [String : String] = [:], completionHandler: @escaping ((SignInResult?, Error?) -> Void))
+  final public func federatedSignIn(providerName: String, token: String, federatedSignInOptions: FederatedSignInOptions = FederatedSignInOptions(), completionHandler: @escaping ((UserState?, Error?) -> Void))
+  final public func signUp(username: String, password: String, userAttributes: [String : String] = [:], validationData: [String : String] = [:], clientMetaData: [String : String] = [:], completionHandler: @escaping ((SignUpResult?, Error?) -> Void))
+  final public func confirmSignUp(username: String, confirmationCode: String, clientMetaData: [String : String] = [:], completionHandler: @escaping ((SignUpResult?, Error?) -> Void))
+  final public func resendSignUpCode(username: String, clientMetaData: [String : String] = [:], completionHandler: @escaping ((SignUpResult?, Error?) -> Void))
+  final public func forgotPassword(username: String, clientMetaData: [String : String] = [:], completionHandler: @escaping ((ForgotPasswordResult?, Error?) -> Void))
+  final public func confirmForgotPassword(username: String, newPassword: String, confirmationCode: String, clientMetaData: [String : String] = [:], completionHandler: @escaping ((ForgotPasswordResult?, Error?) -> Void))
+  @available(iOS 13, *)
+  final public func signOut(presentationAnchor: ASPresentationAnchor, options: SignOutOptions = SignOutOptions(), completionHandler: @escaping ((Error?) -> Void))
+  final public func signOut(options: SignOutOptions = SignOutOptions(), completionHandler: @escaping ((Error?) -> Void))
+  final public func signOut()
+  final public func confirmSignIn(challengeResponse: String, userAttributes: [String : String] = [:], clientMetaData: [String : String] = [:], completionHandler: @escaping ((SignInResult?, Error?) -> Void))
+  final public func changePassword(currentPassword: String, proposedPassword: String, completionHandler: @escaping ((Error?) -> Void))
+  final public func getAWSCredentials(_ completionHandler: @escaping (AWSCredentials?, Error?) -> Void)
+  final public func releaseSignInWait()
+  final public func getTokens(_ completionHandler: @escaping (Tokens?, Error?) -> Void)
+}
+extension AWSMobileClient {
+  final public func verifyUserAttribute(attributeName: String, clientMetaData: [String : String] = [:], completionHandler: @escaping ((UserCodeDeliveryDetails?, Error?) -> Void))
+  final public func updateUserAttributes(attributeMap: [String : String], clientMetaData: [String : String] = [:], completionHandler: @escaping (([UserCodeDeliveryDetails]?, Error?) -> Void))
+  final public func getUserAttributes(completionHandler: @escaping (([String : String]?, Error?) -> Void))
+  final public func confirmUpdateUserAttributes(attributeName: String, code: String, completionHandler: @escaping ((Error?) -> Void))
+  final public func confirmVerifyUserAttribute(attributeName: String, code: String, completionHandler: @escaping ((Error?) -> Void))
+}
+extension AWSMobileClient : AWSCognitoAuthDelegate {
+  @objc final public func getViewController() -> UIViewController
+  @objc final public func shouldLaunchSignInVCIfRefreshTokenIsExpired() -> Bool
+}
+extension AWSMobileClientXCF.IdentityProvider : Swift.Equatable {}
+extension AWSMobileClientXCF.IdentityProvider : Swift.Hashable {}
+extension AWSMobileClientXCF.IdentityProvider : Swift.RawRepresentable {}
+extension AWSMobileClientXCF.SignInState : Swift.Equatable {}
+extension AWSMobileClientXCF.SignInState : Swift.Hashable {}
+extension AWSMobileClientXCF.SignInState : Swift.RawRepresentable {}
+extension AWSMobileClientXCF.ForgotPasswordState : Swift.Equatable {}
+extension AWSMobileClientXCF.ForgotPasswordState : Swift.Hashable {}
+extension AWSMobileClientXCF.SignUpConfirmationState : Swift.Equatable {}
+extension AWSMobileClientXCF.SignUpConfirmationState : Swift.Hashable {}
+extension AWSMobileClientXCF.UserCodeDeliveryMedium : Swift.Equatable {}
+extension AWSMobileClientXCF.UserCodeDeliveryMedium : Swift.Hashable {}
+extension AWSMobileClientXCF.UserState : Swift.Equatable {}
+extension AWSMobileClientXCF.UserState : Swift.Hashable {}
+extension AWSMobileClientXCF.UserState : Swift.RawRepresentable {}

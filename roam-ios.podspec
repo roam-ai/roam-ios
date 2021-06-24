@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'roam-ios'
-  s.version               = '0.0.3'
+  s.version               = '0.0.4'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
   s.social_media_url      = 'https://twitter.com/roam_ai'
@@ -9,12 +9,11 @@ Pod::Spec.new do |s|
   s.platform              = :ios
   s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
   s.source_files          = 'Roam/Roam.framework/Headers/*.h'
-  s.vendored_frameworks   = 'Roam/Roam.framework'
+  s.vendored_frameworks   = 'Roam/Roam.framework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework'
+  s.preserve_path         = 'Roam/*'
   s.module_map            = "Roam/Roam.framework/Modules/module.modulemap"
   s.module_name           = 'Roam'
   s.ios.deployment_target = '10.0'
-  s.dependency 'AWSIoT'
-  s.dependency 'AWSMobileClient'
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }

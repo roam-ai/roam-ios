@@ -3,7 +3,7 @@
 // swift-module-flags: -target i386-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name Roam
 import AWSCore
 import AWSIoT
-import AWSMobileClient
+import AWSMobileClientXCF
 import CommonCrypto
 import CoreData
 import CoreLocation
