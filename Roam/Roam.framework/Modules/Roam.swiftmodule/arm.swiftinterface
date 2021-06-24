@@ -1,7 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4 (swiftlang-1205.0.26.9 clang-1205.0.19.55)
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
 // swift-module-flags: -target armv7-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name Roam
-import CocoaMQTT
+import AWSCore
+import AWSIoT
+import AWSMobileClient
 import CommonCrypto
 import CoreData
 import CoreLocation
@@ -9,7 +11,6 @@ import CoreMotion
 import CoreTelephony
 import Foundation
 @_exported import Roam
-import Starscream
 import Swift
 import SystemConfiguration
 import UIKit
@@ -133,7 +134,10 @@ extension Reachability {
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripSummaryRoute : ObjectiveC.NSObject {
   @objc public var activity: Swift.String!
-  @objc public var altitude: Foundation.NSNumber!
+  @objc public var altitude: Foundation.NSNumber
+  @objc public var elevationGain: Foundation.NSNumber
+  @objc public var distance: Foundation.NSNumber
+  @objc public var duration: Foundation.NSNumber
   @objc public var coordinates: [Swift.Double]!
   @objc public var recordedAt: Swift.String!
   @objc override dynamic public init()
@@ -378,6 +382,7 @@ extension UIDevice {
   @objc public var tripId: Swift.String!
   @objc public var tripStatus: Swift.String!
   @objc public var userId: Swift.String!
+  @objc public var totalElevationGain: Foundation.NSNumber
   @objc override dynamic public init()
   @objc deinit
 }
@@ -422,7 +427,7 @@ extension UIDevice {
   @objc deinit
 }
 @objc public enum RoamTrackingMode : Swift.Int {
-  case passive = 0
+  case passive = 1
   case balanced
   case active
   case custom
@@ -472,7 +477,7 @@ public typealias RoamSummaryTripCompletionhandler = ((Roam.RoamTripSummary?, Roa
 public typealias RoamTripListenerCompletionhandler = ((Roam.RoamTripListener?, Roam.RoamError?) -> Swift.Void)
 public typealias RoamDeleteTripCompletionhandler = ((Swift.String?, Roam.RoamError?) -> Swift.Void)
 public typealias RoamTripSyncStatusCompletionhandler = ((Swift.Bool, Roam.RoamError?) -> Swift.Void)
-public typealias RoamPublishCompletionhandler = ((Swift.Bool, Swift.Int, Swift.String?) -> Swift.Void)
+public typealias RoamPublishCompletionhandler = ((Swift.Bool) -> Swift.Void)
 @_hasMissingDesignatedInitializers @objc public class RoamCreateTrip : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String!
   @objc public var destinations: [Roam.RoamTripDestination]!
