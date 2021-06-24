@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.module_map            = "Roam/Roam.framework/Modules/module.modulemap"
   s.module_name           = 'Roam'
   s.ios.deployment_target = '10.0'
-  s.dependency ‘AWSIoT’
-  s.dependency ‘AWSMobileClient’
+  s.dependency 'AWSIoT'
+  s.dependency 'AWSMobileClient'
   s.pod_target_xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
   }
