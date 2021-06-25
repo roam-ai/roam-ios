@@ -81,7 +81,7 @@ AWSMobileClientXCF.xcframework
 Add the following code in `AppDelegate.`. This code imports the SDK and allows the SDK to use other methods.
 
 ```
-import roam-ios
+import Roam
 ```
 
 After import, add the below code under `application(_:didFinishLaunchingWithOptions:) `in your `AppDelegate` class. The SDK must be initialized before calling any of the other SDK methods using your project's SDK key.
