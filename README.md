@@ -175,7 +175,7 @@ Before you start location tracking, you need to get permission from the user for
    ```swift
    import CoreLocation
    ```
-2. Make the below class declaration for Location Manager and add this line before the return statement in `application(_:didFinishLaunchingWithOptions:).` With this line, you ask users to allow the app to access location data both in the background and the foreground.
+2. Make the below class declaration for Location Manager and add this line before the return statement in `application(_:didFinishLaunchingWithOptions:)` With this line, you ask users to allow the app to access location data both in the background and the foreground.
 
    ```swift
    let locationManager = CLLocationManager()
@@ -202,6 +202,15 @@ To disable accuracy engine
 ```swift
 Roam.disableAccuracyEngine()
 ```
+
+#### Offline Location Tracking
+
+To modify the offline location tracking configuration, which will enabled by default. 
+
+```swift
+Roam.offlineLocationTracking(true)
+```
+
 
 ### Location Tracking
 
