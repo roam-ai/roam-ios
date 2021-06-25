@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/roam-ios/roam-ios-xcframeworks.sh
+${PODS_ROOT}/roam-ios/Roam/AWSAuthCore.xcframework
+${PODS_ROOT}/roam-ios/Roam/AWSCognitoIdentityProvider.xcframework
+${PODS_ROOT}/roam-ios/Roam/AWSCognitoIdentityProviderASF.xcframework
+${PODS_ROOT}/roam-ios/Roam/AWSCore.xcframework
+${PODS_ROOT}/roam-ios/Roam/AWSIoT.xcframework
+${PODS_ROOT}/roam-ios/Roam/AWSMobileClientXCF.xcframework

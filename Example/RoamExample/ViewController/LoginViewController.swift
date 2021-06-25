@@ -15,7 +15,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var userDescTextField: UITextField!
     @IBOutlet weak var createUserBtn: UIButton!
     @IBOutlet weak var getUserBtn: UIButton!
-    
+    @IBOutlet weak var startSelfTracking: UIButton!
+    @IBOutlet weak var requestLocation: UIButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         userIdTextField.delegate = self
@@ -30,12 +32,15 @@ class LoginViewController: UIViewController {
                 Alert.alertController(title: "Create User", message: errorStatus?.message, viewController: self)
             }else{
                 AppUtility.saveUserValue(user!)
-                self.rootViewController()
+                DispatchQueue.main.async {
+                    let vc = EventsLoginViewController.viewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
             }
             self.dismissHud()
         }
     }
-        
+    
     @IBAction func getUserAction(_ sender: Any) {
         
         if userIdTextField.text!.isEmpty{
@@ -48,22 +53,21 @@ class LoginViewController: UIViewController {
                     Alert.alertController(title: "Get User", message: errorStatus?.message, viewController: self)
                 }else{
                     AppUtility.saveUserValue(user!)
-                    self.rootViewController()
+                    let vc = EventsLoginViewController.viewController()
+                    self.navigationController?.pushViewController(vc, animated: true)
                 }
             }
         }
     }
     
-    func rootViewController(){
-        DispatchQueue.main.async {
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let  navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
-            let rootViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-            navigationController.viewControllers = [rootViewController] as [UIViewController]
-            navigationController.modalPresentationStyle = .fullScreen
-            UIApplication.topViewController()?.present(navigationController, animated: true, completion: nil)
-    }
-}
     
+    @IBAction func startSelfTrackingAction(_ sender: Any) {
+        
+    }
+    
+    @IBAction func requestLocationAction(_ sender: Any) {
+        
+    }
+
 }
 

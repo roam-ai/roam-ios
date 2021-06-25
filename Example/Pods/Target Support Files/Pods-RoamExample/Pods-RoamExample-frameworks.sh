@@ -175,20 +175,22 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework"
+  install_framework "${PODS_ROOT}/roam-ios/Roam/Roam.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCore/AWSCore.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSIoT/AWSIoT.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF/AWSMobileClientXCF.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSAuthCore/AWSAuthCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSIoT/AWSIoT.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/AWSMobileClient/AWSMobileClient.framework"
+  install_framework "${PODS_ROOT}/roam-ios/Roam/Roam.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCore/AWSCore.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSIoT/AWSIoT.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF/AWSMobileClientXCF.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
