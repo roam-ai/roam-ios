@@ -19,10 +19,10 @@ The Roam iOS SDK makes it quick and easy to build a location tracker for your iO
 To use the Roam SDK, the following things are required:
 Get yourself a free Roam Account. No credit card required.
 
-- Create a project and add an iOS app to the project.
-- You need the SDK_KEY in your project settings which you’ll need to initialize the SDK.
-- Now you’re ready to integrate the SDK into your iOS application.
-- The Roam iOS SDK requires Xcode 10.0 or later and it compatible with apps targeting iOS version 10 and above.
+- [x] Create a project and add an iOS app to the project.
+- [x] You need the SDK_KEY in your project settings which you’ll need to initialize the SDK.
+- [x] Now you’re ready to integrate the SDK into your iOS application.
+- [x] The Roam iOS SDK requires Xcode 10.0 or later and it compatible with apps targeting iOS version 10 and above.
 
 ### Xcode Setup
 
@@ -61,11 +61,20 @@ This will add the Roam SDK and its dependencies to your project. The Roam SDK de
 
 ### Manual Installation
 
-If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.0.1/Roam.zip) file.
+If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.0.5/Roam.framework.zip) file.
 
 Unzip the file and add the Roam `Roam.framework` to your Xcode project by dragging the file into your Project Navigator.
 
-You can do this by selecting the project file in the navigator on the left side of the Xcode window, and then navigating to the Linked Frameworks and Libraries section. From there, click the “+” button to add the Roam framework.
+You can do this by selecting the project file in the navigator on the left side of the Xcode window, and then navigating to the Linked Frameworks and Libraries section. From there, click the “+” button to add the Roam framework. You will also want to add the following frameworks from this [link](https://github.com/aws-amplify/aws-sdk-ios).
+
+```
+AWSAuthCore.xcframework
+AWSCognitoIdentityProvider.xcframework
+AWSCognitoIdentityProviderASF.xcframework
+AWSCore.xcframework
+AWSIoT.xcframework
+AWSMobileClientXCF.xcframework
+```
 
 ### Initialize SDK
 
@@ -115,7 +124,7 @@ Roam.getUser("ROAM USER ID") { (roamUser, error) in
         }
 ```
 
-### **Listeners**
+### Listeners
 
 Now that the location tracking is set up, you can subscribe to locations and events and use the data locally on your device or send it directly to your own backend server.
 
@@ -248,13 +257,13 @@ Roam.stopPublishing();
 
 Now that you have enabled the location listener, use the below method to subscribe to your own or other user's location updates and events.
 
-#### **Subscribe**
+#### Subscribe
 
 ```
 Roam.subscribe(TYPE, "USER-ID");
 ```
 
-#### **UnSubscribe**
+#### UnSubscribe
 
 ```
 Roam.unSubscribe(TYPE, "USER-ID");
@@ -266,9 +275,6 @@ Roam.unSubscribe(TYPE, "USER-ID");
 | RoamSubscribe.Location | Subscribe to your own location (or) other user's location updates. |
 | RoamSubscribe.Both     | Subscribe to your own events and location (or) other user's location updates. |
 
-## Documentation
-
-See the full documentation [here](https://docs.roam.ai/ios).
 
 ## Example
 See a Swift example app in `Example/`.
