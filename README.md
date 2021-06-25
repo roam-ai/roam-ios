@@ -35,17 +35,20 @@ To integrate the Roam SDK, you need a Roam account.
    ```xml
    <key>NSLocationWhenInUseUsageDescription</key>
    <string>Add description for foreground only location usage.</string>
-
-
    <key>NSLocationAlwaysUsageDescription</key>
    <string>Add description for background location usage. iOS 10 and below"</string>
-
-
    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
    <string>Add description for background location usage. iOS 11 and above</string>
    ```
+   
+   ![Screenshot 2021-06-25 at 8 40 46 PM](https://user-images.githubusercontent.com/19217956/123445597-aa8cf380-d5f5-11eb-9188-15ad742f11a8.png)
+
 
 3. Next you need to enable`Background fetch` and` Location updates` under `Project Setting` > `Capabilities` > `Background Modes`.
+    
+   ![Screenshot 2021-06-25 at 8 38 24 PM](https://user-images.githubusercontent.com/19217956/123445386-74e80a80-d5f5-11eb-85d6-e06ef4300734.png)
+  
+  
 
 ### CocoaPods Installation
 
@@ -75,6 +78,9 @@ AWSCore.xcframework
 AWSIoT.xcframework
 AWSMobileClientXCF.xcframework
 ```
+Make sure the the added frameworks under Linked Frameworks and Libraries section are selected as `Embed&Sign`
+
+![Screenshot 2021-06-25 at 8 45 56 PM](https://user-images.githubusercontent.com/19217956/123446788-d8bf0300-d5f6-11eb-96e2-d88e432c209c.png)
 
 ### Initialize SDK
 
