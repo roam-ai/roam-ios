@@ -35,4 +35,6 @@ let kTripStatusListener = "kTripStatusListener"
 let kValeUserAppState = "kValeUserAppState"
 let kValueOfflineLocation = "kValueOfflineLocation"
 let kLocationTracker = "kLocationTracker"
+let kEnableAccuracyEngine = "kEnableAccuracyEngine"
 
+let kDisabledPublishingsave = "kDisabledPublishingsave"

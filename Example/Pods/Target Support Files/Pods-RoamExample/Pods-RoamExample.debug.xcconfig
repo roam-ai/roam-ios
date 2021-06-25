@@ -1,11 +1,9 @@
-ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AWSAuthCore" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCognitoIdentityProvider" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCognitoIdentityProviderASF" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCore" "${PODS_CONFIGURATION_BUILD_DIR}/AWSIoT" "${PODS_CONFIGURATION_BUILD_DIR}/AWSMobileClient"
+EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/roam-ios/Roam" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSIoT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AWSCore/AWSCore.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AWSIoT/AWSIoT.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/AWSMobileClient/AWSMobileClient.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -l"sqlite3" -l"z" -framework "AWSAuthCore" -framework "AWSCognitoIdentityProvider" -framework "AWSCognitoIdentityProviderASF" -framework "AWSCore" -framework "AWSIoT" -framework "AWSMobileClient" -framework "CoreGraphics" -framework "Foundation" -framework "Security" -framework "SystemConfiguration" -framework "UIKit"
-OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
+OTHER_LDFLAGS = $(inherited) -framework "AWSAuthCore" -framework "AWSCognitoIdentityProvider" -framework "AWSCognitoIdentityProviderASF" -framework "AWSCore" -framework "AWSIoT" -framework "AWSMobileClientXCF" -framework "Roam"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

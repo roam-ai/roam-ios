@@ -13,7 +13,10 @@ import CoreLocation
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var publishSegement: UISegmentedControl!
+    @IBOutlet weak var accuracySegment: UISegmentedControl!
+
     @IBOutlet weak var publishLabel: UILabel!
+    @IBOutlet weak var accuracyLabel: UILabel!
     @IBOutlet weak var userIdTextField: UITextField!
     @IBOutlet weak var userDescTextField: UITextField!
     @IBOutlet weak var setUserDescBtn: UIButton!
@@ -29,27 +32,23 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var changeTrackingBtn: UIButton!
     @IBOutlet weak var trackingSettingBtn: UIButton!
     @IBOutlet weak var subScribeBtn: UIButton!
-
     @IBOutlet weak var trackingLabel: UILabel!
-
     @IBOutlet weak var otherLocationBtn: GradientButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        let pubishOnly = (UserDefaults.init(suiteName: "devmotionsdk")?.bool(forKey: "LocationPublishOnly"))!
-        let pubishSave = (UserDefaults.init(suiteName: "devmotionsdk")?.bool(forKey: "LocationPublishSave"))!
-
-        self.publishLabel.text = "Pulish not selected"
-        if pubishOnly{
-            self.publishLabel.text = "Publish Only"
-            self.publishSegement.selectedSegmentIndex = 0
-        }
-        if pubishSave{
-            self.publishLabel.text = "Publish Save"
+        if SharedUtil.getDefaultBoolean(kDisabledPublishingsave){
             self.publishSegement.selectedSegmentIndex = 1
+            self.publishLabel.text = "Publish On"
         }
+
+        if SharedUtil.getDefaultBoolean(kEnableAccuracyEngine){
+            self.accuracySegment.selectedSegmentIndex = 1
+            self.accuracyLabel.text = "Accuracy Engine On"
+        }
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -224,13 +223,22 @@ class HomeViewController: UIViewController {
             self.changeTrackingBtn.isEnabled = true
         }
     
+        let timeBase = UIAlertAction(title: "Time Base", style: .default) { (alert) in
+            let vc = TimeBasedViewController.viewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         
-        
+        let distanceBase = UIAlertAction(title: "Distance Base", style: .default) { (alert) in
+            let vc = DistanceViewController.viewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         let cance = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alert.addAction(powerSaver)
         alert.addAction(balanced)
         alert.addAction(highPerformance)
+        alert.addAction(timeBase)
+        alert.addAction(distanceBase)
         alert.addAction(defaul)
         alert.addAction(cance)
 
@@ -276,12 +284,25 @@ class HomeViewController: UIViewController {
 
     @IBAction func publicSegmentAction(_ sender: Any) {
         if publishSegement.selectedSegmentIndex == 0{
-            self.publishLabel.text = "Publish Only"
-            Roam.publishOnly()
+            Roam.stopPublishing()
+            self.publishLabel.text = "Publish Off"
+            SharedUtil.setDefaultBoolean(false, kDisabledPublishingsave)
         }else if publishSegement.selectedSegmentIndex == 1{
-            self.publishLabel.text = "Publish Save"
+            self.publishLabel.text = "Publish On"
             Roam.publishSave()
+            SharedUtil.setDefaultBoolean(true, kDisabledPublishingsave)
         }
     }
 
+    @IBAction func accuracySegmentAction(_ sender: Any) {
+        if accuracySegment.selectedSegmentIndex == 0{
+            UserDefaults.standard.set(false, forKey: kEnableAccuracyEngine)
+            self.accuracyLabel.text = "Accuracy Engine Off"
+            Roam.disableAccuracyEngine()
+        }else if accuracySegment.selectedSegmentIndex == 1{
+            UserDefaults.standard.set(true, forKey: kEnableAccuracyEngine)
+            self.accuracyLabel.text = "Accuracy Engine On"
+            Roam.enableAccuracyEngine()
+        }
+    }
 }

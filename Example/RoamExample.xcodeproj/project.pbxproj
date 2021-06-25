@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		333C014F5D7764D36F1182A5 /* Pods_RoamExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AEDEBFAE822E6E0495D3152 /* Pods_RoamExample.framework */; };
+		534095822685C16100952015 /* EventsLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534095812685C16100952015 /* EventsLoginViewController.swift */; };
+		534095842685D33700952015 /* TimeBasedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534095832685D33700952015 /* TimeBasedViewController.swift */; };
+		534095862685E0DE00952015 /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534095852685E0DE00952015 /* DistanceViewController.swift */; };
 		7B2859E1261DBEA300AF20CC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2859D5261DBEA300AF20CC /* SettingsViewController.swift */; };
 		7B2859E2261DBEA300AF20CC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2859D6261DBEA300AF20CC /* HomeViewController.swift */; };
 		7B2859E3261DBEA300AF20CC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2859D7261DBEA300AF20CC /* MapViewController.swift */; };
@@ -35,28 +38,14 @@
 		7B2CA46A261DAB1400C4C6A1 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA462261DAB1400C4C6A1 /* UIButton.swift */; };
 		7B2CA46E261DAB1E00C4C6A1 /* SharedUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA46C261DAB1E00C4C6A1 /* SharedUtil.swift */; };
 		7B2CA46F261DAB1E00C4C6A1 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA46D261DAB1E00C4C6A1 /* AppUtility.swift */; };
-		D9B6598A261DD96E002E4261 /* Roam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B65988261DD95B002E4261 /* Roam.framework */; };
-		D9B6598B261DD96E002E4261 /* Roam.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D9B65988261DD95B002E4261 /* Roam.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D9B6598F261DDA37002E4261 /* Roam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9B6598E261DDA37002E4261 /* Roam.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		7B2CA453261DA9F200C4C6A1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				D9B6598B261DD96E002E4261 /* Roam.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1AEDEBFAE822E6E0495D3152 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D91FF98E9CD23751EDD6A4C /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.debug.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
+		534095812685C16100952015 /* EventsLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLoginViewController.swift; sourceTree = "<group>"; };
+		534095832685D33700952015 /* TimeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedViewController.swift; sourceTree = "<group>"; };
+		534095852685E0DE00952015 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		7B2859D5261DBEA300AF20CC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7B2859D6261DBEA300AF20CC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7B2859D7261DBEA300AF20CC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +76,6 @@
 		7B2CA462261DAB1400C4C6A1 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		7B2CA46C261DAB1E00C4C6A1 /* SharedUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUtil.swift; sourceTree = "<group>"; };
 		7B2CA46D261DAB1E00C4C6A1 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
-		D9B65988261DD95B002E4261 /* Roam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Roam.framework; sourceTree = "<group>"; };
-		D9B6598E261DDA37002E4261 /* Roam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Roam.framework; path = ../../Roam.framework; sourceTree = "<group>"; };
 		FF1C0F87FC1E648B9F47171F /* Pods-RoamExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.release.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +85,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				333C014F5D7764D36F1182A5 /* Pods_RoamExample.framework in Frameworks */,
-				D9B6598F261DDA37002E4261 /* Roam.framework in Frameworks */,
-				D9B6598A261DD96E002E4261 /* Roam.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,7 +130,6 @@
 				7B2CA431261DA88600C4C6A1 /* Assets.xcassets */,
 				7B2CA433261DA88600C4C6A1 /* LaunchScreen.storyboard */,
 				7B2CA436261DA88600C4C6A1 /* Info.plist */,
-				D9B6598E261DDA37002E4261 /* Roam.framework */,
 			);
 			path = RoamExample;
 			sourceTree = "<group>";
@@ -162,7 +146,6 @@
 		7B2CA455261DAACC00C4C6A1 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D9B65988261DD95B002E4261 /* Roam.framework */,
 				7B2859DB261DBEA300AF20CC /* EventsViewController.swift */,
 				7B2859D6261DBEA300AF20CC /* HomeViewController.swift */,
 				7B2859D7261DBEA300AF20CC /* MapViewController.swift */,
@@ -174,6 +157,9 @@
 				7B2859D9261DBEA300AF20CC /* TripSummaryViewController.swift */,
 				7B2859DE261DBEA300AF20CC /* TripViewController.swift */,
 				7B2859DD261DBEA300AF20CC /* LoginViewController.swift */,
+				534095812685C16100952015 /* EventsLoginViewController.swift */,
+				534095832685D33700952015 /* TimeBasedViewController.swift */,
+				534095852685E0DE00952015 /* DistanceViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -239,7 +225,6 @@
 				7B2CA422261DA88500C4C6A1 /* Frameworks */,
 				7B2CA423261DA88500C4C6A1 /* Resources */,
 				C55579B8AD2C75318E0CDE57 /* [CP] Embed Pods Frameworks */,
-				7B2CA453261DA9F200C4C6A1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -350,6 +335,7 @@
 				7B2859E9261DBEA300AF20CC /* LoginViewController.swift in Sources */,
 				7B2CA429261DA88500C4C6A1 /* AppDelegate.swift in Sources */,
 				7B2CA464261DAB1400C4C6A1 /* UIViewController+Hud.swift in Sources */,
+				534095822685C16100952015 /* EventsLoginViewController.swift in Sources */,
 				7B2859E2261DBEA300AF20CC /* HomeViewController.swift in Sources */,
 				7B2859E4261DBEA300AF20CC /* TripDetailsViewController.swift in Sources */,
 				7B2CA468261DAB1400C4C6A1 /* TripTableViewCell.swift in Sources */,
@@ -364,6 +350,8 @@
 				7B2CA46A261DAB1400C4C6A1 /* UIButton.swift in Sources */,
 				7B2859E8261DBEA300AF20CC /* SubScribeViewController.swift in Sources */,
 				7B2CA458261DAB0100C4C6A1 /* AppConstant.swift in Sources */,
+				534095842685D33700952015 /* TimeBasedViewController.swift in Sources */,
+				534095862685E0DE00952015 /* DistanceViewController.swift in Sources */,
 				7B2CA466261DAB1400C4C6A1 /* Extension.swift in Sources */,
 				7B2859E3261DBEA300AF20CC /* MapViewController.swift in Sources */,
 			);
@@ -516,6 +504,7 @@
 				CODE_SIGN_ENTITLEMENTS = RoamExample/RoamExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B92BAJFGJP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RoamExample",
@@ -541,6 +530,7 @@
 				CODE_SIGN_ENTITLEMENTS = RoamExample/RoamExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B92BAJFGJP;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/RoamExample",
