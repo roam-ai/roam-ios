@@ -148,30 +148,6 @@ Roam.getUser("YOUR-ROAM-USER-ID") {(RoamUser, Error) in
         }
 ```
 
-### Listeners
-
-Now that the location tracking is set up, you can subscribe to locations and events and use the data locally on your device or send it directly to your own backend server.
-
-To do that, you need to toggle the location and event listener to `true`. By default, the status will set to `false` and needs to be set to `true` in order to stream the location and events updates to the same device or other devices.
-
-```swift
-Roam.toggleListener(Events: true, Locations: true) {(RoamUser, Error) in
-            // Access Roam user data below
-            // RoamUser?.userId
-            // RoamUser?.description
-            // RoamUser?.locationListener
-            // RoamUser?.eventsListener
-            // RoamUser?.locationEvents
-            // RoamUser?.geofenceEvents
-            // RoamUser?.tripsEvents
-            // RoamUser?.nearbyEvents
-            
-            // Access error code & message below
-            // Error?.code
-            // Error?.message
-        }
-```
-
 ### Request Permissions
 
 Before you start location tracking, you need to get permission from the user for your application to access locations.
@@ -342,6 +318,56 @@ Roam.unsubscribe(TYPE, "ROAM-USER-ID")
 | RoamSubscribe.Location | Subscribe to your own location (or) other user's location updates. |
 | RoamSubscribe.Both     | Subscribe to your own events and location (or) other user's location updates. |
 
+### Listeners
+
+Now that the location tracking is set up, you can subscribe to locations and events and use the data locally on your device or send it directly to your own backend server.
+
+To do that, you need to toggle the location and event listener to `true`. By default, the status will set to `false` and needs to be set to `true` in order to stream the location and events updates to the same device or other devices.
+
+```swift
+Roam.toggleListener(Events: true, Locations: true) {(RoamUser, Error) in
+            // Access Roam user data below
+            // RoamUser?.userId
+            // RoamUser?.description
+            // RoamUser?.locationListener
+            // RoamUser?.eventsListener
+            // RoamUser?.locationEvents
+            // RoamUser?.geofenceEvents
+            // RoamUser?.tripsEvents
+            // RoamUser?.nearbyEvents
+            
+            // Access error code & message below
+            // Error?.code
+            // Error?.message
+        }
+```
+
+Once the listener toggles are set to true, to listen to location updates create a class that implements RoamDelegate and then call Roam.delegate.
+
+Set your `RoamDelegate` in a code path that will be initialized and executed in the background. For example, make your AppDelegate implement GeoSparkDelegate, not a ViewController. AppDelegate will be initialized in the background, whereas a ViewController may not be.
+
+```swift
+import UIKit
+import Roam
+import CoreLocation
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate, RoamDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Roam.delegate = self
+        Roam.initialize("YOUR-SDK-KEY-GOES-HERE")
+        return true
+    }
+    func didUpdateLocation(_ location: RoamLocation) {
+        // Do something with the user location
+    }
+    func didReceiveEvents(_ events: RoamEvents) {
+        // Do smoething with user events
+    }
+    func didReceiveUserLocation(_ location: RoamLocationReceived) {
+        // Do something with location of other users' subscribed location
+    }
+```
 
 ## Example
 See a Swift example app in `Example/`.
