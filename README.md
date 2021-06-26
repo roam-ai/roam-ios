@@ -32,20 +32,23 @@ To integrate the Roam SDK, you need a Roam account.
 
 2. Configure the information property list file `Info.plist` with an XML snippet that contains data about your app. You need to add strings for `NSLocationWhenInUseUsageDescription` in the `Info.plist` file to prompt the user during location permissions for foreground location tracking. For background location tracking, you also need to add a string for `NSLocationAlwaysUsageDescription` and `NSLocationAlwaysAndWhenInUseUsageDescription` in the same` Info.plist` file.
 
-   ```
+   ```xml
    <key>NSLocationWhenInUseUsageDescription</key>
    <string>Add description for foreground only location usage.</string>
-
-
    <key>NSLocationAlwaysUsageDescription</key>
    <string>Add description for background location usage. iOS 10 and below"</string>
-
-
    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
    <string>Add description for background location usage. iOS 11 and above</string>
    ```
+   
+   ![Screenshot 2021-06-25 at 8 40 46 PM](https://user-images.githubusercontent.com/19217956/123445597-aa8cf380-d5f5-11eb-9188-15ad742f11a8.png)
+
 
 3. Next you need to enable`Background fetch` and` Location updates` under `Project Setting` > `Capabilities` > `Background Modes`.
+    
+   ![Screenshot 2021-06-25 at 8 38 24 PM](https://user-images.githubusercontent.com/19217956/123445386-74e80a80-d5f5-11eb-85d6-e06ef4300734.png)
+  
+  
 
 ### CocoaPods Installation
 
@@ -75,18 +78,21 @@ AWSCore.xcframework
 AWSIoT.xcframework
 AWSMobileClientXCF.xcframework
 ```
+Make sure the the added frameworks under Linked Frameworks and Libraries section are selected as `Embed&Sign`
+
+![Screenshot 2021-06-25 at 8 45 56 PM](https://user-images.githubusercontent.com/19217956/123446788-d8bf0300-d5f6-11eb-96e2-d88e432c209c.png)
 
 ### Initialize SDK
 
-Add the following code in `AppDelegate.`. This code imports the SDK and allows the SDK to use other methods.
+Add the following code in `AppDelegate` file. This code imports the SDK and allows the SDK to use other methods.
 
-```
-import roam-ios
+```swift
+import Roam
 ```
 
-After import, add the below code under `application(_:didFinishLaunchingWithOptions:) `in your `AppDelegate` class. The SDK must be initialized before calling any of the other SDK methods using your project's SDK key.
+After import, add the below code under `application(_:didFinishLaunchingWithOptions:) `in your `AppDelegate` file. The SDK must be initialized before calling any of the other SDK methods using your project's publishable key.
 
-```
+```swift
 Roam.initialize("YOUR-SDK-KEY-GOES-HERE")
 ```
 
@@ -94,20 +100,29 @@ Roam.initialize("YOUR-SDK-KEY-GOES-HERE")
 
 Once the SDK is initialised, you need to *create* or *get a user* to start the tracking and use other methods. Every user created will have a unique Roam identifier which will be used to login and access developer APIs. We call this Roam `user_Id`.
 
-```
-Roam.createUser("SET-USER-DESCRIPTION-HERE") { (RoamUser, error) in
-            //   access roam user id with roamUser?.userId
-            //   access roam user description with roamUser?.userDescription
-            //   access roam error code with error?.code
-            //   access roam error message with error?.message
-  }
+```swift
+Roam.createUser("YOUR-USER-DESCRIPTION-GOES-HERE") {(RoamUser, Error) in
+            // Access Roam user data below
+            // RoamUser?.userId
+            // RoamUser?.description
+            // RoamUser?.locationListener
+            // RoamUser?.eventsListener
+            // RoamUser?.locationEvents
+            // RoamUser?.geofenceEvents
+            // RoamUser?.tripsEvents
+            // RoamUser?.nearbyEvents
+            
+            // Access error code & message below
+            // Error?.code
+            // Error?.message
+        }
 ```
 
 The option *user description* can be used to update user information such as name, address or add an existing user ID. Make sure the information is encrypted if you are planning to save personal information like an email or phone number.
 
 You can always set or update user descriptions later using the below code.
 
-```
+```swift
 Roam.setDescription("SET-USER-DESCRIPTION-HERE")
 ```
 
@@ -115,63 +130,75 @@ Roam.setDescription("SET-USER-DESCRIPTION-HERE")
 
 If you already have a Roam `user_ID` which you would like to reuse instead of creating a new user, use the code below to get a user session.
 
-```
-Roam.getUser("ROAM USER ID") { (roamUser, error) in
-            //   access roam user id with roamUser?.userId
-            //   access roam user description with roamUser?.userDescription
-            //   access roam user description with error?.code
-            //   access roam user description with error?.message
+```swift
+Roam.getUser("YOUR-ROAM-USER-ID") {(RoamUser, Error) in
+            // Access Roam user data below
+            // RoamUser?.userId
+            // RoamUser?.description
+            // RoamUser?.locationListener
+            // RoamUser?.eventsListener
+            // RoamUser?.locationEvents
+            // RoamUser?.geofenceEvents
+            // RoamUser?.tripsEvents
+            // RoamUser?.nearbyEvents
+            
+            // Access error code & message below
+            // Error?.code
+            // Error?.message
         }
-```
-
-### Listeners
-
-Now that the location tracking is set up, you can subscribe to locations and events and use the data locally on your device or send it directly to your own backend server.
-
-To do that, you need to toggle the location and event listener to `true`. By default, the status will set to `false` and needs to be set to `true` in order to stream the location and events updates to the same device or other devices.
-
-
-
-```
-Roam.toggleListener(Events: true, Locations: true) { (roamUser, error) in
-      // access location lister status with roamUser?.locationListener
-      // access events lister status roamUser?.eventListener
-      // access roam error code with error?.code
-      // access roam error message with error?.message
- }
 ```
 
 ### Request Permissions
 
 Before you start location tracking, you need to get permission from the user for your application to access locations.
 
-1. Import `CoreLocation` at the top of the `AppDelegate`. file.
+1. Import `CoreLocation` at the top of the `AppDelegate` file.
 
-   ```
+   ```swift
    import CoreLocation
    ```
+2. Make the below class declaration for Location Manager and add this line before the return statement in `application(_:didFinishLaunchingWithOptions:)` With this line, you ask users to allow the app to access location data both in the background and the foreground.
 
-2. Make the below class declaration for Location Manager.
-
-   ```
+   ```swift
    let locationManager = CLLocationManager()
+   locationManager.requestLocation()
    ```
 
-3.  Open `AppDelegate.` and add this line before the return statement in `application(_:didFinishLaunchingWithOptions:).` With this line, you ask users to allow the app to access location data both in the background and the foreground.
+### SDK Configurations
 
-   ```
-    locationManager.requestLocation()
-   ```
+#### Accuracy Engine
+
+For enabling accuracy engine for Passive, Active, and Balanced tracking.
+
+```swift
+Roam.enableAccuracyEngine()
+```
+
+For Custom tracking mores, you can pass the desired accuracy values in integers ranging from 25-150m.
+
+```swift
+Roam.enableAccuracyEngine(50)
+```
+To disable accuracy engine
+
+```swift
+Roam.disableAccuracyEngine()
+```
+
+#### Offline Location Tracking
+
+To modify the offline location tracking configuration, which will enabled by default. 
+
+```swift
+Roam.offlineLocationTracking(true)
+```
+
 
 ### Location Tracking
 
 #### Start Tracking
 
-```
-Roam.startTracking(TrackingMode)
-```
-
-Use the tracking modes while you use the startTracking method `Roam.startTracking`
+Use the below tracking modes while you use the startTracking method `Roam.startTracking`
 
 #### Tracking Modes
 
@@ -183,13 +210,13 @@ You can now start tracking your users. Roam has three default tracking modes alo
 | Balanced | 3% - 6%           | 50 ~ 500 meters   | On Demand Services            |
 | Passive  | 0% - 1%           | 100 ~ 1000 meters | Social Apps                   |
 
-```
+```swift
 //active tracking
-Roam.startTracking(RoamTrackingMode.active);
+Roam.startTracking(RoamTrackingMode.active)
 // balanced tracking
-Roam.startTracking(RoamTrackingMode.balanced);
+Roam.startTracking(RoamTrackingMode.balanced)
 // passive tracking
-Roam.startTracking(RoamTrackingMode.passive);
+Roam.startTracking(RoamTrackingMode.passive)
 ```
 
 #### Custom Tracking Modes
@@ -202,31 +229,47 @@ The SDK also provides a custom tracking mode which allows you to customize and b
 
 **Distance between location updates example code:**
 
-```
-// define a custom tracking method
-let trackingMethod = RoamTrackingMethods.custom
-// update the settings for the created method as per need
+```swift
+// Define a custom tracking method
+let trackingMethod = RoamTrackingCustomMethods()
+
+// Update the settings for the created method as per need
 trackingMethod.activityType = .fitness
 trackingMethod.pausesLocationUpdatesAutomatically = true
 trackingMethod.showsBackgroundLocationIndicator = true
-trackingMethod.distanceFilter = 10
-trackingMethod.useSignificantLocationChanges = false
+trackingMethod.useSignificant = false
 trackingMethod.useRegionMonitoring = false
 trackingMethod.useVisits = false
-trackingMethod.useSignificantLocationChanges = false
-trackingMethod.desiredAccuracy = .nearestTenMeters
+trackingMethod.accuracyFilter = 10
+trackingMethod.desiredAccuracy = .kCLLocationAccuracyNearestTenMeters
+
+// Update the distance intervel as per the use case in meters
+trackingMethod.distanceFilter = 10
+
+// Start the tracking with the above created custom tracking method
 Roam.startTracking(.custom, options: trackingMethod)
 ```
 
 **Time between location updates example code:**
 
-```
-// define a custom tracking method
-let trackingMethod = RoamTrackingMethods.custom
-trackingMethod.allowBackgroundLocationUpdates = true
-trackingMethod.desiredAccuracy = kCLLocationAccuracyBest
-// Update interval in seconds
+```swift
+// Define a custom tracking method
+let trackingMethod = RoamTrackingCustomMethods()
+
+// Update the settings for the created method as per need
+trackingMethod.activityType = .fitness
+trackingMethod.pausesLocationUpdatesAutomatically = true
+trackingMethod.showsBackgroundLocationIndicator = true
+trackingMethod.useSignificant = false
+trackingMethod.useRegionMonitoring = false
+trackingMethod.useVisits = false
+trackingMethod.accuracyFilter = 10
+trackingMethod.desiredAccuracy = .kCLLocationAccuracyNearestTenMeters
+
+// Update the time intervel as per the use case in seconds
 trackingMethod.updateInterval = 10
+
+// Start the tracking with the above created custom tracking method
 Roam.startTracking(.custom, options: trackingMethod)
 ```
 
@@ -234,7 +277,7 @@ Roam.startTracking(.custom, options: trackingMethod)
 
 To stop the tracking use the below method.
 
-```
+```swift
 Roam.stopTracking()
 ```
 
@@ -242,15 +285,15 @@ Roam.stopTracking()
 
 It will publish location data and these data will be sent to roam-ios servers for further processing and data will be saved in our database servers.
 
-```
-var roamPublish = RoamPublish()
-Roam.publishSave(roamPublish)
+```swift
+let locationData = RoamPublish()
+Roam.publishSave(locationData)
 ```
 
 To stop publishing the location data to other clients.
 
-```
-Roam.stopPublishing();
+```swift
+Roam.stopPublishing()
 ```
 
 ### Subscribe Messages
@@ -259,14 +302,14 @@ Now that you have enabled the location listener, use the below method to subscri
 
 #### Subscribe
 
-```
-Roam.subscribe(TYPE, "USER-ID");
+```swift
+Roam.subscribe(TYPE, "ROAM-USER-ID")
 ```
 
 #### UnSubscribe
 
-```
-Roam.unSubscribe(TYPE, "USER-ID");
+```swift
+Roam.unsubscribe(TYPE, "ROAM-USER-ID")
 ```
 
 | **Type**               | **Description**                                              |
@@ -275,6 +318,56 @@ Roam.unSubscribe(TYPE, "USER-ID");
 | RoamSubscribe.Location | Subscribe to your own location (or) other user's location updates. |
 | RoamSubscribe.Both     | Subscribe to your own events and location (or) other user's location updates. |
 
+### Listeners
+
+Now that the location tracking is set up, you can subscribe to locations and events and use the data locally on your device or send it directly to your own backend server.
+
+To do that, you need to toggle the location and event listener to `true`. By default, the status will set to `false` and needs to be set to `true` in order to stream the location and events updates to the same device or other devices.
+
+```swift
+Roam.toggleListener(Events: true, Locations: true) {(RoamUser, Error) in
+            // Access Roam user data below
+            // RoamUser?.userId
+            // RoamUser?.description
+            // RoamUser?.locationListener
+            // RoamUser?.eventsListener
+            // RoamUser?.locationEvents
+            // RoamUser?.geofenceEvents
+            // RoamUser?.tripsEvents
+            // RoamUser?.nearbyEvents
+            
+            // Access error code & message below
+            // Error?.code
+            // Error?.message
+        }
+```
+
+Once the listener toggles are set to true, to listen to location updates create a class that implements RoamDelegate and then call Roam.delegate.
+
+Set your `RoamDelegate` in a code path that will be initialized and executed in the background. For example, make your AppDelegate implement GeoSparkDelegate, not a ViewController. AppDelegate will be initialized in the background, whereas a ViewController may not be.
+
+```swift
+import UIKit
+import Roam
+import CoreLocation
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate, RoamDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Roam.delegate = self
+        Roam.initialize("YOUR-SDK-KEY-GOES-HERE")
+        return true
+    }
+    func didUpdateLocation(_ location: RoamLocation) {
+        // Do something with the user location
+    }
+    func didReceiveEvents(_ events: RoamEvents) {
+        // Do smoething with user events
+    }
+    func didReceiveUserLocation(_ location: RoamLocationReceived) {
+        // Do something with location of other users' subscribed location
+    }
+```
 
 ## Example
 See a Swift example app in `Example/`.
