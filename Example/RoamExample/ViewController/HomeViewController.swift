@@ -223,12 +223,12 @@ class HomeViewController: UIViewController {
             self.changeTrackingBtn.isEnabled = true
         }
     
-        let timeBase = UIAlertAction(title: "Time Base", style: .default) { (alert) in
+        let timeBase = UIAlertAction(title: "Time Based", style: .default) { (alert) in
             let vc = TimeBasedViewController.viewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
         
-        let distanceBase = UIAlertAction(title: "Distance Base", style: .default) { (alert) in
+        let distanceBase = UIAlertAction(title: "Distance Based", style: .default) { (alert) in
             let vc = DistanceViewController.viewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }

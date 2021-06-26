@@ -53,8 +53,10 @@ class LoginViewController: UIViewController {
                     Alert.alertController(title: "Get User", message: errorStatus?.message, viewController: self)
                 }else{
                     AppUtility.saveUserValue(user!)
-                    let vc = EventsLoginViewController.viewController()
-                    self.navigationController?.pushViewController(vc, animated: true)
+                    DispatchQueue.main.async {
+                        let vc = EventsLoginViewController.viewController()
+                        self.navigationController?.pushViewController(vc, animated: true)
+                    }
                 }
             }
         }
