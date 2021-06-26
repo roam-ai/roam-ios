@@ -65,16 +65,17 @@ class DistanceViewController: UIViewController{
         customOptions.pausesLocationUpdatesAutomatically = false
         customOptions.activityType = .fitness
         customOptions.showsBackgroundLocationIndicator = true
-        if switchAccuracyFilter.isOn {
-            if self.accuraySegment.text != nil && self.accuraySegment.text!.count > 0 {
-                customOptions.accuracyFilter = Int(self.accuraySegment.text!)
-            }
-        }
+        customOptions.accuracyFilter = 50
         if self.distanceSegment.text != nil && self.distanceSegment.text!.count > 0 {
             customOptions.distanceFilter = CLLocationDistance(self.distanceSegment.text!)
         }
         SharedUtil.setDefaultString("Distance base", kTrackingOp)
         Roam.startTracking(.custom, options: customOptions)
+        if switchAccuracyFilter.isOn {
+            if self.accuraySegment.text != nil && self.accuraySegment.text!.count > 0 {
+                Roam.enableAccuracyEngine(Int(self.accuraySegment.text!)!)
+            }
+        }
         self.navigationController?.popViewController(animated: true)
     }
     
