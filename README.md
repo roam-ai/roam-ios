@@ -65,7 +65,7 @@ There are several ways to integrate the AWS Mobile SDK for iOS into your own pro
 
 ![image](https://user-images.githubusercontent.com/19217956/123749908-9259f480-d8d3-11eb-8193-1a02d940a298.png)
 
-2. Enter the URL for the AWS SDK for iOS Swift Package Manager GitHub repo (https://github.com/roam-ai/roam-ios) into the search bar and click Next.
+2. Enter the URL for the Roam SDK for iOS Swift Package Manager GitHub repo (https://github.com/roam-ai/roam-ios) into the search bar and click Next.
 
 ![Screenshot 2021-06-29 at 12 17 45 PM](https://user-images.githubusercontent.com/19217956/123750283-0d230f80-d8d4-11eb-9bfc-7f2004b612c5.png)
 
