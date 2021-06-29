@@ -50,7 +50,37 @@ To integrate the Roam SDK, you need a Roam account.
   
   
 
-### CocoaPods Installation
+### Include the SDK for iOS in an Existing Application
+
+There are several ways to integrate the AWS Mobile SDK for iOS into your own project:
+
+- [x] Swift Package Manager
+- [x] CocoaPods
+- [ ] Carthage (Will be added soon)
+- [x] Dynamic Frameworks
+
+#### Swift Package Manager Installation
+
+1. Swift Package Manager is distributed with Xcode. To start adding the AWS SDK to your iOS project, open your project in Xcode and select File > Swift Packages > Add Package Dependency.
+
+![image](https://user-images.githubusercontent.com/19217956/123749908-9259f480-d8d3-11eb-8193-1a02d940a298.png)
+
+2. Enter the URL for the AWS SDK for iOS Swift Package Manager GitHub repo (https://github.com/roam-ai/roam-ios) into the search bar and click Next.
+
+![Screenshot 2021-06-29 at 12 17 45 PM](https://user-images.githubusercontent.com/19217956/123750283-0d230f80-d8d4-11eb-9bfc-7f2004b612c5.png)
+
+3. You'll see the repository rules for which version of the SDK you want Swift Package Manager to install. Choose the first rule, Version, and select Up to Next Minor as it will use the latest compatible version of the dependency that can be detected from the main branch, then click Next.
+
+![Screenshot 2021-06-29 at 12 20 11 PM](https://user-images.githubusercontent.com/19217956/123750579-612df400-d8d4-11eb-918a-48799fa7999b.png)
+
+4. Select all that are appropriate, then click Finish.
+
+![Screenshot 2021-06-29 at 12 22 38 PM](https://user-images.githubusercontent.com/19217956/123750894-b8cc5f80-d8d4-11eb-9bdc-e809ad706702.png)
+
+You can always go back and modify which SPM packages are included in your project by opening the Swift Packages tab for your project: Click on the Project file in the Xcode navigator, then click on your project's icon, then select the Swift Packages tab.
+
+
+#### CocoaPods Installation
 
 Follow the steps below to add the SDK to the project using CocoaPods. Add the below to the `Podfile`
 
@@ -62,9 +92,9 @@ Then run `pod install`.
 
 This will add the Roam SDK and its dependencies to your project. The Roam SDK depends on `CoreLocation`, `AWSMobileClient` and `AWSIoT` for fetching locations and its transmission to our servers. The SDK supports iOS 10 and above.
 
-### Manual Installation
+#### Manual Installation
 
-If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.0.5/Roam.framework.zip) file.
+If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.0.6/Roam.xcframework.zip) file.
 
 Unzip the file and add the Roam `Roam.framework` to your Xcode project by dragging the file into your Project Navigator.
 
@@ -78,7 +108,7 @@ AWSCore.xcframework
 AWSIoT.xcframework
 AWSMobileClientXCF.xcframework
 ```
-Make sure the the added frameworks under Linked Frameworks and Libraries section are selected as `Embed&Sign`
+Make sure the the added frameworks under Linked Frameworks and Libraries section are selected as `Embed & Sign`
 
 ![Screenshot 2021-06-25 at 8 45 56 PM](https://user-images.githubusercontent.com/19217956/123446788-d8bf0300-d5f6-11eb-96e2-d88e432c209c.png)
 
