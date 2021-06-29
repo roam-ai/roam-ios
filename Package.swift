@@ -12,7 +12,7 @@ let package = Package(
    targets: [
        .binaryTarget(
            name: "Roam",
-           url: "Roam.xcframework.zip",
+           url: "/Roam.xcframework.zip",
            checksum: "ae12720a239c78930e1a7b7b57b16fb92c4e100ca06cfde91ab36688a5f7c36f")
    ]
 )
