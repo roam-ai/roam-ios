@@ -1,0 +1,11 @@
+framework module Roam {
+  umbrella header "Roam.h"
+
+  export *
+  module * { export * }
+}
+
+module Roam.Swift {
+    header "Roam-Swift.h"
+    requires objc
+}
