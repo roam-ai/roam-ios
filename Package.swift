@@ -3,10 +3,10 @@
 import PackageDescription
 
 let package = Package(
-   name: "Raom",
+   name: "roam-ios",
    products: [
        .library(
-           name: "Roam",
+           name: "roam-ios",
            targets: ["Roam"]),
    ],
    targets: [
