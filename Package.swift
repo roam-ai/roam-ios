@@ -11,6 +11,6 @@ let package = Package(
    targets: [
        .binaryTarget(
            name: "Roam",
-           path: "Roam.xcframework.zip")
+           path: "Roam/Roam.xcframework")
    ]
 )
