@@ -52,7 +52,7 @@ To integrate the Roam SDK, you need a Roam account.
 
 ### Include the SDK for iOS in an Existing Application
 
-There are several ways to integrate the AWS Mobile SDK for iOS into your own project:
+There are several ways to integrate the Roam Mobile SDK for iOS into your own project:
 
 - [x] Swift Package Manager
 - [x] CocoaPods
