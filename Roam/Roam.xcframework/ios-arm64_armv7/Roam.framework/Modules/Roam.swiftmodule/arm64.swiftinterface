@@ -165,14 +165,12 @@ extension Reachability {
   @objc public static func setDeviceToken(_ deviceToken: Foundation.Data)
   @objc public static func startTracking(_ trackingMethod: RoamTrackingMode, options: RoamTrackingCustomMethods? = nil)
   @objc public static func stopTracking()
-  @objc public static func startSelfTracking(_ trackingMethod: RoamTrackingMode, options: RoamTrackingCustomMethods? = nil)
-  @objc public static func stopSelfTracking()
   @objc public static func requestLocation()
   @objc public static func isLocationEnabled() -> Swift.Bool
   @objc public static func isLocationTracking() -> Swift.Bool
   @objc public static func locationPermissionStatus() -> Swift.Int
   @objc public static func getCurrentLocation(_ accuracy: Swift.Int, handler: RoamCurrentLocationCompletionhandler? = nil)
-  @objc public static func updateCurrentLocation(_ accuracy: Swift.Int)
+  @objc public static func updateCurrentLocation(_ accuracy: Swift.Int, _ publish: RoamPublish? = nil)
   @objc public static func startTrip(_ tripId: Swift.String, _ tripDesc: Swift.String? = nil, handler: RoamTripCompletionhandler? = nil)
   @objc public static func stopTrip(_ tripId: Swift.String, handler: RoamTripCompletionhandler? = nil)
   @objc public static func pauseTrip(_ tripId: Swift.String, handler: RoamTripCompletionhandler? = nil)
@@ -204,6 +202,7 @@ extension Reachability {
   @objc public static func unsubscribe(_ type: RoamSubscribe, _ userId: Swift.String)
   @objc public static func stopPublishing()
   @objc public static func enableAccuracyEngine(_ accuracy: Swift.Int)
+  @objc public static func updateLocationWhenStationary(_ value: Swift.Int)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -219,7 +218,7 @@ extension Reachability {
 @_inheritsConvenienceInitializers @objc public class RoamTrackingCustomMethodsObjcWrapper : ObjectiveC.NSObject {
   @objc final public let customMethods: RoamTrackingCustomMethods
   @objc override dynamic public init()
-  @objc public func setUpCustomOptions(desiredAccuracy: LocationAccuracy, useVisit: Swift.Bool, showsBackgroundLocationIndicator: Swift.Bool, distanceFilter: CoreLocation.CLLocationDistance, useSignificant: Swift.Bool, useRegionMonitoring: Swift.Bool, useDynamicGeofencRadius: Swift.Bool, geofenceRadius: Swift.Int, allowBackgroundLocationUpdates: Swift.Bool, activityType: CoreLocation.CLActivityType, pausesLocationUpdatesAutomatically: Swift.Bool, useStandardLocationServices: Swift.Bool, accuracyFilter: Swift.Int)
+  @objc public func setUpCustomOptions(desiredAccuracy: LocationAccuracy, useVisit: Swift.Bool, showsBackgroundLocationIndicator: Swift.Bool, distanceFilter: CoreLocation.CLLocationDistance, useSignificant: Swift.Bool, useRegionMonitoring: Swift.Bool, useDynamicGeofencRadius: Swift.Bool, geofenceRadius: Swift.Int, allowBackgroundLocationUpdates: Swift.Bool, activityType: CoreLocation.CLActivityType, pausesLocationUpdatesAutomatically: Swift.Bool, useStandardLocationServices: Swift.Bool, accuracyFilter: Swift.Int, updateInterval: Swift.Int)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripStatusListener : ObjectiveC.NSObject {
@@ -262,6 +261,7 @@ extension UIDevice {
   @objc public var speed: Foundation.NSNumber!
   @objc public var userId: Swift.String!
   @objc public var verticalAccuracy: Foundation.NSNumber!
+  @objc public var metaData: Swift.Dictionary<Swift.String, Any>?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -284,6 +284,7 @@ extension UIDevice {
   @objc public var tripId: Swift.String?
   @objc public var userId: Swift.String?
   @objc public var veritcalAccuracy: Foundation.NSNumber
+  @objc public var location_metadata: Swift.Dictionary<Swift.String, Any>?
   @objc override dynamic public init()
   @objc deinit
 }
@@ -387,6 +388,7 @@ extension UIDevice {
   @objc final public let location: CoreLocation.CLLocation
   @objc final public let timezoneOffset: Swift.String?
   @objc final public let recordedAt: Swift.String?
+  @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc override dynamic public init()
   @objc deinit
 }

@@ -358,6 +358,7 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
+@class RoamPublish;
 @class RoamTrip;
 @class RoamCreateTrip;
 @class RoamGetTrip;
@@ -365,7 +366,6 @@ enum RoamTrackingMode : NSInteger;
 @class RoamTripListener;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
-@class RoamPublish;
 enum RoamSubscribe : NSInteger;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
@@ -381,14 +381,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
 + (void)stopTracking;
-+ (void)startSelfTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
-+ (void)stopSelfTracking;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 + (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateCurrentLocation:(NSInteger)accuracy;
++ (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
 + (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
@@ -420,6 +418,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId;
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
++ (void)updateLocationWhenStationary:(NSInteger)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -487,6 +486,7 @@ SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @property (nonatomic, copy) NSString * _Nullable tripId;
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -523,6 +523,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
 @property (nonatomic, readonly, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -544,6 +545,7 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @property (nonatomic, strong) NSNumber * _Null_unspecified speed;
 @property (nonatomic, copy) NSString * _Null_unspecified userId;
 @property (nonatomic, strong) NSNumber * _Null_unspecified verticalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -600,7 +602,7 @@ SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
 @interface RoamTrackingCustomMethodsObjcWrapper : NSObject
 @property (nonatomic, readonly, strong) RoamTrackingCustomMethods * _Nonnull customMethods;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter;
+- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
 @end
 
 typedef SWIFT_ENUM(NSInteger, RoamTrackingMode, open) {
@@ -1168,6 +1170,7 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
+@class RoamPublish;
 @class RoamTrip;
 @class RoamCreateTrip;
 @class RoamGetTrip;
@@ -1175,7 +1178,6 @@ enum RoamTrackingMode : NSInteger;
 @class RoamTripListener;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
-@class RoamPublish;
 enum RoamSubscribe : NSInteger;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
@@ -1191,14 +1193,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
 + (void)stopTracking;
-+ (void)startSelfTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
-+ (void)stopSelfTracking;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 + (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateCurrentLocation:(NSInteger)accuracy;
++ (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
 + (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
@@ -1230,6 +1230,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId;
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
++ (void)updateLocationWhenStationary:(NSInteger)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1297,6 +1298,7 @@ SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @property (nonatomic, copy) NSString * _Nullable tripId;
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1333,6 +1335,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
 @property (nonatomic, readonly, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1354,6 +1357,7 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @property (nonatomic, strong) NSNumber * _Null_unspecified speed;
 @property (nonatomic, copy) NSString * _Null_unspecified userId;
 @property (nonatomic, strong) NSNumber * _Null_unspecified verticalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1410,7 +1414,7 @@ SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
 @interface RoamTrackingCustomMethodsObjcWrapper : NSObject
 @property (nonatomic, readonly, strong) RoamTrackingCustomMethods * _Nonnull customMethods;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter;
+- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
 @end
 
 typedef SWIFT_ENUM(NSInteger, RoamTrackingMode, open) {
@@ -1978,6 +1982,7 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
+@class RoamPublish;
 @class RoamTrip;
 @class RoamCreateTrip;
 @class RoamGetTrip;
@@ -1985,7 +1990,6 @@ enum RoamTrackingMode : NSInteger;
 @class RoamTripListener;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
-@class RoamPublish;
 enum RoamSubscribe : NSInteger;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
@@ -2001,14 +2005,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
 + (void)stopTracking;
-+ (void)startSelfTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
-+ (void)stopSelfTracking;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 + (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateCurrentLocation:(NSInteger)accuracy;
++ (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
 + (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
@@ -2040,6 +2042,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId;
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
++ (void)updateLocationWhenStationary:(NSInteger)value;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2107,6 +2110,7 @@ SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @property (nonatomic, copy) NSString * _Nullable tripId;
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2143,6 +2147,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
 @property (nonatomic, readonly, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2164,6 +2169,7 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @property (nonatomic, strong) NSNumber * _Null_unspecified speed;
 @property (nonatomic, copy) NSString * _Null_unspecified userId;
 @property (nonatomic, strong) NSNumber * _Null_unspecified verticalAccuracy;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2220,7 +2226,7 @@ SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
 @interface RoamTrackingCustomMethodsObjcWrapper : NSObject
 @property (nonatomic, readonly, strong) RoamTrackingCustomMethods * _Nonnull customMethods;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter;
+- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
 @end
 
 typedef SWIFT_ENUM(NSInteger, RoamTrackingMode, open) {
