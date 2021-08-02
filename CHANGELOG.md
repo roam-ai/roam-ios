@@ -40,3 +40,12 @@ Modified:
 ## 0.0.8
 
 - Fix for #23
+
+## 0.0.9
+
+Modified:
+- #19 Allow meta-data support for updating location ie. updateCurrentLocation method
+Removed:
+- #20 Combine startTracking and startSelfTracking methods
+Added:
+- #21 Update location when user comes to stationary
