@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2489B100F0132363AD236295243F0FD0 /* PBXContainerItemProxy */ = {
+		4C96AE7DD54C7291004B1512FAD359D8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -36,28 +36,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05601A2A7FD7999A05E3A00E29759E56 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSAuthCore.xcframework; path = Roam/AWSAuthCore.xcframework; sourceTree = "<group>"; };
-		05D55BC250142FEBEAED3CCB6A8A779F /* Roam.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Roam.framework; path = Roam/Roam.framework; sourceTree = "<group>"; };
-		23161EA61D91F9A5766F6E16E597908F /* AWSIoT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSIoT.xcframework; path = Roam/AWSIoT.xcframework; sourceTree = "<group>"; };
-		31F78D31C4F90B237182D25C20DC4BAE /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProviderASF.xcframework; path = Roam/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
+		1AD161E6E0EB3DD24EB541C19344BEA2 /* Roam.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Roam.xcframework; path = Roam/Roam.xcframework; sourceTree = "<group>"; };
+		21B34DCD0D9A0AED91E7B41455963A7F /* AWSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCore.xcframework; path = Roam/AWSCore.xcframework; sourceTree = "<group>"; };
 		4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RoamExample.framework; path = "Pods-RoamExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C4F592BC21A899D4BE0D5A7A0C8EF /* Pods-RoamExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RoamExample-dummy.m"; sourceTree = "<group>"; };
 		5DEAA4EE93B2424B090711B469DD0716 /* Pods-RoamExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RoamExample-frameworks.sh"; sourceTree = "<group>"; };
 		65B6F29C58FFAA645E5A60C578FE88D5 /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		742D42927C9368B75D9EA1B5BCCFA35B /* Pods-RoamExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RoamExample.modulemap"; sourceTree = "<group>"; };
-		74C8174D29C871C8FC08C2799B77C6DD /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProvider.xcframework; path = Roam/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
-		7813B7DDAEFCCA4075E0550644344CEC /* roam-ios-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "roam-ios-xcframeworks.sh"; sourceTree = "<group>"; };
-		792C28E22E8B231282B676AD74D06575 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSMobileClientXCF.xcframework; path = Roam/AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
-		7B23021BC9F24D61484967FB355713D8 /* roam-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.debug.xcconfig"; sourceTree = "<group>"; };
-		8FBACCB4C53D2458E002C6BA1982CD5D /* Roam-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Roam-Swift.h"; path = "Roam/Roam.framework/Headers/Roam-Swift.h"; sourceTree = "<group>"; };
+		77845088CE1597E9C40CE715DBF7FB92 /* roam-ios-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "roam-ios-xcframeworks.sh"; sourceTree = "<group>"; };
 		93269D3ED3B819893F6600D6D3CEBBD7 /* Pods-RoamExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RoamExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		97E4E4AC78E4CC303ECD6B982367F31D /* Pods-RoamExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoamExample.release.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A874A92C54A15F6FAD50BEE22CAB04DC /* Roam.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Roam.h; path = Roam/Roam.framework/Headers/Roam.h; sourceTree = "<group>"; };
-		AD036977F5C2775D156F26F267D3680C /* AWSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCore.xcframework; path = Roam/AWSCore.xcframework; sourceTree = "<group>"; };
-		C3A75D53499C46C11B949BB9000EBF0F /* roam-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.release.xcconfig"; sourceTree = "<group>"; };
+		AFFCE6A6AA425F612E2C692DF4AE7F46 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProvider.xcframework; path = Roam/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
+		B13F67A27F010A2C2194D986EA253357 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProviderASF.xcframework; path = Roam/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
+		B87387F409B546E6520CEFF2D69244C1 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSMobileClientXCF.xcframework; path = Roam/AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
+		B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.release.xcconfig"; sourceTree = "<group>"; };
 		C68C6ECEEAD8C2251D165292D288EAA8 /* Pods-RoamExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RoamExample-Info.plist"; sourceTree = "<group>"; };
+		D20539864964E36E70FDE86EFE10DFF7 /* AWSIoT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSIoT.xcframework; path = Roam/AWSIoT.xcframework; sourceTree = "<group>"; };
+		E12C66D95EF3DD16D78D54D3A2103025 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSAuthCore.xcframework; path = Roam/AWSAuthCore.xcframework; sourceTree = "<group>"; };
+		EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F604EAAE88E46F0ED6B234491EDEC615 /* Pods-RoamExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RoamExample-umbrella.h"; sourceTree = "<group>"; };
 		FE2FD5EAA9FA30915C6D6F1ED00F782A /* Pods-RoamExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RoamExample-acknowledgements.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,45 +72,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		240F256783DEBDC7D94DBEC01D18303B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7813B7DDAEFCCA4075E0550644344CEC /* roam-ios-xcframeworks.sh */,
-				7B23021BC9F24D61484967FB355713D8 /* roam-ios.debug.xcconfig */,
-				C3A75D53499C46C11B949BB9000EBF0F /* roam-ios.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/roam-ios";
-			sourceTree = "<group>";
-		};
-		2F837FA9F4E9112DA7DEF10D7A1C5D7B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7C9432BBD961C4A95E5F4064EDD87703 /* roam-ios */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		52D7A2E9CE5FA62CE3CA5C5E03E455AD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				05601A2A7FD7999A05E3A00E29759E56 /* AWSAuthCore.xcframework */,
-				74C8174D29C871C8FC08C2799B77C6DD /* AWSCognitoIdentityProvider.xcframework */,
-				31F78D31C4F90B237182D25C20DC4BAE /* AWSCognitoIdentityProviderASF.xcframework */,
-				AD036977F5C2775D156F26F267D3680C /* AWSCore.xcframework */,
-				23161EA61D91F9A5766F6E16E597908F /* AWSIoT.xcframework */,
-				792C28E22E8B231282B676AD74D06575 /* AWSMobileClientXCF.xcframework */,
-				05D55BC250142FEBEAED3CCB6A8A779F /* Roam.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		5B5770827284488C653A07C9564911CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77845088CE1597E9C40CE715DBF7FB92 /* roam-ios-xcframeworks.sh */,
+				EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */,
+				B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/roam-ios";
 			sourceTree = "<group>";
 		};
 		5DB987F501FA11ECF928B344F8D481C0 /* Pods-RoamExample */ = {
@@ -148,16 +124,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7C9432BBD961C4A95E5F4064EDD87703 /* roam-ios */ = {
+		A058F4FD6A0C7A422BFAB3E53D8E6F1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A874A92C54A15F6FAD50BEE22CAB04DC /* Roam.h */,
-				8FBACCB4C53D2458E002C6BA1982CD5D /* Roam-Swift.h */,
-				52D7A2E9CE5FA62CE3CA5C5E03E455AD /* Frameworks */,
-				240F256783DEBDC7D94DBEC01D18303B /* Support Files */,
+				E12C66D95EF3DD16D78D54D3A2103025 /* AWSAuthCore.xcframework */,
+				AFFCE6A6AA425F612E2C692DF4AE7F46 /* AWSCognitoIdentityProvider.xcframework */,
+				B13F67A27F010A2C2194D986EA253357 /* AWSCognitoIdentityProviderASF.xcframework */,
+				21B34DCD0D9A0AED91E7B41455963A7F /* AWSCore.xcframework */,
+				D20539864964E36E70FDE86EFE10DFF7 /* AWSIoT.xcframework */,
+				B87387F409B546E6520CEFF2D69244C1 /* AWSMobileClientXCF.xcframework */,
+				1AD161E6E0EB3DD24EB541C19344BEA2 /* Roam.xcframework */,
 			);
-			name = "roam-ios";
-			path = "roam-ios";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -165,7 +143,7 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				2F837FA9F4E9112DA7DEF10D7A1C5D7B /* Pods */,
+				EDFF87F03FA40B5A4F819BF96EFFE209 /* Pods */,
 				786C67AC888EC01C325E7B08A161A220 /* Products */,
 				64CFB61D0AF3AA7EA4F38D70245875DC /* Targets Support Files */,
 			);
@@ -177,6 +155,24 @@
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DE0FF84AF869C83D81A0268A5E0C7836 /* roam-ios */ = {
+			isa = PBXGroup;
+			children = (
+				A058F4FD6A0C7A422BFAB3E53D8E6F1A /* Frameworks */,
+				5B5770827284488C653A07C9564911CC /* Support Files */,
+			);
+			name = "roam-ios";
+			path = "roam-ios";
+			sourceTree = "<group>";
+		};
+		EDFF87F03FA40B5A4F819BF96EFFE209 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DE0FF84AF869C83D81A0268A5E0C7836 /* roam-ios */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,7 +201,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B64D9743714D95D376D720882D434AFD /* PBXTargetDependency */,
+				1F7701FC15098654991FE24B5DBB7099 /* PBXTargetDependency */,
 			);
 			name = "Pods-RoamExample";
 			productName = "Pods-RoamExample";
@@ -282,18 +278,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B64D9743714D95D376D720882D434AFD /* PBXTargetDependency */ = {
+		1F7701FC15098654991FE24B5DBB7099 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "roam-ios";
 			target = EACB84FBFAD5BA2E6EB945DF04829763 /* roam-ios */;
-			targetProxy = 2489B100F0132363AD236295243F0FD0 /* PBXContainerItemProxy */;
+			targetProxy = 4C96AE7DD54C7291004B1512FAD359D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0C8D6D830DA0D46058C2F16BF0405E57 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B23021BC9F24D61484967FB355713D8 /* roam-ios.debug.xcconfig */;
+			baseConfigurationReference = EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,7 +306,7 @@
 		};
 		101DA4AD181502D4E46980C17916CF00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3A75D53499C46C11B949BB9000EBF0F /* roam-ios.release.xcconfig */;
+			baseConfigurationReference = B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

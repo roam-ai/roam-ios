@@ -1,22 +1,16 @@
 PODS:
-  - roam-ios (0.0.5)
+  - roam-ios (0.0.9)
 
 DEPENDENCIES:
-  - roam-ios (from `https://github.com/roam-ai/roam-ios.git`, tag `0.0.5`)
+  - roam-ios
 
-EXTERNAL SOURCES:
-  roam-ios:
-    :git: https://github.com/roam-ai/roam-ios.git
-    :tag: 0.0.5
-
-CHECKOUT OPTIONS:
-  roam-ios:
-    :git: https://github.com/roam-ai/roam-ios.git
-    :tag: 0.0.5
+SPEC REPOS:
+  trunk:
+    - roam-ios
 
 SPEC CHECKSUMS:
-  roam-ios: 9c450f4103548a37f5f922865d6528b3d350830b
+  roam-ios: 23325688db97d7a5dd91efebb9388f37db4f1bd2
 
-PODFILE CHECKSUM: 7dcd063a165a097aef374cd924884a0b922b270f
+PODFILE CHECKSUM: 28a0e1af1dc68ac408aa5f83c093313cf5ccdcb2
 
 COCOAPODS: 1.10.1

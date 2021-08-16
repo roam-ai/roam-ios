@@ -4,7 +4,7 @@
 target 'RoamExample' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'roam-ios',:git => 'https://github.com/roam-ai/roam-ios.git',:tag => '0.0.5'
+  pod 'roam-ios'
 
   # Pods for RoamExample
 

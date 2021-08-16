@@ -34,7 +34,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var subScribeBtn: UIButton!
     @IBOutlet weak var trackingLabel: UILabel!
     @IBOutlet weak var otherLocationBtn: GradientButton!
-    
+    @IBOutlet weak var updateStationary: GradientButton!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -304,5 +305,30 @@ class HomeViewController: UIViewController {
             self.accuracyLabel.text = "Accuracy Engine On"
             Roam.enableAccuracyEngine()
         }
+    }
+    
+    @IBAction func updateStationaryAction(_ sender: Any){
+        let alertController = UIAlertController(title: "Update Stationary interval", message: nil, preferredStyle: .alert)
+        alertController.addTextField { (textField : UITextField!) -> Void in
+            textField.placeholder = "Enter location update interval"
+            textField.keyboardType = .numberPad
+        }
+
+        let saveAction = UIAlertAction(title: "Submit", style: .default, handler: { alert -> Void in
+            if let textField = alertController.textFields?[0] {
+                if textField.text!.count > 0 {
+                    Roam.updateLocationWhenStationary(Int(textField.text!)!)
+                }
+            }
+        })
+        
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style:.cancel, handler: nil)
+        
+        alertController.addAction(cancelAction)
+        alertController.addAction(saveAction)
+        alertController.preferredAction = saveAction
+        self.present(alertController, animated: true, completion: nil)
+        
     }
 }

@@ -1,6 +1,6 @@
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 EXCLUDED_ARCHS[sdk=iphonesimulator*] = arm64
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/roam-ios/Roam" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSIoT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/roam-ios/Roam" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCore" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSIoT" "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Roam"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
 OTHER_LDFLAGS = $(inherited) -framework "AWSAuthCore" -framework "AWSCognitoIdentityProvider" -framework "AWSCognitoIdentityProviderASF" -framework "AWSCore" -framework "AWSIoT" -framework "AWSMobileClientXCF" -framework "Roam"

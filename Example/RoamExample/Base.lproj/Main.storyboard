@@ -167,7 +167,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JuD-w4-4JO">
-                                        <rect key="frame" x="53" y="0.0" width="308" height="839.5"/>
+                                        <rect key="frame" x="53" y="0.0" width="308" height="885.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsT-9R-Hi8">
                                                 <rect key="frame" x="0.0" y="0.0" width="308" height="21.5"/>
@@ -272,7 +272,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="scR-Yj-ixp">
-                                                <rect key="frame" x="0.0" y="472" width="308" height="82"/>
+                                                <rect key="frame" x="0.0" y="472" width="308" height="128"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MNN-Wy-dG6">
                                                         <rect key="frame" x="0.0" y="0.0" width="308" height="36"/>
@@ -327,16 +327,32 @@
                                                             <action selector="changeTrackingAction:" destination="PcD-kp-szV" eventType="touchUpInside" id="a3F-SV-TU4"/>
                                                         </connections>
                                                     </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Or-xC-LUf" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="92" width="308" height="36"/>
+                                                        <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                                        <state key="normal" title="Update Stationary Interval">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="updateStationaryAction:" destination="PcD-kp-szV" eventType="touchUpInside" id="EFf-NZ-25a"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-R4-1NU">
-                                                <rect key="frame" x="0.0" y="574" width="308" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="620" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ao9-BY-BX7">
-                                                <rect key="frame" x="0.0" y="615.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="661.5" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOL-jx-82u" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -373,7 +389,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-Ad-DhV">
-                                                <rect key="frame" x="0.0" y="671.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="717.5" width="308" height="0.0"/>
                                                 <subviews>
                                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-Wj-FGG" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="36"/>
@@ -410,7 +426,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-dP-C5k">
-                                                <rect key="frame" x="0.0" y="691.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="737.5" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Wc-WoR" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -447,7 +463,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6e7-xN-DsN">
-                                                <rect key="frame" x="0.0" y="747.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="793.5" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-vR-I23" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -484,7 +500,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apH-tz-7wC" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="793.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="839.5" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Tracking Settings">
@@ -500,7 +516,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-nR-SQl" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="793.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="839.5" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logs">
@@ -513,7 +529,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y20-2I-55P" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="803.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="849.5" width="308" height="36"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logout">
@@ -571,6 +587,7 @@
                         <outlet property="trackingLabel" destination="fRC-rr-WcZ" id="6RA-s7-kh8"/>
                         <outlet property="trackingSettingBtn" destination="apH-tz-7wC" id="tNq-62-6z0"/>
                         <outlet property="udpateLocationBtn" destination="kOL-jx-82u" id="VrV-wM-Bvo"/>
+                        <outlet property="updateStationary" destination="1Or-xC-LUf" id="n23-Ql-WTy"/>
                         <outlet property="userDescTextField" destination="QAJ-gg-Xqc" id="eS8-OJ-cra"/>
                         <outlet property="userIdTextField" destination="qSR-a9-DMd" id="3Sv-dS-QtF"/>
                     </connections>
@@ -1292,7 +1309,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="setDescAction:" destination="PcD-kp-szV" eventType="touchUpInside" id="eEY-N5-NGP"/>
                                     <action selector="unsubscribeAction:" destination="Fz5-t3-M7Z" eventType="touchUpInside" id="6Oz-08-Qhh"/>
                                 </connections>
                             </button>
@@ -2336,7 +2352,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="nextAction:" destination="C4a-SD-QjS" eventType="touchUpInside" id="2zB-XZ-ZvQ"/>
-                                    <action selector="setDescAction:" destination="PcD-kp-szV" eventType="touchUpInside" id="j2m-ey-B14"/>
                                     <action selector="unsubscribeAction:" destination="Fz5-t3-M7Z" eventType="touchUpInside" id="DJv-LE-gq1"/>
                                 </connections>
                             </button>
@@ -2764,6 +2779,9 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="1Or-xC-LUf">
+            <size key="intrinsicContentSize" width="233" height="36"/>
+        </designable>
         <designable name="2TS-3O-M5L">
             <size key="intrinsicContentSize" width="61" height="36"/>
         </designable>

@@ -1,5 +1,5 @@
 ${PODS_ROOT}/Target Support Files/Pods-RoamExample/Pods-RoamExample-frameworks.sh
-${PODS_ROOT}/roam-ios/Roam/Roam.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/Roam/Roam.framework/Roam
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework/AWSAuthCore
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework/AWSCognitoIdentityProvider
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF

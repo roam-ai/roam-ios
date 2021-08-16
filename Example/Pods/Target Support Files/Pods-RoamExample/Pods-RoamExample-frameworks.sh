@@ -175,7 +175,7 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/roam-ios/Roam/Roam.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Roam/Roam.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
@@ -184,7 +184,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSMobileClientXCF/AWSMobileClientXCF.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/roam-ios/Roam/Roam.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Roam/Roam.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSAuthCore/AWSAuthCore.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProvider/AWSCognitoIdentityProvider.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/AWSCognitoIdentityProviderASF/AWSCognitoIdentityProviderASF.framework"
