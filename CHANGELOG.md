@@ -49,3 +49,11 @@ Removed:
 - #20 Combine startTracking and startSelfTracking methods
 Added:
 - #21 Update location when user comes to stationary
+
+## 0.0.10
+
+Modified:
+- #28 Make startTrip independent by combining it with startTracking and createTrip methods
+
+Added:
+- `metadata` support for user and trips are added
