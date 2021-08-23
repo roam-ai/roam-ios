@@ -69,9 +69,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
     
 
-    func didUpdateLocation(_ motion: RoamLocation) {
-        showNotification(motion)
-        AppUtility.saveLocationToLocal(motion)
+    func didUpdateLocation(_ location: RoamLocation) {
+        print("didUpdateLocation",location.location)
+        showNotification(location)
+        AppUtility.saveLocationToLocal(location)
         nc.post(name: Notification.Name("UserLoggedIn"), object: nil)
 
     }
@@ -82,6 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
 
     func didReceiveUserLocation(_ location: RoamLocationReceived) {
+        print("didReceiveUserLocation",location.description)
         AppUtility.saveLocationToLocal(location)
         nc.post(name: Notification.Name("UserLoggedIn"), object: nil)
     }

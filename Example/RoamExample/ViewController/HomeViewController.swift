@@ -14,9 +14,12 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var publishSegement: UISegmentedControl!
     @IBOutlet weak var accuracySegment: UISegmentedControl!
+    @IBOutlet weak var offlineTrackingSegment: UISegmentedControl!
 
     @IBOutlet weak var publishLabel: UILabel!
     @IBOutlet weak var accuracyLabel: UILabel!
+    @IBOutlet weak var offlineTrackigLabel: UILabel!
+
     @IBOutlet weak var userIdTextField: UITextField!
     @IBOutlet weak var userDescTextField: UITextField!
     @IBOutlet weak var setUserDescBtn: UIButton!
@@ -111,7 +114,7 @@ class HomeViewController: UIViewController {
         if userDescTextField.text!.isEmpty{
             Alert.alertController(title: "User", message: "User description cannot be empty", viewController: self)
         }else{
-            Roam.setDescription(userDescTextField.text!)
+            Roam.updateUser(userDescTextField.text!)
         }
     }
     
@@ -330,5 +333,15 @@ class HomeViewController: UIViewController {
         alertController.preferredAction = saveAction
         self.present(alertController, animated: true, completion: nil)
         
+    }
+    
+    @IBAction func offlineTrackingSegmentAction(_ sender: Any) {
+        if offlineTrackingSegment.selectedSegmentIndex == 0{
+            self.offlineTrackigLabel.text =  "offline Tracking Off"
+            Roam.offlineLocationTracking(false)
+        }else {
+            self.offlineTrackigLabel.text =  "offline Tracking On"
+            Roam.offlineLocationTracking(true)
+        }
     }
 }

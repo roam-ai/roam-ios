@@ -167,7 +167,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JuD-w4-4JO">
-                                        <rect key="frame" x="53" y="0.0" width="308" height="885.5"/>
+                                        <rect key="frame" x="53" y="0.0" width="308" height="978"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsT-9R-Hi8">
                                                 <rect key="frame" x="0.0" y="0.0" width="308" height="21.5"/>
@@ -233,14 +233,30 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiA-r9-A8g">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline Tracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DiA-r9-A8g">
                                                 <rect key="frame" x="0.0" y="245.5" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" red="0.87843137250000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-N2-smw">
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="zqB-gz-B34">
                                                 <rect key="frame" x="0.0" y="287" width="308" height="32"/>
+                                                <segments>
+                                                    <segment title="Off"/>
+                                                    <segment title="On"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="offlineTrackingSegmentAction:" destination="PcD-kp-szV" eventType="valueChanged" id="L6g-ua-XWw"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Publish Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h0v-RR-eUh">
+                                                <rect key="frame" x="0.0" y="338" width="308" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                <color key="textColor" red="0.87843137250000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-N2-smw">
+                                                <rect key="frame" x="0.0" y="379.5" width="308" height="32"/>
                                                 <segments>
                                                     <segment title="Off"/>
                                                     <segment title="On"/>
@@ -250,13 +266,13 @@
                                                 </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Accuracy Engine Off" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lrx-xn-ngS">
-                                                <rect key="frame" x="0.0" y="338" width="308" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="430.5" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" red="0.87843137250000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bjX-hI-kcY">
-                                                <rect key="frame" x="0.0" y="379.5" width="308" height="32"/>
+                                                <rect key="frame" x="0.0" y="472" width="308" height="32"/>
                                                 <segments>
                                                     <segment title="Off"/>
                                                     <segment title="On"/>
@@ -266,13 +282,13 @@
                                                 </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fRC-rr-WcZ">
-                                                <rect key="frame" x="0.0" y="430.5" width="308" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="523" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" red="0.87843137250000003" green="0.12549019610000001" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="scR-Yj-ixp">
-                                                <rect key="frame" x="0.0" y="472" width="308" height="128"/>
+                                                <rect key="frame" x="0.0" y="564.5" width="308" height="128"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MNN-Wy-dG6">
                                                         <rect key="frame" x="0.0" y="0.0" width="308" height="36"/>
@@ -346,13 +362,13 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-R4-1NU">
-                                                <rect key="frame" x="0.0" y="620" width="308" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="712.5" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ao9-BY-BX7">
-                                                <rect key="frame" x="0.0" y="661.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="754" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOL-jx-82u" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -389,7 +405,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-Ad-DhV">
-                                                <rect key="frame" x="0.0" y="717.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="810" width="308" height="0.0"/>
                                                 <subviews>
                                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-Wj-FGG" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="36"/>
@@ -426,7 +442,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-dP-C5k">
-                                                <rect key="frame" x="0.0" y="737.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="830" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Wc-WoR" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -463,7 +479,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6e7-xN-DsN">
-                                                <rect key="frame" x="0.0" y="793.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="886" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-vR-I23" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -500,7 +516,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apH-tz-7wC" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="839.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="932" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Tracking Settings">
@@ -516,7 +532,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-nR-SQl" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="839.5" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="932" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logs">
@@ -529,7 +545,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y20-2I-55P" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="849.5" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="942" width="308" height="36"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logout">
@@ -576,8 +592,10 @@
                         <outlet property="getLocationBtn" destination="fPZ-bs-MAw" id="zpY-sx-LDc"/>
                         <outlet property="logoutsBtn" destination="y20-2I-55P" id="c9D-dO-8HC"/>
                         <outlet property="logsBtn" destination="aUb-nR-SQl" id="Lnd-jh-mS6"/>
+                        <outlet property="offlineTrackigLabel" destination="DiA-r9-A8g" id="2PF-0W-6v0"/>
+                        <outlet property="offlineTrackingSegment" destination="zqB-gz-B34" id="xr4-cK-P99"/>
                         <outlet property="otherLocationBtn" destination="ha6-ME-hfC" id="S1H-Sl-xXT"/>
-                        <outlet property="publishLabel" destination="DiA-r9-A8g" id="WwK-JA-cBr"/>
+                        <outlet property="publishLabel" destination="h0v-RR-eUh" id="SSf-Gr-bh7"/>
                         <outlet property="publishSegement" destination="PVB-N2-smw" id="Elr-zR-I5K"/>
                         <outlet property="requestLocationBtn" destination="yef-V1-Ze3" id="mZf-T2-5tr"/>
                         <outlet property="setUserDescBtn" destination="X1N-xB-a5d" id="EfE-ha-FOH"/>
@@ -1360,10 +1378,42 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pjq-M9-qs2">
+                                <rect key="frame" x="20" y="114" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aOM-XF-QaP"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Online"/>
+                                    <segment title="Offline"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentTripAction:" destination="Vv4-RS-X5e" eventType="valueChanged" id="wxj-PH-cxc"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-KP-ors" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="164" width="374" height="36"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="m8F-AD-T3x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Create Trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createTrip:" destination="Vv4-RS-X5e" eventType="touchUpInside" id="LTc-we-zaH"/>
+                                </connections>
+                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bJh-j2-wVS">
                                 <rect key="frame" x="20" y="64" width="374" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="XXh-0Z-zbU"/>
+                                    <constraint firstAttribute="height" constant="40" id="haf-CF-AMB"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Both"/>
@@ -1375,37 +1425,11 @@
                                     <action selector="segmentAction:" destination="Vv4-RS-X5e" eventType="valueChanged" id="hIF-Cg-MEa"/>
                                 </connections>
                             </segmentedControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="PHq-Us-gsR">
-                                <rect key="frame" x="20" y="124" width="374" height="220"/>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="362-cu-4oF">
+                                <rect key="frame" x="20" y="210" width="374" height="120"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pjq-M9-qs2">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="33"/>
-                                        <segments>
-                                            <segment title="Online"/>
-                                            <segment title="Offline"/>
-                                        </segments>
-                                        <connections>
-                                            <action selector="segmentTripAction:" destination="Vv4-RS-X5e" eventType="valueChanged" id="wxj-PH-cxc"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ViP-KP-ors" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="47" width="374" height="32"/>
-                                        <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                        <state key="normal" title="Create Trip">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="5"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="createTrip:" destination="Vv4-RS-X5e" eventType="touchUpInside" id="LTc-we-zaH"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9G-TW-sKm" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="94" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="30"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Trip Summary">
@@ -1421,7 +1445,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMT-mP-58W" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="141" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="45" width="374" height="30"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Get Trip">
@@ -1437,7 +1461,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw4-zg-jMk" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="188" width="374" height="32"/>
+                                        <rect key="frame" x="0.0" y="90" width="374" height="30"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Trip listener">
@@ -1454,11 +1478,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="220" id="B5b-6n-aDj"/>
+                                    <constraint firstAttribute="height" constant="120" id="bse-Xf-Xn5"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-z0-fGU">
-                                <rect key="frame" x="0.0" y="344" width="414" height="518"/>
+                                <rect key="frame" x="10" y="340" width="394" height="522"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1467,16 +1491,22 @@
                         <viewLayoutGuide key="safeArea" id="tGy-XH-2Wz"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Axu-z0-fGU" firstAttribute="leading" secondItem="tGy-XH-2Wz" secondAttribute="leading" id="0ge-8i-aWT"/>
-                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="trailing" secondItem="Axu-z0-fGU" secondAttribute="trailing" id="4SH-qM-C5F"/>
-                            <constraint firstItem="PHq-Us-gsR" firstAttribute="leading" secondItem="tGy-XH-2Wz" secondAttribute="leading" constant="20" id="8nf-b9-CPi"/>
-                            <constraint firstItem="PHq-Us-gsR" firstAttribute="top" secondItem="bJh-j2-wVS" secondAttribute="bottom" constant="20" id="JVK-ko-5q5"/>
-                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="trailing" secondItem="bJh-j2-wVS" secondAttribute="trailing" constant="20" id="KzK-Jy-AfI"/>
-                            <constraint firstItem="Axu-z0-fGU" firstAttribute="top" secondItem="PHq-Us-gsR" secondAttribute="bottom" id="aar-tM-Wjs"/>
-                            <constraint firstItem="bJh-j2-wVS" firstAttribute="leading" secondItem="tGy-XH-2Wz" secondAttribute="leading" constant="20" id="gXf-cu-pry"/>
-                            <constraint firstItem="bJh-j2-wVS" firstAttribute="top" secondItem="tGy-XH-2Wz" secondAttribute="top" constant="20" id="js5-fI-ncW"/>
-                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="bottom" secondItem="Axu-z0-fGU" secondAttribute="bottom" id="kaj-ON-jF8"/>
-                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="trailing" secondItem="PHq-Us-gsR" secondAttribute="trailing" constant="20" id="oft-XB-L66"/>
+                            <constraint firstItem="Axu-z0-fGU" firstAttribute="leading" secondItem="tGy-XH-2Wz" secondAttribute="leading" constant="10" id="2qh-CB-PtA"/>
+                            <constraint firstItem="pjq-M9-qs2" firstAttribute="top" secondItem="bJh-j2-wVS" secondAttribute="bottom" constant="10" id="4yZ-LG-a52"/>
+                            <constraint firstItem="ViP-KP-ors" firstAttribute="leading" secondItem="pjq-M9-qs2" secondAttribute="leading" id="DVY-Ff-KFW"/>
+                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="trailing" secondItem="bJh-j2-wVS" secondAttribute="trailing" constant="20" id="Jxt-j4-b6W"/>
+                            <constraint firstItem="bJh-j2-wVS" firstAttribute="top" secondItem="tGy-XH-2Wz" secondAttribute="top" constant="20" id="Mve-ow-eYu"/>
+                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="bottom" secondItem="Axu-z0-fGU" secondAttribute="bottom" id="PKM-cG-OcG"/>
+                            <constraint firstItem="362-cu-4oF" firstAttribute="top" secondItem="ViP-KP-ors" secondAttribute="bottom" constant="10" id="R5A-0S-Edh"/>
+                            <constraint firstItem="ViP-KP-ors" firstAttribute="trailing" secondItem="pjq-M9-qs2" secondAttribute="trailing" id="UJ1-c0-M3s"/>
+                            <constraint firstItem="tGy-XH-2Wz" firstAttribute="trailing" secondItem="Axu-z0-fGU" secondAttribute="trailing" constant="10" id="UUY-lX-7fo"/>
+                            <constraint firstItem="pjq-M9-qs2" firstAttribute="trailing" secondItem="bJh-j2-wVS" secondAttribute="trailing" id="ZaM-fS-29k"/>
+                            <constraint firstItem="362-cu-4oF" firstAttribute="trailing" secondItem="ViP-KP-ors" secondAttribute="trailing" id="edZ-hA-lqb"/>
+                            <constraint firstItem="pjq-M9-qs2" firstAttribute="leading" secondItem="bJh-j2-wVS" secondAttribute="leading" id="fIR-ms-1tW"/>
+                            <constraint firstItem="ViP-KP-ors" firstAttribute="top" secondItem="pjq-M9-qs2" secondAttribute="bottom" constant="10" id="fzb-pE-3PC"/>
+                            <constraint firstItem="bJh-j2-wVS" firstAttribute="leading" secondItem="tGy-XH-2Wz" secondAttribute="leading" constant="20" id="gkN-BR-bv7"/>
+                            <constraint firstItem="Axu-z0-fGU" firstAttribute="top" secondItem="362-cu-4oF" secondAttribute="bottom" constant="10" id="qSV-bJ-ftp"/>
+                            <constraint firstItem="362-cu-4oF" firstAttribute="leading" secondItem="ViP-KP-ors" secondAttribute="leading" id="xub-hu-D29"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1487,7 +1517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7dR-Rs-dKz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1483" y="731"/>
+            <point key="canvasLocation" x="1482.608695652174" y="730.58035714285711"/>
         </scene>
         <!--Trip Summary View Controller-->
         <scene sceneID="OGd-3t-MF3">
@@ -2777,6 +2807,302 @@
             </objects>
             <point key="canvasLocation" x="2653.6231884057975" y="-705.13392857142856"/>
         </scene>
+        <!--Create Trip View Controller-->
+        <scene sceneID="re3-R0-YfD">
+            <objects>
+                <viewController storyboardIdentifier="CreateTripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bf8-Sl-VQq" customClass="CreateTripViewController" customModule="RoamExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pbi-p5-kE4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="05p-Pb-gtr">
+                                <rect key="frame" x="20" y="54" width="374" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="isLocal Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAy-UN-2MS">
+                                        <rect key="frame" x="0.0" y="0.0" width="86" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="g9L-ai-fQ6">
+                                        <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="oT5-lg-1f5"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Coordinate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCb-t8-QFj">
+                                <rect key="frame" x="20" y="95" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="QJm-BI-hM9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Tracking Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="caO-9n-hz2">
+                                <rect key="frame" x="20" y="176" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="hHE-aA-1QE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="mKX-VK-WaO">
+                                <rect key="frame" x="20" y="207" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="hP6-Ch-wlD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Active"/>
+                                    <segment title="Balanced"/>
+                                    <segment title="Custom"/>
+                                    <segment title="Passive"/>
+                                </segments>
+                                <connections>
+                                    <action selector="trackingModeAction:" destination="bf8-Sl-VQq" eventType="valueChanged" id="kCB-6M-110"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="wEc-To-qEv">
+                                <rect key="frame" x="20" y="126" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JeN-EI-DLL"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="None"/>
+                                    <segment title="Both"/>
+                                    <segment title="Origin"/>
+                                    <segment title="Destination"/>
+                                </segments>
+                                <connections>
+                                    <action selector="coordinateAction:" destination="bf8-Sl-VQq" eventType="valueChanged" id="lS9-eX-YjU"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter distance in meters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="le0-IE-KjZ">
+                                <rect key="frame" x="20" y="301" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="6ed-zs-oL8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bf8-Sl-VQq" id="pVY-GZ-OJ1"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Caw-52-RHd" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="345" width="374" height="36"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="IBY-hH-pKX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Start Trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="createTripAction:" destination="bf8-Sl-VQq" eventType="touchUpInside" id="0eb-W0-EQs"/>
+                                </connections>
+                            </button>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time in seconds" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q4C-gu-sjd">
+                                <rect key="frame" x="20" y="257" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="l7W-Uk-LbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bf8-Sl-VQq" id="yOB-IX-wyl"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ozp-og-Uce"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="05p-Pb-gtr" firstAttribute="leading" secondItem="Ozp-og-Uce" secondAttribute="leading" constant="20" id="7Fr-ai-Xse"/>
+                            <constraint firstItem="Ozp-og-Uce" firstAttribute="trailing" secondItem="05p-Pb-gtr" secondAttribute="trailing" constant="20" id="B7I-lQ-YKS"/>
+                            <constraint firstItem="QCb-t8-QFj" firstAttribute="top" secondItem="05p-Pb-gtr" secondAttribute="bottom" constant="10" id="Dv5-EX-2uq"/>
+                            <constraint firstItem="q4C-gu-sjd" firstAttribute="top" secondItem="mKX-VK-WaO" secondAttribute="bottom" constant="10" id="FPp-bM-C5S"/>
+                            <constraint firstItem="q4C-gu-sjd" firstAttribute="leading" secondItem="mKX-VK-WaO" secondAttribute="leading" id="Fc4-Ie-Krh"/>
+                            <constraint firstItem="Caw-52-RHd" firstAttribute="trailing" secondItem="le0-IE-KjZ" secondAttribute="trailing" id="G26-en-gVb"/>
+                            <constraint firstItem="QCb-t8-QFj" firstAttribute="leading" secondItem="05p-Pb-gtr" secondAttribute="leading" id="G2R-g6-chp"/>
+                            <constraint firstItem="Caw-52-RHd" firstAttribute="leading" secondItem="le0-IE-KjZ" secondAttribute="leading" id="Mlk-4u-RtA"/>
+                            <constraint firstItem="wEc-To-qEv" firstAttribute="top" secondItem="QCb-t8-QFj" secondAttribute="bottom" constant="10" id="N3A-tD-zyY"/>
+                            <constraint firstItem="wEc-To-qEv" firstAttribute="trailing" secondItem="QCb-t8-QFj" secondAttribute="trailing" id="NDE-uv-5zM"/>
+                            <constraint firstItem="mKX-VK-WaO" firstAttribute="top" secondItem="caO-9n-hz2" secondAttribute="bottom" constant="10" id="PUT-JI-fb3"/>
+                            <constraint firstItem="le0-IE-KjZ" firstAttribute="top" secondItem="q4C-gu-sjd" secondAttribute="bottom" constant="10" id="PcM-X9-vR8"/>
+                            <constraint firstItem="05p-Pb-gtr" firstAttribute="top" secondItem="Ozp-og-Uce" secondAttribute="top" constant="10" id="XS1-DA-epS"/>
+                            <constraint firstItem="Caw-52-RHd" firstAttribute="top" secondItem="le0-IE-KjZ" secondAttribute="bottom" constant="10" id="a24-QQ-tgB"/>
+                            <constraint firstItem="QCb-t8-QFj" firstAttribute="trailing" secondItem="05p-Pb-gtr" secondAttribute="trailing" id="b2I-IX-keQ"/>
+                            <constraint firstItem="le0-IE-KjZ" firstAttribute="trailing" secondItem="q4C-gu-sjd" secondAttribute="trailing" id="g1y-LO-f5X"/>
+                            <constraint firstItem="caO-9n-hz2" firstAttribute="top" secondItem="wEc-To-qEv" secondAttribute="bottom" constant="10" id="iDm-Mb-oJV"/>
+                            <constraint firstItem="caO-9n-hz2" firstAttribute="trailing" secondItem="wEc-To-qEv" secondAttribute="trailing" id="pD2-cT-CLc"/>
+                            <constraint firstItem="caO-9n-hz2" firstAttribute="leading" secondItem="wEc-To-qEv" secondAttribute="leading" id="pTq-Ja-mUW"/>
+                            <constraint firstItem="wEc-To-qEv" firstAttribute="leading" secondItem="QCb-t8-QFj" secondAttribute="leading" id="qz3-sP-Icr"/>
+                            <constraint firstItem="mKX-VK-WaO" firstAttribute="trailing" secondItem="caO-9n-hz2" secondAttribute="trailing" id="tr3-Zf-Urc"/>
+                            <constraint firstItem="mKX-VK-WaO" firstAttribute="leading" secondItem="caO-9n-hz2" secondAttribute="leading" id="ubo-RT-zpX"/>
+                            <constraint firstItem="le0-IE-KjZ" firstAttribute="leading" secondItem="q4C-gu-sjd" secondAttribute="leading" id="ySL-c4-ZKM"/>
+                            <constraint firstItem="q4C-gu-sjd" firstAttribute="trailing" secondItem="mKX-VK-WaO" secondAttribute="trailing" id="zVf-8l-0LO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="coordinateSegment" destination="wEc-To-qEv" id="x6A-fb-EPv"/>
+                        <outlet property="distanceTextfield" destination="le0-IE-KjZ" id="5vh-aD-Abh"/>
+                        <outlet property="isTripLocal" destination="g9L-ai-fQ6" id="cEw-r3-Pla"/>
+                        <outlet property="timeIntervalTextfield" destination="q4C-gu-sjd" id="Ne7-M4-HC4"/>
+                        <outlet property="trackingModeSegment" destination="mKX-VK-WaO" id="vyU-qf-Dnv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VUq-M6-v4P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="1383"/>
+        </scene>
+        <!--Stop Trip View Controller-->
+        <scene sceneID="VNu-rH-QNh">
+            <objects>
+                <viewController storyboardIdentifier="StopTripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gn9-td-oLm" customClass="StopTripViewController" customModule="RoamExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yc2-GA-foG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="UFM-Ju-Vc8">
+                                <rect key="frame" x="20" y="64" width="374" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is ForceStop Trip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bj-NV-JDQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="128.5" height="40"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="k1R-pd-QRL">
+                                        <rect key="frame" x="325" y="0.0" width="51" height="40"/>
+                                    </switch>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="r4N-B5-SSf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Tracking Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4w-nJ-CaR">
+                                <rect key="frame" x="20" y="153" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="RYX-EH-h0I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="YBz-sf-z67">
+                                <rect key="frame" x="20" y="184" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="6Q0-pl-5la"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Active"/>
+                                    <segment title="Balanced"/>
+                                    <segment title="Custom"/>
+                                    <segment title="Passive"/>
+                                </segments>
+                                <connections>
+                                    <action selector="trackingModeAction:" destination="gn9-td-oLm" eventType="valueChanged" id="ASh-IJ-gJ2"/>
+                                </connections>
+                            </segmentedControl>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter distance in meters" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fBQ-q4-vNj">
+                                <rect key="frame" x="20" y="273" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="XRq-DJ-Gwf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gn9-td-oLm" id="lRJ-U3-Qdp"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-oX-No6" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                <rect key="frame" x="20" y="327" width="374" height="36"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Kno-x9-fkz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="Stop Trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopTrip:" destination="gn9-td-oLm" eventType="touchUpInside" id="bTe-8f-vtC"/>
+                                </connections>
+                            </button>
+                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time in seconds" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WK6-6h-7e9">
+                                <rect key="frame" x="20" y="229" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2tf-YJ-beN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gn9-td-oLm" id="nKy-60-4e6"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter time in seconds" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sbj-38-v4B">
+                                <rect key="frame" x="20" y="109" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="a1F-j0-Ayj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gn9-td-oLm" id="Cyo-T4-AXz"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rIw-gc-UbM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WK6-6h-7e9" firstAttribute="top" secondItem="YBz-sf-z67" secondAttribute="bottom" constant="5" id="2j2-Gs-AIq"/>
+                            <constraint firstItem="WK6-6h-7e9" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="4Xh-2l-6zR"/>
+                            <constraint firstItem="CgY-oX-No6" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="BrD-Hy-Cgi"/>
+                            <constraint firstItem="YBz-sf-z67" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="Kpe-R7-bU8"/>
+                            <constraint firstItem="z4w-nJ-CaR" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="Mfi-xG-cYx"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="z4w-nJ-CaR" secondAttribute="trailing" constant="20" id="Nxq-LC-EEc"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="YBz-sf-z67" secondAttribute="trailing" constant="20" id="Qo4-Ov-Vxv"/>
+                            <constraint firstItem="fBQ-q4-vNj" firstAttribute="top" secondItem="WK6-6h-7e9" secondAttribute="bottom" constant="10" id="R2t-Xj-uxo"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="UFM-Ju-Vc8" secondAttribute="trailing" constant="20" id="TV5-sw-e50"/>
+                            <constraint firstItem="YBz-sf-z67" firstAttribute="top" secondItem="z4w-nJ-CaR" secondAttribute="bottom" constant="10" id="Ugw-sS-DgX"/>
+                            <constraint firstItem="UFM-Ju-Vc8" firstAttribute="top" secondItem="rIw-gc-UbM" secondAttribute="top" constant="20" id="VkV-Ds-wYI"/>
+                            <constraint firstItem="fBQ-q4-vNj" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="Y5O-bq-iqJ"/>
+                            <constraint firstItem="UFM-Ju-Vc8" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="cnX-QZ-CTg"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="WK6-6h-7e9" secondAttribute="trailing" constant="20" id="ero-Rx-5mT"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="sbj-38-v4B" secondAttribute="trailing" constant="20" id="etH-D6-bEd"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="CgY-oX-No6" secondAttribute="trailing" constant="20" id="gdY-9U-NgH"/>
+                            <constraint firstItem="sbj-38-v4B" firstAttribute="top" secondItem="UFM-Ju-Vc8" secondAttribute="bottom" constant="5" id="nxa-a8-TUs"/>
+                            <constraint firstItem="z4w-nJ-CaR" firstAttribute="top" secondItem="sbj-38-v4B" secondAttribute="bottom" constant="10" id="ue5-a0-rI2"/>
+                            <constraint firstItem="CgY-oX-No6" firstAttribute="top" secondItem="fBQ-q4-vNj" secondAttribute="bottom" constant="20" id="vVM-b1-WK6"/>
+                            <constraint firstItem="sbj-38-v4B" firstAttribute="leading" secondItem="rIw-gc-UbM" secondAttribute="leading" constant="20" id="vf7-qG-kPc"/>
+                            <constraint firstItem="rIw-gc-UbM" firstAttribute="trailing" secondItem="fBQ-q4-vNj" secondAttribute="trailing" constant="20" id="zr5-NU-NFe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="TimeTextfield" destination="WK6-6h-7e9" id="Oda-ad-KQi"/>
+                        <outlet property="distanceTextField" destination="fBQ-q4-vNj" id="zZo-6T-LJ8"/>
+                        <outlet property="forceStop" destination="k1R-pd-QRL" id="3Ni-Wg-MUL"/>
+                        <outlet property="trackingModeSegment" destination="YBz-sf-z67" id="yna-ZV-Cov"/>
+                        <outlet property="tripIdTextfield" destination="sbj-38-v4B" id="JtU-ay-mRH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MmG-39-CY3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1483" y="1383"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="1Or-xC-LUf">
@@ -2793,6 +3119,12 @@
         </designable>
         <designable name="9Pb-p9-0Pg">
             <size key="intrinsicContentSize" width="99" height="36"/>
+        </designable>
+        <designable name="Caw-52-RHd">
+            <size key="intrinsicContentSize" width="82" height="36"/>
+        </designable>
+        <designable name="CgY-oX-No6">
+            <size key="intrinsicContentSize" width="81" height="36"/>
         </designable>
         <designable name="F6Y-hJ-OHI">
             <size key="intrinsicContentSize" width="186" height="38"/>

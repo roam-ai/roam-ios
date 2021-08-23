@@ -359,6 +359,7 @@ enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
 @class RoamPublish;
+@class RoamStartTrip;
 @class RoamTrip;
 @class RoamCreateTrip;
 @class RoamGetTrip;
@@ -374,9 +375,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
 + (void)initialize:(NSString * _Nonnull)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
-+ (void)createUser:(NSString * _Nonnull)description handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
++ (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)setDescription:(NSString * _Nonnull)description;
++ (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
 + (void)logoutUserWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
@@ -387,15 +388,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 + (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
 + (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
-+ (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(RoamStartTrip * _Nullable, RoamError * _Nullable))handler;
++ (void)startTrip:(NSString * _Nullable)tripId :(BOOL)localTrip :(enum RoamTrackingMode)trackingMode :(NSString * _Nullable)tripDescription :(NSArray<NSArray<NSNumber *> *> * _Nullable)origin :(NSArray<NSArray<NSNumber *> *> * _Nullable)destination :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(RoamStartTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)stopTrip:(NSString * _Nonnull)tripId forceStopTracking:(BOOL)forceStopTracking :(enum RoamTrackingMode)trackingMode :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)resumeTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)forceEndTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)activeTrips:(BOOL)local handler:(void (^ _Nullable)(NSArray<RoamTrip *> * _Nullable, RoamError * _Nullable))handler;
 + (void)deleteTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)syncTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)createTrip:(BOOL)local :(NSDictionary<NSString *, id> * _Nullable)coordinate handler:(void (^ _Nullable)(RoamCreateTrip * _Nullable, RoamError * _Nullable))handler;
++ (void)createTrip:(BOOL)local :(NSDictionary<NSString *, id> * _Nullable)coordinate :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamCreateTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripDetails:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamGetTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripSummary:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripSummary * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripStatus:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripListener * _Nullable, RoamError * _Nullable))handler;
@@ -437,6 +440,7 @@ SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
 @property (nonatomic, copy) NSString * _Null_unspecified tripTrackingUrl;
 @property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
 @property (nonatomic, copy) NSString * _Null_unspecified userId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -469,6 +473,7 @@ SWIFT_CLASS("_TtC4Roam9RoamError")
 SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @interface RoamEvents : NSObject
 @property (nonatomic, copy) NSString * _Nullable activity;
+@property (nonatomic, copy) NSString * _Nullable eventDescription;
 @property (nonatomic, strong) NSNumber * _Nonnull altitude;
 @property (nonatomic, strong) NSNumber * _Nonnull course;
 @property (nonatomic, copy) NSString * _Nullable createdAt;
@@ -583,6 +588,27 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL course;
 @property (nonatomic) BOOL activity;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Roam13RoamStartTrip")
+@interface RoamStartTrip : NSObject
+@property (nonatomic, copy) NSString * _Nullable createdAt;
+@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Nullable destinations;
+@property (nonatomic, copy) NSString * _Nullable tripId;
+@property (nonatomic) BOOL isDeleted;
+@property (nonatomic) BOOL isEnded;
+@property (nonatomic) BOOL isStarted;
+@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Nullable origins;
+@property (nonatomic, copy) NSString * _Nullable tripTrackingUrl;
+@property (nonatomic, copy) NSString * _Nullable updatedAt;
+@property (nonatomic, copy) NSString * _Nullable userId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meteData;
+@property (nonatomic, copy) NSString * _Nullable tripDescription;
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, RoamSubscribe, open) {
@@ -745,6 +771,7 @@ SWIFT_CLASS("_TtC4Roam8RoamUser")
 @property (nonatomic) BOOL nearbyEvents;
 @property (nonatomic, readonly, copy) NSString * _Nonnull account_id;
 @property (nonatomic, readonly, copy) NSString * _Nonnull project_id;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -793,6 +820,7 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic) BOOL is_paused;
 @property (nonatomic) BOOL is_started;
 @property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic, copy) NSString * _Nullable metadata;
 @property (nonatomic, copy) NSString * _Nullable sync_status;
 @property (nonatomic) BOOL synced;
 @property (nonatomic, copy) NSString * _Nullable trip_ended_at;
@@ -1171,6 +1199,7 @@ enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
 @class RoamPublish;
+@class RoamStartTrip;
 @class RoamTrip;
 @class RoamCreateTrip;
 @class RoamGetTrip;
@@ -1186,9 +1215,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
 + (void)initialize:(NSString * _Nonnull)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
-+ (void)createUser:(NSString * _Nonnull)description handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
++ (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)setDescription:(NSString * _Nonnull)description;
++ (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
 + (void)logoutUserWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
 + (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
@@ -1199,15 +1228,17 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 + (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
 + (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
-+ (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)startTrip:(NSString * _Nonnull)tripId :(NSString * _Nullable)tripDesc handler:(void (^ _Nullable)(RoamStartTrip * _Nullable, RoamError * _Nullable))handler;
++ (void)startTrip:(NSString * _Nullable)tripId :(BOOL)localTrip :(enum RoamTrackingMode)trackingMode :(NSString * _Nullable)tripDescription :(NSArray<NSArray<NSNumber *> *> * _Nullable)origin :(NSArray<NSArray<NSNumber *> *> * _Nullable)destination :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(RoamStartTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)stopTrip:(NSString * _Nonnull)tripId forceStopTracking:(BOOL)forceStopTracking :(enum RoamTrackingMode)trackingMode :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)resumeTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)forceEndTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)activeTrips:(BOOL)local handler:(void (^ _Nullable)(NSArray<RoamTrip *> * _Nullable, RoamError * _Nullable))handler;
 + (void)deleteTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)syncTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)createTrip:(BOOL)local :(NSDictionary<NSString *, id> * _Nullable)coordinate handler:(void (^ _Nullable)(RoamCreateTrip * _Nullable, RoamError * _Nullable))handler;
++ (void)createTrip:(BOOL)local :(NSDictionary<NSString *, id> * _Nullable)coordinate :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamCreateTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripDetails:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamGetTrip * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripSummary:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripSummary * _Nullable, RoamError * _Nullable))handler;
 + (void)getTripStatus:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripListener * _Nullable, RoamError * _Nullable))handler;
@@ -1249,6 +1280,7 @@ SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
 @property (nonatomic, copy) NSString * _Null_unspecified tripTrackingUrl;
 @property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
 @property (nonatomic, copy) NSString * _Null_unspecified userId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1281,6 +1313,7 @@ SWIFT_CLASS("_TtC4Roam9RoamError")
 SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @interface RoamEvents : NSObject
 @property (nonatomic, copy) NSString * _Nullable activity;
+@property (nonatomic, copy) NSString * _Nullable eventDescription;
 @property (nonatomic, strong) NSNumber * _Nonnull altitude;
 @property (nonatomic, strong) NSNumber * _Nonnull course;
 @property (nonatomic, copy) NSString * _Nullable createdAt;
@@ -1395,6 +1428,27 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL course;
 @property (nonatomic) BOOL activity;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Roam13RoamStartTrip")
+@interface RoamStartTrip : NSObject
+@property (nonatomic, copy) NSString * _Nullable createdAt;
+@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Nullable destinations;
+@property (nonatomic, copy) NSString * _Nullable tripId;
+@property (nonatomic) BOOL isDeleted;
+@property (nonatomic) BOOL isEnded;
+@property (nonatomic) BOOL isStarted;
+@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Nullable origins;
+@property (nonatomic, copy) NSString * _Nullable tripTrackingUrl;
+@property (nonatomic, copy) NSString * _Nullable updatedAt;
+@property (nonatomic, copy) NSString * _Nullable userId;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meteData;
+@property (nonatomic, copy) NSString * _Nullable tripDescription;
+@property (nonatomic) BOOL isLocal;
+@property (nonatomic, copy) NSString * _Nullable status;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, RoamSubscribe, open) {
@@ -1557,6 +1611,7 @@ SWIFT_CLASS("_TtC4Roam8RoamUser")
 @property (nonatomic) BOOL nearbyEvents;
 @property (nonatomic, readonly, copy) NSString * _Nonnull account_id;
 @property (nonatomic, readonly, copy) NSString * _Nonnull project_id;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1605,6 +1660,7 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic) BOOL is_paused;
 @property (nonatomic) BOOL is_started;
 @property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic, copy) NSString * _Nullable metadata;
 @property (nonatomic, copy) NSString * _Nullable sync_status;
 @property (nonatomic) BOOL synced;
 @property (nonatomic, copy) NSString * _Nullable trip_ended_at;

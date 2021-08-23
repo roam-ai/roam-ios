@@ -45,13 +45,16 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let nib = UINib(nibName: "TripTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TripTableViewCell")
         
-        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .white
+        
+        addStartButtonOnRight()
+        
+        self.loadData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -126,8 +129,8 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         showHud()
         
-        Roam.startTrip(trip.tripId!,nil) { (status,error) in
-            print("Start Trip",status)
+        Roam.startTrip(trip.tripId!) { (status,error) in
+            print("Start Trip",status?.status)
             print(error?.code)
             print(error?.message)
             Alert.alertController(title: "Start Trip", message: error?.message, viewController: self)
@@ -207,17 +210,9 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     func startStopChanged1(_ sender: TripTableViewCell) {
         let indexPath = self.tableView.indexPath(for: sender)
-        let trip = self.localTrips[(indexPath?.row)!]
-        
-        showHud()
-        Roam.stopTrip(trip.tripId) { (status, error) in
-            print("Stop Trip",status)
-
-            print(error?.code)
-            print(error?.message)
-            Alert.alertController(title: "End Trip", message: error?.message, viewController: self)
-            self.loadData()
-        }
+        let vc = StopTripViewController.viewController()
+        vc.trip = self.localTrips[(indexPath?.row)!]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func pauseResumeChanged1(_ sender: TripTableViewCell) {
@@ -237,6 +232,24 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+    func addStartButtonOnRight(){
+        let button = UIButton(type: .custom)
+        button.setTitle("Quick Start Trip ", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0)
+        button.layer.cornerRadius = 5
+        button.backgroundColor = .lightGray
+        button.frame = CGRect(x: 0, y: 0, width: 150, height: 25)
+        button.addTarget(self, action: #selector(gotSettingPage), for: UIControl.Event.touchUpInside)
+        let barButton = UIBarButtonItem(customView: button)
+        
+        self.navigationItem.rightBarButtonItem = barButton
+    }
+    
+    @objc func gotSettingPage(){
+        let vc = CreateTripViewController.viewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     
 }
