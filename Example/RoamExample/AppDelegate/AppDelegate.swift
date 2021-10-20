@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
                 
         Roam.setLoggerEnabled(logger: true)
-        Roam.initialize(KPublishableKey)
+        Roam.initialize("ravi")
         Roam.delegate = self
         UNUserNotificationCenter.current().delegate = self;
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in

@@ -22,7 +22,7 @@ let kApp_id = "app_id"
 let kNearbyEvent_events = "nearbyEvents"
 let allTrackedLocation = "TrackedLocation"
 
-let KPublishableKey = "04fbd1d521f7db772cf453c5a3ea49919016917413d025956b25247f27d70d57"
+let KPublishableKey = "5cf6ce67cb5c75fd56941bea1fd514cdd62319eb1dd664ee0321c97e04f49b8f"
 let kTrackingOp = "kTrackingOp"
 
 let kEventSub = "kEventSub"

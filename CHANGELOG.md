@@ -57,3 +57,11 @@ Modified:
 
 Added:
 - `metadata` support for user and trips are added
+
+## 0.0.11
+
+Added:
+- Support to listen to location updates of user from different projects which are within same account.
+
+Fixed:
+- Multiple location updates recorded when user in stationary across all tracking
