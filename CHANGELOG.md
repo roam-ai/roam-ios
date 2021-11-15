@@ -65,3 +65,8 @@ Added:
 
 Fixed:
 - Multiple location updates recorded when user in stationary across all tracking
+
+## 0.0.12
+
+Modified:
+- Custom tracking option will now work in terminated state. (SDK will wait for significant change in device location to restart the tracking again in background)
