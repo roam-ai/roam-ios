@@ -54,6 +54,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Roam.setDeviceToken(deviceToken)
+        Roam.createTrip(true, nil, nil) { RoamTrip, RoamError in
+            RoamTrip?.createdAt
+            RoamTrip?.de
+            
+        }
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
