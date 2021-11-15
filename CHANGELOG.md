@@ -70,3 +70,8 @@ Fixed:
 
 Modified:
 - Custom tracking option will now work in terminated state. (SDK will wait for significant change in device location to restart the tracking again in background)
+
+## 0.0.13
+
+Fixed:
+- Location activity was getting updated as stationary for all location points during terminated state.
