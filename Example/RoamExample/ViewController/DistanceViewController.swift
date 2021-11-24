@@ -19,12 +19,21 @@ class DistanceViewController: UIViewController{
         super.viewDidLoad()
         
         //Looks for single or multiple taps.
-             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
-
-            view.addGestureRecognizer(tap)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+        
+        view.addGestureRecognizer(tap)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+    }
     @objc func dismissKeyboard() {
         //Causes the view (or one of its embedded text fields) to resign the first responder status.
         view.endEditing(true)
@@ -36,48 +45,34 @@ class DistanceViewController: UIViewController{
         return settingVC
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        
-        self.addStartButtonOnRight()
-        
-    }
-    
-    
-    func addStartButtonOnRight(){
-        let button = UIButton(type: .custom)
-        button.setTitle("Start Tracking", for: .normal)
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 15.0)
-        button.layer.cornerRadius = 5
-        button.backgroundColor = .gray
-        button.frame = CGRect(x: 0, y: 0, width: 100, height: 25)
-        button.addTarget(self, action: #selector(gotSettingPage), for: UIControl.Event.touchUpInside)
-        let barButton = UIBarButtonItem(customView: button)
-        
-        self.navigationItem.rightBarButtonItem = barButton
-    }
-    
-    @objc func gotSettingPage(){
+
+    @IBAction func startTracking(_ sender: Any) {
         SharedUtil.setDefaultString("Custom", kTrackingOp)
-        let customOptions  = RoamTrackingCustomMethods()
-        customOptions.useStandardLocationServices = true
+        let customOptions = RoamTrackingCustomMethods()
         customOptions.allowBackgroundLocationUpdates = true
         customOptions.pausesLocationUpdatesAutomatically = false
-        customOptions.activityType = .fitness
         customOptions.showsBackgroundLocationIndicator = true
-        customOptions.accuracyFilter = 50
+        customOptions.desiredAccuracy = .kCLLocationAccuracyBestForNavigation//self.getDesiredAccuracy()
+        customOptions.activityType = .fitness//self.getActivity()
+        customOptions.useVisits = true
+        customOptions.useSignificant = true
+        customOptions.useStandardLocationServices = false
+        customOptions.useRegionMonitoring  = true
+        customOptions.useDynamicGeofencRadius = true
         if self.distanceSegment.text != nil && self.distanceSegment.text!.count > 0 {
             customOptions.distanceFilter = CLLocationDistance(self.distanceSegment.text!)
         }
         SharedUtil.setDefaultString("Distance base", kTrackingOp)
-        Roam.startTracking(.custom, options: customOptions)
         if switchAccuracyFilter.isOn {
             if self.accuraySegment.text != nil && self.accuraySegment.text!.count > 0 {
-                Roam.enableAccuracyEngine(Int(self.accuraySegment.text!)!)
+                customOptions.accuracyFilter = Int(self.accuraySegment.text!)
             }
         }
+        Roam.startTracking(.custom, options: customOptions)
         self.navigationController?.popViewController(animated: true)
+        
     }
+    
     
     override func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         switch textField {
@@ -85,13 +80,13 @@ class DistanceViewController: UIViewController{
             distanceSegment.resignFirstResponder()
         case accuraySegment:
             accuraySegment.resignFirstResponder()
-
+            
         default:
             break
         }
         return true
     }
-
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         return true
     }

@@ -20,13 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		4612CFE164C51B4C436AF9101B70BB3E /* Pods-RoamExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 554C4F592BC21A899D4BE0D5A7A0C8EF /* Pods-RoamExample-dummy.m */; };
-		4C0DFB35E9C9103FF386ADF8E21516E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		5D7B4EEAB815F39A6AC448FA3966592C /* Pods-RoamExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F604EAAE88E46F0ED6B234491EDEC615 /* Pods-RoamExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8865B35A14A95B56A712C8B387768D60 /* Pods-RoamExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 554C4F592BC21A899D4BE0D5A7A0C8EF /* Pods-RoamExample-dummy.m */; };
+		C296B2A302E7F59B125142169A7461BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		D37533C94600473124845F2B1CA8104B /* Pods-RoamExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F604EAAE88E46F0ED6B234491EDEC615 /* Pods-RoamExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4C96AE7DD54C7291004B1512FAD359D8 /* PBXContainerItemProxy */ = {
+		08F1885CE0618D73ACFD4628D184388B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		1AD161E6E0EB3DD24EB541C19344BEA2 /* Roam.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Roam.xcframework; path = Roam/Roam.xcframework; sourceTree = "<group>"; };
 		21B34DCD0D9A0AED91E7B41455963A7F /* AWSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCore.xcframework; path = Roam/AWSCore.xcframework; sourceTree = "<group>"; };
-		4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RoamExample.framework; path = "Pods-RoamExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RoamExample"; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C4F592BC21A899D4BE0D5A7A0C8EF /* Pods-RoamExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RoamExample-dummy.m"; sourceTree = "<group>"; };
 		5DEAA4EE93B2424B090711B469DD0716 /* Pods-RoamExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RoamExample-frameworks.sh"; sourceTree = "<group>"; };
 		65B6F29C58FFAA645E5A60C578FE88D5 /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,11 +61,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B1EB4E6DA2011CB3FC6EF1E5D2C0966C /* Frameworks */ = {
+		F414323E82624D0D62D9D96CB59D2E5D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0DFB35E9C9103FF386ADF8E21516E9 /* Foundation.framework in Frameworks */,
+				C296B2A302E7F59B125142169A7461BA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,20 +108,20 @@
 			path = "Target Support Files/Pods-RoamExample";
 			sourceTree = "<group>";
 		};
+		610D201A49DC27B262875BFD99AC9771 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		64CFB61D0AF3AA7EA4F38D70245875DC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				5DB987F501FA11ECF928B344F8D481C0 /* Pods-RoamExample */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		786C67AC888EC01C325E7B08A161A220 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A058F4FD6A0C7A422BFAB3E53D8E6F1A /* Frameworks */ = {
@@ -144,7 +144,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				EDFF87F03FA40B5A4F819BF96EFFE209 /* Pods */,
-				786C67AC888EC01C325E7B08A161A220 /* Products */,
+				610D201A49DC27B262875BFD99AC9771 /* Products */,
 				64CFB61D0AF3AA7EA4F38D70245875DC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -178,11 +178,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7FC33B9C5F2604F7747AEC0895780971 /* Headers */ = {
+		39F4F57FA76D7067E3B20CEEA2746247 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D7B4EEAB815F39A6AC448FA3966592C /* Pods-RoamExample-umbrella.h in Headers */,
+				D37533C94600473124845F2B1CA8104B /* Pods-RoamExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,21 +191,21 @@
 /* Begin PBXNativeTarget section */
 		3CC9B403505958D350D59951EFEBF51B /* Pods-RoamExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDFA1E7B04D45A04AEDC91510CF28DAC /* Build configuration list for PBXNativeTarget "Pods-RoamExample" */;
+			buildConfigurationList = 5F4FBE7FCE0EE7D59313A95D3FEC1DD8 /* Build configuration list for PBXNativeTarget "Pods-RoamExample" */;
 			buildPhases = (
-				7FC33B9C5F2604F7747AEC0895780971 /* Headers */,
-				D7BF7A7ECE66FF4147010ED123E7AF26 /* Sources */,
-				B1EB4E6DA2011CB3FC6EF1E5D2C0966C /* Frameworks */,
-				721CEAF2039904DDA372485B56FCC26B /* Resources */,
+				39F4F57FA76D7067E3B20CEEA2746247 /* Headers */,
+				715D4BBE7A9F201EC70FF139BBCDCA98 /* Sources */,
+				F414323E82624D0D62D9D96CB59D2E5D /* Frameworks */,
+				55BB4A3E0D68D527E0C76C2827CC3EA6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1F7701FC15098654991FE24B5DBB7099 /* PBXTargetDependency */,
+				E66D432D65B99A1715D57656D4AE77AC /* PBXTargetDependency */,
 			);
 			name = "Pods-RoamExample";
-			productName = "Pods-RoamExample";
-			productReference = 4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */;
+			productName = Pods_RoamExample;
+			productReference = 4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -214,19 +214,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 786C67AC888EC01C325E7B08A161A220 /* Products */;
+			productRefGroup = 610D201A49DC27B262875BFD99AC9771 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -237,7 +237,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		721CEAF2039904DDA372485B56FCC26B /* Resources */ = {
+		55BB4A3E0D68D527E0C76C2827CC3EA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -267,22 +267,22 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D7BF7A7ECE66FF4147010ED123E7AF26 /* Sources */ = {
+		715D4BBE7A9F201EC70FF139BBCDCA98 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4612CFE164C51B4C436AF9101B70BB3E /* Pods-RoamExample-dummy.m in Sources */,
+				8865B35A14A95B56A712C8B387768D60 /* Pods-RoamExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1F7701FC15098654991FE24B5DBB7099 /* PBXTargetDependency */ = {
+		E66D432D65B99A1715D57656D4AE77AC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "roam-ios";
 			target = EACB84FBFAD5BA2E6EB945DF04829763 /* roam-ios */;
-			targetProxy = 4C96AE7DD54C7291004B1512FAD359D8 /* PBXContainerItemProxy */;
+			targetProxy = 08F1885CE0618D73ACFD4628D184388B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -322,7 +322,7 @@
 			};
 			name = Release;
 		};
-		3111AEB5B07831EEC8478FAB24ED1B74 /* Debug */ = {
+		4033005475345EB290E714E39B4E9877 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65B6F29C58FFAA645E5A60C578FE88D5 /* Pods-RoamExample.debug.xcconfig */;
 			buildSettings = {
@@ -359,7 +359,7 @@
 			};
 			name = Debug;
 		};
-		758EE8F8E8E31BA89DA5F28BDF68D14B /* Release */ = {
+		6714DD8F9119B73C52E3D9057C6A17A2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 97E4E4AC78E4CC303ECD6B982367F31D /* Pods-RoamExample.release.xcconfig */;
 			buildSettings = {
@@ -537,11 +537,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDFA1E7B04D45A04AEDC91510CF28DAC /* Build configuration list for PBXNativeTarget "Pods-RoamExample" */ = {
+		5F4FBE7FCE0EE7D59313A95D3FEC1DD8 /* Build configuration list for PBXNativeTarget "Pods-RoamExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3111AEB5B07831EEC8478FAB24ED1B74 /* Debug */,
-				758EE8F8E8E31BA89DA5F28BDF68D14B /* Release */,
+				4033005475345EB290E714E39B4E9877 /* Debug */,
+				6714DD8F9119B73C52E3D9057C6A17A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

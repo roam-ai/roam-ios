@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
                 
         Roam.setLoggerEnabled(logger: true)
-        Roam.initialize("ravi")
+        Roam.initialize("d9a9781efff5896cb97c5532b6ff3076cd352058f5d50791942ac6e114970801")
         Roam.delegate = self
         UNUserNotificationCenter.current().delegate = self;
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -54,11 +54,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
 
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         Roam.setDeviceToken(deviceToken)
-        Roam.createTrip(true, nil, nil) { RoamTrip, RoamError in
-            RoamTrip?.createdAt
-            RoamTrip?.de
-            
-        }
     }
 
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {

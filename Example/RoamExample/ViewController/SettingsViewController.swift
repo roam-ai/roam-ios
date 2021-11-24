@@ -44,8 +44,10 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var useStandardLocation: UISegmentedControl!
     
     @IBOutlet weak var useAccuracyFilter: UISegmentedControl!
+    @IBOutlet weak var switchAccuracyFilter: UISwitch!
 
     @IBOutlet weak var txtFieldTimeBased: UITextField!
+    @IBOutlet weak var distanceBaseTextField: UITextField!
     
     @IBAction func clickUseStandardLocationService(_ sender: Any) {
         UserDefaults.standard.set(self.useStandardLocation.selectedSegmentIndex == 0 ? false : true, forKey: UserDefaultKeys.useStandardLocationService.rawValue)
@@ -258,20 +260,28 @@ class SettingsViewController: UIViewController {
     @objc func gotSettingPage(){
         SharedUtil.setDefaultString("Custom", kTrackingOp)
         let customOptions  = RoamTrackingCustomMethods()
-        customOptions.useStandardLocationServices = true
         customOptions.allowBackgroundLocationUpdates = true
         customOptions.pausesLocationUpdatesAutomatically = false
-        customOptions.distanceFilter = 10
-        customOptions.activityType = .fitness
         customOptions.showsBackgroundLocationIndicator = true
-        if switchAccuracyFilter.isOn {
-            customOptions.accuracyFilter = Int(self.useAccuracyFilter.titleForSegment(at: useAccuracyFilter.selectedSegmentIndex)!)
-        }
-
+        customOptions.desiredAccuracy = .kCLLocationAccuracyBestForNavigation
+        customOptions.activityType = .fitness
+        customOptions.useVisits = true
+        customOptions.useSignificant = true
+        customOptions.useStandardLocationServices = false
+        customOptions.useRegionMonitoring  = true
+        customOptions.useDynamicGeofencRadius = true
+        
+        
         if self.txtFieldTimeBased.text != nil && self.txtFieldTimeBased.text!.count > 0 {
             customOptions.updateInterval = Int(self.txtFieldTimeBased.text!)
             UserDefaults.standard.set(self.txtFieldTimeBased.text!, forKey: UserDefaultKeys.updateInterval.rawValue)
         }
+        
+        if self.distanceBaseTextField.text != nil && self.distanceBaseTextField.text!.count > 0 {
+            let time =  Double(distanceBaseTextField.text!) ?? 0.0
+            customOptions.distanceFilter = time
+        }
+        
         Roam.startTracking(.custom, options: customOptions)
         self.navigationController?.popViewController(animated: true)
     }
@@ -312,8 +322,7 @@ class SettingsViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var switchAccuracyFilter: UISwitch!
-
+    
     @IBAction func clickAccuracyOnOff(_ sender: Any) {
         if switchAccuracyFilter.isOn{
             useAccuracyFilter.isUserInteractionEnabled =  true

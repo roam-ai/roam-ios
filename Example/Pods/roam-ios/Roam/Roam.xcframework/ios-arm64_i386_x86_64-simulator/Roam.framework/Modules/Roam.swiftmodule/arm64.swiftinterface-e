@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
 import AWSCore
 import AWSIoT
@@ -15,6 +15,7 @@ import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
+import _Concurrency
 @objc public enum LocationAccuracy : Swift.Int {
   case kCLLocationAccuracyBestForNavigation
   case kCLLocationAccuracyBest
@@ -56,7 +57,7 @@ public enum ReachabilityError : Swift.Error {
 }
 @available(*, unavailable, renamed: "Notification.Name.reachabilityChanged")
 public let ReachabilityChangedNotification: Foundation.NSNotification.Name
-extension NSNotification.Name {
+extension Foundation.NSNotification.Name {
   public static let reachabilityChanged: Foundation.Notification.Name
 }
 public class Reachability {
@@ -108,7 +109,7 @@ public class Reachability {
   convenience public init(queueQoS: Dispatch.DispatchQoS = .default, targetQueue: Dispatch.DispatchQueue? = nil, notificationQueue: Dispatch.DispatchQueue? = .main) throws
   @objc deinit
 }
-extension Reachability {
+extension Roam.Reachability {
   public func startNotifier() throws
   public func stopNotifier()
   @available(*, deprecated, message: "Please use `connection != .none`")
@@ -135,7 +136,6 @@ extension Reachability {
   @objc public var duration: Foundation.NSNumber
   @objc public var coordinates: [Swift.Double]!
   @objc public var recordedAt: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamUser : ObjectiveC.NSObject {
@@ -150,7 +150,6 @@ extension Reachability {
   @objc final public let account_id: Swift.String
   @objc final public let project_id: Swift.String
   @objc public var metadata: Swift.Dictionary<Swift.String, Any>?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Roam : ObjectiveC.NSObject {
@@ -215,7 +214,6 @@ extension Reachability {
   @objc final public let distance: Swift.Double
   @objc final public let duration: Swift.Double
   @objc final public let startedTime: Swift.String
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class RoamTrackingCustomMethodsObjcWrapper : ObjectiveC.NSObject {
@@ -239,7 +237,6 @@ extension Reachability {
   @objc public var tripDescription: Swift.String?
   @objc public var isLocal: Swift.Bool
   @objc public var status: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripStatusListener : ObjectiveC.NSObject {
@@ -251,7 +248,6 @@ extension Reachability {
   @objc final public let pace: Swift.Double
   @objc final public let latitude: Swift.Double
   @objc final public let longitude: Swift.Double
-  @objc override dynamic public init()
   @objc deinit
 }
 public enum Model : Swift.String {
@@ -262,16 +258,16 @@ public enum Model : Swift.String {
     get
   }
 }
-extension UIDevice {
-  public var type: Roam.Model {
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor(unsafe) public var type: Roam.Model {
     get
   }
 }
 @_hasMissingDesignatedInitializers @objc public class RoamLocationReceived : ObjectiveC.NSObject {
   @objc public var activity: Swift.String!
   @objc public var altitude: Foundation.NSNumber!
-  @objc public var latitude: Foundation.NSNumber!
-  @objc public var longitude: Foundation.NSNumber!
+  @objc public var latitude: Foundation.NSNumber
+  @objc public var longitude: Foundation.NSNumber
   @objc public var course: Foundation.NSNumber!
   @objc public var eventSource: Swift.String!
   @objc public var eventType: Swift.String!
@@ -283,7 +279,6 @@ extension UIDevice {
   @objc public var userId: Swift.String!
   @objc public var verticalAccuracy: Foundation.NSNumber!
   @objc public var metaData: Swift.Dictionary<Swift.String, Any>?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamEvents : ObjectiveC.NSObject {
@@ -307,7 +302,6 @@ extension UIDevice {
   @objc public var userId: Swift.String?
   @objc public var veritcalAccuracy: Foundation.NSNumber
   @objc public var location_metadata: Swift.Dictionary<Swift.String, Any>?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripOrigin : ObjectiveC.NSObject {
@@ -318,7 +312,6 @@ extension UIDevice {
   @objc public var reached: Swift.Bool
   @objc public var tripId: Swift.String!
   @objc public var updatedAt: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripSummary : ObjectiveC.NSObject {
@@ -330,7 +323,6 @@ extension UIDevice {
   @objc public var tripStatus: Swift.String!
   @objc public var userId: Swift.String!
   @objc public var totalElevationGain: Foundation.NSNumber
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol RoamDelegate {
@@ -411,22 +403,21 @@ extension UIDevice {
   @objc final public let timezoneOffset: Swift.String?
   @objc final public let recordedAt: Swift.String?
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
-  @objc override dynamic public init()
   @objc deinit
 }
-public typealias RoamUserCompletionhandler = ((Roam.RoamUser?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamLogoutCompletionhandler = ((Swift.String?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamCurrentLocationCompletionhandler = ((CoreLocation.CLLocation?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamTripCompletionhandler = ((Swift.String?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamActiveTripsCompletionhandler = (([Roam.RoamTrip]?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamCreateTripCompletionhandler = ((Roam.RoamCreateTrip?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamGetTripCompletionhandler = ((Roam.RoamGetTrip?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamSummaryTripCompletionhandler = ((Roam.RoamTripSummary?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamTripListenerCompletionhandler = ((Roam.RoamTripListener?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamDeleteTripCompletionhandler = ((Swift.String?, Roam.RoamError?) -> Swift.Void)
-public typealias RoamTripSyncStatusCompletionhandler = ((Swift.Bool, Roam.RoamError?) -> Swift.Void)
-public typealias RoamPublishCompletionhandler = ((Swift.Bool) -> Swift.Void)
-public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.RoamError?) -> Swift.Void)
+public typealias RoamUserCompletionhandler = ((_ user: Roam.RoamUser?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamLogoutCompletionhandler = ((_ status: Swift.String?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamCurrentLocationCompletionhandler = ((_ location: CoreLocation.CLLocation?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamTripCompletionhandler = ((_ status: Swift.String?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamActiveTripsCompletionhandler = ((_ trips: [Roam.RoamTrip]?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamCreateTripCompletionhandler = ((_ trip: Roam.RoamCreateTrip?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamGetTripCompletionhandler = ((_ trip: Roam.RoamGetTrip?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamSummaryTripCompletionhandler = ((_ trip: Roam.RoamTripSummary?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamTripListenerCompletionhandler = ((_ trip: Roam.RoamTripListener?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamDeleteTripCompletionhandler = ((_ status: Swift.String?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamTripSyncStatusCompletionhandler = ((_ status: Swift.Bool, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamPublishCompletionhandler = ((_ mqttStatus: Swift.Bool) -> Swift.Void)
+public typealias RoamStartTripCompletionhandler = ((_ trip: Roam.RoamStartTrip?, _ error: Roam.RoamError?) -> Swift.Void)
 @_hasMissingDesignatedInitializers @objc public class RoamCreateTrip : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String!
   @objc public var destinations: [Roam.RoamTripDestination]!
@@ -439,7 +430,6 @@ public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.Ro
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
   @objc public var metaData: Swift.Dictionary<Swift.String, Any>!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamGetTrip : ObjectiveC.NSObject {
@@ -459,7 +449,6 @@ public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.Ro
   @objc public var tripStartedAt: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripDestination : ObjectiveC.NSObject {
@@ -470,7 +459,6 @@ public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.Ro
   @objc public var reached: Swift.Bool
   @objc public var tripId: Swift.String!
   @objc public var updatedAt: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTrip : ObjectiveC.NSObject {
@@ -482,7 +470,6 @@ public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.Ro
   @objc public var updatedAt: Swift.String!
   @objc public var createdAt: Swift.String!
   @objc public var syncStatus: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripEvent : ObjectiveC.NSObject {
@@ -493,20 +480,18 @@ public typealias RoamStartTripCompletionhandler = ((Roam.RoamStartTrip?, Roam.Ro
   @objc public var tripId: Swift.String!
   @objc public var userId: Swift.String!
   @objc public var userLocationId: Swift.String!
-  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamError : ObjectiveC.NSObject {
   @objc final public let code: Swift.String?
   @objc final public let message: Swift.String?
-  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(HttpLocationData) public class HttpLocationData : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension HttpLocationData {
+extension Roam.HttpLocationData {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.HttpLocationData>
   @objc @NSManaged dynamic public var accuracy: Swift.Double {
     @objc get
@@ -589,7 +574,7 @@ extension HttpLocationData {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension MqttLocationData {
+extension Roam.MqttLocationData {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.MqttLocationData>
   @objc @NSManaged dynamic public var activity: Swift.String? {
     @objc get
@@ -724,7 +709,7 @@ extension MqttLocationData {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension MyTrip {
+extension Roam.MyTrip {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.MyTrip>
   @objc @NSManaged dynamic public var distance: Swift.Double {
     @objc get
@@ -775,7 +760,7 @@ extension MyTrip {
     @objc set
   }
 }
-extension MyTrip {
+extension Roam.MyTrip {
   @objc(addRouteObject:) @NSManaged dynamic public func addToRoute(_ value: Roam.MyTripRoute)
   @objc(removeRouteObject:) @NSManaged dynamic public func removeFromRoute(_ value: Roam.MyTripRoute)
   @objc(addRoute:) @NSManaged dynamic public func addToRoute(_ values: Foundation.NSSet)
@@ -785,7 +770,7 @@ extension MyTrip {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension MyTripRoute {
+extension Roam.MyTripRoute {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.MyTripRoute>
   @objc @NSManaged dynamic public var accuracy: Swift.Double {
     @objc get
@@ -832,7 +817,7 @@ extension MyTripRoute {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension TripEventsLocal {
+extension Roam.TripEventsLocal {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.TripEventsLocal>
   @objc @NSManaged dynamic public var created_at: Swift.String? {
     @objc get
@@ -875,7 +860,7 @@ extension TripEventsLocal {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension TripsLocal {
+extension Roam.TripsLocal {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.TripsLocal>
   @objc @NSManaged dynamic public var created_at: Swift.String? {
     @objc get
@@ -946,7 +931,7 @@ extension TripsLocal {
     @objc set
   }
 }
-extension TripsLocal {
+extension Roam.TripsLocal {
   @objc(addEventsObject:) @NSManaged dynamic public func addToEvents(_ value: Roam.TripEventsLocal)
   @objc(removeEventsObject:) @NSManaged dynamic public func removeFromEvents(_ value: Roam.TripEventsLocal)
   @objc(addEvents:) @NSManaged dynamic public func addToEvents(_ values: Foundation.NSSet)
