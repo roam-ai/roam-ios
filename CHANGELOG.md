@@ -75,3 +75,8 @@ Modified:
 
 Fixed:
 - Location activity was getting updated as stationary for all location points during terminated state.
+
+## 0.0.14
+
+Fixed:
+- Improved `Roam.getCurrentLocation()` to return location faster.
