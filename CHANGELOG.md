@@ -80,3 +80,8 @@ Fixed:
 
 Fixed:
 - Improved `Roam.getCurrentLocation()` to return location faster.
+
+## 0.0.15
+
+Fixed:
+- Issues in tracking location when the application is forced to terminate by the user, now the SDK will restart the tracking automatically.
