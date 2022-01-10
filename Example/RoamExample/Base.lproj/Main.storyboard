@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roam" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-rT-ugS">
-                                <rect key="frame" x="20" y="251.5" width="374" height="50"/>
+                                <rect key="frame" x="20" y="186.5" width="374" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eEV-RL-oZ4"/>
                                 </constraints>
@@ -51,15 +51,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="CC6-XK-R8X">
-                                <rect key="frame" x="20" y="331.5" width="374" height="233"/>
+                                <rect key="frame" x="20" y="266.5" width="374" height="363"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Description" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0QS-5c-geN">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-go-TvF" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="65" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="38"/>
                                         <color key="backgroundColor" red="0.28235294117647058" green="0.55294117647058827" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                         <state key="normal" title="Create User">
@@ -75,12 +70,12 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter user id" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pJ8-tw-bXG">
-                                        <rect key="frame" x="0.0" y="130" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="65" width="374" height="38"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvF-xF-WHl" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="374" height="38"/>
+                                        <rect key="frame" x="0.0" y="130" width="374" height="38"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Get User">
@@ -95,8 +90,8 @@
                                             <action selector="getUserAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rAh-Q9-gN1"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-dh-tlm" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="233" width="374" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYV-dh-tlm" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195" width="374" height="38"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
                                         <state key="normal" title="Request Location">
@@ -111,11 +106,11 @@
                                             <action selector="requestLocationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xrG-7o-zWt"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6Y-hJ-OHI" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="233" width="374" height="0.0"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F6Y-hJ-OHI" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="260" width="374" height="38"/>
                                         <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
-                                        <state key="normal" title="Start Self Tracking ">
+                                        <state key="normal" title="Start Tracking ">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -125,6 +120,38 @@
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="startSelfTrackingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWL-6d-lWf"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMZ-RN-bNO" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="311.5" width="374" height="0.0"/>
+                                        <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <state key="normal" title="Stop Tracking ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="stopSelfTrackingAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHt-we-kIC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ry-bw-9AS" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="325" width="374" height="38"/>
+                                        <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                        <state key="normal" title="Tracked location">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="trackingLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M36-mw-miX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -147,8 +174,8 @@
                         <outlet property="createUserBtn" destination="oEA-go-TvF" id="XBv-WN-1Cy"/>
                         <outlet property="getUserBtn" destination="hvF-xF-WHl" id="IJB-72-c53"/>
                         <outlet property="requestLocation" destination="qYV-dh-tlm" id="0Fl-fu-9rX"/>
-                        <outlet property="startSelfTracking" destination="F6Y-hJ-OHI" id="Ggr-3R-J4f"/>
-                        <outlet property="userDescTextField" destination="0QS-5c-geN" id="Cq6-za-5bB"/>
+                        <outlet property="startTracking" destination="F6Y-hJ-OHI" id="7Vl-sB-oRb"/>
+                        <outlet property="stopracking" destination="ZMZ-RN-bNO" id="s0M-vU-I3B"/>
                         <outlet property="userIdTextField" destination="pJ8-tw-bXG" id="Rfp-t2-LqP"/>
                     </connections>
                 </viewController>
@@ -677,6 +704,9 @@
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="khl-jZ-Pdu">
                                 <rect key="frame" x="0.0" y="44" width="414" height="753"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2Y9-Wk-KBP" id="tDk-5A-bBj"/>
+                                </connections>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yyD-k8-ROx">
                                 <rect key="frame" x="0.0" y="807" width="414" height="50"/>
@@ -714,7 +744,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="mapView" destination="khl-jZ-Pdu" id="At9-yH-YLA"/>
+                        <outlet property="mapView" destination="khl-jZ-Pdu" id="9JZ-SU-4ee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2vC-Pq-eA7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2991,6 +3021,9 @@
         <designable name="5aW-Wj-FGG">
             <size key="intrinsicContentSize" width="154" height="36"/>
         </designable>
+        <designable name="7Ry-bw-9AS">
+            <size key="intrinsicContentSize" width="162" height="38"/>
+        </designable>
         <designable name="8Fa-Nq-ShQ">
             <size key="intrinsicContentSize" width="109" height="36"/>
         </designable>
@@ -3004,7 +3037,7 @@
             <size key="intrinsicContentSize" width="81" height="36"/>
         </designable>
         <designable name="F6Y-hJ-OHI">
-            <size key="intrinsicContentSize" width="186" height="38"/>
+            <size key="intrinsicContentSize" width="143" height="38"/>
         </designable>
         <designable name="ViP-KP-ors">
             <size key="intrinsicContentSize" width="98" height="36"/>
@@ -3017,6 +3050,9 @@
         </designable>
         <designable name="ZMT-mP-58W">
             <size key="intrinsicContentSize" width="71" height="36"/>
+        </designable>
+        <designable name="ZMZ-RN-bNO">
+            <size key="intrinsicContentSize" width="142" height="38"/>
         </designable>
         <designable name="aUb-nR-SQl">
             <size key="intrinsicContentSize" width="45" height="36"/>

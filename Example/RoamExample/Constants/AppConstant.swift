@@ -38,3 +38,5 @@ let kLocationTracker = "kLocationTracker"
 let kEnableAccuracyEngine = "kEnableAccuracyEngine"
 
 let kDisabledPublishingsave = "kDisabledPublishingsave"
+let kSelfStarTracking = "SelfStarTracking"
+let kSelfStarTrackingOption = "SelfStarTrackingOption"

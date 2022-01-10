@@ -39,15 +39,17 @@
 		7B2CA46A261DAB1400C4C6A1 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA462261DAB1400C4C6A1 /* UIButton.swift */; };
 		7B2CA46E261DAB1E00C4C6A1 /* SharedUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA46C261DAB1E00C4C6A1 /* SharedUtil.swift */; };
 		7B2CA46F261DAB1E00C4C6A1 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2CA46D261DAB1E00C4C6A1 /* AppUtility.swift */; };
-		D4C23ED14B8AADC5FB7BC19C /* Pods_RoamExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9740DFD17926B63645561F6 /* Pods_RoamExample.framework */; };
+		C6AF79D6C4FAFA16905D9AC6 /* Pods_RoamExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1F6D525C671583FD0839956 /* Pods_RoamExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12665BB196C9B0FBF31D1744 /* Pods-RoamExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.release.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.release.xcconfig"; sourceTree = "<group>"; };
 		534095812685C16100952015 /* EventsLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsLoginViewController.swift; sourceTree = "<group>"; };
 		534095832685D33700952015 /* TimeBasedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBasedViewController.swift; sourceTree = "<group>"; };
 		534095852685E0DE00952015 /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
 		5381339A26D367BE00709073 /* CreateTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTripViewController.swift; sourceTree = "<group>"; };
 		5381339C26D36F4C00709073 /* StopTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopTripViewController.swift; sourceTree = "<group>"; };
+		694ACE53CC5C7F519BDB9542 /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.debug.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
 		7B2859D5261DBEA300AF20CC /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		7B2859D6261DBEA300AF20CC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7B2859D7261DBEA300AF20CC /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +80,7 @@
 		7B2CA462261DAB1400C4C6A1 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		7B2CA46C261DAB1E00C4C6A1 /* SharedUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedUtil.swift; sourceTree = "<group>"; };
 		7B2CA46D261DAB1E00C4C6A1 /* AppUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
-		E154CD57A7F45F385652A838 /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.debug.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E42578EE4D55DFF6459F3430 /* Pods-RoamExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RoamExample.release.xcconfig"; path = "Target Support Files/Pods-RoamExample/Pods-RoamExample.release.xcconfig"; sourceTree = "<group>"; };
-		E9740DFD17926B63645561F6 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1F6D525C671583FD0839956 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,20 +88,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4C23ED14B8AADC5FB7BC19C /* Pods_RoamExample.framework in Frameworks */,
+				C6AF79D6C4FAFA16905D9AC6 /* Pods_RoamExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		779F2F4F1576BBF257B1B656 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1F6D525C671583FD0839956 /* Pods_RoamExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7B2CA41C261DA88500C4C6A1 = {
 			isa = PBXGroup;
 			children = (
 				7B2CA427261DA88500C4C6A1 /* RoamExample */,
 				7B2CA426261DA88500C4C6A1 /* Products */,
 				AF0157438A5468B466158941 /* Pods */,
-				A7FCF6CFF80662116F587C62 /* Frameworks */,
+				779F2F4F1576BBF257B1B656 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,19 +210,11 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		A7FCF6CFF80662116F587C62 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E9740DFD17926B63645561F6 /* Pods_RoamExample.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		AF0157438A5468B466158941 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E154CD57A7F45F385652A838 /* Pods-RoamExample.debug.xcconfig */,
-				E42578EE4D55DFF6459F3430 /* Pods-RoamExample.release.xcconfig */,
+				694ACE53CC5C7F519BDB9542 /* Pods-RoamExample.debug.xcconfig */,
+				12665BB196C9B0FBF31D1744 /* Pods-RoamExample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -226,11 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B2CA439261DA88600C4C6A1 /* Build configuration list for PBXNativeTarget "RoamExample" */;
 			buildPhases = (
-				6BF30F439DAD497A1C6C94BC /* [CP] Check Pods Manifest.lock */,
+				998C47E28B7862D99AC1F033 /* [CP] Check Pods Manifest.lock */,
 				7B2CA421261DA88500C4C6A1 /* Sources */,
 				7B2CA422261DA88500C4C6A1 /* Frameworks */,
 				7B2CA423261DA88500C4C6A1 /* Resources */,
-				FD4BF94C27460CDE17BF7070 /* [CP] Embed Pods Frameworks */,
+				FB92BE3B2540CD1031B68EFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -288,7 +288,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6BF30F439DAD497A1C6C94BC /* [CP] Check Pods Manifest.lock */ = {
+		998C47E28B7862D99AC1F033 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,7 +310,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FD4BF94C27460CDE17BF7070 /* [CP] Embed Pods Frameworks */ = {
+		FB92BE3B2540CD1031B68EFF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,7 +505,7 @@
 		};
 		7B2CA43A261DA88600C4C6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E154CD57A7F45F385652A838 /* Pods-RoamExample.debug.xcconfig */;
+			baseConfigurationReference = 694ACE53CC5C7F519BDB9542 /* Pods-RoamExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,7 +531,7 @@
 		};
 		7B2CA43B261DA88600C4C6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E42578EE4D55DFF6459F3430 /* Pods-RoamExample.release.xcconfig */;
+			baseConfigurationReference = 12665BB196C9B0FBF31D1744 /* Pods-RoamExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
