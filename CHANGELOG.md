@@ -85,3 +85,13 @@ Fixed:
 
 Fixed:
 - Issues in tracking location when the application is forced to terminate by the user, now the SDK will restart the tracking automatically.
+
+## 0.0.16
+
+Modified:
+- Added option in `Roam.unSubscribe()`  which will now unsubscribe all users if `user_id` is passed as null or empty.
+- Added battery and network details as part of location in location receiver.
+
+
+
+

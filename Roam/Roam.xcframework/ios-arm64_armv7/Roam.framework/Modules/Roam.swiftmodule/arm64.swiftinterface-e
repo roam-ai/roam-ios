@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
 import AWSCore
 import AWSIoT
@@ -201,7 +201,7 @@ extension Roam.Reachability {
   @objc public static func publishSave(_ publish: Roam.RoamPublish? = nil)
   @objc public static func publishOnly(_ publish: Roam.RoamPublish? = nil)
   @objc public static func subscribe(_ type: Roam.RoamSubscribe, _ userId: Swift.String)
-  @objc public static func unsubscribe(_ type: Roam.RoamSubscribe, _ userId: Swift.String)
+  @objc public static func unsubscribe(_ type: Roam.RoamSubscribe, _ userId: Swift.String? = nil)
   @objc public static func stopPublishing()
   @objc public static func enableAccuracyEngine(_ accuracy: Swift.Int)
   @objc public static func updateLocationWhenStationary(_ value: Swift.Int)
@@ -402,6 +402,8 @@ extension UIKit.UIDevice {
   @objc final public let location: CoreLocation.CLLocation
   @objc final public let timezoneOffset: Swift.String?
   @objc final public let recordedAt: Swift.String?
+  @objc public var batteryRemaining: Swift.Int
+  @objc public var networkStatus: Swift.Bool
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc deinit
 }
