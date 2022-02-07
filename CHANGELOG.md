@@ -92,6 +92,7 @@ Modified:
 - Added option in `Roam.unSubscribe()`  which will now unsubscribe all users if `user_id` is passed as null or empty.
 - Added battery and network details as part of location in location receiver.
 
+## 0.0.17
 
-
-
+Fixed:
+- Removed the blue bar which was being displayed during active tracking.
