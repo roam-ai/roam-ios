@@ -96,3 +96,8 @@ Modified:
 
 Fixed:
 - Removed the blue bar which was being displayed during active tracking.
+
+## 0.1.0
+
+Modified:
+- Updated new trip v2 methods. Refer Migration guide for more details.
