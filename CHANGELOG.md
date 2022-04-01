@@ -97,6 +97,11 @@ Modified:
 Fixed:
 - Removed the blue bar which was being displayed during active tracking.
 
+## 0.0.18
+
+Fixed:
+- Fixed the coordinates arrangment for `Roam.getTripSummary()` on local trips.
+
 ## 0.1.0
 
 Modified:
