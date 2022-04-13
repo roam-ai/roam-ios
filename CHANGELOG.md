@@ -102,6 +102,13 @@ Fixed:
 Fixed:
 - Fixed the coordinates arrangment for `Roam.getTripSummary()` on local trips.
 
+## 0.0.19
+
+Fixed:
+- Added individual distance, duration and elevation gain for location data inside trip route for local trips.
+- Trip summary response for local trip will have route sorted by recorded timestamp.
+- Fixed background location tracking for time based tracking mode when location permission is given as 'Allow while using'.
+
 ## 0.1.0
 
 Modified:
