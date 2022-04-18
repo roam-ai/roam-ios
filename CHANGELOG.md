@@ -109,6 +109,11 @@ Fixed:
 - Trip summary response for local trip will have route sorted by recorded timestamp.
 - Fixed background location tracking for time based tracking mode when location permission is given as 'Allow while using'.
 
+## 0.0.20
+
+Fixed:
+- Fixed calculation for distance and duration for individual location data in trip summary route.
+
 ## 0.1.0
 
 Modified:

@@ -713,11 +713,19 @@ extension Roam.MqttLocationData {
 }
 extension Roam.MyTrip {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.MyTrip>
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
   @objc @NSManaged dynamic public var duration: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var elevation_gain: Swift.Double {
     @objc get
     @objc set
   }
@@ -783,6 +791,18 @@ extension Roam.MyTripRoute {
     @objc set
   }
   @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var distance: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var duration: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var elevation_gain: Swift.Double {
     @objc get
     @objc set
   }

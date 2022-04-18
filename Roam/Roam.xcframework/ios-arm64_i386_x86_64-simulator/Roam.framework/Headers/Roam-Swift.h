@@ -321,8 +321,10 @@ SWIFT_CLASS_NAMED("MyTrip")
 
 
 @interface MyTrip (SWIFT_EXTENSION(Roam))
+@property (nonatomic) double altitude;
 @property (nonatomic) double distance;
 @property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic) double latitude;
 @property (nonatomic) int16_t location_count;
 @property (nonatomic, copy) NSString * _Nullable locationId;
@@ -346,6 +348,9 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @property (nonatomic) double accuracy;
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
+@property (nonatomic) double distance;
+@property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic, copy) NSString * _Nullable entityId;
 @property (nonatomic) double latitude;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -1170,8 +1175,10 @@ SWIFT_CLASS_NAMED("MyTrip")
 
 
 @interface MyTrip (SWIFT_EXTENSION(Roam))
+@property (nonatomic) double altitude;
 @property (nonatomic) double distance;
 @property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic) double latitude;
 @property (nonatomic) int16_t location_count;
 @property (nonatomic, copy) NSString * _Nullable locationId;
@@ -1195,6 +1202,9 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @property (nonatomic) double accuracy;
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
+@property (nonatomic) double distance;
+@property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic, copy) NSString * _Nullable entityId;
 @property (nonatomic) double latitude;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -2019,8 +2029,10 @@ SWIFT_CLASS_NAMED("MyTrip")
 
 
 @interface MyTrip (SWIFT_EXTENSION(Roam))
+@property (nonatomic) double altitude;
 @property (nonatomic) double distance;
 @property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic) double latitude;
 @property (nonatomic) int16_t location_count;
 @property (nonatomic, copy) NSString * _Nullable locationId;
@@ -2044,6 +2056,9 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @property (nonatomic) double accuracy;
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
+@property (nonatomic) double distance;
+@property (nonatomic) double duration;
+@property (nonatomic) double elevation_gain;
 @property (nonatomic, copy) NSString * _Nullable entityId;
 @property (nonatomic) double latitude;
 @property (nonatomic, copy) NSString * _Nullable location_id;
