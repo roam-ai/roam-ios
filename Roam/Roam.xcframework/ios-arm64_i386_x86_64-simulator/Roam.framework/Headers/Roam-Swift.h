@@ -218,16 +218,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("BatchLocation")
+@interface BatchLocation : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+@class NSDate;
+
+@interface BatchLocation (SWIFT_EXTENSION(Roam))
+@property (nonatomic, copy) NSString * _Nullable activity;
+@property (nonatomic) double altitude;
+@property (nonatomic) int16_t batteryRemaining;
+@property (nonatomic) double course;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) BOOL networkStatus;
+@property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic) double speed;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
+@property (nonatomic, copy) NSString * _Nullable timezoneOffset;
+@property (nonatomic) double verticalAccuracy;
+@end
+
+
 
 SWIFT_CLASS_NAMED("HttpLocationData")
 @interface HttpLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 @interface HttpLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic) double accuracy;
@@ -266,7 +290,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -379,6 +402,8 @@ enum RoamTrackingMode : NSInteger;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
+enum RoamNetworkState : NSInteger;
+@class RoamBatchConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -433,7 +458,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
 + (void)updateLocationWhenStationary:(NSInteger)value;
++ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)clearBatchReceiverConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
+@interface RoamBatchConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable networkState;
+@property (nonatomic) NSInteger batchCount;
+@property (nonatomic) NSInteger batchWindow;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class RoamTripDestination;
@@ -463,7 +501,7 @@ SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
 
 SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 @protocol RoamDelegate
-- (void)didUpdateLocation:(RoamLocation * _Nonnull)location;
+- (void)didUpdateLocation:(NSArray<RoamLocation *> * _Nonnull)locations;
 @optional
 - (void)didReceiveEvents:(RoamEvents * _Nonnull)events;
 - (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
@@ -543,6 +581,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) NSInteger batteryRemaining;
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
+@property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -568,6 +607,12 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, RoamNetworkState, open) {
+  RoamNetworkStateOnline = 0,
+  RoamNetworkStateOffline = 1,
+  RoamNetworkStateBoth = 2,
+};
 
 
 SWIFT_CLASS("_TtC4Roam11RoamPublish")
@@ -1072,16 +1117,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("BatchLocation")
+@interface BatchLocation : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+@class NSDate;
+
+@interface BatchLocation (SWIFT_EXTENSION(Roam))
+@property (nonatomic, copy) NSString * _Nullable activity;
+@property (nonatomic) double altitude;
+@property (nonatomic) int16_t batteryRemaining;
+@property (nonatomic) double course;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) BOOL networkStatus;
+@property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic) double speed;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
+@property (nonatomic, copy) NSString * _Nullable timezoneOffset;
+@property (nonatomic) double verticalAccuracy;
+@end
+
+
 
 SWIFT_CLASS_NAMED("HttpLocationData")
 @interface HttpLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 @interface HttpLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic) double accuracy;
@@ -1120,7 +1189,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -1233,6 +1301,8 @@ enum RoamTrackingMode : NSInteger;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
+enum RoamNetworkState : NSInteger;
+@class RoamBatchConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -1287,7 +1357,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
 + (void)updateLocationWhenStationary:(NSInteger)value;
++ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)clearBatchReceiverConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
+@interface RoamBatchConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable networkState;
+@property (nonatomic) NSInteger batchCount;
+@property (nonatomic) NSInteger batchWindow;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class RoamTripDestination;
@@ -1317,7 +1400,7 @@ SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
 
 SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 @protocol RoamDelegate
-- (void)didUpdateLocation:(RoamLocation * _Nonnull)location;
+- (void)didUpdateLocation:(NSArray<RoamLocation *> * _Nonnull)locations;
 @optional
 - (void)didReceiveEvents:(RoamEvents * _Nonnull)events;
 - (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
@@ -1397,6 +1480,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) NSInteger batteryRemaining;
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
+@property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1422,6 +1506,12 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, RoamNetworkState, open) {
+  RoamNetworkStateOnline = 0,
+  RoamNetworkStateOffline = 1,
+  RoamNetworkStateBoth = 2,
+};
 
 
 SWIFT_CLASS("_TtC4Roam11RoamPublish")
@@ -1926,16 +2016,40 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma pop_macro("any")
 #endif
 
-
 @class NSEntityDescription;
 @class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("BatchLocation")
+@interface BatchLocation : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSString;
+@class NSDate;
+
+@interface BatchLocation (SWIFT_EXTENSION(Roam))
+@property (nonatomic, copy) NSString * _Nullable activity;
+@property (nonatomic) double altitude;
+@property (nonatomic) int16_t batteryRemaining;
+@property (nonatomic) double course;
+@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic) double latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) BOOL networkStatus;
+@property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic) double speed;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
+@property (nonatomic, copy) NSString * _Nullable timezoneOffset;
+@property (nonatomic) double verticalAccuracy;
+@end
+
+
 
 SWIFT_CLASS_NAMED("HttpLocationData")
 @interface HttpLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
 @interface HttpLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic) double accuracy;
@@ -1974,7 +2088,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -2087,6 +2200,8 @@ enum RoamTrackingMode : NSInteger;
 @class UNNotificationResponse;
 enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
+enum RoamNetworkState : NSInteger;
+@class RoamBatchConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -2141,7 +2256,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)stopPublishing;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
 + (void)updateLocationWhenStationary:(NSInteger)value;
++ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)clearBatchReceiverConfig;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
+@interface RoamBatchConfig : NSObject
+@property (nonatomic, copy) NSString * _Nullable networkState;
+@property (nonatomic) NSInteger batchCount;
+@property (nonatomic) NSInteger batchWindow;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class RoamTripDestination;
@@ -2171,7 +2299,7 @@ SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
 
 SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 @protocol RoamDelegate
-- (void)didUpdateLocation:(RoamLocation * _Nonnull)location;
+- (void)didUpdateLocation:(NSArray<RoamLocation *> * _Nonnull)locations;
 @optional
 - (void)didReceiveEvents:(RoamEvents * _Nonnull)events;
 - (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
@@ -2251,6 +2379,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) NSInteger batteryRemaining;
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
+@property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2276,6 +2405,12 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+typedef SWIFT_ENUM(NSInteger, RoamNetworkState, open) {
+  RoamNetworkStateOnline = 0,
+  RoamNetworkStateOffline = 1,
+  RoamNetworkStateBoth = 2,
+};
 
 
 SWIFT_CLASS("_TtC4Roam11RoamPublish")

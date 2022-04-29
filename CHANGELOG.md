@@ -114,6 +114,13 @@ Fixed:
 Fixed:
 - Fixed calculation for distance and duration for individual location data in trip summary route.
 
+## 0.0.21
+
+Added:
+- Added new methods for batch configurations in location receiver.
+Fixed:
+- Updated trip error codes.
+
 ## 0.1.0
 
 Modified:

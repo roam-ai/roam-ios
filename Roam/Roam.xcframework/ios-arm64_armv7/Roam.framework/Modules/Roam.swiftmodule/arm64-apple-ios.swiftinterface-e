@@ -205,6 +205,9 @@ extension Roam.Reachability {
   @objc public static func stopPublishing()
   @objc public static func enableAccuracyEngine(_ accuracy: Swift.Int)
   @objc public static func updateLocationWhenStationary(_ value: Swift.Int)
+  @objc public static func setBatchReceiverConfig(networkState: Roam.RoamNetworkState, batchCount: Swift.Int, batchWindow: Swift.Int, handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func getBatchReceiverConfig(handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func clearBatchReceiverConfig()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -326,7 +329,7 @@ extension UIKit.UIDevice {
   @objc deinit
 }
 @objc public protocol RoamDelegate {
-  @objc func didUpdateLocation(_ location: Roam.RoamLocation)
+  @objc func didUpdateLocation(_ locations: [Roam.RoamLocation])
   @objc optional func didReceiveEvents(_ events: Roam.RoamEvents)
   @objc optional func didReceiveUserLocation(_ location: Roam.RoamLocationReceived)
   @objc optional func didReceiveTripStatus(_ tripStatus: Roam.RoamTripStatusListener)
@@ -365,6 +368,12 @@ extension UIKit.UIDevice {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class RoamBatchConfig : ObjectiveC.NSObject {
+  @objc public var networkState: Swift.String?
+  @objc public var batchCount: Swift.Int
+  @objc public var batchWindow: Swift.Int
+  @objc deinit
+}
 @objc public enum RoamTrackingMode : Swift.Int {
   case passive = 1
   case balanced
@@ -380,6 +389,16 @@ extension UIKit.UIDevice {
   case AlwaysOn = 0
   case Foreground
   case Background
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum RoamNetworkState : Swift.Int {
+  case Online = 0
+  case Offline
+  case Both
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -405,6 +424,7 @@ extension UIKit.UIDevice {
   @objc public var batteryRemaining: Swift.Int
   @objc public var networkStatus: Swift.Bool
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
+  @objc public var batch: Roam.RoamBatchConfig?
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: Roam.RoamUser?, _ error: Roam.RoamError?) -> Swift.Void)
@@ -420,6 +440,7 @@ public typealias RoamDeleteTripCompletionhandler = ((_ status: Swift.String?, _ 
 public typealias RoamTripSyncStatusCompletionhandler = ((_ status: Swift.Bool, _ error: Roam.RoamError?) -> Swift.Void)
 public typealias RoamPublishCompletionhandler = ((_ mqttStatus: Swift.Bool) -> Swift.Void)
 public typealias RoamStartTripCompletionhandler = ((_ trip: Roam.RoamStartTrip?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamBatchConfigCompletionhandler = ((_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
 @_hasMissingDesignatedInitializers @objc public class RoamCreateTrip : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String!
   @objc public var destinations: [Roam.RoamTripDestination]!
@@ -488,6 +509,65 @@ public typealias RoamStartTripCompletionhandler = ((_ trip: Roam.RoamStartTrip?,
   @objc final public let code: Swift.String?
   @objc final public let message: Swift.String?
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(BatchLocation) public class BatchLocation : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension Roam.BatchLocation {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<Roam.BatchLocation>
+  @objc @NSManaged dynamic public var activity: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var batteryRemaining: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var course: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var horizontalAccuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var networkStatus: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var recordedAt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timestamp: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var timezoneOffset: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var verticalAccuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
 }
 @_inheritsConvenienceInitializers @objc(HttpLocationData) public class HttpLocationData : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
@@ -975,6 +1055,9 @@ extension Roam.RoamTrackingMode : Swift.RawRepresentable {}
 extension Roam.RoamTrackingState : Swift.Equatable {}
 extension Roam.RoamTrackingState : Swift.Hashable {}
 extension Roam.RoamTrackingState : Swift.RawRepresentable {}
+extension Roam.RoamNetworkState : Swift.Equatable {}
+extension Roam.RoamNetworkState : Swift.Hashable {}
+extension Roam.RoamNetworkState : Swift.RawRepresentable {}
 extension Roam.RoamSubscribe : Swift.Equatable {}
 extension Roam.RoamSubscribe : Swift.Hashable {}
 extension Roam.RoamSubscribe : Swift.RawRepresentable {}
