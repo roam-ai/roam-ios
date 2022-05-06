@@ -207,7 +207,7 @@ extension Reachability {
   @objc public static func updateLocationWhenStationary(_ value: Swift.Int)
   @objc public static func setBatchReceiverConfig(networkState: RoamNetworkState, batchCount: Swift.Int, batchWindow: Swift.Int, handler: (_ config: RoamBatchConfig?, _ error: RoamError?) -> Swift.Void)
   @objc public static func getBatchReceiverConfig(handler: (_ config: RoamBatchConfig?, _ error: RoamError?) -> Swift.Void)
-  @objc public static func clearBatchReceiverConfig()
+  @objc public static func resetBatchReceiverConfig(handler: RoamBatchConfigCompletionhandler? = nil)
   @objc override dynamic public init()
   @objc deinit
 }

@@ -121,6 +121,11 @@ Added:
 Fixed:
 - Updated trip error codes.
 
+## 0.0.22
+
+Added:
+- Added callbacks to `Roam.resetBatchReceiverConfig` method to return default config values.
+
 ## 0.1.0
 
 Modified:

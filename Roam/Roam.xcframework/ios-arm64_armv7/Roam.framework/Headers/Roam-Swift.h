@@ -460,7 +460,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)updateLocationWhenStationary:(NSInteger)value;
 + (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)clearBatchReceiverConfig;
++ (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1359,7 +1359,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)updateLocationWhenStationary:(NSInteger)value;
 + (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)clearBatchReceiverConfig;
++ (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
