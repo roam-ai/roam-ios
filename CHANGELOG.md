@@ -142,5 +142,5 @@ Modified:
 - Support to update trip based on trip state.
 
 Added:
-- Speed parameter to the routes in trips summary summary.
+- Speed parameter to the routes in trips summary.
 - Subscribe to online trips.
