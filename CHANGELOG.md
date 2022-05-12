@@ -130,3 +130,17 @@ Added:
 
 Modified:
 - Updated new trip v2 methods. Refer Migration guide for more details.
+
+## 0.1.1
+
+Fixed:
+- Crash when `Roam.getTrip()` is called without starting the trip.
+
+Modified:
+- Removed user id validation for offline trips.
+- Create trip without user id. ie. optional
+- Support to update trip based on trip state.
+
+Added:
+- Speed parameter to the routes in trips summary summary.
+- Subscribe to online trips.
