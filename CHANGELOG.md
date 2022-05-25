@@ -126,6 +126,14 @@ Fixed:
 Added:
 - Added callbacks to `Roam.resetBatchReceiverConfig` method to return default config values.
 
+## 0.0.23
+Added:
+- Added new methods for batch configurations in trips data receiver.
+- Trips data in trip receiver is changed from single object to list of updates.
+Fixed:
+- Fixes for core data for location and trips.
+
+
 ## 0.1.0
 
 Modified:
