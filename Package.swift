@@ -6,7 +6,7 @@ let package = Package(
    products: [
        .library(
            name: "roam-ios",
-           targets: ["Roam", "RMAWSAuthCore", "RMAWSCognitoIdentityProvider", "RMAWSCognitoIdentityProviderASF", "RMAWSCore", "RMAWSIoT", "RMAWSMobileClientXCF"]),
+           targets: ["Roam", "RMAWSAuthCore", "RMAWSCognitoIdentityProvider", "RMAWSCognitoIdentityProviderASF", "RMAWSCore", "RMAWSIoT", "AWSMobileClientXCF"]),
    ],
    targets: [
        .binaryTarget(
@@ -28,7 +28,7 @@ let package = Package(
            name: "RMAWSIoT",
            path: "Roam/AWSIoT.xcframework"),
        .binaryTarget(
-           name: "RMAWSMobileClientXCF",
+           name: "AWSMobileClientXCF",
            path: "Roam/AWSMobileClientXCF.xcframework"),
    ]
 )
