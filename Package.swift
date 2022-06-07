@@ -26,7 +26,7 @@ let package = Package(
            path: "Roam/AWSCore.xcframework"),
        .binaryTarget(
            name: "RMAWSIoT",
-           path: "Roam/AWSIoT.xcframework/"),
+           path: "Roam/AWSIoT.xcframework"),
        .binaryTarget(
            name: "RMAWSMobileClientXCF",
            path: "Roam/AWSMobileClientXCF.xcframework"),
