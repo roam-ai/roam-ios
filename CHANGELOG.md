@@ -133,6 +133,12 @@ Added:
 Fixed:
 - Fixes for core data for location and trips.
 
+## 0.0.24
+Added:
+- Added timestamps to the trip listener data.
+- Created option to unsubscribe from all the trips in the method `Roam.unsubscribeTripStatus()`
+Fixed:
+- Fixed trip listener to work independent to location listener.
 
 ## 0.1.0
 
