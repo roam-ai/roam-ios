@@ -193,7 +193,7 @@ extension Roam.Reachability {
   @objc public static func notificationOpenedHandler(_ resposne: UserNotifications.UNNotificationResponse)
   @objc public static func setLoggerEnabled(logger: Swift.Bool)
   @objc public static func subscribeTripStatus(_ tripId: Swift.String)
-  @objc public static func unsubscribeTripStatus(_ tripId: Swift.String)
+  @objc public static func unsubscribeTripStatus(_ tripId: Swift.String? = nil)
   @objc public static func setTrackingInAppState(_ state: Roam.RoamTrackingState)
   @objc public static func offlineLocationTracking(_ offlineTracking: Swift.Bool)
   @objc public static func enableAccuracyEngine()
@@ -248,6 +248,7 @@ extension Roam.Reachability {
   @objc final public let distance: Swift.Double
   @objc final public let duration: Swift.Double
   @objc final public let startedTime: Swift.String
+  @objc final public let recordedAt: Swift.String
   @objc final public let pace: Swift.Double
   @objc final public let latitude: Swift.Double
   @objc final public let longitude: Swift.Double

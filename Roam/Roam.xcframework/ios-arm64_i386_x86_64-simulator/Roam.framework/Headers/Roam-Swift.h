@@ -422,7 +422,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
 + (void)subscribeTripStatus:(NSString * _Nonnull)tripId;
-+ (void)unsubscribeTripStatus:(NSString * _Nonnull)tripId;
++ (void)unsubscribeTripStatus:(NSString * _Nullable)tripId;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
 + (void)enableAccuracyEngine;
@@ -756,6 +756,7 @@ SWIFT_CLASS("_TtC4Roam22RoamTripStatusListener")
 @property (nonatomic, readonly) double distance;
 @property (nonatomic, readonly) double duration;
 @property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull recordedAt;
 @property (nonatomic, readonly) double pace;
 @property (nonatomic, readonly) double latitude;
 @property (nonatomic, readonly) double longitude;
@@ -1297,7 +1298,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
 + (void)subscribeTripStatus:(NSString * _Nonnull)tripId;
-+ (void)unsubscribeTripStatus:(NSString * _Nonnull)tripId;
++ (void)unsubscribeTripStatus:(NSString * _Nullable)tripId;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
 + (void)enableAccuracyEngine;
@@ -1631,6 +1632,7 @@ SWIFT_CLASS("_TtC4Roam22RoamTripStatusListener")
 @property (nonatomic, readonly) double distance;
 @property (nonatomic, readonly) double duration;
 @property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull recordedAt;
 @property (nonatomic, readonly) double pace;
 @property (nonatomic, readonly) double latitude;
 @property (nonatomic, readonly) double longitude;
@@ -2172,7 +2174,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
 + (void)subscribeTripStatus:(NSString * _Nonnull)tripId;
-+ (void)unsubscribeTripStatus:(NSString * _Nonnull)tripId;
++ (void)unsubscribeTripStatus:(NSString * _Nullable)tripId;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
 + (void)enableAccuracyEngine;
@@ -2506,6 +2508,7 @@ SWIFT_CLASS("_TtC4Roam22RoamTripStatusListener")
 @property (nonatomic, readonly) double distance;
 @property (nonatomic, readonly) double duration;
 @property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
+@property (nonatomic, readonly, copy) NSString * _Nonnull recordedAt;
 @property (nonatomic, readonly) double pace;
 @property (nonatomic, readonly) double latitude;
 @property (nonatomic, readonly) double longitude;
