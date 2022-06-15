@@ -140,6 +140,10 @@ Added:
 Fixed:
 - Fixed trip listener to work independent to location listener.
 
+## 0.0.25
+Fixed:
+- Fix for #32 and #31
+
 ## 0.1.0
 
 Modified:
