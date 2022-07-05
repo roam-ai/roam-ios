@@ -380,6 +380,7 @@ enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
 enum RoamNetworkState : NSInteger;
 @class RoamBatchConfig;
+@class RoamLocationConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -437,6 +438,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -558,6 +562,16 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
+@interface RoamLocationConfig : NSObject
+@property (nonatomic) NSInteger accuracy;
+@property (nonatomic) NSInteger timeout;
+@property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1256,6 +1270,7 @@ enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
 enum RoamNetworkState : NSInteger;
 @class RoamBatchConfig;
+@class RoamLocationConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -1313,6 +1328,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1434,6 +1452,16 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
+@interface RoamLocationConfig : NSObject
+@property (nonatomic) NSInteger accuracy;
+@property (nonatomic) NSInteger timeout;
+@property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2132,6 +2160,7 @@ enum RoamTrackingState : NSInteger;
 enum RoamSubscribe : NSInteger;
 enum RoamNetworkState : NSInteger;
 @class RoamBatchConfig;
+@class RoamLocationConfig;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -2189,6 +2218,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2310,6 +2342,16 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
+@interface RoamLocationConfig : NSObject
+@property (nonatomic) NSInteger accuracy;
+@property (nonatomic) NSInteger timeout;
+@property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

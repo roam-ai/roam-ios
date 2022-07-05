@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Roam-Swift.h</key>
 		<data>
-		TaRPSEwJwvl2Uw8VG1268lT/ceQ=
+		6xJphumKpJ1HhQohwANFZRUHmoE=
 		</data>
 		<key>Headers/Roam.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		m9BrQI4zdDt2wD+M1a3Tn6LZtiU=
+		AB5ftYli7eIX8Wl2LceF3ggrxho=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -22,11 +22,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		2i0OLk7J57/00e7HeoUrgOOz2ZU=
+		j+J73t4zShN9OtiBuCaTL9PRQ9c=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kn6Ccs6dvZf1aP8tsWZFcH9n078=
+		kOZzriNMJFEASYlau872E1fDdT0=
 		</data>
 		<key>Modules/Roam.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		FIndkHWKZPaXkJreDBVxTeJfo58=
+		uwwU0qS4rS54LsZekiqc9ggLWoc=
 		</data>
 		<key>Modules/Roam.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2mmgaKNZs4MJjxDD9Xb3V0aPAbI=
+		mDWmKLUDSu1GLy/cgCm0DPCoN7s=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		G3431fE5J8UCrt0wXy9uzOwqKbM=
+		asUFLfhYt3o82G/J4PhD5l+TZmI=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		UhPftMtAN6Dgza1vsTOw7bAj8C4=
+		x7CNrbZc6v9adzzTsS4XbFjIRD8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -71,11 +71,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TaRPSEwJwvl2Uw8VG1268lT/ceQ=
+			6xJphumKpJ1HhQohwANFZRUHmoE=
 			</data>
 			<key>hash2</key>
 			<data>
-			E5YdLLBuXFfGlgp7iEHDklIYwUS6/8MoKjzsT5tpOqo=
+			Xl0V5TsVpC19TLI5b2p92j9rdWLpTSg0GLPxkMUPTb8=
 			</data>
 		</dict>
 		<key>Headers/Roam.h</key>
@@ -104,22 +104,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2i0OLk7J57/00e7HeoUrgOOz2ZU=
+			j+J73t4zShN9OtiBuCaTL9PRQ9c=
 			</data>
 			<key>hash2</key>
 			<data>
-			L2iPjQFM+2+3VRVxzL1YnyAFdOrhSTmWKVaU8loAdis=
+			vILbGzd20hktf+8DCGv+/HADc1JZKYHuUygGr94o6xQ=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kn6Ccs6dvZf1aP8tsWZFcH9n078=
+			kOZzriNMJFEASYlau872E1fDdT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QFu83DrRPmQX+xHKoMRvOswngdR0WS47ONpQThqK6NQ=
+			ATsyCn//Rb6bi1VCxyZhU793rwv/0e82ZzHJOONeeo0=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -137,22 +137,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			FIndkHWKZPaXkJreDBVxTeJfo58=
+			uwwU0qS4rS54LsZekiqc9ggLWoc=
 			</data>
 			<key>hash2</key>
 			<data>
-			MEdd4nccknsDUrZAyz33QUw2FDUJTK45MCQ6hVYEjMA=
+			sY/Iz09iLYjd/NnRTceiT8UNu1S5aa4ZON2B6rCReQc=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2mmgaKNZs4MJjxDD9Xb3V0aPAbI=
+			mDWmKLUDSu1GLy/cgCm0DPCoN7s=
 			</data>
 			<key>hash2</key>
 			<data>
-			+faNSS3VKMKHrL4X1QGFjjnFyzs9kCFSQQ2a4bK3wBQ=
+			KgJuXYIZ51vLGjSo1hOCzq6oZ12q7YhbcrvBMRvNMto=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -170,22 +170,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G3431fE5J8UCrt0wXy9uzOwqKbM=
+			asUFLfhYt3o82G/J4PhD5l+TZmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			cJdVctWP81IDGElaXnveTwWrLOQhqQiLph42ruNWJMc=
+			KziKW4uhAv3xu6AGGZ4WDqJxV+0qwFBeH5/Xece84MI=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			UhPftMtAN6Dgza1vsTOw7bAj8C4=
+			x7CNrbZc6v9adzzTsS4XbFjIRD8=
 			</data>
 			<key>hash2</key>
 			<data>
-			69kXcrTv1dJbja13VjSKoVizsrMKqFJe4hyo+GteVVY=
+			DKo7xJ5IOns0WmSKYj7PlhcstMVV7e9jUC8RRavTKyc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

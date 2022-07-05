@@ -147,10 +147,15 @@ Fixed:
 ## 0.0.26
 Added:
 - Added accuracy config methods for `Roam.getCurrentLocation()`, `Roam.updateCurrentLocation()` and Time based custom tracking.
+
 Fixed:
 - Fixed blue bar issue for custom tracking modes.
 - Fixed location tracking issue when location permission is chnaged.
- 
+
+## 0.0.27
+Fixed:
+- Fixed build issues with v0.0.26.
+
 ## 0.1.0
 
 Modified:

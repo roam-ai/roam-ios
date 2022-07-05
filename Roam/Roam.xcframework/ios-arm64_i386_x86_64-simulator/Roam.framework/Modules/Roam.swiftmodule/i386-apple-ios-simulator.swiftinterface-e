@@ -208,6 +208,9 @@ extension Roam.Reachability {
   @objc public static func setBatchReceiverConfig(networkState: Roam.RoamNetworkState, batchCount: Swift.Int, batchWindow: Swift.Int, handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
   @objc public static func getBatchReceiverConfig(handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
   @objc public static func resetBatchReceiverConfig(handler: Roam.RoamBatchConfigCompletionhandler? = nil)
+  @objc public static func setTrackingConfig(accuracy: Swift.Int, timeout: Swift.Int, discardLocation: Swift.Bool, handler: (_ config: Roam.RoamLocationConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func getTrackingConfig(handler: (_ config: Roam.RoamLocationConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func resetTrackingConfig(handler: Roam.RoamTrackingConfigCompletionhandler? = nil)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -416,6 +419,12 @@ extension UIKit.UIDevice {
     get
   }
 }
+@_hasMissingDesignatedInitializers @objc public class RoamLocationConfig : ObjectiveC.NSObject {
+  @objc public var accuracy: Swift.Int
+  @objc public var timeout: Swift.Int
+  @objc public var discardLocation: Swift.Bool
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamLocation : ObjectiveC.NSObject {
   @objc final public let userId: Swift.String?
   @objc final public let activity: Swift.String?
@@ -442,6 +451,7 @@ public typealias RoamTripSyncStatusCompletionhandler = ((_ status: Swift.Bool, _
 public typealias RoamPublishCompletionhandler = ((_ mqttStatus: Swift.Bool) -> Swift.Void)
 public typealias RoamStartTripCompletionhandler = ((_ trip: Roam.RoamStartTrip?, _ error: Roam.RoamError?) -> Swift.Void)
 public typealias RoamBatchConfigCompletionhandler = ((_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+public typealias RoamTrackingConfigCompletionhandler = ((_ config: Roam.RoamLocationConfig?, _ error: Roam.RoamError?) -> Swift.Void)
 @_hasMissingDesignatedInitializers @objc public class RoamCreateTrip : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String
   @objc public var destinations: [Roam.RoamTripDestination]
