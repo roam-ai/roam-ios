@@ -156,6 +156,10 @@ Fixed:
 Fixed:
 - Fixed build issues with v0.0.26.
 
+## 0.0.28
+Fixed:
+- Fixed crashing behaviour while changing location permission.
+
 ## 0.1.0
 
 Modified:
