@@ -178,3 +178,20 @@ Modified:
 Added:
 - Speed parameter to the routes in trips summary.
 - Subscribe to online trips.
+
+## 0.1.2
+
+Added:
+- Added accuracy config methods for `Roam.getCurrentLocation()`, `Roam.updateCurrentLocation()` and Time based custom tracking.
+- Added timestamps to the trip listener data.
+- Added option to unsubscribe from all the trips in the method `Roam.unsubscribeTripStatus()`
+- Added new methods for batch configurations in trips data receiver.
+- Trips data in a trip receiver is changed from a single object to a list of updates.
+- Added new methods for batch configurations in location receiver.
+
+Fixed:
+- Fixed crashing behavior while changing location permission.
+- Fixed blue bar issue for custom tracking modes.
+- Fixed location tracking issue when location permission is changed.
+- The fixed trip listener works independently of the location listener.
+- Fixes core data for location and trips.
