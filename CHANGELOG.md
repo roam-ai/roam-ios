@@ -160,6 +160,10 @@ Fixed:
 Fixed:
 - Fixed crashing behaviour while changing location permission.
 
+## 0.0.29
+Fixed:
+- Fixed distance calculation logic for individual route points in `RoamTripsSummary`.
+
 ## 0.1.0
 
 Modified:
