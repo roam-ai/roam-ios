@@ -164,6 +164,12 @@ Fixed:
 Fixed:
 - Fixed distance calculation logic for individual route points in `RoamTripsSummary`.
 
+## 0.0.30
+Fixed:
+- Tracking config issue for time based tracking.
+- Fixed crash when user received other user location.
+- Removed blue bar on user logout without stop tracking.
+
 ## 0.1.0
 
 Modified:
