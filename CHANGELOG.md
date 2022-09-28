@@ -170,6 +170,10 @@ Fixed:
 - Fixed crash when user received other user location.
 - Removed blue bar on user logout without stop tracking.
 
+## 0.0.31
+Fixed:
+- Making SDK backward compatible to support Xcode 13.x with Swift v5.6.1 along with the fix for crash issue receiving other user location.
+
 ## 0.1.0
 
 Modified:
