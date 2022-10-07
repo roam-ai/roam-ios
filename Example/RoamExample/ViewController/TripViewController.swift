@@ -96,16 +96,10 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "TripTableViewCell", for: indexPath) as? TripTableViewCell
         cell?.delegate = self
         let trip = localTrips[indexPath.row]
-        print(trip.deleted)
-        print(trip.started)
-        print(trip.paused)
-        print(trip.ended)
-        print(trip.tripId)
-        print(trip.syncStatus)
         if trip.syncStatus != nil{
-            cell?.tripCreated.text = trip.createdAt.fromUTCToLocalDate() + "      "  + trip.syncStatus
+            cell?.tripCreated.text = trip.createdAt!.fromUTCToLocalDate() + "      "  + trip.syncStatus!
         }else{
-            cell?.tripCreated.text = trip.createdAt.fromUTCToLocalDate()
+            cell?.tripCreated.text = trip.createdAt!.fromUTCToLocalDate()
         }
         cell?.tripId.text = trip.tripId
         if tripStatuVale == 0 {
@@ -130,10 +124,12 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         showHud()
         
         Roam.startTrip(trip.tripId!) { (status,error) in
-            print("Start Trip",status?.status)
-            print(error?.code)
-            print(error?.message)
-            Alert.alertController(title: "Start Trip", message: error?.message, viewController: self)
+            print("Start Trip \(String(describing: status?.status))")
+            if status != nil{
+                Alert.alertController(title: "Start Trip", message: status?.status, viewController: self)
+            }else{
+                Alert.alertController(title: "Start Trip", message: error?.message, viewController: self)
+            }
             self.loadData()
         }
     
@@ -144,13 +140,13 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let trip = self.localTrips[(indexPath?.row)!]
         
         showHud()
-        Roam.pauseTrip(trip.tripId) { (status, error) in
-            print("Pause Trip",status)
-
-            print(error?.code)
-            print(error?.message)
-            
-            Alert.alertController(title: "Pause Trip", message: error?.message, viewController: self)
+        Roam.pauseTrip(trip.tripId!) { (status, error) in
+            print("Pause Trip \(String(describing: status))")
+            if status != nil{
+                Alert.alertController(title: "Pause Trip", message: status, viewController: self)
+            }else{
+                Alert.alertController(title: "Pause Trip", message: error?.message, viewController: self)
+            }
             self.loadData()
         }
   
@@ -169,18 +165,12 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         showHud()
         
-        Roam.deleteTrip(trip.tripId) { (status, error) in
+        Roam.deleteTrip(trip.tripId!) { (status, error) in
             print("Delete Trip",status)
-
-            print(error?.code)
-            print(error?.message)
-            
             if status != nil{
                 Alert.alertController(title: "Delete Trip", message: status, viewController: self)
-                
             }else{
                 Alert.alertController(title: "Delete Trip", message: error?.message, viewController: self)
-                
             }
             self.loadData()
         }
@@ -190,17 +180,12 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.showHud()
         let indexPath = self.tableView.indexPath(for: sender)
         let trip = self.localTrips[(indexPath?.row)!]
-        Roam.syncTrip(trip.tripId) { (message, error) in
+        Roam.syncTrip(trip.tripId!) { (message, error) in
             print("Sync Trip",message)
-            print(error?.code)
-            print(error?.message)
-            
             if message != nil{
                 Alert.alertController(title: "Sync Trip", message: message, viewController: self)
-                
             }else{
                 Alert.alertController(title: "Sync Trip", message: error?.message, viewController: self)
-                
             }
             self.loadData()
         }
@@ -220,13 +205,13 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let trip = self.localTrips[(indexPath?.row)!]
         
         showHud()
-        Roam.resumeTrip(trip.tripId) { (status,error) in
+        Roam.resumeTrip(trip.tripId!) { (status,error) in
             print("Resume Trip",status)
-
-            print(error?.code)
-            print(error?.message)
-            
-            Alert.alertController(title: "Resume Trip", message: error?.message, viewController: self)
+            if status != nil{
+                Alert.alertController(title: "Resume Trip", message: status, viewController: self)
+            }else{
+                Alert.alertController(title: "Resume Trip", message: error?.message, viewController: self)
+            }
             self.loadData()
         }
         

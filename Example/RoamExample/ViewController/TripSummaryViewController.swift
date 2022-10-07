@@ -59,7 +59,7 @@ class TripSummaryViewController: UIViewController,MKMapViewDelegate{
     
         summary?.route.forEach({ (route) in
             print(route)
-            let cap = Capital(title: route.activity, coordinate:CLLocationCoordinate2D(latitude: route.coordinates.first!, longitude: route.coordinates.last!) , info: route.recordedAt)
+            let cap = Capital(title: route.activity!, coordinate:CLLocationCoordinate2D(latitude: route.coordinates.first!, longitude: route.coordinates.last!) , info: route.recordedAt!)
             annotations.append(cap)
         })
         

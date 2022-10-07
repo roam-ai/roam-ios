@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
                 
         Roam.setLoggerEnabled(logger: true)
-        Roam.initialize("4467f598e67e71c13fa2bb36efc028776ab2b33979f32a58edd885342e78dd3c")
+        Roam.initialize("6e6d7628940bfcf95c1ede51767717d70abd5ea45c7da83ebea812dc89ae0499")
         Roam.delegate = self
         UNUserNotificationCenter.current().delegate = self;
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) { granted, error in
@@ -65,18 +65,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert,.sound])
+        completionHandler([.sound,.banner])
     }
     
-
-    func didUpdateLocation(_ location: RoamLocation) {
-        print("didUpdateLocation",location.location)
-        showNotification(location)
-        AppUtility.saveLocationToLocal(location)
+    func didUpdateLocation(_ locations: [RoamLocation]) {
+        print("didUpdateLocation",locations[0])
+        showNotification(locations)
+        AppUtility.saveLocationToLocal(locations)
         nc.post(name: Notification.Name("UserLoggedIn"), object: nil)
 
     }
-    
+        
     func didReceiveEvents(_ events: RoamEvents) {
         AppUtility.saveEventsToLocal(events)
         nc.post(name: Notification.Name("UserLoggedIn"), object: nil)
@@ -89,19 +88,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate,UNUserNotificationCenterDe
     }
     
     
-    func didReceiveTripStatus(_ tripStatus: RoamTripStatusListener) {
+    private func didReceiveTripStatus(_ tripStatus: RoamTripStatusListener) {
         nc.post(name: Notification.Name("tripStatus"), object: nil, userInfo: ["trip":tripStatus])
     }
 
     func onError(_ error: RoamError) {
-        print("onError",error.code)
+        print("onError \(String(describing: error.message))")
     }
 
     
-    func showNotification(_ motion:RoamLocation ){
+    func showNotification(_ locations:[RoamLocation]){
             let content = UNMutableNotificationContent()
-        content.title = motion.userId!
-        content.subtitle = motion.location.description
+            content.title = locations[0].userId!
+            content.subtitle = locations[0].location.description
             let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
             let request = UNNotificationRequest(identifier: "notification.id.01", content: content, trigger: trigger)
             UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)

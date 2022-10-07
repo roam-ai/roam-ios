@@ -14,7 +14,7 @@ internal class AppUtility: NSObject {
     
     static func saveUserValue(_ user:RoamUser){
         SharedUtil.setDefaultBoolean(true, kFirstTime)
-        SharedUtil.setDefaultString(user.userId, kUserId)
+        SharedUtil.setDefaultString(user.userId!, kUserId)
         if user.userDescription?.isEmpty == false{
             SharedUtil.setDefaultString(user.userDescription!, kUserdescription)
         }
@@ -27,16 +27,19 @@ internal class AppUtility: NSObject {
     }
     
     
-    static func saveLocationToLocal(_ motion:RoamLocation) {
-        let dataDictionary = ["latitude" : motion.location.coordinate.latitude, "longitude" : motion.location.coordinate.longitude,"activity":motion.activity!,"timeStamp" : AppUtility.currentTimestampWithHours()] as [String : Any]
-        var dataArray = UserDefaults.standard.array(forKey: "RoamKeyForLatLongInfo")
-        if let _ = dataArray {
-            dataArray?.append(dataDictionary)
-        }else{
-            dataArray = [dataDictionary]
+    static func saveLocationToLocal(_ locations:[RoamLocation]) {
+        
+        locations.forEach { location in
+            let dataDictionary = ["latitude" : location.location.coordinate.latitude, "longitude" : location.location.coordinate.longitude,"activity":location.activity!,"timeStamp" : AppUtility.currentTimestampWithHours()] as [String : Any]
+            var dataArray = UserDefaults.standard.array(forKey: "RoamKeyForLatLongInfo")
+            if let _ = dataArray {
+                dataArray?.append(dataDictionary)
+            }else{
+                dataArray = [dataDictionary]
+            }
+            UserDefaults.standard.set(dataArray, forKey: "RoamKeyForLatLongInfo")
+            UserDefaults.standard.synchronize()
         }
-        UserDefaults.standard.set(dataArray, forKey: "RoamKeyForLatLongInfo")
-        UserDefaults.standard.synchronize()
     }
     static func saveLocationToLocal(_ motion:RoamLocationReceived) {
         

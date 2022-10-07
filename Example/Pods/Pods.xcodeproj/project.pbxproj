@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = "roam-ios";
+			productName = "roam-ios";
 		};
 /* End PBXAggregateTarget section */
 
@@ -36,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1AD161E6E0EB3DD24EB541C19344BEA2 /* Roam.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Roam.xcframework; path = Roam/Roam.xcframework; sourceTree = "<group>"; };
-		21B34DCD0D9A0AED91E7B41455963A7F /* AWSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCore.xcframework; path = Roam/AWSCore.xcframework; sourceTree = "<group>"; };
-		4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-RoamExample"; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AD161E6E0EB3DD24EB541C19344BEA2 /* Roam.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = Roam.xcframework; path = Roam/Roam.xcframework; sourceTree = "<group>"; };
+		21B34DCD0D9A0AED91E7B41455963A7F /* AWSCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSCore.xcframework; path = Roam/AWSCore.xcframework; sourceTree = "<group>"; };
+		4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RoamExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		554C4F592BC21A899D4BE0D5A7A0C8EF /* Pods-RoamExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RoamExample-dummy.m"; sourceTree = "<group>"; };
 		5DEAA4EE93B2424B090711B469DD0716 /* Pods-RoamExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RoamExample-frameworks.sh"; sourceTree = "<group>"; };
 		65B6F29C58FFAA645E5A60C578FE88D5 /* Pods-RoamExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoamExample.debug.xcconfig"; sourceTree = "<group>"; };
@@ -47,14 +48,14 @@
 		77845088CE1597E9C40CE715DBF7FB92 /* roam-ios-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "roam-ios-xcframeworks.sh"; sourceTree = "<group>"; };
 		93269D3ED3B819893F6600D6D3CEBBD7 /* Pods-RoamExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RoamExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		97E4E4AC78E4CC303ECD6B982367F31D /* Pods-RoamExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RoamExample.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AFFCE6A6AA425F612E2C692DF4AE7F46 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProvider.xcframework; path = Roam/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
-		B13F67A27F010A2C2194D986EA253357 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSCognitoIdentityProviderASF.xcframework; path = Roam/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
-		B87387F409B546E6520CEFF2D69244C1 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSMobileClientXCF.xcframework; path = Roam/AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AFFCE6A6AA425F612E2C692DF4AE7F46 /* AWSCognitoIdentityProvider.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProvider.xcframework; path = Roam/AWSCognitoIdentityProvider.xcframework; sourceTree = "<group>"; };
+		B13F67A27F010A2C2194D986EA253357 /* AWSCognitoIdentityProviderASF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSCognitoIdentityProviderASF.xcframework; path = Roam/AWSCognitoIdentityProviderASF.xcframework; sourceTree = "<group>"; };
+		B87387F409B546E6520CEFF2D69244C1 /* AWSMobileClientXCF.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSMobileClientXCF.xcframework; path = Roam/AWSMobileClientXCF.xcframework; sourceTree = "<group>"; };
 		B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.release.xcconfig"; sourceTree = "<group>"; };
 		C68C6ECEEAD8C2251D165292D288EAA8 /* Pods-RoamExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RoamExample-Info.plist"; sourceTree = "<group>"; };
-		D20539864964E36E70FDE86EFE10DFF7 /* AWSIoT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSIoT.xcframework; path = Roam/AWSIoT.xcframework; sourceTree = "<group>"; };
-		E12C66D95EF3DD16D78D54D3A2103025 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = AWSAuthCore.xcframework; path = Roam/AWSAuthCore.xcframework; sourceTree = "<group>"; };
+		D20539864964E36E70FDE86EFE10DFF7 /* AWSIoT.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSIoT.xcframework; path = Roam/AWSIoT.xcframework; sourceTree = "<group>"; };
+		E12C66D95EF3DD16D78D54D3A2103025 /* AWSAuthCore.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = AWSAuthCore.xcframework; path = Roam/AWSAuthCore.xcframework; sourceTree = "<group>"; };
 		EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "roam-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		F604EAAE88E46F0ED6B234491EDEC615 /* Pods-RoamExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RoamExample-umbrella.h"; sourceTree = "<group>"; };
 		FE2FD5EAA9FA30915C6D6F1ED00F782A /* Pods-RoamExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RoamExample-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -111,7 +112,7 @@
 		610D201A49DC27B262875BFD99AC9771 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */,
+				4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 				A058F4FD6A0C7A422BFAB3E53D8E6F1A /* Frameworks */,
 				5B5770827284488C653A07C9564911CC /* Support Files */,
 			);
-			name = "roam-ios";
 			path = "roam-ios";
 			sourceTree = "<group>";
 		};
@@ -205,7 +205,7 @@
 			);
 			name = "Pods-RoamExample";
 			productName = Pods_RoamExample;
-			productReference = 4447D7C6FE941CF96BAEAF1053756D08 /* Pods-RoamExample */;
+			productReference = 4447D7C6FE941CF96BAEAF1053756D08 /* Pods_RoamExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -214,8 +214,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1400;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -287,41 +287,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C8D6D830DA0D46058C2F16BF0405E57 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		101DA4AD181502D4E46980C17916CF00 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		4033005475345EB290E714E39B4E9877 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65B6F29C58FFAA645E5A60C578FE88D5 /* Pods-RoamExample.debug.xcconfig */;
@@ -338,7 +303,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RoamExample/Pods-RoamExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +323,24 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4CA2C51B5B0BB8A2B3199CAF501B1F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91934AF1DCF412B60D67967CB118537 /* roam-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
 		};
 		6714DD8F9119B73C52E3D9057C6A17A2 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -375,7 +358,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-RoamExample/Pods-RoamExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +379,23 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		79BF29EF51E279B8488EEA233D983568 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE42E0416A1B6A7C4291CFC627C126A1 /* roam-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -432,6 +432,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -447,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,6 +495,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -512,7 +514,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -549,8 +551,8 @@
 		EE8840988243FC2A76D63FB263896BF0 /* Build configuration list for PBXAggregateTarget "roam-ios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0C8D6D830DA0D46058C2F16BF0405E57 /* Debug */,
-				101DA4AD181502D4E46980C17916CF00 /* Release */,
+				79BF29EF51E279B8488EEA233D983568 /* Debug */,
+				4CA2C51B5B0BB8A2B3199CAF501B1F84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
