@@ -6,6 +6,6 @@ framework module Roam {
 }
 
 module Roam.Swift {
-  header "Roam-Swift.h"
-  requires objc
+    header "Roam-Swift.h"
+    requires objc
 }

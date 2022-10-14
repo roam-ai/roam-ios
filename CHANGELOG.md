@@ -178,6 +178,10 @@ Fixed:
 Fixed:
 - Making SDK backward compatible to support Xcode 14.x with Swift v5.7 along with the fix for crash issue receiving other user location.
 
+## 0.0.33
+Added:
+- Added support for Roam.initialize() with custom configurations. 
+
 ## 0.1.0
 
 Modified:
