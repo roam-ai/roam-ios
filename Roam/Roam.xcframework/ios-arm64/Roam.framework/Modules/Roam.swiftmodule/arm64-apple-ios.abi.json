@@ -12879,6 +12879,156 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "altitude",
+            "printedName": "altitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(py)altitude",
+            "mangledName": "$s4Roam0A18TripStatusListenerC8altitudeSdvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(im)altitude",
+                "mangledName": "$s4Roam0A18TripStatusListenerC8altitudeSdvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "elevationGain",
+            "printedName": "elevationGain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(py)elevationGain",
+            "mangledName": "$s4Roam0A18TripStatusListenerC13elevationGainSdvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(im)elevationGain",
+                "mangledName": "$s4Roam0A18TripStatusListenerC13elevationGainSdvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "totalElevationGain",
+            "printedName": "totalElevationGain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(py)totalElevationGain",
+            "mangledName": "$s4Roam0A18TripStatusListenerC18totalElevationGainSdvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamTripStatusListener(im)totalElevationGain",
+                "mangledName": "$s4Roam0A18TripStatusListenerC18totalElevationGainSdvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -28426,6 +28576,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "speed",
+            "printedName": "speed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamLocation(py)speed",
+            "mangledName": "$s4Roam0A8LocationC5speedSivp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)speed",
+                "mangledName": "$s4Roam0A8LocationC5speedSivg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)setSpeed:",
+                "mangledName": "$s4Roam0A8LocationC5speedSivs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A8LocationC5speedSivM",
+                "mangledName": "$s4Roam0A8LocationC5speedSivM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -40278,14 +40521,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Int16",
-                "printedName": "Swift.Int16",
-                "usr": "s:s5Int16V"
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
               }
             ],
             "declKind": "Var",
             "usr": "c:@CM@Roam@objc(cs)MyTrip(py)speed",
-            "mangledName": "$s4Roam6MyTripC5speeds5Int16Vvp",
+            "mangledName": "$s4Roam6MyTripC5speeds5Int32Vvp",
             "moduleName": "Roam",
             "declAttributes": [
               "Dynamic",
@@ -40302,14 +40545,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int16",
-                    "printedName": "Swift.Int16",
-                    "usr": "s:s5Int16V"
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)MyTrip(im)speed",
-                "mangledName": "$s4Roam6MyTripC5speeds5Int16Vvg",
+                "mangledName": "$s4Roam6MyTripC5speeds5Int32Vvg",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -40331,14 +40574,14 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Int16",
-                    "printedName": "Swift.Int16",
-                    "usr": "s:s5Int16V"
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)MyTrip(im)setSpeed:",
-                "mangledName": "$s4Roam6MyTripC5speeds5Int16Vvs",
+                "mangledName": "$s4Roam6MyTripC5speeds5Int32Vvs",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -49065,7 +49308,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.0.33\""
+      "value": "\"0.0.34\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
@@ -50008,105 +50251,119 @@
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 8504,
+      "length": 26,
+      "value": "\"LocationHourlyCountValue\""
+    },
+    {
+      "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 8575,
+      "length": 25,
+      "value": "\"CustomTimeFirstLocation\""
+    },
+    {
+      "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 8679,
       "length": 17,
       "value": "\"customuseVisits\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8602,
+      "offset": 8740,
       "length": 17,
       "value": "\"customoptionset\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8663,
+      "offset": 8801,
       "length": 16,
       "value": "\"customaccuracy\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8723,
+      "offset": 8861,
       "length": 20,
       "value": "\"customactivityType\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8787,
+      "offset": 8925,
       "length": 19,
       "value": "\"customshowBlueBar\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8850,
+      "offset": 8988,
       "length": 22,
       "value": "\"customdistanceFilter\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8916,
+      "offset": 9054,
       "length": 22,
       "value": "\"customgeofenceRadius\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8982,
+      "offset": 9120,
       "length": 22,
       "value": "\"customuseSignificant\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9048,
+      "offset": 9186,
       "length": 27,
       "value": "\"customuseRegionMonitoring\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9119,
+      "offset": 9257,
       "length": 31,
       "value": "\"customuseDynamicGeofencRadius\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9194,
+      "offset": 9332,
       "length": 22,
       "value": "\"customUpdateInterval\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9260,
+      "offset": 9398,
       "length": 22,
       "value": "\"customAccuracyFilter\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9335,
+      "offset": 9473,
       "length": 38,
       "value": "\"customallowBackgroundLocationUpdates\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9426,
+      "offset": 9564,
       "length": 42,
       "value": "\"custompausesLocationUpdatesAutomatically\""
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9521,
+      "offset": 9659,
       "length": 35,
       "value": "\"customuseStandardLocationServices\""
     },
@@ -50151,6 +50408,13 @@
       "offset": 523,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 661,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/geospark\/Work\/WorkingSDK\/RoamSDK\/Roam\/Response\/Expose\/RoamLocation.swift",

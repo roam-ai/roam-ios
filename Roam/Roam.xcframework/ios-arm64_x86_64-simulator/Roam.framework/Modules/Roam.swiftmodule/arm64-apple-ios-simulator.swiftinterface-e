@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.1 (swiftlang-5.7.1.135.3 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AWSCore
@@ -257,6 +257,9 @@ extension Roam.Reachability {
   @objc final public let pace: Swift.Double
   @objc final public let latitude: Swift.Double
   @objc final public let longitude: Swift.Double
+  @objc final public let altitude: Swift.Double
+  @objc final public let elevationGain: Swift.Double
+  @objc final public let totalElevationGain: Swift.Double
   @objc deinit
 }
 public enum Model : Swift.String {
@@ -437,6 +440,7 @@ extension UIKit.UIDevice {
   @objc public var networkStatus: Swift.Bool
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc public var batch: Roam.RoamBatchConfig?
+  @objc public var speed: Swift.Int
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: Roam.RoamUser?, _ error: Roam.RoamError?) -> Swift.Void)
@@ -783,7 +787,7 @@ extension Roam.MyTrip {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var speed: Swift.Int16 {
+  @objc @NSManaged dynamic public var speed: Swift.Int32 {
     @objc get
     @objc set
   }

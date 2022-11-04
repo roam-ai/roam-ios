@@ -182,6 +182,12 @@ Fixed:
 Added:
 - Added support for Roam.initialize() with custom configurations. 
 
+## 0.0.34
+Fixed:
+- Location calibration when used along with accuracy config and time based tracking.
+- Added elevation gain parameter to trip listener.
+- Added speed parameter to location listener.
+
 ## 0.1.0
 
 Modified:
