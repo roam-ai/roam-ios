@@ -188,6 +188,10 @@ Fixed:
 - Added elevation gain parameter to trip listener.
 - Added speed parameter to location listener.
 
+## 0.0.35
+Fixed:
+- Making SDK backward compatible to support Xcode 13.x with Swift v5.6.1.
+
 ## 0.1.0
 
 Modified:
