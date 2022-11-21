@@ -429,6 +429,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)unsubscribeTripStatus:(NSString * _Nullable)tripId;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
++ (void)requestAlwaysAuthorization:(BOOL)request;
 + (void)enableAccuracyEngine;
 + (void)disableAccuracyEngine;
 + (void)publishSave:(RoamPublish * _Nullable)publish;
@@ -1326,6 +1327,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)unsubscribeTripStatus:(NSString * _Nullable)tripId;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
++ (void)requestAlwaysAuthorization:(BOOL)request;
 + (void)enableAccuracyEngine;
 + (void)disableAccuracyEngine;
 + (void)publishSave:(RoamPublish * _Nullable)publish;

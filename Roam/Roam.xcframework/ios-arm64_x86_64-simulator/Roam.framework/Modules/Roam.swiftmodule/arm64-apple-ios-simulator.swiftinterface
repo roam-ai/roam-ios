@@ -196,6 +196,7 @@ extension Reachability {
   @objc public static func unsubscribeTripStatus(_ tripId: Swift.String? = nil)
   @objc public static func setTrackingInAppState(_ state: RoamTrackingState)
   @objc public static func offlineLocationTracking(_ offlineTracking: Swift.Bool)
+  @objc public static func requestAlwaysAuthorization(_ request: Swift.Bool)
   @objc public static func enableAccuracyEngine()
   @objc public static func disableAccuracyEngine()
   @objc public static func publishSave(_ publish: RoamPublish? = nil)

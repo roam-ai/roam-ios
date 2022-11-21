@@ -192,6 +192,9 @@ Fixed:
 Fixed:
 - Making SDK backward compatible to support Xcode 13.x with Swift v5.6.1.
 
+## 0.0.36
+- Added a new `Roam.requestAlwaysAuthorization()` method for location permission control.
+
 ## 0.1.0
 
 Modified:
