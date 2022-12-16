@@ -230,3 +230,15 @@ Fixed:
 - Fixed location tracking issue when location permission is changed.
 - The fixed trip listener works independently of the location listener.
 - Fixes core data for location and trips.
+
+## 0.1.3
+Added:
+- Added elevation gain parameter to trip listener.
+- Added speed parameter to location listener.
+
+Fixed:
+- Location calibration when used along with accuracy config and time-based tracking.
+- Tracking config issue for time-based tracking.
+- Fixed crash when user received other user location.
+- Removed blue bar on user logout without stop tracking.
+- Fixed distance calculation logic for individual route points in RoamTripsSummary.
