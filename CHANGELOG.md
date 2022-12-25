@@ -242,3 +242,7 @@ Fixed:
 - Fixed crash when user received other user location.
 - Removed blue bar on user logout without stop tracking.
 - Fixed distance calculation logic for individual route points in RoamTripsSummary.
+
+## 0.1.4
+Fixed:
+- Fixed total elevation issuse in sync trip.
