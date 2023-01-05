@@ -195,8 +195,11 @@ Fixed:
 ## 0.0.36
 - Added a new `Roam.requestAlwaysAuthorization()` method for location permission control.
 
-## 0.1.0
+## 0.0.37
+Fixed:
+- Fixed drift issuse for distance-based tracking. 
 
+## 0.1.0
 Modified:
 - Updated new trip v2 methods. Refer Migration guide for more details.
 
