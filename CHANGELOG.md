@@ -253,3 +253,7 @@ Fixed:
 ## 0.1.5
 - Added basic ingest publish topic for aws cost optimisation.
 - Fixed drift issuse for distance-based tracking.
+
+## 0.1.6
+- Tweaked the tracking algorithm for efficient battery consumption: We have made changes to our tracking algorithm to optimize battery consumption. The new algorithm is designed to reduce battery usage while maintaining the same level of accuracy and reliability.
+
