@@ -249,3 +249,7 @@ Fixed:
 ## 0.1.4
 Fixed:
 - Fixed total elevation issuse in sync trip.
+
+## 0.1.5
+- Added basic ingest publish topic for aws cost optimisation.
+- Fixed drift issuse for distance-based tracking.
