@@ -209,6 +209,8 @@ extension Reachability {
   @objc public static func setTrackingConfig(accuracy: Swift.Int, timeout: Swift.Int, discardLocation: Swift.Bool, handler: (_ config: RoamLocationConfig?, _ error: RoamError?) -> Swift.Void)
   @objc public static func getTrackingConfig(handler: (_ config: RoamLocationConfig?, _ error: RoamError?) -> Swift.Void)
   @objc public static func resetTrackingConfig(handler: RoamTrackingConfigCompletionhandler? = nil)
+  @objc public static func requestActivityPermission()
+  @objc public static func checkActivityPermission() -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -837,6 +839,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var recorded_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var source: Swift.String? {
     @objc get
     @objc set
   }

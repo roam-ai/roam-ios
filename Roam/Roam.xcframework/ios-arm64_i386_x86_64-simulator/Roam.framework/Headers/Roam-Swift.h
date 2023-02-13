@@ -292,6 +292,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) BOOL network_status;
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
 @property (nonatomic) BOOL trips_events;
@@ -445,6 +446,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)requestActivityPermission;
++ (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1401,6 +1404,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) BOOL network_status;
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
 @property (nonatomic) BOOL trips_events;
@@ -1554,6 +1558,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)requestActivityPermission;
++ (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2510,6 +2516,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) BOOL network_status;
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
 @property (nonatomic) BOOL trips_events;
@@ -2663,6 +2670,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)requestActivityPermission;
++ (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
