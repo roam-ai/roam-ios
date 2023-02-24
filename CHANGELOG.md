@@ -262,3 +262,6 @@ In this release, we have made the following improvements to enhance the user exp
 - Activity recognition methods: We have added activity recognition methods to the Roam iOS SDK to provide a more accurate and reliable determination of the user's current activity. This will improve the accuracy of location tracking, especially when the user is in motion.
 - Improved tracking logic: To further improve battery consumption, we have made some changes to our tracking logic. These changes are aimed at ensuring that the Roam SDK is as efficient as possible in terms of energy usage, while still providing accurate location tracking.
 We are confident that these changes will improve the overall experience of our Roam iOS SDK and we hope you enjoy these enhancements. If you have any questions or concerns, please feel free to reach out to us.
+
+## 0.1.8
+- Activity recognition permission issuse fixed.
