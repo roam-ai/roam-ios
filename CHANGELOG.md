@@ -265,3 +265,10 @@ We are confident that these changes will improve the overall experience of our R
 
 ## 0.1.8
 - Activity recognition permission issuse fixed.
+
+## 0.1.9
+- Fixed a number of crashes that occurred while tracking in specific scenarios, improving the overall stability of the SDK.
+- Cleared console warnings to improve the developer experience.
+- Improved user subscription process for a smoother and more streamlined experience.
+- Improved location tracking logic to improve the accuracy and reliability of the SDK.
+- Overall performance and stability of the SDK have been improved.
