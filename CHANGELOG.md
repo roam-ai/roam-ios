@@ -272,3 +272,6 @@ We are confident that these changes will improve the overall experience of our R
 - Improved user subscription process for a smoother and more streamlined experience.
 - Improved location tracking logic to improve the accuracy and reliability of the SDK.
 - Overall performance and stability of the SDK have been improved.
+
+## 0.1.10
+- Added few support for new error codes and messages in on `didError` delegate.
