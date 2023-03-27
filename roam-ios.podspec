@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.module_name           = 'Roam'
   s.ios.deployment_target = '11.0'
   s.requires_arc          = true
-  s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2021 Roam B.V, All rights reserved.' }
+  s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
 end
