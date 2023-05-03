@@ -275,3 +275,6 @@ We are confident that these changes will improve the overall experience of our R
 
 ## 0.1.10
 - Added few support for new error codes and messages in on `didError` delegate.
+
+## 0.1.11
+- Fixed mutiple users creating when calling `setDeviceToken` method.
