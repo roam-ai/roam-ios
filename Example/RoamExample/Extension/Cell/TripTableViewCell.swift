@@ -18,13 +18,20 @@ protocol TripTableViewCelldelegate {
     
     func deleteeChanged(_ sender: TripTableViewCell)
     func syncChanged(_ sender: TripTableViewCell)
-    
-    
+    func isSyncChanged(_ sender: TripTableViewCell)
+    func tripSummary(_ sender: TripTableViewCell)
+    func showTripStop(_ sender: TripTableViewCell)
+    func updateTrip(_ sender: TripTableViewCell)
+    func subscribeTrip(_ sender: TripTableViewCell)
+
 }
+
 class TripTableViewCell: UITableViewCell {
     
     @IBOutlet weak var tripId: UILabel!
+    @IBOutlet weak var isLocalLabel: UILabel!
     @IBOutlet weak var tripCreated: UILabel!
+    @IBOutlet weak var tripStatus: UILabel!
     @IBOutlet weak var startStop: GradientButton!
     @IBOutlet weak var startStop1: GradientButton!
     @IBOutlet weak var delete: GradientButton!
@@ -32,7 +39,12 @@ class TripTableViewCell: UITableViewCell {
     @IBOutlet weak var pauseResume1: GradientButton!
     
     @IBOutlet weak var sync: GradientButton!
-    
+    @IBOutlet weak var isSynStatus: GradientButton!
+    @IBOutlet weak var tripSummary: GradientButton!
+    @IBOutlet weak var showTripStopAction: GradientButton!
+    @IBOutlet weak var updateTripAction: GradientButton!
+    @IBOutlet weak var subscribeAction: GradientButton!
+
     
     var delegate:TripTableViewCelldelegate?
     
@@ -99,4 +111,53 @@ class TripTableViewCell: UITableViewCell {
         delegate?.pauseResumeChanged1(self)
     }
     
+    @IBAction func isSyncAction(_ sender: Any) {
+        if isSynStatus.titleLabel?.textColor == UIColor.white{
+            isSynStatus.setTitleColor(.gray, for: .normal)
+        }else{
+            isSynStatus.setTitleColor(colorDefault, for: .normal)
+        }
+        delegate?.isSyncChanged(self)
+    }
+    
+    @IBAction func summaryAction(_ sender: Any) {
+        if tripSummary.titleLabel?.textColor == UIColor.white{
+            tripSummary.setTitleColor(.gray, for: .normal)
+        }else{
+            tripSummary.setTitleColor(colorDefault, for: .normal)
+        }
+        delegate?.tripSummary(self)
+    }
+    
+    @IBAction func stopAction(_ sender: Any) {
+        if showTripStopAction.titleLabel?.textColor == UIColor.white{
+            showTripStopAction.setTitleColor(.gray, for: .normal)
+        }else{
+            showTripStopAction.setTitleColor(colorDefault, for: .normal)
+        }
+        delegate?.showTripStop(self)
+    }
+    
+    @IBAction func udpateAction(_ sender: Any) {
+        if updateTripAction.titleLabel?.textColor == UIColor.white{
+            updateTripAction.setTitleColor(.gray, for: .normal)
+        }else{
+            updateTripAction.setTitleColor(colorDefault, for: .normal)
+        }
+        delegate?.updateTrip(self)
+    }
+
+    @IBAction func subscribeTripAction(_ sender: Any) {
+        if subscribeAction.titleLabel?.textColor == UIColor.white{
+            subscribeAction.setTitleColor(.gray, for: .normal)
+        }else{
+            subscribeAction.setTitleColor(colorDefault, for: .normal)
+        }
+        if subscribeAction.titleLabel?.text == "Subscribe"{
+            subscribeAction.setTitle("UnSubscribe", for: .normal)
+        }else{
+            subscribeAction.setTitle("Subscribe", for: .normal)
+        }
+        delegate?.subscribeTrip(self)
+    }
 }

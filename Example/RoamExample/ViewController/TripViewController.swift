@@ -10,16 +10,14 @@ import UIKit
 import Roam
 
 enum TripType: String {
-    case Start = "Start"
-    case End = "End"
-    case Pause = "Pause"
-    case Resume = "Resume"
+    case Start = "start"
+    case End = "end"
+    case Pause = "pause"
+    case Resume = "resume"
 }
 
 class TripViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,TripTableViewCelldelegate{
-    
-    
-    
+
     @IBOutlet var tripSegment: UISegmentedControl!
     var tripStatuVale:Int = 0
     
@@ -44,17 +42,15 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let nib = UINib(nibName: "TripTableViewCell", bundle: nil)
         tableView.register(nib, forCellReuseIdentifier: "TripTableViewCell")
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(loadData), name: Notification.Name("UserLoggedIn1"), object: nil)
+        loadData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.navigationController?.navigationBar.tintColor = .white
-        
         addStartButtonOnRight()
-        
-        self.loadData()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -68,11 +64,12 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         return logsDisplayVC
     }
     
-    func loadData(){
+    @objc func loadData(){
         self.showHud()
-        Roam.activeTrips(self.activeSelectSegment()) { (trips, status) in
+        Roam.getActiveTrips(self.activeSelectSegment()) { (trip, status) in
+            let trips = trip?.trips
             if trips?.count != 0 && status == nil{
-                self.localTrips = trips!
+                self.localTrips = trips ?? []
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
                 }
@@ -81,7 +78,6 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
                     self.localTrips = []
                     self.tableView.reloadData()
                 }
-                
                 Alert.alertController(title: "Active Trips", message: status?.message, viewController: self)
             }
             self.dismissHud()
@@ -96,19 +92,25 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell = tableView.dequeueReusableCell(withIdentifier: "TripTableViewCell", for: indexPath) as? TripTableViewCell
         cell?.delegate = self
         let trip = localTrips[indexPath.row]
-        if trip.syncStatus != nil{
-            cell?.tripCreated.text = trip.createdAt!.fromUTCToLocalDate() + "      "  + trip.syncStatus!
-        }else{
-            cell?.tripCreated.text = trip.createdAt!.fromUTCToLocalDate()
-        }
-        cell?.tripId.text = trip.tripId
+        print("TripId \(trip.tripId) Local trip  \(trip.isLocal)")
+        cell?.tripId.text = trip.tripId! + " Stop count \(trip.stops.count)"
+        cell?.tripCreated.text = "Created At : " + (trip.createdAt?.fromUTCToLocalDate())! + "\n "
+                                        + "Trip Name:  " + trip.tripName! + "\n"
+                                        + "Trip Descr : " + trip.tripDescription!
+        cell?.tripStatus.text = trip.tripState!
+        cell?.delete.isHidden = false
         if tripStatuVale == 0 {
-            cell?.delete.isHidden = true
             cell?.sync.isHidden = true
         }else{
-            cell?.delete.isHidden = false
             cell?.sync.isHidden = false
         }
+        
+        if SharedUtil.getDefaultString(kTripStatusListener) ==  trip.tripId {
+            cell?.subscribeAction.setTitle("UnSubscribe", for: .normal)
+        }else{
+            cell?.subscribeAction.setTitle("Subscribe", for: .normal)
+        }
+        cell?.isLocalLabel.text = "isLocal \(trip.isLocal)"
         return cell!
     }
     
@@ -121,18 +123,7 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let indexPath = self.tableView.indexPath(for: sender)
         let trip = self.localTrips[(indexPath?.row)!]
         
-        showHud()
-        
-        Roam.startTrip(trip.tripId!) { (status,error) in
-            print("Start Trip \(String(describing: status?.status))")
-            if status != nil{
-                Alert.alertController(title: "Start Trip", message: status?.status, viewController: self)
-            }else{
-                Alert.alertController(title: "Start Trip", message: error?.message, viewController: self)
-            }
-            self.loadData()
-        }
-    
+        promptForAnswer(trip)
     }
     
     func pauseResumeChanged(_ sender: TripTableViewCell) {
@@ -140,16 +131,19 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let trip = self.localTrips[(indexPath?.row)!]
         
         showHud()
-        Roam.pauseTrip(trip.tripId!) { (status, error) in
-            print("Pause Trip \(String(describing: status))")
-            if status != nil{
-                Alert.alertController(title: "Pause Trip", message: status, viewController: self)
+        
+        Roam.pauseTrip(trip.tripId!) { trip, error in
+            
+            var message:String?
+            if trip == nil{
+                message = error?.message
             }else{
-                Alert.alertController(title: "Pause Trip", message: error?.message, viewController: self)
+                message = AppUtility.createTripParamter(trip!).userJson!
             }
+            Alert.alertController(title: "Pause Trip", message: message, viewController: self)
+            
             self.loadData()
         }
-  
     }
     
     func activeSelectSegment() -> Bool{
@@ -165,12 +159,13 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         showHud()
         
-        Roam.deleteTrip(trip.tripId!) { (status, error) in
-            print("Delete Trip",status)
-            if status != nil{
-                Alert.alertController(title: "Delete Trip", message: status, viewController: self)
-            }else{
+        
+        Roam.deleteTrip(trip.tripId!) { trip, error in
+            
+            if trip == nil {
                 Alert.alertController(title: "Delete Trip", message: error?.message, viewController: self)
+            }else{
+                Alert.alertController(title: "Delete Trip", message: trip?.messageDescription, viewController: self)
             }
             self.loadData()
         }
@@ -180,24 +175,46 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.showHud()
         let indexPath = self.tableView.indexPath(for: sender)
         let trip = self.localTrips[(indexPath?.row)!]
-        Roam.syncTrip(trip.tripId!) { (message, error) in
-            print("Sync Trip",message)
-            if message != nil{
-                Alert.alertController(title: "Sync Trip", message: message, viewController: self)
+        Roam.syncTrip(trip.tripId!) { trip, error in
+            if trip == nil {
+                Alert.alertController(title: "Sync Trip", message: error?.errorDescription, viewController: self)
             }else{
-                Alert.alertController(title: "Sync Trip", message: error?.message, viewController: self)
+                Alert.alertController(title: "Sync Trip", message: trip?.messageDescription, viewController: self)
             }
             self.loadData()
-        }
 
+        }
         self.dismissHud()
     }
         
     func startStopChanged1(_ sender: TripTableViewCell) {
         let indexPath = self.tableView.indexPath(for: sender)
-        let vc = StopTripViewController.viewController()
-        vc.trip = self.localTrips[(indexPath?.row)!]
-        self.navigationController?.pushViewController(vc, animated: true)
+        let trip = self.localTrips[(indexPath?.row)!]
+        let alert = UIAlertController(title: "End Trip", message: "Do you want forceStopTracking ?", preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Yes", style: .default , handler:{ (UIAlertAction)in
+            self.endTrip(trip.tripId!, true)
+        }))
+        
+        alert.addAction(UIAlertAction(title: "NO", style: .default , handler:{ (UIAlertAction)in
+            self.endTrip(trip.tripId!, false)
+        }))
+        
+        self.present(alert, animated:true)
+    }
+    
+    func endTrip(_ tripId:String,_ boolV:Bool){
+        showHud()
+        Roam.endTrip(tripId,boolV) { trip, error in
+            var message:String?
+            if trip == nil{
+                message = error?.message
+            }else{
+                message = AppUtility.createTripParamter(trip!).userJson!
+            }
+            Alert.alertController(title: "End Trip", message: message, viewController: self)
+            self.loadData()
+        }
     }
     
     func pauseResumeChanged1(_ sender: TripTableViewCell) {
@@ -205,16 +222,31 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let trip = self.localTrips[(indexPath?.row)!]
         
         showHud()
-        Roam.resumeTrip(trip.tripId!) { (status,error) in
-            print("Resume Trip",status)
-            if status != nil{
-                Alert.alertController(title: "Resume Trip", message: status, viewController: self)
+        Roam.resumeTrip(trip.tripId!) { trip, error in
+            var message:String?
+            if trip == nil{
+                message = error?.message
             }else{
-                Alert.alertController(title: "Resume Trip", message: error?.message, viewController: self)
+                message = AppUtility.createTripParamter(trip!).userJson!
             }
+            Alert.alertController(title: "Resume Trip", message: message, viewController: self)
             self.loadData()
         }
-        
+    }
+    
+    func isSyncChanged(_ sender: TripTableViewCell) {
+        let indexPath = self.tableView.indexPath(for: sender)
+        let trip = self.localTrips[(indexPath?.row)!]
+        Roam.getTrip(trip.tripId!) { trip, error in
+            if trip != nil {
+                let vc = GetTripViewController.viewController()
+                vc.response = trip
+                self.navigationController?.pushViewController(vc, animated: true)
+
+            }else{
+                Alert.alertController(title: "Get Trip Error ", message: "\(error?.code)\("   ")\(error?.message)", viewController: self)
+            }
+        }
     }
     
     func addStartButtonOnRight(){
@@ -234,6 +266,90 @@ class TripViewController: UIViewController, UITableViewDelegate, UITableViewData
         let vc = CreateTripViewController.viewController()
         self.navigationController?.pushViewController(vc, animated: true)
         
+    }
+    
+    
+    func promptForAnswer(_ trip:RoamTrip) {
+        showHud()
+        Roam.startTrip(trip.tripId!) { trip, error in
+            var message:String?
+            if trip == nil{
+                message = error?.message
+            }else{
+                message = AppUtility.createTripParamter(trip!).userJson!
+            }
+            Alert.alertController(title: "Start Trip", message: message, viewController: self)
+            self.loadData()
+        }
+    }
+    
+    func tripSummary(_ sender: TripTableViewCell) {
+        let indexPath = self.tableView.indexPath(for: sender)
+        let trip = self.localTrips[(indexPath?.row)!]
+
+        showHud()
+        
+        Roam.getTripSummary(trip.tripId!) { tripVal, error in
+            self.dismissHud()
+            if tripVal == nil {
+                self.updateLabelError(error!, "Trip Summary")
+            }else{
+                self.updateLabel(tripVal!, "Trip Summary")
+            }
+
+        }
+    }
+    
+    func updateLabel(_ respons:RoamTripResponse, _ str:String){
+        let response = AppUtility.createTripParamter(respons)
+        DispatchQueue.main.async {
+            Alert.alertController(title: str, message: response.userJson!, viewController: self)
+            UIPasteboard.general.string = response.userJson!
+        }
+    }
+    
+    func updateLabelError(_ respons:RoamTripError, _ str:String){
+        var response:String = respons.errorDescription! + respons.message!
+        respons.errors.forEach { erro in
+            response += "\(erro.field) \("       ") \(erro.message)"
+        }
+        DispatchQueue.main.async {
+            Alert.alertController(title: str, message: response, viewController: self)
+            UIPasteboard.general.string = response
+        }
+    }
+    
+    func showTripStop(_ sender: TripTableViewCell) {
+//        let indexPath = self.tableView.indexPath(for: sender)
+//        let trip = self.localTrips[(indexPath?.row)!]
+//
+//        let vc = ShowStopsViewController.viewController()
+//        vc.dataCount = trip.stops
+//        self.navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
+    func updateTrip(_ sender: TripTableViewCell) {
+        let indexPath = self.tableView.indexPath(for: sender)
+        let trip = self.localTrips[(indexPath?.row)!]
+
+        let vc = StopMapViewController.viewController()
+        vc.tripId = trip.tripId
+        vc.isCreateTrip = false
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    func subscribeTrip(_ sender: TripTableViewCell) {
+        let indexPath = self.tableView.indexPath(for: sender)
+         let trip = self.localTrips[(indexPath?.row)!]
+        if (sender.subscribeAction.titleLabel?.text)! == "Subscribe" {
+            Roam.subscribeTrip(trip.tripId!)
+            SharedUtil.setDefaultString(trip.tripId!, kTripStatusListener)
+        }else{
+            Roam.unsubscribeTrip()
+            SharedUtil.removeKey(kTripStatusListener)
+        }
+        self.loadData()
     }
     
     

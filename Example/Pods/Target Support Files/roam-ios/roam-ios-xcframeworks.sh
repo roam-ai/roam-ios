@@ -23,11 +23,11 @@ variant_for_slice()
   "Roam.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
-  "AWSAuthCore.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
   "AWSAuthCore.xcframework/ios-arm64_armv7")
     echo ""
+    ;;
+  "AWSAuthCore.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   "AWSCognitoIdentityProvider.xcframework/ios-arm64_armv7")
     echo ""
@@ -35,29 +35,29 @@ variant_for_slice()
   "AWSCognitoIdentityProvider.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
-  "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "simulator"
-    ;;
   "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_armv7")
     echo ""
     ;;
-  "AWSCore.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   "AWSCore.xcframework/ios-arm64_armv7")
     echo ""
     ;;
-  "AWSIoT.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSCore.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   "AWSIoT.xcframework/ios-arm64_armv7")
     echo ""
     ;;
-  "AWSMobileClientXCF.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSIoT.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "simulator"
     ;;
   "AWSMobileClientXCF.xcframework/ios-arm64_armv7")
     echo ""
+    ;;
+  "AWSMobileClientXCF.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "simulator"
     ;;
   esac
 }
@@ -71,11 +71,11 @@ archs_for_slice()
   "Roam.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
-  "AWSAuthCore.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
   "AWSAuthCore.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
+    ;;
+  "AWSAuthCore.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   "AWSCognitoIdentityProvider.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
@@ -83,29 +83,29 @@ archs_for_slice()
   "AWSCognitoIdentityProvider.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
-  "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_i386_x86_64-simulator")
-    echo "arm64 i386 x86_64"
-    ;;
   "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
     ;;
-  "AWSCore.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSCognitoIdentityProviderASF.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
   "AWSCore.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
     ;;
-  "AWSIoT.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSCore.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
   "AWSIoT.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
     ;;
-  "AWSMobileClientXCF.xcframework/ios-arm64_i386_x86_64-simulator")
+  "AWSIoT.xcframework/ios-arm64_i386_x86_64-simulator")
     echo "arm64 i386 x86_64"
     ;;
   "AWSMobileClientXCF.xcframework/ios-arm64_armv7")
     echo "arm64 armv7"
+    ;;
+  "AWSMobileClientXCF.xcframework/ios-arm64_i386_x86_64-simulator")
+    echo "arm64 i386 x86_64"
     ;;
   esac
 }
@@ -190,10 +190,10 @@ install_xcframework() {
 }
 
 install_xcframework "${PODS_ROOT}/roam-ios/Roam/Roam.xcframework" "roam-ios" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSAuthCore.xcframework" "roam-ios" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSAuthCore.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSCognitoIdentityProvider.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
-install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSCognitoIdentityProviderASF.xcframework" "roam-ios" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSCore.xcframework" "roam-ios" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSIoT.xcframework" "roam-ios" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
-install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSMobileClientXCF.xcframework" "roam-ios" "framework" "ios-arm64_i386_x86_64-simulator" "ios-arm64_armv7"
+install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSCognitoIdentityProviderASF.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSCore.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSIoT.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/roam-ios/Roam/AWSMobileClientXCF.xcframework" "roam-ios" "framework" "ios-arm64_armv7" "ios-arm64_i386_x86_64-simulator"
 

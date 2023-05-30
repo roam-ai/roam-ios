@@ -11,7 +11,6 @@ import Roam
 
 class TripDetailsViewController: UIViewController {
     
-    @IBOutlet var segmentControl: UISegmentedControl!
     @IBOutlet var responseString: UILabel!
     @IBOutlet var tripStatus: UISegmentedControl!
     var tripStatuVale:Int = 0
@@ -44,43 +43,10 @@ class TripDetailsViewController: UIViewController {
     
     @IBAction func createTrip(_ sender: Any) {
         
-        self.showHud()
-        if segmentControl.selectedSegmentIndex  == 3{
-            Roam.createTrip(self.selectSegment()) {
-                (response,error) in
-                self.dismissHud()
-                if response!.userId  != nil{
-                    let create = "Create trip  " + "   createdAt \(String(describing: response!.createdAt))"  + "   isDeleted \(response!.isDeleted)" + "   isStarted \(response!.isStarted)" + "   isEnded \(response!.isEnded)" + "   tripId \(String(describing: response!.tripId)) " + "   tripTrackingUrl \(String(describing: response!.tripTrackingUrl))" + "   updatedAt \(String(describing: response!.updatedAt))" + "   origins \(response!.origins.count)" + " destinations \(response!.destinations.count)"
-                    self.alert("Create Trip", create)
-                }else{
-                    self.dismissHud()
-                    self.alert("Create Trip", (error?.message)!)
-                }
-            }
-        }else{
-            var dict:Dictionary<String,Any> = [:]
-            //origin[77.635536,12.914478] destination [[77.677210,13.000048],[77.708614,13.192067]]
-            let index = segmentControl.selectedSegmentIndex
-            if index == 0 {
-                dict = ["destinations":[[77.677210,13.000048]],"origins":[[77.635536,12.914478]]]
-            }else if index == 1{
-                dict = ["origins":[[77.635536,12.914478]]]
-            }else if index == 2{
-                dict = ["destinations":[[77.677210,13.000048]]]
-            }
-            Roam.createTrip(self.selectSegment(),dict) { (response,error) in
-                self.dismissHud()
-                if response!.userId  != nil{
-                    let create = "Create trip  " + "   createdAt \(String(describing: response!.createdAt))"  + "   isDeleted \(response!.isDeleted)" + "   isStarted \(response!.isStarted)" + "   isEnded \(response!.isEnded)" + "   tripId \(String(describing: response!.tripId)) " + "   tripTrackingUrl \(String(describing: response!.tripTrackingUrl))" + "   updatedAt \(String(describing: response!.updatedAt))" + "   origins \(response!.origins.count)" + " destinations \(response!.destinations.count)"
-                    self.alert("Create Trip", create)
-                }else{
-                    self.dismissHud()
-                    self.alert("Create Trip", (error?.message)!)
-                }
-            }
-        }
-        
-        
+        let vc = StopMapViewController.viewController()
+        vc.isLocalTrip = self.tripStatus.selectedSegmentIndex == 0 ? false : true
+        vc.isCreateTrip = true
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func tripSummary(_ sender: Any) {
@@ -116,11 +82,11 @@ class TripDetailsViewController: UIViewController {
                 if textField.text!.count > 0 {
                     self.showHud()
                     Roam.getTripSummary(textField.text!) { (response, error) in
-                        if response?.userId  != nil {
+                        if response?.trip?.user?.userId  != nil {
                             DispatchQueue.main.async {
                                 self.dismissHud()
                             let vc = TripSummaryViewController.viewController()
-                            vc.summary = response
+//                                vc.summary = response
                             self.navigationController?.pushViewController(vc, animated: true)
                             }
                         }else{
@@ -150,10 +116,11 @@ class TripDetailsViewController: UIViewController {
             if let textField = alertController.textFields?[0] {
                 if textField.text!.count > 0 {
                     self.showHud()
-                    Roam.getTripDetails(textField.text!) { (trip, error) in
+                    Roam.getTrip(textField.text!) { (trip, error) in
                         self.dismissHud()
+                        let trip = trip?.trip
                         if trip?.tripId != nil{
-                            let str =  " Get Trip details : Trip Id   \((trip!.tripId)!)" + " \n created :\((trip!.createdAt)!) " + " \n destination: \(String(describing: trip!.destinations.count))" + " \n  Distance covered:  \(String(describing: trip!.distanceCovered))" + "  \n Duration:\(String(describing: trip!.duration))" + "  \n  events:\(trip!.events.count)" + " \n  origins: \(String(describing: trip!.origins.count))" + " \n Started & ended & updated \((trip!.tripStartedAt)!)\((trip!.updatedAt)!)"
+                            let str =  " Get Trip details : Trip Id   \((trip!.tripId)!)" + " \n created :\((trip!.createdAt)!) " + " \n  Distance covered:  \(String(describing: trip!.totalDistance))" + "  \n Duration:\(String(describing: trip!.totalDuration))" + "  \n  events:\(trip!.events.count)" + " \n Started & ended & updated \((trip!.startedAt)!)\((trip!.updatedAt)!)"
                             self.alert("Trip Summary", str)
                         }else{
                             self.dismissHud()

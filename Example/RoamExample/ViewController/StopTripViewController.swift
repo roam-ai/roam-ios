@@ -65,11 +65,11 @@ class StopTripViewController: UIViewController {
     }
     @IBAction func stopTrip(_ sender: Any) {
         self.showHud()
-        Roam.stopTrip((trip?.tripId)!, forceStopTracking: forceStop.isOn, trackigMode, trackinhOption) { status, error in
-            if error == nil{
-                Alert.alertController(title: "Stop Trip", message: status, viewController: self)
+        Roam.endTrip((trip?.tripId)!, forceStop.isOn) { trip, error in
+            if error == nil {
+                Alert.alertController(title: "Stop Trip", message: trip?.message, viewController: self)
             }else{
-                Alert.alertController(title: "Stop Trip", message: error?.code, viewController: self)
+                Alert.alertController(title: "Stop Trip", message: "\(error?.code)", viewController: self)
             }
             self.dismissHud()
         }

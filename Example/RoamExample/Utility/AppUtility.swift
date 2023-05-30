@@ -14,7 +14,7 @@ internal class AppUtility: NSObject {
     
     static func saveUserValue(_ user:RoamUser){
         SharedUtil.setDefaultBoolean(true, kFirstTime)
-        SharedUtil.setDefaultString(user.userId!, kUserId)
+        SharedUtil.setDefaultString(user.userId, kUserId)
         if user.userDescription?.isEmpty == false{
             SharedUtil.setDefaultString(user.userDescription!, kUserdescription)
         }
@@ -121,6 +121,120 @@ internal class AppUtility: NSObject {
                  "tripId":event.tripId as Any,
                  "veritcalAccuracy":event.veritcalAccuracy as Any
             ] as [String : Any]
+    }
+    
+    static func getStops(name:String? = nil,desc:String? = nil, address:String? = nil) -> RoamTripStop
+    {
+        let stop = RoamTripStop()
+        stop.geometryCoordinates = [80.925026,16.6601249]
+        stop.geometryRadius  = 1000
+        stop.stopDescription = desc
+        stop.address = address
+        stop.stopName = name
+        return stop
+    }
+    
+    static func createTripParamter(_ response:RoamTripResponse) -> Dictionary<String,Any>{
+        guard let trip = response.trip else {
+            return [:]
+        }
+        var dict:Dictionary<String,Any> = [:]
+        dict["description"] = response.errorDescription
+        dict["message"] = response.message
+        dict["code"] = response.code
+        
+        
+        var tripDic:Dictionary<String,Any> = [:]
+        tripDic["id"] = trip.tripId
+        tripDic["description"] = trip.tripDescription
+        tripDic["name"] = trip.tripName
+        tripDic["trip_state"] = trip.tripState
+        tripDic["total_elevation_gain"] = trip.totalElevationGain
+        tripDic["total_distance"] = trip.totalDistance
+        tripDic["total_duration"] = trip.totalDuration
+        
+        tripDic["createdAt"] = trip.createdAt
+        tripDic["updatedAt"] = trip.updatedAt
+        tripDic["startedAt"] = trip.startedAt
+        tripDic["endedAt"] = trip.endedAt
+        
+        tripDic["isLocal"] = trip.isLocal
+        tripDic["endedAt"] = trip.endedAt
+        tripDic["metadata"] = trip.metadata
+        
+        let userDic:Dictionary<String,Any> = ["user_id":trip.user?.userId]
+        tripDic["user"] = userDic
+        
+        if trip.stops.count != 0 {
+            var stopDict:[Dictionary<String,Any>] = []
+            trip.stops.forEach { stop in
+                let dict = self.stopParameter(stop)
+                stopDict.append(dict)
+            }
+            tripDic["stops"] = stopDict
+        }
+        
+        if trip.events.count != 0 {
+            var stopDict:[Dictionary<String,Any>] = []
+            trip.events.forEach { stop in
+                let dict = self.eventParameter(stop)
+                stopDict.append(dict)
+            }
+            tripDic["events"] = stopDict
+            
+        }
+        
+        if trip.routes.count != 0 {
+            var stopDict:[Dictionary<String,Any>] = []
+            trip.routes.forEach { stop in
+                let dict = self.tripRouteParameter(stop)
+                stopDict.append(dict)
+            }
+            tripDic["route"] = stopDict
+        }
+        
+        dict["trip"] = tripDic
+        return dict
+    }
+    
+    private static func stopParameter(_ tripStop:RoamTripStop) -> Dictionary<String,Any> {
+        var stopDict:Dictionary<String,Any> = [:]
+        stopDict["id"] = tripStop.stopId
+        stopDict["metadata"] = tripStop.metadata
+        stopDict["description"] = tripStop.stopDescription
+        stopDict["name"] = tripStop.stopName
+        stopDict["address"] = tripStop.address
+        stopDict["geometry_radius"] = tripStop.geometryRadius
+        var geometryDic:Dictionary<String,Any> = ["type":"Point"]
+        geometryDic["coordinates"] = tripStop.geometryCoordinates
+        stopDict["geometry"] = geometryDic
+        return stopDict
+    }
+    
+    private static func eventParameter(_ event:RoamTripEvents) -> Dictionary<String,Any> {
+        var eventDict:Dictionary<String,Any> = [:]
+        eventDict["id"] = event.eventsId
+        eventDict["trip_id"] = event.eventsId
+        eventDict["user_id"] = event.userId
+        eventDict["event_type"] = event.eventType
+        eventDict["event_source"] = event.eventSource
+        eventDict["created_at"] = event.createAt
+        eventDict["event_version"] = event.eventVersion
+        return eventDict
+    }
+    
+    
+    private static func tripRouteParameter(_ route:RoamTripRoutes) -> Dictionary<String,Any> {
+        var eventDict:Dictionary<String,Any> = [:]
+        eventDict["recorded_at"] = route.recordedAt
+        eventDict["activity"] = route.activity
+        eventDict["duration"] = route.duration
+        eventDict["distance"] = route.distance
+        eventDict["altitude"] = route.altitude
+        eventDict["elevation_gain"] = route.elevationGain
+        let dict:Dictionary<String,Any> = ["type":"Point","coordinates":route.coordinates]
+        eventDict["coordinates"] = dict
+        return eventDict
     }
     
 }

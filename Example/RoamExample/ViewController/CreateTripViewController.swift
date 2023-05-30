@@ -91,10 +91,13 @@ class CreateTripViewController: UIViewController {
     
     @IBAction func createTripAction(_ sender: Any) {
         self.showHud()
-        Roam.startTrip(nil, isTripLocal.isOn, trackigMode, "", origin, destination, trackinhOption) { roamTrip, error in
-            
+        let trip = RoamTrip()
+        trip.tripName = "HOTEL PARK ELIT"
+        trip.tripDescription = "HOTEL PARK ELITE"
+        trip.isLocal = self.isTripLocal.isOn
+        Roam.startTrip(trip) { trip, error in
             if error?.message == nil {
-                Alert.alertController(title: "Start Trip", message: roamTrip?.status, viewController: self)
+                Alert.alertController(title: "Start Trip", message: trip?.message, viewController: self)
             }else{
                 Alert.alertController(title: "Start Trip", message: error?.message, viewController: self)
             }

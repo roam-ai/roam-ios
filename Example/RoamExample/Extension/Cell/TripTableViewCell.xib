@@ -1,45 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="178" id="KGk-i7-Jjw" customClass="TripTableViewCell" customModule="Motion__Test" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="259" id="5UE-rg-Xgp" customClass="TripTableViewCell" customModule="Roam_Example" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="178"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5UE-rg-Xgp" id="rVq-5g-UGX">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="255"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Rz8-UV-jbs">
-                        <rect key="frame" x="20" y="10" width="280" height="35"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ny7-YF-mbt">
+                        <rect key="frame" x="20" y="10" width="280" height="38"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfy-mV-JQR">
-                                <rect key="frame" x="0.0" y="0.0" width="280" height="14"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af2-Lj-cJw">
-                                <rect key="frame" x="0.0" y="21" width="280" height="14"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="9UX-za-kbC">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="15.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yA8-fx-HNE">
+                                        <rect key="frame" x="0.0" y="0.0" width="136.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Id" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2i2-8p-GGM">
+                                        <rect key="frame" x="143.5" y="0.0" width="136.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="EOO-oW-ESt">
+                                <rect key="frame" x="0.0" y="22.5" width="280" height="15.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trip Desc" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owa-BH-6AZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="58.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                        <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="isLocal" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9a-M7-e88">
+                                        <rect key="frame" x="65.5" y="0.0" width="214.5" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="12"/>
+                                        <color key="textColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="35" id="M0d-87-Jci"/>
-                        </constraints>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BnB-TX-Lkg">
-                        <rect key="frame" x="10" y="55" width="300" height="30"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BiE-HE-T0h">
+                        <rect key="frame" x="10" y="58" width="300" height="30"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8D-uN-EY0" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MF-RG-N4d" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Start">
@@ -51,10 +71,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startStopAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="MY3-YN-puD"/>
+                                    <action selector="startStopAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="PZW-hk-Sbz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIx-SL-32C" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Mc-NH-23h" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="155" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Stop">
@@ -66,18 +86,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="startStopAction1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Cp5-fZ-cQf"/>
+                                    <action selector="startStopAction1:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="pE7-i1-5LG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="jKn-YR-wDP"/>
+                            <constraint firstAttribute="height" constant="30" id="DRb-Xf-mKm"/>
                         </constraints>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pij-PW-b3z">
-                        <rect key="frame" x="10" y="95" width="300" height="30"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7qa-YX-GqT">
+                        <rect key="frame" x="10" y="98" width="300" height="30"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xY4-1j-wGu" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axd-MY-Eth" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Pause">
@@ -89,10 +109,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pauseResumeAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0p7-Po-fgL"/>
+                                    <action selector="pauseResumeAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="Paq-fE-ytP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nn2-9U-fJi" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jd-Pa-JSz" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="155" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Resume">
@@ -104,18 +124,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="pauseResumeAction1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JoZ-ha-bPa"/>
+                                    <action selector="pauseResumeAction1:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="SbU-A9-67E"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="Rfb-GE-rUq"/>
+                            <constraint firstAttribute="height" constant="30" id="zEm-iO-ibd"/>
                         </constraints>
                     </stackView>
-                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="c8Q-DF-Fdy">
-                        <rect key="frame" x="10" y="135" width="300" height="30"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JjO-Or-ywc">
+                        <rect key="frame" x="10" y="138" width="300" height="30"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-Hs-rHC" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqe-dp-5Y4" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Delete">
@@ -127,10 +147,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="deleteAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="grK-QO-DpI"/>
+                                    <action selector="deleteAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="yTt-Up-aIs"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-HN-2YN" customClass="GradientButton" customModule="Motion__Test" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-P6-5aj" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
                                 <rect key="frame" x="155" y="0.0" width="145" height="30"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Sync ">
@@ -142,43 +162,182 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="synsAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lGc-o8-68v"/>
+                                    <action selector="synsAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="EnL-qU-teG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="height" constant="30" id="cQS-If-UsQ"/>
+                            <constraint firstAttribute="height" constant="30" id="gBd-Iy-Bcb"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-Td-7wy">
+                        <rect key="frame" x="10" y="176" width="300" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AX0-Zr-kZx" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="isSyncAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="XoG-Lw-KYD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jQj-qh-doZ" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                                <rect key="frame" x="155" y="0.0" width="145" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Trip Summary">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="summaryAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="jHu-jy-c6k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="sQZ-59-aD7"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MuK-Uk-bsh">
+                        <rect key="frame" x="10" y="216" width="300" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGL-Xn-Cwl" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="93.5" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Get Stops">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="z2d-rh-hWc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTP-Gx-7KA" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                                <rect key="frame" x="103.5" y="0.0" width="93" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Update trip">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="udpateAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="8o4-2K-i06"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9e-g7-Oqd" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                                <rect key="frame" x="206.5" y="0.0" width="93.5" height="30"/>
+                                <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Subscribe">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="subscribeTripAction:" destination="5UE-rg-Xgp" eventType="touchUpInside" id="oAb-uL-ncg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="mYi-wV-NyU"/>
                         </constraints>
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="c8Q-DF-Fdy" firstAttribute="top" secondItem="pij-PW-b3z" secondAttribute="bottom" constant="10" id="Ebt-tE-7Wa"/>
-                    <constraint firstItem="c8Q-DF-Fdy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="GEm-C2-UCK"/>
-                    <constraint firstAttribute="trailing" secondItem="Rz8-UV-jbs" secondAttribute="trailing" constant="20" id="InU-Q8-3mX"/>
-                    <constraint firstItem="pij-PW-b3z" firstAttribute="top" secondItem="BnB-TX-Lkg" secondAttribute="bottom" constant="10" id="Lux-Aj-WLc"/>
-                    <constraint firstItem="Rz8-UV-jbs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Nrd-Qn-by9"/>
-                    <constraint firstAttribute="bottom" secondItem="c8Q-DF-Fdy" secondAttribute="bottom" constant="10" id="XuS-d7-QeZ"/>
-                    <constraint firstAttribute="trailing" secondItem="c8Q-DF-Fdy" secondAttribute="trailing" constant="10" id="Z6U-c7-5VI"/>
-                    <constraint firstAttribute="trailing" secondItem="BnB-TX-Lkg" secondAttribute="trailing" constant="10" id="cPX-Aq-W1A"/>
-                    <constraint firstAttribute="trailing" secondItem="pij-PW-b3z" secondAttribute="trailing" constant="10" id="e2C-FC-bsp"/>
-                    <constraint firstItem="Rz8-UV-jbs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="euJ-VY-u5F"/>
-                    <constraint firstItem="pij-PW-b3z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="gRx-1b-xFc"/>
-                    <constraint firstItem="BnB-TX-Lkg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="lxe-yO-upO"/>
-                    <constraint firstItem="BnB-TX-Lkg" firstAttribute="top" secondItem="Rz8-UV-jbs" secondAttribute="bottom" constant="10" id="oDX-hB-GsO"/>
+                    <constraint firstItem="MuK-Uk-bsh" firstAttribute="top" secondItem="bTp-Td-7wy" secondAttribute="bottom" constant="10" id="6Td-rZ-988"/>
+                    <constraint firstAttribute="trailing" secondItem="JjO-Or-ywc" secondAttribute="trailing" constant="10" id="Jgf-UA-e7Z"/>
+                    <constraint firstItem="MuK-Uk-bsh" firstAttribute="trailing" secondItem="bTp-Td-7wy" secondAttribute="trailing" id="Jqb-lC-S3l"/>
+                    <constraint firstItem="ny7-YF-mbt" firstAttribute="leading" secondItem="rVq-5g-UGX" secondAttribute="leading" constant="20" id="Jvh-9y-cSm"/>
+                    <constraint firstItem="JjO-Or-ywc" firstAttribute="top" secondItem="7qa-YX-GqT" secondAttribute="bottom" constant="10" id="KkS-FV-1R1"/>
+                    <constraint firstItem="BiE-HE-T0h" firstAttribute="top" secondItem="ny7-YF-mbt" secondAttribute="bottom" constant="10" id="KqQ-Ks-rZI"/>
+                    <constraint firstItem="MuK-Uk-bsh" firstAttribute="leading" secondItem="bTp-Td-7wy" secondAttribute="leading" id="T29-KU-Zm2"/>
+                    <constraint firstItem="7qa-YX-GqT" firstAttribute="top" secondItem="BiE-HE-T0h" secondAttribute="bottom" constant="10" id="ebT-VC-mXv"/>
+                    <constraint firstAttribute="trailing" secondItem="ny7-YF-mbt" secondAttribute="trailing" constant="20" id="etI-Gs-yox"/>
+                    <constraint firstAttribute="trailing" secondItem="7qa-YX-GqT" secondAttribute="trailing" constant="10" id="hFM-9D-s9U"/>
+                    <constraint firstItem="BiE-HE-T0h" firstAttribute="leading" secondItem="rVq-5g-UGX" secondAttribute="leading" constant="10" id="mL5-Q0-lEt"/>
+                    <constraint firstItem="bTp-Td-7wy" firstAttribute="top" secondItem="JjO-Or-ywc" secondAttribute="bottom" constant="8" symbolic="YES" id="mq1-tc-Vut"/>
+                    <constraint firstItem="7qa-YX-GqT" firstAttribute="leading" secondItem="rVq-5g-UGX" secondAttribute="leading" constant="10" id="oT2-XW-1JJ"/>
+                    <constraint firstItem="bTp-Td-7wy" firstAttribute="trailing" secondItem="JjO-Or-ywc" secondAttribute="trailing" id="pyO-HF-MeY"/>
+                    <constraint firstAttribute="bottom" secondItem="MuK-Uk-bsh" secondAttribute="bottom" constant="9" id="ueh-MZ-Flv"/>
+                    <constraint firstItem="ny7-YF-mbt" firstAttribute="top" secondItem="rVq-5g-UGX" secondAttribute="top" constant="10" id="v9s-Y9-fan"/>
+                    <constraint firstItem="bTp-Td-7wy" firstAttribute="leading" secondItem="JjO-Or-ywc" secondAttribute="leading" id="wEj-cw-l2z"/>
+                    <constraint firstItem="JjO-Or-ywc" firstAttribute="leading" secondItem="rVq-5g-UGX" secondAttribute="leading" constant="10" id="wMT-ba-35g"/>
+                    <constraint firstAttribute="trailing" secondItem="BiE-HE-T0h" secondAttribute="trailing" constant="10" id="wUo-fI-kDg"/>
                 </constraints>
             </tableViewCellContentView>
-            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <viewLayoutGuide key="safeArea" id="Fp3-ca-RN7"/>
             <connections>
-                <outlet property="delete" destination="nBI-Hs-rHC" id="y3n-5u-sgB"/>
-                <outlet property="pauseResume" destination="xY4-1j-wGu" id="5Yd-JB-Smr"/>
-                <outlet property="pauseResume1" destination="Nn2-9U-fJi" id="fnP-pj-Ha4"/>
-                <outlet property="startStop" destination="W8D-uN-EY0" id="Cd0-KM-nAR"/>
-                <outlet property="startStop1" destination="jIx-SL-32C" id="nyH-oU-oGU"/>
-                <outlet property="sync" destination="D4u-HN-2YN" id="mp7-TK-8M4"/>
-                <outlet property="tripCreated" destination="af2-Lj-cJw" id="GJy-M8-rzE"/>
-                <outlet property="tripId" destination="Pfy-mV-JQR" id="wWK-LO-Ct0"/>
+                <outlet property="delete" destination="Sqe-dp-5Y4" id="qTu-kQ-1Az"/>
+                <outlet property="isLocalLabel" destination="K9a-M7-e88" id="UuH-D3-ZX6"/>
+                <outlet property="isSynStatus" destination="AX0-Zr-kZx" id="LoI-j3-ov7"/>
+                <outlet property="pauseResume" destination="axd-MY-Eth" id="atR-8X-FVR"/>
+                <outlet property="pauseResume1" destination="5jd-Pa-JSz" id="NYn-NX-pYn"/>
+                <outlet property="showTripStopAction" destination="AGL-Xn-Cwl" id="cjo-AX-fbZ"/>
+                <outlet property="startStop" destination="3MF-RG-N4d" id="IaO-Bb-zcT"/>
+                <outlet property="startStop1" destination="9Mc-NH-23h" id="Qrg-1N-eBG"/>
+                <outlet property="subscribeAction" destination="u9e-g7-Oqd" id="uHt-di-b6d"/>
+                <outlet property="sync" destination="oN9-P6-5aj" id="xYq-mr-kLA"/>
+                <outlet property="tripCreated" destination="owa-BH-6AZ" id="nDC-Lc-6du"/>
+                <outlet property="tripId" destination="yA8-fx-HNE" id="ri6-S4-WHx"/>
+                <outlet property="tripStatus" destination="2i2-8p-GGM" id="acP-Iy-BHa"/>
+                <outlet property="tripSummary" destination="jQj-qh-doZ" id="EiW-wB-gBn"/>
+                <outlet property="updateTripAction" destination="oTP-Gx-7KA" id="NlI-8D-Mmf"/>
             </connections>
-            <point key="canvasLocation" x="-214" y="29"/>
+            <point key="canvasLocation" x="-214.49275362318843" y="-24.441964285714285"/>
         </tableViewCell>
     </objects>
+    <designables>
+        <designable name="3MF-RG-N4d">
+            <size key="intrinsicContentSize" width="34" height="30"/>
+        </designable>
+        <designable name="5jd-Pa-JSz">
+            <size key="intrinsicContentSize" width="55" height="30"/>
+        </designable>
+        <designable name="9Mc-NH-23h">
+            <size key="intrinsicContentSize" width="32" height="30"/>
+        </designable>
+        <designable name="AGL-Xn-Cwl">
+            <size key="intrinsicContentSize" width="69" height="30"/>
+        </designable>
+        <designable name="AX0-Zr-kZx">
+            <size key="intrinsicContentSize" width="55" height="30"/>
+        </designable>
+        <designable name="Sqe-dp-5Y4">
+            <size key="intrinsicContentSize" width="45" height="30"/>
+        </designable>
+        <designable name="axd-MY-Eth">
+            <size key="intrinsicContentSize" width="42" height="30"/>
+        </designable>
+        <designable name="jQj-qh-doZ">
+            <size key="intrinsicContentSize" width="96" height="30"/>
+        </designable>
+        <designable name="oN9-P6-5aj">
+            <size key="intrinsicContentSize" width="38" height="30"/>
+        </designable>
+        <designable name="oTP-Gx-7KA">
+            <size key="intrinsicContentSize" width="78" height="30"/>
+        </designable>
+        <designable name="u9e-g7-Oqd">
+            <size key="intrinsicContentSize" width="69" height="30"/>
+        </designable>
+    </designables>
 </document>

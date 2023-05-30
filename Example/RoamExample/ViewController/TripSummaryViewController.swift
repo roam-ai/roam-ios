@@ -31,7 +31,7 @@ class TripSummaryViewController: UIViewController,MKMapViewDelegate{
         }
 
         DispatchQueue.main.async {
-                         self.labelStatus.text = "Distance : \(String(describing: self.summary!.distanceCovered)) \("   Meter ")\n " + "Duration : \(String(describing: self.summary!.duration)) \("  Seconds")"
+                         self.labelStatus.text = "Distance : \(String(describing: self.summary!.total_Distance)) \("   Meter ")\n " + "Duration : \(String(describing: self.summary!.total_Duration)) \("  Seconds")"
                      }
                      
                      if summary != nil {
@@ -57,11 +57,11 @@ class TripSummaryViewController: UIViewController,MKMapViewDelegate{
     func getMapAnnotations()  -> [Capital]{
         var annotations:Array = [Capital]()
     
-        summary?.route.forEach({ (route) in
-            print(route)
-            let cap = Capital(title: route.activity!, coordinate:CLLocationCoordinate2D(latitude: route.coordinates.first!, longitude: route.coordinates.last!) , info: route.recordedAt!)
-            annotations.append(cap)
-        })
+//        summary?.route.forEach({ (route) in
+//            print(route)
+//            let cap = Capital(title: route.activity!, coordinate:CLLocationCoordinate2D(latitude: route.coordinates.first!, longitude: route.coordinates.last!) , info: route.recordedAt!)
+//            annotations.append(cap)
+//        })
         
         return annotations
     

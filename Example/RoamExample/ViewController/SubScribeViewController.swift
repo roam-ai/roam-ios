@@ -92,7 +92,7 @@ class SubScribeViewController: UIViewController {
         }else{
             let str = SharedUtil.getDefaultString(kTripStatusListener)
             if str.isEmpty == false{
-                Roam.unsubscribeTripStatus(str)
+                Roam.unsubscribeTrip(str)
                 self.updateLabel("")
                 SharedUtil.removeKey(kTripStatusListener)
             }
@@ -115,7 +115,7 @@ class SubScribeViewController: UIViewController {
                 if textField.text!.count > 0 {
                     let str = textField.text!
                     self.updateLabel(str)
-                    Roam.subscribeTripStatus(str)
+                    Roam.subscribeTrip(str)
                     SharedUtil.setDefaultString(str, kTripStatusListener)
                 }else{
                     self.tripListener.isOn = false

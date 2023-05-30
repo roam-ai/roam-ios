@@ -89,7 +89,7 @@ class OtherLocationViewController: UIViewController,MKMapViewDelegate {
     }
     
     @objc func updateTripEvent(notification: NSNotification){
-        if let image = notification.userInfo?["trip"] as? RoamTripStatusListener {
+        if let image = notification.userInfo?["trip"] as? RoamTripStatus {
             let str = "Trip id:  \(image.tripId) \n\n" + "  Speed: \(image.speed) \n\n" + "  Distance:\(image.distance)\n\n" + "  Duration:\(image.duration)\n\n" + "  StartedAt:\(image.startedTime)\n\n" + "  pace:\(image.pace)\n\n" + "  latitude:\(image.latitude)\n\n" + " longitude:\(image.longitude)\n\n"
             
             self.label.text = str
