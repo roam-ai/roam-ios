@@ -278,3 +278,6 @@ We are confident that these changes will improve the overall experience of our R
 
 ## 0.1.11
 - Fixed mutiple users creating when calling `setDeviceToken` method.
+
+## 0.1.12
+- Fixed the tracking issue during terminated state for SDK only tracking.
