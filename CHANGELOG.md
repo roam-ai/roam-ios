@@ -281,3 +281,9 @@ We are confident that these changes will improve the overall experience of our R
 
 ## 0.1.12
 - Fixed the tracking issue during terminated state for SDK only tracking.
+
+## 0.1.13
+We're excited to introduce Roam iOS SDK version 0.1.13, which includes a significant enhancement aimed at strengthening security within the SDK. Here's a breakdown of the latest changes:
+- New Security Module: Roam
+We've incorporated an advanced security module named Roam into the SDK. With this release, developers can take advantage of the toggleSecurity() method provided by Roam. This addition allows for seamless enabling and disabling of enhanced security measures. Protecting sensitive data is of paramount importance, and the Roam security module provides a streamlined way to fortify your application's defenses.
+As always, we appreciate your feedback and contributions in helping us refine and enhance the Roam iOS SDK. Please feel free to reach out to our support team if you have any questions, concerns, or suggestions. Stay tuned for more updates as we continue to improve the SDK's capabilities and features.

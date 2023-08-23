@@ -1,16 +1,21 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios10.3-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AWSCore
 import AWSIoT
 import AWSMobileClientXCF
 import CommonCrypto
+import CoreBluetooth
 import CoreData
 import CoreLocation
 import CoreMotion
 import CoreTelephony
+import Darwin
+import ExternalAccessory
 import Foundation
+import MachO
+import ObjectiveC
 @_exported import Roam
 import Swift
 import SystemConfiguration
@@ -18,6 +23,14 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+public protocol AnyOptional {
+  var isNil: Swift.Bool { get }
+}
+extension Swift.Optional : Roam.AnyOptional {
+  public var isNil: Swift.Bool {
+    get
+  }
+}
 @objc public enum LocationAccuracy : Swift.Int {
   case kCLLocationAccuracyBestForNavigation
   case kCLLocationAccuracyBest
@@ -155,7 +168,7 @@ extension Roam.Reachability {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Roam : ObjectiveC.NSObject {
-  @objc public static var delegate: (any Roam.RoamDelegate)! {
+  @objc public static var delegate: Roam.RoamDelegate! {
     @objc get
     @objc set
   }
@@ -213,6 +226,7 @@ extension Roam.Reachability {
   @objc public static func resetTrackingConfig(handler: Roam.RoamTrackingConfigCompletionhandler? = nil)
   @objc public static func requestActivityPermission()
   @objc public static func checkActivityPermission() -> Swift.Bool
+  @objc public static func toggleSecurity(networkEnabled: Swift.Bool, deviceRooted: Swift.Bool, bluetoothEnabled: Swift.Bool, externalAccessoryEnabled: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -226,6 +240,17 @@ extension Roam.Reachability {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum FileIntegrityCheck {
+  case bundleID(Swift.String)
+  case mobileProvision(Swift.String)
+  case machO(Swift.String, Swift.String)
+}
+extension Roam.FileIntegrityCheck {
+  public var description: Swift.String {
+    get
+  }
+}
+public typealias FileIntegrityCheckResult = (result: Swift.Bool, hitChecks: [Roam.FileIntegrityCheck])
 @_hasMissingDesignatedInitializers @objc public class RoamTripListener : ObjectiveC.NSObject {
   @objc final public let tripId: Swift.String
   @objc final public let speed: Swift.Double
@@ -306,6 +331,28 @@ extension Roam.Reachability {
   @objc final public let elevationGain: Swift.Double
   @objc final public let totalElevationGain: Swift.Double
   @objc deinit
+}
+public typealias FailedCheckType = (check: Roam.FailedCheck, failMessage: Swift.String)
+public enum FailedCheck : Swift.CaseIterable {
+  case urlSchemes
+  case existenceOfSuspiciousFiles
+  case suspiciousFilesCanBeOpened
+  case restrictedDirectoriesWriteable
+  case fork
+  case symbolicLinks
+  case dyld
+  case openedPorts
+  case pSelectFlag
+  case suspiciousObjCClasses
+  public static func == (a: Roam.FailedCheck, b: Roam.FailedCheck) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public typealias AllCases = [Roam.FailedCheck]
+  public static var allCases: [Roam.FailedCheck] {
+    get
+  }
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTripStop : ObjectiveC.NSObject {
   @objc public var stopId: Swift.String?
@@ -597,6 +644,22 @@ public typealias RoamTrackingConfigCompletionhandler = ((_ config: Roam.RoamLoca
   @objc public var tripStartedAt: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
+public class IOSSecuritySuite {
+  public static func amIJailbroken() -> Swift.Bool
+  public static func amIJailbrokenWithFailMessage() -> (jailbroken: Swift.Bool, failMessage: Swift.String)
+  public static func amIJailbrokenWithFailedChecks() -> (jailbroken: Swift.Bool, failedChecks: [Roam.FailedCheckType])
+  public static func amIRunInEmulator() -> Swift.Bool
+  public static func amIDebugged() -> Swift.Bool
+  public static func denyDebugger()
+  public static func isParentPidUnexpected() -> Swift.Bool
+  public static func amITampered(_ checks: [Roam.FileIntegrityCheck]) -> Roam.FileIntegrityCheckResult
+  public static func amIReverseEngineered() -> Swift.Bool
+  public static func amIReverseEngineeredWithFailedChecks() -> (reverseEngineered: Swift.Bool, failedChecks: [Roam.FailedCheckType])
+  public static func amIRuntimeHooked(dyldWhiteList: [Swift.String], detectionClass: Swift.AnyClass, selector: ObjectiveC.Selector, isClassMethod: Swift.Bool) -> Swift.Bool
+  public static func amIProxied() -> Swift.Bool
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripDestination : ObjectiveC.NSObject {
@@ -1265,6 +1328,8 @@ extension Roam.Reachability.NetworkStatus : Swift.Equatable {}
 extension Roam.Reachability.NetworkStatus : Swift.Hashable {}
 extension Roam.Reachability.Connection : Swift.Equatable {}
 extension Roam.Reachability.Connection : Swift.Hashable {}
+extension Roam.FailedCheck : Swift.Equatable {}
+extension Roam.FailedCheck : Swift.Hashable {}
 extension Roam.Model : Swift.Equatable {}
 extension Roam.Model : Swift.Hashable {}
 extension Roam.Model : Swift.RawRepresentable {}
