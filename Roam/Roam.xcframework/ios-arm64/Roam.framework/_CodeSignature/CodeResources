@@ -6,7 +6,7 @@
 	<dict>
 		<key>Frameworks/AWSAuthCore.framework/AWSAuthCore</key>
 		<data>
-		NTpS1edSRXAf5njWGFannJ5iCvU=
+		9FekiD+GCrEHyzpHfY3Bu9ApogI=
 		</data>
 		<key>Frameworks/AWSAuthCore.framework/Info.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Frameworks/AWSCognitoIdentityProvider.framework/AWSCognitoIdentityProvider</key>
 		<data>
-		gwK3t8WauAU2ny7m88HXXwduUto=
+		XwY67QsjvQRPh4NMbXeuZLugJCE=
 		</data>
 		<key>Frameworks/AWSCognitoIdentityProvider.framework/Info.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF</key>
 		<data>
-		1pYh/q2bP7nGDFTx2GCv0+Jc5gM=
+		1kMLwzNREITbtP75Z8i4lz/8vz8=
 		</data>
 		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/Info.plist</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Frameworks/AWSCore.framework/AWSCore</key>
 		<data>
-		EdtgRVnG05TrkChs7RiXtxx8Wr4=
+		dVK6uOtBjoB00hiOGg5V9S9SBj4=
 		</data>
 		<key>Frameworks/AWSCore.framework/Info.plist</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Frameworks/AWSIoT.framework/AWSIoT</key>
 		<data>
-		dl5O0dVnkfyU4d2I5WOE7taBVjo=
+		K9r78UxIMh8uwFsqxQJTAEP54IU=
 		</data>
 		<key>Frameworks/AWSIoT.framework/Info.plist</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Frameworks/AWSMobileClientXCF.framework/AWSMobileClientXCF</key>
 		<data>
-		ZrvMmalMD+xIe5J/ou5caUxgUOE=
+		AgOrW0gAYOZOUcXc/+4phxoDcPY=
 		</data>
 		<key>Frameworks/AWSMobileClientXCF.framework/Info.plist</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Ew89M1uykwfGppFkJ2NgLGzT1Gw=
+		kXKmDKJCCGVD0aADPV31d+AEExs=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		6XdCdtxPzQpBNKq5R5utZC5NJtU=
+		o437YHVx7cktEJP4iOcnfYz2OxQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -131,11 +131,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NTpS1edSRXAf5njWGFannJ5iCvU=
+			9FekiD+GCrEHyzpHfY3Bu9ApogI=
 			</data>
 			<key>hash2</key>
 			<data>
-			BWna2IPsSA8negNiCsl0a+l1y87bokd3Y19xuwudWi0=
+			0YiP0bEHGYLnGfnAPxergxxssXga3U4ZO0zo8i6iAYs=
 			</data>
 		</dict>
 		<key>Frameworks/AWSAuthCore.framework/Info.plist</key>
@@ -164,11 +164,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gwK3t8WauAU2ny7m88HXXwduUto=
+			XwY67QsjvQRPh4NMbXeuZLugJCE=
 			</data>
 			<key>hash2</key>
 			<data>
-			c3i1u3YBCS83BchrC7DrtJnq/Z29TUgP0PLRJcAb8S0=
+			AGXRx2NTHoWzr+LFz2ZpB59QbLFqn11ZoS+r8QJ2Ozc=
 			</data>
 		</dict>
 		<key>Frameworks/AWSCognitoIdentityProvider.framework/Info.plist</key>
@@ -197,11 +197,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1pYh/q2bP7nGDFTx2GCv0+Jc5gM=
+			1kMLwzNREITbtP75Z8i4lz/8vz8=
 			</data>
 			<key>hash2</key>
 			<data>
-			agnFEzD14BDZ4INNl7KWdOB/nM5fAkTXXGvNvDZkrV4=
+			Ni5wi+ka1KpKOJT67TkoVLrkc4tgw6FDIqkxZOi0GY0=
 			</data>
 		</dict>
 		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/Info.plist</key>
@@ -230,11 +230,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EdtgRVnG05TrkChs7RiXtxx8Wr4=
+			dVK6uOtBjoB00hiOGg5V9S9SBj4=
 			</data>
 			<key>hash2</key>
 			<data>
-			RSbp0UaGZQR30ucRZJCP2THIcVsWw4zOn0VFYpaLeXs=
+			+qA2SaQbVX2uKVs1DdDAAkPwPfNDFajxgdSbIHv5zmQ=
 			</data>
 		</dict>
 		<key>Frameworks/AWSCore.framework/Info.plist</key>
@@ -274,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dl5O0dVnkfyU4d2I5WOE7taBVjo=
+			K9r78UxIMh8uwFsqxQJTAEP54IU=
 			</data>
 			<key>hash2</key>
 			<data>
-			wSX1DFA7XvMkfU+fj8ii6zSPpFGXJ2sCpcpk9WhhSik=
+			OkZtJEst4wguk499XEfCYT8YAVhs47FuOXCeNmgxZhI=
 			</data>
 		</dict>
 		<key>Frameworks/AWSIoT.framework/Info.plist</key>
@@ -307,11 +307,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZrvMmalMD+xIe5J/ou5caUxgUOE=
+			AgOrW0gAYOZOUcXc/+4phxoDcPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ACSO7a72RanOiNlIKKayoKC0txMWl6pNHR83dmNqTP8=
+			3BooUFrWguj+5gKtcIoHBqdpqKsRVVzHuSm0H9FbQZc=
 			</data>
 		</dict>
 		<key>Frameworks/AWSMobileClientXCF.framework/Info.plist</key>
@@ -362,11 +362,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Ew89M1uykwfGppFkJ2NgLGzT1Gw=
+			kXKmDKJCCGVD0aADPV31d+AEExs=
 			</data>
 			<key>hash2</key>
 			<data>
-			VKM7b9dEyci8ftcZYESXd0Ih+sUMPx9f4OKBtyuuKhc=
+			hJjH46LkqC3BATHopD+hgRh9vyj8HleZenWmH0uV/rw=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -406,11 +406,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			6XdCdtxPzQpBNKq5R5utZC5NJtU=
+			o437YHVx7cktEJP4iOcnfYz2OxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			awguPFoLrwohiGwlc6/rIA8Zc0iNfo3HELLk0hK4hoA=
+			XRUPhB2W77BTijNQrlSZQLr33vgLXweSqMae8RV0kKs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

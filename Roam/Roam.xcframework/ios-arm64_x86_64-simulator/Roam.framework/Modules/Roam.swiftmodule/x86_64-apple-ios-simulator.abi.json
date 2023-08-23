@@ -66730,7 +66730,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.12\""
+      "value": "\"0.1.13\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
