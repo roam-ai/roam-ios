@@ -496,7 +496,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 ///
 /// \param externalAccessoryEnabled A boolean indicating whether external accessory security checks should be enabled.
 ///
-+ (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled;
+/// \param verifyMotion A boolean indicating whether Motion Detection security checks should be enabled.
+///
++ (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled verifyMotion:(BOOL)verifyMotion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -776,6 +778,21 @@ SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
 - (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
 @end
 
+/// An enumeration representing the tracking modes for roaming.
+/// <ul>
+///   <li>
+///     passive: Passive tracking mode with a radius of 100.
+///   </li>
+///   <li>
+///     balanced: Balanced tracking mode with a radius of 50.
+///   </li>
+///   <li>
+///     active: Active tracking mode with a radius of 25.
+///   </li>
+///   <li>
+///     custom: Custom tracking mode with a radius of 100.
+///   </li>
+/// </ul>
 typedef SWIFT_ENUM(NSInteger, RoamTrackingMode, open) {
   RoamTrackingModePassive = 1,
   RoamTrackingModeBalanced = 2,

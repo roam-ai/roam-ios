@@ -226,7 +226,7 @@ extension Reachability {
   @objc public static func resetTrackingConfig(handler: RoamTrackingConfigCompletionhandler? = nil)
   @objc public static func requestActivityPermission()
   @objc public static func checkActivityPermission() -> Swift.Bool
-  @objc public static func toggleSecurity(networkEnabled: Swift.Bool, deviceRooted: Swift.Bool, bluetoothEnabled: Swift.Bool, externalAccessoryEnabled: Swift.Bool)
+  @objc public static func toggleSecurity(networkEnabled: Swift.Bool, deviceRooted: Swift.Bool, bluetoothEnabled: Swift.Bool, externalAccessoryEnabled: Swift.Bool, verifyMotion: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -532,17 +532,6 @@ extension UIKit.UIDevice {
   @objc public var trips: [RoamTrip]
   @objc deinit
 }
-@objc public enum RoamTrackingMode : Swift.Int {
-  case passive = 1
-  case balanced
-  case active
-  case custom
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 @objc public enum RoamTrackingState : Swift.Int {
   case AlwaysOn = 0
   case Foreground
@@ -567,6 +556,17 @@ extension UIKit.UIDevice {
   case Online = 0
   case Offline
   case Both
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum RoamTrackingMode : Swift.Int {
+  case passive = 1
+  case balanced
+  case active
+  case custom
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -1348,9 +1348,6 @@ extension FailedCheck : Swift.Hashable {}
 extension Model : Swift.Equatable {}
 extension Model : Swift.Hashable {}
 extension Model : Swift.RawRepresentable {}
-extension RoamTrackingMode : Swift.Equatable {}
-extension RoamTrackingMode : Swift.Hashable {}
-extension RoamTrackingMode : Swift.RawRepresentable {}
 extension RoamTrackingState : Swift.Equatable {}
 extension RoamTrackingState : Swift.Hashable {}
 extension RoamTrackingState : Swift.RawRepresentable {}
@@ -1360,3 +1357,6 @@ extension RoamSubscribe : Swift.RawRepresentable {}
 extension RoamNetworkState : Swift.Equatable {}
 extension RoamNetworkState : Swift.Hashable {}
 extension RoamNetworkState : Swift.RawRepresentable {}
+extension RoamTrackingMode : Swift.Equatable {}
+extension RoamTrackingMode : Swift.Hashable {}
+extension RoamTrackingMode : Swift.RawRepresentable {}

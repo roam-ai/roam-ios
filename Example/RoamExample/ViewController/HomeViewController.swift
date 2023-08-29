@@ -176,7 +176,7 @@ class HomeViewController: UIViewController {
                 AppUtility.resetDefaults()
                 DispatchQueue.main.async {
                     Roam.setLoggerEnabled(logger: true)
-                    Roam.initialize(KPublishableKey)
+                    Roam.initialize("6e6d7628940bfcf95c1ede51767717d70abd5ea45c7da83ebea812dc89ae0499")
                     let story = UIStoryboard(name: "Main", bundle:nil)
                     let vc = story.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                     let nav = UINavigationController(rootViewController: vc)

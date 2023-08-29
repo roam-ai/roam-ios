@@ -6253,6 +6253,30 @@
       },
       {
         "kind": "Import",
+        "name": "CoreMotion",
+        "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
         "name": "UserNotifications",
         "printedName": "UserNotifications",
         "declKind": "Import",
@@ -9621,7 +9645,7 @@
           {
             "kind": "Function",
             "name": "toggleSecurity",
-            "printedName": "toggleSecurity(networkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:)",
+            "printedName": "toggleSecurity(networkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:verifyMotion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -9651,14 +9675,20 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@Roam@objc(cs)Roam(cm)toggleSecurityWithNetworkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:",
-            "mangledName": "$s4RoamAAC14toggleSecurity14networkEnabled12deviceRooted09bluetoothE0017externalAccessoryE0ySb_S3btFZ",
+            "usr": "c:@M@Roam@objc(cs)Roam(cm)toggleSecurityWithNetworkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:verifyMotion:",
+            "mangledName": "$s4RoamAAC14toggleSecurity14networkEnabled12deviceRooted09bluetoothE0017externalAccessoryE012verifyMotionySb_S4btFZ",
             "moduleName": "Roam",
             "static": true,
-            "objc_name": "toggleSecurityWithNetworkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:",
+            "objc_name": "toggleSecurityWithNetworkEnabled:deviceRooted:bluetoothEnabled:externalAccessoryEnabled:verifyMotion:",
             "declAttributes": [
               "Final",
               "AccessControl",
@@ -13501,6 +13531,13 @@
         "kind": "Import",
         "name": "CoreTelephony",
         "printedName": "CoreTelephony",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "Roam"
       },
@@ -17685,23 +17722,6 @@
             "mangledName": "$ss12CaseIterableP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Roam",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
       },
       {
         "kind": "Import",
@@ -36018,294 +36038,11 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RoamTrackingMode",
-        "printedName": "RoamTrackingMode",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "passive",
-            "printedName": "passive",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamTrackingMode",
-                    "printedName": "Roam.RoamTrackingMode",
-                    "usr": "c:@M@Roam@E@RoamTrackingMode"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.RoamTrackingMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamTrackingMode",
-                        "printedName": "Roam.RoamTrackingMode",
-                        "usr": "c:@M@Roam@E@RoamTrackingMode"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModePassive",
-            "mangledName": "$s4Roam0A12TrackingModeO7passiveyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
-            "name": "balanced",
-            "printedName": "balanced",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamTrackingMode",
-                    "printedName": "Roam.RoamTrackingMode",
-                    "usr": "c:@M@Roam@E@RoamTrackingMode"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.RoamTrackingMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamTrackingMode",
-                        "printedName": "Roam.RoamTrackingMode",
-                        "usr": "c:@M@Roam@E@RoamTrackingMode"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeBalanced",
-            "mangledName": "$s4Roam0A12TrackingModeO8balancedyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 1
-          },
-          {
-            "kind": "Var",
-            "name": "active",
-            "printedName": "active",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamTrackingMode",
-                    "printedName": "Roam.RoamTrackingMode",
-                    "usr": "c:@M@Roam@E@RoamTrackingMode"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.RoamTrackingMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamTrackingMode",
-                        "printedName": "Roam.RoamTrackingMode",
-                        "usr": "c:@M@Roam@E@RoamTrackingMode"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeActive",
-            "mangledName": "$s4Roam0A12TrackingModeO6activeyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 2
-          },
-          {
-            "kind": "Var",
-            "name": "custom",
-            "printedName": "custom",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamTrackingMode",
-                    "printedName": "Roam.RoamTrackingMode",
-                    "usr": "c:@M@Roam@E@RoamTrackingMode"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.RoamTrackingMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamTrackingMode",
-                        "printedName": "Roam.RoamTrackingMode",
-                        "usr": "c:@M@Roam@E@RoamTrackingMode"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeCustom",
-            "mangledName": "$s4Roam0A12TrackingModeO6customyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "ObjC"
-            ],
-            "fixedbinaryorder": 3
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Roam.RoamTrackingMode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamTrackingMode",
-                    "printedName": "Roam.RoamTrackingMode",
-                    "usr": "c:@M@Roam@E@RoamTrackingMode"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:4Roam0A12TrackingModeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s4Roam0A12TrackingModeO8rawValueACSgSi_tcfc",
-            "moduleName": "Roam",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:4Roam0A12TrackingModeO8rawValueSivp",
-            "mangledName": "$s4Roam0A12TrackingModeO8rawValueSivp",
-            "moduleName": "Roam",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:4Roam0A12TrackingModeO8rawValueSivg",
-                "mangledName": "$s4Roam0A12TrackingModeO8rawValueSivg",
-                "moduleName": "Roam",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "c:@M@Roam@E@RoamTrackingMode",
-        "mangledName": "$s4Roam0A12TrackingModeO",
-        "moduleName": "Roam",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Roam"
       },
       {
         "kind": "TypeDecl",
@@ -37013,6 +36750,297 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoamTrackingMode",
+        "printedName": "RoamTrackingMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "passive",
+            "printedName": "passive",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamTrackingMode",
+                    "printedName": "Roam.RoamTrackingMode",
+                    "usr": "c:@M@Roam@E@RoamTrackingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.RoamTrackingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamTrackingMode",
+                        "printedName": "Roam.RoamTrackingMode",
+                        "usr": "c:@M@Roam@E@RoamTrackingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModePassive",
+            "mangledName": "$s4Roam0A12TrackingModeO7passiveyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "balanced",
+            "printedName": "balanced",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamTrackingMode",
+                    "printedName": "Roam.RoamTrackingMode",
+                    "usr": "c:@M@Roam@E@RoamTrackingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.RoamTrackingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamTrackingMode",
+                        "printedName": "Roam.RoamTrackingMode",
+                        "usr": "c:@M@Roam@E@RoamTrackingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeBalanced",
+            "mangledName": "$s4Roam0A12TrackingModeO8balancedyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "active",
+            "printedName": "active",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamTrackingMode",
+                    "printedName": "Roam.RoamTrackingMode",
+                    "usr": "c:@M@Roam@E@RoamTrackingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.RoamTrackingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamTrackingMode",
+                        "printedName": "Roam.RoamTrackingMode",
+                        "usr": "c:@M@Roam@E@RoamTrackingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeActive",
+            "mangledName": "$s4Roam0A12TrackingModeO6activeyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "custom",
+            "printedName": "custom",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.RoamTrackingMode.Type) -> Roam.RoamTrackingMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamTrackingMode",
+                    "printedName": "Roam.RoamTrackingMode",
+                    "usr": "c:@M@Roam@E@RoamTrackingMode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.RoamTrackingMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamTrackingMode",
+                        "printedName": "Roam.RoamTrackingMode",
+                        "usr": "c:@M@Roam@E@RoamTrackingMode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@Roam@E@RoamTrackingMode@RoamTrackingModeCustom",
+            "mangledName": "$s4Roam0A12TrackingModeO6customyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Roam.RoamTrackingMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamTrackingMode",
+                    "printedName": "Roam.RoamTrackingMode",
+                    "usr": "c:@M@Roam@E@RoamTrackingMode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Roam0A12TrackingModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s4Roam0A12TrackingModeO8rawValueACSgSi_tcfc",
+            "moduleName": "Roam",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:4Roam0A12TrackingModeO8rawValueSivp",
+            "mangledName": "$s4Roam0A12TrackingModeO8rawValueSivp",
+            "moduleName": "Roam",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A12TrackingModeO8rawValueSivg",
+                "mangledName": "$s4Roam0A12TrackingModeO8rawValueSivg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@Roam@E@RoamTrackingMode",
+        "mangledName": "$s4Roam0A12TrackingModeO",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
         ],
         "enumRawTypeName": "Int",
         "conformances": [
@@ -63368,56 +63396,77 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4347,
+      "offset": 4352,
+      "length": 19,
+      "value": "\"lastSavedLocation\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4504,
       "length": 22,
       "value": "\"toogleNetworkEnabled\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4385,
+      "offset": 4542,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4469,
+      "offset": 4626,
       "length": 20,
       "value": "\"toogleDeviceRooted\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4505,
+      "offset": 4662,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4587,
+      "offset": 4744,
       "length": 24,
       "value": "\"toogleBluetoothEnabled\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4627,
+      "offset": 4784,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4713,
+      "offset": 4870,
       "length": 32,
       "value": "\"toogleExternalAccessoryEnabled\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4761,
+      "offset": 4918,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5012,
+      "length": 27,
+      "value": "\"toogleVerifyMotionEnabled\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5055,
       "length": 5,
       "value": "false"
     },
@@ -63651,6 +63700,13 @@
       "offset": 479,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Security\/LocationSpoofingDetector.swift",
+      "kind": "BooleanLiteral",
+      "offset": 350,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Tripv2\/RoamPublishTrip.swift",
@@ -65685,7 +65741,7 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamActiveTracking.swift",
       "kind": "BooleanLiteral",
-      "offset": 387,
+      "offset": 380,
       "length": 4,
       "value": "true"
     },
@@ -66056,443 +66112,443 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 217,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 6,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 262,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 217,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 8,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 6,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 262,
-      "length": 6,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 239,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 347,
+      "offset": 250,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 270,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 336,
+      "offset": 239,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 347,
+      "offset": 250,
       "length": 10,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 367,
+      "offset": 270,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 326,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 341,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 454,
+      "offset": 357,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 467,
+      "offset": 370,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 485,
+      "offset": 388,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 404,
       "length": 4,
       "value": "6"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 326,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 341,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 454,
+      "offset": 357,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 467,
+      "offset": 370,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 485,
+      "offset": 388,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 404,
       "length": 4,
       "value": "6"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 423,
+      "offset": 326,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 438,
+      "offset": 341,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 454,
+      "offset": 357,
       "length": 3,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 467,
+      "offset": 370,
       "length": 8,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 485,
+      "offset": 388,
       "length": 6,
       "value": "5"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 501,
+      "offset": 404,
       "length": 4,
       "value": "6"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 794,
+      "offset": 697,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 715,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 794,
+      "offset": 697,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 812,
+      "offset": 715,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 883,
+      "offset": 786,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 894,
+      "offset": 797,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 814,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 883,
+      "offset": 786,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 894,
+      "offset": 797,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 814,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 988,
+      "offset": 891,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1005,
+      "offset": 908,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 926,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1039,
+      "offset": 942,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 988,
+      "offset": 891,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1005,
+      "offset": 908,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 926,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1039,
+      "offset": 942,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 977,
+      "offset": 880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 988,
+      "offset": 891,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1005,
+      "offset": 908,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1023,
+      "offset": 926,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1039,
+      "offset": 942,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1097,
+      "offset": 1000,
       "length": 10,
       "value": "\"CLRegion\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 1031,
       "length": 12,
       "value": "\"CLLocation\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1158,
+      "offset": 1061,
       "length": 9,
       "value": "\"CLVisit\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1097,
+      "offset": 1000,
       "length": 10,
       "value": "\"CLRegion\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1128,
+      "offset": 1031,
       "length": 12,
       "value": "\"CLLocation\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "StringLiteral",
-      "offset": 1158,
+      "offset": 1061,
       "length": 9,
       "value": "\"CLVisit\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1437,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1448,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1466,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1482,
+      "length": 6,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1437,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1448,
+      "length": 8,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1466,
+      "length": 6,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1482,
+      "length": 6,
+      "value": "4"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
@@ -67085,6 +67141,20 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
+      "offset": 7528,
+      "length": 61,
+      "value": "\"Security exception, Motion Detection permission not granted\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 7634,
+      "length": 59,
+      "value": "\"Security exception, location conflict with motion sensors\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
+      "kind": "StringLiteral",
       "offset": 6879,
       "length": 44,
       "value": "\"The device is either rooted or jailbroken.\""
@@ -67125,6 +67195,20 @@
       "value": "\"An external accessory is connected. Please disconnect the accessory to start tracking.\""
     },
     {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 7528,
+      "length": 61,
+      "value": "\"Security exception, Motion Detection permission not granted\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
+      "kind": "StringLiteral",
+      "offset": 7634,
+      "length": 59,
+      "value": "\"Security exception, location conflict with motion sensors\""
+    },
+    {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Tripv2\/RoamTripDelete.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
@@ -67150,7 +67234,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.13\""
+      "value": "\"0.1.14\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
@@ -67422,825 +67506,790 @@
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
       "offset": 2180,
-      "length": 16,
-      "value": "\"MotionLatitude\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2235,
-      "length": 17,
-      "value": "\"MotionLongitude\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2291,
-      "length": 17,
-      "value": "\"MotionTimeStamp\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2347,
-      "length": 26,
-      "value": "\"MotionHorizontalAccuracy\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2412,
       "length": 21,
       "value": "\"MotionFirstLocation\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2472,
+      "offset": 2240,
       "length": 22,
       "value": "\"MotionInsideGeofence\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2533,
+      "offset": 2301,
       "length": 16,
       "value": "\"SetDeviceToken\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2588,
+      "offset": 2356,
       "length": 11,
       "value": "\"VisitDate\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2638,
+      "offset": 2406,
       "length": 18,
       "value": "\"AccuracyFilterOn\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2695,
+      "offset": 2463,
       "length": 22,
       "value": "\"customAccuracyFilter\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2756,
+      "offset": 2524,
       "length": 23,
       "value": "\"kAccuracyFilterCustom\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2818,
+      "offset": 2586,
       "length": 28,
       "value": "\"kAccuracyFilterCustomValue\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2885,
+      "offset": 2653,
       "length": 19,
       "value": "\"kTrackingTimeBase\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2944,
+      "offset": 2712,
       "length": 21,
       "value": "\"kIsLocationUpdating\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 2772,
       "length": 21,
       "value": "\"kStationaryLocation\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3086,
+      "offset": 2854,
       "length": 27,
       "value": "\"NetworkChangeNotification\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3165,
+      "offset": 2933,
       "length": 18,
       "value": "\"isLoggingEnabled\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3217,
+      "offset": 2985,
       "length": 15,
       "value": "\"getMotionLogs\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3034,
       "length": 16,
       "value": "\"TrackingOption\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3316,
+      "offset": 3084,
       "length": 33,
       "value": "\"location recorded successfully.\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3383,
+      "offset": 3151,
       "length": 9,
       "value": "\"GPSData\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3426,
+      "offset": 3194,
       "length": 26,
       "value": "\"locationPermissionStatus\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3486,
+      "offset": 3254,
       "length": 14,
       "value": "\"StopTracking\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3534,
+      "offset": 3302,
       "length": 39,
       "value": "\"location count recorded successfully.\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3605,
+      "offset": 3373,
       "length": 15,
       "value": "\"geospark:trip\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3641,
+      "offset": 3409,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3694,
+      "offset": 3462,
       "length": 13,
       "value": "\"UserBaseUrl\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3741,
+      "offset": 3509,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3815,
+      "offset": 3583,
       "length": 17,
       "value": "\"awsidentitypath\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3855,
+      "offset": 3623,
       "length": 16,
       "value": "\"awsIotEndPoint\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3893,
+      "offset": 3661,
       "length": 15,
       "value": "\"awsRegionType\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3930,
+      "offset": 3698,
       "length": 15,
       "value": "\"awsPassPhrase\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3976,
+      "offset": 3744,
       "length": 14,
       "value": "\"devmotionsdk\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4032,
+      "offset": 3800,
       "length": 3,
       "value": "\"B\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4062,
+      "offset": 3830,
       "length": 3,
       "value": "\"F\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4092,
+      "offset": 3860,
       "length": 3,
       "value": "\"T\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4118,
+      "offset": 3886,
       "length": 14,
       "value": "\"UserAppState\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4183,
+      "offset": 3951,
       "length": 24,
       "value": "\"offlinetrackingenabled\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4267,
+      "offset": 4035,
       "length": 18,
       "value": "\"locationCountSDK\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4320,
+      "offset": 4088,
       "length": 26,
       "value": "\"LocationCountStartedDate\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4381,
+      "offset": 4149,
       "length": 19,
       "value": "\"LocationPublisher\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4435,
+      "offset": 4203,
       "length": 18,
       "value": "\"location_tracker\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4493,
+      "offset": 4261,
       "length": 22,
       "value": "\"locationCountSDKTemp\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4554,
+      "offset": 4322,
       "length": 30,
       "value": "\"LocationCountStartedDateTemp\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4623,
+      "offset": 4391,
       "length": 23,
       "value": "\"locationCountUpdating\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4685,
+      "offset": 4453,
       "length": 22,
       "value": "\"currentLocationTimer\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4746,
+      "offset": 4514,
       "length": 24,
       "value": "\"updateLocationMetaData\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4809,
+      "offset": 4577,
       "length": 29,
       "value": "\"updateLocationMetaDataValue\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4902,
+      "offset": 4670,
       "length": 32,
       "value": "\"shadow_state_location_tracking\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4974,
+      "offset": 4742,
       "length": 22,
       "value": "\"shadow_state_pub_sub\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5036,
+      "offset": 4804,
       "length": 40,
       "value": "\"shadow_state_location_tracking_changed\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5116,
+      "offset": 4884,
       "length": 30,
       "value": "\"shadow_state_pub_sub_changed\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5218,
+      "offset": 4986,
       "length": 21,
       "value": "\"LocationPublishSave\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5284,
+      "offset": 5052,
       "length": 21,
       "value": "\"LocationPublishOnly\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5350,
+      "offset": 5118,
       "length": 26,
       "value": "\"LocationPublishMeta_data\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5420,
+      "offset": 5188,
       "length": 24,
       "value": "\"LocationPublishuser_id\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5488,
+      "offset": 5256,
       "length": 23,
       "value": "\"LocationPublishapp_id\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5555,
+      "offset": 5323,
       "length": 28,
       "value": "\"LocationPublishrecorded_at\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5627,
+      "offset": 5395,
       "length": 26,
       "value": "\"LocationPublishtz_offset\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5697,
+      "offset": 5465,
       "length": 32,
       "value": "\"LocationPublishgeofence_events\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5773,
+      "offset": 5541,
       "length": 29,
       "value": "\"LocationPublishtrips_events\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5846,
+      "offset": 5614,
       "length": 32,
       "value": "\"LocationPublishlocation_events\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5922,
+      "offset": 5690,
       "length": 30,
       "value": "\"LocationPublishnearby_events\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5996,
+      "offset": 5764,
       "length": 34,
       "value": "\"LocationPublishlocation_listener\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6074,
+      "offset": 5842,
       "length": 31,
       "value": "\"LocationPublishevent_listener\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6149,
+      "offset": 5917,
       "length": 28,
       "value": "\"LocationPublishapp_context\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6221,
+      "offset": 5989,
       "length": 31,
       "value": "\"LocationPublishnetwork_status\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6296,
+      "offset": 6064,
       "length": 27,
       "value": "\"LocationPublishgps_status\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6367,
+      "offset": 6135,
       "length": 36,
       "value": "\"LocationPublishlocation_permission\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6447,
+      "offset": 6215,
       "length": 31,
       "value": "\"LocationPublishbattery_status\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6522,
+      "offset": 6290,
       "length": 30,
       "value": "\"LocationPublishairplane_mode\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6596,
+      "offset": 6364,
       "length": 30,
       "value": "\"LocationPublishbattery_saver\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6670,
+      "offset": 6438,
       "length": 34,
       "value": "\"LocationPublishbattery_remaining\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6748,
+      "offset": 6516,
       "length": 29,
       "value": "\"LocationPublishdevice_model\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6821,
+      "offset": 6589,
       "length": 36,
       "value": "\"LocationPublishdevice_manufacturer\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6901,
+      "offset": 6669,
       "length": 27,
       "value": "\"LocationPublishos_version\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6972,
+      "offset": 6740,
       "length": 30,
       "value": "\"LocationPublishtracking_mode\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7046,
+      "offset": 6814,
       "length": 25,
       "value": "\"LocationPublishaltitude\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7115,
+      "offset": 6883,
       "length": 22,
       "value": "\"LocationPublishspeed\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7181,
+      "offset": 6949,
       "length": 34,
       "value": "\"LocationPublishvertical_accuracy\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7259,
+      "offset": 7027,
       "length": 36,
       "value": "\"LocationPublishhorizontal_accuracy\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7339,
+      "offset": 7107,
       "length": 23,
       "value": "\"LocationPublishcourse\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7406,
+      "offset": 7174,
       "length": 25,
       "value": "\"LocationPublishactivity\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7475,
+      "offset": 7243,
       "length": 20,
       "value": "\"LimitExceedMessage\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7539,
+      "offset": 7307,
       "length": 30,
       "value": "\"UpdateLocationWhenStationary\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7613,
+      "offset": 7381,
       "length": 35,
       "value": "\"UpdateLocationWhenStationaryValue\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7692,
+      "offset": 7460,
       "length": 21,
       "value": "\"RoamSDKVersionValue\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7757,
+      "offset": 7525,
       "length": 26,
       "value": "\"LocationHourlyCountValue\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7828,
+      "offset": 7596,
       "length": 25,
       "value": "\"CustomTimeFirstLocation\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7899,
+      "offset": 7667,
       "length": 22,
       "value": "\"kBatchReceiverConfig\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7965,
+      "offset": 7733,
       "length": 33,
       "value": "\"BatchReceiverConfigNetworkState\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8042,
+      "offset": 7810,
       "length": 31,
       "value": "\"BatchReceiverConfigBatchCount\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8117,
+      "offset": 7885,
       "length": 32,
       "value": "\"BatchReceiverConfigBatchWindow\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8193,
+      "offset": 7961,
       "length": 36,
       "value": "\"BatchReceiverConfigBatchWindowDate\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8274,
+      "offset": 8042,
       "length": 24,
       "value": "\"LocationReceiverConfig\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8342,
+      "offset": 8110,
       "length": 32,
       "value": "\"LocationReceiverConfigAccuracy\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8418,
+      "offset": 8186,
       "length": 31,
       "value": "\"LocationReceiverConfigTimeout\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8493,
+      "offset": 8261,
       "length": 31,
       "value": "\"LocationReceiverConfigDiscard\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8568,
+      "offset": 8336,
       "length": 28,
       "value": "\"LocationReceiverConfigDate\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8640,
+      "offset": 8408,
       "length": 32,
       "value": "\"LocationReceiverConfigDateBool\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8716,
-      "length": 23,
-      "value": "\"LastLocationDateValue\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 8783,
+      "offset": 8484,
       "length": 26,
       "value": "\"ActivityMotionPermission\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8853,
+      "offset": 8554,
       "length": 33,
       "value": "\"klocationServicesEnabledManager\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8965,
+      "offset": 8666,
       "length": 17,
       "value": "\"customuseVisits\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9026,
+      "offset": 8727,
       "length": 17,
       "value": "\"customoptionset\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9087,
+      "offset": 8788,
       "length": 16,
       "value": "\"customaccuracy\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9147,
+      "offset": 8848,
       "length": 20,
       "value": "\"customactivityType\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9211,
+      "offset": 8912,
       "length": 19,
       "value": "\"customshowBlueBar\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9274,
+      "offset": 8975,
       "length": 22,
       "value": "\"customdistanceFilter\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9340,
+      "offset": 9041,
       "length": 22,
       "value": "\"customgeofenceRadius\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9406,
+      "offset": 9107,
       "length": 22,
       "value": "\"customuseSignificant\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9472,
+      "offset": 9173,
       "length": 27,
       "value": "\"customuseRegionMonitoring\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9543,
+      "offset": 9244,
       "length": 31,
       "value": "\"customuseDynamicGeofencRadius\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9618,
+      "offset": 9319,
       "length": 22,
       "value": "\"customUpdateInterval\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9684,
+      "offset": 9385,
       "length": 22,
       "value": "\"customAccuracyFilter\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9759,
+      "offset": 9460,
       "length": 38,
       "value": "\"customallowBackgroundLocationUpdates\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9850,
+      "offset": 9551,
       "length": 42,
       "value": "\"custompausesLocationUpdatesAutomatically\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 9945,
+      "offset": 9646,
       "length": 35,
       "value": "\"customuseStandardLocationServices\""
     },

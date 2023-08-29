@@ -287,3 +287,9 @@ We're excited to introduce Roam iOS SDK version 0.1.13, which includes a signifi
 - New Security Module: Roam
 We've incorporated an advanced security module named Roam into the SDK. With this release, developers can take advantage of the toggleSecurity() method provided by Roam. This addition allows for seamless enabling and disabling of enhanced security measures. Protecting sensitive data is of paramount importance, and the Roam security module provides a streamlined way to fortify your application's defenses.
 As always, we appreciate your feedback and contributions in helping us refine and enhance the Roam iOS SDK. Please feel free to reach out to our support team if you have any questions, concerns, or suggestions. Stay tuned for more updates as we continue to improve the SDK's capabilities and features.
+
+## 0.1.14
+We're excited to announce the latest release of the Roam iOS SDK version 0.1.14. This update brings a significant enhancement that contributes to heightened security and user control. Read on to discover the key highlights of this release:
+- New Feature: Motion Detection Security
+With Roam iOS SDK v0.1.14, we introduce an innovative security feature—Motion Detection. This cutting-edge capability adds an extra layer of protection to your application's tracking experience. By enabling the verifyMotion parameter in the toggleSecurity() method, developers can now leverage motion patterns to enhance security. This empowers you to monitor and respond to unusual motion activities, ensuring a safer and more reliable tracking environment.
+As always, we appreciate your feedback and contributions in helping us refine and enhance the Roam iOS SDK. Please feel free to reach out to our support team if you have any questions, concerns, or suggestions. Stay tuned for more updates as we continue to improve the SDK's capabilities and features.
