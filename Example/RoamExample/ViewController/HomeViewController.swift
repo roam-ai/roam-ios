@@ -12,6 +12,12 @@ import CoreLocation
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var networkSecuritySwitch: UISwitch!
+    @IBOutlet weak var rootedSecuritySwitch: UISwitch!
+    @IBOutlet weak var bluetoothSecuritySwitch: UISwitch!
+    @IBOutlet weak var ExternalAccessorySecuritySwitch: UISwitch!
+    @IBOutlet weak var verifyMotionSwitch: UISwitch!
+    
     @IBOutlet weak var publishSegement: UISegmentedControl!
     @IBOutlet weak var accuracySegment: UISegmentedControl!
     @IBOutlet weak var offlineTrackingSegment: UISegmentedControl!
@@ -71,6 +77,19 @@ class HomeViewController: UIViewController {
         else{
             resetDefault(true)
         }
+        
+        // Save the boolean values to UserDefaults
+        let networkCheckEnabled = UserDefaults.standard.bool(forKey: "NetworkCheckEnabled")
+        let rootedCheckEnabled = UserDefaults.standard.bool(forKey: "RootedCheckEnabled")
+        let bluetoothCheckEnabled = UserDefaults.standard.bool(forKey: "BluetoothCheckEnabled")
+        let externalAccessoryCheckEnabled = UserDefaults.standard.bool(forKey: "ExternalAccessoryCheckEnabled")
+        let verifyMotionCheckEnabled = UserDefaults.standard.bool(forKey: "VerifyMotionCheckEnabled")
+
+        networkSecuritySwitch.setOn(networkCheckEnabled, animated: true)
+        rootedSecuritySwitch.setOn(rootedCheckEnabled, animated: true)
+        bluetoothSecuritySwitch.setOn(bluetoothCheckEnabled, animated: true)
+        ExternalAccessorySecuritySwitch.setOn(externalAccessoryCheckEnabled, animated: true)
+        verifyMotionSwitch.setOn(verifyMotionCheckEnabled, animated: true)
     }
 
     func resetDefault(_ isValue:Bool){
@@ -144,6 +163,39 @@ class HomeViewController: UIViewController {
         enableButton()
         SharedUtil.setDefaultString("", kTrackingOp)
         trackingLabel.text = "Tracking"
+    }
+    
+    @IBAction func toggleSecurityAction(_ sender: UIButton) {
+        let networkCheckEnabled = networkSecuritySwitch.isOn
+        let rootedCheckEnabled = rootedSecuritySwitch.isOn
+        let bluetoothCheckEnabled = bluetoothSecuritySwitch.isOn
+        let externalAccessoryCheckEnabled = ExternalAccessorySecuritySwitch.isOn
+        let verifyMotionCheckEnabled = verifyMotionSwitch.isOn
+        
+        // Save the boolean values to UserDefaults
+        UserDefaults.standard.set(networkCheckEnabled, forKey: "NetworkCheckEnabled")
+        UserDefaults.standard.set(rootedCheckEnabled, forKey: "RootedCheckEnabled")
+        UserDefaults.standard.set(bluetoothCheckEnabled, forKey: "BluetoothCheckEnabled")
+        UserDefaults.standard.set(externalAccessoryCheckEnabled, forKey: "ExternalAccessoryCheckEnabled")
+        UserDefaults.standard.set(verifyMotionCheckEnabled, forKey: "VerifyMotionCheckEnabled")
+        // Synchronize UserDefaults to ensure the changes are saved immediately
+        UserDefaults.standard.synchronize()
+        
+        Roam.toggleSecurity(networkEnabled: networkCheckEnabled, deviceRooted: rootedCheckEnabled, bluetoothEnabled: bluetoothCheckEnabled, externalAccessoryEnabled: externalAccessoryCheckEnabled, verifyMotion: verifyMotionCheckEnabled)
+                
+        let message = """
+        Network Enabled: \(networkCheckEnabled)
+        Rooted Enabled: \(rootedCheckEnabled)
+        Bluetooth Enabled: \(bluetoothCheckEnabled)
+        External Accessory Enabled: \(externalAccessoryCheckEnabled)
+        Verify Motion Enabled: \(verifyMotionCheckEnabled)
+        """
+        let alertController = UIAlertController(title: "Toggled Security", message: message, preferredStyle: .alert)
+        let okayAction = UIAlertAction(title: "Ok", style: .default) { _ in
+            // Handle the "Okay" button tap if needed
+        }
+        alertController.addAction(okayAction)
+        present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func updateLocationAction(_ sender: Any) {

@@ -195,7 +195,7 @@
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="JuD-w4-4JO">
-                                        <rect key="frame" x="53" y="0.0" width="308" height="978"/>
+                                        <rect key="frame" x="53" y="0.0" width="308" height="1273"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsT-9R-Hi8">
                                                 <rect key="frame" x="0.0" y="0.0" width="308" height="21.5"/>
@@ -389,14 +389,111 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Security" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRK-Bn-NPf">
+                                                <rect key="frame" x="0.0" y="712.5" width="308" height="23"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                <color key="textColor" systemColor="systemPinkColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Bxy-sB-qCK">
+                                                <rect key="frame" x="0.0" y="755.5" width="308" height="232"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ZX-Du-f1N">
+                                                        <rect key="frame" x="0.0" y="0.0" width="179.5" height="34.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fh6-0r-tr5">
+                                                                <rect key="frame" x="0.0" y="2" width="51" height="31"/>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EEX-Jp-6JH">
+                                                                <rect key="frame" x="59" y="7" width="120.5" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Sne-qB-1KG">
+                                                        <rect key="frame" x="0.0" y="39.5" width="170" height="34.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Mdi-lt-gLC">
+                                                                <rect key="frame" x="0.0" y="2" width="51" height="31"/>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Rooted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-bS-9SL">
+                                                                <rect key="frame" x="59" y="7" width="111" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dWE-eO-F5p">
+                                                        <rect key="frame" x="0.0" y="79" width="189" height="34.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KGT-Qa-4b9">
+                                                                <rect key="frame" x="0.0" y="2" width="51" height="31"/>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Bluetooth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZt-SG-ZyG">
+                                                                <rect key="frame" x="59" y="7" width="130" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-HC-5RK">
+                                                        <rect key="frame" x="0.0" y="118.5" width="262" height="34.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sAB-A7-at5">
+                                                                <rect key="frame" x="0.0" y="2" width="51" height="31"/>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="External Accesory Enabled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGD-uA-Ips">
+                                                                <rect key="frame" x="59" y="7" width="203" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="r3h-Lv-jtM">
+                                                        <rect key="frame" x="0.0" y="158" width="160" height="34.5"/>
+                                                        <subviews>
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8S4-4S-eh4">
+                                                                <rect key="frame" x="0.0" y="2" width="51" height="31"/>
+                                                            </switch>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Motion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkb-ee-AjE">
+                                                                <rect key="frame" x="59" y="7" width="101" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUZ-ov-F6K">
+                                                        <rect key="frame" x="0.0" y="197.5" width="142.5" height="34.5"/>
+                                                        <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Toggle Security">
+                                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="toggleSecurityAction:" destination="PcD-kp-szV" eventType="touchUpInside" id="EHF-Ik-NaR"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfo-R4-1NU">
-                                                <rect key="frame" x="0.0" y="712.5" width="308" height="21.5"/>
+                                                <rect key="frame" x="0.0" y="1007.5" width="308" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ao9-BY-BX7">
-                                                <rect key="frame" x="0.0" y="754" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="1049" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOL-jx-82u" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -433,7 +530,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fwp-Ad-DhV">
-                                                <rect key="frame" x="0.0" y="810" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="1105" width="308" height="0.0"/>
                                                 <subviews>
                                                     <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5aW-Wj-FGG" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="36"/>
@@ -470,7 +567,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WbV-dP-C5k">
-                                                <rect key="frame" x="0.0" y="830" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="1125" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="co1-Wc-WoR" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -507,7 +604,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6e7-xN-DsN">
-                                                <rect key="frame" x="0.0" y="886" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="1181" width="308" height="36"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHe-vR-I23" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="149" height="36"/>
@@ -544,7 +641,7 @@
                                                 </subviews>
                                             </stackView>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="apH-tz-7wC" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="932" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="1227" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Tracking Settings">
@@ -560,7 +657,7 @@
                                                 </connections>
                                             </button>
                                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUb-nR-SQl" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="932" width="308" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="1227" width="308" height="0.0"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logs">
@@ -573,7 +670,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y20-2I-55P" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="942" width="308" height="36"/>
+                                                <rect key="frame" x="0.0" y="1237" width="308" height="36"/>
                                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                                 <state key="normal" title="Logout">
@@ -612,20 +709,24 @@
                     </view>
                     <navigationItem key="navigationItem" id="peG-NW-sHr"/>
                     <connections>
+                        <outlet property="ExternalAccessorySecuritySwitch" destination="sAB-A7-at5" id="dMP-Yx-dgf"/>
                         <outlet property="StopTrackingBtn" destination="dEJ-4A-HkC" id="hyA-qW-rLO"/>
                         <outlet property="accuracyLabel" destination="lrx-xn-ngS" id="F96-wY-cei"/>
                         <outlet property="accuracySegment" destination="bjX-hI-kcY" id="CQW-du-Qth"/>
+                        <outlet property="bluetoothSecuritySwitch" destination="KGT-Qa-4b9" id="vBj-cj-Cyu"/>
                         <outlet property="changeTrackingBtn" destination="ndB-wq-Tic" id="G0A-zw-qgT"/>
                         <outlet property="eventsBtn" destination="2TS-3O-M5L" id="gt1-Hl-0G6"/>
                         <outlet property="getLocationBtn" destination="fPZ-bs-MAw" id="zpY-sx-LDc"/>
                         <outlet property="logoutsBtn" destination="y20-2I-55P" id="c9D-dO-8HC"/>
                         <outlet property="logsBtn" destination="aUb-nR-SQl" id="Lnd-jh-mS6"/>
+                        <outlet property="networkSecuritySwitch" destination="Fh6-0r-tr5" id="ulY-5q-4w2"/>
                         <outlet property="offlineTrackigLabel" destination="DiA-r9-A8g" id="2PF-0W-6v0"/>
                         <outlet property="offlineTrackingSegment" destination="zqB-gz-B34" id="xr4-cK-P99"/>
                         <outlet property="otherLocationBtn" destination="ha6-ME-hfC" id="S1H-Sl-xXT"/>
                         <outlet property="publishLabel" destination="h0v-RR-eUh" id="SSf-Gr-bh7"/>
                         <outlet property="publishSegement" destination="PVB-N2-smw" id="Elr-zR-I5K"/>
                         <outlet property="requestLocationBtn" destination="yef-V1-Ze3" id="mZf-T2-5tr"/>
+                        <outlet property="rootedSecuritySwitch" destination="Mdi-lt-gLC" id="EM2-e7-kDS"/>
                         <outlet property="setUserDescBtn" destination="X1N-xB-a5d" id="EfE-ha-FOH"/>
                         <outlet property="startTrackingBtn" destination="srl-Uy-49u" id="oZ5-og-DWg"/>
                         <outlet property="subScribeBtn" destination="eHe-vR-I23" id="VNw-As-zNh"/>
@@ -636,6 +737,7 @@
                         <outlet property="updateStationary" destination="1Or-xC-LUf" id="n23-Ql-WTy"/>
                         <outlet property="userDescTextField" destination="QAJ-gg-Xqc" id="eS8-OJ-cra"/>
                         <outlet property="userIdTextField" destination="qSR-a9-DMd" id="3Sv-dS-QtF"/>
+                        <outlet property="verifyMotionSwitch" destination="8S4-4S-eh4" id="mrI-M3-Zw2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVG-gw-zCh" sceneMemberID="firstResponder"/>
@@ -3009,7 +3111,7 @@
         <!--Stop Map View Controller-->
         <scene sceneID="e4u-pf-OJU">
             <objects>
-                <viewController storyboardIdentifier="StopMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t9w-Vh-lWA" customClass="StopMapViewController" customModule="Roam_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="StopMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t9w-Vh-lWA" customClass="StopMapViewController" customModule="RoamExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qUb-yJ-r6B">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3017,7 +3119,7 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="I5U-gG-MDi">
                                 <rect key="frame" x="0.0" y="48" width="414" height="744"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-2A-kIh" customClass="GradientButton" customModule="Roam_Example" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-2A-kIh" customClass="GradientButton" customModule="RoamExample" customModuleProvider="target">
                                 <rect key="frame" x="20" y="812" width="374" height="40"/>
                                 <color key="backgroundColor" red="0.28235294119999998" green="0.55294117649999996" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -3061,7 +3163,7 @@
         <!--Get Trip View Controller-->
         <scene sceneID="esl-Lh-yqK">
             <objects>
-                <viewController storyboardIdentifier="GetTripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iI3-dP-65T" customClass="GetTripViewController" customModule="Roam_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GetTripViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iI3-dP-65T" customClass="GetTripViewController" customModule="RoamExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="avs-ge-Bex">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3228,6 +3330,9 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
