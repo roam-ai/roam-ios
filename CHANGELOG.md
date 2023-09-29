@@ -293,3 +293,10 @@ We're excited to announce the latest release of the Roam iOS SDK version 0.1.14.
 - New Feature: Motion Detection Security
 With Roam iOS SDK v0.1.14, we introduce an innovative security feature—Motion Detection. This cutting-edge capability adds an extra layer of protection to your application's tracking experience. By enabling the verifyMotion parameter in the toggleSecurity() method, developers can now leverage motion patterns to enhance security. This empowers you to monitor and respond to unusual motion activities, ensuring a safer and more reliable tracking environment.
 As always, we appreciate your feedback and contributions in helping us refine and enhance the Roam iOS SDK. Please feel free to reach out to our support team if you have any questions, concerns, or suggestions. Stay tuned for more updates as we continue to improve the SDK's capabilities and features.
+
+
+## 0.1.15
+We're thrilled to announce the release of Roam iOS SDK version 0.1.15, bringing powerful enhancements and simplified integration. Here's what's new:
+Callback Integration: We've added callbacks to essential methods like startTracking, stopTracking, subscribe, unSubscribe, publishAndSave, and stopPublishing. These callbacks provide clear onSuccess and onError methods, ensuring you have complete control and real-time feedback for every SDK action.
+Simplified Initialization: Now, initializing the Roam SDK is easier than ever. Simply place your publishable key in the .plist file, streamlining the setup process and getting you up and running swiftly.
+Your feedback has been invaluable in shaping these improvements. For any queries, assistance, or to share your experiences, our support team is here to help.
