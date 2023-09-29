@@ -297,6 +297,8 @@ As always, we appreciate your feedback and contributions in helping us refine an
 
 ## 0.1.15
 We're thrilled to announce the release of Roam iOS SDK version 0.1.15, bringing powerful enhancements and simplified integration. Here's what's new:
-Callback Integration: We've added callbacks to essential methods like startTracking, stopTracking, subscribe, unSubscribe, publishAndSave, and stopPublishing. These callbacks provide clear onSuccess and onError methods, ensuring you have complete control and real-time feedback for every SDK action.
-Simplified Initialization: Now, initializing the Roam SDK is easier than ever. Simply place your publishable key in the .plist file, streamlining the setup process and getting you up and running swiftly.
+
+- **Callback Integration:** We've added callbacks to essential methods like `startTracking`, `stopTracking`, `subscribe`, `unSubscribe`, `publishAndSave`, and `stopPublishing`. These callbacks provide clear `onSuccess` and `onError` methods, ensuring you have complete control and real-time feedback for every SDK action.
+- **Simplified Initialization:** Now, initializing the Roam SDK is easier than ever. Simply place your publishable key in the `.plist` file, streamlining the setup process and getting you up and running swiftly.
+
 Your feedback has been invaluable in shaping these improvements. For any queries, assistance, or to share your experiences, our support team is here to help.
