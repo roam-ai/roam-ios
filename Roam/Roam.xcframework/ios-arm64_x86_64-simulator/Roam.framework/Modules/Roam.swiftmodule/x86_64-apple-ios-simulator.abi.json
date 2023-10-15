@@ -63789,21 +63789,21 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/MQTT\/MQTTManager.swift",
       "kind": "StringLiteral",
-      "offset": 606,
+      "offset": 550,
       "length": 32,
       "value": "\"MQTT CONNECTION = \""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/MQTT\/MQTTManager.swift",
       "kind": "StringLiteral",
-      "offset": 637,
+      "offset": 581,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/MQTT\/MQTTManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 521,
+      "offset": 465,
       "length": 5,
       "value": "false"
     },
@@ -64121,6 +64121,13 @@
       "offset": 3197,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Networking\/NetworkServiceLayer.swift",
+      "kind": "Dictionary",
+      "offset": 5912,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Response\/Expose\/RoamStartTrip.swift",
@@ -68852,7 +68859,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.15\""
+      "value": "\"0.1.16\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",

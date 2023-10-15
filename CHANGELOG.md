@@ -302,3 +302,6 @@ We're thrilled to announce the release of Roam iOS SDK version 0.1.15, bringing 
 - **Simplified Initialization:** Now, initializing the Roam SDK is easier than ever. Simply place your publishable key in the `.plist` file, streamlining the setup process and getting you up and running swiftly.
 
 Your feedback has been invaluable in shaping these improvements. For any queries, assistance, or to share your experiences, our support team is here to help.
+
+## 0.1.16
+- Minor bug fixes and improvements for a smoother experience.
