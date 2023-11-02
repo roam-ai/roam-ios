@@ -286,13 +286,14 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
-  LocationAccuracyKCLLocationAccuracyBestForNavigation = 0,
-  LocationAccuracyKCLLocationAccuracyBest = 1,
-  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 2,
-  LocationAccuracyKCLLocationAccuracyHundredMeters = 3,
-  LocationAccuracyKCLLocationAccuracyKilometer = 4,
-  LocationAccuracyKCLLocationAccuracyThreeKilometers = 5,
+  LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
+  LocationAccuracyKCLLocationAccuracyBest = 2,
+  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 3,
+  LocationAccuracyKCLLocationAccuracyHundredMeters = 4,
+  LocationAccuracyKCLLocationAccuracyKilometer = 5,
+  LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
 };
 
 
@@ -1469,13 +1470,14 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
-  LocationAccuracyKCLLocationAccuracyBestForNavigation = 0,
-  LocationAccuracyKCLLocationAccuracyBest = 1,
-  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 2,
-  LocationAccuracyKCLLocationAccuracyHundredMeters = 3,
-  LocationAccuracyKCLLocationAccuracyKilometer = 4,
-  LocationAccuracyKCLLocationAccuracyThreeKilometers = 5,
+  LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
+  LocationAccuracyKCLLocationAccuracyBest = 2,
+  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 3,
+  LocationAccuracyKCLLocationAccuracyHundredMeters = 4,
+  LocationAccuracyKCLLocationAccuracyKilometer = 5,
+  LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
 };
 
 

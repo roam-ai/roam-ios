@@ -305,3 +305,9 @@ Your feedback has been invaluable in shaping these improvements. For any queries
 
 ## 0.1.16
 - Minor bug fixes and improvements for a smoother experience.
+
+## 0.1.17
+We're thrilled to present Roam iOS SDK version 0.1.17, focusing on bolstering our security module. In this update, we've made significant improvements to enhance the security of location data. Here's what's new:
+Efficient Spoofed Location Detection: Our security algorithm has been refined to efficiently discard spoofed locations during the initial location fix. This enhancement ensures that only genuine and accurate location data is captured, enhancing the authenticity of the information gathered.
+Addressing False Negatives: We've tackled false negatives during location tracking, ensuring that true locations are not mistakenly identified as spoofed locations. This refinement enhances the precision of location tracking, providing you with reliable and accurate data.
+These security enhancements are designed to safeguard your data and ensure the integrity of the location information collected by the Roam iOS SDK. Your security is our priority, and we're committed to providing you with a secure and trustworthy experience. If you have any questions, concerns, or feedback, our support team is always here to assist you.

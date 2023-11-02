@@ -32,7 +32,7 @@ extension Swift.Optional : AnyOptional {
   }
 }
 @objc public enum LocationAccuracy : Swift.Int {
-  case kCLLocationAccuracyBestForNavigation
+  case kCLLocationAccuracyBestForNavigation = 1
   case kCLLocationAccuracyBest
   case kCLLocationAccuracyNearestTenMeters
   case kCLLocationAccuracyHundredMeters
@@ -562,7 +562,7 @@ extension UIKit.UIDevice {
     get
   }
 }
-@objc public enum RoamTrackingMode : Swift.Int {
+@objc public enum RoamTrackingMode : Swift.Int, Swift.RawRepresentable {
   case passive = 1
   case balanced
   case active
@@ -1361,4 +1361,3 @@ extension RoamNetworkState : Swift.Hashable {}
 extension RoamNetworkState : Swift.RawRepresentable {}
 extension RoamTrackingMode : Swift.Equatable {}
 extension RoamTrackingMode : Swift.Hashable {}
-extension RoamTrackingMode : Swift.RawRepresentable {}
