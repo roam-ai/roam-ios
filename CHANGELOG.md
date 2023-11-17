@@ -311,3 +311,11 @@ We're thrilled to present Roam iOS SDK version 0.1.17, focusing on bolstering ou
 Efficient Spoofed Location Detection: Our security algorithm has been refined to efficiently discard spoofed locations during the initial location fix. This enhancement ensures that only genuine and accurate location data is captured, enhancing the authenticity of the information gathered.
 Addressing False Negatives: We've tackled false negatives during location tracking, ensuring that true locations are not mistakenly identified as spoofed locations. This refinement enhances the precision of location tracking, providing you with reliable and accurate data.
 These security enhancements are designed to safeguard your data and ensure the integrity of the location information collected by the Roam iOS SDK. Your security is our priority, and we're committed to providing you with a secure and trustworthy experience. If you have any questions, concerns, or feedback, our support team is always here to assist you.
+
+## 0.1.18
+We're excited to introduce Roam iOS SDK version 0.1.18, focusing on enhancing our network module and refining tracking logics. In this update, we've made the following improvements:
+
+- **Enhanced Connectivity during Location Tracking:** We've revamped the network module to handle few edge-cases on connectivity during location tracking. Expect smoother and more reliable communication between your app and Roam's services, ensuring a seamless experience for users even in challenging network conditions.
+- **Minor Improvements to Tracking Logics:** We've implemented minor refinements to our tracking logics. These subtle enhancements aim to fine-tune the tracking mechanisms, resulting in improved accuracy and efficiency when capturing and processing location data.
+
+These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.

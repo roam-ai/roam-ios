@@ -18226,8 +18226,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "Roam"
       },
@@ -64523,42 +64523,42 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "StringLiteral",
-      "offset": 850,
+      "offset": 943,
       "length": 11,
       "value": "\"roam:trip\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "StringLiteral",
-      "offset": 891,
+      "offset": 979,
       "length": 5,
       "value": "\"2.0\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2708,
+      "offset": 2646,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2731,
+      "offset": 2669,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 2757,
+      "offset": 2695,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 5651,
+      "offset": 5589,
       "length": 5,
       "value": "false"
     },
@@ -64641,99 +64641,106 @@
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
-      "kind": "IntegerLiteral",
-      "offset": 383,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 534,
+      "offset": 985,
       "length": 11,
       "value": "\"RoamModel\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 562,
+      "offset": 1013,
       "length": 6,
       "value": "\"momd\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1759,
       "length": 18,
       "value": "\"RoamModel.sqlite\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
-      "kind": "StringLiteral",
-      "offset": 1437,
-      "length": 70,
-      "value": "\"There was an error creating or loading the application's saved data.\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 1620,
+      "offset": 1921,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 1682,
+      "offset": 1979,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 1937,
+      "offset": 2235,
+      "length": 53,
+      "value": "\"Error: Failed to add the persistent store. \""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
+      "kind": "StringLiteral",
+      "offset": 2287,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
+      "kind": "StringLiteral",
+      "offset": 2381,
       "length": 51,
       "value": "\"Failed to initialize the application's saved data\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 2202,
+      "offset": 2500,
+      "length": 70,
+      "value": "\"There was an error creating or loading the application's saved data.\""
+    },
+    {
+      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
+      "kind": "StringLiteral",
+      "offset": 2703,
       "length": 19,
       "value": "\"YOUR_ERROR_DOMAIN\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "IntegerLiteral",
-      "offset": 2229,
+      "offset": 2730,
       "length": 4,
       "value": "9999"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 2269,
+      "offset": 2770,
       "length": 60,
       "value": "\"Unresolved error \""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 2302,
+      "offset": 2803,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "StringLiteral",
-      "offset": 2328,
+      "offset": 2829,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Storage\/RoamCoreDataStack.swift",
       "kind": "BooleanLiteral",
-      "offset": 2706,
+      "offset": 3253,
       "length": 4,
       "value": "true"
     },
@@ -66252,14 +66259,14 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 27286,
+      "offset": 27291,
       "length": 18,
       "value": "\"ROAM_PUBLISH_KEY\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 27599,
+      "offset": 27604,
       "length": 2,
       "value": "\"\""
     },
@@ -69285,7 +69292,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.17\""
+      "value": "\"0.1.18\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",

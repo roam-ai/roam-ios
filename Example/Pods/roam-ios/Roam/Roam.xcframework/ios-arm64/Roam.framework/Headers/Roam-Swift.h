@@ -285,13 +285,15 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
-  LocationAccuracyKCLLocationAccuracyBestForNavigation = 0,
-  LocationAccuracyKCLLocationAccuracyBest = 1,
-  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 2,
-  LocationAccuracyKCLLocationAccuracyHundredMeters = 3,
-  LocationAccuracyKCLLocationAccuracyKilometer = 4,
-  LocationAccuracyKCLLocationAccuracyThreeKilometers = 5,
+  LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
+  LocationAccuracyKCLLocationAccuracyBest = 2,
+  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 3,
+  LocationAccuracyKCLLocationAccuracyHundredMeters = 4,
+  LocationAccuracyKCLLocationAccuracyKilometer = 5,
+  LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
 };
 
 
@@ -433,14 +435,14 @@ SWIFT_CLASS("_TtC4Roam4Roam")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
-+ (void)initialize:(NSString * _Nonnull)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
++ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
 + (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
 + (void)logoutUserWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
-+ (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options;
-+ (void)stopTracking;
++ (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)stopTrackingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
@@ -468,13 +470,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
 + (void)subscribeTrip:(NSString * _Nonnull)tripId;
 + (void)unsubscribeTrip:(NSString * _Nullable)tripId;
-+ (void)subscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId;
-+ (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nullable)userId;
++ (void)subscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nullable)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
 + (void)offlineLocationTracking:(BOOL)offlineTracking;
-+ (void)publishSave:(RoamPublish * _Nullable)publish;
-+ (void)publishOnly:(RoamPublish * _Nullable)publish;
-+ (void)stopPublishing;
++ (void)publishSave:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)publishOnly:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)stopPublishingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)enableAccuracyEngine:(NSInteger)accuracy;
 + (void)enableAccuracyEngine;
 + (void)disableAccuracyEngine;
@@ -1129,18 +1131,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addStopObject:(TripStop * _Nonnull)value;
 - (void)removeStopObject:(TripStop * _Nonnull)value;
 - (void)addStop:(NSSet * _Nonnull)values;
 - (void)removeStop:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)addEvents:(NSSet * _Nonnull)values;
+- (void)removeEvents:(NSSet * _Nonnull)values;
 @end
 
 

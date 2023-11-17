@@ -32,7 +32,7 @@ extension Swift.Optional : AnyOptional {
   }
 }
 @objc public enum LocationAccuracy : Swift.Int {
-  case kCLLocationAccuracyBestForNavigation
+  case kCLLocationAccuracyBestForNavigation = 1
   case kCLLocationAccuracyBest
   case kCLLocationAccuracyNearestTenMeters
   case kCLLocationAccuracyHundredMeters
@@ -172,14 +172,14 @@ extension Reachability {
     @objc get
     @objc set
   }
-  @objc public static func initialize(_ publishKey: Swift.String, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil)
+  @objc public static func initialize(_ publishKey: Swift.String?, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil)
   @objc public static func createUser(_ description: Swift.String, _ metadata: Swift.Dictionary<Swift.String, Any>? = nil, handler: RoamUserCompletionhandler? = nil)
   @objc public static func getUser(_ userId: Swift.String, handler: RoamUserCompletionhandler? = nil)
   @objc public static func updateUser(_ description: Swift.String? = nil, _ metadata: Swift.Dictionary<Swift.String, Any>? = nil)
   @objc public static func logoutUser(handler: RoamLogoutCompletionhandler? = nil)
   @objc public static func setDeviceToken(_ deviceToken: Foundation.Data)
-  @objc public static func startTracking(_ trackingMethod: RoamTrackingMode, options: RoamTrackingCustomMethods? = nil)
-  @objc public static func stopTracking()
+  @objc public static func startTracking(_ trackingMethod: RoamTrackingMode, options: RoamTrackingCustomMethods? = nil, handler: RoamStatusErrorHandler? = nil)
+  @objc public static func stopTracking(handler: RoamStatusErrorHandler? = nil)
   @objc public static func requestLocation()
   @objc public static func isLocationEnabled() -> Swift.Bool
   @objc public static func isLocationTracking() -> Swift.Bool
@@ -207,13 +207,13 @@ extension Reachability {
   @objc public static func setLoggerEnabled(logger: Swift.Bool)
   @objc public static func subscribeTrip(_ tripId: Swift.String)
   @objc public static func unsubscribeTrip(_ tripId: Swift.String? = nil)
-  @objc public static func subscribe(_ type: RoamSubscribe, _ userId: Swift.String)
-  @objc public static func unsubscribe(_ type: RoamSubscribe, _ userId: Swift.String? = nil)
+  @objc public static func subscribe(_ type: RoamSubscribe, _ userId: Swift.String, handler: RoamCompletionHandler? = nil)
+  @objc public static func unsubscribe(_ type: RoamSubscribe, _ userId: Swift.String? = nil, handler: RoamCompletionHandler? = nil)
   @objc public static func setTrackingInAppState(_ state: RoamTrackingState)
   @objc public static func offlineLocationTracking(_ offlineTracking: Swift.Bool)
-  @objc public static func publishSave(_ publish: RoamPublish? = nil)
-  @objc public static func publishOnly(_ publish: RoamPublish? = nil)
-  @objc public static func stopPublishing()
+  @objc public static func publishSave(_ publish: RoamPublish? = nil, handler: RoamStatusErrorHandler? = nil)
+  @objc public static func publishOnly(_ publish: RoamPublish? = nil, handler: RoamStatusErrorHandler? = nil)
+  @objc public static func stopPublishing(handler: RoamStatusErrorHandler? = nil)
   @objc public static func enableAccuracyEngine(_ accuracy: Swift.Int)
   @objc public static func enableAccuracyEngine()
   @objc public static func disableAccuracyEngine()
@@ -558,7 +558,7 @@ extension UIKit.UIDevice {
     get
   }
 }
-@objc public enum RoamTrackingMode : Swift.Int {
+@objc public enum RoamTrackingMode : Swift.Int, Swift.RawRepresentable {
   case passive = 1
   case balanced
   case active
@@ -607,6 +607,8 @@ public typealias RoamSyncTripCompletionhandler = ((_ trip: RoamTripSync?, _ erro
 public typealias RoamTripCompletionhandlers = ((_ trip: RoamTripResponse?, _ error: RoamTripError?) -> Swift.Void)
 public typealias RoamBatchConfigCompletionhandler = ((_ config: RoamBatchConfig?, _ error: RoamError?) -> Swift.Void)
 public typealias RoamTrackingConfigCompletionhandler = ((_ config: RoamLocationConfig?, _ error: RoamError?) -> Swift.Void)
+public typealias RoamCompletionHandler = ((_ status: Swift.String?, _ userId: Swift.String?, _ error: RoamError?) -> Swift.Void)
+public typealias RoamStatusErrorHandler = ((_ status: Swift.String?, _ error: RoamError?) -> Swift.Void)
 @_hasMissingDesignatedInitializers @objc public class RoamLocationConfig : ObjectiveC.NSObject {
   @objc public var accuracy: Swift.Int
   @objc public var timeout: Swift.Int
@@ -1344,4 +1346,3 @@ extension RoamNetworkState : Swift.Hashable {}
 extension RoamNetworkState : Swift.RawRepresentable {}
 extension RoamTrackingMode : Swift.Equatable {}
 extension RoamTrackingMode : Swift.Hashable {}
-extension RoamTrackingMode : Swift.RawRepresentable {}
