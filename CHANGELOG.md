@@ -319,3 +319,10 @@ We're excited to introduce Roam iOS SDK version 0.1.18, focusing on enhancing ou
 - **Minor Improvements to Tracking Logics:** We've implemented minor refinements to our tracking logics. These subtle enhancements aim to fine-tune the tracking mechanisms, resulting in improved accuracy and efficiency when capturing and processing location data.
 
 These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+## 0.1.19
+We're pleased to announce Roam iOS SDK version 0.1.19, primarily focused on resolving issues related to crashes occurring with Core Data and AWS IoT during location tracking in the background state and other rare scenarios. In this update, we've made the following fixes:
+
+- **Core Data and AWS-IoT Crash Fixes:** Addressed crashes occurring during location tracking in the background state and other infrequent scenarios related to Core Data and AWS IoT integrations. Users can now expect improved stability and reliability when utilizing these features.
+
+These fixes aim to enhance the overall stability of the SDK, ensuring a smoother experience for developers and users alike. We're committed to providing a robust and dependable SDK. If you encounter any further issues or have feedback to share, please reach out to our support team. We're here to assist you promptly.

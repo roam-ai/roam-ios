@@ -18,7 +18,7 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		GNMcPqhcQcM3zplPONk/ke26Mjo=
+		65qfkPC9JpHI8V19mZIReYMIZm8=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		D2gBqopZMbaLw5iD4O9wC+h6aAs=
+		ztMKOeVIkbm9FukeqmyeSIqML4g=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Q3uJNBoPPu7/yISX4ljO2Wvp25c=
+		3UP+Z67WuX5HH6nPEP20qM0M6us=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		TfC5dyJPoGSFiLENvsUnCQuwol4=
+		WHSWtwy++EQoM8JEj6b0EHdPuxE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,11 +97,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GNMcPqhcQcM3zplPONk/ke26Mjo=
+			65qfkPC9JpHI8V19mZIReYMIZm8=
 			</data>
 			<key>hash2</key>
 			<data>
-			7UcS136GCBdSlDozfuxb+sbcaoYQ+M1lopE2O8W59NI=
+			5p5nrAQ5sFLnx0CuThIXgdoBehlJKhPbPpA2blVvngs=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -141,22 +141,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			D2gBqopZMbaLw5iD4O9wC+h6aAs=
+			ztMKOeVIkbm9FukeqmyeSIqML4g=
 			</data>
 			<key>hash2</key>
 			<data>
-			hOuLNi6A/lFvGZUPeZbm68KfWv9wO5z3iv9UWbVQbw8=
+			wFHA/+EOxb6pA9BFi8RPhcidVg42ZL5GUughHmXxuFM=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Q3uJNBoPPu7/yISX4ljO2Wvp25c=
+			3UP+Z67WuX5HH6nPEP20qM0M6us=
 			</data>
 			<key>hash2</key>
 			<data>
-			46GKVoOqaSO1fvDDrwSOpMxVRSSc3fj0IeP2oifBZhc=
+			RoBnaCsuFNsMb+ftP1PBTEZg3XtKDufxZmrl4bPI8FM=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -196,11 +196,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TfC5dyJPoGSFiLENvsUnCQuwol4=
+			WHSWtwy++EQoM8JEj6b0EHdPuxE=
 			</data>
 			<key>hash2</key>
 			<data>
-			EXQz3C0Hfed+0V8fyhkMmDQGZNNRhBfKraPBn5rK4bE=
+			hdkSy7j/F2TMqGhjPQUqhnkaGCFooUGWlY6+y/Lee/s=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
