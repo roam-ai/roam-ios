@@ -15,6 +15,7 @@ import Darwin
 import ExternalAccessory
 import Foundation
 import MachO
+import Network
 import ObjectiveC
 @_exported import Roam
 import Swift

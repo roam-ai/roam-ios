@@ -6,8 +6,11 @@ let package = Package(
    products: [
        .library(
            name: "roam-ios",
-           targets: ["Roam", "AWSAuthCore", "AWSCognitoIdentityProvider", "AWSCognitoIdentityProviderASF", "AWSCore", "AWSIoT", "AWSMobileClientXCF"]),
+           targets: ["Roam", "AWSAuthCore", "AWSCognitoIdentityProvider", "AWSCognitoIdentityProviderASF", "AWSCore", "AWSIoT", "AWSMobileClientXCF", "MqttCocoaAsyncSocket"]),
    ],
+   dependencies: [
+           .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.0")
+       ],
    targets: [
        .binaryTarget(
            name: "Roam",
@@ -30,5 +33,8 @@ let package = Package(
        .binaryTarget(
            name: "AWSMobileClientXCF",
            path: "Roam/AWSMobileClientXCF.xcframework"),
+       .binaryTarget(
+           name: "MqttCocoaAsyncSocket",
+           path: "Roam/MqttCocoaAsyncSocket.xcframework"),
    ]
 )

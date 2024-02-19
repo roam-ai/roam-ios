@@ -326,3 +326,10 @@ We're pleased to announce Roam iOS SDK version 0.1.19, primarily focused on reso
 - **Core Data and AWS-IoT Crash Fixes:** Addressed crashes occurring during location tracking in the background state and other infrequent scenarios related to Core Data and AWS IoT integrations. Users can now expect improved stability and reliability when utilizing these features.
 
 These fixes aim to enhance the overall stability of the SDK, ensuring a smoother experience for developers and users alike. We're committed to providing a robust and dependable SDK. If you encounter any further issues or have feedback to share, please reach out to our support team. We're here to assist you promptly.
+
+## 0.1.20
+We're excited to introduce Roam iOS SDK version 0.1.20, featuring the addition of a new feature called Custom MQTT Connector. This update enables developers to register custom MQTT endpoints to forward location updates directly from the SDK to the configured MQTT broker. Here's what's new:
+
+- **Custom MQTT Connector:** Developers now have the capability to register custom MQTT endpoints, allowing seamless forwarding of location updates from the SDK to the specified MQTT broker. This feature provides greater flexibility and customization options for integrating location data into your applications.
+
+These enhancements expand the capabilities of the Roam iOS SDK, empowering developers with more control over how location updates are managed and transmitted. We're committed to providing a versatile and robust SDK experience. For any inquiries or feedback regarding this new feature, our support team is here to assist you.

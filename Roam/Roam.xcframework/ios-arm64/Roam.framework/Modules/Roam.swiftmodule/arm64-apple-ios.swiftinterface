@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.3 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AWSCore
 import AWSIoT
@@ -11,19 +11,63 @@ import CoreData
 import CoreLocation
 import CoreMotion
 import CoreTelephony
+import CryptoKit
 import Darwin
+import Dispatch
 import ExternalAccessory
 import Foundation
 import MachO
+import MqttCocoaAsyncSocket
 import Network
 import ObjectiveC
 @_exported import Roam
+import Starscream
 import Swift
 import SystemConfiguration
 import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+@objc public enum RoamMqttConnectionType : Swift.Int {
+  case TCP
+  case WS
+  case WSS
+  case SSL
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public protocol RoamConnector {
+  @objc var clientID: Swift.String { get }
+}
+@objc public class RoamMqttConnectOptions : ObjectiveC.NSObject {
+  public init(keepAliveInterval: Swift.UInt16, cleanSession: Swift.Bool, connectionTimeout: Swift.Double, autoReconnect: Swift.Bool)
+  @objc deinit
+}
+@objc public class RoamMqttWillOptions : ObjectiveC.NSObject {
+  public init(willTopic: Swift.String, willPayload: Swift.String, willQos: Swift.Int, retain: Swift.Bool)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MqttDecodePubAck : ObjectiveC.NSObject {
+  public var reasonCode: CocoaMQTTPUBACKReasonCode?
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodePubAck(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MqttDecodePubRec : ObjectiveC.NSObject {
+  public var reasonCode: CocoaMQTTPUBACKReasonCode?
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodePubRec(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
 public protocol AnyOptional {
   var isNil: Swift.Bool { get }
 }
@@ -31,6 +75,153 @@ extension Swift.Optional : AnyOptional {
   public var isNil: Swift.Bool {
     get
   }
+}
+@objc public enum CocoaMQTTQoS : Swift.UInt8, Swift.CustomStringConvertible {
+  case qos0 = 0
+  case qos1
+  case qos2
+  case FAILURE = 0x80
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+extension CocoaMQTTQoS : Swift.Comparable {
+  public static func < (lhs: CocoaMQTTQoS, rhs: CocoaMQTTQoS) -> Swift.Bool
+  public static func <= (lhs: CocoaMQTTQoS, rhs: CocoaMQTTQoS) -> Swift.Bool
+  public static func > (lhs: CocoaMQTTQoS, rhs: CocoaMQTTQoS) -> Swift.Bool
+  public static func >= (lhs: CocoaMQTTQoS, rhs: CocoaMQTTQoS) -> Swift.Bool
+}
+@objc public enum CocoaMQTTConnState : Swift.UInt8, Swift.CustomStringConvertible {
+  case disconnected = 0
+  case connecting
+  case connected
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public protocol CocoaMQTT5Delegate {
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didConnectAck ack: CocoaMQTTCONNACKReasonCode, connAckData: MqttDecodeConnAck?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didPublishMessage message: CocoaMQTT5Message, id: Swift.UInt16)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didPublishAck id: Swift.UInt16, pubAckData: MqttDecodePubAck?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didPublishRec id: Swift.UInt16, pubRecData: MqttDecodePubRec?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveMessage message: CocoaMQTT5Message, id: Swift.UInt16, publishData: MqttDecodePublish?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didSubscribeTopics success: Foundation.NSDictionary, failed: [Swift.String], subAckData: MqttDecodeSubAck?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didUnsubscribeTopics topics: [Swift.String], unsubAckData: MqttDecodeUnsubAck?)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveDisconnectReasonCode reasonCode: CocoaMQTTDISCONNECTReasonCode)
+  @objc func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveAuthReasonCode reasonCode: CocoaMQTTAUTHReasonCode)
+  @objc func mqtt5DidPing(_ mqtt5: CocoaMQTT5)
+  @objc func mqtt5DidReceivePong(_ mqtt5: CocoaMQTT5)
+  @objc func mqtt5DidDisconnect(_ mqtt5: CocoaMQTT5, withError err: Swift.Error?)
+  @objc optional func mqtt5(_ mqtt5: CocoaMQTT5, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc optional func mqtt5UrlSession(_ mqtt: CocoaMQTT5, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc optional func mqtt5(_ mqtt5: CocoaMQTT5, didPublishComplete id: Swift.UInt16, pubCompData: MqttDecodePubComp?)
+  @objc optional func mqtt5(_ mqtt5: CocoaMQTT5, didStateChangeTo state: CocoaMQTTConnState)
+}
+public func setMqtt5Version()
+@objc public class CocoaMQTT5 : ObjectiveC.NSObject {
+  weak public var delegate: CocoaMQTT5Delegate?
+  public var host: Swift.String
+  public var port: Swift.UInt16
+  public var clientID: Swift.String
+  public var username: Swift.String?
+  public var password: Swift.String?
+  public var cleanSession: Swift.Bool
+  public var willMessage: CocoaMQTT5Message?
+  public var backgroundOnSocket: Swift.Bool {
+    get
+    set
+  }
+  public var delegateQueue: Dispatch.DispatchQueue
+  public var connState: CocoaMQTTConnState {
+    get
+    set
+  }
+  public var deliverTimeout: Swift.Double {
+    get
+    set
+  }
+  public var messageQueueSize: Swift.UInt {
+    get
+    set
+  }
+  public var inflightWindowSize: Swift.UInt {
+    get
+    set
+  }
+  public var keepAlive: Swift.UInt16
+  public var autoReconnect: Swift.Bool
+  public var autoReconnectTimeInterval: Swift.UInt16
+  public var maxAutoReconnectTimeInterval: Swift.UInt16
+  public var connectProperties: MqttConnectProperties?
+  public var authProperties: MqttAuthProperties?
+  public var logLevel: CocoaMQTTLoggerLevel {
+    get
+    set
+  }
+  public var enableSSL: Swift.Bool {
+    get
+    set
+  }
+  public var sslSettings: [Swift.String : ObjectiveC.NSObject]? {
+    get
+    set
+  }
+  public var allowUntrustCACertificate: Swift.Bool {
+    get
+    set
+  }
+  public var subscriptions: ThreadSafeDictionary<Swift.String, CocoaMQTTQoS>
+  public var didConnectAck: (CocoaMQTT5, CocoaMQTTCONNACKReasonCode, MqttDecodeConnAck?) -> Swift.Void
+  public var didPublishMessage: (CocoaMQTT5, CocoaMQTT5Message, Swift.UInt16) -> Swift.Void
+  public var didPublishAck: (CocoaMQTT5, Swift.UInt16, MqttDecodePubAck?) -> Swift.Void
+  public var didPublishRec: (CocoaMQTT5, Swift.UInt16, MqttDecodePubRec?) -> Swift.Void
+  public var didReceiveMessage: (CocoaMQTT5, CocoaMQTT5Message, Swift.UInt16, MqttDecodePublish?) -> Swift.Void
+  public var didSubscribeTopics: (CocoaMQTT5, Foundation.NSDictionary, [Swift.String], MqttDecodeSubAck?) -> Swift.Void
+  public var didUnsubscribeTopics: (CocoaMQTT5, [Swift.String], MqttDecodeUnsubAck?) -> Swift.Void
+  public var didPing: (CocoaMQTT5) -> Swift.Void
+  public var didReceivePong: (CocoaMQTT5) -> Swift.Void
+  public var didDisconnect: (CocoaMQTT5, Swift.Error?) -> Swift.Void
+  public var didDisconnectReasonCode: (CocoaMQTT5, CocoaMQTTDISCONNECTReasonCode) -> Swift.Void
+  public var didAuthReasonCode: (CocoaMQTT5, CocoaMQTTAUTHReasonCode) -> Swift.Void
+  public var didReceiveTrust: (CocoaMQTT5, Security.SecTrust, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void
+  public var didCompletePublish: (CocoaMQTT5, Swift.UInt16, MqttDecodePubComp?) -> Swift.Void
+  public var didChangeState: (CocoaMQTT5, CocoaMQTTConnState) -> Swift.Void
+  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: CocoaMQTTSocketProtocol = CocoaMQTTSocket())
+  @objc deinit
+  public func connect() -> Swift.Bool
+  public func connect(timeout: Foundation.TimeInterval) -> Swift.Bool
+  public func disconnect()
+  public func disconnect(reasonCode: CocoaMQTTDISCONNECTReasonCode, userProperties: [Swift.String : Swift.String])
+  public func ping()
+  @discardableResult
+  public func publish(_ topic: Swift.String, withString string: Swift.String, qos: CocoaMQTTQoS = .qos1, DUP: Swift.Bool = false, retained: Swift.Bool = false, properties: MqttPublishProperties) -> Swift.Int
+  @discardableResult
+  public func publish(_ message: CocoaMQTT5Message, DUP: Swift.Bool = false, retained: Swift.Bool = false, properties: MqttPublishProperties) -> Swift.Int
+  public func subscribe(_ topic: Swift.String, qos: CocoaMQTTQoS = .qos1)
+  public func subscribe(_ topics: [MqttSubscription])
+  public func subscribe(_ topics: [MqttSubscription], packetIdentifier: Swift.UInt16? = nil, subscriptionIdentifier: Swift.UInt32? = nil, userProperty: [Swift.String : Swift.String] = [:])
+  public func unsubscribe(_ topic: Swift.String)
+  public func unsubscribe(_ topics: [MqttSubscription])
+  public func auth(reasonCode: CocoaMQTTAUTHReasonCode, authProperties: MqttAuthProperties)
+}
+extension CocoaMQTT5 : CocoaMQTTSocketDelegate {
+  public func socketConnected(_ socket: CocoaMQTTSocketProtocol)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  public func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
 }
 @objc public enum LocationAccuracy : Swift.Int {
   case kCLLocationAccuracyBestForNavigation = 1
@@ -144,6 +335,74 @@ extension Reachability {
     get
   }
 }
+@objc @_inheritsConvenienceInitializers public class MqttDecodePubComp : ObjectiveC.NSObject {
+  public var reasonCode: CocoaMQTTPUBCOMPReasonCode?
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodePubComp(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
+public protocol CocoaMQTTSocketDelegate : AnyObject {
+  func socketConnected(_ socket: CocoaMQTTSocketProtocol)
+  func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
+}
+public protocol CocoaMQTTSocketProtocol {
+  var enableSSL: Swift.Bool { get set }
+  func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
+  func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
+  func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
+  func disconnect()
+  func readData(toLength length: Swift.UInt, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+  func write(_ data: Foundation.Data, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers public class CocoaMQTTSocket : ObjectiveC.NSObject {
+  public var backgroundOnSocket: Swift.Bool
+  public var enableSSL: Swift.Bool
+  public var sslSettings: [Swift.String : ObjectiveC.NSObject]?
+  public var allowUntrustCACertificate: Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CocoaMQTTSocket : CocoaMQTTSocketProtocol {
+  public func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
+  public func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
+  public func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
+  public func disconnect()
+  public func readData(toLength length: Swift.UInt, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+  public func write(_ data: Foundation.Data, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+}
+extension CocoaMQTTSocket : MqttCocoaAsyncSocket.MGCDAsyncSocketDelegate {
+  @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didConnectToHost host: Swift.String, port: Swift.UInt16)
+  @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc dynamic public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
+  @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didWriteDataWithTag tag: Swift.Int)
+  @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  @objc dynamic public func socketDidDisconnect(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, withError err: Swift.Error?)
+}
+@objc public class CocoaMQTTMessage : ObjectiveC.NSObject {
+  public var qos: CocoaMQTTQoS
+  public var topic: Swift.String
+  public var payload: [Swift.UInt8]
+  public var retained: Swift.Bool
+  public var duplicated: Swift.Bool
+  public var string: Swift.String? {
+    get
+  }
+  public init(topic: Swift.String, string: Swift.String, qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false)
+  public init(topic: Swift.String, payload: [Swift.UInt8], qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false)
+  @objc deinit
+}
+extension CocoaMQTTMessage {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
+}
 @_hasMissingDesignatedInitializers @objc public class RoamTripSummaryRoute : ObjectiveC.NSObject {
   @objc public var activity: Swift.String?
   @objc public var altitude: Foundation.NSNumber
@@ -153,6 +412,127 @@ extension Reachability {
   @objc public var coordinates: [Swift.Double]?
   @objc public var recordedAt: Swift.String?
   @objc deinit
+}
+@objc public enum CocoaMQTTConnAck : Swift.UInt8, Swift.CustomStringConvertible {
+  case accept = 0
+  case unacceptableProtocolVersion
+  case identifierRejected
+  case serverUnavailable
+  case badUsernameOrPassword
+  case notAuthorized
+  case reserved
+  public init(byte: Swift.UInt8)
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public protocol CocoaMQTTDelegate {
+  @objc func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck)
+  @objc func mqtt(_ mqtt: CocoaMQTT, didPublishMessage message: CocoaMQTTMessage, id: Swift.UInt16)
+  @objc func mqtt(_ mqtt: CocoaMQTT, didPublishAck id: Swift.UInt16)
+  @objc func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: Swift.UInt16)
+  @objc func mqtt(_ mqtt: CocoaMQTT, didSubscribeTopics success: Foundation.NSDictionary, failed: [Swift.String])
+  @objc func mqtt(_ mqtt: CocoaMQTT, didUnsubscribeTopics topics: [Swift.String])
+  @objc func mqttDidPing(_ mqtt: CocoaMQTT)
+  @objc func mqttDidReceivePong(_ mqtt: CocoaMQTT)
+  @objc func mqttDidDisconnect(_ mqtt: CocoaMQTT, withError err: Swift.Error?)
+  @objc optional func mqtt(_ mqtt: CocoaMQTT, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  @objc optional func mqttUrlSession(_ mqtt: CocoaMQTT, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc optional func mqtt(_ mqtt: CocoaMQTT, didPublishComplete id: Swift.UInt16)
+  @objc optional func mqtt(_ mqtt: CocoaMQTT, didStateChangeTo state: CocoaMQTTConnState)
+}
+public func setMqtt3Version()
+@objc public class CocoaMQTT : ObjectiveC.NSObject {
+  weak public var delegate: CocoaMQTTDelegate?
+  public var host: Swift.String
+  public var port: Swift.UInt16
+  public var clientID: Swift.String
+  public var username: Swift.String?
+  public var password: Swift.String?
+  public var cleanSession: Swift.Bool
+  public var willMessage: CocoaMQTTMessage?
+  public var backgroundOnSocket: Swift.Bool {
+    get
+    set
+  }
+  public var delegateQueue: Dispatch.DispatchQueue
+  public var connState: CocoaMQTTConnState {
+    get
+    set
+  }
+  public var deliverTimeout: Swift.Double {
+    get
+    set
+  }
+  public var messageQueueSize: Swift.UInt {
+    get
+    set
+  }
+  public var inflightWindowSize: Swift.UInt {
+    get
+    set
+  }
+  public var keepAlive: Swift.UInt16
+  public var autoReconnect: Swift.Bool
+  public var autoReconnectTimeInterval: Swift.UInt16
+  public var maxAutoReconnectTimeInterval: Swift.UInt16
+  public var logLevel: CocoaMQTTLoggerLevel {
+    get
+    set
+  }
+  public var enableSSL: Swift.Bool {
+    get
+    set
+  }
+  public var sslSettings: [Swift.String : ObjectiveC.NSObject]? {
+    get
+    set
+  }
+  public var allowUntrustCACertificate: Swift.Bool {
+    get
+    set
+  }
+  public var subscriptions: [Swift.String : CocoaMQTTQoS]
+  public var didConnectAck: (CocoaMQTT, CocoaMQTTConnAck) -> Swift.Void
+  public var didPublishMessage: (CocoaMQTT, CocoaMQTTMessage, Swift.UInt16) -> Swift.Void
+  public var didPublishAck: (CocoaMQTT, Swift.UInt16) -> Swift.Void
+  public var didReceiveMessage: (CocoaMQTT, CocoaMQTTMessage, Swift.UInt16) -> Swift.Void
+  public var didSubscribeTopics: (CocoaMQTT, Foundation.NSDictionary, [Swift.String]) -> Swift.Void
+  public var didUnsubscribeTopics: (CocoaMQTT, [Swift.String]) -> Swift.Void
+  public var didPing: (CocoaMQTT) -> Swift.Void
+  public var didReceivePong: (CocoaMQTT) -> Swift.Void
+  public var didDisconnect: (CocoaMQTT, Swift.Error?) -> Swift.Void
+  public var didReceiveTrust: (CocoaMQTT, Security.SecTrust, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void
+  public var didCompletePublish: (CocoaMQTT, Swift.UInt16) -> Swift.Void
+  public var didChangeState: (CocoaMQTT, CocoaMQTTConnState) -> Swift.Void
+  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: CocoaMQTTSocketProtocol = CocoaMQTTSocket())
+  @objc deinit
+  public func connect() -> Swift.Bool
+  public func connect(timeout: Foundation.TimeInterval) -> Swift.Bool
+  public func disconnect()
+  public func ping()
+  @discardableResult
+  public func publish(_ topic: Swift.String, withString string: Swift.String, qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false) -> Swift.Int
+  @discardableResult
+  public func publish(_ message: CocoaMQTTMessage) -> Swift.Int
+  public func subscribe(_ topic: Swift.String, qos: CocoaMQTTQoS = .qos1)
+  public func subscribe(_ topics: [(Swift.String, CocoaMQTTQoS)])
+  public func unsubscribe(_ topic: Swift.String)
+  public func unsubscribe(_ topics: [Swift.String])
+}
+extension CocoaMQTT : CocoaMQTTSocketDelegate {
+  public func socketConnected(_ socket: CocoaMQTTSocketProtocol)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  public func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  public func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
 }
 @_hasMissingDesignatedInitializers @objc public class RoamUser : ObjectiveC.NSObject {
   @objc final public let userId: Swift.String
@@ -228,6 +608,8 @@ extension Reachability {
   @objc public static func requestActivityPermission()
   @objc public static func checkActivityPermission() -> Swift.Bool
   @objc public static func toggleSecurity(networkEnabled: Swift.Bool, deviceRooted: Swift.Bool, bluetoothEnabled: Swift.Bool, externalAccessoryEnabled: Swift.Bool, verifyMotion: Swift.Bool)
+  @objc public static func registerConnector(_ connector: RoamConnector)
+  @objc public static func deRegisterConnector(_ connector: RoamConnector)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -240,6 +622,183 @@ extension Reachability {
   @objc public var stops: [RoamPublishTripStop]?
   @objc override dynamic public init()
   @objc deinit
+}
+@objc public enum CocoaMQTTAUTHReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case continueAuthentication = 0x18
+  case ReAuthenticate = 0x19
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTCONNACKReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case unspecifiedError = 0x80
+  case malformedPacket = 0x81
+  case protocolError = 0x82
+  case implementationSpecificError = 0x83
+  case unsupportedProtocolVersion = 0x84
+  case clientIdentifierNotValid = 0x85
+  case badUsernameOrPassword = 0x86
+  case notAuthorized = 0x87
+  case serverUnavailable = 0x88
+  case serverBusy = 0x89
+  case banned = 0x8A
+  case badAuthenticationMethod = 0x8C
+  case topicNameInvalid = 0x90
+  case packetTooLarge = 0x95
+  case quotaExceeded = 0x97
+  case payloadFormatInvalid = 0x99
+  case retainNotSupported = 0x9A
+  case qosNotSupported = 0x9B
+  case useAnotherServer = 0x9C
+  case serverMoved = 0x9D
+  case connectionRateExceeded = 0x9F
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTDISCONNECTReasonCode : Swift.UInt8 {
+  case normalDisconnection = 0x00
+  case disconnectWithWillMessage = 0x04
+  case unspecifiedError = 0x80
+  case malformedPacket = 0x81
+  case protocolError = 0x82
+  case implementationSpecificError = 0x83
+  case notAuthorized = 0x87
+  case serverBusy = 0x89
+  case serverShuttingDown = 0x8B
+  case keepAliveTimeout = 0x8D
+  case sessionTakenOver = 0x8E
+  case topicFilterInvalid = 0x8F
+  case topicNameInvalid = 0x90
+  case receiveMaximumExceeded = 0x93
+  case topicAliasInvalid = 0x94
+  case packetTooLarge = 0x95
+  case messageRateTooHigh = 0x96
+  case quotaExceeded = 0x97
+  case administrativeAction = 0x98
+  case payloadFormatInvalid = 0x99
+  case retainNotSupported = 0x9A
+  case qosNotSupported = 0x9B
+  case useAnotherServer = 0x9C
+  case serverMoved = 0x9D
+  case sharedSubscriptionsNotSupported = 0x9E
+  case connectionRateExceeded = 0x9F
+  case maximumConnectTime = 0xA0
+  case subscriptionIdentifiersNotSupported = 0xA1
+  case wildcardSubscriptionsNotSupported = 0xA2
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTPUBACKReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case noMatchingSubscribers = 0x10
+  case unspecifiedError = 0x80
+  case implementationSpecificError = 0x83
+  case notAuthorized = 0x87
+  case topicNameInvalid = 0x90
+  case packetIdentifierInUse = 0x91
+  case quotaExceeded = 0x97
+  case payloadFormatInvalid = 0x99
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTPUBCOMPReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case packetIdentifierNotFound = 0x92
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTPUBRECReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case noMatchingSubscribers = 0x10
+  case unspecifiedError = 0x80
+  case implementationSpecificError = 0x83
+  case notAuthorized = 0x87
+  case topicNameInvalid = 0x90
+  case packetIdentifierInUse = 0x91
+  case quotaExceeded = 0x97
+  case payloadFormatInvalid = 0x99
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTPUBRELReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case packetIdentifierNotFound = 0x92
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTSUBACKReasonCode : Swift.UInt8 {
+  case grantedQoS0 = 0x00
+  case grantedQoS1 = 0x01
+  case grantedQoS2 = 0x02
+  case unspecifiedError = 0x80
+  case implementationSpecificError = 0x83
+  case notAuthorized = 0x87
+  case topicFilterInvalid = 0x8F
+  case packetIdentifierInUse = 0x91
+  case quotaExceeded = 0x97
+  case sharedSubscriptionsNotSupported = 0x9E
+  case subscriptionIdentifiersNotSupported = 0xA1
+  case wildcardSubscriptionsNotSupported = 0xA2
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaMQTTUNSUBACKReasonCode : Swift.UInt8 {
+  case success = 0x00
+  case noSubscriptionExisted = 0x11
+  case unspecifiedError = 0x80
+  case implementationSpecificError = 0x83
+  case notAuthorized = 0x87
+  case topicFilterInvalid = 0x8F
+  case packetIdentifierInUse = 0x91
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum CocoaRetainHandlingOption : Swift.UInt8 {
+  case sendOnSubscribe = 0
+  case sendOnlyWhenSubscribeIsNew = 1
+  case none = 2
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+@objc public enum PayloadFormatIndicator : Swift.UInt8 {
+  case unspecified = 0x00
+  case utf8 = 0x01
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
 }
 public enum FileIntegrityCheck {
   case bundleID(Swift.String)
@@ -262,6 +821,15 @@ public enum IntegrityCheckerImageTarget {
   @objc final public let distance: Swift.Double
   @objc final public let duration: Swift.Double
   @objc final public let startedTime: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MqttDecodePubRel : ObjectiveC.NSObject {
+  public var reasonCode: CocoaMQTTPUBRELReasonCode?
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodePubRel(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamTripResponse : ObjectiveC.NSObject {
@@ -374,6 +942,53 @@ public enum FailedCheck : Swift.CaseIterable {
   @objc public var geometryCoordinates: [Swift.Double]?
   @objc override dynamic public init()
   @objc deinit
+}
+public enum CocoaMQTTPropertyName : Swift.UInt8 {
+  case payloadFormatIndicator
+  case willExpiryInterval
+  case contentType
+  case responseTopic
+  case correlationData
+  case subscriptionIdentifier
+  case sessionExpiryInterval
+  case assignedClientIdentifier
+  case serverKeepAlive
+  case authenticationMethod
+  case authenticationData
+  case requestProblemInformation
+  case willDelayInterval
+  case requestResponseInformation
+  case responseInformation
+  case serverReference
+  case reasonString
+  case receiveMaximum
+  case topicAliasMaximum
+  case topicAlias
+  case maximumQoS
+  case retainAvailable
+  case userProperty
+  case maximumPacketSize
+  case wildcardSubscriptionAvailable
+  case subscriptionIdentifiersAvailable
+  case sharedSubscriptionAvailable
+  public init?(rawValue: Swift.UInt8)
+  public typealias RawValue = Swift.UInt8
+  public var rawValue: Swift.UInt8 {
+    get
+  }
+}
+public enum formatInt : Swift.Int {
+  case formatUint8
+  case formatUint16
+  case formatUint32
+  case formatSint8
+  case formatSint16
+  case formatSint32
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTripError : ObjectiveC.NSObject {
   @objc public var code: Foundation.NSNumber
@@ -490,6 +1105,7 @@ extension UIKit.UIDevice {
   @objc optional func didReceiveUserLocation(_ location: RoamLocationReceived)
   @objc optional func onReceiveTrip(_ tripStatus: [RoamTripStatus])
   @objc optional func onError(_ error: RoamError)
+  @objc optional func didChangeMQTTStatus(_ status: Swift.String)
 }
 @_inheritsConvenienceInitializers @objc public class RoamPublish : ObjectiveC.NSObject {
   @objc public var meta_data: Swift.Dictionary<Swift.String, Any>?
@@ -531,6 +1147,22 @@ extension UIKit.UIDevice {
   @objc public var has_more: Swift.Bool
   @objc public var error: RoamTripError?
   @objc public var trips: [RoamTrip]
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class RoamMqttConnector : ObjectiveC.NSObject, RoamConnector {
+  @objc public var clientID: Swift.String
+  @objc public class Builder : ObjectiveC.NSObject {
+    public init(host: Swift.String, port: Swift.UInt16, connectionType: RoamMqttConnectionType, topic: Swift.String)
+    public func setPath(_ path: Swift.String) -> RoamMqttConnector.Builder
+    public func setCredentials(username: Swift.String, password: Swift.String) -> RoamMqttConnector.Builder
+    public func setClientId(_ clientId: Swift.String) -> RoamMqttConnector.Builder
+    public func setQos(_ qos: Swift.Int) -> RoamMqttConnector.Builder
+    public func setConnectOptions(_ connectOptions: RoamMqttConnectOptions) -> RoamMqttConnector.Builder
+    public func setWillOption(_ willOption: RoamMqttWillOptions) -> RoamMqttConnector.Builder
+    public func setMQTTVersion(_ version: Swift.String) -> RoamMqttConnector.Builder
+    public func build() -> RoamMqttConnector
+    @objc deinit
+  }
   @objc deinit
 }
 @objc public enum RoamTrackingState : Swift.Int {
@@ -583,6 +1215,20 @@ extension UIKit.UIDevice {
   @objc override dynamic public init()
   @objc deinit
 }
+public enum CocoaMQTTLoggerLevel : Swift.Int {
+  case debug, info, warning, error, off
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers open class CocoaMQTTLogger : ObjectiveC.NSObject {
+  public static var logger: CocoaMQTTLogger
+  @objc override dynamic public init()
+  open func log(level: CocoaMQTTLoggerLevel, message: Swift.String)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamLocation : ObjectiveC.NSObject {
   @objc final public let userId: Swift.String?
   @objc final public let activity: Swift.String?
@@ -620,6 +1266,45 @@ public typealias RoamStatusErrorHandler = ((_ status: Swift.String?, _ error: Ro
   @objc public var discardLocation: Swift.Bool
   @objc deinit
 }
+@objc public class MqttPublishProperties : ObjectiveC.NSObject {
+  public var propertyLength: Swift.Int?
+  public var payloadFormatIndicator: PayloadFormatIndicator?
+  public var messageExpiryInterval: Swift.UInt32?
+  public var topicAlias: Swift.UInt16?
+  public var responseTopic: Swift.String?
+  public var correlationData: [Swift.UInt8]?
+  public var userProperty: [Swift.String : Swift.String]?
+  public var subscriptionIdentifier: Swift.UInt32?
+  public var contentType: Swift.String?
+  public init(propertyLength: Swift.Int? = nil, payloadFormatIndicator: PayloadFormatIndicator? = nil, messageExpiryInterval: Swift.UInt32? = nil, topicAlias: Swift.UInt16? = nil, responseTopic: Swift.String? = nil, correlation: Swift.String? = nil, userProperty: [Swift.String : Swift.String]? = nil, subscriptionIdentifier: Swift.UInt32? = nil, contentType: Swift.String? = nil)
+  public var properties: [Swift.UInt8] {
+    get
+  }
+  @objc deinit
+}
+public enum CocoaMQTTError : Swift.Error {
+  case invalidURL
+  case readTimeout
+  case writeTimeout
+  @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+  public enum FoundationConnection : Swift.Error {
+    case closed(Foundation.URLSessionWebSocketTask.CloseCode)
+  }
+  public static func == (a: CocoaMQTTError, b: CocoaMQTTError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class MqttDecodeSubAck : ObjectiveC.NSObject {
+  public var reasonCodes: [CocoaMQTTSUBACKReasonCode]
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodeSubAck(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamCreateTrip : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String!
   @objc public var destinations: [RoamTripDestination]!
@@ -632,6 +1317,32 @@ public typealias RoamStatusErrorHandler = ((_ status: Swift.String?, _ error: Ro
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
   @objc public var metaData: Swift.Dictionary<Swift.String, Any>!
+  @objc deinit
+}
+public class ThreadSafeDictionary<K, V> : Swift.Collection where K : Swift.Hashable {
+  public var startIndex: Swift.Dictionary<K, V>.Index {
+    get
+  }
+  public var endIndex: Swift.Dictionary<K, V>.Index {
+    get
+  }
+  public init(label: Swift.String, dict: [K : V] = [K:V]())
+  public func index(after i: Swift.Dictionary<K, V>.Index) -> Swift.Dictionary<K, V>.Index
+  public subscript(key: K) -> V? {
+    get
+    set(newValue)
+  }
+  public subscript(index: Swift.Dictionary<K, V>.Index) -> Swift.Dictionary<K, V>.Element {
+    get
+  }
+  @discardableResult
+  public func removeValue(forKey key: K) -> V?
+  public func removeAll()
+  public typealias Element = Swift.Dictionary<K, V>.Element
+  public typealias Index = Swift.Dictionary<K, V>.Index
+  public typealias Indices = Swift.DefaultIndices<ThreadSafeDictionary<K, V>>
+  public typealias Iterator = Swift.IndexingIterator<ThreadSafeDictionary<K, V>>
+  public typealias SubSequence = Swift.Slice<ThreadSafeDictionary<K, V>>
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamGetTrip : ObjectiveC.NSObject {
@@ -651,6 +1362,33 @@ public typealias RoamStatusErrorHandler = ((_ status: Swift.String?, _ error: Ro
   @objc public var tripStartedAt: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc public var userId: Swift.String!
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MqttAuthProperties : ObjectiveC.NSObject {
+  public var authenticationMethod: Swift.String?
+  public var authenticationData: [Swift.UInt8]?
+  public var reasonString: Swift.String?
+  public var userProperties: [Swift.String : Swift.String]?
+  public var properties: [Swift.UInt8] {
+    get
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class MqttConnectProperties : ObjectiveC.NSObject {
+  public var sessionExpiryInterval: Swift.UInt32?
+  public var receiveMaximum: Swift.UInt16?
+  public var maximumPacketSize: Swift.UInt32?
+  public var topicAliasMaximum: Swift.UInt16?
+  public var requestResponseInformation: Swift.UInt8?
+  public var requestProblemInfomation: Swift.UInt8?
+  public var userProperties: [Swift.String : Swift.String]?
+  public var authenticationMethod: Swift.String?
+  public var authenticationData: [Swift.UInt8]?
+  public var properties: [Swift.UInt8] {
+    get
+  }
+  @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @available(iOSApplicationExtension, unavailable)
@@ -680,6 +1418,23 @@ extension IOSSecuritySuite {
   public static func hasBreakpointAt(_ functionAddr: Swift.UnsafeRawPointer, functionSize: Darwin.vm_size_t?) -> Swift.Bool
   public static func hasWatchpoint() -> Swift.Bool
 }
+@objc @_inheritsConvenienceInitializers public class MqttDecodePublish : ObjectiveC.NSObject {
+  public var propertyLength: Swift.Int?
+  public var payloadFormatIndicator: PayloadFormatIndicator?
+  public var messageExpiryInterval: Swift.UInt32?
+  public var topicAlias: Swift.UInt16?
+  public var responseTopic: Swift.String?
+  public var correlationData: [Swift.UInt8]?
+  public var userProperty: [Swift.String : Swift.String]?
+  public var subscriptionIdentifier: Swift.Int
+  public var contentType: Swift.String?
+  public var topic: Swift.String
+  public var packetIdentifier: Swift.UInt16?
+  public var mqtt5DataIndex: Swift.Int
+  public func decodePublish(fixedHeader: Swift.UInt8, publishData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamTripDestination : ObjectiveC.NSObject {
   @objc public var coordinates: [Swift.Double]!
   @objc public var createdAt: Swift.String!
@@ -689,6 +1444,35 @@ extension IOSSecuritySuite {
   @objc public var tripId: Swift.String!
   @objc public var updatedAt: Swift.String!
   @objc deinit
+}
+@objc public class CocoaMQTT5Message : ObjectiveC.NSObject {
+  public var qos: CocoaMQTTQoS
+  public var topic: Swift.String
+  public var payload: [Swift.UInt8]
+  public var retained: Swift.Bool
+  public var duplicated: Swift.Bool
+  public var isUTF8EncodedData: Swift.Bool
+  public var willDelayInterval: Swift.UInt32?
+  public var willExpiryInterval: Swift.UInt32?
+  public var contentType: Swift.String?
+  public var willResponseTopic: Swift.String?
+  public var willCorrelationData: [Swift.UInt8]?
+  public var willUserProperty: [Swift.String : Swift.String]?
+  public var string: Swift.String? {
+    get
+  }
+  public var properties: [Swift.UInt8] {
+    get
+  }
+  public init(topic: Swift.String, string: Swift.String, qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false)
+  public init(topic: Swift.String, payload: [Swift.UInt8], qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false)
+  public init(topic: Swift.String, payload: [Swift.String : Any], qos: CocoaMQTTQoS = .qos1, retained: Swift.Bool = false) throws
+  @objc deinit
+}
+extension CocoaMQTT5Message {
+  @objc override dynamic public var description: Swift.String {
+    @objc get
+  }
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTrip : ObjectiveC.NSObject {
   @objc public var tripId: Swift.String?
@@ -720,6 +1504,17 @@ extension IOSSecuritySuite {
   @objc override dynamic public init()
   @objc deinit
 }
+public class MqttSubscription {
+  public var topic: Swift.String
+  public var qos: CocoaMQTTQoS
+  public var noLocal: Swift.Bool
+  public var retainAsPublished: Swift.Bool
+  public var retainHandling: CocoaRetainHandlingOption
+  public var subscriptionOptions: Swift.Bool
+  public init(topic: Swift.String)
+  public init(topic: Swift.String, qos: CocoaMQTTQoS)
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamTripEvent : ObjectiveC.NSObject {
   @objc public var createdAt: Swift.String!
   @objc public var eventType: Swift.String!
@@ -730,9 +1525,127 @@ extension IOSSecuritySuite {
   @objc public var userLocationId: Swift.String!
   @objc deinit
 }
+@objc @_inheritsConvenienceInitializers public class MqttDecodeUnsubAck : ObjectiveC.NSObject {
+  public var reasonCodes: [CocoaMQTTUNSUBACKReasonCode]
+  public var msgid: Swift.UInt16
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public func decodeUnSubAck(fixedHeader: Swift.UInt8, pubAckData: [Swift.UInt8])
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamError : ObjectiveC.NSObject {
   @objc final public let code: Swift.String?
   @objc final public let message: Swift.String?
+  @objc deinit
+}
+public protocol CocoaMQTTWebSocketConnectionDelegate : AnyObject {
+  func connection(_ conn: CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func urlSessionConnection(_ conn: CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  func connectionOpened(_ conn: CocoaMQTTWebSocketConnection)
+  func connectionClosed(_ conn: CocoaMQTTWebSocketConnection, withError error: Swift.Error?, withCode code: Swift.UInt16?)
+  func connection(_ conn: CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
+  func connection(_ conn: CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
+}
+public protocol CocoaMQTTWebSocketConnection : ObjectiveC.NSObjectProtocol {
+  var delegate: CocoaMQTTWebSocketConnectionDelegate? { get set }
+  var queue: Dispatch.DispatchQueue { get set }
+  func connect()
+  func disconnect()
+  func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+}
+public protocol CocoaMQTTWebSocketConnectionBuilder {
+  func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> CocoaMQTTWebSocketConnection
+}
+public class CocoaMQTTWebSocket : CocoaMQTTSocketProtocol {
+  public var enableSSL: Swift.Bool
+  public var shouldConnectWithURIOnly: Swift.Bool
+  public var headers: [Swift.String : Swift.String]
+  public typealias ConnectionBuilder = CocoaMQTTWebSocketConnectionBuilder
+  public struct DefaultConnectionBuilder : CocoaMQTTWebSocket.ConnectionBuilder {
+    public init()
+    public func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> CocoaMQTTWebSocketConnection
+  }
+  public func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
+  public init(uri: Swift.String = "", builder: CocoaMQTTWebSocket.ConnectionBuilder = CocoaMQTTWebSocket.DefaultConnectionBuilder())
+  public func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
+  public func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
+  public func disconnect()
+  public func readData(toLength length: Swift.UInt, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+  public func write(_ data: Foundation.Data, withTimeout timeout: Foundation.TimeInterval, tag: Swift.Int)
+  @objc deinit
+}
+extension CocoaMQTTWebSocket : CocoaMQTTWebSocketConnectionDelegate {
+  public func urlSessionConnection(_ conn: CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func connection(_ conn: CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func connectionOpened(_ conn: CocoaMQTTWebSocketConnection)
+  public func connectionClosed(_ conn: CocoaMQTTWebSocketConnection, withError error: Swift.Error?, withCode code: Swift.UInt16?)
+  public func connection(_ conn: CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
+  public func connection(_ conn: CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
+}
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+extension CocoaMQTTWebSocket {
+  @objc public class FoundationConnection : ObjectiveC.NSObject, CocoaMQTTWebSocketConnection {
+    weak public var delegate: CocoaMQTTWebSocketConnectionDelegate?
+    public var queue: Dispatch.DispatchQueue {
+      get
+      set
+    }
+    public init(url: Foundation.URL, config: Foundation.URLSessionConfiguration)
+    public func connect()
+    public func disconnect()
+    public func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+    @objc deinit
+  }
+}
+@available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
+extension CocoaMQTTWebSocket.FoundationConnection : Foundation.URLSessionWebSocketDelegate {
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, task: Foundation.URLSessionTask, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didOpenWithProtocol protocol: Swift.String?)
+  @objc dynamic public func urlSession(_ session: Foundation.URLSession, webSocketTask: Foundation.URLSessionWebSocketTask, didCloseWith closeCode: Foundation.URLSessionWebSocketTask.CloseCode, reason: Foundation.Data?)
+}
+extension CocoaMQTTWebSocket {
+  @objc public class StarscreamConnection : ObjectiveC.NSObject, CocoaMQTTWebSocketConnection {
+    public var reference: Starscream.WebSocket
+    weak public var delegate: CocoaMQTTWebSocketConnectionDelegate?
+    public var queue: Dispatch.DispatchQueue {
+      get
+      set
+    }
+    public init(request: Foundation.URLRequest)
+    public func connect()
+    public func disconnect()
+    public func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+    @objc deinit
+  }
+}
+extension CocoaMQTTWebSocket.StarscreamConnection : Starscream.CertificatePinning {
+  public func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((Starscream.PinningState) -> ()))
+}
+extension CocoaMQTTWebSocket.StarscreamConnection : Starscream.WebSocketDelegate {
+  public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient)
+}
+@objc @_inheritsConvenienceInitializers public class MqttDecodeConnAck : ObjectiveC.NSObject {
+  public var propertyLength: Swift.Int?
+  public var sessionExpiryInterval: Swift.UInt32?
+  public var receiveMaximum: Swift.UInt16?
+  public var maximumQoS: CocoaMQTTQoS?
+  public var retainAvailable: Swift.Bool?
+  public var maximumPacketSize: Swift.UInt32?
+  public var assignedClientIdentifier: Swift.String?
+  public var topicAliasMaximum: Swift.UInt16?
+  public var reasonString: Swift.String?
+  public var userProperty: [Swift.String : Swift.String]?
+  public var wildcardSubscriptionAvailable: Swift.Bool?
+  public var subscriptionIdentifiersAvailable: Swift.Bool?
+  public var sharedSubscriptionAvailable: Swift.Bool?
+  public var serverKeepAlive: Swift.UInt16?
+  public var responseInformation: Swift.String?
+  public var serverReference: Swift.String?
+  public var authenticationMethod: Swift.String?
+  public var authenticationData: [Swift.UInt8]
+  public func properties(connackData: [Swift.UInt8])
+  @objc override dynamic public init()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTripSync : ObjectiveC.NSObject {
@@ -811,6 +1724,85 @@ extension BatchLocation {
     @objc set
   }
   @objc @NSManaged dynamic public var verticalAccuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+}
+@_inheritsConvenienceInitializers @objc(CustomMqttLocationData) public class CustomMqttLocationData : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension CustomMqttLocationData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<CustomMqttLocationData>
+  @objc @NSManaged dynamic public var activity: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var altitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var battery_remaining: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var battery_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var client_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var course: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var gps_status: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var horizontal_accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var isOfflineData: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var location_permission: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var longitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mqttLocation_time: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var network_status: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var recorded_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var speed: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tracking_mode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var vertical_accuracy: Swift.Double {
     @objc get
     @objc set
   }
@@ -1339,6 +2331,14 @@ extension TripStop {
     @objc set
   }
 }
+extension RoamMqttConnectionType : Swift.Equatable {}
+extension RoamMqttConnectionType : Swift.Hashable {}
+extension RoamMqttConnectionType : Swift.RawRepresentable {}
+extension CocoaMQTTQoS : Swift.Hashable {}
+extension CocoaMQTTQoS : Swift.RawRepresentable {}
+extension CocoaMQTTConnState : Swift.Equatable {}
+extension CocoaMQTTConnState : Swift.Hashable {}
+extension CocoaMQTTConnState : Swift.RawRepresentable {}
 extension LocationAccuracy : Swift.Equatable {}
 extension LocationAccuracy : Swift.Hashable {}
 extension LocationAccuracy : Swift.RawRepresentable {}
@@ -1346,8 +2346,50 @@ extension Reachability.NetworkStatus : Swift.Equatable {}
 extension Reachability.NetworkStatus : Swift.Hashable {}
 extension Reachability.Connection : Swift.Equatable {}
 extension Reachability.Connection : Swift.Hashable {}
+extension CocoaMQTTConnAck : Swift.Equatable {}
+extension CocoaMQTTConnAck : Swift.Hashable {}
+extension CocoaMQTTConnAck : Swift.RawRepresentable {}
+extension CocoaMQTTAUTHReasonCode : Swift.Equatable {}
+extension CocoaMQTTAUTHReasonCode : Swift.Hashable {}
+extension CocoaMQTTAUTHReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTCONNACKReasonCode : Swift.Equatable {}
+extension CocoaMQTTCONNACKReasonCode : Swift.Hashable {}
+extension CocoaMQTTCONNACKReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTDISCONNECTReasonCode : Swift.Equatable {}
+extension CocoaMQTTDISCONNECTReasonCode : Swift.Hashable {}
+extension CocoaMQTTDISCONNECTReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTPUBACKReasonCode : Swift.Equatable {}
+extension CocoaMQTTPUBACKReasonCode : Swift.Hashable {}
+extension CocoaMQTTPUBACKReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTPUBCOMPReasonCode : Swift.Equatable {}
+extension CocoaMQTTPUBCOMPReasonCode : Swift.Hashable {}
+extension CocoaMQTTPUBCOMPReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTPUBRECReasonCode : Swift.Equatable {}
+extension CocoaMQTTPUBRECReasonCode : Swift.Hashable {}
+extension CocoaMQTTPUBRECReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTPUBRELReasonCode : Swift.Equatable {}
+extension CocoaMQTTPUBRELReasonCode : Swift.Hashable {}
+extension CocoaMQTTPUBRELReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTSUBACKReasonCode : Swift.Equatable {}
+extension CocoaMQTTSUBACKReasonCode : Swift.Hashable {}
+extension CocoaMQTTSUBACKReasonCode : Swift.RawRepresentable {}
+extension CocoaMQTTUNSUBACKReasonCode : Swift.Equatable {}
+extension CocoaMQTTUNSUBACKReasonCode : Swift.Hashable {}
+extension CocoaMQTTUNSUBACKReasonCode : Swift.RawRepresentable {}
+extension CocoaRetainHandlingOption : Swift.Equatable {}
+extension CocoaRetainHandlingOption : Swift.Hashable {}
+extension CocoaRetainHandlingOption : Swift.RawRepresentable {}
+extension PayloadFormatIndicator : Swift.Equatable {}
+extension PayloadFormatIndicator : Swift.Hashable {}
+extension PayloadFormatIndicator : Swift.RawRepresentable {}
 extension FailedCheck : Swift.Equatable {}
 extension FailedCheck : Swift.Hashable {}
+extension CocoaMQTTPropertyName : Swift.Equatable {}
+extension CocoaMQTTPropertyName : Swift.Hashable {}
+extension CocoaMQTTPropertyName : Swift.RawRepresentable {}
+extension formatInt : Swift.Equatable {}
+extension formatInt : Swift.Hashable {}
+extension formatInt : Swift.RawRepresentable {}
 extension Model : Swift.Equatable {}
 extension Model : Swift.Hashable {}
 extension Model : Swift.RawRepresentable {}
@@ -1362,3 +2404,8 @@ extension RoamNetworkState : Swift.Hashable {}
 extension RoamNetworkState : Swift.RawRepresentable {}
 extension RoamTrackingMode : Swift.Equatable {}
 extension RoamTrackingMode : Swift.Hashable {}
+extension CocoaMQTTLoggerLevel : Swift.Equatable {}
+extension CocoaMQTTLoggerLevel : Swift.Hashable {}
+extension CocoaMQTTLoggerLevel : Swift.RawRepresentable {}
+extension CocoaMQTTError : Swift.Equatable {}
+extension CocoaMQTTError : Swift.Hashable {}

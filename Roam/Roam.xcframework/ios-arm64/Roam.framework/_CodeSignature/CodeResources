@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Roam-Swift.h</key>
 		<data>
-		o7vouBmRmO5l22fnRQK4S10hvVE=
+		pdtfiKgMA64Yg9eW0ve2qwQ98HU=
 		</data>
 		<key>Headers/Roam.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		q9gzRXk+v0zdO5gw6thym6v9K1c=
+		fP4RlyyEmsO+PPDsz8tYjo8PjtU=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Yt8EJlDZXrJRVBcrE9FVkAH3QD4=
+		NzDSdfylsqSPRuocfbuhmYewekA=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		HjQEjF/GtI6kXpTsOkyjWU1fve8=
+		GtvGoWVDOHOnoBRBqqgFtp+Gjig=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		tm6ZojUTyCEsjlsn7aeTuxwk4mw=
+		f7VMq2NJrdT64SGCVERJ5V0RnXs=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		HjQEjF/GtI6kXpTsOkyjWU1fve8=
+		GtvGoWVDOHOnoBRBqqgFtp+Gjig=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		G/hEAXPqcGcjI5HB79kbQ/S4OxA=
+		+8KnKFGRYay5MtbvPFfvE//l87A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,32 +42,24 @@
 		</data>
 		<key>RoamModel.momd/MotionModel.mom</key>
 		<data>
-		FUKQkhK/qAzjPOBjjM885k6flZs=
+		0gvGcBb1mE7P1PXuF3Xs9zuJAJw=
 		</data>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<data>
-		L/TnpYUXC6X4UCmwSYTSwMmBMZA=
+		ia58nvOut2vJKW3YBkPtLE3/dHg=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/Roam-Swift.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			o7vouBmRmO5l22fnRQK4S10hvVE=
-			</data>
 			<key>hash2</key>
 			<data>
-			2cZEXN0lytjiRA4dC4MIvEH0yCk6NDT83FE4yO22jZo=
+			AvhDsh88zXADGVWoYpQJB8WbMaPfezjm5KDhgNCBNhI=
 			</data>
 		</dict>
 		<key>Headers/Roam.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ojG79CjBQdJa7Df2ivTWcsOwaJ8=
-			</data>
 			<key>hash2</key>
 			<data>
 			AU+aWeW6rnYLm+5vQDSGDzMLvHLcTwlydZrrziScdls=
@@ -75,65 +67,41 @@
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Yt8EJlDZXrJRVBcrE9FVkAH3QD4=
-			</data>
 			<key>hash2</key>
 			<data>
-			uuYuAwgJ0XR9cYYRtWLNnOvMcZ89KWQQ0qUJ1m2DIcU=
+			S/vVjTkRDRz/rFQA16rTMrF2tXh1HVezwMwVDsgNgds=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HjQEjF/GtI6kXpTsOkyjWU1fve8=
-			</data>
 			<key>hash2</key>
 			<data>
-			D8vQUWfUcBfXeiAF+DmsxxHPhsePEnu/oHVReu1O70Q=
+			mNhXevZVAG2ctK+R/rVKY+iXRH86Jq6hhZVm0xuulRA=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tm6ZojUTyCEsjlsn7aeTuxwk4mw=
-			</data>
 			<key>hash2</key>
 			<data>
-			otRkwVbMqf+vzYXN3tPHFUFoVFsjiaoyqdFuBCirQ4M=
+			0JeIjz4bRVMfSvKf2q7yAioARhuoWvMgfBTzc5Hkpvs=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HjQEjF/GtI6kXpTsOkyjWU1fve8=
-			</data>
 			<key>hash2</key>
 			<data>
-			D8vQUWfUcBfXeiAF+DmsxxHPhsePEnu/oHVReu1O70Q=
+			mNhXevZVAG2ctK+R/rVKY+iXRH86Jq6hhZVm0xuulRA=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			G/hEAXPqcGcjI5HB79kbQ/S4OxA=
-			</data>
 			<key>hash2</key>
 			<data>
-			haM+ZD0mQz0rcQflci0Ttmshdz5+c9XPv8S46SwMw9E=
+			YUASVF4hD5+V8bFs2t4RA2x6p3LE8/eYkPg5nl/Ufzo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4VqpuSU4ABLaNLVYabFBjqOaBCU=
-			</data>
 			<key>hash2</key>
 			<data>
 			TFA023VN6wCFtzTGfpoAU1zMwwbJSU7uk0zRvwKNI/M=
@@ -141,24 +109,16 @@
 		</dict>
 		<key>RoamModel.momd/MotionModel.mom</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			FUKQkhK/qAzjPOBjjM885k6flZs=
-			</data>
 			<key>hash2</key>
 			<data>
-			aptMxW38hsLkITOXQNBN2zCzQzPJhooBwRBAB9OyzjE=
+			sETglDYfKjN19FB13BWbxuL1zW4qW7JnCAAevGsUcx4=
 			</data>
 		</dict>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			L/TnpYUXC6X4UCmwSYTSwMmBMZA=
-			</data>
 			<key>hash2</key>
 			<data>
-			W53lkOI2GTpGXnt7QKyimopVfEIvOZULMhMLSFn8oNU=
+			BP1ppW1fZ0elMqpuYTB9w7y53gjq9aey90daTv9tWDI=
 			</data>
 		</dict>
 	</dict>

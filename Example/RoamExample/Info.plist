@@ -18,6 +18,15 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>zbra</string>
+        <string>cydia</string>
+        <string>undecimus</string>
+        <string>sileo</string>
+        <string>filza</string>
+        <string>activator</string>
+    </array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
@@ -45,6 +54,8 @@
 			</array>
 		</dict>
 	</dict>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>We use Bluetooth to connect and communicate with nearby devices.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UIBackgroundModes</key>
@@ -72,5 +83,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key></key>
+	<string></string>
 </dict>
 </plist>

@@ -38295,6 +38295,13 @@
       },
       {
         "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -64591,13 +64598,6 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Networking\/NetworkServiceLayer.swift",
-      "kind": "Dictionary",
-      "offset": 5912,
-      "length": 3,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Response\/Expose\/RoamStartTrip.swift",
       "kind": "BooleanLiteral",
       "offset": 328,
@@ -65905,55 +65905,6 @@
       "offset": 3333,
       "length": 16,
       "value": "\"?unrecognized?\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9722,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9773,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14469,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14520,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 18193,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 22136,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Core\/RoamRequestLocation.swift",
-      "kind": "BooleanLiteral",
-      "offset": 31059,
-      "length": 5,
-      "value": "false"
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocationReceived.swift",
@@ -69276,7 +69227,7 @@
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/MainManager\/RoamManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 381,
+      "offset": 396,
       "length": 1,
       "value": "0"
     },
@@ -69292,7 +69243,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.18\""
+      "value": "\"0.1.19\""
     },
     {
       "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
