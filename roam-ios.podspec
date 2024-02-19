@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
   
   # Include Packages as a dependency
-  s.dependency 'Starscream', '>= 4.0.6', '< 5.0.0', :git => 'https://github.com/daltoniam/Starscream.git'
+  s.dependency 'Starscream', '>= 4.0.6', '< 5.0.0'
   
 end
