@@ -9,7 +9,7 @@ let package = Package(
            targets: ["Roam", "AWSAuthCore", "AWSCognitoIdentityProvider", "AWSCognitoIdentityProviderASF", "AWSCore", "AWSIoT", "AWSMobileClientXCF", "MqttCocoaAsyncSocket"]),
    ],
    dependencies: [
-           .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.0")
+           .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.6"),
        ],
    targets: [
        .binaryTarget(

@@ -11,11 +11,11 @@ Pod::Spec.new do |s|
   s.vendored_frameworks   = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework','Roam/MqttCocoaAsyncSocket.xcframework'
   s.preserve_path         = 'Roam/*'
   s.module_name           = 'Roam'
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '12.0'
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
   
   # Include Packages as a dependency
-  s.dependency 'Starscream', '>= 4.0.6', '< 5.0.0'
+    s.dependency "Starscream", "4.0.6"
   
 end
