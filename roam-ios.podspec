@@ -14,8 +14,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
-  
-  # Include Packages as a dependency
-    s.dependency "Starscream", "4.0.6"
+  s.dependency "Starscream", "4.0.6"
   
 end
