@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Roam
 import AWSCore
 import AWSIoT
 import AWSMobileClientXCF
@@ -28,6 +27,7 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 @objc public enum RoamMqttConnectionType : Swift.Int {
   case TCP
   case WS
@@ -121,7 +121,7 @@ extension CocoaMQTTQoS : Swift.Comparable {
   @objc func mqtt5(_ mqtt5: CocoaMQTT5, didReceiveAuthReasonCode reasonCode: CocoaMQTTAUTHReasonCode)
   @objc func mqtt5DidPing(_ mqtt5: CocoaMQTT5)
   @objc func mqtt5DidReceivePong(_ mqtt5: CocoaMQTT5)
-  @objc func mqtt5DidDisconnect(_ mqtt5: CocoaMQTT5, withError err: Swift.Error?)
+  @objc func mqtt5DidDisconnect(_ mqtt5: CocoaMQTT5, withError err: (any Swift.Error)?)
   @objc optional func mqtt5(_ mqtt5: CocoaMQTT5, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   @objc optional func mqtt5UrlSession(_ mqtt: CocoaMQTT5, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc optional func mqtt5(_ mqtt5: CocoaMQTT5, didPublishComplete id: Swift.UInt16, pubCompData: MqttDecodePubComp?)
@@ -129,7 +129,7 @@ extension CocoaMQTTQoS : Swift.Comparable {
 }
 public func setMqtt5Version()
 @objc public class CocoaMQTT5 : ObjectiveC.NSObject {
-  weak public var delegate: CocoaMQTT5Delegate?
+  weak public var delegate: (any CocoaMQTT5Delegate)?
   public var host: Swift.String
   public var port: Swift.UInt16
   public var clientID: Swift.String
@@ -190,13 +190,13 @@ public func setMqtt5Version()
   public var didUnsubscribeTopics: (CocoaMQTT5, [Swift.String], MqttDecodeUnsubAck?) -> Swift.Void
   public var didPing: (CocoaMQTT5) -> Swift.Void
   public var didReceivePong: (CocoaMQTT5) -> Swift.Void
-  public var didDisconnect: (CocoaMQTT5, Swift.Error?) -> Swift.Void
+  public var didDisconnect: (CocoaMQTT5, (any Swift.Error)?) -> Swift.Void
   public var didDisconnectReasonCode: (CocoaMQTT5, CocoaMQTTDISCONNECTReasonCode) -> Swift.Void
   public var didAuthReasonCode: (CocoaMQTT5, CocoaMQTTAUTHReasonCode) -> Swift.Void
   public var didReceiveTrust: (CocoaMQTT5, Security.SecTrust, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void
   public var didCompletePublish: (CocoaMQTT5, Swift.UInt16, MqttDecodePubComp?) -> Swift.Void
   public var didChangeState: (CocoaMQTT5, CocoaMQTTConnState) -> Swift.Void
-  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: CocoaMQTTSocketProtocol = CocoaMQTTSocket())
+  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: any CocoaMQTTSocketProtocol = CocoaMQTTSocket())
   @objc deinit
   public func connect() -> Swift.Bool
   public func connect(timeout: Foundation.TimeInterval) -> Swift.Bool
@@ -215,13 +215,13 @@ public func setMqtt5Version()
   public func auth(reasonCode: CocoaMQTTAUTHReasonCode, authProperties: MqttAuthProperties)
 }
 extension CocoaMQTT5 : CocoaMQTTSocketDelegate {
-  public func socketConnected(_ socket: CocoaMQTTSocketProtocol)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  public func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func socketConnected(_ socket: any CocoaMQTTSocketProtocol)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func socketUrlSession(_ socket: any CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
-  public func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  public func socketDidDisconnect(_ socket: any CocoaMQTTSocketProtocol, withError err: (any Swift.Error)?)
 }
 @objc public enum LocationAccuracy : Swift.Int {
   case kCLLocationAccuracyBestForNavigation = 1
@@ -345,16 +345,16 @@ extension Reachability {
   @objc deinit
 }
 public protocol CocoaMQTTSocketDelegate : AnyObject {
-  func socketConnected(_ socket: CocoaMQTTSocketProtocol)
-  func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
-  func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
-  func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
+  func socketConnected(_ socket: any CocoaMQTTSocketProtocol)
+  func socket(_ socket: any CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func socketUrlSession(_ socket: any CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  func socket(_ socket: any CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  func socket(_ socket: any CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  func socketDidDisconnect(_ socket: any CocoaMQTTSocketProtocol, withError err: (any Swift.Error)?)
 }
 public protocol CocoaMQTTSocketProtocol {
   var enableSSL: Swift.Bool { get set }
-  func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
+  func setDelegate(_ theDelegate: (any CocoaMQTTSocketDelegate)?, delegateQueue: Dispatch.DispatchQueue?)
   func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
   func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
   func disconnect()
@@ -370,7 +370,7 @@ public protocol CocoaMQTTSocketProtocol {
   @objc deinit
 }
 extension CocoaMQTTSocket : CocoaMQTTSocketProtocol {
-  public func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
+  public func setDelegate(_ theDelegate: (any CocoaMQTTSocketDelegate)?, delegateQueue: Dispatch.DispatchQueue?)
   public func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
   public func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
   public func disconnect()
@@ -383,7 +383,7 @@ extension CocoaMQTTSocket : MqttCocoaAsyncSocket.MGCDAsyncSocketDelegate {
   @objc dynamic public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
   @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didWriteDataWithTag tag: Swift.Int)
   @objc dynamic public func socket(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, didRead data: Foundation.Data, withTag tag: Swift.Int)
-  @objc dynamic public func socketDidDisconnect(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, withError err: Swift.Error?)
+  @objc dynamic public func socketDidDisconnect(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket, withError err: (any Swift.Error)?)
 }
 @objc public class CocoaMQTTMessage : ObjectiveC.NSObject {
   public var qos: CocoaMQTTQoS
@@ -440,7 +440,7 @@ extension CocoaMQTTMessage {
   @objc func mqtt(_ mqtt: CocoaMQTT, didUnsubscribeTopics topics: [Swift.String])
   @objc func mqttDidPing(_ mqtt: CocoaMQTT)
   @objc func mqttDidReceivePong(_ mqtt: CocoaMQTT)
-  @objc func mqttDidDisconnect(_ mqtt: CocoaMQTT, withError err: Swift.Error?)
+  @objc func mqttDidDisconnect(_ mqtt: CocoaMQTT, withError err: (any Swift.Error)?)
   @objc optional func mqtt(_ mqtt: CocoaMQTT, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   @objc optional func mqttUrlSession(_ mqtt: CocoaMQTT, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   @objc optional func mqtt(_ mqtt: CocoaMQTT, didPublishComplete id: Swift.UInt16)
@@ -448,7 +448,7 @@ extension CocoaMQTTMessage {
 }
 public func setMqtt3Version()
 @objc public class CocoaMQTT : ObjectiveC.NSObject {
-  weak public var delegate: CocoaMQTTDelegate?
+  weak public var delegate: (any CocoaMQTTDelegate)?
   public var host: Swift.String
   public var port: Swift.UInt16
   public var clientID: Swift.String
@@ -506,11 +506,11 @@ public func setMqtt3Version()
   public var didUnsubscribeTopics: (CocoaMQTT, [Swift.String]) -> Swift.Void
   public var didPing: (CocoaMQTT) -> Swift.Void
   public var didReceivePong: (CocoaMQTT) -> Swift.Void
-  public var didDisconnect: (CocoaMQTT, Swift.Error?) -> Swift.Void
+  public var didDisconnect: (CocoaMQTT, (any Swift.Error)?) -> Swift.Void
   public var didReceiveTrust: (CocoaMQTT, Security.SecTrust, @escaping (Swift.Bool) -> Swift.Void) -> Swift.Void
   public var didCompletePublish: (CocoaMQTT, Swift.UInt16) -> Swift.Void
   public var didChangeState: (CocoaMQTT, CocoaMQTTConnState) -> Swift.Void
-  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: CocoaMQTTSocketProtocol = CocoaMQTTSocket())
+  public init(clientID: Swift.String, host: Swift.String = "localhost", port: Swift.UInt16 = 1883, socket: any CocoaMQTTSocketProtocol = CocoaMQTTSocket())
   @objc deinit
   public func connect() -> Swift.Bool
   public func connect(timeout: Foundation.TimeInterval) -> Swift.Bool
@@ -526,13 +526,13 @@ public func setMqtt3Version()
   public func unsubscribe(_ topics: [Swift.String])
 }
 extension CocoaMQTT : CocoaMQTTSocketDelegate {
-  public func socketConnected(_ socket: CocoaMQTTSocketProtocol)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  public func socketUrlSession(_ socket: CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func socketConnected(_ socket: any CocoaMQTTSocketProtocol)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func socketUrlSession(_ socket: any CocoaMQTTSocketProtocol, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
   public func socketDidSecure(_ sock: MqttCocoaAsyncSocket.MGCDAsyncSocket)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
-  public func socket(_ socket: CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
-  public func socketDidDisconnect(_ socket: CocoaMQTTSocketProtocol, withError err: Swift.Error?)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didWriteDataWithTag tag: Swift.Int)
+  public func socket(_ socket: any CocoaMQTTSocketProtocol, didRead data: Foundation.Data, withTag tag: Swift.Int)
+  public func socketDidDisconnect(_ socket: any CocoaMQTTSocketProtocol, withError err: (any Swift.Error)?)
 }
 @_hasMissingDesignatedInitializers @objc public class RoamUser : ObjectiveC.NSObject {
   @objc final public let userId: Swift.String
@@ -549,7 +549,7 @@ extension CocoaMQTT : CocoaMQTTSocketDelegate {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Roam : ObjectiveC.NSObject {
-  @objc public static var delegate: RoamDelegate! {
+  @objc public static var delegate: (any RoamDelegate)! {
     @objc get
     @objc set
   }
@@ -608,8 +608,8 @@ extension CocoaMQTT : CocoaMQTTSocketDelegate {
   @objc public static func requestActivityPermission()
   @objc public static func checkActivityPermission() -> Swift.Bool
   @objc public static func toggleSecurity(networkEnabled: Swift.Bool, deviceRooted: Swift.Bool, bluetoothEnabled: Swift.Bool, externalAccessoryEnabled: Swift.Bool, verifyMotion: Swift.Bool)
-  @objc public static func registerConnector(_ connector: RoamConnector)
-  @objc public static func deRegisterConnector(_ connector: RoamConnector)
+  @objc public static func registerConnector(_ connector: any RoamConnector)
+  @objc public static func deRegisterConnector(_ connector: any RoamConnector)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -1540,22 +1540,22 @@ public class MqttSubscription {
   @objc deinit
 }
 public protocol CocoaMQTTWebSocketConnectionDelegate : AnyObject {
-  func connection(_ conn: CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  func urlSessionConnection(_ conn: CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  func connectionOpened(_ conn: CocoaMQTTWebSocketConnection)
-  func connectionClosed(_ conn: CocoaMQTTWebSocketConnection, withError error: Swift.Error?, withCode code: Swift.UInt16?)
-  func connection(_ conn: CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
-  func connection(_ conn: CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
+  func connection(_ conn: any CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  func urlSessionConnection(_ conn: any CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  func connectionOpened(_ conn: any CocoaMQTTWebSocketConnection)
+  func connectionClosed(_ conn: any CocoaMQTTWebSocketConnection, withError error: (any Swift.Error)?, withCode code: Swift.UInt16?)
+  func connection(_ conn: any CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
+  func connection(_ conn: any CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
 }
 public protocol CocoaMQTTWebSocketConnection : ObjectiveC.NSObjectProtocol {
-  var delegate: CocoaMQTTWebSocketConnectionDelegate? { get set }
+  var delegate: (any CocoaMQTTWebSocketConnectionDelegate)? { get set }
   var queue: Dispatch.DispatchQueue { get set }
   func connect()
   func disconnect()
-  func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+  func write(data: Foundation.Data, handler: @escaping ((any Swift.Error)?) -> Swift.Void)
 }
 public protocol CocoaMQTTWebSocketConnectionBuilder {
-  func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> CocoaMQTTWebSocketConnection
+  func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> any CocoaMQTTWebSocketConnection
 }
 public class CocoaMQTTWebSocket : CocoaMQTTSocketProtocol {
   public var enableSSL: Swift.Bool
@@ -1564,10 +1564,10 @@ public class CocoaMQTTWebSocket : CocoaMQTTSocketProtocol {
   public typealias ConnectionBuilder = CocoaMQTTWebSocketConnectionBuilder
   public struct DefaultConnectionBuilder : CocoaMQTTWebSocket.ConnectionBuilder {
     public init()
-    public func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> CocoaMQTTWebSocketConnection
+    public func buildConnection(forURL url: Foundation.URL, withHeaders headers: [Swift.String : Swift.String]) throws -> any CocoaMQTTWebSocketConnection
   }
-  public func setDelegate(_ theDelegate: CocoaMQTTSocketDelegate?, delegateQueue: Dispatch.DispatchQueue?)
-  public init(uri: Swift.String = "", builder: CocoaMQTTWebSocket.ConnectionBuilder = CocoaMQTTWebSocket.DefaultConnectionBuilder())
+  public func setDelegate(_ theDelegate: (any CocoaMQTTSocketDelegate)?, delegateQueue: Dispatch.DispatchQueue?)
+  public init(uri: Swift.String = "", builder: any CocoaMQTTWebSocketConnectionBuilder = CocoaMQTTWebSocket.DefaultConnectionBuilder())
   public func connect(toHost host: Swift.String, onPort port: Swift.UInt16) throws
   public func connect(toHost host: Swift.String, onPort port: Swift.UInt16, withTimeout timeout: Foundation.TimeInterval) throws
   public func disconnect()
@@ -1576,17 +1576,17 @@ public class CocoaMQTTWebSocket : CocoaMQTTSocketProtocol {
   @objc deinit
 }
 extension CocoaMQTTWebSocket : CocoaMQTTWebSocketConnectionDelegate {
-  public func urlSessionConnection(_ conn: CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
-  public func connection(_ conn: CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  public func connectionOpened(_ conn: CocoaMQTTWebSocketConnection)
-  public func connectionClosed(_ conn: CocoaMQTTWebSocketConnection, withError error: Swift.Error?, withCode code: Swift.UInt16?)
-  public func connection(_ conn: CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
-  public func connection(_ conn: CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
+  public func urlSessionConnection(_ conn: any CocoaMQTTWebSocketConnection, didReceiveTrust trust: Security.SecTrust, didReceiveChallenge challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  public func connection(_ conn: any CocoaMQTTWebSocketConnection, didReceive trust: Security.SecTrust, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  public func connectionOpened(_ conn: any CocoaMQTTWebSocketConnection)
+  public func connectionClosed(_ conn: any CocoaMQTTWebSocketConnection, withError error: (any Swift.Error)?, withCode code: Swift.UInt16?)
+  public func connection(_ conn: any CocoaMQTTWebSocketConnection, receivedString string: Swift.String)
+  public func connection(_ conn: any CocoaMQTTWebSocketConnection, receivedData data: Foundation.Data)
 }
 @available(macOS 10.15, iOS 13.0, watchOS 6.0, tvOS 13.0, *)
 extension CocoaMQTTWebSocket {
   @objc public class FoundationConnection : ObjectiveC.NSObject, CocoaMQTTWebSocketConnection {
-    weak public var delegate: CocoaMQTTWebSocketConnectionDelegate?
+    weak public var delegate: (any CocoaMQTTWebSocketConnectionDelegate)?
     public var queue: Dispatch.DispatchQueue {
       get
       set
@@ -1594,7 +1594,7 @@ extension CocoaMQTTWebSocket {
     public init(url: Foundation.URL, config: Foundation.URLSessionConfiguration)
     public func connect()
     public func disconnect()
-    public func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+    public func write(data: Foundation.Data, handler: @escaping ((any Swift.Error)?) -> Swift.Void)
     @objc deinit
   }
 }
@@ -1607,7 +1607,7 @@ extension CocoaMQTTWebSocket.FoundationConnection : Foundation.URLSessionWebSock
 extension CocoaMQTTWebSocket {
   @objc public class StarscreamConnection : ObjectiveC.NSObject, CocoaMQTTWebSocketConnection {
     public var reference: Starscream.WebSocket
-    weak public var delegate: CocoaMQTTWebSocketConnectionDelegate?
+    weak public var delegate: (any CocoaMQTTWebSocketConnectionDelegate)?
     public var queue: Dispatch.DispatchQueue {
       get
       set
@@ -1615,7 +1615,7 @@ extension CocoaMQTTWebSocket {
     public init(request: Foundation.URLRequest)
     public func connect()
     public func disconnect()
-    public func write(data: Foundation.Data, handler: @escaping (Swift.Error?) -> Swift.Void)
+    public func write(data: Foundation.Data, handler: @escaping ((any Swift.Error)?) -> Swift.Void)
     @objc deinit
   }
 }
@@ -1623,7 +1623,7 @@ extension CocoaMQTTWebSocket.StarscreamConnection : Starscream.CertificatePinnin
   public func evaluateTrust(trust: Security.SecTrust, domain: Swift.String?, completion: ((Starscream.PinningState) -> ()))
 }
 extension CocoaMQTTWebSocket.StarscreamConnection : Starscream.WebSocketDelegate {
-  public func didReceive(event: Starscream.WebSocketEvent, client: Starscream.WebSocketClient)
+  public func didReceive(event: Starscream.WebSocketEvent, client: any Starscream.WebSocketClient)
 }
 @objc @_inheritsConvenienceInitializers public class MqttDecodeConnAck : ObjectiveC.NSObject {
   public var propertyLength: Swift.Int?
