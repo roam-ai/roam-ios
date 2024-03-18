@@ -333,3 +333,12 @@ We're excited to introduce Roam iOS SDK version 0.1.20, featuring the addition o
 - **Custom MQTT Connector:** Developers now have the capability to register custom MQTT endpoints, allowing seamless forwarding of location updates from the SDK to the specified MQTT broker. This feature provides greater flexibility and customization options for integrating location data into your applications.
 
 These enhancements expand the capabilities of the Roam iOS SDK, empowering developers with more control over how location updates are managed and transmitted. We're committed to providing a versatile and robust SDK experience. For any inquiries or feedback regarding this new feature, our support team is here to assist you.
+
+## 0.1.21
+We're thrilled to announce Roam iOS SDK version 0.1.21, now compatible with the new compiler version for Xcode 15.3. This update ensures seamless integration and compatibility with the latest development environment. Here's what's new:
+
+- **Compatibility with Xcode 15.3**: The Roam iOS SDK now fully supports the latest compiler version for Xcode 15.3. Developers can now leverage the latest tools and features offered by Xcode for an enhanced development experience.
+
+We're committed to providing developers with the most up-to-date tools and resources to streamline their development process. If you have any questions or encounter any issues with the SDK integration, our support team is here to assist you.
+
+
