@@ -341,4 +341,9 @@ We're thrilled to announce Roam iOS SDK version 0.1.21, now compatible with the 
 
 We're committed to providing developers with the most up-to-date tools and resources to streamline their development process. If you have any questions or encounter any issues with the SDK integration, our support team is here to assist you.
 
+## 0.1.22
+We're pleased to announce the release of Roam iOS SDK version 0.1.22, addressing a critical crash issue encountered during location tracking. This fix ensures stability and reliability without impacting any other functionality of the SDK. Here's what's been resolved:
 
+- **Fix for Crash During Location Tracking** : We've resolved an issue causing crashes during location tracking. This fix ensures uninterrupted performance and stability during location tracking, enhancing the overall tracking functionality.
+
+We remain committed to delivering a seamless and reliable SDK experience for developers and users alike. If you encounter any further issues or have feedback to share, please don't hesitate to reach out to our support team. We're here to assist you every step of the way.
