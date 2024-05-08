@@ -116271,7 +116271,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.22\""
+      "value": "\"0.1.23\""
     },
     {
       "filePath": "\/Users\/joe\/Desktop\/roam-ai\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",

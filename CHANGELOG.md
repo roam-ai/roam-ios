@@ -347,3 +347,10 @@ We're pleased to announce the release of Roam iOS SDK version 0.1.22, addressing
 - **Fix for Crash During Location Tracking** : We've resolved an issue causing crashes during location tracking. This fix ensures uninterrupted performance and stability during location tracking, enhancing the overall tracking functionality.
 
 We remain committed to delivering a seamless and reliable SDK experience for developers and users alike. If you encounter any further issues or have feedback to share, please don't hesitate to reach out to our support team. We're here to assist you every step of the way.
+
+## 0.1.23
+We're pleased to announce the release of Roam iOS SDK version 0.1.23, addressing a specific issue related to Roam.updateLocationWhenStationary() functionality. This fix ensures that the updateLocationWhenStationary() method continues to work seamlessly even when tracking is restarted during stationary periods, without impacting other SDK functionalities. Here's what's been resolved:
+
+- **Fix for Roam.updateLocationWhenStationary() Issue**: We've resolved an issue where the updateLocationWhenStationary() method stopped working correctly when tracking was restarted during stationary periods. This fix ensures uninterrupted functionality and reliability for location updates, maintaining a smooth user experience.
+
+We're committed to delivering a dependable and efficient SDK experience. If you have any further issues or feedback to share, our support team is available to assist you promptly.

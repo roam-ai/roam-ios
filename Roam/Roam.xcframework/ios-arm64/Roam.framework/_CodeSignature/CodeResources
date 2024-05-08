@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		o+sjy3tI4k1ZzwjdMM2JFBd878I=
+		rUZzjJjQxhUNkqcepX7vWh+ZNHg=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		8nudJ/z5fvUB+ZP3LsONTEW/av0=
+		Gg6l2FJf4Zh0ZqxNsy/yTtN++ts=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		kyNp7ayQTbuF7FbgAhRrxFPXtFE=
+		6ubJ347A2bztmC36DTXQ70US9s4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -69,7 +69,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OOYamgT9iwJexCoQEPt5fk1Vbqta3/OorEZAajmLHqg=
+			pn3lP4LP2gsMGjdKxuxRDamWy2Y/ZxBffntuThMc+EI=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -97,7 +97,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6qiLws3ynPHu5j/CBvkPVTgoMOMr7DEgQC1EAANTkes=
+			bO9zk/lR0R/a7Po36FVpUBMYT6vsaM7bqXYXiuahtpM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
