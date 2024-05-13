@@ -19,14 +19,14 @@ Pod::Spec.new do |s|
   end
   
   # FeatureModule
-  s.subspec 'RoamMQTTConnector' do |feature|
-    
-       # Check if CocoaMQTT.xcframework should be excluded
-    if ENV['EXCLUDE_CocoaMQTT']
-      feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
-      else
-      feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/CocoaMQTT.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
-    end
+s.subspec 'RoamMQTTConnector' do |feature|
+  if ENV['EXCLUDE_CocoaMQTT'] == 'true'
+    feature.exclude_files = 'Roam/CocoaMQTT.xcframework'
+  else
+    feature.vendored_frameworks = 'Roam/CocoaMQTT.xcframework'
   end
+  feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
+end
+
 end
 
