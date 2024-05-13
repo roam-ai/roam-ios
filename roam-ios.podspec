@@ -20,7 +20,6 @@ Pod::Spec.new do |s|
   
   # FeatureModule
   s.subspec 'RoamMQTTConnector' do |feature|
-    feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/CocoaMQTT.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
     
        # Check if CocoaMQTT.xcframework should be excluded
     if ENV['EXCLUDE_CocoaMQTT']
