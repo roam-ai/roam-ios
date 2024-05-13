@@ -24,7 +24,9 @@ Pod::Spec.new do |s|
     
        # Check if CocoaMQTT.xcframework should be excluded
     if ENV['EXCLUDE_CocoaMQTT']
-      feature.exclude_files = 'Roam/CocoaMQTT.xcframework'
+      feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
+      else
+      feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/CocoaMQTT.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
     end
   end
 end
