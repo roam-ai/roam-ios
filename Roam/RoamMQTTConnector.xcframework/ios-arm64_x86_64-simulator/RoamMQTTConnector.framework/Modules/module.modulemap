@@ -1,0 +1,11 @@
+framework module RoamMQTTConnector {
+  umbrella header "RoamMQTTConnector.h"
+
+  export *
+  module * { export * }
+}
+
+module RoamMQTTConnector.Swift {
+  header "RoamMQTTConnector-Swift.h"
+  requires objc
+}
