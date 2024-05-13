@@ -4,16 +4,23 @@ Pod::Spec.new do |s|
   s.version               = '0.1.23'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
-  s.social_media_url      = 'https://twitter.com/roam_ai'
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
   s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
-  s.vendored_frameworks   = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework','Roam/MqttCocoaAsyncSocket.xcframework'
-  s.preserve_path         = 'Roam/*'
-  s.module_name           = 'Roam'
+
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
-  s.dependency "Starscream", "4.0.6"
   
+  
+    # ModularCoreModule
+  s.subspec 'RoamCore' do |core|
+    core.vendored_frameworks = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework'
+  end
+  
+  # FeatureModule
+  s.subspec 'RoamMQTTConnector' do |feature|
+    feature.vendored_frameworks = 'RoamMQTTConnector/RoamMQTTConnector.xcframework','RoamMQTTConnector/CocoaMQTT.xcframework', 'RoamMQTTConnector/MqttCocoaAsyncSocket.xcframework', 'RoamMQTTConnector/Starscream.xcframework'
+  end
 end
+
