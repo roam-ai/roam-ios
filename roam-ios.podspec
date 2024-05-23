@@ -13,18 +13,18 @@ Pod::Spec.new do |s|
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
   
   
-    # ModularCoreModule
+  # CoreModule
   s.subspec 'RoamCore' do |core|
+  
     core.vendored_frameworks = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework'
   end
   
   # FeatureModule
-s.subspec 'RoamMQTTConnector' do |feature|
+  s.subspec 'RoamMQTTConnector' do |feature|
+  
   if ENV['EXCLUDE_CocoaMQTT'] == 'true'
-   puts "Excluding CocoaMQTT framework"
     feature.exclude_files = 'Roam/CocoaMQTT.xcframework'
   else
-   puts "Not Excluding CocoaMQTT framework"
     feature.vendored_frameworks = 'Roam/CocoaMQTT.xcframework'
   end
   feature.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'

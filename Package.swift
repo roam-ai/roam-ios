@@ -15,7 +15,6 @@ let package = Package(
     ],
     dependencies: [
         // Add any additional dependencies here
-        //eg: .package(url: "https://github.com/daltoniam/Starscream.git", from: "4.0.6"),
     ],
     targets: [
         .binaryTarget(
