@@ -1,7 +1,7 @@
 framework module RoamMQTTConnector {
   umbrella header "RoamMQTTConnector.h"
-
   export *
+
   module * { export * }
 }
 

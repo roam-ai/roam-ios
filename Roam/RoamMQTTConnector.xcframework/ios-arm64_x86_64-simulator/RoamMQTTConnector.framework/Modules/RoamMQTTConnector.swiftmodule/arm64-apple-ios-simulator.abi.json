@@ -15,11 +15,69 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
+        "kind": "TypeDecl",
+        "name": "RoamConnector",
+        "printedName": "RoamConnector",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "clientID",
+            "printedName": "clientID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector(py)clientID",
+            "mangledName": "$s17RoamMQTTConnector0A9ConnectorP8clientIDSSvp",
+            "moduleName": "RoamMQTTConnector",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector(im)clientID",
+                "mangledName": "$s17RoamMQTTConnector0A9ConnectorP8clientIDSSvg",
+                "moduleName": "RoamMQTTConnector",
+                "genericSig": "<τ_0_0 where τ_0_0 : RoamMQTTConnector.RoamConnector>",
+                "sugared_genericSig": "<Self where Self : RoamMQTTConnector.RoamConnector>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector",
+        "mangledName": "$s17RoamMQTTConnector0A9ConnectorP",
+        "moduleName": "RoamMQTTConnector",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -191,6 +249,42 @@
             "fixedbinaryorder": 3
           },
           {
+            "kind": "Function",
+            "name": "typeFromString",
+            "printedName": "typeFromString(rawvalue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "RoamMQTTConnector.RoamMqttConnectionType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamMqttConnectionType",
+                    "printedName": "RoamMQTTConnector.RoamMqttConnectionType",
+                    "usr": "c:@M@RoamMQTTConnector@E@RoamMqttConnectionType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:17RoamMQTTConnector0A18MqttConnectionTypeO14typeFromString8rawvalueACSgSS_tFZ",
+            "mangledName": "$s17RoamMQTTConnector0A18MqttConnectionTypeO14typeFromString8rawvalueACSgSS_tFZ",
+            "moduleName": "RoamMQTTConnector",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -313,69 +407,21 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RoamConnector",
-        "printedName": "RoamConnector",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "clientID",
-            "printedName": "clientID",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector(py)clientID",
-            "mangledName": "$s17RoamMQTTConnector0A9ConnectorP8clientIDSSvp",
-            "moduleName": "RoamMQTTConnector",
-            "protocolReq": true,
-            "declAttributes": [
-              "ObjC"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector(im)clientID",
-                "mangledName": "$s17RoamMQTTConnector0A9ConnectorP8clientIDSSvg",
-                "moduleName": "RoamMQTTConnector",
-                "genericSig": "<τ_0_0 where τ_0_0 : RoamMQTTConnector.RoamConnector>",
-                "sugared_genericSig": "<Self where Self : RoamMQTTConnector.RoamConnector>",
-                "protocolReq": true,
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector",
-        "mangledName": "$s17RoamMQTTConnector0A9ConnectorP",
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
         "moduleName": "RoamMQTTConnector",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
-          "AccessControl",
-          "ObjC"
+          "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SystemConfiguration",
+        "printedName": "SystemConfiguration",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
       },
       {
         "kind": "Import",
@@ -461,6 +507,23 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -471,24 +534,13 @@
       },
       {
         "kind": "Import",
-        "name": "Roam",
-        "printedName": "Roam",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
-      },
-      {
-        "kind": "Import",
-        "name": "UserNotifications",
-        "printedName": "UserNotifications",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1048,386 +1100,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RoamMQTTConnector",
-        "printedName": "RoamMQTTConnector",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "RoamMQTTConnector.RoamMQTTDelegate?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RoamMQTTDelegate",
-                    "printedName": "RoamMQTTConnector.RoamMQTTDelegate",
-                    "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cpy)delegate",
-            "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvpZ",
-            "moduleName": "RoamMQTTConnector",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "RoamMQTTConnector.RoamMQTTDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamMQTTDelegate",
-                        "printedName": "RoamMQTTConnector.RoamMQTTDelegate",
-                        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)delegate",
-                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvgZ",
-                "moduleName": "RoamMQTTConnector",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ImplicitlyUnwrappedOptional",
-                    "printedName": "RoamMQTTConnector.RoamMQTTDelegate?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "RoamMQTTDelegate",
-                        "printedName": "RoamMQTTConnector.RoamMQTTDelegate",
-                        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)setDelegate:",
-                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvsZ",
-                "moduleName": "RoamMQTTConnector",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvMZ",
-                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvMZ",
-                "moduleName": "RoamMQTTConnector",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "registerConnector",
-            "printedName": "registerConnector(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "RoamConnector",
-                "printedName": "RoamMQTTConnector.RoamConnector",
-                "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)registerConnector:",
-            "mangledName": "$s17RoamMQTTConnectorAAC17registerConnectoryyAA0aD0_pFZ",
-            "moduleName": "RoamMQTTConnector",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "deRegisterConnector",
-            "printedName": "deRegisterConnector()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)deRegisterConnector",
-            "mangledName": "$s17RoamMQTTConnectorAAC19deRegisterConnectoryyFZ",
-            "moduleName": "RoamMQTTConnector",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RoamMQTTConnector",
-                "printedName": "RoamMQTTConnector.RoamMQTTConnector",
-                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)init",
-            "mangledName": "$s17RoamMQTTConnectorAACABycfc",
-            "moduleName": "RoamMQTTConnector",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "receiveLocationUpdate",
-            "printedName": "receiveLocationUpdate(location:dictionary:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "CoreLocation.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)receiveLocationUpdateWithLocation:dictionary:",
-            "mangledName": "$s17RoamMQTTConnectorAAC21receiveLocationUpdate8location10dictionaryySo10CLLocationC_SDySSypGtF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "receiveLocationUpdateWithLocation:dictionary:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "connect",
-            "printedName": "connect()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)connect",
-            "mangledName": "$s17RoamMQTTConnectorAAC7connectyyF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "connect",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disconnect",
-            "printedName": "disconnect()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)disconnect",
-            "mangledName": "$s17RoamMQTTConnectorAAC10disconnectyyF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "disconnect",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector",
-        "mangledName": "$s17RoamMQTTConnectorAAC",
-        "moduleName": "RoamMQTTConnector",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "LocationSubscriber",
-            "printedName": "LocationSubscriber",
-            "usr": "c:@M@Roam@objc(pl)LocationSubscriber",
-            "mangledName": "$s4Roam18LocationSubscriberP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1765,11 +1437,565 @@
       },
       {
         "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "RoamMQTTConnector",
         "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UserNotifications",
+        "printedName": "UserNotifications",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Roam",
+        "printedName": "Roam",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoamMQTTConnector",
+        "printedName": "RoamMQTTConnector",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoamMQTTConnector",
+                "printedName": "RoamMQTTConnector.RoamMQTTConnector",
+                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cpy)shared",
+            "mangledName": "$s17RoamMQTTConnectorAAC6sharedABvpZ",
+            "moduleName": "RoamMQTTConnector",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamMQTTConnector",
+                    "printedName": "RoamMQTTConnector.RoamMQTTConnector",
+                    "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)shared",
+                "mangledName": "$s17RoamMQTTConnectorAAC6sharedABvgZ",
+                "moduleName": "RoamMQTTConnector",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "(any RoamMQTTConnector.RoamMQTTDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamMQTTDelegate",
+                    "printedName": "any RoamMQTTConnector.RoamMQTTDelegate",
+                    "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(py)delegate",
+            "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any RoamMQTTConnector.RoamMQTTDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamMQTTDelegate",
+                        "printedName": "any RoamMQTTConnector.RoamMQTTDelegate",
+                        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)delegate",
+                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ImplicitlyUnwrappedOptional",
+                    "printedName": "(any RoamMQTTConnector.RoamMQTTDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamMQTTDelegate",
+                        "printedName": "any RoamMQTTConnector.RoamMQTTDelegate",
+                        "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamMQTTDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)setDelegate:",
+                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvM",
+                "mangledName": "$s17RoamMQTTConnectorAAC8delegateAA0A12MQTTDelegate_pSgvM",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoamMQTTConnector",
+                "printedName": "RoamMQTTConnector.RoamMQTTConnector",
+                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)init",
+            "mangledName": "$s17RoamMQTTConnectorAACABycfc",
+            "moduleName": "RoamMQTTConnector",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "registerConnector",
+            "printedName": "registerConnector(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "RoamConnector",
+                "printedName": "any RoamMQTTConnector.RoamConnector",
+                "usr": "c:@M@RoamMQTTConnector@objc(pl)RoamConnector"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)registerConnector:",
+            "mangledName": "$s17RoamMQTTConnectorAAC17registerConnectoryyAA0aD0_pFZ",
+            "moduleName": "RoamMQTTConnector",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deregisterConnector",
+            "printedName": "deregisterConnector()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)deregisterConnector",
+            "mangledName": "$s17RoamMQTTConnectorAAC19deregisterConnectoryyFZ",
+            "moduleName": "RoamMQTTConnector",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initalize",
+            "printedName": "initalize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)initalize",
+            "mangledName": "$s17RoamMQTTConnectorAAC9initalizeyyFZ",
+            "moduleName": "RoamMQTTConnector",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "publishLocationUpdate",
+            "printedName": "publishLocationUpdate(location:dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocation",
+                "printedName": "CoreLocation.CLLocation",
+                "usr": "c:objc(cs)CLLocation"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)publishLocationUpdateWithLocation:dictionary:",
+            "mangledName": "$s17RoamMQTTConnectorAAC21publishLocationUpdate8location10dictionaryySo10CLLocationC_SDySSypGtF",
+            "moduleName": "RoamMQTTConnector",
+            "objc_name": "publishLocationUpdateWithLocation:dictionary:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)connect",
+            "mangledName": "$s17RoamMQTTConnectorAAC7connectyyF",
+            "moduleName": "RoamMQTTConnector",
+            "objc_name": "connect",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)disconnect",
+            "mangledName": "$s17RoamMQTTConnectorAAC10disconnectyyF",
+            "moduleName": "RoamMQTTConnector",
+            "objc_name": "disconnect",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector",
+        "mangledName": "$s17RoamMQTTConnectorAAC",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "RoamLocationPublisher",
+            "printedName": "RoamLocationPublisher",
+            "usr": "c:@M@Roam@objc(pl)RoamLocationPublisher",
+            "mangledName": "$s4Roam0A17LocationPublisherP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AnyOptional",
+        "printedName": "AnyOptional",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isNil",
+            "printedName": "isNil",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:17RoamMQTTConnector11AnyOptionalP5isNilSbvp",
+            "mangledName": "$s17RoamMQTTConnector11AnyOptionalP5isNilSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:17RoamMQTTConnector11AnyOptionalP5isNilSbvg",
+                "mangledName": "$s17RoamMQTTConnector11AnyOptionalP5isNilSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "genericSig": "<τ_0_0 where τ_0_0 : RoamMQTTConnector.AnyOptional>",
+                "sugared_genericSig": "<Self where Self : RoamMQTTConnector.AnyOptional>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:17RoamMQTTConnector11AnyOptionalP",
+        "mangledName": "$s17RoamMQTTConnector11AnyOptionalP",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -3562,290 +3788,473 @@
         "printedName": "CoreData",
         "declKind": "Import",
         "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Optional",
+        "printedName": "Optional",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "isNil",
+            "printedName": "isNil",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:Sq17RoamMQTTConnectorE5isNilSbvp",
+            "mangledName": "$sSq17RoamMQTTConnectorE5isNilSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:Sq17RoamMQTTConnectorE5isNilSbvg",
+                "mangledName": "$sSq17RoamMQTTConnectorE5isNilSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<Wrapped>",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:Sq",
+        "mangledName": "$sSq",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<Wrapped>",
+        "declAttributes": [
+          "Frozen"
+        ],
+        "isExternal": true,
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByNilLiteral",
+            "printedName": "ExpressibleByNilLiteral",
+            "usr": "s:s23ExpressibleByNilLiteralP",
+            "mangledName": "$ss23ExpressibleByNilLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyOptional",
+            "printedName": "AnyOptional",
+            "usr": "s:17RoamMQTTConnector11AnyOptionalP",
+            "mangledName": "$s17RoamMQTTConnector11AnyOptionalP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "AnyObject"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "EncodableWithConfiguration",
+            "printedName": "EncodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "EncodingConfiguration",
+                "printedName": "EncodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.EncodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26EncodableWithConfigurationP",
+            "mangledName": "$s10Foundation26EncodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DecodableWithConfiguration",
+            "printedName": "DecodableWithConfiguration",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "DecodingConfiguration",
+                "printedName": "DecodingConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.DecodingConfiguration"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation26DecodableWithConfigurationP",
+            "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "AnyOptional",
+            "printedName": "AnyOptional",
+            "usr": "s:4Roam11AnyOptionalP",
+            "mangledName": "$s4Roam11AnyOptionalP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 291,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 236,
+      "offset": 303,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 316,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 291,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 236,
+      "offset": 303,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
-      "offset": 249,
+      "offset": 316,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/RoamConnectorUtils.swift",
-      "kind": "FloatLiteral",
-      "offset": 2703,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3845,
+      "offset": 3827,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Extensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 1025,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectorBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 583,
+      "offset": 522,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectorBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 658,
-      "length": 20,
-      "value": "\"RoamMqttConnector:\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
-      "kind": "StringLiteral",
-      "offset": 680,
-      "length": 13,
-      "value": "\"isConnected\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
-      "kind": "BooleanLiteral",
-      "offset": 615,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
-      "kind": "StringLiteral",
-      "offset": 1571,
+      "offset": 1318,
       "length": 7,
       "value": "\"RoamMQTTConnector.Builder\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectorBuilder.swift",
       "kind": "StringLiteral",
-      "offset": 186,
+      "offset": 125,
       "length": 17,
       "value": "\"RoamMQTTConnector.RoamMqttConnector\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttWillOptions.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttWillOptions.swift",
       "kind": "StringLiteral",
       "offset": 129,
       "length": 19,
       "value": "\"RoamMQTTConnector.RoamMqttWillOptions\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 930,
       "length": 20,
       "value": "\"MQTTConnectorModel\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 967,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 27,
       "value": "\"MQTTConnectorModel.sqlite\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1884,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1942,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 53,
       "value": "\"Error: Failed to add the persistent store. \""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2250,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2344,
       "length": 51,
       "value": "\"Failed to initialize the application's saved data\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2463,
       "length": 70,
       "value": "\"There was an error creating or loading the application's saved data.\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2666,
       "length": 19,
       "value": "\"YOUR_ERROR_DOMAIN\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2693,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2733,
       "length": 60,
       "value": "\"Unresolved error \""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2766,
       "length": 1,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2792,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3216,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectOptions.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectOptions.swift",
       "kind": "StringLiteral",
       "offset": 132,
       "length": 22,
       "value": "\"RoamMQTTConnector.RoamMqttConnectOptions\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "Dictionary",
-      "offset": 910,
+      "offset": 933,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
-      "kind": "StringLiteral",
-      "offset": 1052,
-      "length": 20,
-      "value": "\"RoamMqttConnector:\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
-      "kind": "StringLiteral",
-      "offset": 1074,
-      "length": 13,
-      "value": "\"isConnected\""
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "BooleanLiteral",
-      "offset": 955,
+      "offset": 978,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
-      "offset": 1520,
+      "offset": 1376,
       "length": 5,
       "value": "\"5.0\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
-      "offset": 130,
-      "length": 19,
-      "value": "\"RoamMQTTConnector.CustomMqttConnector\""
+      "offset": 154,
+      "length": 18,
+      "value": "\"RoamMQTTConnector.CocoaMQTTConnector\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CustomMqttConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
-      "offset": 21064,
+      "offset": 19466,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/MQTTConnectionManager.swift",
-      "kind": "Array",
-      "offset": 228,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/roam\/Documents\/GitHub\/Testing\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/MQTTConnectionManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/MQTTConnectorManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 355,
+      "offset": 358,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 159,
+      "length": 23,
+      "value": "\"MQTTConnectorSettings\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 283,
+      "length": 24,
+      "value": "\"MQTTConnectorConnected\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "kind": "BooleanLiteral",
+      "offset": 323,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "kind": "StringLiteral",
+      "offset": 651,
+      "length": 28,
+      "value": "\"com.Roam.RoamMQTTConnector\""
     }
   ]
 }

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name RoamMQTTConnector
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RoamMQTTConnector
 import CocoaMQTT
 import CoreData
 import CoreLocation
@@ -9,22 +8,26 @@ import Foundation
 import Roam
 @_exported import RoamMQTTConnector
 import Swift
+import SystemConfiguration
+import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol RoamConnector {
+  @objc var clientID: Swift.String { get }
+}
 @objc public enum RoamMqttConnectionType : Swift.Int {
   case TCP
   case WS
   case WSS
   case SSL
+  public static func typeFromString(rawvalue: Swift.String) -> RoamMqttConnectionType?
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
-}
-@objc public protocol RoamConnector {
-  @objc var clientID: Swift.String { get }
 }
 @objc public protocol RoamMQTTDelegate {
   @objc optional func didChangeMQTTStatus(_ status: Swift.String)
@@ -45,21 +48,6 @@ import _StringProcessing
   }
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class RoamMQTTConnector : ObjectiveC.NSObject {
-  @objc public static var delegate: RoamMQTTDelegate! {
-    @objc get
-    @objc set
-  }
-  @objc public static func registerConnector(_ connector: RoamConnector)
-  @objc public static func deRegisterConnector()
-  @objc override dynamic public init()
-  @objc deinit
-}
-extension RoamMQTTConnector : Roam.LocationSubscriber {
-  @objc dynamic public func receiveLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
-  @objc dynamic public func connect()
-  @objc dynamic public func disconnect()
-}
 @objc public class RoamMqttWillOptions : ObjectiveC.NSObject {
   public init(willTopic: Swift.String, willPayload: Swift.String, willQos: Swift.Int, retain: Swift.Bool)
   @objc deinit
@@ -67,6 +55,31 @@ extension RoamMQTTConnector : Roam.LocationSubscriber {
 @objc public class RoamMqttConnectOptions : ObjectiveC.NSObject {
   public init(keepAliveInterval: Swift.UInt16, cleanSession: Swift.Bool, connectionTimeout: Swift.Double, autoReconnect: Swift.Bool)
   @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class RoamMQTTConnector : ObjectiveC.NSObject {
+  @objc public static let shared: RoamMQTTConnector
+  @objc public var delegate: (any RoamMQTTDelegate)! {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc public static func registerConnector(_ connector: any RoamConnector)
+  @objc public static func deregisterConnector()
+  @objc public static func initalize()
+  @objc deinit
+}
+extension RoamMQTTConnector : Roam.RoamLocationPublisher {
+  @objc dynamic public func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
+  @objc dynamic public func connect()
+  @objc dynamic public func disconnect()
+}
+public protocol AnyOptional {
+  var isNil: Swift.Bool { get }
+}
+extension Swift.Optional : AnyOptional {
+  public var isNil: Swift.Bool {
+    get
+  }
 }
 @_inheritsConvenienceInitializers @objc(MqttConnectorLocationData) public class MqttConnectorLocationData : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)

@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Roam
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Roam
 import AWSCore
 import AWSIoT
 import AWSMobileClientXCF
@@ -25,6 +24,7 @@ import UIKit
 import UserNotifications
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public protocol AnyOptional {
   var isNil: Swift.Bool { get }
 }
@@ -170,7 +170,7 @@ extension Reachability {
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class Roam : ObjectiveC.NSObject {
-  @objc public static var delegate: RoamDelegate! {
+  @objc public static var delegate: (any RoamDelegate)! {
     @objc get
     @objc set
   }
@@ -299,6 +299,13 @@ public typealias FileIntegrityCheckResult = (result: Swift.Bool, hitChecks: [Fil
   @objc public var stop_latitude: Foundation.NSNumber?
   @objc public var stop_longitude: Foundation.NSNumber?
   @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationBatchSubscriber : ObjectiveC.NSObject {
+  public static let shared: RoamLocationBatchSubscriber
+  public var publishLocationUpdate: ((_ json: Swift.String, _ publishKey: Swift.String) -> ())?
+  public var didChangeNetwork: ((_ status: Swift.String) -> ())?
+  public var stoppedTrackingCallback: (() -> ())?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamStartTrip : ObjectiveC.NSObject {
@@ -530,15 +537,16 @@ extension UIKit.UIDevice {
   @objc public var trips: [RoamTrip]
   @objc deinit
 }
-@objc public protocol LocationSubscriber {
-  @objc func receiveLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
+@objc public protocol RoamLocationPublisher {
+  @objc func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
   @objc func connect()
   @objc func disconnect()
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationPublisher : ObjectiveC.NSObject {
-  public static let shared: RoamLocationPublisher
-  public func subscribe(_ subscriber: LocationSubscriber)
-  public func unsubscribe(_ subscriber: LocationSubscriber)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationSubscriber : ObjectiveC.NSObject {
+  public static let shared: RoamLocationSubscriber
+  public var subscribers: [any RoamLocationPublisher]
+  public func subscribe(_ subscriber: any RoamLocationPublisher)
+  public func unsubscribe(_ subscriber: any RoamLocationPublisher)
   public func removeAllSubscribers()
   @objc deinit
 }
@@ -814,85 +822,6 @@ extension BatchLocation {
     @objc set
   }
   @objc @NSManaged dynamic public var verticalAccuracy: Swift.Double {
-    @objc get
-    @objc set
-  }
-}
-@_inheritsConvenienceInitializers @objc(CustomMqttLocationData) public class CustomMqttLocationData : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
-extension CustomMqttLocationData {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<CustomMqttLocationData>
-  @objc @NSManaged dynamic public var activity: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var altitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var battery_remaining: Swift.Int16 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var battery_status: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var client_id: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var course: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var gps_status: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var horizontal_accuracy: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var isOfflineData: Swift.Int16 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var latitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var location_permission: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var longitude: Swift.Double {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var mqttLocation_time: Foundation.Date? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var network_status: Swift.Bool {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var recorded_at: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var speed: Swift.Int16 {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var tracking_mode: Swift.String? {
-    @objc get
-    @objc set
-  }
-  @objc @NSManaged dynamic public var vertical_accuracy: Swift.Double {
     @objc get
     @objc set
   }
