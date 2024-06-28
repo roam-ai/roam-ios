@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = 'https://twitter.com/roam_ai'
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
-  s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :branch => 'Modularization-MQTT' }
 
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
@@ -25,10 +25,11 @@ Pod::Spec.new do |s|
       
    # Conditional inclusion of frameworks based on environment variables
    # Exclude CocoaMQTT framework if specified by environment variable
-    if ENV['EXCLUDE_CocoaMQTT'] == 'true'
-      mqtt.exclude_files = 'Roam/CocoaMQTT.xcframework'
-    else
-      mqtt.vendored_frameworks = 'Roam/CocoaMQTT.xcframework'
+  if ENV['EXCLUDE_CocoaMQTT'] == 'true'
+    mqtt.exclude_files = 'Roam/CocoaMQTT.xcframework'
+    mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/MqttCocoaAsyncSocket.xcframework','Roam/Starscream.xcframework'
+  else
+        mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/MqttCocoaAsyncSocket.xcframework','Roam/Starscream.xcframework','Roam/CocoaMQTT.xcframework'
     end
 
     
