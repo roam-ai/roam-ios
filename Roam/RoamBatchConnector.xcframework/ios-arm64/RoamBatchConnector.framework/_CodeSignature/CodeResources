@@ -14,7 +14,7 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Qvt/6FwJxojLlmJU4nZyk1Q2iks=
+		72yxpnAjTFRq+5yCK52qwgq7bqI=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		K7nhqG9dkhG6wFgFUsxEkSUmr2c=
+		DZuNHhKiGX3rHP0/Es46dqnV/S8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,7 +58,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IREqKCstCU5XkEtqR+VQhWUaKNb6U3EdItY4BLXN90k=
+			hte8OBMFDysQOnv3qumAMSfOeaRJ8Qlp9jx+u8g9Mkc=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -86,7 +86,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ovMoejWgGwFUQYN0NExPmr/bBAmTXbnsEsL9+UHlg5w=
+			R3VzfuB+SjqQvx5Qw6MVqlrXVn2OLepn17etiqeCdm8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

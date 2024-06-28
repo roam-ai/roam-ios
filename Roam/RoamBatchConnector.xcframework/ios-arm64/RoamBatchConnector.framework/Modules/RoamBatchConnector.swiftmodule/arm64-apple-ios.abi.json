@@ -4510,16 +4510,16 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 578,
       "length": 59,
-      "value": "\"https:\/\/ahh2bwwv9l.execute-api.eu-central-1.amazonaws.com\""
+      "value": "\"https:\/\/6y6ah4vzzh.execute-api.eu-central-1.amazonaws.com\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/APIManager.swift",
       "kind": "StringLiteral",
-      "offset": 415,
+      "offset": 578,
       "length": 59,
-      "value": "\"https:\/\/ahh2bwwv9l.execute-api.eu-central-1.amazonaws.com\""
+      "value": "\"https:\/\/6y6ah4vzzh.execute-api.eu-central-1.amazonaws.com\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
@@ -4527,6 +4527,13 @@
       "offset": 1222,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1279,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",

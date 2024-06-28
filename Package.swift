@@ -11,6 +11,10 @@ let package = Package(
         .library(
             name: "RoamMQTTConnector",
             targets: ["RoamMQTTConnector", "CocoaMQTT", "MqttCocoaAsyncSocket", "Starscream"]
+        ),
+        .library(
+            name: "RoamBatchConnector",
+            targets: ["RoamBatchConnector"]
         )
     ],
     dependencies: [
@@ -50,5 +54,8 @@ let package = Package(
         .binaryTarget(
             name: "Starscream",
             path: "Roam/Starscream.xcframework"),
+        .binaryTarget(
+            name: "RoamBatchConnector",
+            path: "Roam/RoamBatchConnector.xcframework"),
     ]
 )

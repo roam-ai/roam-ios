@@ -11,7 +11,7 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamBatchProcessor : ObjectiveC.NSObject {
-  @objc public static let shared: RoamBatchProcessor
+  @objc public static let shared: RoamBatchConnector.RoamBatchProcessor
   @objc public func initialize()
   @objc public func setConfig(enable: Swift.Bool)
   @objc deinit
@@ -20,8 +20,8 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension BatchLocationModel {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<BatchLocationModel>
+extension RoamBatchConnector.BatchLocationModel {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RoamBatchConnector.BatchLocationModel>
   @objc @NSManaged dynamic public var activity: Swift.String? {
     @objc get
     @objc set
@@ -171,8 +171,8 @@ extension BatchLocationModel {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension CSVFilesDataModel {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<CSVFilesDataModel>
+extension RoamBatchConnector.CSVFilesDataModel {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RoamBatchConnector.CSVFilesDataModel>
   @objc @NSManaged dynamic public var filename: Swift.String? {
     @objc get
     @objc set

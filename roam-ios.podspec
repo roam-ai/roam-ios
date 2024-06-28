@@ -4,6 +4,7 @@ Pod::Spec.new do |s|
   s.version               = '0.1.24'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
+  s.social_media_url      = 'https://twitter.com/roam_ai'
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
   s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
