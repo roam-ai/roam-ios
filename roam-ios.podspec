@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
   
+   puts "EXCLUDE_CocoaMQTT: #{ENV['EXCLUDE_CocoaMQTT']}"
   
  # ============================ Core Module ============================
   s.subspec 'RoamCore' do |core|
@@ -27,10 +28,10 @@ Pod::Spec.new do |s|
    # Exclude CocoaMQTT framework if specified by environment variable
   
   if ENV['EXCLUDE_CocoaMQTT'] == 'true'
-    # mqtt.exclude_files = 'Roam/CocoaMQTT.xcframework'
-    mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/MqttCocoaAsyncSocket.xcframework','Roam/Starscream.xcframework'
+          mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
+   
   else
-        mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework','Roam/MqttCocoaAsyncSocket.xcframework','Roam/Starscream.xcframework','Roam/CocoaMQTT.xcframework'
+        mqtt.vendored_frameworks = 'Roam/MqttCocoaAsyncSocket.xcframework'
     end
 
     
