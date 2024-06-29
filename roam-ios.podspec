@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'roam-ios'
-  s.version               = '0.1.24'
+  s.version               = '0.1.23'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
   s.social_media_url      = 'https://twitter.com/roam_ai'
@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
   
   # ======================== RoamMQTTConnector Module ========================
   s.subspec 'RoamMQTTConnector' do |mqtt|
-      
    # Conditional inclusion of frameworks based on environment variables
    # Exclude CocoaMQTT framework if specified by environment variable
   
@@ -32,9 +31,8 @@ Pod::Spec.new do |s|
    
   else
         mqtt.vendored_frameworks = 'Roam/MqttCocoaAsyncSocket.xcframework'
+        
     end
-
-    
   end
 
   # ======================= RoamBatchConnector Module =======================
