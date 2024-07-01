@@ -27,14 +27,11 @@ Pod::Spec.new do |s|
    # Conditional inclusion of frameworks based on environment variables
    # Exclude CocoaMQTT framework if specified by environment variable
   
-  if ENV['EXCLUDE_CocoaMQTT'] == 'true'
-          mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
-   
-  else
-        mqtt.vendored_frameworks = 'Roam/MqttCocoaAsyncSocket.xcframework'
-    end
-
-    
+   if ENV['EXCLUDE_CocoaMQTT'] == 'true'
+        mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework'
+   else
+        mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework', 'Roam/MqttCocoaAsyncSocket.xcframework', 'Roam/Starscream.xcframework', 'Roam/CocoaMQTT.xcframework'
+   end
   end
 
   # ======================= RoamBatchConnector Module =======================
