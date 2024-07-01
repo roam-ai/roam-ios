@@ -22,7 +22,7 @@ import _SwiftConcurrencyShims
   case WS
   case WSS
   case SSL
-  public static func typeFromString(rawvalue: Swift.String) -> RoamMqttConnectionType?
+  public static func typeFromString(rawvalue: Swift.String) -> RoamMQTTConnector.RoamMqttConnectionType?
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -32,18 +32,18 @@ import _SwiftConcurrencyShims
 @objc public protocol RoamMQTTDelegate {
   @objc optional func didChangeMQTTStatus(_ status: Swift.String)
 }
-@_hasMissingDesignatedInitializers @objc public class RoamMqttConnector : ObjectiveC.NSObject, RoamConnector {
+@_hasMissingDesignatedInitializers @objc public class RoamMqttConnector : ObjectiveC.NSObject, RoamMQTTConnector.RoamConnector {
   @objc public var clientID: Swift.String
   @objc public class Builder : ObjectiveC.NSObject {
-    public init(host: Swift.String, port: Swift.UInt16, connectionType: RoamMqttConnectionType, topic: Swift.String)
-    public func setPath(_ path: Swift.String) -> RoamMqttConnector.Builder
-    public func setCredentials(username: Swift.String, password: Swift.String) -> RoamMqttConnector.Builder
-    public func setClientId(_ clientId: Swift.String) -> RoamMqttConnector.Builder
-    public func setQos(_ qos: Swift.Int) -> RoamMqttConnector.Builder
-    public func setConnectOptions(_ connectOptions: RoamMqttConnectOptions) -> RoamMqttConnector.Builder
-    public func setWillOption(_ willOption: RoamMqttWillOptions) -> RoamMqttConnector.Builder
-    public func setMQTTVersion(_ version: Swift.String) -> RoamMqttConnector.Builder
-    public func build() -> RoamMqttConnector
+    public init(host: Swift.String, port: Swift.UInt16, connectionType: RoamMQTTConnector.RoamMqttConnectionType, topic: Swift.String)
+    public func setPath(_ path: Swift.String) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setCredentials(username: Swift.String, password: Swift.String) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setClientId(_ clientId: Swift.String) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setQos(_ qos: Swift.Int) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setConnectOptions(_ connectOptions: RoamMQTTConnector.RoamMqttConnectOptions) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setWillOption(_ willOption: RoamMQTTConnector.RoamMqttWillOptions) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func setMQTTVersion(_ version: Swift.String) -> RoamMQTTConnector.RoamMqttConnector.Builder
+    public func build() -> RoamMQTTConnector.RoamMqttConnector
     @objc deinit
   }
   @objc deinit
@@ -57,18 +57,18 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class RoamMQTTConnector : ObjectiveC.NSObject {
-  @objc public static let shared: RoamMQTTConnector
-  @objc public var delegate: (any RoamMQTTDelegate)! {
+  @objc public static let shared: RoamMQTTConnector.RoamMQTTConnector
+  @objc public var delegate: (any RoamMQTTConnector.RoamMQTTDelegate)! {
     @objc get
     @objc set
   }
   @objc override dynamic public init()
-  @objc public static func registerConnector(_ connector: any RoamConnector)
+  @objc public static func registerConnector(_ connector: any RoamMQTTConnector.RoamConnector)
   @objc public static func deregisterConnector()
   @objc public static func initalize()
   @objc deinit
 }
-extension RoamMQTTConnector : Roam.RoamLocationPublisher {
+extension RoamMQTTConnector.RoamMQTTConnector : Roam.RoamLocationPublisher {
   @objc dynamic public func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
   @objc dynamic public func connect()
   @objc dynamic public func disconnect()
@@ -76,7 +76,7 @@ extension RoamMQTTConnector : Roam.RoamLocationPublisher {
 public protocol AnyOptional {
   var isNil: Swift.Bool { get }
 }
-extension Swift.Optional : AnyOptional {
+extension Swift.Optional : RoamMQTTConnector.AnyOptional {
   public var isNil: Swift.Bool {
     get
   }
@@ -85,8 +85,8 @@ extension Swift.Optional : AnyOptional {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-extension MqttConnectorLocationData {
-  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<MqttConnectorLocationData>
+extension RoamMQTTConnector.MqttConnectorLocationData {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<RoamMQTTConnector.MqttConnectorLocationData>
   @objc @NSManaged dynamic public var activity: Swift.String? {
     @objc get
     @objc set
@@ -160,6 +160,6 @@ extension MqttConnectorLocationData {
     @objc set
   }
 }
-extension RoamMqttConnectionType : Swift.Equatable {}
-extension RoamMqttConnectionType : Swift.Hashable {}
-extension RoamMqttConnectionType : Swift.RawRepresentable {}
+extension RoamMQTTConnector.RoamMqttConnectionType : Swift.Equatable {}
+extension RoamMQTTConnector.RoamMqttConnectionType : Swift.Hashable {}
+extension RoamMQTTConnector.RoamMqttConnectionType : Swift.RawRepresentable {}

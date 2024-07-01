@@ -10,8 +10,8 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamBatchProcessor : ObjectiveC.NSObject {
-  @objc public static let shared: RoamBatchProcessor
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamBatch : ObjectiveC.NSObject {
+  @objc public static let shared: RoamBatch
   @objc public func initialize()
   @objc public func setConfig(enable: Swift.Bool)
   @objc deinit

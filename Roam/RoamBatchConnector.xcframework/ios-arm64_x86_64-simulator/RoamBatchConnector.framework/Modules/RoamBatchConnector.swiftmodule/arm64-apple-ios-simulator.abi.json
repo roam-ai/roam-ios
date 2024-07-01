@@ -114,8 +114,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "RoamBatchProcessor",
-        "printedName": "RoamBatchProcessor",
+        "name": "RoamBatch",
+        "printedName": "RoamBatch",
         "children": [
           {
             "kind": "Var",
@@ -124,14 +124,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "RoamBatchProcessor",
-                "printedName": "RoamBatchConnector.RoamBatchProcessor",
-                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor"
+                "name": "RoamBatch",
+                "printedName": "RoamBatchConnector.RoamBatch",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor(cpy)shared",
-            "mangledName": "$s18RoamBatchConnector0aB9ProcessorC6sharedACvpZ",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(cpy)shared",
+            "mangledName": "$s18RoamBatchConnector0aB0C6sharedACvpZ",
             "moduleName": "RoamBatchConnector",
             "static": true,
             "declAttributes": [
@@ -151,14 +151,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "RoamBatchProcessor",
-                    "printedName": "RoamBatchConnector.RoamBatchProcessor",
-                    "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor"
+                    "name": "RoamBatch",
+                    "printedName": "RoamBatchConnector.RoamBatch",
+                    "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor(cm)shared",
-                "mangledName": "$s18RoamBatchConnector0aB9ProcessorC6sharedACvgZ",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(cm)shared",
+                "mangledName": "$s18RoamBatchConnector0aB0C6sharedACvgZ",
                 "moduleName": "RoamBatchConnector",
                 "static": true,
                 "implicit": true,
@@ -182,8 +182,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor(im)initialize",
-            "mangledName": "$s18RoamBatchConnector0aB9ProcessorC10initializeyyF",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(im)initialize",
+            "mangledName": "$s18RoamBatchConnector0aB0C10initializeyyF",
             "moduleName": "RoamBatchConnector",
             "declAttributes": [
               "AccessControl",
@@ -210,8 +210,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor(im)setConfigWithEnable:",
-            "mangledName": "$s18RoamBatchConnector0aB9ProcessorC9setConfig6enableySb_tF",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(im)setConfigWithEnable:",
+            "mangledName": "$s18RoamBatchConnector0aB0C9setConfig6enableySb_tF",
             "moduleName": "RoamBatchConnector",
             "objc_name": "setConfigWithEnable:",
             "declAttributes": [
@@ -223,8 +223,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchProcessor",
-        "mangledName": "$s18RoamBatchConnector0aB9ProcessorC",
+        "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch",
+        "mangledName": "$s18RoamBatchConnector0aB0C",
         "moduleName": "RoamBatchConnector",
         "declAttributes": [
           "AccessControl",
@@ -4524,14 +4524,14 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1207,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
       "kind": "BooleanLiteral",
-      "offset": 1279,
+      "offset": 1264,
       "length": 5,
       "value": "false"
     },

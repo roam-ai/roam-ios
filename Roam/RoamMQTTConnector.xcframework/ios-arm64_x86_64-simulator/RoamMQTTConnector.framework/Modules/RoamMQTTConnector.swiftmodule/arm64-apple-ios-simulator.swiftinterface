@@ -68,7 +68,7 @@ import _SwiftConcurrencyShims
   @objc public static func initalize()
   @objc deinit
 }
-extension RoamMQTTConnector : RoamLocationPublisher {
+extension RoamMQTTConnector : Roam.RoamLocationPublisher {
   @objc dynamic public func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
   @objc dynamic public func connect()
   @objc dynamic public func disconnect()
