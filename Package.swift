@@ -5,7 +5,7 @@ let package = Package(
     name: "roam-ios",
     products: [
         .library(
-            name: "RoamCore",
+            name: "Roam",
             targets: ["Roam", "AWSAuthCore", "AWSCognitoIdentityProvider", "AWSCognitoIdentityProviderASF", "AWSCore", "AWSIoT", "AWSMobileClientXCF"]
         ),
         .library(
