@@ -1,0 +1,5022 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Roam",
+        "printedName": "Roam",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RoamBatch",
+        "printedName": "RoamBatch",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoamBatch",
+                "printedName": "RoamBatchConnector.RoamBatch",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(cpy)shared",
+            "mangledName": "$s18RoamBatchConnector0aB0C6sharedACvpZ",
+            "moduleName": "RoamBatchConnector",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamBatch",
+                    "printedName": "RoamBatchConnector.RoamBatch",
+                    "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(cm)shared",
+                "mangledName": "$s18RoamBatchConnector0aB0C6sharedACvgZ",
+                "moduleName": "RoamBatchConnector",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(im)initialize",
+            "mangledName": "$s18RoamBatchConnector0aB0C10initializeyyF",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setConfig",
+            "printedName": "setConfig(enable:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch(im)setConfigWithEnable:",
+            "mangledName": "$s18RoamBatchConnector0aB0C9setConfig6enableySb_tF",
+            "moduleName": "RoamBatchConnector",
+            "objc_name": "setConfigWithEnable:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatch",
+        "mangledName": "$s18RoamBatchConnector0aB0C",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BatchLocationModel",
+        "printedName": "BatchLocationModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BatchLocationModel",
+                "printedName": "RoamBatchConnector.BatchLocationModel",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)BatchLocationModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)BatchLocationModel(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "RoamBatchConnector",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<RoamBatchConnector.BatchLocationModel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BatchLocationModel",
+                    "printedName": "RoamBatchConnector.BatchLocationModel",
+                    "usr": "c:@M@RoamBatchConnector@objc(cs)BatchLocationModel"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RoamBatchConnector0B13LocationModelC12fetchRequestSo07NSFetchG0CyACGyFZ",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC12fetchRequestSo07NSFetchG0CyACGyFZ",
+            "moduleName": "RoamBatchConnector",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "activity",
+            "printedName": "activity",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)activity",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC8activitySSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)activity",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8activitySSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setActivity:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8activitySSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "altitude",
+            "printedName": "altitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)altitude",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC8altitudeSdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)altitude",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8altitudeSdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setAltitude:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8altitudeSdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_context",
+            "printedName": "app_context",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)app_context",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_contextSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)app_context",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_contextSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setApp_context:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_contextSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_details",
+            "printedName": "app_details",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)app_details",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_detailsSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)app_details",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_detailsSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setApp_details:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11app_detailsSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_id",
+            "printedName": "app_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)app_id",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC6app_idSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)app_id",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6app_idSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setApp_id:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6app_idSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "battery_remaining",
+            "printedName": "battery_remaining",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)battery_remaining",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC17battery_remainings5Int16Vvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)battery_remaining",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17battery_remainings5Int16Vvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setBattery_remaining:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17battery_remainings5Int16Vvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "battery_saver",
+            "printedName": "battery_saver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)battery_saver",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC13battery_saverSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)battery_saver",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13battery_saverSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setBattery_saver:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13battery_saverSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "battery_status",
+            "printedName": "battery_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)battery_status",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC14battery_statusSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)battery_status",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14battery_statusSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setBattery_status:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14battery_statusSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "course",
+            "printedName": "course",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)course",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC6courseSdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)course",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6courseSdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setCourse:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6courseSdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device_manufacturer",
+            "printedName": "device_manufacturer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)device_manufacturer",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC19device_manufacturerSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)device_manufacturer",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19device_manufacturerSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setDevice_manufacturer:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19device_manufacturerSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device_model",
+            "printedName": "device_model",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)device_model",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC12device_modelSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)device_model",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12device_modelSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setDevice_model:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12device_modelSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "event_listener",
+            "printedName": "event_listener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)event_listener",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC14event_listenerSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)event_listener",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14event_listenerSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setEvent_listener:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14event_listenerSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "geofence_events",
+            "printedName": "geofence_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)geofence_events",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC15geofence_eventsSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)geofence_events",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC15geofence_eventsSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setGeofence_events:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC15geofence_eventsSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "gps_status",
+            "printedName": "gps_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)gps_status",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC10gps_statusSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)gps_status",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10gps_statusSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setGps_status:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10gps_statusSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "horizontal_accuracy",
+            "printedName": "horizontal_accuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)horizontal_accuracy",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC19horizontal_accuracySdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)horizontal_accuracy",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19horizontal_accuracySdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setHorizontal_accuracy:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19horizontal_accuracySdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)latitude",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC8latitudeSdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)latitude",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8latitudeSdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLatitude:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8latitudeSdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_authorization_status",
+            "printedName": "location_authorization_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)location_authorization_status",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC29location_authorization_statuss5Int16Vvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)location_authorization_status",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC29location_authorization_statuss5Int16Vvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLocation_authorization_status:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC29location_authorization_statuss5Int16Vvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_events",
+            "printedName": "location_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)location_events",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC15location_eventsSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)location_events",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC15location_eventsSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLocation_events:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC15location_eventsSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_id",
+            "printedName": "location_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)location_id",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC11location_idSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)location_id",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11location_idSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLocation_id:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11location_idSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_listener",
+            "printedName": "location_listener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)location_listener",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC17location_listenerSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)location_listener",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17location_listenerSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLocation_listener:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17location_listenerSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_permission",
+            "printedName": "location_permission",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)location_permission",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC19location_permissionSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)location_permission",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19location_permissionSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLocation_permission:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC19location_permissionSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)longitude",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC9longitudeSdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)longitude",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC9longitudeSdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setLongitude:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC9longitudeSdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)metadata",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC8metadata10Foundation4DataVSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)metadata",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8metadata10Foundation4DataVSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setMetadata:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC8metadata10Foundation4DataVSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nearby_events",
+            "printedName": "nearby_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)nearby_events",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC13nearby_eventsSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)nearby_events",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13nearby_eventsSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setNearby_events:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13nearby_eventsSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "network_status",
+            "printedName": "network_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)network_status",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC14network_statusSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)network_status",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14network_statusSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setNetwork_status:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC14network_statusSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "os_version",
+            "printedName": "os_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)os_version",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC10os_versionSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)os_version",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10os_versionSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setOs_version:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10os_versionSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publish_only",
+            "printedName": "publish_only",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)publish_only",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC12publish_onlySbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)publish_only",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12publish_onlySbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setPublish_only:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12publish_onlySbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "recorded_at",
+            "printedName": "recorded_at",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)recorded_at",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC11recorded_atSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)recorded_at",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11recorded_atSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setRecorded_at:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11recorded_atSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdk_version",
+            "printedName": "sdk_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)sdk_version",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC11sdk_versionSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)sdk_version",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11sdk_versionSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setSdk_version:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC11sdk_versionSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)source",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC6sourceSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)source",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6sourceSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setSource:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC6sourceSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "speed",
+            "printedName": "speed",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)speed",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC5speeds5Int16Vvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)speed",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC5speeds5Int16Vvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setSpeed:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC5speeds5Int16Vvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tracking_mode",
+            "printedName": "tracking_mode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)tracking_mode",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC13tracking_modeSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)tracking_mode",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13tracking_modeSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setTracking_mode:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC13tracking_modeSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "trips_events",
+            "printedName": "trips_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)trips_events",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC12trips_eventsSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)trips_events",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12trips_eventsSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setTrips_events:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC12trips_eventsSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tz_offset",
+            "printedName": "tz_offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)tz_offset",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC9tz_offsetSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)tz_offset",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC9tz_offsetSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setTz_offset:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC9tz_offsetSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user_id",
+            "printedName": "user_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)user_id",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC7user_idSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)user_id",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC7user_idSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setUser_id:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC7user_idSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "vertical_accuracy",
+            "printedName": "vertical_accuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)vertical_accuracy",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC17vertical_accuracySdvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)vertical_accuracy",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17vertical_accuracySdvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setVertical_accuracy:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC17vertical_accuracySdvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RoamBatchConnector@objc(cs)BatchLocationModel",
+        "mangledName": "$s18RoamBatchConnector0B13LocationModelC",
+        "moduleName": "RoamBatchConnector",
+        "objc_name": "BatchLocationModel",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CSVFilesDataModel",
+        "printedName": "CSVFilesDataModel",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CSVFilesDataModel",
+                "printedName": "RoamBatchConnector.CSVFilesDataModel",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)CSVFilesDataModel"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "RoamBatchConnector",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<RoamBatchConnector.CSVFilesDataModel>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CSVFilesDataModel",
+                    "printedName": "RoamBatchConnector.CSVFilesDataModel",
+                    "usr": "c:@M@RoamBatchConnector@objc(cs)CSVFilesDataModel"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18RoamBatchConnector17CSVFilesDataModelC12fetchRequestSo07NSFetchH0CyACGyFZ",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC12fetchRequestSo07NSFetchH0CyACGyFZ",
+            "moduleName": "RoamBatchConnector",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "filename",
+            "printedName": "filename",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(py)filename",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filenameSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)filename",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filenameSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)setFilename:",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filenameSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "filepath",
+            "printedName": "filepath",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(py)filepath",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filepathSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)filepath",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filepathSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)setFilepath:",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC8filepathSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(py)id",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC2idSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)id",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC2idSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)setId:",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC2idSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locationcount",
+            "printedName": "locationcount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(py)locationcount",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC13locationcounts5Int16Vvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)locationcount",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC13locationcounts5Int16Vvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)setLocationcount:",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC13locationcounts5Int16Vvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "timestamp",
+            "printedName": "timestamp",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Date?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(py)timestamp",
+            "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC9timestamp10Foundation4DateVSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)timestamp",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC9timestamp10Foundation4DateVSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Date?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)CSVFilesDataModel(im)setTimestamp:",
+                "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC9timestamp10Foundation4DateVSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RoamBatchConnector@objc(cs)CSVFilesDataModel",
+        "mangledName": "$s18RoamBatchConnector17CSVFilesDataModelC",
+        "moduleName": "RoamBatchConnector",
+        "objc_name": "CSVFilesDataModel",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamBatchConnector"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/LocationBuffer.swift",
+      "kind": "Array",
+      "offset": 403,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 59,
+      "value": "\"https:\/\/6y6ah4vzzh.execute-api.eu-central-1.amazonaws.com\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/APIManager.swift",
+      "kind": "StringLiteral",
+      "offset": 578,
+      "length": 59,
+      "value": "\"https:\/\/6y6ah4vzzh.execute-api.eu-central-1.amazonaws.com\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamBatchProcessing.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1264,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 945,
+      "length": 29,
+      "value": "\"RoamBatchConnectorDataModel\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 991,
+      "length": 6,
+      "value": "\"momd\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1737,
+      "length": 36,
+      "value": "\"RoamBatchConnectorDataModel.sqlite\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1917,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1975,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2231,
+      "length": 53,
+      "value": "\"Error: Failed to add the persistent store. \""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2283,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2377,
+      "length": 51,
+      "value": "\"Failed to initialize the application's saved data\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2496,
+      "length": 70,
+      "value": "\"There was an error creating or loading the application's saved data.\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2699,
+      "length": 19,
+      "value": "\"YOUR_ERROR_DOMAIN\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2726,
+      "length": 4,
+      "value": "9999"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2766,
+      "length": 60,
+      "value": "\"Unresolved error \""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2799,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2825,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Storage\/CoreDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3249,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/RoamCallbackHandler.swift",
+      "kind": "BooleanLiteral",
+      "offset": 372,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Utils\/Logger.swift",
+      "kind": "BooleanLiteral",
+      "offset": 244,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Utils\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Utils\/Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 227,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1407,
+      "length": 19,
+      "value": "\"battery_remaining\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 19,
+      "value": "\"location_listener\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 31,
+      "value": "\"location_authorization_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1640,
+      "length": 13,
+      "value": "\"app_context\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1712,
+      "length": 15,
+      "value": "\"nearby_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1784,
+      "length": 13,
+      "value": "\"recorded_at\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1822,
+      "length": 11,
+      "value": "\"tz_offset\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 16,
+      "value": "\"battery_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
+      "length": 13,
+      "value": "\"app_details\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 17,
+      "value": "\"geofence_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1995,
+      "length": 14,
+      "value": "\"trips_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2044,
+      "length": 21,
+      "value": "\"horizontal_accuracy\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2091,
+      "length": 12,
+      "value": "\"gps_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 21,
+      "value": "\"location_permission\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2208,
+      "length": 13,
+      "value": "\"location_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2252,
+      "length": 17,
+      "value": "\"location_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 14,
+      "value": "\"publish_only\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2340,
+      "length": 15,
+      "value": "\"tracking_mode\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2378,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2417,
+      "length": 16,
+      "value": "\"event_listener\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2463,
+      "length": 16,
+      "value": "\"network_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2512,
+      "length": 19,
+      "value": "\"vertical_accuracy\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2558,
+      "length": 13,
+      "value": "\"sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2600,
+      "length": 15,
+      "value": "\"battery_saver\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1407,
+      "length": 19,
+      "value": "\"battery_remaining\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1448,
+      "length": 8,
+      "value": "\"app_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1519,
+      "length": 19,
+      "value": "\"location_listener\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1582,
+      "length": 31,
+      "value": "\"location_authorization_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1640,
+      "length": 13,
+      "value": "\"app_context\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1712,
+      "length": 15,
+      "value": "\"nearby_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1784,
+      "length": 13,
+      "value": "\"recorded_at\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1822,
+      "length": 11,
+      "value": "\"tz_offset\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1863,
+      "length": 16,
+      "value": "\"battery_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1906,
+      "length": 13,
+      "value": "\"app_details\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1950,
+      "length": 17,
+      "value": "\"geofence_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 1995,
+      "length": 14,
+      "value": "\"trips_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2044,
+      "length": 21,
+      "value": "\"horizontal_accuracy\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2091,
+      "length": 12,
+      "value": "\"gps_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2138,
+      "length": 21,
+      "value": "\"location_permission\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2208,
+      "length": 13,
+      "value": "\"location_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2252,
+      "length": 17,
+      "value": "\"location_events\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2297,
+      "length": 14,
+      "value": "\"publish_only\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2340,
+      "length": 15,
+      "value": "\"tracking_mode\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2378,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2417,
+      "length": 16,
+      "value": "\"event_listener\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2463,
+      "length": 16,
+      "value": "\"network_status\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2512,
+      "length": 19,
+      "value": "\"vertical_accuracy\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2558,
+      "length": 13,
+      "value": "\"sdk_version\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 2600,
+      "length": 15,
+      "value": "\"battery_saver\""
+    }
+  ]
+}

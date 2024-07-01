@@ -280,9 +280,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreData;
 @import CoreLocation;
 @import Foundation;
-@import MqttCocoaAsyncSocket;
 @import ObjectiveC;
-@import Security;
 #endif
 
 #endif
@@ -335,380 +333,6 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
-/// MQTT Client
-/// note:
-/// MGCDAsyncSocket need delegate to extend NSObject
-SWIFT_CLASS("_TtC4Roam9CocoaMQTT")
-@interface CocoaMQTT : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-
-/// MQTT Client
-/// note:
-/// MGCDAsyncSocket need delegate to extend NSObject
-SWIFT_CLASS("_TtC4Roam10CocoaMQTT5")
-@interface CocoaMQTT5 : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-enum CocoaMQTTCONNACKReasonCode : uint8_t;
-@class MqttDecodeConnAck;
-@class CocoaMQTT5Message;
-@class MqttDecodePubAck;
-@class MqttDecodePubRec;
-@class MqttDecodePublish;
-@class NSDictionary;
-@class MqttDecodeSubAck;
-@class MqttDecodeUnsubAck;
-enum CocoaMQTTDISCONNECTReasonCode : uint8_t;
-enum CocoaMQTTAUTHReasonCode : uint8_t;
-@class NSURLAuthenticationChallenge;
-@class NSURLCredential;
-@class MqttDecodePubComp;
-enum CocoaMQTTConnState : uint8_t;
-
-/// CocoaMQTT5 Delegate
-SWIFT_PROTOCOL("_TtP4Roam18CocoaMQTT5Delegate_")
-@protocol CocoaMQTT5Delegate
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didConnectAck:(enum CocoaMQTTCONNACKReasonCode)ack connAckData:(MqttDecodeConnAck * _Nullable)connAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishMessage:(CocoaMQTT5Message * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishAck:(uint16_t)id pubAckData:(MqttDecodePubAck * _Nullable)pubAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishRec:(uint16_t)id pubRecData:(MqttDecodePubRec * _Nullable)pubRecData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveMessage:(CocoaMQTT5Message * _Nonnull)message id:(uint16_t)id publishData:(MqttDecodePublish * _Nullable)publishData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didSubscribeTopics:(NSDictionary * _Nonnull)success failed:(NSArray<NSString *> * _Nonnull)failed subAckData:(MqttDecodeSubAck * _Nullable)subAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didUnsubscribeTopics:(NSArray<NSString *> * _Nonnull)topics unsubAckData:(MqttDecodeUnsubAck * _Nullable)unsubAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveDisconnectReasonCode:(enum CocoaMQTTDISCONNECTReasonCode)reasonCode;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveAuthReasonCode:(enum CocoaMQTTAUTHReasonCode)reasonCode;
-///
-- (void)mqtt5DidPing:(CocoaMQTT5 * _Nonnull)mqtt5;
-///
-- (void)mqtt5DidReceivePong:(CocoaMQTT5 * _Nonnull)mqtt5;
-///
-- (void)mqtt5DidDisconnect:(CocoaMQTT5 * _Nonnull)mqtt5 withError:(NSError * _Nullable)err;
-@optional
-/// Manually validate SSL/TLS server certificate.
-/// This method will be called if enable  <code>allowUntrustCACertificate</code>
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceive:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)mqtt5UrlSession:(CocoaMQTT5 * _Nonnull)mqtt didReceiveTrust:(SecTrustRef _Nonnull)trust didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishComplete:(uint16_t)id pubCompData:(MqttDecodePubComp * _Nullable)pubCompData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didStateChangeTo:(enum CocoaMQTTConnState)state;
-@end
-
-
-/// MQTT Message
-SWIFT_CLASS("_TtC4Roam17CocoaMQTT5Message")
-@interface CocoaMQTT5Message : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-@interface CocoaMQTT5Message (SWIFT_EXTENSION(Roam))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTAUTHReasonCode, open) {
-  CocoaMQTTAUTHReasonCodeSuccess = 0x00,
-  CocoaMQTTAUTHReasonCodeContinueAuthentication = 0x18,
-  CocoaMQTTAUTHReasonCodeReAuthenticate = 0x19,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTCONNACKReasonCode, open) {
-  CocoaMQTTCONNACKReasonCodeSuccess = 0x00,
-  CocoaMQTTCONNACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTCONNACKReasonCodeMalformedPacket = 0x81,
-  CocoaMQTTCONNACKReasonCodeProtocolError = 0x82,
-  CocoaMQTTCONNACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTCONNACKReasonCodeUnsupportedProtocolVersion = 0x84,
-  CocoaMQTTCONNACKReasonCodeClientIdentifierNotValid = 0x85,
-  CocoaMQTTCONNACKReasonCodeBadUsernameOrPassword = 0x86,
-  CocoaMQTTCONNACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTCONNACKReasonCodeServerUnavailable = 0x88,
-  CocoaMQTTCONNACKReasonCodeServerBusy = 0x89,
-  CocoaMQTTCONNACKReasonCodeBanned = 0x8A,
-  CocoaMQTTCONNACKReasonCodeBadAuthenticationMethod = 0x8C,
-  CocoaMQTTCONNACKReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTCONNACKReasonCodePacketTooLarge = 0x95,
-  CocoaMQTTCONNACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTCONNACKReasonCodePayloadFormatInvalid = 0x99,
-  CocoaMQTTCONNACKReasonCodeRetainNotSupported = 0x9A,
-  CocoaMQTTCONNACKReasonCodeQosNotSupported = 0x9B,
-  CocoaMQTTCONNACKReasonCodeUseAnotherServer = 0x9C,
-  CocoaMQTTCONNACKReasonCodeServerMoved = 0x9D,
-  CocoaMQTTCONNACKReasonCodeConnectionRateExceeded = 0x9F,
-};
-
-/// Conn Ack
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTConnAck, open) {
-  CocoaMQTTConnAckAccept = 0,
-  CocoaMQTTConnAckUnacceptableProtocolVersion = 1,
-  CocoaMQTTConnAckIdentifierRejected = 2,
-  CocoaMQTTConnAckServerUnavailable = 3,
-  CocoaMQTTConnAckBadUsernameOrPassword = 4,
-  CocoaMQTTConnAckNotAuthorized = 5,
-  CocoaMQTTConnAckReserved = 6,
-};
-
-/// Connection State
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTConnState, open) {
-  CocoaMQTTConnStateDisconnected = 0,
-  CocoaMQTTConnStateConnecting = 1,
-  CocoaMQTTConnStateConnected = 2,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTDISCONNECTReasonCode, open) {
-  CocoaMQTTDISCONNECTReasonCodeNormalDisconnection = 0x00,
-  CocoaMQTTDISCONNECTReasonCodeDisconnectWithWillMessage = 0x04,
-  CocoaMQTTDISCONNECTReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTDISCONNECTReasonCodeMalformedPacket = 0x81,
-  CocoaMQTTDISCONNECTReasonCodeProtocolError = 0x82,
-  CocoaMQTTDISCONNECTReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTDISCONNECTReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTDISCONNECTReasonCodeServerBusy = 0x89,
-  CocoaMQTTDISCONNECTReasonCodeServerShuttingDown = 0x8B,
-  CocoaMQTTDISCONNECTReasonCodeKeepAliveTimeout = 0x8D,
-  CocoaMQTTDISCONNECTReasonCodeSessionTakenOver = 0x8E,
-  CocoaMQTTDISCONNECTReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTDISCONNECTReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTDISCONNECTReasonCodeReceiveMaximumExceeded = 0x93,
-  CocoaMQTTDISCONNECTReasonCodeTopicAliasInvalid = 0x94,
-  CocoaMQTTDISCONNECTReasonCodePacketTooLarge = 0x95,
-  CocoaMQTTDISCONNECTReasonCodeMessageRateTooHigh = 0x96,
-  CocoaMQTTDISCONNECTReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTDISCONNECTReasonCodeAdministrativeAction = 0x98,
-  CocoaMQTTDISCONNECTReasonCodePayloadFormatInvalid = 0x99,
-  CocoaMQTTDISCONNECTReasonCodeRetainNotSupported = 0x9A,
-  CocoaMQTTDISCONNECTReasonCodeQosNotSupported = 0x9B,
-  CocoaMQTTDISCONNECTReasonCodeUseAnotherServer = 0x9C,
-  CocoaMQTTDISCONNECTReasonCodeServerMoved = 0x9D,
-  CocoaMQTTDISCONNECTReasonCodeSharedSubscriptionsNotSupported = 0x9E,
-  CocoaMQTTDISCONNECTReasonCodeConnectionRateExceeded = 0x9F,
-  CocoaMQTTDISCONNECTReasonCodeMaximumConnectTime = 0xA0,
-  CocoaMQTTDISCONNECTReasonCodeSubscriptionIdentifiersNotSupported = 0xA1,
-  CocoaMQTTDISCONNECTReasonCodeWildcardSubscriptionsNotSupported = 0xA2,
-};
-
-@class CocoaMQTTMessage;
-
-/// CocoaMQTT Delegate
-SWIFT_PROTOCOL("_TtP4Roam17CocoaMQTTDelegate_")
-@protocol CocoaMQTTDelegate
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didConnectAck:(enum CocoaMQTTConnAck)ack;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishMessage:(CocoaMQTTMessage * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishAck:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didReceiveMessage:(CocoaMQTTMessage * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didSubscribeTopics:(NSDictionary * _Nonnull)success failed:(NSArray<NSString *> * _Nonnull)failed;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didUnsubscribeTopics:(NSArray<NSString *> * _Nonnull)topics;
-///
-- (void)mqttDidPing:(CocoaMQTT * _Nonnull)mqtt;
-///
-- (void)mqttDidReceivePong:(CocoaMQTT * _Nonnull)mqtt;
-///
-- (void)mqttDidDisconnect:(CocoaMQTT * _Nonnull)mqtt withError:(NSError * _Nullable)err;
-@optional
-/// Manually validate SSL/TLS server certificate.
-/// This method will be called if enable  <code>allowUntrustCACertificate</code>
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didReceive:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)mqttUrlSession:(CocoaMQTT * _Nonnull)mqtt didReceiveTrust:(SecTrustRef _Nonnull)trust didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishComplete:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didStateChangeTo:(enum CocoaMQTTConnState)state;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam15CocoaMQTTLogger")
-@interface CocoaMQTTLogger : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// MQTT Message
-SWIFT_CLASS("_TtC4Roam16CocoaMQTTMessage")
-@interface CocoaMQTTMessage : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface CocoaMQTTMessage (SWIFT_EXTENSION(Roam))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBACKReasonCode, open) {
-  CocoaMQTTPUBACKReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBACKReasonCodeNoMatchingSubscribers = 0x10,
-  CocoaMQTTPUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTPUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTPUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTPUBACKReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTPUBACKReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTPUBACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTPUBACKReasonCodePayloadFormatInvalid = 0x99,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBCOMPReasonCode, open) {
-  CocoaMQTTPUBCOMPReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBCOMPReasonCodePacketIdentifierNotFound = 0x92,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBRECReasonCode, open) {
-  CocoaMQTTPUBRECReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBRECReasonCodeNoMatchingSubscribers = 0x10,
-  CocoaMQTTPUBRECReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTPUBRECReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTPUBRECReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTPUBRECReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTPUBRECReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTPUBRECReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTPUBRECReasonCodePayloadFormatInvalid = 0x99,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBRELReasonCode, open) {
-  CocoaMQTTPUBRELReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBRELReasonCodePacketIdentifierNotFound = 0x92,
-};
-
-/// Quality of Service levels
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTQoS, open) {
-/// At most once delivery
-  CocoaMQTTQoSQos0 = 0,
-/// At least once delivery
-  CocoaMQTTQoSQos1 = 1,
-/// Exactly once delivery
-  CocoaMQTTQoSQos2 = 2,
-/// !!! Used SUBACK frame only
-  CocoaMQTTQoSFAILURE = 0x80,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTSUBACKReasonCode, open) {
-  CocoaMQTTSUBACKReasonCodeGrantedQoS0 = 0x00,
-  CocoaMQTTSUBACKReasonCodeGrantedQoS1 = 0x01,
-  CocoaMQTTSUBACKReasonCodeGrantedQoS2 = 0x02,
-  CocoaMQTTSUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTSUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTSUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTSUBACKReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTSUBACKReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTSUBACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTSUBACKReasonCodeSharedSubscriptionsNotSupported = 0x9E,
-  CocoaMQTTSUBACKReasonCodeSubscriptionIdentifiersNotSupported = 0xA1,
-  CocoaMQTTSUBACKReasonCodeWildcardSubscriptionsNotSupported = 0xA2,
-};
-
-
-SWIFT_CLASS("_TtC4Roam15CocoaMQTTSocket")
-@interface CocoaMQTTSocket : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@class MGCDAsyncSocket;
-@class NSData;
-
-@interface CocoaMQTTSocket (SWIFT_EXTENSION(Roam)) <MGCDAsyncSocketDelegate>
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didConnectToHost:(NSString * _Nonnull)host port:(uint16_t)port;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didReceiveTrust:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)socketDidSecure:(MGCDAsyncSocket * _Nonnull)sock;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didWriteDataWithTag:(NSInteger)tag;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didReadData:(NSData * _Nonnull)data withTag:(NSInteger)tag;
-- (void)socketDidDisconnect:(MGCDAsyncSocket * _Nonnull)sock withError:(NSError * _Nullable)err;
-@end
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTUNSUBACKReasonCode, open) {
-  CocoaMQTTUNSUBACKReasonCodeSuccess = 0x00,
-  CocoaMQTTUNSUBACKReasonCodeNoSubscriptionExisted = 0x11,
-  CocoaMQTTUNSUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTUNSUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTUNSUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTUNSUBACKReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTUNSUBACKReasonCodePacketIdentifierInUse = 0x91,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaRetainHandlingOption, open) {
-  CocoaRetainHandlingOptionSendOnSubscribe = 0,
-  CocoaRetainHandlingOptionSendOnlyWhenSubscribeIsNew = 1,
-  CocoaRetainHandlingOptionNone = 2,
-};
-
-
-SWIFT_CLASS_NAMED("CustomMqttLocationData")
-@interface CustomMqttLocationData : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSDate;
-
-@interface CustomMqttLocationData (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic) int16_t battery_remaining;
-@property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSString * _Nullable client_id;
-@property (nonatomic) double course;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) double horizontal_accuracy;
-@property (nonatomic) int16_t isOfflineData;
-@property (nonatomic) double latitude;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable tracking_mode;
-@property (nonatomic) double vertical_accuracy;
-@end
-
-
-
-SWIFT_CLASS("_TtCC4Roam18CocoaMQTTWebSocket20FoundationConnection")
-@interface FoundationConnection : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSURLSession;
-@class NSURLSessionTask;
-@class NSURLSessionWebSocketTask;
-
-SWIFT_AVAILABILITY(tvos,introduced=13.0) SWIFT_AVAILABILITY(watchos,introduced=6.0) SWIFT_AVAILABILITY(ios,introduced=13.0) SWIFT_AVAILABILITY(macos,introduced=10.15)
-@interface FoundationConnection (SWIFT_EXTENSION(Roam)) <NSURLSessionWebSocketDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didOpenWithProtocol:(NSString * _Nullable)protocol;
-- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
-@end
-
 
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
@@ -720,71 +344,12 @@ typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
 };
 
 
-SWIFT_CLASS("_TtC4Roam18MqttAuthProperties")
-@interface MqttAuthProperties : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam21MqttConnectProperties")
-@interface MqttConnectProperties : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodeConnAck")
-@interface MqttDecodeConnAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubAck")
-@interface MqttDecodePubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodePubComp")
-@interface MqttDecodePubComp : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubRec")
-@interface MqttDecodePubRec : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubRel")
-@interface MqttDecodePubRel : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodePublish")
-@interface MqttDecodePublish : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodeSubAck")
-@interface MqttDecodeSubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam18MqttDecodeUnsubAck")
-@interface MqttDecodeUnsubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS_NAMED("MqttLocationData")
 @interface MqttLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -822,13 +387,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam21MqttPublishProperties")
-@interface MqttPublishProperties : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -897,14 +455,10 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 
 
 
-typedef SWIFT_ENUM(uint8_t, PayloadFormatIndicator, open) {
-  PayloadFormatIndicatorUnspecified = 0x00,
-  PayloadFormatIndicatorUtf8 = 0x01,
-};
-
 @protocol RoamDelegate;
 @class RoamUser;
 @class RoamError;
+@class NSData;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
@@ -922,7 +476,6 @@ enum RoamTrackingState : NSInteger;
 enum RoamNetworkState : NSInteger;
 @class RoamBatchConfig;
 @class RoamLocationConfig;
-@protocol RoamConnector;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -995,8 +548,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 /// \param verifyMotion A boolean indicating whether Motion Detection security checks should be enabled.
 ///
 + (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled verifyMotion:(BOOL)verifyMotion;
-+ (void)registerConnector:(id <RoamConnector> _Nonnull)connector;
-+ (void)deRegisterConnector:(id <RoamConnector> _Nonnull)connector;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1022,12 +573,6 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @property (nonatomic) NSInteger batchWindow;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_PROTOCOL("_TtP4Roam13RoamConnector_")
-@protocol RoamConnector
-@property (nonatomic, readonly, copy) NSString * _Nonnull clientID;
 @end
 
 @class RoamTripDestination;
@@ -1063,7 +608,6 @@ SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 - (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
 - (void)onReceiveTrip:(NSArray<RoamTripStatus *> * _Nonnull)tripStatus;
 - (void)onError:(RoamError * _Nonnull)error;
-- (void)didChangeMQTTStatus:(NSString * _Nonnull)status;
 @end
 
 
@@ -1144,6 +688,13 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam27RoamLocationBatchSubscriber")
+@interface RoamLocationBatchSubscriber : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @interface RoamLocationConfig : NSObject
 @property (nonatomic) NSInteger accuracy;
@@ -1151,6 +702,14 @@ SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP4Roam21RoamLocationPublisher_")
+@protocol RoamLocationPublisher
+- (void)publishLocationUpdateWithLocation:(CLLocation * _Nonnull)location dictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary;
+- (void)connect;
+- (void)disconnect;
 @end
 
 
@@ -1176,37 +735,8 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @end
 
 
-SWIFT_CLASS("_TtC4Roam22RoamMqttConnectOptions")
-@interface RoamMqttConnectOptions : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-typedef SWIFT_ENUM(NSInteger, RoamMqttConnectionType, open) {
-  RoamMqttConnectionTypeTCP = 0,
-  RoamMqttConnectionTypeWS = 1,
-  RoamMqttConnectionTypeWSS = 2,
-  RoamMqttConnectionTypeSSL = 3,
-};
-
-
-SWIFT_CLASS("_TtC4Roam17RoamMqttConnector")
-@interface RoamMqttConnector : NSObject <RoamConnector>
-@property (nonatomic, copy) NSString * _Nonnull clientID;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtCC4Roam17RoamMqttConnector7Builder")
-@interface Builder : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamMqttWillOptions")
-@interface RoamMqttWillOptions : NSObject
+SWIFT_CLASS("_TtC4Roam22RoamLocationSubscriber")
+@interface RoamLocationSubscriber : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1617,8 +1147,6 @@ SWIFT_CLASS("_TtC4Roam8RoamUser")
 @end
 
 
-
-
 SWIFT_CLASS_NAMED("TripEventsLocal")
 @interface TripEventsLocal : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -1672,18 +1200,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addStopObject:(TripStop * _Nonnull)value;
 - (void)removeStopObject:(TripStop * _Nonnull)value;
 - (void)addStop:(NSSet * _Nonnull)values;
 - (void)removeStop:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)addEvents:(NSSet * _Nonnull)values;
+- (void)removeEvents:(NSSet * _Nonnull)values;
 @end
 
 
@@ -1711,6 +1239,7 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic, strong) NSSet * _Nullable events;
 @property (nonatomic, strong) NSSet * _Nullable stop;
 @end
+
 
 
 
@@ -2005,9 +1534,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreData;
 @import CoreLocation;
 @import Foundation;
-@import MqttCocoaAsyncSocket;
 @import ObjectiveC;
-@import Security;
 #endif
 
 #endif
@@ -2060,380 +1587,6 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
-/// MQTT Client
-/// note:
-/// MGCDAsyncSocket need delegate to extend NSObject
-SWIFT_CLASS("_TtC4Roam9CocoaMQTT")
-@interface CocoaMQTT : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-
-/// MQTT Client
-/// note:
-/// MGCDAsyncSocket need delegate to extend NSObject
-SWIFT_CLASS("_TtC4Roam10CocoaMQTT5")
-@interface CocoaMQTT5 : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-
-
-enum CocoaMQTTCONNACKReasonCode : uint8_t;
-@class MqttDecodeConnAck;
-@class CocoaMQTT5Message;
-@class MqttDecodePubAck;
-@class MqttDecodePubRec;
-@class MqttDecodePublish;
-@class NSDictionary;
-@class MqttDecodeSubAck;
-@class MqttDecodeUnsubAck;
-enum CocoaMQTTDISCONNECTReasonCode : uint8_t;
-enum CocoaMQTTAUTHReasonCode : uint8_t;
-@class NSURLAuthenticationChallenge;
-@class NSURLCredential;
-@class MqttDecodePubComp;
-enum CocoaMQTTConnState : uint8_t;
-
-/// CocoaMQTT5 Delegate
-SWIFT_PROTOCOL("_TtP4Roam18CocoaMQTT5Delegate_")
-@protocol CocoaMQTT5Delegate
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didConnectAck:(enum CocoaMQTTCONNACKReasonCode)ack connAckData:(MqttDecodeConnAck * _Nullable)connAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishMessage:(CocoaMQTT5Message * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishAck:(uint16_t)id pubAckData:(MqttDecodePubAck * _Nullable)pubAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishRec:(uint16_t)id pubRecData:(MqttDecodePubRec * _Nullable)pubRecData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveMessage:(CocoaMQTT5Message * _Nonnull)message id:(uint16_t)id publishData:(MqttDecodePublish * _Nullable)publishData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didSubscribeTopics:(NSDictionary * _Nonnull)success failed:(NSArray<NSString *> * _Nonnull)failed subAckData:(MqttDecodeSubAck * _Nullable)subAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didUnsubscribeTopics:(NSArray<NSString *> * _Nonnull)topics unsubAckData:(MqttDecodeUnsubAck * _Nullable)unsubAckData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveDisconnectReasonCode:(enum CocoaMQTTDISCONNECTReasonCode)reasonCode;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceiveAuthReasonCode:(enum CocoaMQTTAUTHReasonCode)reasonCode;
-///
-- (void)mqtt5DidPing:(CocoaMQTT5 * _Nonnull)mqtt5;
-///
-- (void)mqtt5DidReceivePong:(CocoaMQTT5 * _Nonnull)mqtt5;
-///
-- (void)mqtt5DidDisconnect:(CocoaMQTT5 * _Nonnull)mqtt5 withError:(NSError * _Nullable)err;
-@optional
-/// Manually validate SSL/TLS server certificate.
-/// This method will be called if enable  <code>allowUntrustCACertificate</code>
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didReceive:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)mqtt5UrlSession:(CocoaMQTT5 * _Nonnull)mqtt didReceiveTrust:(SecTrustRef _Nonnull)trust didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didPublishComplete:(uint16_t)id pubCompData:(MqttDecodePubComp * _Nullable)pubCompData;
-///
-- (void)mqtt5:(CocoaMQTT5 * _Nonnull)mqtt5 didStateChangeTo:(enum CocoaMQTTConnState)state;
-@end
-
-
-/// MQTT Message
-SWIFT_CLASS("_TtC4Roam17CocoaMQTT5Message")
-@interface CocoaMQTT5Message : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-
-@interface CocoaMQTT5Message (SWIFT_EXTENSION(Roam))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTAUTHReasonCode, open) {
-  CocoaMQTTAUTHReasonCodeSuccess = 0x00,
-  CocoaMQTTAUTHReasonCodeContinueAuthentication = 0x18,
-  CocoaMQTTAUTHReasonCodeReAuthenticate = 0x19,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTCONNACKReasonCode, open) {
-  CocoaMQTTCONNACKReasonCodeSuccess = 0x00,
-  CocoaMQTTCONNACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTCONNACKReasonCodeMalformedPacket = 0x81,
-  CocoaMQTTCONNACKReasonCodeProtocolError = 0x82,
-  CocoaMQTTCONNACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTCONNACKReasonCodeUnsupportedProtocolVersion = 0x84,
-  CocoaMQTTCONNACKReasonCodeClientIdentifierNotValid = 0x85,
-  CocoaMQTTCONNACKReasonCodeBadUsernameOrPassword = 0x86,
-  CocoaMQTTCONNACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTCONNACKReasonCodeServerUnavailable = 0x88,
-  CocoaMQTTCONNACKReasonCodeServerBusy = 0x89,
-  CocoaMQTTCONNACKReasonCodeBanned = 0x8A,
-  CocoaMQTTCONNACKReasonCodeBadAuthenticationMethod = 0x8C,
-  CocoaMQTTCONNACKReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTCONNACKReasonCodePacketTooLarge = 0x95,
-  CocoaMQTTCONNACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTCONNACKReasonCodePayloadFormatInvalid = 0x99,
-  CocoaMQTTCONNACKReasonCodeRetainNotSupported = 0x9A,
-  CocoaMQTTCONNACKReasonCodeQosNotSupported = 0x9B,
-  CocoaMQTTCONNACKReasonCodeUseAnotherServer = 0x9C,
-  CocoaMQTTCONNACKReasonCodeServerMoved = 0x9D,
-  CocoaMQTTCONNACKReasonCodeConnectionRateExceeded = 0x9F,
-};
-
-/// Conn Ack
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTConnAck, open) {
-  CocoaMQTTConnAckAccept = 0,
-  CocoaMQTTConnAckUnacceptableProtocolVersion = 1,
-  CocoaMQTTConnAckIdentifierRejected = 2,
-  CocoaMQTTConnAckServerUnavailable = 3,
-  CocoaMQTTConnAckBadUsernameOrPassword = 4,
-  CocoaMQTTConnAckNotAuthorized = 5,
-  CocoaMQTTConnAckReserved = 6,
-};
-
-/// Connection State
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTConnState, open) {
-  CocoaMQTTConnStateDisconnected = 0,
-  CocoaMQTTConnStateConnecting = 1,
-  CocoaMQTTConnStateConnected = 2,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTDISCONNECTReasonCode, open) {
-  CocoaMQTTDISCONNECTReasonCodeNormalDisconnection = 0x00,
-  CocoaMQTTDISCONNECTReasonCodeDisconnectWithWillMessage = 0x04,
-  CocoaMQTTDISCONNECTReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTDISCONNECTReasonCodeMalformedPacket = 0x81,
-  CocoaMQTTDISCONNECTReasonCodeProtocolError = 0x82,
-  CocoaMQTTDISCONNECTReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTDISCONNECTReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTDISCONNECTReasonCodeServerBusy = 0x89,
-  CocoaMQTTDISCONNECTReasonCodeServerShuttingDown = 0x8B,
-  CocoaMQTTDISCONNECTReasonCodeKeepAliveTimeout = 0x8D,
-  CocoaMQTTDISCONNECTReasonCodeSessionTakenOver = 0x8E,
-  CocoaMQTTDISCONNECTReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTDISCONNECTReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTDISCONNECTReasonCodeReceiveMaximumExceeded = 0x93,
-  CocoaMQTTDISCONNECTReasonCodeTopicAliasInvalid = 0x94,
-  CocoaMQTTDISCONNECTReasonCodePacketTooLarge = 0x95,
-  CocoaMQTTDISCONNECTReasonCodeMessageRateTooHigh = 0x96,
-  CocoaMQTTDISCONNECTReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTDISCONNECTReasonCodeAdministrativeAction = 0x98,
-  CocoaMQTTDISCONNECTReasonCodePayloadFormatInvalid = 0x99,
-  CocoaMQTTDISCONNECTReasonCodeRetainNotSupported = 0x9A,
-  CocoaMQTTDISCONNECTReasonCodeQosNotSupported = 0x9B,
-  CocoaMQTTDISCONNECTReasonCodeUseAnotherServer = 0x9C,
-  CocoaMQTTDISCONNECTReasonCodeServerMoved = 0x9D,
-  CocoaMQTTDISCONNECTReasonCodeSharedSubscriptionsNotSupported = 0x9E,
-  CocoaMQTTDISCONNECTReasonCodeConnectionRateExceeded = 0x9F,
-  CocoaMQTTDISCONNECTReasonCodeMaximumConnectTime = 0xA0,
-  CocoaMQTTDISCONNECTReasonCodeSubscriptionIdentifiersNotSupported = 0xA1,
-  CocoaMQTTDISCONNECTReasonCodeWildcardSubscriptionsNotSupported = 0xA2,
-};
-
-@class CocoaMQTTMessage;
-
-/// CocoaMQTT Delegate
-SWIFT_PROTOCOL("_TtP4Roam17CocoaMQTTDelegate_")
-@protocol CocoaMQTTDelegate
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didConnectAck:(enum CocoaMQTTConnAck)ack;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishMessage:(CocoaMQTTMessage * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishAck:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didReceiveMessage:(CocoaMQTTMessage * _Nonnull)message id:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didSubscribeTopics:(NSDictionary * _Nonnull)success failed:(NSArray<NSString *> * _Nonnull)failed;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didUnsubscribeTopics:(NSArray<NSString *> * _Nonnull)topics;
-///
-- (void)mqttDidPing:(CocoaMQTT * _Nonnull)mqtt;
-///
-- (void)mqttDidReceivePong:(CocoaMQTT * _Nonnull)mqtt;
-///
-- (void)mqttDidDisconnect:(CocoaMQTT * _Nonnull)mqtt withError:(NSError * _Nullable)err;
-@optional
-/// Manually validate SSL/TLS server certificate.
-/// This method will be called if enable  <code>allowUntrustCACertificate</code>
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didReceive:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)mqttUrlSession:(CocoaMQTT * _Nonnull)mqtt didReceiveTrust:(SecTrustRef _Nonnull)trust didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didPublishComplete:(uint16_t)id;
-///
-- (void)mqtt:(CocoaMQTT * _Nonnull)mqtt didStateChangeTo:(enum CocoaMQTTConnState)state;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam15CocoaMQTTLogger")
-@interface CocoaMQTTLogger : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-/// MQTT Message
-SWIFT_CLASS("_TtC4Roam16CocoaMQTTMessage")
-@interface CocoaMQTTMessage : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-@interface CocoaMQTTMessage (SWIFT_EXTENSION(Roam))
-@property (nonatomic, readonly, copy) NSString * _Nonnull description;
-@end
-
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBACKReasonCode, open) {
-  CocoaMQTTPUBACKReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBACKReasonCodeNoMatchingSubscribers = 0x10,
-  CocoaMQTTPUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTPUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTPUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTPUBACKReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTPUBACKReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTPUBACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTPUBACKReasonCodePayloadFormatInvalid = 0x99,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBCOMPReasonCode, open) {
-  CocoaMQTTPUBCOMPReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBCOMPReasonCodePacketIdentifierNotFound = 0x92,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBRECReasonCode, open) {
-  CocoaMQTTPUBRECReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBRECReasonCodeNoMatchingSubscribers = 0x10,
-  CocoaMQTTPUBRECReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTPUBRECReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTPUBRECReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTPUBRECReasonCodeTopicNameInvalid = 0x90,
-  CocoaMQTTPUBRECReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTPUBRECReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTPUBRECReasonCodePayloadFormatInvalid = 0x99,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTPUBRELReasonCode, open) {
-  CocoaMQTTPUBRELReasonCodeSuccess = 0x00,
-  CocoaMQTTPUBRELReasonCodePacketIdentifierNotFound = 0x92,
-};
-
-/// Quality of Service levels
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTQoS, open) {
-/// At most once delivery
-  CocoaMQTTQoSQos0 = 0,
-/// At least once delivery
-  CocoaMQTTQoSQos1 = 1,
-/// Exactly once delivery
-  CocoaMQTTQoSQos2 = 2,
-/// !!! Used SUBACK frame only
-  CocoaMQTTQoSFAILURE = 0x80,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTSUBACKReasonCode, open) {
-  CocoaMQTTSUBACKReasonCodeGrantedQoS0 = 0x00,
-  CocoaMQTTSUBACKReasonCodeGrantedQoS1 = 0x01,
-  CocoaMQTTSUBACKReasonCodeGrantedQoS2 = 0x02,
-  CocoaMQTTSUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTSUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTSUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTSUBACKReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTSUBACKReasonCodePacketIdentifierInUse = 0x91,
-  CocoaMQTTSUBACKReasonCodeQuotaExceeded = 0x97,
-  CocoaMQTTSUBACKReasonCodeSharedSubscriptionsNotSupported = 0x9E,
-  CocoaMQTTSUBACKReasonCodeSubscriptionIdentifiersNotSupported = 0xA1,
-  CocoaMQTTSUBACKReasonCodeWildcardSubscriptionsNotSupported = 0xA2,
-};
-
-
-SWIFT_CLASS("_TtC4Roam15CocoaMQTTSocket")
-@interface CocoaMQTTSocket : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@class MGCDAsyncSocket;
-@class NSData;
-
-@interface CocoaMQTTSocket (SWIFT_EXTENSION(Roam)) <MGCDAsyncSocketDelegate>
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didConnectToHost:(NSString * _Nonnull)host port:(uint16_t)port;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didReceiveTrust:(SecTrustRef _Nonnull)trust completionHandler:(void (^ _Nonnull)(BOOL))completionHandler;
-- (void)socketDidSecure:(MGCDAsyncSocket * _Nonnull)sock;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didWriteDataWithTag:(NSInteger)tag;
-- (void)socket:(MGCDAsyncSocket * _Nonnull)sock didReadData:(NSData * _Nonnull)data withTag:(NSInteger)tag;
-- (void)socketDidDisconnect:(MGCDAsyncSocket * _Nonnull)sock withError:(NSError * _Nullable)err;
-@end
-
-typedef SWIFT_ENUM(uint8_t, CocoaMQTTUNSUBACKReasonCode, open) {
-  CocoaMQTTUNSUBACKReasonCodeSuccess = 0x00,
-  CocoaMQTTUNSUBACKReasonCodeNoSubscriptionExisted = 0x11,
-  CocoaMQTTUNSUBACKReasonCodeUnspecifiedError = 0x80,
-  CocoaMQTTUNSUBACKReasonCodeImplementationSpecificError = 0x83,
-  CocoaMQTTUNSUBACKReasonCodeNotAuthorized = 0x87,
-  CocoaMQTTUNSUBACKReasonCodeTopicFilterInvalid = 0x8F,
-  CocoaMQTTUNSUBACKReasonCodePacketIdentifierInUse = 0x91,
-};
-
-typedef SWIFT_ENUM(uint8_t, CocoaRetainHandlingOption, open) {
-  CocoaRetainHandlingOptionSendOnSubscribe = 0,
-  CocoaRetainHandlingOptionSendOnlyWhenSubscribeIsNew = 1,
-  CocoaRetainHandlingOptionNone = 2,
-};
-
-
-SWIFT_CLASS_NAMED("CustomMqttLocationData")
-@interface CustomMqttLocationData : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSDate;
-
-@interface CustomMqttLocationData (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic) int16_t battery_remaining;
-@property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSString * _Nullable client_id;
-@property (nonatomic) double course;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) double horizontal_accuracy;
-@property (nonatomic) int16_t isOfflineData;
-@property (nonatomic) double latitude;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable tracking_mode;
-@property (nonatomic) double vertical_accuracy;
-@end
-
-
-
-SWIFT_CLASS("_TtCC4Roam18CocoaMQTTWebSocket20FoundationConnection")
-@interface FoundationConnection : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSURLSession;
-@class NSURLSessionTask;
-@class NSURLSessionWebSocketTask;
-
-SWIFT_AVAILABILITY(tvos,introduced=13.0) SWIFT_AVAILABILITY(watchos,introduced=6.0) SWIFT_AVAILABILITY(ios,introduced=13.0) SWIFT_AVAILABILITY(macos,introduced=10.15)
-@interface FoundationConnection (SWIFT_EXTENSION(Roam)) <NSURLSessionWebSocketDelegate>
-- (void)URLSession:(NSURLSession * _Nonnull)session task:(NSURLSessionTask * _Nonnull)task didReceiveChallenge:(NSURLAuthenticationChallenge * _Nonnull)challenge completionHandler:(void (^ _Nonnull)(NSURLSessionAuthChallengeDisposition, NSURLCredential * _Nullable))completionHandler;
-- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didOpenWithProtocol:(NSString * _Nullable)protocol;
-- (void)URLSession:(NSURLSession * _Nonnull)session webSocketTask:(NSURLSessionWebSocketTask * _Nonnull)webSocketTask didCloseWithCode:(NSURLSessionWebSocketCloseCode)closeCode reason:(NSData * _Nullable)reason;
-@end
-
 
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
@@ -2445,71 +1598,12 @@ typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
 };
 
 
-SWIFT_CLASS("_TtC4Roam18MqttAuthProperties")
-@interface MqttAuthProperties : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam21MqttConnectProperties")
-@interface MqttConnectProperties : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodeConnAck")
-@interface MqttDecodeConnAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubAck")
-@interface MqttDecodePubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodePubComp")
-@interface MqttDecodePubComp : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubRec")
-@interface MqttDecodePubRec : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodePubRel")
-@interface MqttDecodePubRel : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam17MqttDecodePublish")
-@interface MqttDecodePublish : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16MqttDecodeSubAck")
-@interface MqttDecodeSubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam18MqttDecodeUnsubAck")
-@interface MqttDecodeUnsubAck : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS_NAMED("MqttLocationData")
 @interface MqttLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -2547,13 +1641,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam21MqttPublishProperties")
-@interface MqttPublishProperties : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -2622,14 +1709,10 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 
 
 
-typedef SWIFT_ENUM(uint8_t, PayloadFormatIndicator, open) {
-  PayloadFormatIndicatorUnspecified = 0x00,
-  PayloadFormatIndicatorUtf8 = 0x01,
-};
-
 @protocol RoamDelegate;
 @class RoamUser;
 @class RoamError;
+@class NSData;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
@@ -2647,7 +1730,6 @@ enum RoamTrackingState : NSInteger;
 enum RoamNetworkState : NSInteger;
 @class RoamBatchConfig;
 @class RoamLocationConfig;
-@protocol RoamConnector;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
@@ -2720,8 +1802,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 /// \param verifyMotion A boolean indicating whether Motion Detection security checks should be enabled.
 ///
 + (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled verifyMotion:(BOOL)verifyMotion;
-+ (void)registerConnector:(id <RoamConnector> _Nonnull)connector;
-+ (void)deRegisterConnector:(id <RoamConnector> _Nonnull)connector;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2747,12 +1827,6 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @property (nonatomic) NSInteger batchWindow;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_PROTOCOL("_TtP4Roam13RoamConnector_")
-@protocol RoamConnector
-@property (nonatomic, readonly, copy) NSString * _Nonnull clientID;
 @end
 
 @class RoamTripDestination;
@@ -2788,7 +1862,6 @@ SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 - (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
 - (void)onReceiveTrip:(NSArray<RoamTripStatus *> * _Nonnull)tripStatus;
 - (void)onError:(RoamError * _Nonnull)error;
-- (void)didChangeMQTTStatus:(NSString * _Nonnull)status;
 @end
 
 
@@ -2869,6 +1942,13 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam27RoamLocationBatchSubscriber")
+@interface RoamLocationBatchSubscriber : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @interface RoamLocationConfig : NSObject
 @property (nonatomic) NSInteger accuracy;
@@ -2876,6 +1956,14 @@ SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_PROTOCOL("_TtP4Roam21RoamLocationPublisher_")
+@protocol RoamLocationPublisher
+- (void)publishLocationUpdateWithLocation:(CLLocation * _Nonnull)location dictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary;
+- (void)connect;
+- (void)disconnect;
 @end
 
 
@@ -2901,37 +1989,8 @@ SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @end
 
 
-SWIFT_CLASS("_TtC4Roam22RoamMqttConnectOptions")
-@interface RoamMqttConnectOptions : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-typedef SWIFT_ENUM(NSInteger, RoamMqttConnectionType, open) {
-  RoamMqttConnectionTypeTCP = 0,
-  RoamMqttConnectionTypeWS = 1,
-  RoamMqttConnectionTypeWSS = 2,
-  RoamMqttConnectionTypeSSL = 3,
-};
-
-
-SWIFT_CLASS("_TtC4Roam17RoamMqttConnector")
-@interface RoamMqttConnector : NSObject <RoamConnector>
-@property (nonatomic, copy) NSString * _Nonnull clientID;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtCC4Roam17RoamMqttConnector7Builder")
-@interface Builder : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamMqttWillOptions")
-@interface RoamMqttWillOptions : NSObject
+SWIFT_CLASS("_TtC4Roam22RoamLocationSubscriber")
+@interface RoamLocationSubscriber : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -3342,8 +2401,6 @@ SWIFT_CLASS("_TtC4Roam8RoamUser")
 @end
 
 
-
-
 SWIFT_CLASS_NAMED("TripEventsLocal")
 @interface TripEventsLocal : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -3397,18 +2454,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addStopObject:(TripStop * _Nonnull)value;
 - (void)removeStopObject:(TripStop * _Nonnull)value;
 - (void)addStop:(NSSet * _Nonnull)values;
 - (void)removeStop:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)addEvents:(NSSet * _Nonnull)values;
+- (void)removeEvents:(NSSet * _Nonnull)values;
 @end
 
 
@@ -3436,6 +2493,7 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic, strong) NSSet * _Nullable events;
 @property (nonatomic, strong) NSSet * _Nullable stop;
 @end
+
 
 
 

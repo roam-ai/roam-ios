@@ -1,0 +1,6 @@
+framework module RoamBatchConnector {
+  umbrella header "RoamBatchConnector.h"
+  export *
+
+  module * { export * }
+}
