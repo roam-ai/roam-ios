@@ -354,3 +354,11 @@ We're pleased to announce the release of Roam iOS SDK version 0.1.23, addressing
 - **Fix for Roam.updateLocationWhenStationary() Issue**: We've resolved an issue where the updateLocationWhenStationary() method stopped working correctly when tracking was restarted during stationary periods. This fix ensures uninterrupted functionality and reliability for location updates, maintaining a smooth user experience.
 
 We're committed to delivering a dependable and efficient SDK experience. If you have any further issues or feedback to share, our support team is available to assist you promptly.
+
+## 0.1.24
+We're excited to introduce Roam iOS SDK version 0.1.24, featuring the addition of two new modules to enhance your location tracking capabilities. In this update, we've made the following improvements:
+
+- **roam-mqtt-connector:** This module enables custom MQTT connections, allowing developers to register custom MQTT endpoints for forwarding location updates directly from the SDK to the configured MQTT broker.
+- **roam-batch-connector:** This module allows for publishing location data in batches instead of in real-time using the pub/sub model. This enhancement provides flexibility in managing location data transmission and can help optimize performance and data usage.
+
+These improvements are geared towards providing a more robust and versatile experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.

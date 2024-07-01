@@ -7,8 +7,8 @@ Pod::Spec.new do |s|
   s.social_media_url      = 'https://twitter.com/roam_ai'
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
-  s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :branch => 'Exclude_Final_Test' }
-#    s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
+  # s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
+    s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :branch => 'Exclude_Final_Test' }
 
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
    puts "EXCLUDE_CocoaMQTT: #{ENV['EXCLUDE_CocoaMQTT']}"
   
  # ============================ Core Module ============================
-  s.subspec 'RoamCore' do |core|
+  s.subspec 'Roam' do |core|
     core.vendored_frameworks = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework'
   end
   
