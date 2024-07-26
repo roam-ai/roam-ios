@@ -275,6 +275,11 @@ public typealias FileIntegrityCheckResult = (result: Swift.Bool, hitChecks: [Roa
   @objc public var duration: Foundation.NSNumber
   @objc public var elevationGain: Foundation.NSNumber
   @objc public var distance: Foundation.NSNumber
+  @objc public var coordinates: Roam.RoamTripRoutecoordinates?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class RoamTripRoutecoordinates : ObjectiveC.NSObject {
+  @objc public var type: Swift.String?
   @objc public var coordinates: [Swift.Double]
   @objc deinit
 }

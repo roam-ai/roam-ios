@@ -279,6 +279,11 @@ public enum IntegrityCheckerImageTarget {
   @objc public var duration: Foundation.NSNumber
   @objc public var elevationGain: Foundation.NSNumber
   @objc public var distance: Foundation.NSNumber
+  @objc public var coordinates: RoamTripRoutecoordinates?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class RoamTripRoutecoordinates : ObjectiveC.NSObject {
+  @objc public var type: Swift.String?
   @objc public var coordinates: [Swift.Double]
   @objc deinit
 }

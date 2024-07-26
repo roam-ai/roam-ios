@@ -362,3 +362,11 @@ We're excited to introduce Roam iOS SDK version 0.1.24, featuring the addition o
 - **RoamBatchConnector:** This module allows for publishing location data in batches instead of in real-time using the pub/sub model. This enhancement provides flexibility in managing location data transmission and can help optimize performance and data usage.
 
 These improvements are geared towards providing a more robust and versatile experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+## 0.1.25
+We're excited to introduce Roam iOS SDK version 0.1.25, focusing on aligning our response parameters with the Android SDK and enhancing stability. In this update, we've made the following improvements:
+
+1. **Response Parameters for Roam.getTripSummary():** We've updated the response parameters for Roam.getTripSummary() to be consistent with our Android SDK, ensuring a seamless cross-platform experience for developers.
+2. **Fixes for Background Mode Crashes:** We've addressed crashes that occurred when tracking with Background Modes - Location Updates capabilities disabled, enhancing the stability and reliability of the SDK.
+
+These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.

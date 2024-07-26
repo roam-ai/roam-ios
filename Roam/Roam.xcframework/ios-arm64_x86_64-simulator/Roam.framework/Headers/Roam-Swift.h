@@ -1016,6 +1016,15 @@ SWIFT_CLASS("_TtC4Roam16RoamTripResponse")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam24RoamTripRoutecoordinates")
+@interface RoamTripRoutecoordinates : NSObject
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
 @interface RoamTripRoutes : NSObject
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -1024,7 +1033,7 @@ SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
 @property (nonatomic, strong) NSNumber * _Nonnull duration;
 @property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
 @property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
+@property (nonatomic, strong) RoamTripRoutecoordinates * _Nullable coordinates;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2270,6 +2279,15 @@ SWIFT_CLASS("_TtC4Roam16RoamTripResponse")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam24RoamTripRoutecoordinates")
+@interface RoamTripRoutecoordinates : NSObject
+@property (nonatomic, copy) NSString * _Nullable type;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
 SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
 @interface RoamTripRoutes : NSObject
 @property (nonatomic, copy) NSString * _Nullable activity;
@@ -2278,7 +2296,7 @@ SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
 @property (nonatomic, strong) NSNumber * _Nonnull duration;
 @property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
 @property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
+@property (nonatomic, strong) RoamTripRoutecoordinates * _Nullable coordinates;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
