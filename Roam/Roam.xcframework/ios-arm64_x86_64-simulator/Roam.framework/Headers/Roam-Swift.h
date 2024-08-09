@@ -705,14 +705,6 @@ SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @end
 
 
-SWIFT_PROTOCOL("_TtP4Roam21RoamLocationPublisher_")
-@protocol RoamLocationPublisher
-- (void)publishLocationUpdateWithLocation:(CLLocation * _Nonnull)location dictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary;
-- (void)connect;
-- (void)disconnect;
-@end
-
-
 SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
 @interface RoamLocationReceived : NSObject
 @property (nonatomic, copy) NSString * _Null_unspecified activity;
@@ -1965,14 +1957,6 @@ SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
 @property (nonatomic) BOOL discardLocation;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_PROTOCOL("_TtP4Roam21RoamLocationPublisher_")
-@protocol RoamLocationPublisher
-- (void)publishLocationUpdateWithLocation:(CLLocation * _Nonnull)location dictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary;
-- (void)connect;
-- (void)disconnect;
 @end
 
 

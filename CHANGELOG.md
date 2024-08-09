@@ -370,3 +370,11 @@ We're excited to introduce Roam iOS SDK version 0.1.25, focusing on aligning our
 2. **Fixes for Background Mode Crashes:** We've addressed crashes that occurred when tracking with Background Modes - Location Updates capabilities disabled, enhancing the stability and reliability of the SDK.
 
 These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your tracking capabilities and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+## 0.1.26
+We're excited to introduce Roam iOS SDK version 0.1.26, focusing on resolving dependency and compilation issues. In this update, we've made the following improvements:
+
+1. **Podspec Dependency Fixes:** We've updated the podspec to correctly include third-party frameworks as dependencies, ensuring a smoother integration process for developers using CocoaPods.
+2. **Module Compiler Issue Fixes:** We've addressed module compiler issues, improving the overall stability and performance of the SDK.
+
+These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your development process and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.
