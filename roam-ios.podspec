@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
   s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
-
+  s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
@@ -21,8 +21,8 @@ Pod::Spec.new do |s|
   # ======================== RoamMQTTConnector Module ========================
   s.subspec 'RoamMQTTConnector' do |mqtt|
     mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
-    mqtt.dependency 'CocoaMQTT'
-    mqtt.dependency 'Starscream', '4.0.4'
+    mqtt.dependency 'CocoaMQTT', '~> 2.1.6'
+    mqtt.dependency 'Starscream', '~> 4.0.4'
   end
 
   # ======================= RoamBatchConnector Module =======================
