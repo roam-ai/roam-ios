@@ -418,6 +418,23 @@
       },
       {
         "kind": "Import",
+        "name": "Roam",
+        "printedName": "Roam",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamMQTTConnector",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "SystemConfiguration",
         "printedName": "SystemConfiguration",
         "declKind": "Import",
@@ -1463,27 +1480,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "UserNotifications",
-        "printedName": "UserNotifications",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
-      },
-      {
-        "kind": "Import",
-        "name": "Roam",
-        "printedName": "Roam",
-        "declKind": "Import",
-        "moduleName": "RoamMQTTConnector"
-      },
-      {
         "kind": "TypeDecl",
         "name": "RoamMQTTConnector",
         "printedName": "RoamMQTTConnector",
@@ -1540,6 +1536,27 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "initalize",
+            "printedName": "initalize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)initalize",
+            "mangledName": "$s17RoamMQTTConnectorAAC9initalizeyyF",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Var",
@@ -1659,32 +1676,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "RoamMQTTConnector",
-                "printedName": "RoamMQTTConnector.RoamMQTTConnector",
-                "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)init",
-            "mangledName": "$s17RoamMQTTConnectorAACABycfc",
-            "moduleName": "RoamMQTTConnector",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "registerConnector",
             "printedName": "registerConnector(_:)",
@@ -1702,12 +1693,10 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)registerConnector:",
-            "mangledName": "$s17RoamMQTTConnectorAAC17registerConnectoryyAA0aD0_pFZ",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)registerConnector:",
+            "mangledName": "$s17RoamMQTTConnectorAAC17registerConnectoryyAA0aD0_pF",
             "moduleName": "RoamMQTTConnector",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
               "ObjC"
             ],
@@ -1725,135 +1714,13 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)deregisterConnector",
-            "mangledName": "$s17RoamMQTTConnectorAAC19deregisterConnectoryyFZ",
+            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)deregisterConnector",
+            "mangledName": "$s17RoamMQTTConnectorAAC19deregisterConnectoryyF",
             "moduleName": "RoamMQTTConnector",
-            "static": true,
             "declAttributes": [
-              "Final",
               "AccessControl",
               "ObjC"
             ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "initalize",
-            "printedName": "initalize()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RoamMQTTConnector@objc(cs)RoamMQTTConnector(cm)initalize",
-            "mangledName": "$s17RoamMQTTConnectorAAC9initalizeyyFZ",
-            "moduleName": "RoamMQTTConnector",
-            "static": true,
-            "declAttributes": [
-              "Final",
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "publishLocationUpdate",
-            "printedName": "publishLocationUpdate(location:dictionary:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "CoreLocation.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)publishLocationUpdateWithLocation:dictionary:",
-            "mangledName": "$s17RoamMQTTConnectorAAC21publishLocationUpdate8location10dictionaryySo10CLLocationC_SDySSypGtF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "publishLocationUpdateWithLocation:dictionary:",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "connect",
-            "printedName": "connect()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)connect",
-            "mangledName": "$s17RoamMQTTConnectorAAC7connectyyF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "connect",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "disconnect",
-            "printedName": "disconnect()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@CM@RoamMQTTConnector@objc(cs)RoamMQTTConnector(im)disconnect",
-            "mangledName": "$s17RoamMQTTConnectorAAC10disconnectyyF",
-            "moduleName": "RoamMQTTConnector",
-            "objc_name": "disconnect",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           }
         ],
@@ -1866,18 +1733,12 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "RoamLocationPublisher",
-            "printedName": "RoamLocationPublisher",
-            "usr": "c:@M@Roam@objc(pl)RoamLocationPublisher",
-            "mangledName": "$s4Roam0A17LocationPublisherP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4217,7 +4078,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
-      "offset": 19466,
+      "offset": 19441,
       "length": 2,
       "value": "\"\""
     },

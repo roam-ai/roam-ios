@@ -402,6 +402,13 @@ public enum FailedCheck : Swift.CaseIterable {
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationSubscriber : ObjectiveC.NSObject {
+  public static let shared: RoamLocationSubscriber
+  public var publishLocationUpdate: ((_ location: CoreLocation.CLLocation, _ dictionary: [Swift.String : Any]) -> ())?
+  public var connectCustomMQTT: (() -> ())?
+  public var disconnectCustomMQTT: (() -> ())?
+  @objc deinit
+}
 public enum Model : Swift.String {
   case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Pro, iPhone13ProMax, iPhone13Mini, iPhone13, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
   public init?(rawValue: Swift.String)
@@ -544,19 +551,6 @@ extension UIKit.UIDevice {
   @objc public var has_more: Swift.Bool
   @objc public var error: RoamTripError?
   @objc public var trips: [RoamTrip]
-  @objc deinit
-}
-@objc public protocol RoamLocationPublisher {
-  @objc func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
-  @objc func connect()
-  @objc func disconnect()
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationSubscriber : ObjectiveC.NSObject {
-  public static let shared: RoamLocationSubscriber
-  public var subscribers: [any RoamLocationPublisher]
-  public func subscribe(_ subscriber: any RoamLocationPublisher)
-  public func unsubscribe(_ subscriber: any RoamLocationPublisher)
-  public func removeAllSubscribers()
   @objc deinit
 }
 @objc public enum RoamTrackingState : Swift.Int {

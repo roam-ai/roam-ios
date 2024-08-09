@@ -278,9 +278,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreData;
-@import Foundation;
 @import ObjectiveC;
-@import Roam;
 #endif
 
 #endif
@@ -346,19 +344,12 @@ SWIFT_CLASS("_TtC17RoamMQTTConnector17RoamMQTTConnector")
 @interface RoamMQTTConnector : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamMQTTConnector * _Nonnull shared;)
 + (RoamMQTTConnector * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (void)initalize;
 @property (nonatomic, strong) id <RoamMQTTDelegate> _Null_unspecified delegate;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-+ (void)registerConnector:(id <RoamConnector> _Nonnull)connector;
-+ (void)deregisterConnector;
-+ (void)initalize;
-@end
-
-@class CLLocation;
-
-@interface RoamMQTTConnector (SWIFT_EXTENSION(RoamMQTTConnector)) <RoamLocationPublisher>
-- (void)publishLocationUpdateWithLocation:(CLLocation * _Nonnull)location dictionary:(NSDictionary<NSString *, id> * _Nonnull)dictionary;
-- (void)connect;
-- (void)disconnect;
+- (void)registerConnector:(id <RoamConnector> _Nonnull)connector;
+- (void)deregisterConnector;
 @end
 
 

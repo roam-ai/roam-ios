@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamMQTTConnector-Swift.h</key>
 		<data>
-		weYdSyKU2oY7vYPb0uUweWK7MGE=
+		Fe3qBGpxywcEITSesvo+CITinZ8=
 		</data>
 		<key>Headers/RoamMQTTConnector.h</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		wE2DRN3329+wGnsTaHSyWWohyh0=
+		eERAMAdOPjy8TmKqb2WAciR9fzk=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nYK7vEEwxIKpiRtzSqRxqoy38wA=
+		sYMVGDpJnRUeoNwOJ4+ZCrQTp1Q=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nYK7vEEwxIKpiRtzSqRxqoy38wA=
+		sYMVGDpJnRUeoNwOJ4+ZCrQTp1Q=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WA9pCMGqGdL/hxdRp1raOjMlJrc=
+		w8/weZiJVdmIwv3rJEIFVH5fjiw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PzPs2ToHmxiJpLVoAVhN1LcpyJLVZL758+U3T8EbOzw=
+			Q4tLQCXGjjJm5ngjZ9aoHBoPJZ2r748P3zI6F4bI3C4=
 			</data>
 		</dict>
 		<key>Headers/RoamMQTTConnector.h</key>
@@ -83,14 +83,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sLRkWyQMxDBayN2xR+eonjatSBo1UxIZPKkta7+brmA=
+			VJwXK3i+pbl1xsZo6qIaC/bmJzI5mvBhVAw3n0DbN7E=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oUmATLK7hiY7Uhb6eY/zr7Jm6PcQrEIC/RxU6uxYWcA=
+			iY3dXv7vMg1zrsgSGBbXIoi5pS9HElaPRmWApaI7B0U=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -104,14 +104,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oUmATLK7hiY7Uhb6eY/zr7Jm6PcQrEIC/RxU6uxYWcA=
+			iY3dXv7vMg1zrsgSGBbXIoi5pS9HElaPRmWApaI7B0U=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s7urzOOGEF6FDQn0x+MnDwjQJeImruDJ3SImHqF3JUs=
+			5Pj0QrufhAwKPRAg+iQtQJh/ImpcVxqMcviKES6tfPI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

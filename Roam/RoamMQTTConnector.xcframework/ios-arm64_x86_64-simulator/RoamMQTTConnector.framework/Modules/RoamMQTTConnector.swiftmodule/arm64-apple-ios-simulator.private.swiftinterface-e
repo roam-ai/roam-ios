@@ -56,22 +56,16 @@ import _SwiftConcurrencyShims
   public init(keepAliveInterval: Swift.UInt16, cleanSession: Swift.Bool, connectionTimeout: Swift.Double, autoReconnect: Swift.Bool)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class RoamMQTTConnector : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamMQTTConnector : ObjectiveC.NSObject {
   @objc public static let shared: RoamMQTTConnector.RoamMQTTConnector
+  @objc public func initalize()
   @objc public var delegate: (any RoamMQTTConnector.RoamMQTTDelegate)! {
     @objc get
     @objc set
   }
-  @objc override dynamic public init()
-  @objc public static func registerConnector(_ connector: any RoamMQTTConnector.RoamConnector)
-  @objc public static func deregisterConnector()
-  @objc public static func initalize()
+  @objc public func registerConnector(_ connector: any RoamMQTTConnector.RoamConnector)
+  @objc public func deregisterConnector()
   @objc deinit
-}
-extension RoamMQTTConnector.RoamMQTTConnector : Roam.RoamLocationPublisher {
-  @objc dynamic public func publishLocationUpdate(location: CoreLocation.CLLocation, dictionary: [Swift.String : Any])
-  @objc dynamic public func connect()
-  @objc dynamic public func disconnect()
 }
 public protocol AnyOptional {
   var isNil: Swift.Bool { get }
