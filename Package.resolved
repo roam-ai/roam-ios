@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CocoaMQTT",
+        "repositoryURL": "https://github.com/emqx/CocoaMQTT.git",
+        "state": {
+          "branch": null,
+          "revision": "aff43422925cc30b9af319f4c4dce4f52859baf4",
+          "version": "2.1.8"
+        }
+      },
+      {
+        "package": "MqttCocoaAsyncSocket",
+        "repositoryURL": "https://github.com/leeway1208/MqttCocoaAsyncSocket.git",
+        "state": {
+          "branch": null,
+          "revision": "ce3e18607fd01079495f86ff6195d8a3ca469f73",
+          "version": "1.0.8"
+        }
+      },
+      {
+        "package": "Starscream",
+        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
+        "state": {
+          "branch": null,
+          "revision": "df8d82047f6654d8e4b655d1b1525c64e1059d21",
+          "version": "4.0.4"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
