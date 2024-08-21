@@ -308,7 +308,6 @@ SWIFT_CLASS_NAMED("MqttConnectorLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
 @class NSString;
 @class NSDate;
 
@@ -715,7 +714,6 @@ SWIFT_CLASS_NAMED("MqttConnectorLocationData")
 @interface MqttConnectorLocationData : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
-
 
 @class NSString;
 @class NSDate;
