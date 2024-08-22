@@ -21,7 +21,9 @@ Pod::Spec.new do |s|
   # ======================== RoamMQTTConnector Module ========================
   s.subspec 'RoamMQTTConnector' do |mqtt|
     mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
-    mqtt.dependency 'CocoaMQTT/WebSockets'
+    # mqtt.dependency 'CocoaMQTT/WebSockets'
+    mqtt.dependency 'CocoaMQTT'
+    mqtt.dependency 'Starscream'
   end
 
   # ======================= RoamBatchConnector Module =======================
