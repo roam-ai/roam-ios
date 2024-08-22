@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
     mqtt.dependency 'roam-ios/Roam'
     mqtt.dependency 'CocoaMQTT', '~> 2.1.6'
-    mqtt.dependency 'Starscream', '-> 3.1.1'
+    mqtt.dependency 'Starscream', '-> 3.1.2'
   end
 
   # ======================= RoamBatchConnector Module =======================
