@@ -378,3 +378,11 @@ We're excited to introduce Roam iOS SDK version 0.1.26, focusing on resolving de
 2. **Module Compiler Issue Fixes:** We've addressed module compiler issues, improving the overall stability and performance of the SDK.
 
 These improvements are geared towards providing a more robust and consistent experience for developers and users alike. We're dedicated to optimizing your development process and ensuring a smoother operational experience. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+## 0.1.27
+We're excited to introduce Roam iOS SDK version 0.1.27, focusing on enhancing compatibility and refining the SDK setup. In this update, we've made the following improvements:
+
+1. **Minimum Deployment Target Update for RoamMQTTConnector:** We've updated the minimum deployment target for the RoamMQTTConnector module to iOS 13.0, ensuring compatibility with newer iOS versions.
+2. **Podspec Configuration Update:** We've refined the podspec to include only the core Roam SDK by default, simplifying the integration process for developers.
+
+These updates are designed to provide a more streamlined and efficient experience for developers. We're committed to continuously improving the Roam iOS SDK to meet your needs. Should you have any inquiries or feedback, our support team is readily available to assist you.

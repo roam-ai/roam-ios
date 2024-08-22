@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
   s.license               = { :type => 'Copyright',:text => 'Copyright (c) 2023 Roam B.V, All rights reserved.' }
+  s.default_subspec = 'Roam'
+    
     
  # ============================ Core Module ============================
   s.subspec 'Roam' do |core|
@@ -21,13 +23,14 @@ Pod::Spec.new do |s|
   # ======================== RoamMQTTConnector Module ========================
   s.subspec 'RoamMQTTConnector' do |mqtt|
     mqtt.vendored_frameworks = 'Roam/RoamMQTTConnector.xcframework'
+    mqtt.dependency 'roam-ios/Roam'
     mqtt.dependency 'CocoaMQTT/WebSockets'
   end
 
   # ======================= RoamBatchConnector Module =======================
   s.subspec 'RoamBatchConnector' do |batch|
     batch.vendored_frameworks = 'Roam/RoamBatchConnector.xcframework'
+    batch.dependency 'roam-ios/Roam'
   end
 
 end
-
