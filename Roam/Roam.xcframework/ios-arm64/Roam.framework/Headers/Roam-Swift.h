@@ -334,6 +334,9 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
+
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,

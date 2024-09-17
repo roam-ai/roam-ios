@@ -463,6 +463,11 @@ extension UIKit.UIDevice {
   @objc public var location_metadata: Swift.Dictionary<Swift.String, Any>?
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class RoamLogger {
+  public static let shared: RoamLogger
+  public func exportLogFileURL() -> Foundation.URL?
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers @objc public class RoamTripOrigin : ObjectiveC.NSObject {
   @objc public var coordinates: [Swift.Double]!
   @objc public var createdAt: Swift.String!

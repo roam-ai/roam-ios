@@ -386,3 +386,11 @@ We're excited to introduce Roam iOS SDK version 0.1.27, focusing on enhancing co
 2. **Podspec Configuration Update:** We've refined the podspec to include only the core Roam SDK by default, simplifying the integration process for developers.
 
 These updates are designed to provide a more streamlined and efficient experience for developers. We're committed to continuously improving the Roam iOS SDK to meet your needs. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+## 0.1.28
+We're pleased to announce the release of Roam iOS SDK version 0.1.28, with key fixes and enhancements aimed at improving tracking reliability and system performance. In this update, we've focused on the following areas:
+
+1. **Resolved Tracking Issues in Airplane Mode**: We've addressed an issue where location tracking wasn't functioning correctly when the device was in Airplane mode. This fix ensures that tracking continues to operate smoothly, maintaining accurate location data even in offline scenarios.
+2. **Improvements to AWSIoTDataManager Handling**: Enhancements have been made to AWSIoTDataManager, optimizing its performance and ensuring more efficient data transmission and handling. This update helps improve system stability and responsiveness during data communication.
+
+These changes reflect our ongoing commitment to providing a reliable and efficient SDK for developers. If you have any questions or need further support, our team is available to assist.

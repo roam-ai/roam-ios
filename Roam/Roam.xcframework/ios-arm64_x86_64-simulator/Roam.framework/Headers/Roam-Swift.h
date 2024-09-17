@@ -334,6 +334,9 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
+
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,
@@ -1584,6 +1587,9 @@ SWIFT_CLASS_NAMED("BatchLocation")
 @property (nonatomic, copy) NSString * _Nullable updateAt;
 @property (nonatomic) double verticalAccuracy;
 @end
+
+
+
 
 
 
