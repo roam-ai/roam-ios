@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.social_media_url      = 'https://twitter.com/roam_ai'
   s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
-  s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
+  s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :branch => 'flight-mode-test' }
   s.swift_version = '5.0'
   s.ios.deployment_target = '12.0'
   s.requires_arc          = true
