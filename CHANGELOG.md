@@ -394,3 +394,12 @@ We're pleased to announce the release of Roam iOS SDK version 0.1.28, with key f
 2. **Improvements to AWSIoTDataManager Handling**: Enhancements have been made to AWSIoTDataManager, optimizing its performance and ensuring more efficient data transmission and handling. This update helps improve system stability and responsiveness during data communication.
 
 These changes reflect our ongoing commitment to providing a reliable and efficient SDK for developers. If you have any questions or need further support, our team is available to assist.
+
+## 0.1.29
+Updates to React Native Wrapper Method
+We're excited to introduce Roam iOS SDK version 0.1.29, with a focus on enhancing our React Native support. In this update, we've made the following improvements:
+
+**React Native Wrapper Method Update**: We've updated the code for the React Native wrapper method to improve integration and streamline communication between the native iOS SDK and React Native apps. This update ensures better compatibility and smoother operation for developers using React Native.
+
+These improvements are aimed at delivering a more seamless experience for developers working with React Native and Roam SDK. As always, if you have any questions or need assistance, our support team is here to help.
+

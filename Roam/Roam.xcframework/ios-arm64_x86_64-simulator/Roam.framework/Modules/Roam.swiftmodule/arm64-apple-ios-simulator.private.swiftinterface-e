@@ -46,7 +46,7 @@ extension Swift.Optional : Roam.AnyOptional {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers public class RoamTrackingCustomMethods : ObjectiveC.NSObject {
+@_inheritsConvenienceInitializers @objc public class RoamTrackingCustomMethods : ObjectiveC.NSObject {
   public static let sharedInstance: Roam.RoamTrackingCustomMethods
   public var desiredAccuracy: Roam.LocationAccuracy?
   public var useVisits: Swift.Bool?
