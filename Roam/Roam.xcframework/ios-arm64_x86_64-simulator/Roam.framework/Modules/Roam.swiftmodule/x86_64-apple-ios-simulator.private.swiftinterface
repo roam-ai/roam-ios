@@ -4,6 +4,9 @@
 import AWSCore
 import AWSIoT
 import AWSMobileClientXCF
+import AdSupport
+import AppTrackingTransparency
+import SystemConfiguration.CaptiveNetwork
 import CommonCrypto
 import CoreBluetooth
 import CoreData
@@ -542,6 +545,21 @@ extension UIKit.UIDevice {
   @objc public var horizontal_accuracy: Swift.Bool
   @objc public var course: Swift.Bool
   @objc public var activity: Swift.Bool
+  @objc public var network_type: Swift.Bool
+  @objc public var network_state: Swift.Bool
+  @objc public var build_id: Swift.Bool
+  @objc public var kernel_version: Swift.Bool
+  @objc public var ip_address: Swift.Bool
+  @objc public var device_name: Swift.Bool
+  @objc public var system_name: Swift.Bool
+  @objc public var idfv: Swift.Bool
+  @objc public var idfa: Swift.Bool
+  @objc public var wifi_ssid: Swift.Bool
+  @objc public var locale_country: Swift.Bool
+  @objc public var locale_language: Swift.Bool
+  @objc public var carrier_name: Swift.Bool
+  @objc public var app_installation_date: Swift.Bool
+  @objc public var app_version: Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
@@ -615,6 +633,28 @@ extension UIKit.UIDevice {
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc public var batch: RoamBatchConfig?
   @objc public var speed: Swift.Int
+  @objc public var trackingMode: Swift.String
+  @objc public var appContext: Swift.String
+  @objc public var batteryStatus: Swift.String
+  @objc public var batterySaver: Swift.Bool
+  @objc public var locationPermission: Swift.Bool
+  @objc public var deviceModel: Swift.String
+  @objc public var manufacturer: Swift.String
+  @objc public var networkType: Swift.String
+  @objc public var buildID: Swift.String
+  @objc public var kernelVersion: Swift.String
+  @objc public var ipAddress: Swift.String
+  @objc public var deviceName: Swift.String
+  @objc public var systemName: Swift.String
+  @objc public var osVersion: Swift.String
+  @objc public var idfv: Swift.String
+  @objc public var idfa: Swift.String
+  @objc public var wifiSSID: Swift.String
+  @objc public var localeCountry: Swift.String
+  @objc public var localeLanguage: Swift.String
+  @objc public var carrierName: Swift.String
+  @objc public var appInstallationDate: Swift.String
+  @objc public var appVersion: Swift.String
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: RoamUser?, _ error: RoamError?) -> Swift.Void)
@@ -856,6 +896,14 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_installation_date: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var battery_remaining: Swift.Int16 {
     @objc get
     @objc set
@@ -868,6 +916,14 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var build_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var carrier_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var course: Swift.Double {
     @objc get
     @objc set
@@ -877,6 +933,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var device_model: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var device_name: Swift.String? {
     @objc get
     @objc set
   }
@@ -896,7 +956,31 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var idfa: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idfv: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ip_address: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var kernel_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_country: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_language: Swift.String? {
     @objc get
     @objc set
   }
@@ -936,7 +1020,15 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var network_state: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var network_status: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var network_type: Swift.String? {
     @objc get
     @objc set
   }
@@ -953,6 +1045,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var speed: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var system_name: Swift.String? {
     @objc get
     @objc set
   }
@@ -973,6 +1069,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var vertical_accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_ssid: Swift.String? {
     @objc get
     @objc set
   }

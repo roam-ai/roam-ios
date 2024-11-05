@@ -403,3 +403,7 @@ We're excited to introduce Roam iOS SDK version 0.1.29, with a focus on enhancin
 
 These improvements are aimed at delivering a more seamless experience for developers working with React Native and Roam SDK. As always, if you have any questions or need assistance, our support team is here to help.
 
+
+## 0.1.30-beta.1
+**Active Tracking Performance Enhancement:** We've optimized the Active tracking mode with improved algorithms for location updates, resulting in more accurate tracking and better battery efficiency. This enhancement delivers more reliable location data while maintaining optimal device performance.
+These improvements are aimed at providing developers with enhanced tracking capabilities while maintaining our commitment to efficient resource usage. As always, if you have any questions or need assistance, our support team is here to help.

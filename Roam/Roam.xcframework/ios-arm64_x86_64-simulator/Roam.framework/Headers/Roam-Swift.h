@@ -337,6 +337,7 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,
@@ -360,17 +361,28 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable app_context;
 @property (nonatomic, copy) NSString * _Nullable app_details;
 @property (nonatomic, copy) NSString * _Nullable app_id;
+@property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable device_name;
 @property (nonatomic) BOOL event_listener;
 @property (nonatomic) BOOL geofence_events;
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) double horizontal_accuracy;
+@property (nonatomic, copy) NSString * _Nullable idfa;
+@property (nonatomic, copy) NSString * _Nullable idfv;
+@property (nonatomic, copy) NSString * _Nullable ip_address;
+@property (nonatomic, copy) NSString * _Nullable kernel_version;
 @property (nonatomic) double latitude;
+@property (nonatomic, copy) NSString * _Nullable locale_country;
+@property (nonatomic, copy) NSString * _Nullable locale_language;
 @property (nonatomic) int16_t location_authorization_status;
 @property (nonatomic) BOOL location_events;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -380,16 +392,20 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) int16_t mqtt_id;
 @property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
 @property (nonatomic) BOOL nearby_events;
+@property (nonatomic, copy) NSString * _Nullable network_state;
 @property (nonatomic) BOOL network_status;
+@property (nonatomic, copy) NSString * _Nullable network_type;
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
 @property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
+@property (nonatomic, copy) NSString * _Nullable system_name;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
 @property (nonatomic) BOOL trips_events;
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
 @end
 
 
@@ -686,6 +702,28 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 @property (nonatomic) NSInteger speed;
+@property (nonatomic, copy) NSString * _Nonnull trackingMode;
+@property (nonatomic, copy) NSString * _Nonnull appContext;
+@property (nonatomic, copy) NSString * _Nonnull batteryStatus;
+@property (nonatomic) BOOL batterySaver;
+@property (nonatomic) BOOL locationPermission;
+@property (nonatomic, copy) NSString * _Nonnull deviceModel;
+@property (nonatomic, copy) NSString * _Nonnull manufacturer;
+@property (nonatomic, copy) NSString * _Nonnull networkType;
+@property (nonatomic, copy) NSString * _Nonnull buildID;
+@property (nonatomic, copy) NSString * _Nonnull kernelVersion;
+@property (nonatomic, copy) NSString * _Nonnull ipAddress;
+@property (nonatomic, copy) NSString * _Nonnull deviceName;
+@property (nonatomic, copy) NSString * _Nonnull systemName;
+@property (nonatomic, copy) NSString * _Nonnull osVersion;
+@property (nonatomic, copy) NSString * _Nonnull idfv;
+@property (nonatomic, copy) NSString * _Nonnull idfa;
+@property (nonatomic, copy) NSString * _Nonnull wifiSSID;
+@property (nonatomic, copy) NSString * _Nonnull localeCountry;
+@property (nonatomic, copy) NSString * _Nonnull localeLanguage;
+@property (nonatomic, copy) NSString * _Nonnull carrierName;
+@property (nonatomic, copy) NSString * _Nonnull appInstallationDate;
+@property (nonatomic, copy) NSString * _Nonnull appVersion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -774,6 +812,21 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL horizontal_accuracy;
 @property (nonatomic) BOOL course;
 @property (nonatomic) BOOL activity;
+@property (nonatomic) BOOL network_type;
+@property (nonatomic) BOOL network_state;
+@property (nonatomic) BOOL build_id;
+@property (nonatomic) BOOL kernel_version;
+@property (nonatomic) BOOL ip_address;
+@property (nonatomic) BOOL device_name;
+@property (nonatomic) BOOL system_name;
+@property (nonatomic) BOOL idfv;
+@property (nonatomic) BOOL idfa;
+@property (nonatomic) BOOL wifi_ssid;
+@property (nonatomic) BOOL locale_country;
+@property (nonatomic) BOOL locale_language;
+@property (nonatomic) BOOL carrier_name;
+@property (nonatomic) BOOL app_installation_date;
+@property (nonatomic) BOOL app_version;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1204,18 +1257,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)addEvents:(NSSet * _Nonnull)values;
 - (void)removeEvents:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addStopObject:(TripStop * _Nonnull)value;
+- (void)removeStopObject:(TripStop * _Nonnull)value;
+- (void)addStop:(NSSet * _Nonnull)values;
+- (void)removeStop:(NSSet * _Nonnull)values;
 @end
 
 
@@ -1595,6 +1648,7 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,
@@ -1618,17 +1672,28 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable app_context;
 @property (nonatomic, copy) NSString * _Nullable app_details;
 @property (nonatomic, copy) NSString * _Nullable app_id;
+@property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable device_name;
 @property (nonatomic) BOOL event_listener;
 @property (nonatomic) BOOL geofence_events;
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) double horizontal_accuracy;
+@property (nonatomic, copy) NSString * _Nullable idfa;
+@property (nonatomic, copy) NSString * _Nullable idfv;
+@property (nonatomic, copy) NSString * _Nullable ip_address;
+@property (nonatomic, copy) NSString * _Nullable kernel_version;
 @property (nonatomic) double latitude;
+@property (nonatomic, copy) NSString * _Nullable locale_country;
+@property (nonatomic, copy) NSString * _Nullable locale_language;
 @property (nonatomic) int16_t location_authorization_status;
 @property (nonatomic) BOOL location_events;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -1638,16 +1703,20 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) int16_t mqtt_id;
 @property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
 @property (nonatomic) BOOL nearby_events;
+@property (nonatomic, copy) NSString * _Nullable network_state;
 @property (nonatomic) BOOL network_status;
+@property (nonatomic, copy) NSString * _Nullable network_type;
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
 @property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
+@property (nonatomic, copy) NSString * _Nullable system_name;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
 @property (nonatomic) BOOL trips_events;
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
 @end
 
 
@@ -1944,6 +2013,28 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 @property (nonatomic) NSInteger speed;
+@property (nonatomic, copy) NSString * _Nonnull trackingMode;
+@property (nonatomic, copy) NSString * _Nonnull appContext;
+@property (nonatomic, copy) NSString * _Nonnull batteryStatus;
+@property (nonatomic) BOOL batterySaver;
+@property (nonatomic) BOOL locationPermission;
+@property (nonatomic, copy) NSString * _Nonnull deviceModel;
+@property (nonatomic, copy) NSString * _Nonnull manufacturer;
+@property (nonatomic, copy) NSString * _Nonnull networkType;
+@property (nonatomic, copy) NSString * _Nonnull buildID;
+@property (nonatomic, copy) NSString * _Nonnull kernelVersion;
+@property (nonatomic, copy) NSString * _Nonnull ipAddress;
+@property (nonatomic, copy) NSString * _Nonnull deviceName;
+@property (nonatomic, copy) NSString * _Nonnull systemName;
+@property (nonatomic, copy) NSString * _Nonnull osVersion;
+@property (nonatomic, copy) NSString * _Nonnull idfv;
+@property (nonatomic, copy) NSString * _Nonnull idfa;
+@property (nonatomic, copy) NSString * _Nonnull wifiSSID;
+@property (nonatomic, copy) NSString * _Nonnull localeCountry;
+@property (nonatomic, copy) NSString * _Nonnull localeLanguage;
+@property (nonatomic, copy) NSString * _Nonnull carrierName;
+@property (nonatomic, copy) NSString * _Nonnull appInstallationDate;
+@property (nonatomic, copy) NSString * _Nonnull appVersion;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2032,6 +2123,21 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL horizontal_accuracy;
 @property (nonatomic) BOOL course;
 @property (nonatomic) BOOL activity;
+@property (nonatomic) BOOL network_type;
+@property (nonatomic) BOOL network_state;
+@property (nonatomic) BOOL build_id;
+@property (nonatomic) BOOL kernel_version;
+@property (nonatomic) BOOL ip_address;
+@property (nonatomic) BOOL device_name;
+@property (nonatomic) BOOL system_name;
+@property (nonatomic) BOOL idfv;
+@property (nonatomic) BOOL idfa;
+@property (nonatomic) BOOL wifi_ssid;
+@property (nonatomic) BOOL locale_country;
+@property (nonatomic) BOOL locale_language;
+@property (nonatomic) BOOL carrier_name;
+@property (nonatomic) BOOL app_installation_date;
+@property (nonatomic) BOOL app_version;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2462,18 +2568,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)addEvents:(NSSet * _Nonnull)values;
 - (void)removeEvents:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addStopObject:(TripStop * _Nonnull)value;
+- (void)removeStopObject:(TripStop * _Nonnull)value;
+- (void)addStop:(NSSet * _Nonnull)values;
+- (void)removeStop:(NSSet * _Nonnull)values;
 @end
 
 
