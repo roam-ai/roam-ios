@@ -324,14 +324,12 @@ SWIFT_CLASS_NAMED("BatchLocation")
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic) double pace;
 @property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) double speed;
 @property (nonatomic, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, copy) NSString * _Nullable updateAt;
 @property (nonatomic) double verticalAccuracy;
 @end
-
-
-
 
 
 
@@ -471,7 +469,6 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @property (nonatomic, copy) NSString * _Nullable tripId;
 @property (nonatomic, strong) MyTrip * _Nullable trip;
 @end
-
 
 
 @protocol RoamDelegate;
@@ -702,6 +699,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 @property (nonatomic) NSInteger speed;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic, copy) NSString * _Nonnull trackingMode;
 @property (nonatomic, copy) NSString * _Nonnull appContext;
 @property (nonatomic, copy) NSString * _Nonnull batteryStatus;
@@ -1296,7 +1294,6 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic, strong) NSSet * _Nullable events;
 @property (nonatomic, strong) NSSet * _Nullable stop;
 @end
-
 
 
 
@@ -1635,14 +1632,12 @@ SWIFT_CLASS_NAMED("BatchLocation")
 @property (nonatomic) BOOL networkStatus;
 @property (nonatomic) double pace;
 @property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) double speed;
 @property (nonatomic, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, copy) NSString * _Nullable updateAt;
 @property (nonatomic) double verticalAccuracy;
 @end
-
-
-
 
 
 
@@ -1782,7 +1777,6 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @property (nonatomic, copy) NSString * _Nullable tripId;
 @property (nonatomic, strong) MyTrip * _Nullable trip;
 @end
-
 
 
 @protocol RoamDelegate;
@@ -2013,6 +2007,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 @property (nonatomic) NSInteger speed;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic, copy) NSString * _Nonnull trackingMode;
 @property (nonatomic, copy) NSString * _Nonnull appContext;
 @property (nonatomic, copy) NSString * _Nonnull batteryStatus;
@@ -2607,7 +2602,6 @@ SWIFT_CLASS_NAMED("TripsLocal")
 @property (nonatomic, strong) NSSet * _Nullable events;
 @property (nonatomic, strong) NSSet * _Nullable stop;
 @end
-
 
 
 

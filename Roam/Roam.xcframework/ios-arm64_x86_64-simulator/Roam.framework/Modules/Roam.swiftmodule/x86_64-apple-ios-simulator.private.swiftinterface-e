@@ -633,6 +633,7 @@ extension UIKit.UIDevice {
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc public var batch: Roam.RoamBatchConfig?
   @objc public var speed: Swift.Int
+  @objc public var source: Swift.String?
   @objc public var trackingMode: Swift.String
   @objc public var appContext: Swift.String
   @objc public var batteryStatus: Swift.String
@@ -850,6 +851,10 @@ extension Roam.BatchLocation {
     @objc set
   }
   @objc @NSManaged dynamic public var recordedAt: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var source: Swift.String? {
     @objc get
     @objc set
   }

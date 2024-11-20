@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Roam-Swift.h</key>
 		<data>
-		Tnij7zYE8/UTfxH520ahskQ+nqA=
+		xR/usHfsX1g5/45LdMfEYVvqDao=
 		</data>
 		<key>Headers/Roam.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		qgd4okuxqZozr8nb68kAeYOgElo=
+		hLDk+H89I4sTswCWAjJLQSDv91Y=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ApKpdTvEK5dn8DSEaZbfooGlrls=
+		X49f7FeED6zegpwmxk5M5K6xq1Y=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ApKpdTvEK5dn8DSEaZbfooGlrls=
+		X49f7FeED6zegpwmxk5M5K6xq1Y=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		Hnhsmv6UoOAiEt9jQ1fFN4YXkaw=
+		QZ3HQ3NWxR4QwNzG/vdYaV8pyI8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>RoamModel.momd/MotionModel.mom</key>
 		<data>
-		oNj7gDvMyc2A2Ou4N+C9A5dinmU=
+		N3cKI7MPljCmQ5C+J03z163TYFY=
 		</data>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<data>
-		IgtuRqdq275Iw67kiYMqfng6XZg=
+		s0nfnD8WbZaq55ghgdklK1cVPow=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NE00biZIR3zUw2HVba/YPgHH17ghvnl1Ns+RMUxhARk=
+			bnpIq2VK+/WQS/bOoAksbYB/D0g20Px1CZRAsSr1aPM=
 			</data>
 		</dict>
 		<key>Headers/Roam.h</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KYgSjf31w5o5vzJKDD1B59YO4/h2o0PEeiOMDSyYm+w=
+			CG2CAabk9j4aIvFT3dS1wRYr80cKLMx/5+NCxiUCASM=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			t381AfyOcmyyjGlcGGIqPtjsH9cjqfhwtCwOInQFOuY=
+			JRF0Vqvxefk8tBUiA7plzmRtQQCN9im62ZjAcFUtJec=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			t381AfyOcmyyjGlcGGIqPtjsH9cjqfhwtCwOInQFOuY=
+			JRF0Vqvxefk8tBUiA7plzmRtQQCN9im62ZjAcFUtJec=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			n5T2yXWfrqfG5T20LXoiWxPdekf/PA71QXuipOLX2UE=
+			cU8PXiTrKterX0Spqji0NJ2INaqD6Csw7JDHJ6xiOmo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -111,14 +111,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qwxC3/jl3YXIg03ZtK/qTn+mCC+cpvKEwoFqibeZcXc=
+			wuF/ebwalQskRFb7QasayLSywXL5PT06RQRP30ON1GI=
 			</data>
 		</dict>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TcwMYOO0maMW3UVgmtfVKL55fgd2G3J55SFfUW439UU=
+			mZJWy4azk48t9CS+HAsG1sJ1wxnb4hTm2+ygY7XSyhM=
 			</data>
 		</dict>
 	</dict>

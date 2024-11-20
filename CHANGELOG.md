@@ -407,3 +407,20 @@ These improvements are aimed at delivering a more seamless experience for develo
 ## 0.1.30-beta.1
 **Active Tracking Performance Enhancement:** We've optimized the Active tracking mode with improved algorithms for location updates, resulting in more accurate tracking and better battery efficiency. This enhancement delivers more reliable location data while maintaining optimal device performance.
 These improvements are aimed at providing developers with enhanced tracking capabilities while maintaining our commitment to efficient resource usage. As always, if you have any questions or need assistance, our support team is here to help.
+
+
+## 0.1.30-beta.2
+
+** Enhancements to Dynamic Geofence and Bug Fixes:** We're excited to introduce Roam iOS SDK version 0.1.30-beta.2, focusing on improving dynamic geofence functionality and resolving key issues. Here's what's new:
+
+**Dynamic Geofence Enhancements:**
+- Support for All Tracking Modes: Dynamic geofence now supports all three tracking modes, offering flexibility and precision for diverse use cases.
+- Visits Horizontal Accuracy Location Filter: A new filter refines visit detection based on horizontal accuracy, delivering more precise location-based insights.
+**Parameter Additions:**
+- Additional parameters have been introduced to provide greater customization, enhancing functionality for developers.
+**Bug Fixes:**
+- Initialization Issue Resolved: Fixed a bug that caused issues during initialization, ensuring improved stability and reliability of the dynamic geofence feature.
+
+These updates reflect our commitment to enhancing geofence capabilities and delivering a seamless experience. For any questions or feedback, our support team is ready to assist.
+
+

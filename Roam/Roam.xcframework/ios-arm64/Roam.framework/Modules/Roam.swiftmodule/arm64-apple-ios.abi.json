@@ -14331,6 +14331,23 @@
       },
       {
         "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "ExternalAccessory",
         "printedName": "ExternalAccessory",
         "declKind": "Import",
@@ -16002,8 +16019,8 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "Roam"
       },
@@ -42289,6 +42306,123 @@
           },
           {
             "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamLocation(py)source",
+            "mangledName": "$s4Roam0A8LocationC6sourceSSSgvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)source",
+                "mangledName": "$s4Roam0A8LocationC6sourceSSSgvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)setSource:",
+                "mangledName": "$s4Roam0A8LocationC6sourceSSSgvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A8LocationC6sourceSSSgvM",
+                "mangledName": "$s4Roam0A8LocationC6sourceSSSgvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "trackingMode",
             "printedName": "trackingMode",
             "children": [
@@ -44894,23 +45028,6 @@
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "Roam",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
         "declKind": "Import",
         "moduleName": "Roam",
         "declAttributes": [
@@ -54058,6 +54175,13 @@
       },
       {
         "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -54744,23 +54868,6 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "Roam",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
       },
       {
         "kind": "Import",
@@ -55847,6 +55954,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)BatchLocation(im)setRecordedAt:",
                 "mangledName": "$s4Roam13BatchLocationC10recordedAtSSSgvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Roam@objc(cs)BatchLocation(py)source",
+            "mangledName": "$s4Roam13BatchLocationC6sourceSSSgvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)BatchLocation(im)source",
+                "mangledName": "$s4Roam13BatchLocationC6sourceSSSgvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)BatchLocation(im)setSource:",
+                "mangledName": "$s4Roam13BatchLocationC6sourceSSSgvs",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -70567,161 +70777,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "CLLocation",
-        "printedName": "CLLocation",
-        "declKind": "Class",
-        "usr": "c:objc(cs)CLLocation",
-        "moduleName": "CoreLocation",
-        "isOpen": true,
-        "intro_iOS": "2.0",
-        "objc_name": "CLLocation",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "SynthesizedProtocol",
-          "Sendable",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CLVisit",
-        "printedName": "CLVisit",
-        "declKind": "Class",
-        "usr": "c:objc(cs)CLVisit",
-        "moduleName": "CoreLocation",
-        "isOpen": true,
-        "intro_iOS": "8.0",
-        "objc_name": "CLVisit",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "UIDevice",
         "printedName": "UIDevice",
         "children": [
@@ -70847,158 +70902,221 @@
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
       "offset": 4352,
+      "length": 18,
+      "value": "\"roamTrackingMode\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4452,
+      "length": 26,
+      "value": "\"klocationServicesEnabled\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4494,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4575,
       "length": 17,
       "value": "\"kLoggingEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4385,
+      "offset": 4608,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4457,
+      "offset": 4680,
       "length": 13,
       "value": "\"userBaseUrl\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4554,
+      "offset": 4777,
       "length": 19,
       "value": "\"lastSavedLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4670,
+      "offset": 4893,
+      "length": 16,
+      "value": "\"lastSavedVisit\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5003,
       "length": 17,
       "value": "\"USER_API_CALLED\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4703,
+      "offset": 5036,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4774,
+      "offset": 5107,
       "length": 26,
       "value": "\"customRoamTrackingOption\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4922,
+      "offset": 5234,
+      "length": 11,
+      "value": "\"idfaValue\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5322,
+      "length": 14,
+      "value": "\"kNetworkType\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5352,
+      "length": 12,
+      "value": "\"No Network\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5428,
+      "length": 26,
+      "value": "\"KLocationEventsSubscribe\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5470,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5565,
       "length": 26,
       "value": "\"isRoamMQTTPublishEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4964,
+      "offset": 5607,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5036,
+      "offset": 5679,
       "length": 26,
       "value": "\"kLocationPublishSettings\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5166,
+      "offset": 5809,
       "length": 13,
       "value": "\"MotionSpeed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "Array",
-      "offset": 5195,
+      "offset": 5838,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5367,
+      "offset": 6010,
       "length": 22,
       "value": "\"toogleNetworkEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5405,
+      "offset": 6048,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5487,
+      "offset": 6130,
       "length": 20,
       "value": "\"toogleDeviceRooted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5523,
+      "offset": 6166,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5603,
+      "offset": 6246,
       "length": 24,
       "value": "\"toogleBluetoothEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5643,
+      "offset": 6286,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5727,
+      "offset": 6370,
       "length": 32,
       "value": "\"toogleExternalAccessoryEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5775,
+      "offset": 6418,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5867,
+      "offset": 6510,
       "length": 27,
       "value": "\"toogleVerifyMotionEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5910,
+      "offset": 6553,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/IOSSecuritySuite\/RuntimeHookChecker.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/IOSSecuritySuite\/RuntimeHookChecker.swift",
       "kind": "StringLiteral",
       "offset": 366,
       "length": 8,
@@ -71278,13 +71396,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/RoamCustomTrackingUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6641,
-      "length": 3,
-      "value": "500"
-    },
-    {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Security\/LocationSpoofingDetector.swift",
       "kind": "BooleanLiteral",
       "offset": 350,
@@ -71437,6 +71548,55 @@
       "offset": 120,
       "length": 15,
       "value": "\"Roam.RoamBatchConfig\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 555,
+      "length": 4,
+      "value": "60.0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 804,
+      "length": 4,
+      "value": "25.0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2676,
+      "length": 4,
+      "value": "30.0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2752,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2788,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2867,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationFilter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3548,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Storage\/RoamTripStorageManager.swift",
@@ -71789,1134 +71949,1134 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 239,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 444,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 514,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 576,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 607,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 746,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 832,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 965,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1001,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1160,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 23,
       "value": "\"iPad Pro 11\" 2nd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1324,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1408,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1460,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1493,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1527,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1594,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1628,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1661,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1733,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1772,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1806,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1877,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1910,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1948,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1981,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2015,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2053,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2087,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2121,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2159,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2201,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2243,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2282,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2316,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2354,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2396,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2434,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2476,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2515,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2549,
       "length": 19,
       "value": "\"iPhone SE 3rd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2592,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2626,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2665,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2703,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2762,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2850,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2896,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2942,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2988,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3034,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3087,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3144,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3182,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3220,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3296,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3333,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 239,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 289,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 320,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 351,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 382,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 413,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 444,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 475,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 514,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 545,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 576,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 607,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 641,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 676,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 711,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 746,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 789,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 832,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 875,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 931,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 965,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1001,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1037,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1073,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1121,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1160,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1200,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1238,
       "length": 23,
       "value": "\"iPad Pro 11\" 2nd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1284,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1324,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1366,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1408,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1460,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1493,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1527,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1560,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1594,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1628,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1661,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1699,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1733,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1772,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1806,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1839,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1877,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1910,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1948,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 1981,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2015,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2053,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2087,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2121,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2159,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2201,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2243,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2282,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2316,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2354,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2396,
       "length": 15,
       "value": "\"iPhone 13 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2434,
       "length": 19,
       "value": "\"iPhone 13 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2476,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2515,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2549,
       "length": 19,
       "value": "\"iPhone SE 3rd gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2592,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2626,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2665,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2703,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2762,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2804,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2850,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2896,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2942,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 2988,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3034,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3087,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3144,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3182,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3220,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3258,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3296,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/UIDeviceExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
       "offset": 3333,
       "length": 16,
@@ -73224,7 +73384,7 @@
       "value": "\"Roam.RoamTripSummary\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/IOSSecuritySuite\/FishHookChecker.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/IOSSecuritySuite\/FishHookChecker.swift",
       "kind": "IntegerLiteral",
       "offset": 5451,
       "length": 3,
@@ -73247,16 +73407,30 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 26427,
+      "offset": 27125,
       "length": 18,
       "value": "\"ROAM_PUBLISH_KEY\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 26740,
+      "offset": 27190,
+      "length": 38,
+      "value": "\"Privacy - Tracking Usage Description\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
+      "kind": "StringLiteral",
+      "offset": 27524,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17814,
+      "length": 1,
+      "value": "5"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Networking\/HTTPStatusCode.swift",
@@ -75542,99 +75716,57 @@
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 870,
-      "length": 10,
-      "value": "\"CLRegion\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 12,
-      "value": "\"CLLocation\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 931,
-      "length": 9,
-      "value": "\"CLVisit\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 870,
-      "length": 10,
-      "value": "\"CLRegion\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 12,
-      "value": "\"CLLocation\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
-      "kind": "StringLiteral",
-      "offset": 931,
-      "length": 9,
-      "value": "\"CLVisit\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1325,
+      "offset": 1791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1336,
+      "offset": 1802,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1354,
+      "offset": 1820,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1370,
+      "offset": 1836,
       "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1325,
+      "offset": 1791,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1336,
+      "offset": 1802,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1354,
+      "offset": 1820,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 1370,
+      "offset": 1836,
       "length": 6,
       "value": "4"
     },
@@ -75684,678 +75816,678 @@
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
       "offset": 816,
-      "length": 30,
-      "value": "\"GeoSpark SDK not initialized\""
+      "length": 21,
+      "value": "\"SDK not initialized\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 930,
+      "offset": 921,
       "length": 48,
       "value": "\"Error publishable_key or package_name is wrong\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1046,
+      "offset": 1037,
       "length": 19,
       "value": "\"Error bad request\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1134,
+      "offset": 1125,
       "length": 20,
       "value": "\"Error unauthorized\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1225,
+      "offset": 1216,
       "length": 22,
       "value": "\"Listener not enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1324,
+      "offset": 1315,
       "length": 19,
       "value": "\"AWS delivery fail\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1424,
+      "offset": 1415,
       "length": 19,
       "value": "\"Error not updated\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1543,
+      "offset": 1534,
       "length": 16,
       "value": "\"Data not found\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1633,
+      "offset": 1624,
       "length": 17,
       "value": "\"Not Initialized\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1730,
+      "offset": 1721,
       "length": 25,
       "value": "\"Permissions not granted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1862,
+      "offset": 1853,
       "length": 52,
       "value": "\"Location services error or permissions not granted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 1991,
+      "offset": 1982,
       "length": 15,
       "value": "\"Network error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2078,
       "length": 14,
       "value": "\"Server error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2179,
+      "offset": 2170,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2270,
+      "offset": 2261,
       "length": 18,
       "value": "\"User not created\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2358,
+      "offset": 2349,
       "length": 22,
       "value": "\"Trip not yet started\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2474,
+      "offset": 2465,
       "length": 38,
       "value": "\"Multiple trips can not be subscribed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2561,
+      "offset": 2552,
       "length": 24,
       "value": "\"Trip id does not exist\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2634,
+      "offset": 2625,
       "length": 14,
       "value": "\"trip_deleted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2698,
+      "offset": 2689,
       "length": 24,
       "value": "\"Error in deleted trip.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2776,
+      "offset": 2767,
       "length": 27,
       "value": "\"Trip not started or ended\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2852,
+      "offset": 2843,
       "length": 31,
       "value": "\"Trip id already in sync queue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2930,
+      "offset": 2921,
       "length": 27,
       "value": "\"Trip synced successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 2999,
+      "offset": 2990,
       "length": 19,
       "value": "\"trip_sync_success\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3062,
+      "offset": 3053,
       "length": 17,
       "value": "\"Sync initiated.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3129,
+      "offset": 3120,
       "length": 27,
       "value": "\"Trip started successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3207,
+      "offset": 3198,
       "length": 26,
       "value": "\"Trip paused successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3282,
+      "offset": 3273,
       "length": 27,
       "value": "\"Trip resumed successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3355,
+      "offset": 3346,
       "length": 25,
       "value": "\"Trip ended successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3431,
+      "offset": 3422,
       "length": 23,
       "value": "\"Trip already Started.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3504,
+      "offset": 3495,
       "length": 21,
       "value": "\"Trip already Ended.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3576,
+      "offset": 3567,
       "length": 22,
       "value": "\"Trip already Paused.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3649,
+      "offset": 3640,
       "length": 23,
       "value": "\"Trip already Resumed.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3722,
+      "offset": 3713,
       "length": 18,
       "value": "\"Trip not started\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3787,
+      "offset": 3778,
       "length": 18,
       "value": "\"Trip Start Error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3852,
+      "offset": 3843,
       "length": 18,
       "value": "\"Trip Pause Error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3918,
+      "offset": 3909,
       "length": 19,
       "value": "\"Trip Resume Error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 3982,
+      "offset": 3973,
       "length": 16,
       "value": "\"Trip End Error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4060,
+      "offset": 4051,
       "length": 28,
       "value": "\"Offline Tracking Disabled \""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4173,
+      "offset": 4164,
       "length": 25,
       "value": "\"Accuracy filter enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4280,
+      "offset": 4271,
       "length": 26,
       "value": "\"Accuracy filter disabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4383,
+      "offset": 4374,
       "length": 29,
       "value": "\"Pub\/Sub feature not enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4500,
+      "offset": 4491,
       "length": 31,
       "value": "\"Location Tracking not enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4581,
+      "offset": 4572,
       "length": 23,
       "value": "\"Usage limit exceeded.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4654,
+      "offset": 4645,
       "length": 14,
       "value": "\"trip_started\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4718,
+      "offset": 4709,
       "length": 36,
       "value": "\"The trip is started scuccessfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4800,
+      "offset": 4791,
       "length": 13,
       "value": "\"trip_paused\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4863,
+      "offset": 4854,
       "length": 35,
       "value": "\"The trip is paused scuccessfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 4950,
+      "offset": 4941,
       "length": 14,
       "value": "\"trip_resumed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5015,
+      "offset": 5006,
       "length": 36,
       "value": "\"The trip is resumed scuccessfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5100,
+      "offset": 5091,
       "length": 12,
       "value": "\"trip_ended\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5160,
+      "offset": 5151,
       "length": 34,
       "value": "\"The trip is ended scuccessfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5241,
+      "offset": 5232,
       "length": 14,
       "value": "\"trip_created\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5306,
+      "offset": 5297,
       "length": 35,
       "value": "\"The trip is created successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5388,
+      "offset": 5379,
       "length": 14,
       "value": "\"trip_updated\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5453,
+      "offset": 5444,
       "length": 53,
       "value": "\"The trip data is updated successfully for given id.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5551,
+      "offset": 5542,
       "length": 13,
       "value": "\"trip_object\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5608,
+      "offset": 5599,
       "length": 39,
       "value": "\"The details of trip for requested id.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5692,
+      "offset": 5683,
       "length": 14,
       "value": "\"trip_summary\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5750,
+      "offset": 5741,
       "length": 36,
       "value": "\"The trip summary for requested id.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5830,
+      "offset": 5821,
       "length": 14,
       "value": "\"trip_deleted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5887,
+      "offset": 5878,
       "length": 40,
       "value": "\"The trip data is deleted for given id.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 5966,
+      "offset": 5957,
       "length": 38,
       "value": "\"This field should be a valid user id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6054,
+      "offset": 6045,
       "length": 19,
       "value": "\"trip_list_success\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6123,
+      "offset": 6114,
       "length": 60,
       "value": "\"The lists of trips for requests filter and search options.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6228,
+      "offset": 6219,
       "length": 29,
       "value": "\"Batch Count cannot be zero.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6306,
+      "offset": 6297,
       "length": 37,
       "value": "\"Accuracy or timeout cannot be zero.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6394,
+      "offset": 6385,
       "length": 54,
       "value": "\"The received location is out of set accuracy values.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6494,
+      "offset": 6485,
       "length": 23,
       "value": "\"invalid_request_error\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6567,
+      "offset": 6558,
       "length": 89,
       "value": "\"The request was unacceptable, due to missing a required parameter or invalid parameter.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6700,
+      "offset": 6691,
       "length": 13,
       "value": "\"trip.action\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6765,
+      "offset": 6756,
       "length": 56,
       "value": "\"Action cannot take place since it's an invalid action.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6895,
+      "offset": 6886,
       "length": 26,
       "value": "\"Publish and save enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 6976,
+      "offset": 6967,
       "length": 22,
       "value": "\"Publish only enabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7048,
+      "offset": 7039,
       "length": 26,
       "value": "\"Location stop publishing\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7136,
+      "offset": 7127,
       "length": 32,
       "value": "\"Subscribed events successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7226,
+      "offset": 7217,
       "length": 34,
       "value": "\"Subscribed location successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7323,
+      "offset": 7314,
       "length": 40,
       "value": "\"Subscribed users location successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7426,
+      "offset": 7417,
       "length": 34,
       "value": "\"Unsubscribed events successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7520,
+      "offset": 7511,
       "length": 36,
       "value": "\"Unsubscribed location successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7621,
+      "offset": 7612,
       "length": 42,
       "value": "\"Unsubscribed users location successfully\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7732,
+      "offset": 7723,
       "length": 44,
       "value": "\"The device is either rooted or jailbroken.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7806,
+      "offset": 7797,
       "length": 76,
       "value": "\"Network is disabled. Please enable a network connection to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 7902,
       "length": 67,
       "value": "\"Bluetooth is enabled. Please disable Bluetooth to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8016,
+      "offset": 8007,
       "length": 79,
       "value": "\"Bluetooth access is denied. Please enable Bluetooth access to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8121,
       "length": 80,
       "value": "\"Bluetooth access is unknown. Please enable Bluetooth access to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8249,
+      "offset": 8240,
       "length": 88,
       "value": "\"An external accessory is connected. Please disconnect the accessory to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8381,
+      "offset": 8372,
       "length": 61,
       "value": "\"Security exception, Motion Detection permission not granted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8487,
+      "offset": 8478,
       "length": 59,
       "value": "\"Security exception, location conflict with motion sensors\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7732,
+      "offset": 7723,
       "length": 44,
       "value": "\"The device is either rooted or jailbroken.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7806,
+      "offset": 7797,
       "length": 76,
       "value": "\"Network is disabled. Please enable a network connection to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 7911,
+      "offset": 7902,
       "length": 67,
       "value": "\"Bluetooth is enabled. Please disable Bluetooth to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8016,
+      "offset": 8007,
       "length": 79,
       "value": "\"Bluetooth access is denied. Please enable Bluetooth access to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8130,
+      "offset": 8121,
       "length": 80,
       "value": "\"Bluetooth access is unknown. Please enable Bluetooth access to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8249,
+      "offset": 8240,
       "length": 88,
       "value": "\"An external accessory is connected. Please disconnect the accessory to start tracking.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8381,
+      "offset": 8372,
       "length": 61,
       "value": "\"Security exception, Motion Detection permission not granted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/MotionStatus.swift",
       "kind": "StringLiteral",
-      "offset": 8487,
+      "offset": 8478,
       "length": 59,
       "value": "\"Security exception, location conflict with motion sensors\""
     },
@@ -76516,786 +76648,758 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1180,
-      "length": 31,
-      "value": "\"MotionLocationEventsSubscribe\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 1245,
+      "offset": 1247,
       "length": 25,
       "value": "\"MotionListenerSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1304,
+      "offset": 1306,
       "length": 29,
       "value": "\"MotionLocationUserSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1367,
+      "offset": 1369,
       "length": 27,
       "value": "\"MotionSubscribeTripStatus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1454,
+      "offset": 1456,
       "length": 3,
       "value": "\"S\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1487,
+      "offset": 1489,
       "length": 3,
       "value": "\"W\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1520,
+      "offset": 1522,
       "length": 3,
       "value": "\"R\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1553,
+      "offset": 1555,
       "length": 3,
       "value": "\"C\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1586,
+      "offset": 1588,
       "length": 3,
       "value": "\"M\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
+      "offset": 1621,
       "length": 3,
       "value": "\"A\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1652,
+      "offset": 1654,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1688,
+      "offset": 1690,
       "length": 8,
       "value": "\"manual\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1759,
+      "offset": 1761,
       "length": 16,
       "value": "\"current_motion\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 1808,
       "length": 19,
       "value": "\"CurrentConfidence\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1855,
+      "offset": 1857,
       "length": 12,
       "value": "\"stationary\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1897,
+      "offset": 1899,
       "length": 8,
       "value": "\"moving\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1963,
+      "offset": 1965,
       "length": 20,
       "value": "\"isLocationTracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2022,
+      "offset": 2024,
       "length": 22,
       "value": "\"TripLocationTracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2083,
+      "offset": 2085,
       "length": 17,
       "value": "\"currentLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2141,
       "length": 21,
       "value": "\"MotionFirstLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2199,
+      "offset": 2201,
       "length": 22,
       "value": "\"MotionInsideGeofence\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2260,
+      "offset": 2262,
       "length": 16,
       "value": "\"SetDeviceToken\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2315,
-      "length": 11,
-      "value": "\"VisitDate\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2365,
+      "offset": 2317,
       "length": 18,
       "value": "\"AccuracyFilterOn\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2422,
+      "offset": 2374,
       "length": 23,
       "value": "\"kAccuracyFilterCustom\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2484,
+      "offset": 2436,
       "length": 28,
       "value": "\"kAccuracyFilterCustomValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2551,
+      "offset": 2503,
       "length": 19,
       "value": "\"kTrackingTimeBase\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2610,
+      "offset": 2562,
       "length": 21,
       "value": "\"kIsLocationUpdating\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2670,
+      "offset": 2622,
       "length": 21,
       "value": "\"kStationaryLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2704,
       "length": 27,
       "value": "\"NetworkChangeNotification\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2831,
+      "offset": 2783,
       "length": 15,
       "value": "\"getMotionLogs\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2880,
-      "length": 16,
-      "value": "\"TrackingOption\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 2930,
+      "offset": 2832,
       "length": 33,
       "value": "\"location recorded successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2997,
+      "offset": 2899,
       "length": 9,
       "value": "\"GPSData\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3040,
+      "offset": 2942,
       "length": 26,
       "value": "\"locationPermissionStatus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3100,
+      "offset": 3002,
       "length": 14,
       "value": "\"StopTracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3148,
+      "offset": 3050,
       "length": 39,
       "value": "\"location count recorded successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3121,
       "length": 15,
       "value": "\"geospark:trip\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3255,
+      "offset": 3157,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3295,
+      "offset": 3197,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3369,
+      "offset": 3271,
       "length": 17,
       "value": "\"awsidentitypath\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3409,
+      "offset": 3311,
       "length": 16,
       "value": "\"awsIotEndPoint\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3447,
+      "offset": 3349,
       "length": 15,
       "value": "\"awsRegionType\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3484,
+      "offset": 3386,
       "length": 15,
       "value": "\"awsPassPhrase\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3530,
+      "offset": 3432,
       "length": 14,
       "value": "\"devmotionsdk\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3586,
+      "offset": 3488,
       "length": 3,
       "value": "\"B\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3616,
+      "offset": 3518,
       "length": 3,
       "value": "\"F\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3646,
+      "offset": 3548,
       "length": 3,
       "value": "\"T\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3672,
+      "offset": 3574,
       "length": 14,
       "value": "\"UserAppState\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3737,
+      "offset": 3639,
       "length": 24,
       "value": "\"offlinetrackingenabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3821,
+      "offset": 3723,
       "length": 18,
       "value": "\"locationCountSDK\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3874,
+      "offset": 3776,
       "length": 26,
       "value": "\"LocationCountStartedDate\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3935,
+      "offset": 3837,
       "length": 18,
       "value": "\"location_tracker\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3993,
+      "offset": 3895,
       "length": 22,
       "value": "\"locationCountSDKTemp\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4054,
+      "offset": 3956,
       "length": 30,
       "value": "\"LocationCountStartedDateTemp\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4123,
+      "offset": 4025,
       "length": 23,
       "value": "\"locationCountUpdating\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4185,
+      "offset": 4087,
       "length": 22,
       "value": "\"currentLocationTimer\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4246,
+      "offset": 4148,
       "length": 24,
       "value": "\"updateLocationMetaData\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4309,
+      "offset": 4211,
       "length": 29,
       "value": "\"updateLocationMetaDataValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4402,
+      "offset": 4304,
       "length": 32,
       "value": "\"shadow_state_location_tracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4474,
+      "offset": 4376,
       "length": 22,
       "value": "\"shadow_state_pub_sub\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4536,
+      "offset": 4438,
       "length": 40,
       "value": "\"shadow_state_location_tracking_changed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4616,
+      "offset": 4518,
       "length": 30,
       "value": "\"shadow_state_pub_sub_changed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4718,
+      "offset": 4620,
       "length": 21,
       "value": "\"LocationPublishSave\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4784,
+      "offset": 4686,
       "length": 26,
       "value": "\"LocationPublishMeta_data\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4854,
+      "offset": 4756,
       "length": 24,
       "value": "\"LocationPublishuser_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4922,
+      "offset": 4824,
       "length": 23,
       "value": "\"LocationPublishapp_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4989,
+      "offset": 4891,
       "length": 28,
       "value": "\"LocationPublishrecorded_at\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5061,
+      "offset": 4963,
       "length": 26,
       "value": "\"LocationPublishtz_offset\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5131,
+      "offset": 5033,
       "length": 32,
       "value": "\"LocationPublishgeofence_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5207,
+      "offset": 5109,
       "length": 29,
       "value": "\"LocationPublishtrips_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5280,
+      "offset": 5182,
       "length": 32,
       "value": "\"LocationPublishlocation_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5356,
+      "offset": 5258,
       "length": 30,
       "value": "\"LocationPublishnearby_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5430,
+      "offset": 5332,
       "length": 34,
       "value": "\"LocationPublishlocation_listener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5508,
+      "offset": 5410,
       "length": 31,
       "value": "\"LocationPublishevent_listener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5583,
+      "offset": 5485,
       "length": 28,
       "value": "\"LocationPublishapp_context\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5655,
+      "offset": 5557,
       "length": 31,
       "value": "\"LocationPublishnetwork_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5730,
+      "offset": 5632,
       "length": 27,
       "value": "\"LocationPublishgps_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5801,
+      "offset": 5703,
       "length": 36,
       "value": "\"LocationPublishlocation_permission\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5881,
+      "offset": 5783,
       "length": 31,
       "value": "\"LocationPublishbattery_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 5956,
+      "offset": 5858,
       "length": 30,
       "value": "\"LocationPublishairplane_mode\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6030,
+      "offset": 5932,
       "length": 30,
       "value": "\"LocationPublishbattery_saver\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6104,
+      "offset": 6006,
       "length": 34,
       "value": "\"LocationPublishbattery_remaining\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6182,
+      "offset": 6084,
       "length": 29,
       "value": "\"LocationPublishdevice_model\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6255,
+      "offset": 6157,
       "length": 36,
       "value": "\"LocationPublishdevice_manufacturer\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6335,
+      "offset": 6237,
       "length": 27,
       "value": "\"LocationPublishos_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6406,
+      "offset": 6308,
       "length": 30,
       "value": "\"LocationPublishtracking_mode\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6480,
+      "offset": 6382,
       "length": 25,
       "value": "\"LocationPublishaltitude\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6549,
+      "offset": 6451,
       "length": 22,
       "value": "\"LocationPublishspeed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6615,
+      "offset": 6517,
       "length": 34,
       "value": "\"LocationPublishvertical_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6693,
+      "offset": 6595,
       "length": 36,
       "value": "\"LocationPublishhorizontal_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6773,
+      "offset": 6675,
       "length": 23,
       "value": "\"LocationPublishcourse\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6840,
+      "offset": 6742,
       "length": 25,
       "value": "\"LocationPublishactivity\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6909,
+      "offset": 6811,
       "length": 20,
       "value": "\"LimitExceedMessage\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 6973,
+      "offset": 6875,
       "length": 30,
       "value": "\"UpdateLocationWhenStationary\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7047,
+      "offset": 6949,
       "length": 35,
       "value": "\"UpdateLocationWhenStationaryValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7126,
+      "offset": 7028,
       "length": 21,
       "value": "\"RoamSDKVersionValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7191,
+      "offset": 7093,
       "length": 26,
       "value": "\"LocationHourlyCountValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7262,
+      "offset": 7164,
       "length": 25,
       "value": "\"CustomTimeFirstLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7333,
+      "offset": 7235,
       "length": 22,
       "value": "\"kBatchReceiverConfig\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7399,
+      "offset": 7301,
       "length": 33,
       "value": "\"BatchReceiverConfigNetworkState\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7476,
+      "offset": 7378,
       "length": 31,
       "value": "\"BatchReceiverConfigBatchCount\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7551,
+      "offset": 7453,
       "length": 32,
       "value": "\"BatchReceiverConfigBatchWindow\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7627,
+      "offset": 7529,
       "length": 36,
       "value": "\"BatchReceiverConfigBatchWindowDate\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7708,
+      "offset": 7610,
       "length": 24,
       "value": "\"LocationReceiverConfig\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7776,
+      "offset": 7678,
       "length": 32,
       "value": "\"LocationReceiverConfigAccuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7852,
+      "offset": 7754,
       "length": 31,
       "value": "\"LocationReceiverConfigTimeout\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 7927,
+      "offset": 7829,
       "length": 31,
       "value": "\"LocationReceiverConfigDiscard\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8002,
+      "offset": 7904,
       "length": 28,
       "value": "\"LocationReceiverConfigDate\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8074,
+      "offset": 7976,
       "length": 32,
       "value": "\"LocationReceiverConfigDateBool\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 8150,
+      "offset": 8052,
       "length": 26,
       "value": "\"ActivityMotionPermission\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 8220,
-      "length": 33,
-      "value": "\"klocationServicesEnabledManager\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
@@ -77326,7 +77430,7 @@
       "value": "\"Roam.RoamLocation\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DispatchQueue.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DispatchQueue.swift",
       "kind": "FloatLiteral",
       "offset": 226,
       "length": 3,
@@ -77466,7 +77570,7 @@
       "value": "\"Roam.UserResponeSuccess\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/CLLocation + Extension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/CLLocation + Extension.swift",
       "kind": "FloatLiteral",
       "offset": 643,
       "length": 3,
@@ -77487,42 +77591,42 @@
       "value": "\"Roam.RoamTripDestination\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "StringLiteral",
       "offset": 375,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 444,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "StringLiteral",
       "offset": 478,
       "length": 32,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "StringLiteral",
       "offset": 743,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "IntegerLiteral",
       "offset": 812,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Extensions\/DateExtension.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/DateExtension.swift",
       "kind": "StringLiteral",
       "offset": 846,
       "length": 24,
