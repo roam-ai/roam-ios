@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RoamBatchConnector
 import CoreData
 import CoreLocation
@@ -42,6 +42,14 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_installation_date: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var battery_remaining: Swift.Int16 {
     @objc get
     @objc set
@@ -54,6 +62,14 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var build_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var carrier_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var course: Swift.Double {
     @objc get
     @objc set
@@ -63,6 +79,10 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var device_model: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var device_name: Swift.String? {
     @objc get
     @objc set
   }
@@ -82,7 +102,31 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var idfa: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idfv: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ip_address: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var kernel_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_country: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_language: Swift.String? {
     @objc get
     @objc set
   }
@@ -118,7 +162,15 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var network_state: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var network_status: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var network_type: Swift.String? {
     @objc get
     @objc set
   }
@@ -146,6 +198,10 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var system_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var tracking_mode: Swift.String? {
     @objc get
     @objc set
@@ -163,6 +219,10 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var vertical_accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_ssid: Swift.String? {
     @objc get
     @objc set
   }

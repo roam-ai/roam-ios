@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name Roam
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AWSCore
 import AWSIoT
 import AWSMobileClientXCF
@@ -19,6 +20,7 @@ import ExternalAccessory
 import Foundation
 import MachO
 import Network
+import OSLog
 import ObjectiveC
 @_exported import Roam
 import Swift
@@ -31,11 +33,19 @@ import _SwiftConcurrencyShims
 public protocol AnyOptional {
   var isNil: Swift.Bool { get }
 }
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional : Roam.AnyOptional {
   public var isNil: Swift.Bool {
     get
   }
 }
+#else
+extension Swift.Optional : Roam.AnyOptional {
+  public var isNil: Swift.Bool {
+    get
+  }
+}
+#endif
 @objc public enum LocationAccuracy : Swift.Int {
   case kCLLocationAccuracyBestForNavigation = 1
   case kCLLocationAccuracyBest
@@ -313,8 +323,8 @@ public enum IntegrityCheckerImageTarget {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationBatchSubscriber : ObjectiveC.NSObject {
-  public static let shared: Roam.RoamLocationBatchSubscriber
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationBatchDispatcher : ObjectiveC.NSObject {
+  public static let shared: Roam.RoamLocationBatchDispatcher
   public var publishLocationUpdate: ((_ json: Swift.String, _ publishKey: Swift.String) -> ())?
   public var didChangeNetwork: ((_ status: Swift.String) -> ())?
   public var stoppedTrackingCallback: (() -> ())?
@@ -368,7 +378,7 @@ public enum FailedCheck : Swift.CaseIterable {
   public static func == (a: Roam.FailedCheck, b: Roam.FailedCheck) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public typealias AllCases = [Roam.FailedCheck]
-  public static var allCases: [Roam.FailedCheck] {
+  nonisolated public static var allCases: [Roam.FailedCheck] {
     get
   }
   public var hashValue: Swift.Int {
@@ -405,8 +415,8 @@ public enum FailedCheck : Swift.CaseIterable {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationSubscriber : ObjectiveC.NSObject {
-  public static let shared: Roam.RoamLocationSubscriber
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationCustomMqttDispatcher : ObjectiveC.NSObject {
+  public static let shared: Roam.RoamLocationCustomMqttDispatcher
   public var publishLocationUpdate: ((_ location: CoreLocation.CLLocation, _ dictionary: [Swift.String : Any]) -> ())?
   public var connectCustomMQTT: (() -> ())?
   public var disconnectCustomMQTT: (() -> ())?
@@ -421,7 +431,7 @@ public enum Model : Swift.String {
   }
 }
 extension UIKit.UIDevice {
-  @_Concurrency.MainActor(unsafe) public var type: Roam.Model {
+  @_Concurrency.MainActor @preconcurrency public var type: Roam.Model {
     get
   }
 }
@@ -565,6 +575,8 @@ extension UIKit.UIDevice {
   @objc public var app_installation_date: Swift.Bool
   @objc public var app_version: Swift.Bool
   @objc override dynamic public init()
+  public func enableAll()
+  public func disableAll()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamActiveTripResponse : ObjectiveC.NSObject {
@@ -801,11 +813,19 @@ extension Roam.IOSSecuritySuite {
   @objc final public let message: Swift.String?
   @objc deinit
 }
+#if compiler(>=5.3) && $NoncopyableGenerics
 extension Swift.Optional {
   public var description: Swift.String {
     get
   }
 }
+#else
+extension Swift.Optional {
+  public var description: Swift.String {
+    get
+  }
+}
+#endif
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTripSync : ObjectiveC.NSObject {
   @objc public var code: Foundation.NSNumber?
   @objc public var message: Swift.String?
@@ -941,6 +961,10 @@ extension Roam.MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var carrier_name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var centroid: Swift.String? {
     @objc get
     @objc set
   }

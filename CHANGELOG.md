@@ -423,4 +423,11 @@ These improvements are aimed at providing developers with enhanced tracking capa
 
 These updates reflect our commitment to enhancing geofence capabilities and delivering a seamless experience. For any questions or feedback, our support team is ready to assist.
 
+## 0.1.30-beta.3
+** Framework Update for Xcode 16 Compatibility** 
 
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.3, focusing on ensuring compatibility with the latest development tools. Here's what's new:
+
+Updated Framework for Xcode 16:
+The framework has been updated to support Xcode 16, ensuring seamless integration and optimal performance with the latest version of Apple's development environment.
+This update reflects our commitment to keeping the SDK compatible with the latest tools and technologies. If you have any questions or feedback, our support team is readily available to assist.

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/Roam-Swift.h</key>
 		<data>
-		F+OZWJMdkTwX2Rz1frtA8ZzKPAc=
+		0NMCzH0IGX+m7Fyt9DwNHq2wvlc=
 		</data>
 		<key>Headers/Roam.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Yspsdkk6b2/dEke/vRsc9HlPLmk=
+		saeioJHPH0NJoeotThRiB+KGIwk=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kR1CyWwZGdu12l8E+Ld7XBj5tDk=
+		f0FlG5xuwBMnWoiLUebo+cmIOHg=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		xk5Hf+JDp039K6hfGXhWE3eW3RI=
+		UjtqE+O4OFa2GQMeftcEgm8p+b8=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		fmmwEu/Y1cN5DXFDsb+kKhr18xo=
+		nx8CX5bBE0J8ZiTtmnOuinIxZPw=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		xk5Hf+JDp039K6hfGXhWE3eW3RI=
+		UjtqE+O4OFa2GQMeftcEgm8p+b8=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZO1qYiVSDNGUwhl1h8gH3GZxRVA=
+		zKmkO+uX2SLphEC4CmGhSzKgwQw=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		RDlL9BoY/8K1ffJpTaz/C/CLY0I=
+		dnyCq466+oOBplSIgslk8IrLnBw=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		g2Jv0wk3UhgkGJnglFEehxK0UIU=
+		k+kXTXR+tvZafzPsQQ6j7Dyed7s=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		+tY5pUlRPuSgD4xdPD7xIjl8CQI=
+		D/HHxm76JC/+WTAHcGQRGRDha8I=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		g2Jv0wk3UhgkGJnglFEehxK0UIU=
+		k+kXTXR+tvZafzPsQQ6j7Dyed7s=
 		</data>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		SqJj/HDAUrSjS95C3SA5Yf+uy5A=
+		pqHpegm9Q1UHBtbLSp9ETgW15Ug=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>RoamModel.momd/MotionModel.mom</key>
 		<data>
-		N3cKI7MPljCmQ5C+J03z163TYFY=
+		LK12L51teng3yXXaGRQWiQi/UaM=
 		</data>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<data>
-		s0nfnD8WbZaq55ghgdklK1cVPow=
+		4hw1Y/+DB2HPbmF8xJNmpu3Q5X4=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			JupIKFWOwAzxD/1r0/L2P1qhxeMU2cpE1CyWX4+j6lk=
+			FjHtxt7KzJajngy3WXewfi9y328Pa9koXq4b8vTYqMI=
 			</data>
 		</dict>
 		<key>Headers/Roam.h</key>
@@ -89,70 +89,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			N5CaaKoHMSzfkD3LPUCIZTwM0lYMOjCnsmKTKnHQG8E=
+			TVZp+tvJ5pUHzY1V45aIVu8Pevb6pv75EZHDo1UOnLo=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			paIgTEbgpN1ABvNb/wQfSLnwH6TMfBE/mtbWv0VsC7w=
+			nLDreMmJM6dovYkml5YCJ/H6q35sXpySJZ9hcesS4TI=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wa813yudA2ppLarwcvYeGfr8tByDpOrTbRN5UNZafxw=
+			FGoDIzet1/SZCE8QvHV8a1gQ8gxneo/6Bq3+bwfINk0=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			paIgTEbgpN1ABvNb/wQfSLnwH6TMfBE/mtbWv0VsC7w=
+			nLDreMmJM6dovYkml5YCJ/H6q35sXpySJZ9hcesS4TI=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oa+xwK+XYhV+A+5JSwCQQ7FMoXt68zIUp3JnjV+gWVQ=
+			TWNpq+Jbsl5ZwMd+tAV2PUDgpigWifpfUjlGb2AL0Ms=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8Jm3jS/iiAItKZeD6SLiYiXqUaMrryWgEhV7bERwxKw=
+			/7vPhcorBae0QiJ8GomVapH7ActijKpbt7PSqOw+osY=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			am+9IQtqb69E7X8HNE22xCOzgyOzvmf3dvDWJyDm2xM=
+			sY7JweLhq3/I0iU8AQAjwmW7RFLdaeDMvg1qgwB+ufg=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VYKsR+SDbjzIF3QrS8xZ+8OrXGvVA4IqdBSDic7NmH4=
+			WEB+KPyyhRdT7WEiYpMQyBiozQmsgaJmIHOkiPsuVnQ=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			am+9IQtqb69E7X8HNE22xCOzgyOzvmf3dvDWJyDm2xM=
+			sY7JweLhq3/I0iU8AQAjwmW7RFLdaeDMvg1qgwB+ufg=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			LTbA4aWcs557/hVl9vgYSZe9SZCoQ+7MAJqA/lw+2cg=
+			l8eezJ7FLdrLTXsrPW0qvGlKguZTlKNQKPXiQbk+5J0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,14 +166,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wuF/ebwalQskRFb7QasayLSywXL5PT06RQRP30ON1GI=
+			x7+LgCDYczud+Dkcaj49QYcdUjrMgkFhjdl2DyVgMbY=
 			</data>
 		</dict>
 		<key>RoamModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mZJWy4azk48t9CS+HAsG1sJ1wxnb4hTm2+ygY7XSyhM=
+			/DYpDPtWDQ6cH4AiTHs19a9RL+JQQe7GxauhiHP36HE=
 			</data>
 		</dict>
 	</dict>
