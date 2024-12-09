@@ -431,3 +431,14 @@ We're excited to introduce Roam iOS SDK version 0.1.30-beta.3, focusing on ensur
 Updated Framework for Xcode 16:
 The framework has been updated to support Xcode 16, ensuring seamless integration and optimal performance with the latest version of Apple's development environment.
 This update reflects our commitment to keeping the SDK compatible with the latest tools and technologies. If you have any questions or feedback, our support team is readily available to assist.
+
+## 0.1.30-beta.4
+** Enhancements in Location Precision and Data Enrichment ** 
+
+We're thrilled to present Roam iOS SDK version 0.1.30-beta.4, introducing new features to improve location accuracy and data collection. Here's what's new:
+
+** Data Enrichment** :Enhanced data collection capabilities to gather comprehensive device data from both Android and iOS platforms, enabling richer insights.
+
+** Centroid Method** :Introduced a centroid calculation method to derive a representative central coordinate from clusters of geographical positions, offering a more reliable reference point.
+
+These updates are designed to provide a more accurate and enriched tracking experience. If you have any questions, concerns, or feedback, our support team is always here to assist.

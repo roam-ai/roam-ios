@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamMQTTConnector-Swift.h</key>
 		<data>
-		BY+zV29Xz/9/GVj11zwkk8URjKc=
+		o+kJQu81g4py1n9u9+sKMRVztAo=
 		</data>
 		<key>Headers/RoamMQTTConnector.h</key>
 		<data>
@@ -18,19 +18,19 @@
 		</data>
 		<key>MQTTConnectorModel.momd/MQTTConnectorModel.mom</key>
 		<data>
-		885o/+Lyzokfx6POgqQaENQcqPI=
+		ZN8DAl4jOxU/Hfx98OMPZgCpe1g=
 		</data>
 		<key>MQTTConnectorModel.momd/VersionInfo.plist</key>
 		<data>
-		mDIFapkozMjESE6CrStOcNOpe50=
+		mM9QIkTM2QMQJNpRyM6wBKHSyQg=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		MsG1sOc+hkZ5P+h6weXB5N2d9JE=
+		l2SBU2dO7nrUjxMI0rR5b+o00L8=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		l28BhBeVc9qNDMER2k5SzKpmg+w=
+		s3ndZzrEO7D91lViPxMQ5CGAlF0=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,19 +38,19 @@
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		l28BhBeVc9qNDMER2k5SzKpmg+w=
+		s3ndZzrEO7D91lViPxMQ5CGAlF0=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		+xr2+WaH/XyQ0BOTDUOAsep9TBE=
+		T0R0YgaHo1AlbTBGiBrPsC1y0II=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		MsG1sOc+hkZ5P+h6weXB5N2d9JE=
+		l2SBU2dO7nrUjxMI0rR5b+o00L8=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		slq3224sRcBFSw/Xj4Ncj72YZUE=
+		mS8kiD58TBATSRmqFQFTF5Nt854=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		slq3224sRcBFSw/Xj4Ncj72YZUE=
+		mS8kiD58TBATSRmqFQFTF5Nt854=
 		</data>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		vfYyYo9J9MvvJrxowXdUYDeFl0w=
+		EsSs5Q6elvC4/Gtw/e35RrcB/BM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5tuoPK2cHKPIJ2bLNW/W9N5sq5A5bOmQJLMFAz6s/Xg=
+			vgq+sM/mycq5MGcr/GAtL6YEUyRAuQQq6Z2HbxSnsw0=
 			</data>
 		</dict>
 		<key>Headers/RoamMQTTConnector.h</key>
@@ -89,28 +89,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R5uuWkRGrjj8in/1qdBpNM7NODqjJ3SsmiX2+5RCiRU=
+			qJU4Oo8kyJSot3CrKZLTtmUiodY0PkU+0H6jzh6dYPU=
 			</data>
 		</dict>
 		<key>MQTTConnectorModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hwX6uuDVsfgMpHIPuw6sYJNw88p8l+kYnjmirUMiKko=
+			S185K0D0berQ6ha2WnfJrAF9ETRPqcOK0IhEI+zfWvs=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fcuqJggJhywo2xzWMbFUIM8ayO8Y9Prjh+K7fVUX03o=
+			/oO9/VpBNStEswJRXjIx+1jHesy82su+O1sgzPdDkqM=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qw9nXuSxXDpdzL3wQv7yMIhSnu3Gs96SguC7iHOw4OI=
+			BhXL2Cq7lbcI49o/iId7zl1H7NNQetP9UNfi23yLJTo=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -124,28 +124,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qw9nXuSxXDpdzL3wQv7yMIhSnu3Gs96SguC7iHOw4OI=
+			BhXL2Cq7lbcI49o/iId7zl1H7NNQetP9UNfi23yLJTo=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeHpzR/8MaXQCjnMH7+baJNtlNHR8YKMS+5RiaMscw4=
+			cx+J50fDevH2fndPUxbUV3FU6z7I4ItrGPzprKDNDwI=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fcuqJggJhywo2xzWMbFUIM8ayO8Y9Prjh+K7fVUX03o=
+			/oO9/VpBNStEswJRXjIx+1jHesy82su+O1sgzPdDkqM=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILeH7gOgAqs5MKS3uDlG33AY0o3khk3TiCAH4eGxUGM=
+			2bIeHkCOtpUkJwjLL3oIg5L2gAcs3CplBR0svgBxuRs=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -159,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILeH7gOgAqs5MKS3uDlG33AY0o3khk3TiCAH4eGxUGM=
+			2bIeHkCOtpUkJwjLL3oIg5L2gAcs3CplBR0svgBxuRs=
 			</data>
 		</dict>
 		<key>Modules/RoamMQTTConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBXLY1qa162ZSwEgqoGW6zl89vLsfuVX5brKuBE60JY=
+			iZuBD7yrUG/fE4i3GtZYx+26JusLhYPwFMbX1vCikrc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

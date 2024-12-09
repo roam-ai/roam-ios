@@ -78,6 +78,16 @@ extension Swift.Optional : Roam.AnyOptional {
   @objc override dynamic public init()
   @objc deinit
 }
+@_hasMissingDesignatedInitializers @objc public class RoamCentroid : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers @objc public class Position : ObjectiveC.NSObject, Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
   case failedToCreateWithHostname(Swift.String, Swift.Int32)
@@ -574,6 +584,7 @@ extension UIKit.UIDevice {
   @objc public var carrier_name: Swift.Bool
   @objc public var app_installation_date: Swift.Bool
   @objc public var app_version: Swift.Bool
+  @objc public var centroid: Swift.Bool
   @objc override dynamic public init()
   public func enableAll()
   public func disableAll()
@@ -672,6 +683,7 @@ extension UIKit.UIDevice {
   @objc public var carrierName: Swift.String
   @objc public var appInstallationDate: Swift.String
   @objc public var appVersion: Swift.String
+  @objc public var centroid: Roam.RoamCentroid?
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: Roam.RoamUser?, _ error: Roam.RoamError?) -> Swift.Void)
@@ -964,7 +976,7 @@ extension Roam.MqttLocationData {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var centroid: Swift.String? {
+  @objc @NSManaged dynamic public var centroid: Foundation.Data? {
     @objc get
     @objc set
   }

@@ -70,6 +70,10 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var centroid: Foundation.Data? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var course: Swift.Double {
     @objc get
     @objc set

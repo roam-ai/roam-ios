@@ -2276,6 +2276,521 @@
           },
           {
             "kind": "Var",
+            "name": "app_context",
+            "printedName": "app_context",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)app_context",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_contextSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)app_context",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_contextSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setApp_context:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_contextSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_details",
+            "printedName": "app_details",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)app_details",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_detailsSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)app_details",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_detailsSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setApp_details:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_detailsSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_id",
+            "printedName": "app_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)app_id",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6app_idSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)app_id",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6app_idSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setApp_id:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6app_idSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_installation_date",
+            "printedName": "app_installation_date",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)app_installation_date",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC21app_installation_dateSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)app_installation_date",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC21app_installation_dateSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setApp_installation_date:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC21app_installation_dateSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "app_version",
+            "printedName": "app_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)app_version",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_versionSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)app_version",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_versionSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setApp_version:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11app_versionSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "battery_remaining",
             "printedName": "battery_remaining",
             "children": [
@@ -2342,6 +2857,85 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setBattery_remaining:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17battery_remainings5Int16Vvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "battery_saver",
+            "printedName": "battery_saver",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)battery_saver",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13battery_saverSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)battery_saver",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13battery_saverSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setBattery_saver:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13battery_saverSbvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -2445,6 +3039,315 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setBattery_status:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14battery_statusSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "build_id",
+            "printedName": "build_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)build_id",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8build_idSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)build_id",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8build_idSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setBuild_id:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8build_idSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "carrier_name",
+            "printedName": "carrier_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)carrier_name",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12carrier_nameSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)carrier_name",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12carrier_nameSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setCarrier_name:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12carrier_nameSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "centroid",
+            "printedName": "centroid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)centroid",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8centroid10Foundation0F0VSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)centroid",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8centroid10Foundation0F0VSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setCentroid:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8centroid10Foundation0F0VSgvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -2640,6 +3543,473 @@
           },
           {
             "kind": "Var",
+            "name": "device_manufacturer",
+            "printedName": "device_manufacturer",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)device_manufacturer",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC19device_manufacturerSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)device_manufacturer",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC19device_manufacturerSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setDevice_manufacturer:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC19device_manufacturerSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device_model",
+            "printedName": "device_model",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)device_model",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12device_modelSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)device_model",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12device_modelSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setDevice_model:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12device_modelSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device_name",
+            "printedName": "device_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)device_name",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11device_nameSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)device_name",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11device_nameSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setDevice_name:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11device_nameSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "event_listener",
+            "printedName": "event_listener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)event_listener",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14event_listenerSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)event_listener",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14event_listenerSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setEvent_listener:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14event_listenerSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "geofence_events",
+            "printedName": "geofence_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)geofence_events",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15geofence_eventsSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)geofence_events",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15geofence_eventsSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setGeofence_events:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15geofence_eventsSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "gps_status",
             "printedName": "gps_status",
             "children": [
@@ -2798,6 +4168,315 @@
           },
           {
             "kind": "Var",
+            "name": "idfa",
+            "printedName": "idfa",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)idfa",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfaSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)idfa",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfaSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setIdfa:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfaSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "idfv",
+            "printedName": "idfv",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)idfv",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfvSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)idfv",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfvSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setIdfv:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC4idfvSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ip_address",
+            "printedName": "ip_address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)ip_address",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10ip_addressSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)ip_address",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10ip_addressSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setIp_address:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10ip_addressSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "isOfflineData",
             "printedName": "isOfflineData",
             "children": [
@@ -2877,6 +4556,109 @@
           },
           {
             "kind": "Var",
+            "name": "kernel_version",
+            "printedName": "kernel_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)kernel_version",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14kernel_versionSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)kernel_version",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14kernel_versionSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setKernel_version:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14kernel_versionSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "latitude",
             "printedName": "latitude",
             "children": [
@@ -2943,6 +4725,552 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLatitude:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8latitudeSdvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale_country",
+            "printedName": "locale_country",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)locale_country",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14locale_countrySSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)locale_country",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14locale_countrySSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocale_country:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14locale_countrySSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale_language",
+            "printedName": "locale_language",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)locale_language",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15locale_languageSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)locale_language",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15locale_languageSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocale_language:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15locale_languageSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_authorization_status",
+            "printedName": "location_authorization_status",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int16",
+                "printedName": "Swift.Int16",
+                "usr": "s:s5Int16V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)location_authorization_status",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC29location_authorization_statuss5Int16Vvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)location_authorization_status",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC29location_authorization_statuss5Int16Vvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocation_authorization_status:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC29location_authorization_statuss5Int16Vvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_events",
+            "printedName": "location_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)location_events",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15location_eventsSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)location_events",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15location_eventsSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocation_events:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC15location_eventsSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_id",
+            "printedName": "location_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)location_id",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11location_idSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)location_id",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11location_idSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocation_id:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11location_idSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "location_listener",
+            "printedName": "location_listener",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)location_listener",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17location_listenerSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)location_listener",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17location_listenerSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setLocation_listener:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17location_listenerSbvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -3114,6 +5442,109 @@
           },
           {
             "kind": "Var",
+            "name": "metadata",
+            "printedName": "metadata",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)metadata",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8metadata10Foundation0F0VSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)metadata",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8metadata10Foundation0F0VSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setMetadata:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC8metadata10Foundation0F0VSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "mqttLocation_time",
             "printedName": "mqttLocation_time",
             "children": [
@@ -3217,6 +5648,188 @@
           },
           {
             "kind": "Var",
+            "name": "nearby_events",
+            "printedName": "nearby_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)nearby_events",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13nearby_eventsSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)nearby_events",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13nearby_eventsSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setNearby_events:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13nearby_eventsSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "network_state",
+            "printedName": "network_state",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)network_state",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13network_stateSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)network_state",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13network_stateSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setNetwork_state:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC13network_stateSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "network_status",
             "printedName": "network_status",
             "children": [
@@ -3283,6 +5896,212 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setNetwork_status:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC14network_statusSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "network_type",
+            "printedName": "network_type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)network_type",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12network_typeSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)network_type",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12network_typeSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setNetwork_type:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12network_typeSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "os_version",
+            "printedName": "os_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)os_version",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10os_versionSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)os_version",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10os_versionSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setOs_version:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC10os_versionSSSgvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -3399,6 +6218,212 @@
           },
           {
             "kind": "Var",
+            "name": "sdk_version",
+            "printedName": "sdk_version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)sdk_version",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11sdk_versionSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)sdk_version",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11sdk_versionSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setSdk_version:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11sdk_versionSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "source",
+            "printedName": "source",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)source",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6sourceSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)source",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6sourceSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setSource:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC6sourceSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "speed",
             "printedName": "speed",
             "children": [
@@ -3465,6 +6490,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setSpeed:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC5speeds5Int16Vvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "system_name",
+            "printedName": "system_name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)system_name",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11system_nameSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)system_name",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11system_nameSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setSystem_name:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC11system_nameSSSgvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -3581,6 +6709,291 @@
           },
           {
             "kind": "Var",
+            "name": "trips_events",
+            "printedName": "trips_events",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)trips_events",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12trips_eventsSbvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)trips_events",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12trips_eventsSbvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setTrips_events:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC12trips_eventsSbvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tz_offset",
+            "printedName": "tz_offset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)tz_offset",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9tz_offsetSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)tz_offset",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9tz_offsetSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setTz_offset:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9tz_offsetSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "user_id",
+            "printedName": "user_id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)user_id",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC7user_idSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)user_id",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC7user_idSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setUser_id:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC7user_idSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "vertical_accuracy",
             "printedName": "vertical_accuracy",
             "children": [
@@ -3647,6 +7060,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setVertical_accuracy:",
                 "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17vertical_accuracySdvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifi_ssid",
+            "printedName": "wifi_ssid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)wifi_ssid",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9wifi_ssidSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)wifi_ssid",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9wifi_ssidSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setWifi_ssid:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC9wifi_ssidSSSgvs",
                 "moduleName": "RoamMQTTConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -4064,56 +7580,56 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 3827,
+      "offset": 10122,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6307,
+      "offset": 12602,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6349,
+      "offset": 12644,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6435,
+      "offset": 12730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6458,
+      "offset": 12753,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6464,
+      "offset": 12759,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6510,
+      "offset": 12805,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6801,
+      "offset": 13096,
       "length": 2,
       "value": "50"
     },

@@ -314,27 +314,64 @@ SWIFT_CLASS_NAMED("MqttConnectorLocationData")
 
 
 @class NSString;
+@class NSData;
 @class NSDate;
 
 @interface MqttConnectorLocationData (SWIFT_EXTENSION(RoamMQTTConnector))
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
+@property (nonatomic, copy) NSString * _Nullable app_context;
+@property (nonatomic, copy) NSString * _Nullable app_details;
+@property (nonatomic, copy) NSString * _Nullable app_id;
+@property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
+@property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_name;
+@property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic, copy) NSString * _Nullable client_id;
 @property (nonatomic) double course;
+@property (nonatomic, copy) NSString * _Nullable device_manufacturer;
+@property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable device_name;
+@property (nonatomic) BOOL event_listener;
+@property (nonatomic) BOOL geofence_events;
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) double horizontal_accuracy;
+@property (nonatomic, copy) NSString * _Nullable idfa;
+@property (nonatomic, copy) NSString * _Nullable idfv;
+@property (nonatomic, copy) NSString * _Nullable ip_address;
 @property (nonatomic) int16_t isOfflineData;
+@property (nonatomic, copy) NSString * _Nullable kernel_version;
 @property (nonatomic) double latitude;
+@property (nonatomic, copy) NSString * _Nullable locale_country;
+@property (nonatomic, copy) NSString * _Nullable locale_language;
+@property (nonatomic) int16_t location_authorization_status;
+@property (nonatomic) BOOL location_events;
+@property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic) BOOL location_listener;
 @property (nonatomic) BOOL location_permission;
 @property (nonatomic) double longitude;
+@property (nonatomic, copy) NSData * _Nullable metadata;
 @property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
+@property (nonatomic) BOOL nearby_events;
+@property (nonatomic, copy) NSString * _Nullable network_state;
 @property (nonatomic) BOOL network_status;
+@property (nonatomic, copy) NSString * _Nullable network_type;
+@property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable sdk_version;
+@property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
+@property (nonatomic, copy) NSString * _Nullable system_name;
 @property (nonatomic, copy) NSString * _Nullable tracking_mode;
+@property (nonatomic) BOOL trips_events;
+@property (nonatomic, copy) NSString * _Nullable tz_offset;
+@property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
 @end
 
 

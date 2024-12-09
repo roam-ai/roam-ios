@@ -2277,6 +2277,365 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "RoamCentroid",
+        "printedName": "RoamCentroid",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoamCentroid",
+                "printedName": "Roam.RoamCentroid",
+                "usr": "c:@M@Roam@objc(cs)RoamCentroid"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Roam@objc(cs)RoamCentroid(im)init",
+            "mangledName": "$s4Roam0A8CentroidCACycfc",
+            "moduleName": "Roam",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "RoamCentroid",
+                "printedName": "Roam.RoamCentroid",
+                "usr": "c:@M@Roam@objc(cs)RoamCentroid"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Roam0A8CentroidC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Roam0A8CentroidC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Roam",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Roam0A8CentroidC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s4Roam0A8CentroidC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Roam",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Roam@objc(cs)RoamCentroid",
+        "mangledName": "$s4Roam0A8CentroidC",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Position",
+        "printedName": "Position",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Position",
+                "printedName": "Roam.Position",
+                "usr": "c:@M@Roam@objc(cs)Position"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Roam@objc(cs)Position(im)init",
+            "mangledName": "$s4Roam8PositionCACycfc",
+            "moduleName": "Roam",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Position",
+                "printedName": "Roam.Position",
+                "usr": "c:@M@Roam@objc(cs)Position"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Roam8PositionC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Roam8PositionC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Roam",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Roam8PositionC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s4Roam8PositionC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Roam",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Roam@objc(cs)Position",
+        "mangledName": "$s4Roam8PositionC",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -39149,6 +39508,100 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "centroid",
+            "printedName": "centroid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamPublish(py)centroid",
+            "mangledName": "$s4Roam0A7PublishC8centroidSbvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)centroid",
+                "mangledName": "$s4Roam0A7PublishC8centroidSbvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)setCentroid:",
+                "mangledName": "$s4Roam0A7PublishC8centroidSbvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A7PublishC8centroidSbvM",
+                "mangledName": "$s4Roam0A7PublishC8centroidSbvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -45123,6 +45576,123 @@
                 "declKind": "Accessor",
                 "usr": "s:4Roam0A8LocationC10appVersionSSvM",
                 "mangledName": "$s4Roam0A8LocationC10appVersionSSvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "centroid",
+            "printedName": "centroid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Roam.RoamCentroid?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoamCentroid",
+                    "printedName": "Roam.RoamCentroid",
+                    "usr": "c:@M@Roam@objc(cs)RoamCentroid"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamLocation(py)centroid",
+            "mangledName": "$s4Roam0A8LocationC8centroidAA0A8CentroidCSgvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Roam.RoamCentroid?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamCentroid",
+                        "printedName": "Roam.RoamCentroid",
+                        "usr": "c:@M@Roam@objc(cs)RoamCentroid"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)centroid",
+                "mangledName": "$s4Roam0A8LocationC8centroidAA0A8CentroidCSgvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Roam.RoamCentroid?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoamCentroid",
+                        "printedName": "Roam.RoamCentroid",
+                        "usr": "c:@M@Roam@objc(cs)RoamCentroid"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)setCentroid:",
+                "mangledName": "$s4Roam0A8LocationC8centroidAA0A8CentroidCSgvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A8LocationC8centroidAA0A8CentroidCSgvM",
+                "mangledName": "$s4Roam0A8LocationC8centroidAA0A8CentroidCSgvM",
                 "moduleName": "Roam",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -58685,13 +59255,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.String?",
+                "printedName": "Foundation.Data?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
                   }
                 ],
                 "usr": "s:Sq"
@@ -58699,7 +59269,7 @@
             ],
             "declKind": "Var",
             "usr": "c:@CM@Roam@objc(cs)MqttLocationData(py)centroid",
-            "mangledName": "$s4Roam16MqttLocationDataC8centroidSSSgvp",
+            "mangledName": "$s4Roam16MqttLocationDataC8centroid10Foundation0D0VSgvp",
             "moduleName": "Roam",
             "declAttributes": [
               "Dynamic",
@@ -58717,13 +59287,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Data?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -58731,7 +59301,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)centroid",
-                "mangledName": "$s4Roam16MqttLocationDataC8centroidSSSgvg",
+                "mangledName": "$s4Roam16MqttLocationDataC8centroid10Foundation0D0VSgvg",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -58754,13 +59324,13 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "Swift.String?",
+                    "printedName": "Foundation.Data?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
                       }
                     ],
                     "usr": "s:Sq"
@@ -58768,7 +59338,7 @@
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)setCentroid:",
-                "mangledName": "$s4Roam16MqttLocationDataC8centroidSSSgvs",
+                "mangledName": "$s4Roam16MqttLocationDataC8centroid10Foundation0D0VSgvs",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -73035,7 +73605,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Networking\/NetworkServiceLayer.swift",
       "kind": "Dictionary",
-      "offset": 6789,
+      "offset": 6791,
       "length": 3,
       "value": "[]"
     },
@@ -74050,35 +74620,28 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 27069,
+      "offset": 27661,
       "length": 18,
       "value": "\"ROAM_PUBLISH_KEY\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 27134,
+      "offset": 27726,
       "length": 38,
       "value": "\"Privacy - Tracking Usage Description\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 27468,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 1265,
+      "offset": 28060,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 17855,
+      "offset": 17123,
       "length": 1,
       "value": "5"
     },
@@ -74846,6 +75409,13 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2407,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/Tracking\/RoamDistanceBasedTracking.swift",
       "kind": "BooleanLiteral",
       "offset": 402,
@@ -75026,13 +75596,6 @@
       "offset": 478,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationDataManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1050,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/ConnectorManager.swift",

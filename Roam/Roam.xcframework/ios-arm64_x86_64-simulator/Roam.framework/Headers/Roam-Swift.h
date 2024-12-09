@@ -355,6 +355,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSData;
 @class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
@@ -370,7 +371,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable battery_status;
 @property (nonatomic, copy) NSString * _Nullable build_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
-@property (nonatomic, copy) NSString * _Nullable centroid;
+@property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
@@ -476,10 +477,16 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @end
 
 
+
+SWIFT_CLASS("_TtC4Roam8Position")
+@interface Position : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol RoamDelegate;
 @class RoamUser;
 @class RoamError;
-@class NSData;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
@@ -592,6 +599,13 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @property (nonatomic, copy) NSString * _Nullable networkState;
 @property (nonatomic) NSInteger batchCount;
 @property (nonatomic) NSInteger batchWindow;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam12RoamCentroid")
+@interface RoamCentroid : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -727,6 +741,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull carrierName;
 @property (nonatomic, copy) NSString * _Nonnull appInstallationDate;
 @property (nonatomic, copy) NSString * _Nonnull appVersion;
+@property (nonatomic, strong) RoamCentroid * _Nullable centroid;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -830,6 +845,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL carrier_name;
 @property (nonatomic) BOOL app_installation_date;
 @property (nonatomic) BOOL app_version;
+@property (nonatomic) BOOL centroid;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1668,6 +1684,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSData;
 @class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
@@ -1683,7 +1700,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable battery_status;
 @property (nonatomic, copy) NSString * _Nullable build_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
-@property (nonatomic, copy) NSString * _Nullable centroid;
+@property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
@@ -1789,10 +1806,16 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 @end
 
 
+
+SWIFT_CLASS("_TtC4Roam8Position")
+@interface Position : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @protocol RoamDelegate;
 @class RoamUser;
 @class RoamError;
-@class NSData;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
@@ -1905,6 +1928,13 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @property (nonatomic, copy) NSString * _Nullable networkState;
 @property (nonatomic) NSInteger batchCount;
 @property (nonatomic) NSInteger batchWindow;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam12RoamCentroid")
+@interface RoamCentroid : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2040,6 +2070,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull carrierName;
 @property (nonatomic, copy) NSString * _Nonnull appInstallationDate;
 @property (nonatomic, copy) NSString * _Nonnull appVersion;
+@property (nonatomic, strong) RoamCentroid * _Nullable centroid;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2143,6 +2174,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL carrier_name;
 @property (nonatomic) BOOL app_installation_date;
 @property (nonatomic) BOOL app_version;
+@property (nonatomic) BOOL centroid;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

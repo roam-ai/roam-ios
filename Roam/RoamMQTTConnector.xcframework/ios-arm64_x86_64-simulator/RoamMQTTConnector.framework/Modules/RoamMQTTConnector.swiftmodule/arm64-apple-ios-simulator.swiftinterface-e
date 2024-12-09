@@ -98,11 +98,47 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_context: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_details: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_installation_date: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var app_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var battery_remaining: Swift.Int16 {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var battery_saver: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var battery_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var build_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var carrier_name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var centroid: Foundation.Data? {
     @objc get
     @objc set
   }
@@ -114,6 +150,26 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var device_manufacturer: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var device_model: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var device_name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var event_listener: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var geofence_events: Swift.Bool {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var gps_status: Swift.Bool {
     @objc get
     @objc set
@@ -122,11 +178,51 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var idfa: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var idfv: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var ip_address: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var isOfflineData: Swift.Int16 {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var kernel_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var latitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_country: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var locale_language: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var location_authorization_status: Swift.Int16 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var location_events: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var location_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var location_listener: Swift.Bool {
     @objc get
     @objc set
   }
@@ -138,7 +234,19 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var metadata: Foundation.Data? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var mqttLocation_time: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var nearby_events: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var network_state: Swift.String? {
     @objc get
     @objc set
   }
@@ -146,7 +254,23 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var network_type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var os_version: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var recorded_at: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var sdk_version: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var source: Swift.String? {
     @objc get
     @objc set
   }
@@ -154,11 +278,31 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var system_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var tracking_mode: Swift.String? {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var trips_events: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var tz_offset: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var user_id: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var vertical_accuracy: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_ssid: Swift.String? {
     @objc get
     @objc set
   }
