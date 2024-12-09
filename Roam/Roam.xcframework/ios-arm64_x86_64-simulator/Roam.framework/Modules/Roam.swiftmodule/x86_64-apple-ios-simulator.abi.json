@@ -39665,13 +39665,6 @@
       },
       {
         "kind": "Import",
-        "name": "OSLog",
-        "printedName": "OSLog",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -72875,35 +72868,35 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationFilter.swift",
       "kind": "FloatLiteral",
-      "offset": 4536,
+      "offset": 4537,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationFilter.swift",
       "kind": "Array",
-      "offset": 4593,
+      "offset": 4594,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4632,
+      "offset": 4633,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 4711,
+      "offset": 4712,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/LocationFilter.swift",
       "kind": "IntegerLiteral",
-      "offset": 5528,
+      "offset": 5529,
       "length": 1,
       "value": "5"
     },

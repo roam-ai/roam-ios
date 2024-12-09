@@ -20,7 +20,6 @@ import ExternalAccessory
 import Foundation
 import MachO
 import Network
-import OSLog
 import ObjectiveC
 @_exported import Roam
 import Swift
