@@ -656,6 +656,7 @@ extension UIKit.UIDevice {
   @objc final public let recordedAt: Swift.String?
   @objc public var batteryRemaining: Swift.Int
   @objc public var networkStatus: Swift.Bool
+  @objc public var networkState: Swift.String
   @objc final public let metaData: Swift.Dictionary<Swift.String, Any>?
   @objc public var batch: Roam.RoamBatchConfig?
   @objc public var speed: Swift.Int

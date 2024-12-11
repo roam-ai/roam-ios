@@ -442,3 +442,21 @@ We're thrilled to present Roam iOS SDK version 0.1.30-beta.4, introducing new fe
 ** Centroid Method** :Introduced a centroid calculation method to derive a representative central coordinate from clusters of geographical positions, offering a more reliable reference point.
 
 These updates are designed to provide a more accurate and enriched tracking experience. If you have any questions, concerns, or feedback, our support team is always here to assist.
+
+## 0.1.30-beta.5
+**Enhancements in Visits, Geofence, and Data Enrichment**
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.5, with updates to improve functionality and enrich data insights. Here's what's new:
+
+**Visits Improvements**:
+Enhanced visit tracking logic for better accuracy and reliability in location-based insights.
+
+**Location Fetch Logic Update**:
+Refined logic for fetching location data when the app is open, ensuring smoother operation and improved accuracy.
+
+**Flower Geofence Enhancement**:
+Added an additional outer layer to the flower geofence, expanding its functionality and use cases.
+
+**Centroid Data in Data Enrichment**:
+Incorporated centroid calculation into data enrichment, offering a representative central coordinate for clustered geographical positions.
+
+These updates are part of our commitment to providing robust and precise tracking capabilities. If you have any questions or feedback, our support team is always here to assist.

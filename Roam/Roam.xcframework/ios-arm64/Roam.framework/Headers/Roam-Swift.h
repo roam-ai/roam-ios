@@ -715,6 +715,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
 @property (nonatomic) NSInteger batteryRemaining;
 @property (nonatomic) BOOL networkStatus;
+@property (nonatomic, copy) NSString * _Nonnull networkState;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nullable metaData;
 @property (nonatomic, strong) RoamBatchConfig * _Nullable batch;
 @property (nonatomic) NSInteger speed;
