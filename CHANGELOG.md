@@ -460,3 +460,9 @@ Added an additional outer layer to the flower geofence, expanding its functional
 Incorporated centroid calculation into data enrichment, offering a representative central coordinate for clustered geographical positions.
 
 These updates are part of our commitment to providing robust and precise tracking capabilities. If you have any questions or feedback, our support team is always here to assist.
+
+## 0.1.30-beta.6
+**Enhanced Data Integrity with Core Data Model Migration**
+We're pleased to announce Roam iOS SDK version 0.1.30-beta.6, which introduces support for Core Data model migration, ensuring seamless updates and enhanced data integrity.
+
+This improvements is geared towards providing a more robust and consistent experience for developers, leveraging the latest features while maintaining a stable and consistent data layer. As always, if you need assistance or have feedback, our support team is here to help!
