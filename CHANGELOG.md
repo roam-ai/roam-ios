@@ -466,3 +466,15 @@ These updates are part of our commitment to providing robust and precise trackin
 We're pleased to announce Roam iOS SDK version 0.1.30-beta.6, which introduces support for Core Data model migration, ensuring seamless updates and enhanced data integrity.
 
 This improvements is geared towards providing a more robust and consistent experience for developers, leveraging the latest features while maintaining a stable and consistent data layer. As always, if you need assistance or have feedback, our support team is here to help!
+
+## 0.1.30-beta.7
+**Improvements in Visits and Data Enrichment**
+
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.7, with updates aimed at enhancing functionality and improving data insights. Here's what's new:
+
+**Visits Improvements**:
+Refined visit tracking logic to deliver more accurate and reliable location-based insights.
+
+**Data Enrichment Updates**:
+Enhanced data enrichment features to provide more comprehensive and detailed device data.
+These updates are designed to enhance the overall accuracy and efficiency of the SDK. Should you have any inquiries or feedback, our support team is readily available to assist you.

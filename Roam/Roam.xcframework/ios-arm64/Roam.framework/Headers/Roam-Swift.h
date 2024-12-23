@@ -480,6 +480,8 @@ SWIFT_CLASS_NAMED("MyTripRoute")
 
 SWIFT_CLASS("_TtC4Roam8Position")
 @interface Position : NSObject
+@property (nonatomic, readonly) double latitude;
+@property (nonatomic, readonly) double longitude;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -606,6 +608,8 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 
 SWIFT_CLASS("_TtC4Roam12RoamCentroid")
 @interface RoamCentroid : NSObject
+@property (nonatomic, readonly, copy) NSArray<Position *> * _Nonnull positions;
+@property (nonatomic, readonly, strong) Position * _Nonnull centroidCoordinate;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

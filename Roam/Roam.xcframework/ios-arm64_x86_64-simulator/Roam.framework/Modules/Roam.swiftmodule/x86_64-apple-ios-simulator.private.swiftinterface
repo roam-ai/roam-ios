@@ -78,11 +78,15 @@ extension Swift.Optional : AnyOptional {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamCentroid : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let positions: [Position]
+  @objc final public let centroidCoordinate: Position
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class Position : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let latitude: Swift.Double
+  @objc final public let longitude: Swift.Double
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
