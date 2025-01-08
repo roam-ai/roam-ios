@@ -6115,6 +6115,109 @@
           },
           {
             "kind": "Var",
+            "name": "public_ip_address",
+            "printedName": "public_ip_address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)public_ip_address",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17public_ip_addressSSSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)public_ip_address",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17public_ip_addressSSSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setPublic_ip_address:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC17public_ip_addressSSSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "recorded_at",
             "printedName": "recorded_at",
             "children": [
@@ -7580,56 +7683,56 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10122,
+      "offset": 10281,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12602,
+      "offset": 12761,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12644,
+      "offset": 12803,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12730,
+      "offset": 12889,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12753,
+      "offset": 12912,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12759,
+      "offset": 12918,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 12805,
+      "offset": 12964,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13096,
+      "offset": 13255,
       "length": 2,
       "value": "50"
     },

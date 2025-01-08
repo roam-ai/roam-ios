@@ -478,3 +478,13 @@ Refined visit tracking logic to deliver more accurate and reliable location-base
 **Data Enrichment Updates**:
 Enhanced data enrichment features to provide more comprehensive and detailed device data.
 These updates are designed to enhance the overall accuracy and efficiency of the SDK. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+
+## 0.1.30-beta.8
+**Data Enrichment Improvements**
+
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.8, with updates aimed at improving data insights. Here's what's new:
+
+**Data Enrichment Updates**:
+Enhanced data enrichment features to provide more comprehensive and detailed data.
+These updates are designed to enhance the overall accuracy and efficiency of the SDK. Should you have any inquiries or feedback, our support team is readily available to assist you.

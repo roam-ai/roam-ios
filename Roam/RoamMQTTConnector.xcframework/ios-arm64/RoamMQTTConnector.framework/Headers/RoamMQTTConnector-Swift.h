@@ -361,6 +361,7 @@ SWIFT_CLASS_NAMED("MqttConnectorLocationData")
 @property (nonatomic) BOOL network_status;
 @property (nonatomic, copy) NSString * _Nullable network_type;
 @property (nonatomic, copy) NSString * _Nullable os_version;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
 @property (nonatomic, copy) NSString * _Nullable sdk_version;
 @property (nonatomic, copy) NSString * _Nullable source;

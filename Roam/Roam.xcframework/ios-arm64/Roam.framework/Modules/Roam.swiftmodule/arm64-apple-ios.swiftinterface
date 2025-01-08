@@ -436,7 +436,7 @@ public enum FailedCheck : Swift.CaseIterable {
   @objc deinit
 }
 public enum Model : Swift.String {
-  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPad5, iPad6, iPad7, iPad8, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Pro, iPhone13ProMax, iPhone13Mini, iPhone13, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, unrecognized
+  case simulator, iPod1, iPod2, iPod3, iPod4, iPod5, iPod6, iPod7, iPad2, iPad3, iPad4, iPadAir, iPadAir2, iPadAir3, iPadAir4, iPadAir5, iPad5, iPad6, iPad7, iPad8, iPad9, iPad10, iPadMini, iPadMini2, iPadMini3, iPadMini4, iPadMini5, iPadMini6, iPadPro9_7, iPadPro10_5, iPadPro11, iPadPro2_11, iPadPro3_11, iPadPro12_9, iPadPro2_12_9, iPadPro3_12_9, iPadPro4_12_9, iPadPro5_12_9, iPhone4, iPhone4S, iPhone5, iPhone5S, iPhone5C, iPhone6, iPhone6Plus, iPhone6S, iPhone6SPlus, iPhoneSE, iPhone7, iPhone7Plus, iPhone8, iPhone8Plus, iPhoneX, iPhoneXS, iPhoneXSMax, iPhoneXR, iPhone11, iPhone11Pro, iPhone11ProMax, iPhoneSE2, iPhone12Mini, iPhone12, iPhone12Pro, iPhone12ProMax, iPhone13Mini, iPhone13, iPhone13Pro, iPhone13ProMax, iPhoneSE3, iPhone14, iPhone14Plus, iPhone14Pro, iPhone14ProMax, iPhone15, iPhone15Plus, iPhone15Pro, iPhone15ProMax, iPhone16, iPhone16Plus, iPhone16Pro, iPhone16ProMax, AppleWatch1, AppleWatchS1, AppleWatchS2, AppleWatchS3, AppleWatchS4, AppleWatchS5, AppleWatchSE, AppleWatchS6, AppleWatchS7, AppleTV1, AppleTV2, AppleTV3, AppleTV4, AppleTV_4K, AppleTV2_4K, AppleTV3_4K, unrecognized
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
@@ -577,6 +577,7 @@ extension UIKit.UIDevice {
   @objc public var build_id: Swift.Bool
   @objc public var kernel_version: Swift.Bool
   @objc public var ip_address: Swift.Bool
+  @objc public var public_ip_address: Swift.Bool
   @objc public var device_name: Swift.Bool
   @objc public var system_name: Swift.Bool
   @objc public var idfv: Swift.Bool
@@ -676,6 +677,7 @@ extension UIKit.UIDevice {
   @objc public var buildID: Swift.String
   @objc public var kernelVersion: Swift.String
   @objc public var ipAddress: Swift.String
+  @objc public var publicIpAddress: Swift.String
   @objc public var deviceName: Swift.String
   @objc public var systemName: Swift.String
   @objc public var osVersion: Swift.String
@@ -1093,6 +1095,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var os_version: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var public_ip_address: Swift.String? {
     @objc get
     @objc set
   }

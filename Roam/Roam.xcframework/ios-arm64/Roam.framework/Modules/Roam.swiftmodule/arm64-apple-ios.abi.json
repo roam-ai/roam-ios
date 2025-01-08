@@ -23898,6 +23898,46 @@
           },
           {
             "kind": "Var",
+            "name": "iPadAir5",
+            "printedName": "iPadAir5",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO8iPadAir5yA2CmF",
+            "mangledName": "$s4Roam5ModelO8iPadAir5yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "iPad5",
             "printedName": "iPad5",
             "children": [
@@ -24051,6 +24091,86 @@
             "declKind": "EnumElement",
             "usr": "s:4Roam5ModelO5iPad8yA2CmF",
             "mangledName": "$s4Roam5ModelO5iPad8yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPad9",
+            "printedName": "iPad9",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO5iPad9yA2CmF",
+            "mangledName": "$s4Roam5ModelO5iPad9yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPad10",
+            "printedName": "iPad10",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO6iPad10yA2CmF",
+            "mangledName": "$s4Roam5ModelO6iPad10yA2CmF",
             "moduleName": "Roam",
             "declAttributes": [
               "RawDocComment"
@@ -24258,6 +24378,46 @@
           },
           {
             "kind": "Var",
+            "name": "iPadMini6",
+            "printedName": "iPadMini6",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO9iPadMini6yA2CmF",
+            "mangledName": "$s4Roam5ModelO9iPadMini6yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "iPadPro9_7",
             "printedName": "iPadPro9_7",
             "children": [
@@ -24418,6 +24578,46 @@
           },
           {
             "kind": "Var",
+            "name": "iPadPro3_11",
+            "printedName": "iPadPro3_11",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11iPadPro3_11yA2CmF",
+            "mangledName": "$s4Roam5ModelO11iPadPro3_11yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "iPadPro12_9",
             "printedName": "iPadPro12_9",
             "children": [
@@ -24571,6 +24771,46 @@
             "declKind": "EnumElement",
             "usr": "s:4Roam5ModelO13iPadPro4_12_9yA2CmF",
             "mangledName": "$s4Roam5ModelO13iPadPro4_12_9yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPadPro5_12_9",
+            "printedName": "iPadPro5_12_9",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO13iPadPro5_12_9yA2CmF",
+            "mangledName": "$s4Roam5ModelO13iPadPro5_12_9yA2CmF",
             "moduleName": "Roam",
             "declAttributes": [
               "RawDocComment"
@@ -25618,86 +25858,6 @@
           },
           {
             "kind": "Var",
-            "name": "iPhone13Pro",
-            "printedName": "iPhone13Pro",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.Model.Type) -> Roam.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "Roam.Model",
-                    "usr": "s:4Roam5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "Roam.Model",
-                        "usr": "s:4Roam5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:4Roam5ModelO11iPhone13ProyA2CmF",
-            "mangledName": "$s4Roam5ModelO11iPhone13ProyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iPhone13ProMax",
-            "printedName": "iPhone13ProMax",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Roam.Model.Type) -> Roam.Model",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Model",
-                    "printedName": "Roam.Model",
-                    "usr": "s:4Roam5ModelO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "Roam.Model.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Model",
-                        "printedName": "Roam.Model",
-                        "usr": "s:4Roam5ModelO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:4Roam5ModelO14iPhone13ProMaxyA2CmF",
-            "mangledName": "$s4Roam5ModelO14iPhone13ProMaxyA2CmF",
-            "moduleName": "Roam",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "iPhone13Mini",
             "printedName": "iPhone13Mini",
             "children": [
@@ -25771,6 +25931,86 @@
             "declKind": "EnumElement",
             "usr": "s:4Roam5ModelO8iPhone13yA2CmF",
             "mangledName": "$s4Roam5ModelO8iPhone13yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone13Pro",
+            "printedName": "iPhone13Pro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11iPhone13ProyA2CmF",
+            "mangledName": "$s4Roam5ModelO11iPhone13ProyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone13ProMax",
+            "printedName": "iPhone13ProMax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO14iPhone13ProMaxyA2CmF",
+            "mangledName": "$s4Roam5ModelO14iPhone13ProMaxyA2CmF",
             "moduleName": "Roam",
             "declAttributes": [
               "RawDocComment"
@@ -25971,6 +26211,326 @@
             "declKind": "EnumElement",
             "usr": "s:4Roam5ModelO14iPhone14ProMaxyA2CmF",
             "mangledName": "$s4Roam5ModelO14iPhone14ProMaxyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15",
+            "printedName": "iPhone15",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO8iPhone15yA2CmF",
+            "mangledName": "$s4Roam5ModelO8iPhone15yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15Plus",
+            "printedName": "iPhone15Plus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO12iPhone15PlusyA2CmF",
+            "mangledName": "$s4Roam5ModelO12iPhone15PlusyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15Pro",
+            "printedName": "iPhone15Pro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11iPhone15ProyA2CmF",
+            "mangledName": "$s4Roam5ModelO11iPhone15ProyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone15ProMax",
+            "printedName": "iPhone15ProMax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO14iPhone15ProMaxyA2CmF",
+            "mangledName": "$s4Roam5ModelO14iPhone15ProMaxyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone16",
+            "printedName": "iPhone16",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO8iPhone16yA2CmF",
+            "mangledName": "$s4Roam5ModelO8iPhone16yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone16Plus",
+            "printedName": "iPhone16Plus",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO12iPhone16PlusyA2CmF",
+            "mangledName": "$s4Roam5ModelO12iPhone16PlusyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone16Pro",
+            "printedName": "iPhone16Pro",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11iPhone16ProyA2CmF",
+            "mangledName": "$s4Roam5ModelO11iPhone16ProyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iPhone16ProMax",
+            "printedName": "iPhone16ProMax",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO14iPhone16ProMaxyA2CmF",
+            "mangledName": "$s4Roam5ModelO14iPhone16ProMaxyA2CmF",
             "moduleName": "Roam",
             "declAttributes": [
               "RawDocComment"
@@ -26298,6 +26858,46 @@
           },
           {
             "kind": "Var",
+            "name": "AppleWatchS7",
+            "printedName": "AppleWatchS7",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO12AppleWatchS7yA2CmF",
+            "mangledName": "$s4Roam5ModelO12AppleWatchS7yA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "AppleTV1",
             "printedName": "AppleTV1",
             "children": [
@@ -26491,6 +27091,86 @@
             "declKind": "EnumElement",
             "usr": "s:4Roam5ModelO10AppleTV_4KyA2CmF",
             "mangledName": "$s4Roam5ModelO10AppleTV_4KyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleTV2_4K",
+            "printedName": "AppleTV2_4K",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11AppleTV2_4KyA2CmF",
+            "mangledName": "$s4Roam5ModelO11AppleTV2_4KyA2CmF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "AppleTV3_4K",
+            "printedName": "AppleTV3_4K",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Roam.Model.Type) -> Roam.Model",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Model",
+                    "printedName": "Roam.Model",
+                    "usr": "s:4Roam5ModelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "Roam.Model.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Model",
+                        "printedName": "Roam.Model",
+                        "usr": "s:4Roam5ModelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:4Roam5ModelO11AppleTV3_4KyA2CmF",
+            "mangledName": "$s4Roam5ModelO11AppleTV3_4KyA2CmF",
             "moduleName": "Roam",
             "declAttributes": [
               "RawDocComment"
@@ -38795,6 +39475,99 @@
           },
           {
             "kind": "Var",
+            "name": "public_ip_address",
+            "printedName": "public_ip_address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamPublish(py)public_ip_address",
+            "mangledName": "$s4Roam0A7PublishC17public_ip_addressSbvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)public_ip_address",
+                "mangledName": "$s4Roam0A7PublishC17public_ip_addressSbvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)setPublic_ip_address:",
+                "mangledName": "$s4Roam0A7PublishC17public_ip_addressSbvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A7PublishC17public_ip_addressSbvM",
+                "mangledName": "$s4Roam0A7PublishC17public_ip_addressSbvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "device_name",
             "printedName": "device_name",
             "children": [
@@ -39964,6 +40737,23 @@
             "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Network",
+        "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "Roam"
       },
       {
         "kind": "Import",
@@ -44865,6 +45655,98 @@
                 "declKind": "Accessor",
                 "usr": "s:4Roam0A8LocationC9ipAddressSSvM",
                 "mangledName": "$s4Roam0A8LocationC9ipAddressSSvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "publicIpAddress",
+            "printedName": "publicIpAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamLocation(py)publicIpAddress",
+            "mangledName": "$s4Roam0A8LocationC15publicIpAddressSSvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)publicIpAddress",
+                "mangledName": "$s4Roam0A8LocationC15publicIpAddressSSvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)setPublicIpAddress:",
+                "mangledName": "$s4Roam0A8LocationC15publicIpAddressSSvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A8LocationC15publicIpAddressSSvM",
+                "mangledName": "$s4Roam0A8LocationC15publicIpAddressSSvM",
                 "moduleName": "Roam",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -62201,6 +63083,109 @@
           },
           {
             "kind": "Var",
+            "name": "public_ip_address",
+            "printedName": "public_ip_address",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Roam@objc(cs)MqttLocationData(py)public_ip_address",
+            "mangledName": "$s4Roam16MqttLocationDataC17public_ip_addressSSSgvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)public_ip_address",
+                "mangledName": "$s4Roam16MqttLocationDataC17public_ip_addressSSSgvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)setPublic_ip_address:",
+                "mangledName": "$s4Roam16MqttLocationDataC17public_ip_addressSSSgvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "recorded_at",
             "printedName": "recorded_at",
             "children": [
@@ -72969,174 +73954,181 @@
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
       "offset": 5322,
+      "length": 21,
+      "value": "\"RoamPubliciPAddress\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 5431,
       "length": 14,
       "value": "\"kNetworkType\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5352,
+      "offset": 5461,
       "length": 12,
       "value": "\"No Network\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5428,
+      "offset": 5537,
       "length": 22,
       "value": "\"kAccuracyFilterValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5539,
+      "offset": 5648,
       "length": 26,
       "value": "\"KLocationEventsSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5581,
+      "offset": 5690,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5676,
+      "offset": 5785,
       "length": 26,
       "value": "\"isRoamMQTTPublishEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5718,
+      "offset": 5827,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5790,
+      "offset": 5899,
       "length": 28,
       "value": "\"RoamOfflinetrackingenabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5834,
+      "offset": 5943,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5914,
+      "offset": 6023,
       "length": 26,
       "value": "\"kLocationPublishSettings\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6044,
+      "offset": 6153,
       "length": 13,
       "value": "\"MotionSpeed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "Array",
-      "offset": 6073,
+      "offset": 6182,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6141,
+      "offset": 6250,
       "length": 36,
       "value": "\"KUpdateLocationWhenStationaryValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6280,
+      "offset": 6389,
       "length": 12,
       "value": "\"kappsState\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6477,
+      "offset": 6586,
       "length": 22,
       "value": "\"toogleNetworkEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6515,
+      "offset": 6624,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6597,
+      "offset": 6706,
       "length": 20,
       "value": "\"toogleDeviceRooted\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6633,
+      "offset": 6742,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6713,
+      "offset": 6822,
       "length": 24,
       "value": "\"toogleBluetoothEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6753,
+      "offset": 6862,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6837,
+      "offset": 6946,
       "length": 32,
       "value": "\"toogleExternalAccessoryEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6885,
+      "offset": 6994,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6977,
+      "offset": 7086,
       "length": 27,
       "value": "\"toogleVerifyMotionEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 7020,
+      "offset": 7129,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 7113,
+      "offset": 7222,
       "length": 16,
       "value": "\"BatchConfigKey\""
     },
@@ -74018,567 +75010,686 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 239,
+      "offset": 251,
       "length": 19,
       "value": "\"simulator\/sandbox\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 289,
+      "offset": 328,
       "length": 8,
       "value": "\"iPod 1\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 368,
       "length": 8,
       "value": "\"iPod 2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 351,
+      "offset": 408,
       "length": 8,
       "value": "\"iPod 3\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 382,
+      "offset": 448,
       "length": 8,
       "value": "\"iPod 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 413,
+      "offset": 488,
       "length": 8,
       "value": "\"iPod 5\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 444,
+      "offset": 528,
       "length": 8,
       "value": "\"iPod 6\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 475,
+      "offset": 568,
       "length": 8,
       "value": "\"iPod 7\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 514,
+      "offset": 634,
       "length": 8,
       "value": "\"iPad 2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 545,
+      "offset": 674,
       "length": 8,
       "value": "\"iPad 3\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 576,
+      "offset": 714,
       "length": 8,
       "value": "\"iPad 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 607,
+      "offset": 754,
       "length": 11,
       "value": "\"iPad Air \""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 641,
+      "offset": 797,
       "length": 12,
       "value": "\"iPad Air 2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 676,
+      "offset": 841,
       "length": 12,
       "value": "\"iPad Air 3\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 711,
+      "offset": 885,
       "length": 12,
       "value": "\"iPad Air 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 746,
+      "offset": 929,
+      "length": 12,
+      "value": "\"iPad Air 5\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 973,
       "length": 8,
       "value": "\"iPad 5\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 789,
+      "offset": 1025,
       "length": 8,
       "value": "\"iPad 6\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 832,
+      "offset": 1077,
       "length": 8,
       "value": "\"iPad 7\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 875,
+      "offset": 1129,
       "length": 8,
       "value": "\"iPad 8\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 931,
+      "offset": 1181,
+      "length": 8,
+      "value": "\"iPad 9\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1233,
+      "length": 9,
+      "value": "\"iPad 10\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1317,
       "length": 11,
       "value": "\"iPad Mini\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 965,
+      "offset": 1360,
       "length": 13,
       "value": "\"iPad Mini 2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1001,
+      "offset": 1405,
       "length": 13,
       "value": "\"iPad Mini 3\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1037,
+      "offset": 1450,
       "length": 13,
       "value": "\"iPad Mini 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1073,
+      "offset": 1495,
       "length": 13,
       "value": "\"iPad Mini 5\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1121,
+      "offset": 1540,
+      "length": 13,
+      "value": "\"iPad Mini 6\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1615,
       "length": 16,
       "value": "\"iPad Pro 9.7\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1160,
+      "offset": 1663,
       "length": 17,
       "value": "\"iPad Pro 10.5\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1200,
+      "offset": 1712,
       "length": 15,
       "value": "\"iPad Pro 11\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1238,
+      "offset": 1759,
       "length": 23,
       "value": "\"iPad Pro 11\" 2nd gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1284,
+      "offset": 1814,
+      "length": 23,
+      "value": "\"iPad Pro 11\" 3rd gen\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 1869,
       "length": 17,
       "value": "\"iPad Pro 12.9\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1324,
+      "offset": 1918,
       "length": 19,
       "value": "\"iPad Pro 2 12.9\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1366,
+      "offset": 1969,
       "length": 19,
       "value": "\"iPad Pro 3 12.9\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1408,
+      "offset": 2020,
       "length": 19,
       "value": "\"iPad Pro 4 12.9\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1460,
+      "offset": 2071,
+      "length": 19,
+      "value": "\"iPad Pro 5 12.9\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 2150,
       "length": 10,
       "value": "\"iPhone 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1493,
+      "offset": 2192,
       "length": 11,
       "value": "\"iPhone 4S\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 2235,
       "length": 10,
       "value": "\"iPhone 5\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1560,
+      "offset": 2277,
       "length": 11,
       "value": "\"iPhone 5S\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1594,
+      "offset": 2320,
       "length": 11,
       "value": "\"iPhone 5C\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1628,
+      "offset": 2363,
       "length": 10,
       "value": "\"iPhone 6\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1661,
+      "offset": 2405,
       "length": 15,
       "value": "\"iPhone 6 Plus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1699,
+      "offset": 2452,
       "length": 11,
       "value": "\"iPhone 6S\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1733,
+      "offset": 2495,
       "length": 16,
       "value": "\"iPhone 6S Plus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1772,
+      "offset": 2543,
       "length": 11,
       "value": "\"iPhone SE\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1806,
+      "offset": 2586,
       "length": 10,
       "value": "\"iPhone 7\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1839,
+      "offset": 2628,
       "length": 15,
       "value": "\"iPhone 7 Plus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1877,
+      "offset": 2675,
       "length": 10,
       "value": "\"iPhone 8\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1910,
+      "offset": 2717,
       "length": 15,
       "value": "\"iPhone 8 Plus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1948,
+      "offset": 2764,
       "length": 10,
       "value": "\"iPhone X\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 1981,
+      "offset": 2806,
       "length": 11,
       "value": "\"iPhone XS\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2015,
+      "offset": 2849,
       "length": 15,
       "value": "\"iPhone XS Max\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 2896,
       "length": 11,
       "value": "\"iPhone XR\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2087,
+      "offset": 2939,
       "length": 11,
       "value": "\"iPhone 11\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2121,
+      "offset": 2982,
       "length": 15,
       "value": "\"iPhone 11 Pro\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2159,
+      "offset": 3029,
       "length": 19,
       "value": "\"iPhone 11 Pro Max\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2201,
+      "offset": 3080,
       "length": 19,
       "value": "\"iPhone SE 2nd gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2243,
+      "offset": 3131,
       "length": 16,
       "value": "\"iPhone 12 Mini\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2282,
+      "offset": 3179,
       "length": 11,
       "value": "\"iPhone 12\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2316,
+      "offset": 3222,
       "length": 15,
       "value": "\"iPhone 12 Pro\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2354,
+      "offset": 3269,
       "length": 19,
       "value": "\"iPhone 12 Pro Max\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2396,
-      "length": 15,
-      "value": "\"iPhone 13 Pro\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
-      "kind": "StringLiteral",
-      "offset": 2434,
-      "length": 19,
-      "value": "\"iPhone 13 Pro Max\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
-      "kind": "StringLiteral",
-      "offset": 2476,
+      "offset": 3320,
       "length": 16,
       "value": "\"iPhone 13 Mini\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2515,
+      "offset": 3368,
       "length": 11,
       "value": "\"iPhone 13\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2549,
-      "length": 19,
-      "value": "\"iPhone SE 3rd gen\""
+      "offset": 3411,
+      "length": 15,
+      "value": "\"iPhone 13 Pro\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2592,
+      "offset": 3458,
+      "length": 19,
+      "value": "\"iPhone 13 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3509,
+      "length": 19,
+      "value": "\"iPhone SE 3nd gen\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3560,
       "length": 11,
       "value": "\"iPhone 14\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2626,
+      "offset": 3603,
       "length": 16,
       "value": "\"iPhone 14 Plus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2665,
+      "offset": 3651,
       "length": 15,
       "value": "\"iPhone 14 Pro\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 3698,
       "length": 19,
       "value": "\"iPhone 14 Pro Max\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2762,
+      "offset": 3749,
+      "length": 11,
+      "value": "\"iPhone 15\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3792,
+      "length": 16,
+      "value": "\"iPhone 15 Plus\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3840,
+      "length": 15,
+      "value": "\"iPhone 15 Pro\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3887,
+      "length": 19,
+      "value": "\"iPhone 15 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3938,
+      "length": 11,
+      "value": "\"iPhone 16\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 3982,
+      "length": 16,
+      "value": "\"iPhone 16 Plus\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4030,
+      "length": 15,
+      "value": "\"iPhone 16 Pro\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4077,
+      "length": 19,
+      "value": "\"iPhone 16 Pro Max\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4163,
       "length": 18,
       "value": "\"Apple Watch 1gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2804,
+      "offset": 4214,
       "length": 22,
       "value": "\"Apple Watch Series 1\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2850,
+      "offset": 4269,
       "length": 22,
       "value": "\"Apple Watch Series 2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2896,
+      "offset": 4324,
       "length": 22,
       "value": "\"Apple Watch Series 3\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2942,
+      "offset": 4379,
       "length": 22,
       "value": "\"Apple Watch Series 4\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 2988,
+      "offset": 4434,
       "length": 22,
       "value": "\"Apple Watch Series 5\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3034,
+      "offset": 4489,
       "length": 29,
       "value": "\"Apple Watch Special Edition\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3087,
+      "offset": 4551,
       "length": 22,
       "value": "\"Apple Watch Series 6\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3144,
+      "offset": 4606,
+      "length": 22,
+      "value": "\"Apple Watch Series 7\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4690,
       "length": 15,
       "value": "\"Apple TV 1gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3182,
+      "offset": 4737,
       "length": 15,
       "value": "\"Apple TV 2gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3220,
+      "offset": 4784,
       "length": 15,
       "value": "\"Apple TV 3gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3258,
+      "offset": 4831,
       "length": 15,
       "value": "\"Apple TV 4gen\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3296,
+      "offset": 4878,
       "length": 13,
       "value": "\"Apple TV 4K\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
       "kind": "StringLiteral",
-      "offset": 3333,
+      "offset": 4923,
+      "length": 18,
+      "value": "\"Apple TV 4K 2gen\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 4973,
+      "length": 18,
+      "value": "\"Apple TV 4K 3gen\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/Extensions\/UIDeviceExtension.swift",
+      "kind": "StringLiteral",
+      "offset": 5033,
       "length": 16,
       "value": "\"?unrecognized?\""
     },
@@ -74893,7 +76004,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 17123,
+      "offset": 17278,
       "length": 1,
       "value": "5"
     },
@@ -75593,79 +76704,100 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 1906,
+      "offset": 1912,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 1955,
+      "offset": 1961,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 1997,
+      "offset": 2010,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2039,
+      "offset": 2052,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2086,
+      "offset": 2094,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2138,
+      "offset": 2141,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2191,
+      "offset": 2193,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2241,
+      "offset": 2246,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2300,
+      "offset": 2296,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2349,
+      "offset": 2355,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2407,
+      "offset": 2404,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2462,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/STUNClient.swift",
+      "kind": "StringLiteral",
+      "offset": 301,
+      "length": 19,
+      "value": "\"stun.l.google.com\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Utilities\/STUNClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 5,
+      "value": "19302"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/Tracking\/RoamDistanceBasedTracking.swift",
@@ -76715,7 +77847,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 15,
-      "value": "\"0.1.30-beta.7\""
+      "value": "\"0.1.30-beta.8\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",

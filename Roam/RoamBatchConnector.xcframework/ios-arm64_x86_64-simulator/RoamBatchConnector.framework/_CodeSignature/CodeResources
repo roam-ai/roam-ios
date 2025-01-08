@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		IlseDGvPXxRu25R5AvIRustcVQE=
+		vFaCL12Z3F54GWZfUXsHoEM7a4k=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		KOLO4Ti9X6G9AW07D9pgeVuJNVg=
+		0W6hfA79rcfRvW8y+VKwHFkvs4I=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		KOLO4Ti9X6G9AW07D9pgeVuJNVg=
+		0W6hfA79rcfRvW8y+VKwHFkvs4I=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		G4vb2m8CUw06vqOMiQfV4bHknP4=
+		ZLRXVVMSCvQk/DuW/y1fUdfLRrI=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		IlseDGvPXxRu25R5AvIRustcVQE=
+		vFaCL12Z3F54GWZfUXsHoEM7a4k=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		w7mCCAvZPMiZuRm2BERhHmoTB4s=
+		YcIYD0VEb9tbU5O2bOSDLj6/5V8=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		w7mCCAvZPMiZuRm2BERhHmoTB4s=
+		YcIYD0VEb9tbU5O2bOSDLj6/5V8=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		MrbeaYJSSHHvRkN2OzE+q8V6n5Q=
+		ExXBKx19WCqJnEVWjJZWOgrAuFk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>RoamBatchConnectorDataModel.momd/RoamBatchConnectorDataModel.mom</key>
 		<data>
-		r9ZuQCzNd5yjI2wjS1mrajYBIJw=
+		RMUPaMaIr75Lvsf5KLTjL+oLGYI=
 		</data>
 		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
 		<data>
-		Fv4kTmFLNck6B/W1H65c0UACvkQ=
+		N+BxWzUPe1AkOUFmZkBpzzfrGFY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lxnx6BUdR2wZ73D6HfQEtwOsGnOOcdktAdHXFlXEgzo=
+			TzowUpowwUE8e5MGE2aZtHb8kE8HkESEYjBKx6d0rBY=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uGQ54ZCLaxZVuDthgU+XNMkZCewWx3QfYghwvZbUCx0=
+			XPUwAFNSqW3iqyEkeKhu+HmDkJOzK40TtIr4/xZdJVI=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -99,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			uGQ54ZCLaxZVuDthgU+XNMkZCewWx3QfYghwvZbUCx0=
+			XPUwAFNSqW3iqyEkeKhu+HmDkJOzK40TtIr4/xZdJVI=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mJlnKToc+QBbKmM8wRWjdPVW6zvE/dBVVTNf+PnIqtY=
+			JnMnFSw68T8kIy1cfkDYaBcoFfUf5XbZRNJS+nCb3Zc=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lxnx6BUdR2wZ73D6HfQEtwOsGnOOcdktAdHXFlXEgzo=
+			TzowUpowwUE8e5MGE2aZtHb8kE8HkESEYjBKx6d0rBY=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PBKP8cgbTBNPS0UN+isYRp92gpznfCFaiWMBuThq050=
+			whlsoaKKfnBJVIpSUNBwsDYHRcuEitFVTAV2R+JwLxc=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PBKP8cgbTBNPS0UN+isYRp92gpznfCFaiWMBuThq050=
+			whlsoaKKfnBJVIpSUNBwsDYHRcuEitFVTAV2R+JwLxc=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Asn/8Hxf1R5r4at4vniv1SL6CZR8U3RcbMTfWBaXljk=
+			xnyGF7L5kGaT0vzA2Xl2ca6B006Texl0Q5VWIRy59x4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -155,14 +155,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Szp6XKQ60Kyh0ByrKJeHITJdxIE2zrNKJGoERNjO934=
+			KXtyqM7y4GA7bcZvf4URREzs4G4muDvkD1iPDz4947A=
 			</data>
 		</dict>
 		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			x3qRkwLOHiGR+ufOgzuxX3b32AhiWCatM5GyhBDw1gM=
+			MwQ90LZY8XODc4WB/gH2Xo9wKghaW1RuZ9YJUlA6MG4=
 			</data>
 		</dict>
 	</dict>

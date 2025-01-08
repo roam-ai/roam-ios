@@ -94,7 +94,7 @@ This will add the Roam SDK and its dependencies to your project. The Roam SDK de
 
 #### Manual Installation
 
-If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.1.30-beta.7/Roam.xcframework.zip) file.
+If you’re not familiar with using Cocoapods or prefer manual installation, we’ve added a ZIP file to the SDK. Use this link to download the [Roam.zip](https://github.com/roam-ai/roam-ios/releases/download/0.1.30-beta.8/Roam.xcframework.zip) file.
 
 Unzip the file and add the Roam `Roam.framework` to your Xcode project by dragging the file into your Project Navigator.
 

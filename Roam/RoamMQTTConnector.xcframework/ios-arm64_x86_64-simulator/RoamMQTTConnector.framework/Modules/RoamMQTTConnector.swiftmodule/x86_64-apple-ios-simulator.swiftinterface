@@ -262,6 +262,10 @@ extension MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var public_ip_address: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var recorded_at: Swift.String? {
     @objc get
     @objc set

@@ -400,6 +400,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) BOOL network_status;
 @property (nonatomic, copy) NSString * _Nullable network_type;
 @property (nonatomic, copy) NSString * _Nullable os_version;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
 @property (nonatomic, copy) NSString * _Nullable source;
 @property (nonatomic) int16_t speed;
@@ -735,6 +736,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull buildID;
 @property (nonatomic, copy) NSString * _Nonnull kernelVersion;
 @property (nonatomic, copy) NSString * _Nonnull ipAddress;
+@property (nonatomic, copy) NSString * _Nonnull publicIpAddress;
 @property (nonatomic, copy) NSString * _Nonnull deviceName;
 @property (nonatomic, copy) NSString * _Nonnull systemName;
 @property (nonatomic, copy) NSString * _Nonnull osVersion;
@@ -840,6 +842,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL build_id;
 @property (nonatomic) BOOL kernel_version;
 @property (nonatomic) BOOL ip_address;
+@property (nonatomic) BOOL public_ip_address;
 @property (nonatomic) BOOL device_name;
 @property (nonatomic) BOOL system_name;
 @property (nonatomic) BOOL idfv;

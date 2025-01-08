@@ -182,6 +182,10 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var public_ip_address: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var publish_only: Swift.Bool {
     @objc get
     @objc set
