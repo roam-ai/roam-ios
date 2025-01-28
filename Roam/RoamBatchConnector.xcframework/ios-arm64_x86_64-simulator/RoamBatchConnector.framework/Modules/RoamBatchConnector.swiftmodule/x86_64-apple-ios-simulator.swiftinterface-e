@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RoamBatchConnector
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreData
 import CoreLocation
 import Foundation
@@ -10,10 +11,68 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@_inheritsConvenienceInitializers @objc public class RoamBatchPublish : ObjectiveC.NSObject {
+  @objc public var batteryRemaining: Swift.Bool
+  @objc public var appId: Swift.Bool
+  @objc public var longitude: Swift.Bool
+  @objc public var speed: Swift.Bool
+  @objc public var locationListener: Swift.Bool
+  @objc public var locationAuthorizationStatus: Swift.Bool
+  @objc public var appContext: Swift.Bool
+  @objc public var source: Swift.Bool
+  @objc public var latitude: Swift.Bool
+  @objc public var nearbyEvents: Swift.Bool
+  @objc public var activity: Swift.Bool
+  @objc public var course: Swift.Bool
+  @objc public var recordedAt: Swift.Bool
+  @objc public var tzOffset: Swift.Bool
+  @objc public var batteryStatus: Swift.Bool
+  @objc public var appDetails: Swift.Bool
+  @objc public var geofenceEvents: Swift.Bool
+  @objc public var tripsEvents: Swift.Bool
+  @objc public var horizontalAccuracy: Swift.Bool
+  @objc public var gpsStatus: Swift.Bool
+  @objc public var locationPermission: Swift.Bool
+  @objc public var altitude: Swift.Bool
+  @objc public var locationId: Swift.Bool
+  @objc public var locationEvents: Swift.Bool
+  @objc public var publishOnly: Swift.Bool
+  @objc public var trackingMode: Swift.Bool
+  @objc public var userId: Swift.Bool
+  @objc public var eventListener: Swift.Bool
+  @objc public var networkStatus: Swift.Bool
+  @objc public var verticalAccuracy: Swift.Bool
+  @objc public var sdkVersion: Swift.Bool
+  @objc public var batterySaver: Swift.Bool
+  @objc public var deviceModel: Swift.Bool
+  @objc public var deviceManufacturer: Swift.Bool
+  @objc public var osVersion: Swift.Bool
+  @objc public var metadata: Swift.Bool
+  @objc public var networkType: Swift.Bool
+  @objc public var networkState: Swift.Bool
+  @objc public var buildId: Swift.Bool
+  @objc public var kernelVersion: Swift.Bool
+  @objc public var ipAddress: Swift.Bool
+  @objc public var publicIpAddress: Swift.Bool
+  @objc public var deviceName: Swift.Bool
+  @objc public var systemName: Swift.Bool
+  @objc public var idfv: Swift.Bool
+  @objc public var idfa: Swift.Bool
+  @objc public var wifiSSID: Swift.Bool
+  @objc public var localeCountry: Swift.Bool
+  @objc public var localeLanguage: Swift.Bool
+  @objc public var carrierName: Swift.Bool
+  @objc public var appInstallationDate: Swift.Bool
+  @objc public var appVersion: Swift.Bool
+  @objc public var centroid: Swift.Bool
+  @objc public func enableAll()
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamBatch : ObjectiveC.NSObject {
   @objc public static let shared: RoamBatchConnector.RoamBatch
   @objc public func initialize()
-  @objc public func setConfig(enable: Swift.Bool)
+  @objc public func setConfig(enable: Swift.Bool, syncHour: Foundation.NSNumber? = nil, publish: RoamBatchConnector.RoamBatchPublish)
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(BatchLocationModel) public class BatchLocationModel : CoreData.NSManagedObject {
@@ -202,7 +261,7 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var speed: Swift.Int16 {
+  @objc @NSManaged dynamic public var speed: Swift.Int32 {
     @objc get
     @objc set
   }

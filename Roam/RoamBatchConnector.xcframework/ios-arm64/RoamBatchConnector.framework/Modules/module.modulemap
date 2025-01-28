@@ -4,3 +4,8 @@ framework module RoamBatchConnector {
 
   module * { export * }
 }
+
+module RoamBatchConnector.Swift {
+  header "RoamBatchConnector-Swift.h"
+  requires objc
+}

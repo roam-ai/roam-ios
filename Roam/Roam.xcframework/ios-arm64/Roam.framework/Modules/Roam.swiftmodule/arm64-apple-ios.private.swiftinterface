@@ -590,7 +590,7 @@ extension UIKit.UIDevice {
   @objc public var app_version: Swift.Bool
   @objc public var centroid: Swift.Bool
   @objc override dynamic public init()
-  public func enableAll()
+  @objc public func enableAll()
   public func disableAll()
   @objc deinit
 }

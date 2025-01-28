@@ -488,3 +488,10 @@ We're excited to introduce Roam iOS SDK version 0.1.30-beta.8, with updates aime
 **Data Enrichment Updates**:
 Enhanced data enrichment features to provide more comprehensive and detailed data.
 These updates are designed to enhance the overall accuracy and efficiency of the SDK. Should you have any inquiries or feedback, our support team is readily available to assist you.
+
+
+## 0.1.30-beta.9
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.9, with updates aimed at improving data insights. Here's what's new:
+
+**Bug Fixes**:
+Fixed minor issues to ensure a more stable and seamless integration experience.

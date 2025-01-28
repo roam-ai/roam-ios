@@ -855,6 +855,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL app_version;
 @property (nonatomic) BOOL centroid;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enableAll;
 @end
 
 @class RoamPublishTripStop;
@@ -2192,6 +2193,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL app_version;
 @property (nonatomic) BOOL centroid;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)enableAll;
 @end
 
 @class RoamPublishTripStop;
