@@ -324,11 +324,12 @@ SWIFT_CLASS_NAMED("MqttConnectorLocationData")
 @property (nonatomic, copy) NSString * _Nullable app_details;
 @property (nonatomic, copy) NSString * _Nullable app_id;
 @property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_name;
 @property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable bundle_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic, copy) NSString * _Nullable client_id;

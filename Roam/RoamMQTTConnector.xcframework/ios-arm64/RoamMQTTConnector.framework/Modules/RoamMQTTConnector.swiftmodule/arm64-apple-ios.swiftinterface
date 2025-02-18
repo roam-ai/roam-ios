@@ -114,6 +114,10 @@ extension MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var app_version: Swift.String? {
     @objc get
     @objc set
@@ -130,7 +134,7 @@ extension MqttConnectorLocationData {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var build_id: Swift.String? {
+  @objc @NSManaged dynamic public var bundle_id: Swift.String? {
     @objc get
     @objc set
   }

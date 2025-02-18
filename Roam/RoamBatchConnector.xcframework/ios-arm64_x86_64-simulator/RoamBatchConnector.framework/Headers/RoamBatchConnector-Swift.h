@@ -322,11 +322,12 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable app_details;
 @property (nonatomic, copy) NSString * _Nullable app_id;
 @property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_name;
 @property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable bundle_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
@@ -402,6 +403,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamBatch * 
 /// \param enable A Boolean value indicating whether processing should be enabled.
 ///
 - (void)setConfigWithEnable:(BOOL)enable syncHour:(NSNumber * _Nullable)syncHour publish:(RoamBatchPublish * _Nonnull)publish;
+- (void)enableLogging;
 @end
 
 
@@ -445,7 +447,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL metadata;
 @property (nonatomic) BOOL networkType;
 @property (nonatomic) BOOL networkState;
-@property (nonatomic) BOOL buildId;
+@property (nonatomic) BOOL bundleId;
 @property (nonatomic) BOOL kernelVersion;
 @property (nonatomic) BOOL ipAddress;
 @property (nonatomic) BOOL publicIpAddress;
@@ -459,6 +461,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL carrierName;
 @property (nonatomic) BOOL appInstallationDate;
 @property (nonatomic) BOOL appVersion;
+@property (nonatomic) BOOL appName;
 @property (nonatomic) BOOL centroid;
 - (void)enableAll;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -796,11 +799,12 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable app_details;
 @property (nonatomic, copy) NSString * _Nullable app_id;
 @property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_name;
 @property (nonatomic, copy) NSString * _Nullable app_version;
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSString * _Nullable build_id;
+@property (nonatomic, copy) NSString * _Nullable bundle_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
@@ -876,6 +880,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamBatch * 
 /// \param enable A Boolean value indicating whether processing should be enabled.
 ///
 - (void)setConfigWithEnable:(BOOL)enable syncHour:(NSNumber * _Nullable)syncHour publish:(RoamBatchPublish * _Nonnull)publish;
+- (void)enableLogging;
 @end
 
 
@@ -919,7 +924,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL metadata;
 @property (nonatomic) BOOL networkType;
 @property (nonatomic) BOOL networkState;
-@property (nonatomic) BOOL buildId;
+@property (nonatomic) BOOL bundleId;
 @property (nonatomic) BOOL kernelVersion;
 @property (nonatomic) BOOL ipAddress;
 @property (nonatomic) BOOL publicIpAddress;
@@ -933,6 +938,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL carrierName;
 @property (nonatomic) BOOL appInstallationDate;
 @property (nonatomic) BOOL appVersion;
+@property (nonatomic) BOOL appName;
 @property (nonatomic) BOOL centroid;
 - (void)enableAll;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;

@@ -339,8 +339,9 @@ public enum IntegrityCheckerImageTarget {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationBatchDispatcher : ObjectiveC.NSObject {
   public static let shared: RoamLocationBatchDispatcher
   public var publishLocationUpdate: ((_ json: Swift.String, _ publishKey: Swift.String) -> ())?
-  public var didChangeNetwork: ((_ status: Swift.String) -> ())?
+  public var didChangeNetwork: ((_ status: Swift.String, _ publishKey: Swift.String) -> ())?
   public var stoppedTrackingCallback: (() -> ())?
+  public func getObjectId() -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamStartTrip : ObjectiveC.NSObject {
@@ -433,6 +434,13 @@ public enum FailedCheck : Swift.CaseIterable {
   public var publishLocationUpdate: ((_ location: CoreLocation.CLLocation, _ dictionary: [Swift.String : Any]) -> ())?
   public var connectCustomMQTT: (() -> ())?
   public var disconnectCustomMQTT: (() -> ())?
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LocationSubscriptionManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public static let shared: LocationSubscriptionManager
+  public var isWithinGeofence: ((_ location: CoreLocation.CLLocation) -> [(id: Swift.String, event: Swift.String)])?
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  public func locationWithinGeofence(_ location: CoreLocation.CLLocation) -> [(id: Swift.String, event: Swift.String)]
   @objc deinit
 }
 public enum Model : Swift.String {
@@ -574,7 +582,7 @@ extension UIKit.UIDevice {
   @objc public var activity: Swift.Bool
   @objc public var network_type: Swift.Bool
   @objc public var network_state: Swift.Bool
-  @objc public var build_id: Swift.Bool
+  @objc public var bundle_id: Swift.Bool
   @objc public var kernel_version: Swift.Bool
   @objc public var ip_address: Swift.Bool
   @objc public var public_ip_address: Swift.Bool
@@ -588,6 +596,7 @@ extension UIKit.UIDevice {
   @objc public var carrier_name: Swift.Bool
   @objc public var app_installation_date: Swift.Bool
   @objc public var app_version: Swift.Bool
+  @objc public var app_name: Swift.Bool
   @objc public var centroid: Swift.Bool
   @objc override dynamic public init()
   @objc public func enableAll()
@@ -674,7 +683,7 @@ extension UIKit.UIDevice {
   @objc public var deviceModel: Swift.String
   @objc public var manufacturer: Swift.String
   @objc public var networkType: Swift.String
-  @objc public var buildID: Swift.String
+  @objc public var bundleId: Swift.String
   @objc public var kernelVersion: Swift.String
   @objc public var ipAddress: Swift.String
   @objc public var publicIpAddress: Swift.String
@@ -690,6 +699,10 @@ extension UIKit.UIDevice {
   @objc public var appInstallationDate: Swift.String
   @objc public var appVersion: Swift.String
   @objc public var centroid: RoamCentroid?
+  @objc public var appName: Swift.String
+  @objc public var locationId: Swift.String
+  @objc public var appId: Swift.String
+  @objc public var sdkVerison: Swift.String
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: RoamUser?, _ error: RoamError?) -> Swift.Void)
@@ -958,6 +971,10 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var app_version: Swift.String? {
     @objc get
     @objc set
@@ -974,7 +991,7 @@ extension MqttLocationData {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var build_id: Swift.String? {
+  @objc @NSManaged dynamic public var bundle_id: Swift.String? {
     @objc get
     @objc set
   }

@@ -8,6 +8,7 @@ import Foundation
 import Roam
 @_exported import RoamBatchConnector
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -50,7 +51,7 @@ import _SwiftConcurrencyShims
   @objc public var metadata: Swift.Bool
   @objc public var networkType: Swift.Bool
   @objc public var networkState: Swift.Bool
-  @objc public var buildId: Swift.Bool
+  @objc public var bundleId: Swift.Bool
   @objc public var kernelVersion: Swift.Bool
   @objc public var ipAddress: Swift.Bool
   @objc public var publicIpAddress: Swift.Bool
@@ -64,6 +65,7 @@ import _SwiftConcurrencyShims
   @objc public var carrierName: Swift.Bool
   @objc public var appInstallationDate: Swift.Bool
   @objc public var appVersion: Swift.Bool
+  @objc public var appName: Swift.Bool
   @objc public var centroid: Swift.Bool
   @objc public func enableAll()
   @objc override dynamic public init()
@@ -73,6 +75,7 @@ import _SwiftConcurrencyShims
   @objc public static let shared: RoamBatch
   @objc public func initialize()
   @objc public func setConfig(enable: Swift.Bool, syncHour: Foundation.NSNumber? = nil, publish: RoamBatchPublish)
+  @objc public func enableLogging()
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc(BatchLocationModel) public class BatchLocationModel : CoreData.NSManagedObject {
@@ -105,6 +108,10 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var app_name: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var app_version: Swift.String? {
     @objc get
     @objc set
@@ -121,7 +128,7 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var build_id: Swift.String? {
+  @objc @NSManaged dynamic public var bundle_id: Swift.String? {
     @objc get
     @objc set
   }

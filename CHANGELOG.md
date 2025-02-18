@@ -495,3 +495,9 @@ We're excited to introduce Roam iOS SDK version 0.1.30-beta.9, with updates aime
 
 **Bug Fixes**:
 Fixed minor issues to ensure a more stable and seamless integration experience.
+
+## 0.1.30-beta.10
+We're excited to introduce Roam iOS SDK version 0.1.30-beta.10, with updates aimed at improving data insights. Here's what's new:
+
+**Bug Fixes & Improvements**:
+Fixed minor issues to ensure a more stable and seamless integration experience.
