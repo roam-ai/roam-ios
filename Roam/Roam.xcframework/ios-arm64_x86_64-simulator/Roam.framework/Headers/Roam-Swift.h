@@ -349,18 +349,6 @@ typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
 };
 
-@class CLLocationManager;
-@class CLLocation;
-
-SWIFT_CLASS("_TtC4Roam27LocationSubscriptionManager")
-@interface LocationSubscriptionManager : NSObject <CLLocationManagerDelegate>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationSubscriptionManager * _Nonnull shared;)
-+ (LocationSubscriptionManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-@end
-
 
 SWIFT_CLASS_NAMED("MqttLocationData")
 @interface MqttLocationData : NSManagedObject
@@ -505,6 +493,7 @@ SWIFT_CLASS("_TtC4Roam8Position")
 @class RoamError;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
+@class CLLocation;
 @class RoamPublish;
 @class RoamTripResponse;
 @class RoamTripError;
@@ -694,6 +683,25 @@ SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam17RoamGeofenceEvent")
+@interface RoamGeofenceEvent : NSObject
+@property (nonatomic, readonly) int64_t geofenceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull eventType;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam19RoamGeofenceMonitor")
+@interface RoamGeofenceMonitor : NSObject <CLLocationManagerDelegate>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamGeofenceMonitor * _Nonnull shared;)
++ (RoamGeofenceMonitor * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1302,18 +1310,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addStopObject:(TripStop * _Nonnull)value;
 - (void)removeStopObject:(TripStop * _Nonnull)value;
 - (void)addStop:(NSSet * _Nonnull)values;
 - (void)removeStop:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)addEvents:(NSSet * _Nonnull)values;
+- (void)removeEvents:(NSSet * _Nonnull)values;
 @end
 
 
@@ -1704,18 +1712,6 @@ typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
 };
 
-@class CLLocationManager;
-@class CLLocation;
-
-SWIFT_CLASS("_TtC4Roam27LocationSubscriptionManager")
-@interface LocationSubscriptionManager : NSObject <CLLocationManagerDelegate>
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) LocationSubscriptionManager * _Nonnull shared;)
-+ (LocationSubscriptionManager * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
-@end
-
 
 SWIFT_CLASS_NAMED("MqttLocationData")
 @interface MqttLocationData : NSManagedObject
@@ -1860,6 +1856,7 @@ SWIFT_CLASS("_TtC4Roam8Position")
 @class RoamError;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
+@class CLLocation;
 @class RoamPublish;
 @class RoamTripResponse;
 @class RoamTripError;
@@ -2049,6 +2046,25 @@ SWIFT_CLASS("_TtC4Roam10RoamEvents")
 @property (nonatomic, copy) NSString * _Nullable userId;
 @property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
 @property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam17RoamGeofenceEvent")
+@interface RoamGeofenceEvent : NSObject
+@property (nonatomic, readonly) int64_t geofenceId;
+@property (nonatomic, readonly, copy) NSString * _Nonnull eventType;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC4Roam19RoamGeofenceMonitor")
+@interface RoamGeofenceMonitor : NSObject <CLLocationManagerDelegate>
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamGeofenceMonitor * _Nonnull shared;)
++ (RoamGeofenceMonitor * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2657,18 +2673,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addStopObject:(TripStop * _Nonnull)value;
 - (void)removeStopObject:(TripStop * _Nonnull)value;
 - (void)addStop:(NSSet * _Nonnull)values;
 - (void)removeStop:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
+- (void)addEvents:(NSSet * _Nonnull)values;
+- (void)removeEvents:(NSSet * _Nonnull)values;
 @end
 
 

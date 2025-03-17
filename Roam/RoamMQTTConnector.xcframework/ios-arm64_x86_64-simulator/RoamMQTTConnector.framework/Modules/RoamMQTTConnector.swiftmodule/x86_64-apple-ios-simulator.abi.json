@@ -7763,259 +7763,259 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
       "offset": 291,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
       "offset": 303,
       "length": 3,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectionType.swift",
       "kind": "IntegerLiteral",
       "offset": 316,
       "length": 3,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 10408,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 12888,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 12930,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 13016,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 13039,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 13045,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "BooleanLiteral",
       "offset": 13091,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 13382,
       "length": 2,
       "value": "50"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Extensions.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Extensions.swift",
       "kind": "FloatLiteral",
       "offset": 1025,
       "length": 3,
       "value": "0.0"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectorBuilder.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Builders\/RoamMqttConnectorBuilder.swift",
       "kind": "StringLiteral",
       "offset": 522,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 930,
       "length": 20,
       "value": "\"MQTTConnectorModel\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 967,
       "length": 6,
       "value": "\"momd\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 1713,
       "length": 27,
       "value": "\"MQTTConnectorModel.sqlite\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1884,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1942,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2198,
       "length": 53,
       "value": "\"Error: Failed to add the persistent store. \""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2250,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2344,
       "length": 51,
       "value": "\"Failed to initialize the application's saved data\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2463,
       "length": 70,
       "value": "\"There was an error creating or loading the application's saved data.\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2666,
       "length": 19,
       "value": "\"YOUR_ERROR_DOMAIN\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "IntegerLiteral",
       "offset": 2693,
       "length": 4,
       "value": "9999"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2733,
       "length": 60,
       "value": "\"Unresolved error \""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2766,
       "length": 1,
       "value": "\", \""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "StringLiteral",
       "offset": 2792,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/CoreDataManager.swift",
       "kind": "BooleanLiteral",
       "offset": 3216,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "Dictionary",
       "offset": 933,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "BooleanLiteral",
       "offset": 978,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
       "offset": 1376,
       "length": 5,
       "value": "\"5.0\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/CocoaMQTTConnector.swift",
       "kind": "StringLiteral",
       "offset": 19441,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/MQTTConnectorManager.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/MQTTConnectorManager.swift",
       "kind": "BooleanLiteral",
       "offset": 358,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
       "kind": "StringLiteral",
       "offset": 159,
       "length": 23,
       "value": "\"MQTTConnectorSettings\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
       "kind": "StringLiteral",
       "offset": 283,
       "length": 24,
       "value": "\"MQTTConnectorConnected\""
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
       "kind": "BooleanLiteral",
       "offset": 323,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Utility\/Userdefaults.swift",
       "kind": "StringLiteral",
       "offset": 651,
       "length": 28,

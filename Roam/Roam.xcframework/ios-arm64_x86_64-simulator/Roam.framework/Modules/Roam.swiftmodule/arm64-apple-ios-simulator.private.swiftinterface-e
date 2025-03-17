@@ -91,6 +91,14 @@ extension Swift.Optional : Roam.AnyOptional {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers @objc public class RoamGeofenceEvent : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let geofenceId: Swift.Int64
+  @objc final public let eventType: Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
   case failedToCreateWithHostname(Swift.String, Swift.Int32)
@@ -336,6 +344,13 @@ public enum IntegrityCheckerImageTarget {
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamGeofenceMonitor : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  @objc public static let shared: Roam.RoamGeofenceMonitor
+  public var detectGeofenceEvents: ((_ location: CoreLocation.CLLocation) -> [(id: Swift.Int64, event: Swift.String)])?
+  public var stoppedTrackingCallback: (() -> ())?
+  public func getGeofenceEvents(for location: CoreLocation.CLLocation) -> [(id: Swift.Int64, event: Swift.String)]
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocationBatchDispatcher : ObjectiveC.NSObject {
   public static let shared: Roam.RoamLocationBatchDispatcher
   public var publishLocationUpdate: ((_ json: Swift.String, _ publishKey: Swift.String) -> ())?
@@ -434,13 +449,6 @@ public enum FailedCheck : Swift.CaseIterable {
   public var publishLocationUpdate: ((_ location: CoreLocation.CLLocation, _ dictionary: [Swift.String : Any]) -> ())?
   public var connectCustomMQTT: (() -> ())?
   public var disconnectCustomMQTT: (() -> ())?
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class LocationSubscriptionManager : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
-  @objc public static let shared: Roam.LocationSubscriptionManager
-  public var isWithinGeofence: ((_ location: CoreLocation.CLLocation) -> [(id: Swift.String, event: Swift.String)])?
-  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
-  public func locationWithinGeofence(_ location: CoreLocation.CLLocation) -> [(id: Swift.String, event: Swift.String)]
   @objc deinit
 }
 public enum Model : Swift.String {
