@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamBatchConnector-Swift.h</key>
 		<data>
-		pQamCmQwz8Jsk4Ek/0Hi+aAYSXM=
+		SMH84mhAdFdj2jmkQe5IQ7PJDZo=
 		</data>
 		<key>Headers/RoamBatchConnector.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		KerOmhW0scVpL5P77DjQwFAVU3U=
+		CWowmv/OrQmq7axyl4foqci6R+o=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		7gCP1kJCe8rdoJFuu2IYPH+60Xo=
+		AbC/PLeMIaR+PcFsx63DgQBg7vw=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		7gCP1kJCe8rdoJFuu2IYPH+60Xo=
+		AbC/PLeMIaR+PcFsx63DgQBg7vw=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		8XdkhnRm+Zq4k05ReqA0DBKvkA4=
+		1mAJYY0XnuFNmZvyt+Z3Y7BJNW8=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		KerOmhW0scVpL5P77DjQwFAVU3U=
+		CWowmv/OrQmq7axyl4foqci6R+o=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		PxUMV16pAk8AynqFD2t1bXhtxjY=
+		Sd9rhXTVsWkZcvU/t2SZ7TLZE58=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		PxUMV16pAk8AynqFD2t1bXhtxjY=
+		Sd9rhXTVsWkZcvU/t2SZ7TLZE58=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		L7xgX+RMN60iFyA1ETSbKZ61Xsg=
+		dMjJ4z7PEvb+dxV/ry4RutwCWYI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wccHtqsmHlYWE9nPlIMzJvPUHhWHCcxKq3CV92tpadM=
+			4yWCjX8V3WY+aS+3nqUHn5OD/bShDaoHT4MWNZyg9Tg=
 			</data>
 		</dict>
 		<key>Headers/RoamBatchConnector.h</key>
@@ -89,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNcEpI5NSD7W5VPv840hRKkjQM1Y1QZdcjTF3QOLFtg=
+			sv/4xHxIuE/a1OgtRBJHPims2s+Qrg914lSlJ/u1DEg=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ztp1/nqczW3EixVwlWyBiKe9qw4UPqe4TbZ5hder+k=
+			9lT7z8MClJuo0kBC6eY4cigtPH4s23GllJpF5ehSGmI=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -110,28 +110,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ztp1/nqczW3EixVwlWyBiKe9qw4UPqe4TbZ5hder+k=
+			9lT7z8MClJuo0kBC6eY4cigtPH4s23GllJpF5ehSGmI=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kk5ut+1j1GYF27ueXOgpnOpzqaAPqv0mPfsVyqb0364=
+			Ll122FTCAqn2mOoSaJ/mDJbpDmva/v5RJKECp7CELxc=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DNcEpI5NSD7W5VPv840hRKkjQM1Y1QZdcjTF3QOLFtg=
+			sv/4xHxIuE/a1OgtRBJHPims2s+Qrg914lSlJ/u1DEg=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			L63nUiF09vF289A4pibymNaZeNgHEAxk9PUhOwmd6YM=
+			Z2OabKtqOqf6U0rjwOJMyAY2D7gYJPFDzMIXvOFE9ls=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L63nUiF09vF289A4pibymNaZeNgHEAxk9PUhOwmd6YM=
+			Z2OabKtqOqf6U0rjwOJMyAY2D7gYJPFDzMIXvOFE9ls=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VD2ONwRsZK1I3jnd/+BlleFu3HEXF1NgT7Tww/ySMBs=
+			TydNxt3y5Zcn6wzef3uN9e0ZVoUXLymN0Oppd/T6TH4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

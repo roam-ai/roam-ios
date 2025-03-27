@@ -95,6 +95,7 @@ extension Swift.Optional : AnyOptional {
   @objc final public let geofenceId: Swift.Int64
   @objc final public let eventType: Swift.String
   @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJSONData() -> Foundation.Data?
   @objc deinit
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
@@ -352,7 +353,7 @@ public typealias FileIntegrityCheckResult = (result: Swift.Bool, hitChecks: [Fil
   public var publishLocationUpdate: ((_ json: Swift.String, _ publishKey: Swift.String) -> ())?
   public var didChangeNetwork: ((_ status: Swift.String, _ publishKey: Swift.String) -> ())?
   public var stoppedTrackingCallback: (() -> ())?
-  public func getObjectId() -> Swift.String
+  public func getAccountId() -> Swift.String
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class RoamStartTrip : ObjectiveC.NSObject {
@@ -571,7 +572,6 @@ extension UIKit.UIDevice {
   @objc public var gps_status: Swift.Bool
   @objc public var location_permission: Swift.Bool
   @objc public var battery_status: Swift.Bool
-  @objc public var airplane_mode: Swift.Bool
   @objc public var battery_saver: Swift.Bool
   @objc public var battery_remaining: Swift.Bool
   @objc public var device_model: Swift.Bool
@@ -850,6 +850,10 @@ extension Swift.Optional {
   }
 }
 #endif
+@_inheritsConvenienceInitializers @objc public class JWTDecoder : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamTripSync : ObjectiveC.NSObject {
   @objc public var code: Foundation.NSNumber?
   @objc public var message: Swift.String?
@@ -1017,6 +1021,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var geofence_events: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var geofenceEvents: Foundation.Data? {
     @objc get
     @objc set
   }

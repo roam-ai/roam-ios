@@ -507,7 +507,7 @@ Fixed minor issues to ensure a more stable and seamless integration experience.
 
 **Enhancements in Tracking and Customization**
 
-We're excited to introduce Roam iOS SDK version 0.0.1.30, bringing improvements to tracking accuracy and customization options. Here's what's new:
+We're excited to introduce Roam iOS SDK version 0.1.30, bringing improvements to tracking accuracy and customization options. Here's what's new:
 
 **Tracking Enhancements**:
 
@@ -518,3 +518,14 @@ A refined visit detection mechanism ensures more accurate location insights.
 **Parameter Additions**:
 Introduced several new parameters to allow greater customization and control over tracking behavior.
 These updates aim to enhance the SDK's reliability and user experience. If you have any questions or feedback, our support team is here to assist.
+
+## 0.1.31
+
+**Enhancements in Data Customization**
+
+We're excited to introduce Roam iOS SDK version 0.1.31, bringing new enhancements for greater customization. Here's what's new:
+
+**Data Enhancements Additions:**
+Introduced several new parameters to provide more flexibility and control over data handling.
+
+These updates aim to enhance the SDK's customization capabilities and overall user experience. If you have any questions or feedback, our support team is here to assist.

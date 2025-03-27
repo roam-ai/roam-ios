@@ -13,60 +13,60 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_inheritsConvenienceInitializers @objc public class RoamBatchPublish : ObjectiveC.NSObject {
-  @objc public var batteryRemaining: Swift.Bool
-  @objc public var appId: Swift.Bool
+  @objc public var trackingMode: Swift.Bool
+  @objc public var latitude: Swift.Bool
   @objc public var longitude: Swift.Bool
   @objc public var speed: Swift.Bool
-  @objc public var locationListener: Swift.Bool
-  @objc public var locationAuthorizationStatus: Swift.Bool
-  @objc public var appContext: Swift.Bool
-  @objc public var source: Swift.Bool
-  @objc public var latitude: Swift.Bool
-  @objc public var nearbyEvents: Swift.Bool
-  @objc public var activity: Swift.Bool
+  @objc public var altitude: Swift.Bool
   @objc public var course: Swift.Bool
+  @objc public var horizontalAccuracy: Swift.Bool
+  @objc public var verticalAccuracy: Swift.Bool
+  @objc public var activity: Swift.Bool
+  @objc public var appContext: Swift.Bool
   @objc public var recordedAt: Swift.Bool
   @objc public var tzOffset: Swift.Bool
   @objc public var batteryStatus: Swift.Bool
-  @objc public var appDetails: Swift.Bool
-  @objc public var geofenceEvents: Swift.Bool
-  @objc public var tripsEvents: Swift.Bool
-  @objc public var horizontalAccuracy: Swift.Bool
-  @objc public var gpsStatus: Swift.Bool
-  @objc public var locationPermission: Swift.Bool
-  @objc public var altitude: Swift.Bool
-  @objc public var locationId: Swift.Bool
-  @objc public var locationEvents: Swift.Bool
-  @objc public var publishOnly: Swift.Bool
-  @objc public var trackingMode: Swift.Bool
-  @objc public var userId: Swift.Bool
-  @objc public var eventListener: Swift.Bool
-  @objc public var networkStatus: Swift.Bool
-  @objc public var verticalAccuracy: Swift.Bool
-  @objc public var sdkVersion: Swift.Bool
+  @objc public var batteryRemaining: Swift.Bool
   @objc public var batterySaver: Swift.Bool
-  @objc public var deviceModel: Swift.Bool
-  @objc public var deviceManufacturer: Swift.Bool
-  @objc public var osVersion: Swift.Bool
-  @objc public var metadata: Swift.Bool
+  @objc public var networkStatus: Swift.Bool
   @objc public var networkType: Swift.Bool
   @objc public var networkState: Swift.Bool
-  @objc public var bundleId: Swift.Bool
+  @objc public var locationPermission: Swift.Bool
+  @objc public var gpsStatus: Swift.Bool
+  @objc public var deviceModel: Swift.Bool
+  @objc public var deviceManufacturer: Swift.Bool
+  @objc public var deviceName: Swift.Bool
   @objc public var kernelVersion: Swift.Bool
   @objc public var ipAddress: Swift.Bool
   @objc public var publicIpAddress: Swift.Bool
-  @objc public var deviceName: Swift.Bool
-  @objc public var systemName: Swift.Bool
-  @objc public var idfv: Swift.Bool
-  @objc public var idfa: Swift.Bool
   @objc public var wifiSSID: Swift.Bool
   @objc public var localeCountry: Swift.Bool
   @objc public var localeLanguage: Swift.Bool
   @objc public var carrierName: Swift.Bool
+  @objc public var appName: Swift.Bool
   @objc public var appInstallationDate: Swift.Bool
   @objc public var appVersion: Swift.Bool
-  @objc public var appName: Swift.Bool
+  @objc public var systemName: Swift.Bool
   @objc public var centroid: Swift.Bool
+  @objc public var metadata: Swift.Bool
+  @objc public var sdkVersion: Swift.Bool
+  @objc public var locationId: Swift.Bool
+  @objc public var userId: Swift.Bool
+  @objc public var appId: Swift.Bool
+  @objc public var osVersion: Swift.Bool
+  @objc public var idfv: Swift.Bool
+  @objc public var idfa: Swift.Bool
+  @objc public var source: Swift.Bool
+  @objc public var bundleId: Swift.Bool
+  @objc public var locationListener: Swift.Bool
+  @objc public var locationAuthorizationStatus: Swift.Bool
+  @objc public var nearbyEvents: Swift.Bool
+  @objc public var appDetails: Swift.Bool
+  @objc public var geofenceEvents: Swift.Bool
+  @objc public var tripsEvents: Swift.Bool
+  @objc public var locationEvents: Swift.Bool
+  @objc public var publishOnly: Swift.Bool
+  @objc public var eventListener: Swift.Bool
   @objc public func enableAll()
   @objc override dynamic public init()
   @objc deinit

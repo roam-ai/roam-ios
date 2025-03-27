@@ -340,6 +340,12 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
+SWIFT_CLASS("_TtC4Roam10JWTDecoder")
+@interface JWTDecoder : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,
@@ -379,6 +385,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable device_name;
 @property (nonatomic) BOOL event_listener;
 @property (nonatomic) BOOL geofence_events;
+@property (nonatomic, copy) NSData * _Nullable geofenceEvents;
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) double horizontal_accuracy;
 @property (nonatomic, copy) NSString * _Nullable idfa;
@@ -693,6 +700,7 @@ SWIFT_CLASS("_TtC4Roam17RoamGeofenceEvent")
 @property (nonatomic, readonly) int64_t geofenceId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull eventType;
 - (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSData * _Nullable)toJSONData SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -848,7 +856,6 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) BOOL location_permission;
 @property (nonatomic) BOOL battery_status;
-@property (nonatomic) BOOL airplane_mode;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic) BOOL battery_remaining;
 @property (nonatomic) BOOL device_model;
@@ -1310,18 +1317,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)addEvents:(NSSet * _Nonnull)values;
 - (void)removeEvents:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addStopObject:(TripStop * _Nonnull)value;
+- (void)removeStopObject:(TripStop * _Nonnull)value;
+- (void)addStop:(NSSet * _Nonnull)values;
+- (void)removeStop:(NSSet * _Nonnull)values;
 @end
 
 
@@ -1703,6 +1710,12 @@ SWIFT_CLASS_NAMED("BatchLocation")
 
 
 
+
+SWIFT_CLASS("_TtC4Roam10JWTDecoder")
+@interface JWTDecoder : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
   LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
   LocationAccuracyKCLLocationAccuracyBest = 2,
@@ -1742,6 +1755,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic, copy) NSString * _Nullable device_name;
 @property (nonatomic) BOOL event_listener;
 @property (nonatomic) BOOL geofence_events;
+@property (nonatomic, copy) NSData * _Nullable geofenceEvents;
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) double horizontal_accuracy;
 @property (nonatomic, copy) NSString * _Nullable idfa;
@@ -2056,6 +2070,7 @@ SWIFT_CLASS("_TtC4Roam17RoamGeofenceEvent")
 @property (nonatomic, readonly) int64_t geofenceId;
 @property (nonatomic, readonly, copy) NSString * _Nonnull eventType;
 - (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSData * _Nullable)toJSONData SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2211,7 +2226,6 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL gps_status;
 @property (nonatomic) BOOL location_permission;
 @property (nonatomic) BOOL battery_status;
-@property (nonatomic) BOOL airplane_mode;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic) BOOL battery_remaining;
 @property (nonatomic) BOOL device_model;
@@ -2673,18 +2687,18 @@ SWIFT_CLASS_NAMED("TripsLocal")
 
 
 @interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
 - (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
 - (void)addEvents:(NSSet * _Nonnull)values;
 - (void)removeEvents:(NSSet * _Nonnull)values;
+@end
+
+
+@interface TripsLocal (SWIFT_EXTENSION(Roam))
+- (void)addStopObject:(TripStop * _Nonnull)value;
+- (void)removeStopObject:(TripStop * _Nonnull)value;
+- (void)addStop:(NSSet * _Nonnull)values;
+- (void)removeStop:(NSSet * _Nonnull)values;
 @end
 
 
