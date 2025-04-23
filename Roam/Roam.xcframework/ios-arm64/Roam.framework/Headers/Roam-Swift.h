@@ -781,6 +781,8 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull locationId;
 @property (nonatomic, copy) NSString * _Nonnull appId;
 @property (nonatomic, copy) NSString * _Nonnull sdkVerison;
+@property (nonatomic, copy) NSArray<RoamGeofenceEvent *> * _Nonnull localGeofenceEvents;
+- (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -886,6 +888,7 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL app_version;
 @property (nonatomic) BOOL app_name;
 @property (nonatomic) BOOL centroid;
+@property (nonatomic) BOOL geofenceEvents;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enableAll;
 @end

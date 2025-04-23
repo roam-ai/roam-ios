@@ -1,0 +1,142 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name RoamGeofence
+import CoreData
+import CoreLocation
+import Foundation
+import MapKit
+import Roam
+@_exported import RoamGeofence
+import SQLite3
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@objc public protocol Geofence {
+  @objc var id: Swift.Int64 { get }
+  @objc var name: Swift.String { get }
+  @objc var createdAt: Foundation.NSDate { get }
+  @objc var updatedAt: Foundation.NSDate { get }
+  @objc func contains(location: CoreLocation.CLLocation) -> Swift.Bool
+}
+@objc public class CircularGeofence : ObjectiveC.NSObject, Geofence {
+  @objc final public let id: Swift.Int64
+  @objc final public let name: Swift.String
+  @objc final public let latitude: Swift.Double
+  @objc final public let longitude: Swift.Double
+  @objc final public let radius: Swift.Double
+  @objc public var createdAt: Foundation.NSDate {
+    get
+  }
+  @objc public var updatedAt: Foundation.NSDate {
+    get
+  }
+  public init(id: Swift.Int64, name: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double)
+  @objc public func contains(location: CoreLocation.CLLocation) -> Swift.Bool
+  @objc deinit
+}
+@objc public class PolygonGeofence : ObjectiveC.NSObject, Geofence {
+  @objc final public let id: Swift.Int64
+  @objc final public let name: Swift.String
+  @objc final public let coordinates: [Foundation.NSValue]
+  @objc public var createdAt: Foundation.NSDate {
+    get
+  }
+  @objc public var updatedAt: Foundation.NSDate {
+    get
+  }
+  public init(id: Swift.Int64, name: Swift.String, coordinates: [Foundation.NSValue], createdAt: Foundation.NSDate = NSDate(), updatedAt: Foundation.NSDate = NSDate())
+  @objc public func contains(location: CoreLocation.CLLocation) -> Swift.Bool
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class RoamLocalGeofenceManager : ObjectiveC.NSObject {
+  public typealias GeofenceCompletionHandler = (_ status: RoamGeofenceStatus, _ geofence: (any Geofence)?) -> Swift.Void
+  public typealias GeneralCompletionHandler = (_ status: RoamGeofenceStatus) -> Swift.Void
+  @objc public static let shared: RoamLocalGeofenceManager
+  @objc public func initialize()
+  @objc public func createGeofence(_ geofence: any Geofence, completion: @escaping RoamLocalGeofenceManager.GeofenceCompletionHandler)
+  @objc public func updateGeofence(_ geofence: any Geofence, completion: @escaping RoamLocalGeofenceManager.GeofenceCompletionHandler)
+  @objc public func deleteGeofence(id: Swift.Int64, completion: @escaping RoamLocalGeofenceManager.GeneralCompletionHandler)
+  @objc public func deleteAllGeofence(completion: @escaping RoamLocalGeofenceManager.GeneralCompletionHandler)
+  @objc public func getAllGeofences(completion: @escaping (_ geofences: [any Geofence]) -> Swift.Void)
+  @objc public func getGeofences(by id: Swift.Int64, completion: @escaping RoamLocalGeofenceManager.GeofenceCompletionHandler)
+  @objc deinit
+}
+@objc public enum RoamGeofenceStatus : Swift.Int {
+  case success
+  case duplicateGeofenceId
+  case invalidCoordinates
+  case invalidRadiusRange
+  case invalidPolygonRange
+  case invalidGeofenceId
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc(GeofenceEntity) public class GeofenceEntity : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension GeofenceEntity {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<GeofenceEntity>
+  @objc @NSManaged dynamic public var centerLatitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var centerLongitude: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var coordinates: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var createdAt: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var id: Swift.Int64 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var maxLat: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var maxLon: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var minLat: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var minLon: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var name: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var radius: Swift.Double {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var type: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var updatedAt: Foundation.Date? {
+    @objc get
+    @objc set
+  }
+}
+extension RoamGeofenceStatus : Swift.Equatable {}
+extension RoamGeofenceStatus : Swift.Hashable {}
+extension RoamGeofenceStatus : Swift.RawRepresentable {}

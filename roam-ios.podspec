@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'roam-ios'
-  s.version               = '0.1.31'
+  s.version               = '0.1.32'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
   s.social_media_url      = 'https://twitter.com/roam_ai'
@@ -32,6 +32,12 @@ Pod::Spec.new do |s|
   s.subspec 'RoamBatchConnector' do |batch|
     batch.vendored_frameworks = 'Roam/RoamBatchConnector.xcframework'
     batch.dependency 'roam-ios/Roam'
+  end
+  
+# ======================= RoamGeofence Module =======================
+  s.subspec 'RoamGeofence' do |geofence|
+    geofence.vendored_frameworks = 'Roam/RoamGeofence.xcframework'
+    geofence.dependency 'roam-ios/Roam'
   end
 
 end

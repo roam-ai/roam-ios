@@ -345,6 +345,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic) double latitude;
 @property (nonatomic, copy) NSString * _Nullable locale_country;
 @property (nonatomic, copy) NSString * _Nullable locale_language;
+@property (nonatomic, copy) NSData * _Nullable localGeofenceEvents;
 @property (nonatomic) int16_t location_authorization_status;
 @property (nonatomic) BOOL location_events;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -449,6 +450,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL locationId;
 @property (nonatomic) BOOL userId;
 @property (nonatomic) BOOL appId;
+@property (nonatomic) BOOL localGeofenceEvents;
 @property (nonatomic) BOOL osVersion;
 @property (nonatomic) BOOL idfv;
 @property (nonatomic) BOOL idfa;
@@ -822,6 +824,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic) double latitude;
 @property (nonatomic, copy) NSString * _Nullable locale_country;
 @property (nonatomic, copy) NSString * _Nullable locale_language;
+@property (nonatomic, copy) NSData * _Nullable localGeofenceEvents;
 @property (nonatomic) int16_t location_authorization_status;
 @property (nonatomic) BOOL location_events;
 @property (nonatomic, copy) NSString * _Nullable location_id;
@@ -926,6 +929,7 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL locationId;
 @property (nonatomic) BOOL userId;
 @property (nonatomic) BOOL appId;
+@property (nonatomic) BOOL localGeofenceEvents;
 @property (nonatomic) BOOL osVersion;
 @property (nonatomic) BOOL idfv;
 @property (nonatomic) BOOL idfa;

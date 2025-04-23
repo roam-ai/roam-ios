@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamBatchConnector-Swift.h</key>
 		<data>
-		SMH84mhAdFdj2jmkQe5IQ7PJDZo=
+		STFBSxdNHqZUNJauiqMu9sKkaIQ=
 		</data>
 		<key>Headers/RoamBatchConnector.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		CWowmv/OrQmq7axyl4foqci6R+o=
+		QPsRrJ1/7V62pgHRAxc3u7mwKtc=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		AbC/PLeMIaR+PcFsx63DgQBg7vw=
+		j4dHdCLWDG8VJ6PsDjKkMZepMuw=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		AbC/PLeMIaR+PcFsx63DgQBg7vw=
+		j4dHdCLWDG8VJ6PsDjKkMZepMuw=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		1mAJYY0XnuFNmZvyt+Z3Y7BJNW8=
+		CKMbT1TM77CdpZMtjjbhRjd79D8=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CWowmv/OrQmq7axyl4foqci6R+o=
+		QPsRrJ1/7V62pgHRAxc3u7mwKtc=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Sd9rhXTVsWkZcvU/t2SZ7TLZE58=
+		YUIQuFOzco3H6LBIafVWP2fBhZg=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Sd9rhXTVsWkZcvU/t2SZ7TLZE58=
+		YUIQuFOzco3H6LBIafVWP2fBhZg=
 		</data>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		dMjJ4z7PEvb+dxV/ry4RutwCWYI=
+		q3kW1r+rBmMLpb1Tdr+DB60DBu8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>RoamBatchConnectorDataModel.momd/RoamBatchConnectorDataModel.mom</key>
 		<data>
-		rW/hHXwX0jRuLZTOp+5HJbmOnEA=
+		qIb4q/X70iQCXpwKK03B+msUw0E=
 		</data>
 		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
 		<data>
-		W0TDLC6h6nd+Nk6zxqMpdzU3j0k=
+		MilUQ6oBLSnpFLz3c7K2Zh6ye0g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4yWCjX8V3WY+aS+3nqUHn5OD/bShDaoHT4MWNZyg9Tg=
+			M4wPPXwo9fdkWSyT7UY+NqiCdkDRTIGBPyEeDWbDolU=
 			</data>
 		</dict>
 		<key>Headers/RoamBatchConnector.h</key>
@@ -89,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sv/4xHxIuE/a1OgtRBJHPims2s+Qrg914lSlJ/u1DEg=
+			RoNEVJSLMCEhaSS8ATHuf4TnVwHecyuJXjgK+Kd1u0A=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lT7z8MClJuo0kBC6eY4cigtPH4s23GllJpF5ehSGmI=
+			VPkcwFUUUZUVscOHDBV79eUaoYg9KPwef0QK7eol3KQ=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -110,28 +110,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9lT7z8MClJuo0kBC6eY4cigtPH4s23GllJpF5ehSGmI=
+			VPkcwFUUUZUVscOHDBV79eUaoYg9KPwef0QK7eol3KQ=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ll122FTCAqn2mOoSaJ/mDJbpDmva/v5RJKECp7CELxc=
+			DUOGDDgylnD4mAhdvhF1JlEdWHVi/0ME5qFlPw/4IWo=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sv/4xHxIuE/a1OgtRBJHPims2s+Qrg914lSlJ/u1DEg=
+			RoNEVJSLMCEhaSS8ATHuf4TnVwHecyuJXjgK+Kd1u0A=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2OabKtqOqf6U0rjwOJMyAY2D7gYJPFDzMIXvOFE9ls=
+			S+bByRa7XCfb5wRUT1GfYxuKDRrUWHuPC1wHuO9Apnw=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z2OabKtqOqf6U0rjwOJMyAY2D7gYJPFDzMIXvOFE9ls=
+			S+bByRa7XCfb5wRUT1GfYxuKDRrUWHuPC1wHuO9Apnw=
 			</data>
 		</dict>
 		<key>Modules/RoamBatchConnector.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TydNxt3y5Zcn6wzef3uN9e0ZVoUXLymN0Oppd/T6TH4=
+			rSRDJGqP73BriO3O6Z879ePe7Ren76HaQ1ap/N0N7w0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -166,14 +166,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ILOYlPDWVCpuUwc7f3zLxo70OozbZ8EZLPW680mC6P4=
+			ICmlJII5zIUpB9n1Pp0ZdF85LSzSBi57WP+enKidZ6I=
 			</data>
 		</dict>
 		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4vbnXWvbIVN0KnRuPln7QVuj5rJj4udLV2Vp3Jc30Pw=
+			9AAEG02PHONCKCrt4Dp3+PqsmAlwVr3vn/2Lb79/TCI=
 			</data>
 		</dict>
 	</dict>

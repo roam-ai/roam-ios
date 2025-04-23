@@ -15,6 +15,10 @@ let package = Package(
         .library(
             name: "RoamBatchConnector",
             targets: ["RoamBatchConnector"]
+        ),
+        .library(
+            name: "RoamGeofence",
+            targets: ["RoamGeofence"]
         )
     ],
     dependencies: [
@@ -57,5 +61,8 @@ let package = Package(
         .binaryTarget(
             name: "RoamBatchConnector",
             path: "Roam/RoamBatchConnector.xcframework"),
+        .binaryTarget(
+            name: "RoamGeofence",
+            path: "Roam/RoamGeofence.xcframework"),
     ]
 )

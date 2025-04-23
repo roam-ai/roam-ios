@@ -529,3 +529,16 @@ We're excited to introduce Roam iOS SDK version 0.1.31, bringing new enhancement
 Introduced several new parameters to provide more flexibility and control over data handling.
 
 These updates aim to enhance the SDK's customization capabilities and overall user experience. If you have any questions or feedback, our support team is here to assist.
+
+## 0.1.32
+
+**Introducing Local Geofence Module**
+
+We're excited to introduce Roam iOS SDK version 0..1.32, featuring a powerful offline geofencing solution built for iOS. This update enhances your app's location intelligence with seamless, real-time geofence handling—no internet required. Here's what's new:
+
+- Fully Offline / Local Geofence Module: Enable geofencing functionality without any reliance on network connectivity.
+- Geofence Management Methods: Create, update, retrieve, and delete geofences directly from your app.
+- Real-time Geofence Events: Detect entry and exit events instantly for better contextual triggers.
+- High-capacity Geofence Handling: Efficiently manage 10,000+ geofences without compromising app performance.
+
+These enhancements are designed to help you build smarter, faster, and more reliable location-aware experiences. For support or feedback, feel free to reach out to our team anytime.

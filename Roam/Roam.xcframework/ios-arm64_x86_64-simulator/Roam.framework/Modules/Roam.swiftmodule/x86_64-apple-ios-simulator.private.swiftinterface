@@ -602,6 +602,7 @@ extension UIKit.UIDevice {
   @objc public var app_version: Swift.Bool
   @objc public var app_name: Swift.Bool
   @objc public var centroid: Swift.Bool
+  @objc public var geofenceEvents: Swift.Bool
   @objc override dynamic public init()
   @objc public func enableAll()
   public func disableAll()
@@ -707,6 +708,8 @@ extension UIKit.UIDevice {
   @objc public var locationId: Swift.String
   @objc public var appId: Swift.String
   @objc public var sdkVerison: Swift.String
+  @objc public var localGeofenceEvents: [RoamGeofenceEvent]
+  @objc public func toJson() -> Swift.String?
   @objc deinit
 }
 public typealias RoamUserCompletionhandler = ((_ user: RoamUser?, _ error: RoamError?) -> Swift.Void)

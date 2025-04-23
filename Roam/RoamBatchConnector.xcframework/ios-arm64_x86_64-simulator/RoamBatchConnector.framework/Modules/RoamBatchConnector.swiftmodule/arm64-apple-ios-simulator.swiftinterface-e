@@ -53,6 +53,7 @@ import _SwiftConcurrencyShims
   @objc public var locationId: Swift.Bool
   @objc public var userId: Swift.Bool
   @objc public var appId: Swift.Bool
+  @objc public var localGeofenceEvents: Swift.Bool
   @objc public var osVersion: Swift.Bool
   @objc public var idfv: Swift.Bool
   @objc public var idfa: Swift.Bool
@@ -197,6 +198,10 @@ extension RoamBatchConnector.BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var locale_language: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var localGeofenceEvents: Foundation.Data? {
     @objc get
     @objc set
   }

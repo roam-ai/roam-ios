@@ -214,6 +214,10 @@ extension MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var localGeofenceEvents: Foundation.Data? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var location_authorization_status: Swift.Int16 {
     @objc get
     @objc set

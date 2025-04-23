@@ -1,0 +1,6 @@
+framework module RoamGeofence {
+  umbrella header "RoamGeofence.h"
+  export *
+
+  module * { export * }
+}
