@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/RoamGeofence-Swift.h</key>
+		<data>
+		6QLn0pwuOShj+FeBnOyLaSEs90A=
+		</data>
 		<key>Headers/RoamGeofence.h</key>
 		<data>
 		NJ58JDW2ER5OtqRJChZO3IQOoyg=
@@ -18,7 +22,7 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		yFKUaJwywypSeVjMshRc/GuqUDI=
+		RCnYi8B1M4c04s93FgNyOi502R4=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,7 +30,7 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		yFKUaJwywypSeVjMshRc/GuqUDI=
+		RCnYi8B1M4c04s93FgNyOi502R4=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
@@ -34,7 +38,7 @@
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		qvB41meShe5wH9lkg5egfQ8vn1A=
+		1Ie39NselfuMZ5sZtkFZLvQNPRE=
 		</data>
 		<key>RoamGeofenceDataModel.momd/RoamGeofenceDataModel.mom</key>
 		<data>
@@ -47,6 +51,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/RoamGeofence-Swift.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3zvzdEVCqokHbBT9gTJtHXZ9e9bqOFmMv4b7GzGTmvE=
+			</data>
+		</dict>
 		<key>Headers/RoamGeofence.h</key>
 		<dict>
 			<key>hash2</key>
@@ -65,7 +76,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			re+8fGhqUi5Tmadw6n+YDQV+7AtVtgqa615Q6XiQB5E=
+			GIVjf1J5lp9pzyrVnWLB+lJ4JEaMX6/HYDUCdD3HKBw=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -79,7 +90,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			re+8fGhqUi5Tmadw6n+YDQV+7AtVtgqa615Q6XiQB5E=
+			GIVjf1J5lp9pzyrVnWLB+lJ4JEaMX6/HYDUCdD3HKBw=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
@@ -93,7 +104,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1hLIbM2Kb2oJPk6W1hmdvSn/knJh9R3POVQOL2uKOsE=
+			d3h37HO9QxWQeCElyXn7QbokdNi5NDNOftldZTEIpno=
 			</data>
 		</dict>
 		<key>RoamGeofenceDataModel.momd/RoamGeofenceDataModel.mom</key>

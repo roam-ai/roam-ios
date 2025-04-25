@@ -4,3 +4,8 @@ framework module RoamGeofence {
 
   module * { export * }
 }
+
+module RoamGeofence.Swift {
+  header "RoamGeofence-Swift.h"
+  requires objc
+}
