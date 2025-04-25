@@ -12,6 +12,20 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public class PolygonGeofence : ObjectiveC.NSObject, Geofence {
+  @objc final public let id: Swift.Int64
+  @objc final public let name: Swift.String
+  @objc final public let coordinates: [Foundation.NSValue]
+  @objc public var createdAt: Foundation.NSDate {
+    get
+  }
+  @objc public var updatedAt: Foundation.NSDate {
+    get
+  }
+  public init(id: Swift.Int64, name: Swift.String, coordinates: [Foundation.NSValue], createdAt: Foundation.NSDate = NSDate(), updatedAt: Foundation.NSDate = NSDate())
+  @objc public func contains(location: CoreLocation.CLLocation) -> Swift.Bool
+  @objc deinit
+}
 @objc public protocol Geofence {
   @objc var id: Swift.Int64 { get }
   @objc var name: Swift.String { get }
@@ -32,20 +46,6 @@ import _SwiftConcurrencyShims
     get
   }
   public init(id: Swift.Int64, name: Swift.String, latitude: Swift.Double, longitude: Swift.Double, radius: Swift.Double)
-  @objc public func contains(location: CoreLocation.CLLocation) -> Swift.Bool
-  @objc deinit
-}
-@objc public class PolygonGeofence : ObjectiveC.NSObject, Geofence {
-  @objc final public let id: Swift.Int64
-  @objc final public let name: Swift.String
-  @objc final public let coordinates: [Foundation.NSValue]
-  @objc public var createdAt: Foundation.NSDate {
-    get
-  }
-  @objc public var updatedAt: Foundation.NSDate {
-    get
-  }
-  public init(id: Swift.Int64, name: Swift.String, coordinates: [Foundation.NSValue], createdAt: Foundation.NSDate = NSDate(), updatedAt: Foundation.NSDate = NSDate())
   @objc public func contains(location: CoreLocation.CLLocation) -> Swift.Bool
   @objc deinit
 }

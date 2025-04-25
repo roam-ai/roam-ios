@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		hV54zfnpS6VNMEQdCoFKjxC/Rqk=
+		OLcbChVbRvlrRhVzEJY+XQCoTDo=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		T33abguTYfB0w7igx3g9dEfVyUI=
+		yFKUaJwywypSeVjMshRc/GuqUDI=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		T33abguTYfB0w7igx3g9dEfVyUI=
+		yFKUaJwywypSeVjMshRc/GuqUDI=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		y8CjyH7CHwNPmUoly11XOllQ1uE=
+		tWRTEAgRyrGTe2YFxPMfRxAw0MM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -58,14 +58,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9SWveTryeHv90US8UV2BqQnsIDKkLUMc/lzrdAuq+9o=
+			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a1gKLvGV53Sht1t6IIKwLnbiK00Sk2n9YPKy3SWcmv0=
+			re+8fGhqUi5Tmadw6n+YDQV+7AtVtgqa615Q6XiQB5E=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -79,14 +79,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			a1gKLvGV53Sht1t6IIKwLnbiK00Sk2n9YPKy3SWcmv0=
+			re+8fGhqUi5Tmadw6n+YDQV+7AtVtgqa615Q6XiQB5E=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XBLpu7O7MncPCyB+GK93lJqJ6np7QAUrzTfp3RTHK/Q=
+			QafwjoLxW/dSsKzFNdAPonKC6KVHKDYSW3Ab0FR/dbo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

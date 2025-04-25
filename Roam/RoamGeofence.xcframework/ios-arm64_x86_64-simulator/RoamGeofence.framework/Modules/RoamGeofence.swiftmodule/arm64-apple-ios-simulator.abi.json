@@ -23,6 +23,500 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PolygonGeofence",
+        "printedName": "PolygonGeofence",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)id",
+            "mangledName": "$s12RoamGeofence07PolygonB0C2ids5Int64Vvp",
+            "moduleName": "RoamGeofence",
+            "objc_name": "id",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int64",
+                    "printedName": "Swift.Int64",
+                    "usr": "s:s5Int64V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)id",
+                "mangledName": "$s12RoamGeofence07PolygonB0C2ids5Int64Vvg",
+                "moduleName": "RoamGeofence",
+                "implicit": true,
+                "objc_name": "id",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)name",
+            "mangledName": "$s12RoamGeofence07PolygonB0C4nameSSvp",
+            "moduleName": "RoamGeofence",
+            "objc_name": "name",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)name",
+                "mangledName": "$s12RoamGeofence07PolygonB0C4nameSSvg",
+                "moduleName": "RoamGeofence",
+                "implicit": true,
+                "objc_name": "name",
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coordinates",
+            "printedName": "coordinates",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)coordinates",
+            "mangledName": "$s12RoamGeofence07PolygonB0C11coordinatesSaySo7NSValueCGvp",
+            "moduleName": "RoamGeofence",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.NSValue]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "NSValue",
+                        "printedName": "Foundation.NSValue",
+                        "usr": "c:objc(cs)NSValue"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)coordinates",
+                "mangledName": "$s12RoamGeofence07PolygonB0C11coordinatesSaySo7NSValueCGvg",
+                "moduleName": "RoamGeofence",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)createdAt",
+            "mangledName": "$s12RoamGeofence07PolygonB0C9createdAtSo6NSDateCvp",
+            "moduleName": "RoamGeofence",
+            "objc_name": "createdAt",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)createdAt",
+                "mangledName": "$s12RoamGeofence07PolygonB0C9createdAtSo6NSDateCvg",
+                "moduleName": "RoamGeofence",
+                "implicit": true,
+                "objc_name": "createdAt",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)updatedAt",
+            "mangledName": "$s12RoamGeofence07PolygonB0C9updatedAtSo6NSDateCvp",
+            "moduleName": "RoamGeofence",
+            "objc_name": "updatedAt",
+            "declAttributes": [
+              "ObjC",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)updatedAt",
+                "mangledName": "$s12RoamGeofence07PolygonB0C9updatedAtSo6NSDateCvg",
+                "moduleName": "RoamGeofence",
+                "implicit": true,
+                "objc_name": "updatedAt",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(id:name:coordinates:createdAt:updatedAt:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PolygonGeofence",
+                "printedName": "RoamGeofence.PolygonGeofence",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Foundation.NSValue]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSValue",
+                    "printedName": "Foundation.NSValue",
+                    "usr": "c:objc(cs)NSValue"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSDate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)NSDate"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
+            "mangledName": "$s12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
+            "moduleName": "RoamGeofence",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "contains",
+            "printedName": "contains(location:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLLocation",
+                "printedName": "CoreLocation.CLLocation",
+                "usr": "c:objc(cs)CLLocation"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)containsWithLocation:",
+            "mangledName": "$s12RoamGeofence07PolygonB0C8contains8locationSbSo10CLLocationC_tF",
+            "moduleName": "RoamGeofence",
+            "objc_name": "containsWithLocation:",
+            "declAttributes": [
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PolygonGeofence",
+                "printedName": "RoamGeofence.PolygonGeofence",
+                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)init",
+            "mangledName": "$s12RoamGeofence07PolygonB0CACycfc",
+            "moduleName": "RoamGeofence",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence",
+        "mangledName": "$s12RoamGeofence07PolygonB0C",
+        "moduleName": "RoamGeofence",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Geofence",
+            "printedName": "Geofence",
+            "usr": "c:@M@RoamGeofence@objc(pl)Geofence",
+            "mangledName": "$s12RoamGeofence0B0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "RoamGeofence",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "RoamGeofence"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "Geofence",
         "printedName": "Geofence",
         "children": [
@@ -832,510 +1326,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "RoamGeofence",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "RoamGeofence"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PolygonGeofence",
-        "printedName": "PolygonGeofence",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "id",
-            "printedName": "id",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)id",
-            "mangledName": "$s12RoamGeofence07PolygonB0C2ids5Int64Vvp",
-            "moduleName": "RoamGeofence",
-            "objc_name": "id",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int64",
-                    "printedName": "Swift.Int64",
-                    "usr": "s:s5Int64V"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)id",
-                "mangledName": "$s12RoamGeofence07PolygonB0C2ids5Int64Vvg",
-                "moduleName": "RoamGeofence",
-                "implicit": true,
-                "objc_name": "id",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "name",
-            "printedName": "name",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)name",
-            "mangledName": "$s12RoamGeofence07PolygonB0C4nameSSvp",
-            "moduleName": "RoamGeofence",
-            "objc_name": "name",
-            "declAttributes": [
-              "Final",
-              "ObjC",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)name",
-                "mangledName": "$s12RoamGeofence07PolygonB0C4nameSSvg",
-                "moduleName": "RoamGeofence",
-                "implicit": true,
-                "objc_name": "name",
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "coordinates",
-            "printedName": "coordinates",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Foundation.NSValue]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSValue",
-                    "printedName": "Foundation.NSValue",
-                    "usr": "c:objc(cs)NSValue"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)coordinates",
-            "mangledName": "$s12RoamGeofence07PolygonB0C11coordinatesSaySo7NSValueCGvp",
-            "moduleName": "RoamGeofence",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl",
-              "ObjC"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Array",
-                    "printedName": "[Foundation.NSValue]",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "NSValue",
-                        "printedName": "Foundation.NSValue",
-                        "usr": "c:objc(cs)NSValue"
-                      }
-                    ],
-                    "usr": "s:Sa"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)coordinates",
-                "mangledName": "$s12RoamGeofence07PolygonB0C11coordinatesSaySo7NSValueCGvg",
-                "moduleName": "RoamGeofence",
-                "implicit": true,
-                "declAttributes": [
-                  "Final",
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "createdAt",
-            "printedName": "createdAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "usr": "c:objc(cs)NSDate"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)createdAt",
-            "mangledName": "$s12RoamGeofence07PolygonB0C9createdAtSo6NSDateCvp",
-            "moduleName": "RoamGeofence",
-            "objc_name": "createdAt",
-            "declAttributes": [
-              "ObjC",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)createdAt",
-                "mangledName": "$s12RoamGeofence07PolygonB0C9createdAtSo6NSDateCvg",
-                "moduleName": "RoamGeofence",
-                "implicit": true,
-                "objc_name": "createdAt",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "updatedAt",
-            "printedName": "updatedAt",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "usr": "c:objc(cs)NSDate"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(py)updatedAt",
-            "mangledName": "$s12RoamGeofence07PolygonB0C9updatedAtSo6NSDateCvp",
-            "moduleName": "RoamGeofence",
-            "objc_name": "updatedAt",
-            "declAttributes": [
-              "ObjC",
-              "HasStorage",
-              "SetterAccess",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)updatedAt",
-                "mangledName": "$s12RoamGeofence07PolygonB0C9updatedAtSo6NSDateCvg",
-                "moduleName": "RoamGeofence",
-                "implicit": true,
-                "objc_name": "updatedAt",
-                "declAttributes": [
-                  "ObjC"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(id:name:coordinates:createdAt:updatedAt:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PolygonGeofence",
-                "printedName": "RoamGeofence.PolygonGeofence",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int64",
-                "printedName": "Swift.Int64",
-                "usr": "s:s5Int64V"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Foundation.NSValue]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSValue",
-                    "printedName": "Foundation.NSValue",
-                    "usr": "c:objc(cs)NSValue"
-                  }
-                ],
-                "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSDate"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSDate"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
-            "mangledName": "$s12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
-            "moduleName": "RoamGeofence",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "contains",
-            "printedName": "contains(location:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "CoreLocation.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)containsWithLocation:",
-            "mangledName": "$s12RoamGeofence07PolygonB0C8contains8locationSbSo10CLLocationC_tF",
-            "moduleName": "RoamGeofence",
-            "objc_name": "containsWithLocation:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PolygonGeofence",
-                "printedName": "RoamGeofence.PolygonGeofence",
-                "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)init",
-            "mangledName": "$s12RoamGeofence07PolygonB0CACycfc",
-            "moduleName": "RoamGeofence",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence",
-        "mangledName": "$s12RoamGeofence07PolygonB0C",
-        "moduleName": "RoamGeofence",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Geofence",
-            "printedName": "Geofence",
-            "usr": "c:@M@RoamGeofence@objc(pl)Geofence",
-            "mangledName": "$s12RoamGeofence0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "RoamGeofence",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
@@ -1357,6 +1347,16 @@
         "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "RoamGeofence"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "RoamGeofence",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",

@@ -14,11 +14,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hV54zfnpS6VNMEQdCoFKjxC/Rqk=
+		OLcbChVbRvlrRhVzEJY+XQCoTDo=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5y1L2JGQCT5FjQhW6uaxcKdjVuw=
+		xHJyIGwHDHOvNrNZrfbLwtLuCr8=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5y1L2JGQCT5FjQhW6uaxcKdjVuw=
+		xHJyIGwHDHOvNrNZrfbLwtLuCr8=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		lvGaOZaG1SxDwyKSjLqef0Bn5Do=
+		eMkdwZlH+FwixMVJ12mnERefaaE=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hV54zfnpS6VNMEQdCoFKjxC/Rqk=
+		OLcbChVbRvlrRhVzEJY+XQCoTDo=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		A/8GgheCVwNIpH0JyjLRDh3PCqY=
+		m12tXy7p8WS/j868A/FrXcQURHo=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		A/8GgheCVwNIpH0JyjLRDh3PCqY=
+		m12tXy7p8WS/j868A/FrXcQURHo=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		LCiVonlt0nEjgWHCf54pQXUSrCs=
+		q1yHLgfm0YFzvrBF6l07GSEvNL4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -78,14 +78,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9SWveTryeHv90US8UV2BqQnsIDKkLUMc/lzrdAuq+9o=
+			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			63Rx1EyCBDbmGD3A6dbQzauH41Nt+HI0IBSAoDVcHwI=
+			OhlSVrzlcjBQJon6qPap++f62DKErSQGzTzJC8ZBCUg=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -99,28 +99,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			63Rx1EyCBDbmGD3A6dbQzauH41Nt+HI0IBSAoDVcHwI=
+			OhlSVrzlcjBQJon6qPap++f62DKErSQGzTzJC8ZBCUg=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9u0T+ipRDfMYZhrf8vmluA+kWAz+v/C5gNRMDECOnZg=
+			mhHFUN1lIg1t+h659V2WUPVU+lAPXcWx28tj38eqtuo=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9SWveTryeHv90US8UV2BqQnsIDKkLUMc/lzrdAuq+9o=
+			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rItD59o7OZT9Ygdai0i52I4o50hcD2MnjNcJBzq8KtA=
+			M7tW5VqhmDVcy5C9RFCtk11I8LFJQp39isWt/u2Bpn8=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -134,14 +134,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rItD59o7OZT9Ygdai0i52I4o50hcD2MnjNcJBzq8KtA=
+			M7tW5VqhmDVcy5C9RFCtk11I8LFJQp39isWt/u2Bpn8=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Pq7Nvs42bkS8vHrHXdEfnxMP139EUzTQcwnAzxfk/mQ=
+			bPL/VaUMH/8B8xya1t8euVNvwYnjdS/rg/Ax1QKUgSI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
