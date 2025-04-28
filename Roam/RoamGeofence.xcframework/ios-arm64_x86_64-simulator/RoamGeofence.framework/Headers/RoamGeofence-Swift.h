@@ -327,6 +327,7 @@ SWIFT_CLASS("_TtC12RoamGeofence16CircularGeofence")
 @property (nonatomic, readonly) double radius;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull createdAt;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull updatedAt;
+- (nonnull instancetype)initWithId:(int64_t)id name:(NSString * _Nonnull)name latitude:(double)latitude longitude:(double)longitude radius:(double)radius OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)containsWithLocation:(CLLocation * _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -369,6 +370,7 @@ SWIFT_CLASS("_TtC12RoamGeofence15PolygonGeofence")
 @property (nonatomic, readonly, copy) NSArray<NSValue *> * _Nonnull coordinates;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull createdAt;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull updatedAt;
+- (nonnull instancetype)initWithId:(int64_t)id name:(NSString * _Nonnull)name coordinates:(NSArray<NSValue *> * _Nonnull)coordinates OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)containsWithLocation:(CLLocation * _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -742,6 +744,7 @@ SWIFT_CLASS("_TtC12RoamGeofence16CircularGeofence")
 @property (nonatomic, readonly) double radius;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull createdAt;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull updatedAt;
+- (nonnull instancetype)initWithId:(int64_t)id name:(NSString * _Nonnull)name latitude:(double)latitude longitude:(double)longitude radius:(double)radius OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)containsWithLocation:(CLLocation * _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -784,6 +787,7 @@ SWIFT_CLASS("_TtC12RoamGeofence15PolygonGeofence")
 @property (nonatomic, readonly, copy) NSArray<NSValue *> * _Nonnull coordinates;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull createdAt;
 @property (nonatomic, readonly, strong) NSDate * _Nonnull updatedAt;
+- (nonnull instancetype)initWithId:(int64_t)id name:(NSString * _Nonnull)name coordinates:(NSArray<NSValue *> * _Nonnull)coordinates OBJC_DESIGNATED_INITIALIZER;
 - (BOOL)containsWithLocation:(CLLocation * _Nonnull)location SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

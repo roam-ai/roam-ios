@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamGeofence-Swift.h</key>
 		<data>
-		x4PEB8BithT4Gd/h765tYBYge7s=
+		/uBoXoCb6nZLLV1x60sAzhEg9rA=
 		</data>
 		<key>Headers/RoamGeofence.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		OLcbChVbRvlrRhVzEJY+XQCoTDo=
+		VKvp51kRNjdDgzifslLOv0AfJkg=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Sno6Yw3MuApAhHkqKaDNX5p2FTg=
+		F2yE44TyDI/ldtn9n3RbkbdXSMs=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Sno6Yw3MuApAhHkqKaDNX5p2FTg=
+		F2yE44TyDI/ldtn9n3RbkbdXSMs=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		eMkdwZlH+FwixMVJ12mnERefaaE=
+		4wfvSSdNw9iu7BtxOEbTUUFx8zg=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		OLcbChVbRvlrRhVzEJY+XQCoTDo=
+		VKvp51kRNjdDgzifslLOv0AfJkg=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		98Mjt0pGcoxZw6tKz4gsNGIdq/s=
+		LQ6448mPf5jcE8+i7AbjdE9dzDs=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		98Mjt0pGcoxZw6tKz4gsNGIdq/s=
+		LQ6448mPf5jcE8+i7AbjdE9dzDs=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		q1yHLgfm0YFzvrBF6l07GSEvNL4=
+		ORzSGiy9fZDyFMn52l5uFJwVlpA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -75,7 +75,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HsLiEIG/WnhJKJmxq/+BkB5UeeIXEYygyJTX/as6vKc=
+			i9N4kOApwHjIn+2MDBr13iink1Ja0xwz70EuQvbyof4=
 			</data>
 		</dict>
 		<key>Headers/RoamGeofence.h</key>
@@ -89,14 +89,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
+			5sa9n1PhKQTar99CTELK1SVB07nezZmd5ZoSUqcEuDU=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsMR1T8xiPVDSbEwxduaTOK0gv1ivwqM6D+HCq0VzRA=
+			9TNrsntQbD2WDg+Es75sR1SDpaLVBW9Fo5+75tlPynQ=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -110,28 +110,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KsMR1T8xiPVDSbEwxduaTOK0gv1ivwqM6D+HCq0VzRA=
+			9TNrsntQbD2WDg+Es75sR1SDpaLVBW9Fo5+75tlPynQ=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mhHFUN1lIg1t+h659V2WUPVU+lAPXcWx28tj38eqtuo=
+			kxjG0ThOF/geb0BTdIclmctPWmVeqpx5Z7TNZN/2teY=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
+			5sa9n1PhKQTar99CTELK1SVB07nezZmd5ZoSUqcEuDU=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R6Lrg/97/DBnjWodoBcBrzYDLwJJY0dKxA0H+RHf60s=
+			uBr8qRXoEwfzONmSEyDdBT5blXF4OeCNUQtgKB1DS3o=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -145,14 +145,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R6Lrg/97/DBnjWodoBcBrzYDLwJJY0dKxA0H+RHf60s=
+			uBr8qRXoEwfzONmSEyDdBT5blXF4OeCNUQtgKB1DS3o=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bPL/VaUMH/8B8xya1t8euVNvwYnjdS/rg/Ax1QKUgSI=
+			y6rnDttHRqUEaypv0BqZsEsfJ/R83etq8Z8zkvqRXqI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

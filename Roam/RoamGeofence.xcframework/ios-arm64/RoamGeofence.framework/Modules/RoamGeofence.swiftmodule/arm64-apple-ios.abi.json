@@ -299,7 +299,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(id:name:coordinates:createdAt:updatedAt:)",
+            "printedName": "init(id:name:coordinates:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -332,28 +332,16 @@
                   }
                 ],
                 "usr": "s:Sa"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSDate"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "NSDate",
-                "printedName": "Foundation.NSDate",
-                "hasDefaultArg": true,
-                "usr": "c:objc(cs)NSDate"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
-            "mangledName": "$s12RoamGeofence07PolygonB0C2id4name11coordinates9createdAt07updatedH0ACs5Int64V_SSSaySo7NSValueCGSo6NSDateCAOtcfc",
+            "usr": "c:@M@RoamGeofence@objc(cs)PolygonGeofence(im)initWithId:name:coordinates:",
+            "mangledName": "$s12RoamGeofence07PolygonB0C2id4name11coordinatesACs5Int64V_SSSaySo7NSValueCGtcfc",
             "moduleName": "RoamGeofence",
+            "objc_name": "initWithId:name:coordinates:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -1175,11 +1163,13 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:12RoamGeofence08CircularB0C2id4name8latitude9longitude6radiusACs5Int64V_SSS3dtcfc",
+            "usr": "c:@M@RoamGeofence@objc(cs)CircularGeofence(im)initWithId:name:latitude:longitude:radius:",
             "mangledName": "$s12RoamGeofence08CircularB0C2id4name8latitude9longitude6radiusACs5Int64V_SSS3dtcfc",
             "moduleName": "RoamGeofence",
+            "objc_name": "initWithId:name:latitude:longitude:radius:",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "ObjC"
             ],
             "init_kind": "Designated"
           },
@@ -3705,21 +3695,21 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamGeofence\/RoamGeofence\/GeofenceType\/PolygonGeofence.swift",
       "kind": "BooleanLiteral",
-      "offset": 773,
+      "offset": 880,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamGeofence\/RoamGeofence\/GeofenceType\/PolygonGeofence.swift",
       "kind": "IntegerLiteral",
-      "offset": 815,
+      "offset": 922,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamGeofence\/RoamGeofence\/GeofenceType\/PolygonGeofence.swift",
       "kind": "IntegerLiteral",
-      "offset": 834,
+      "offset": 941,
       "length": 1,
       "value": "0"
     },

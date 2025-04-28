@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/RoamGeofence-Swift.h</key>
 		<data>
-		6QLn0pwuOShj+FeBnOyLaSEs90A=
+		hEp2whE2eTy2Rowo74hi2L/Ysw8=
 		</data>
 		<key>Headers/RoamGeofence.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		OLcbChVbRvlrRhVzEJY+XQCoTDo=
+		VKvp51kRNjdDgzifslLOv0AfJkg=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RCnYi8B1M4c04s93FgNyOi502R4=
+		P5tLW/rTeXsLB+K5/FK32GlfPJM=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RCnYi8B1M4c04s93FgNyOi502R4=
+		P5tLW/rTeXsLB+K5/FK32GlfPJM=
 		</data>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tWRTEAgRyrGTe2YFxPMfRxAw0MM=
+		sMsi/HONqhHsm+D2d3+RrshHpYI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3zvzdEVCqokHbBT9gTJtHXZ9e9bqOFmMv4b7GzGTmvE=
+			KhRx6ytpL2Vw69R8bnXBp2SHBTMwrTUwcMEvNTecEKw=
 			</data>
 		</dict>
 		<key>Headers/RoamGeofence.h</key>
@@ -69,14 +69,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A+OBUZm4vPLF4a5nG9RVnlWTzrkdD+G107MvG6RXrIM=
+			5sa9n1PhKQTar99CTELK1SVB07nezZmd5ZoSUqcEuDU=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIVjf1J5lp9pzyrVnWLB+lJ4JEaMX6/HYDUCdD3HKBw=
+			JEg06drb/rxulkMfgrAm1pMqeS8cxfvDBUlf4hLBlSc=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GIVjf1J5lp9pzyrVnWLB+lJ4JEaMX6/HYDUCdD3HKBw=
+			JEg06drb/rxulkMfgrAm1pMqeS8cxfvDBUlf4hLBlSc=
 			</data>
 		</dict>
 		<key>Modules/RoamGeofence.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QafwjoLxW/dSsKzFNdAPonKC6KVHKDYSW3Ab0FR/dbo=
+			K/beoTx9UlcLD1I/yU5MaBptN7VzrTF8I/Yf5SV1554=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
