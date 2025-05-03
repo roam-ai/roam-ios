@@ -77508,7 +77508,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Networking\/NetworkServiceLayer.swift",
       "kind": "Dictionary",
-      "offset": 6789,
+      "offset": 6791,
       "length": 3,
       "value": "[]"
     },
@@ -78362,7 +78362,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Logging\/LoggerManager.swift",
       "kind": "StringLiteral",
-      "offset": 5726,
+      "offset": 5728,
       "length": 20,
       "value": "\"FunctionCallCounts\""
     },
