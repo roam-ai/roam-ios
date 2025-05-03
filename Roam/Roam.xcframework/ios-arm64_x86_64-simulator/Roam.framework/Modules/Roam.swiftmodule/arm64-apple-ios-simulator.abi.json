@@ -3197,6 +3197,351 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "BluetoothSignal",
+        "printedName": "BluetoothSignal",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "name",
+            "printedName": "name",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)BluetoothSignal(py)name",
+            "mangledName": "$s4Roam15BluetoothSignalC4nameSSvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)BluetoothSignal(im)name",
+                "mangledName": "$s4Roam15BluetoothSignalC4nameSSvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rssi",
+            "printedName": "rssi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)BluetoothSignal(py)rssi",
+            "mangledName": "$s4Roam15BluetoothSignalC4rssiSSvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)BluetoothSignal(im)rssi",
+                "mangledName": "$s4Roam15BluetoothSignalC4rssiSSvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "toDictionary",
+            "printedName": "toDictionary()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Roam@objc(cs)BluetoothSignal(im)toDictionary",
+            "mangledName": "$s4Roam15BluetoothSignalC12toDictionarySDySSypGyF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "toJSONData",
+            "printedName": "toJSONData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Roam@objc(cs)BluetoothSignal(im)toJSONData",
+            "mangledName": "$s4Roam15BluetoothSignalC10toJSONData10Foundation4DataVSgyF",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BluetoothSignal",
+                "printedName": "Roam.BluetoothSignal",
+                "usr": "c:@M@Roam@objc(cs)BluetoothSignal"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@Roam@objc(cs)BluetoothSignal(im)init",
+            "mangledName": "$s4Roam15BluetoothSignalCACycfc",
+            "moduleName": "Roam",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "BluetoothSignal",
+                "printedName": "Roam.BluetoothSignal",
+                "usr": "c:@M@Roam@objc(cs)BluetoothSignal"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:4Roam15BluetoothSignalC4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s4Roam15BluetoothSignalC4fromACs7Decoder_p_tKcfc",
+            "moduleName": "Roam",
+            "implicit": true,
+            "declAttributes": [
+              "Required"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:4Roam15BluetoothSignalC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s4Roam15BluetoothSignalC6encode2toys7Encoder_p_tKF",
+            "moduleName": "Roam",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@Roam@objc(cs)BluetoothSignal",
+        "mangledName": "$s4Roam15BluetoothSignalC",
+        "moduleName": "Roam",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -41567,8 +41912,8 @@
           },
           {
             "kind": "Var",
-            "name": "geofenceEvents",
-            "printedName": "geofenceEvents",
+            "name": "local_geofence_events",
+            "printedName": "local_geofence_events",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -41578,8 +41923,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@Roam@objc(cs)RoamPublish(py)geofenceEvents",
-            "mangledName": "$s4Roam0A7PublishC14geofenceEventsSbvp",
+            "usr": "c:@M@Roam@objc(cs)RoamPublish(py)local_geofence_events",
+            "mangledName": "$s4Roam0A7PublishC21local_geofence_eventsSbvp",
             "moduleName": "Roam",
             "declAttributes": [
               "HasInitialValue",
@@ -41602,8 +41947,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)geofenceEvents",
-                "mangledName": "$s4Roam0A7PublishC14geofenceEventsSbvg",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)local_geofence_events",
+                "mangledName": "$s4Roam0A7PublishC21local_geofence_eventsSbvg",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -41629,8 +41974,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)setGeofenceEvents:",
-                "mangledName": "$s4Roam0A7PublishC14geofenceEventsSbvs",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)setLocal_geofence_events:",
+                "mangledName": "$s4Roam0A7PublishC21local_geofence_eventsSbvs",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -41650,8 +41995,101 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:4Roam0A7PublishC14geofenceEventsSbvM",
-                "mangledName": "$s4Roam0A7PublishC14geofenceEventsSbvM",
+                "usr": "s:4Roam0A7PublishC21local_geofence_eventsSbvM",
+                "mangledName": "$s4Roam0A7PublishC21local_geofence_eventsSbvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetooth_signal_strengths",
+            "printedName": "bluetooth_signal_strengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamPublish(py)bluetooth_signal_strengths",
+            "mangledName": "$s4Roam0A7PublishC26bluetooth_signal_strengthsSbvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)bluetooth_signal_strengths",
+                "mangledName": "$s4Roam0A7PublishC26bluetooth_signal_strengthsSbvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamPublish(im)setBluetooth_signal_strengths:",
+                "mangledName": "$s4Roam0A7PublishC26bluetooth_signal_strengthsSbvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A7PublishC26bluetooth_signal_strengthsSbvM",
+                "mangledName": "$s4Roam0A7PublishC26bluetooth_signal_strengthsSbvM",
                 "moduleName": "Roam",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -42766,6 +43204,20 @@
         "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "Roam"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreBluetooth",
+        "printedName": "CoreBluetooth",
         "declKind": "Import",
         "moduleName": "Roam"
       },
@@ -48429,6 +48881,122 @@
                 "declKind": "Accessor",
                 "usr": "s:4Roam0A8LocationC19localGeofenceEventsSayAA0aD5EventCGvM",
                 "mangledName": "$s4Roam0A8LocationC19localGeofenceEventsSayAA0aD5EventCGvM",
+                "moduleName": "Roam",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetoothSignalStrengths",
+            "printedName": "bluetoothSignalStrengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Roam.BluetoothSignal]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "BluetoothSignal",
+                    "printedName": "Roam.BluetoothSignal",
+                    "usr": "c:@M@Roam@objc(cs)BluetoothSignal"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@Roam@objc(cs)RoamLocation(py)bluetoothSignalStrengths",
+            "mangledName": "$s4Roam0A8LocationC24bluetoothSignalStrengthsSayAA09BluetoothD0CGvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Roam.BluetoothSignal]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BluetoothSignal",
+                        "printedName": "Roam.BluetoothSignal",
+                        "usr": "c:@M@Roam@objc(cs)BluetoothSignal"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)bluetoothSignalStrengths",
+                "mangledName": "$s4Roam0A8LocationC24bluetoothSignalStrengthsSayAA09BluetoothD0CGvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Roam.BluetoothSignal]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "BluetoothSignal",
+                        "printedName": "Roam.BluetoothSignal",
+                        "usr": "c:@M@Roam@objc(cs)BluetoothSignal"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@Roam@objc(cs)RoamLocation(im)setBluetoothSignalStrengths:",
+                "mangledName": "$s4Roam0A8LocationC24bluetoothSignalStrengthsSayAA09BluetoothD0CGvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:4Roam0A8LocationC24bluetoothSignalStrengthsSayAA09BluetoothD0CGvM",
+                "mangledName": "$s4Roam0A8LocationC24bluetoothSignalStrengthsSayAA09BluetoothD0CGvM",
                 "moduleName": "Roam",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -62014,6 +62582,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)setBattery_status:",
                 "mangledName": "$s4Roam16MqttLocationDataC14battery_statusSSSgvs",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetooth_signal_strengths",
+            "printedName": "bluetooth_signal_strengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@Roam@objc(cs)MqttLocationData(py)bluetooth_signal_strengths",
+            "mangledName": "$s4Roam16MqttLocationDataC26bluetooth_signal_strengths10Foundation0D0VSgvp",
+            "moduleName": "Roam",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)bluetooth_signal_strengths",
+                "mangledName": "$s4Roam16MqttLocationDataC26bluetooth_signal_strengths10Foundation0D0VSgvg",
+                "moduleName": "Roam",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@Roam@objc(cs)MqttLocationData(im)setBluetooth_signal_strengths:",
+                "mangledName": "$s4Roam16MqttLocationDataC26bluetooth_signal_strengths10Foundation0D0VSgvs",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -76066,15 +76737,22 @@
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/AppConstant\/TokenManager.swift",
+      "kind": "StringLiteral",
+      "offset": 584,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/AppConstant\/TokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4276,
+      "offset": 4282,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/AppConstant\/TokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 4588,
+      "offset": 4594,
       "length": 4,
       "value": "true"
     },
@@ -76548,13 +77226,6 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/RoamBatchUtilis.swift",
-      "kind": "Array",
-      "offset": 1495,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Tripv2\/RoamTripRoute.swift",
       "kind": "IntegerLiteral",
       "offset": 271,
@@ -76837,7 +77508,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Networking\/NetworkServiceLayer.swift",
       "kind": "Dictionary",
-      "offset": 6791,
+      "offset": 6789,
       "length": 3,
       "value": "[]"
     },
@@ -77691,7 +78362,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Logging\/LoggerManager.swift",
       "kind": "StringLiteral",
-      "offset": 5728,
+      "offset": 5726,
       "length": 20,
       "value": "\"FunctionCallCounts\""
     },
@@ -77920,37 +78591,30 @@
       "value": "0xffffff"
     },
     {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/RoamLocationDelegate.swift",
-      "kind": "Array",
-      "offset": 882,
-      "length": 2,
-      "value": "[]"
-    },
-    {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 28190,
+      "offset": 28203,
       "length": 18,
       "value": "\"ROAM_PUBLISH_KEY\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 28255,
+      "offset": 28268,
       "length": 32,
       "value": "\"NSUserTrackingUsageDescription\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/Utilis\/AppUtili.swift",
       "kind": "StringLiteral",
-      "offset": 28583,
+      "offset": 28596,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 23969,
+      "offset": 23826,
       "length": 1,
       "value": "5"
     },
@@ -78734,7 +79398,14 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2563,
+      "offset": 2570,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/MQTT\/RoamPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2634,
       "length": 5,
       "value": "false"
     },
@@ -78933,6 +79604,34 @@
       "offset": 478,
       "length": 2,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Core\/LocationDataManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4095,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Core\/LocationDataManager.swift",
+      "kind": "Array",
+      "offset": 4266,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Core\/LocationDataManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 4423,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Core\/LocationDataManager.swift",
+      "kind": "FloatLiteral",
+      "offset": 4472,
+      "length": 3,
+      "value": "2.0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/MQTT\/ConnectorManager.swift",
@@ -79800,7 +80499,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 8,
-      "value": "\"0.1.32\""
+      "value": "\"0.1.33\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
@@ -80421,252 +81120,259 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2164,
+      "offset": 2229,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2198,
+      "offset": 2263,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 2236,
+      "offset": 2301,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2360,
+      "offset": 2425,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 7451,
+      "offset": 7731,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 7491,
+      "offset": 7771,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 7535,
+      "offset": 7815,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 7665,
+      "offset": 7945,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 7738,
+      "offset": 8018,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 7785,
+      "offset": 8065,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 7835,
+      "offset": 8115,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 7882,
+      "offset": 8162,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 7931,
+      "offset": 8211,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 7974,
+      "offset": 8254,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8023,
+      "offset": 8303,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8071,
+      "offset": 8351,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8116,
+      "offset": 8396,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8166,
+      "offset": 8446,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8212,
+      "offset": 8492,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8264,
+      "offset": 8544,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8311,
+      "offset": 8591,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8358,
+      "offset": 8638,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8404,
+      "offset": 8684,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8445,
+      "offset": 8725,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8486,
+      "offset": 8766,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8531,
+      "offset": 8811,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8581,
+      "offset": 8861,
       "length": 9,
       "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 8632,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 8680,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 8736,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 8783,
-      "length": 9,
-      "value": "\"unknown\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
-      "kind": "StringLiteral",
-      "offset": 8872,
-      "length": 2,
-      "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
       "offset": 8912,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "StringLiteral",
+      "offset": 8960,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "StringLiteral",
+      "offset": 9016,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "StringLiteral",
+      "offset": 9063,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "StringLiteral",
+      "offset": 9152,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8947,
+      "offset": 9192,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 8987,
+      "offset": 9227,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "StringLiteral",
+      "offset": 9267,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "Array",
-      "offset": 9044,
+      "offset": 9324,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
+      "kind": "Array",
+      "offset": 9389,
       "length": 2,
       "value": "[]"
     },

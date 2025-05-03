@@ -54,6 +54,7 @@ import _SwiftConcurrencyShims
   @objc public var userId: Swift.Bool
   @objc public var appId: Swift.Bool
   @objc public var localGeofenceEvents: Swift.Bool
+  @objc public var bluetoothSignalStrengths: Swift.Bool
   @objc public var osVersion: Swift.Bool
   @objc public var idfv: Swift.Bool
   @objc public var idfa: Swift.Bool
@@ -126,6 +127,10 @@ extension BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var battery_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetooth_signal_strengths: Foundation.Data? {
     @objc get
     @objc set
   }

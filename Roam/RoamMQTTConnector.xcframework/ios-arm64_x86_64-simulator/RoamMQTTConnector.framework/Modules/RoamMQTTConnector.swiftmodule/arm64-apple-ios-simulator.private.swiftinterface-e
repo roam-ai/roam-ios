@@ -134,6 +134,10 @@ extension RoamMQTTConnector.MqttConnectorLocationData {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var bluetooth_signal_strengths: Foundation.Data? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var bundle_id: Swift.String? {
     @objc get
     @objc set

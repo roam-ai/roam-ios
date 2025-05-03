@@ -100,6 +100,15 @@ extension Swift.Optional : AnyOptional {
   public func encode(to encoder: any Swift.Encoder) throws
   required public init(from decoder: any Swift.Decoder) throws
 }
+@_hasMissingDesignatedInitializers @objc public class BluetoothSignal : ObjectiveC.NSObject, Swift.Codable {
+  @objc final public let name: Swift.String
+  @objc final public let rssi: Swift.String
+  @objc public func toDictionary() -> [Swift.String : Any]
+  @objc public func toJSONData() -> Foundation.Data?
+  @objc deinit
+  public func encode(to encoder: any Swift.Encoder) throws
+  required public init(from decoder: any Swift.Decoder) throws
+}
 public enum ReachabilityError : Swift.Error {
   case failedToCreateWithAddress(Darwin.sockaddr, Swift.Int32)
   case failedToCreateWithHostname(Swift.String, Swift.Int32)
@@ -606,7 +615,8 @@ extension UIKit.UIDevice {
   @objc public var app_version: Swift.Bool
   @objc public var app_name: Swift.Bool
   @objc public var centroid: Swift.Bool
-  @objc public var geofenceEvents: Swift.Bool
+  @objc public var local_geofence_events: Swift.Bool
+  @objc public var bluetooth_signal_strengths: Swift.Bool
   @objc override dynamic public init()
   @objc public func enableAll()
   public func disableAll()
@@ -713,6 +723,7 @@ extension UIKit.UIDevice {
   @objc public var appId: Swift.String
   @objc public var sdkVerison: Swift.String
   @objc public var localGeofenceEvents: [RoamGeofenceEvent]
+  @objc public var bluetoothSignalStrengths: [BluetoothSignal]
   @objc public func toJson() -> Swift.String?
   @objc deinit
 }
@@ -1003,6 +1014,10 @@ extension MqttLocationData {
     @objc set
   }
   @objc @NSManaged dynamic public var battery_status: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var bluetooth_signal_strengths: Foundation.Data? {
     @objc get
     @objc set
   }

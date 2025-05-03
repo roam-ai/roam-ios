@@ -335,6 +335,18 @@ SWIFT_CLASS_NAMED("BatchLocation")
 @property (nonatomic) double verticalAccuracy;
 @end
 
+@class NSData;
+
+SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
+@interface BluetoothSignal : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull rssi;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSData * _Nullable)toJSONData SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 
@@ -361,7 +373,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 @class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
@@ -376,6 +387,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
 @property (nonatomic, copy) NSString * _Nullable bundle_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
@@ -782,6 +794,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull appId;
 @property (nonatomic, copy) NSString * _Nonnull sdkVerison;
 @property (nonatomic, copy) NSArray<RoamGeofenceEvent *> * _Nonnull localGeofenceEvents;
+@property (nonatomic, copy) NSArray<BluetoothSignal *> * _Nonnull bluetoothSignalStrengths;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -888,7 +901,8 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL app_version;
 @property (nonatomic) BOOL app_name;
 @property (nonatomic) BOOL centroid;
-@property (nonatomic) BOOL geofenceEvents;
+@property (nonatomic) BOOL local_geofence_events;
+@property (nonatomic) BOOL bluetooth_signal_strengths;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enableAll;
 @end
@@ -1708,6 +1722,18 @@ SWIFT_CLASS_NAMED("BatchLocation")
 @property (nonatomic) double verticalAccuracy;
 @end
 
+@class NSData;
+
+SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
+@interface BluetoothSignal : NSObject
+@property (nonatomic, readonly, copy) NSString * _Nonnull name;
+@property (nonatomic, readonly, copy) NSString * _Nonnull rssi;
+- (NSDictionary<NSString *, id> * _Nonnull)toDictionary SWIFT_WARN_UNUSED_RESULT;
+- (NSData * _Nullable)toJSONData SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 
 
 
@@ -1734,7 +1760,6 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSData;
 @class NSDate;
 
 @interface MqttLocationData (SWIFT_EXTENSION(Roam))
@@ -1749,6 +1774,7 @@ SWIFT_CLASS_NAMED("MqttLocationData")
 @property (nonatomic) int16_t battery_remaining;
 @property (nonatomic) BOOL battery_saver;
 @property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
 @property (nonatomic, copy) NSString * _Nullable bundle_id;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
@@ -2155,6 +2181,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull appId;
 @property (nonatomic, copy) NSString * _Nonnull sdkVerison;
 @property (nonatomic, copy) NSArray<RoamGeofenceEvent *> * _Nonnull localGeofenceEvents;
+@property (nonatomic, copy) NSArray<BluetoothSignal *> * _Nonnull bluetoothSignalStrengths;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2261,7 +2288,8 @@ SWIFT_CLASS("_TtC4Roam11RoamPublish")
 @property (nonatomic) BOOL app_version;
 @property (nonatomic) BOOL app_name;
 @property (nonatomic) BOOL centroid;
-@property (nonatomic) BOOL geofenceEvents;
+@property (nonatomic) BOOL local_geofence_events;
+@property (nonatomic) BOOL bluetooth_signal_strengths;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)enableAll;
 @end

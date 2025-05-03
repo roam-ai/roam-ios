@@ -3155,6 +3155,109 @@
           },
           {
             "kind": "Var",
+            "name": "bluetooth_signal_strengths",
+            "printedName": "bluetooth_signal_strengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(py)bluetooth_signal_strengths",
+            "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC26bluetooth_signal_strengths10Foundation0F0VSgvp",
+            "moduleName": "RoamMQTTConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)bluetooth_signal_strengths",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC26bluetooth_signal_strengths10Foundation0F0VSgvg",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamMQTTConnector@objc(cs)MqttConnectorLocationData(im)setBluetooth_signal_strengths:",
+                "mangledName": "$s17RoamMQTTConnector25MqttConnectorLocationDataC26bluetooth_signal_strengths10Foundation0F0VSgvs",
+                "moduleName": "RoamMQTTConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "bundle_id",
             "printedName": "bundle_id",
             "children": [
@@ -7889,56 +7992,56 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 10895,
+      "offset": 11034,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13375,
+      "offset": 13514,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13417,
+      "offset": 13556,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13503,
+      "offset": 13642,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13526,
+      "offset": 13665,
       "length": 2,
       "value": "50"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13532,
+      "offset": 13671,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 13578,
+      "offset": 13717,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamMQTTConnector\/RoamMQTTConnector\/Storage\/MQTTDataStorageManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13869,
+      "offset": 14008,
       "length": 2,
       "value": "50"
     },

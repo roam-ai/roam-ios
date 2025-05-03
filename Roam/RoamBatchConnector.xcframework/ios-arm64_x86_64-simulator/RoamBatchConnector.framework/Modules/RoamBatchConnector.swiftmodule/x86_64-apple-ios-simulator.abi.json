@@ -3834,6 +3834,99 @@
           },
           {
             "kind": "Var",
+            "name": "bluetoothSignalStrengths",
+            "printedName": "bluetoothSignalStrengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(py)bluetoothSignalStrengths",
+            "mangledName": "$s18RoamBatchConnector0aB7PublishC24bluetoothSignalStrengthsSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)bluetoothSignalStrengths",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC24bluetoothSignalStrengthsSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)setBluetoothSignalStrengths:",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC24bluetoothSignalStrengthsSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RoamBatchConnector0aB7PublishC24bluetoothSignalStrengthsSbvM",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC24bluetoothSignalStrengthsSbvM",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "osVersion",
             "printedName": "osVersion",
             "children": [
@@ -6818,6 +6911,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setBattery_status:",
                 "mangledName": "$s18RoamBatchConnector0B13LocationModelC14battery_statusSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bluetooth_signal_strengths",
+            "printedName": "bluetooth_signal_strengths",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)bluetooth_signal_strengths",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC26bluetooth_signal_strengths10Foundation4DataVSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)bluetooth_signal_strengths",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC26bluetooth_signal_strengths10Foundation4DataVSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Foundation.Data?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setBluetooth_signal_strengths:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC26bluetooth_signal_strengths10Foundation4DataVSgvs",
                 "moduleName": "RoamBatchConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -12097,98 +12293,105 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2205,
+      "offset": 2175,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2245,
+      "offset": 2265,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2285,
+      "offset": 2305,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2327,
+      "offset": 2345,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2371,
+      "offset": 2387,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2442,
+      "offset": 2431,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2505,
+      "offset": 2502,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2553,
+      "offset": 2565,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2599,
+      "offset": 2613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2649,
+      "offset": 2659,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2696,
+      "offset": 2709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2746,
+      "offset": 2756,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2793,
+      "offset": 2806,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
       "kind": "BooleanLiteral",
-      "offset": 2842,
+      "offset": 2853,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2902,
       "length": 5,
       "value": "false"
     },
@@ -12349,315 +12552,322 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2021,
+      "offset": 2079,
       "length": 15,
       "value": "\"tracking_mode\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2129,
+      "offset": 2187,
       "length": 21,
       "value": "\"horizontal_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2183,
+      "offset": 2241,
       "length": 19,
       "value": "\"vertical_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2251,
+      "offset": 2309,
       "length": 13,
       "value": "\"app_context\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2291,
+      "offset": 2349,
       "length": 13,
       "value": "\"recorded_at\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2329,
+      "offset": 2387,
       "length": 11,
       "value": "\"tz_offset\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2370,
+      "offset": 2428,
       "length": 16,
       "value": "\"battery_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2419,
+      "offset": 2477,
       "length": 19,
       "value": "\"battery_remaining\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2467,
+      "offset": 2525,
       "length": 15,
       "value": "\"battery_saver\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2512,
+      "offset": 2570,
       "length": 16,
       "value": "\"network_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2556,
+      "offset": 2614,
       "length": 14,
       "value": "\"network_type\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2599,
+      "offset": 2657,
       "length": 15,
       "value": "\"network_state\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2649,
+      "offset": 2707,
       "length": 21,
       "value": "\"location_permission\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2696,
+      "offset": 2754,
       "length": 12,
       "value": "\"gps_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2736,
+      "offset": 2794,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2785,
+      "offset": 2843,
       "length": 21,
       "value": "\"device_manufacturer\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2833,
+      "offset": 2891,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2876,
+      "offset": 2934,
       "length": 16,
       "value": "\"kernel_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2918,
+      "offset": 2976,
       "length": 12,
       "value": "\"ip_address\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2962,
+      "offset": 3020,
       "length": 19,
       "value": "\"public_ip_address\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3006,
+      "offset": 3064,
       "length": 11,
       "value": "\"wifi_ssid\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3047,
+      "offset": 3105,
       "length": 16,
       "value": "\"locale_country\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3094,
+      "offset": 3152,
       "length": 17,
       "value": "\"locale_language\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3139,
+      "offset": 3197,
       "length": 14,
       "value": "\"carrier_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3177,
+      "offset": 3235,
       "length": 10,
       "value": "\"app_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3223,
+      "offset": 3281,
       "length": 23,
       "value": "\"app_installation_date\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3273,
+      "offset": 3331,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3313,
+      "offset": 3371,
       "length": 13,
       "value": "\"system_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3385,
+      "offset": 3443,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3425,
+      "offset": 3483,
       "length": 13,
       "value": "\"location_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3461,
+      "offset": 3519,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3492,
+      "offset": 3550,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3563,
+      "offset": 3621,
       "length": 23,
       "value": "\"local_geofence_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3662,
+      "offset": 3685,
+      "length": 28,
+      "value": "\"bluetooth_signal_strengths\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 3789,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3695,
+      "offset": 3822,
       "length": 6,
       "value": "\"idfv\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3722,
+      "offset": 3849,
       "length": 6,
       "value": "\"idfa\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3773,
+      "offset": 3900,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3837,
+      "offset": 3964,
       "length": 19,
       "value": "\"location_listener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3900,
+      "offset": 4027,
       "length": 31,
       "value": "\"location_authorization_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3960,
+      "offset": 4087,
       "length": 15,
       "value": "\"nearby_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4002,
+      "offset": 4129,
       "length": 13,
       "value": "\"app_details\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4046,
+      "offset": 4173,
       "length": 17,
       "value": "\"geofence_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4091,
+      "offset": 4218,
       "length": 14,
       "value": "\"trips_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4136,
+      "offset": 4263,
       "length": 17,
       "value": "\"location_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4183,
+      "offset": 4310,
       "length": 16,
       "value": "\"event_listener\""
     }
