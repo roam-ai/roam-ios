@@ -329,6 +329,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable battery_status;
 @property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
 @property (nonatomic, copy) NSString * _Nullable bundle_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_iso_country_code;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
@@ -353,7 +354,9 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic) BOOL location_listener;
 @property (nonatomic) BOOL location_permission;
 @property (nonatomic) double longitude;
+@property (nonatomic, copy) NSString * _Nullable mcc;
 @property (nonatomic, copy) NSData * _Nullable metadata;
+@property (nonatomic, copy) NSString * _Nullable mnc;
 @property (nonatomic) BOOL nearby_events;
 @property (nonatomic, copy) NSString * _Nullable network_state;
 @property (nonatomic) BOOL network_status;
@@ -361,6 +364,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable os_version;
 @property (nonatomic, copy) NSString * _Nullable public_ip_address;
 @property (nonatomic) BOOL publish_only;
+@property (nonatomic, copy) NSString * _Nullable rat;
 @property (nonatomic, copy) NSString * _Nullable recorded_at;
 @property (nonatomic, copy) NSString * _Nullable sdk_version;
 @property (nonatomic, copy) NSString * _Nullable source;
@@ -467,6 +471,10 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL locationEvents;
 @property (nonatomic) BOOL publishOnly;
 @property (nonatomic) BOOL eventListener;
+@property (nonatomic) BOOL mobileCountryCode;
+@property (nonatomic) BOOL mobileNetworkCode;
+@property (nonatomic) BOOL carrierIsoCountryCode;
+@property (nonatomic) BOOL radioAccessTechnology;
 - (void)enableAll;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

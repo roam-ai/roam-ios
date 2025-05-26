@@ -554,3 +554,17 @@ New Data Enrichment Fields: We've added additional fields to the data enrichment
 Performance Improvements: Optimized internal processes for faster execution and improved efficiency, ensuring a smoother experience for both developers and end users.
 
 These updates are aimed at enhancing the depth and reliability of location data, while also improving the SDK's performance. As always, our support team is here to help with any questions or feedback you may have.
+
+## 0.1.34-beta.1
+
+**Enhancements in Data Enrichment and Performance**
+
+We're excited to introduce Roam iOS SDK version 0.1.34-beta.1, focusing on expanding data enrichment capabilities and SDK Improvement. In this update, we've made the following improvements:
+
+SDK Improvement: Optimized internal processes for faster execution and improved efficiency, ensuring a smoother experience for both developers and end users.
+
+
+New Data Enrichment Fields: We've added additional fields to the data enrichment layer, allowing you to access more comprehensive and valuable location insights.
+
+These updates are aimed at enhancing the depth and reliability of location data, while also improving the SDK's performance. As always, our support team is here to help with any questions or feedback you may have.
+

@@ -218,7 +218,7 @@ extension Roam.Reachability {
     @objc get
     @objc set
   }
-  @objc public static func initialize(_ publishKey: Swift.String?, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil)
+  @objc public static func initialize(_ publishKey: Swift.String?, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil, completion: ((_ success: Swift.Bool, _ error: Roam.RoamError?) -> Swift.Void)? = nil)
   @objc public static func createUser(_ description: Swift.String, _ metadata: Swift.Dictionary<Swift.String, Any>? = nil, handler: Roam.RoamUserCompletionhandler? = nil)
   @objc public static func getUser(_ userId: Swift.String, handler: Roam.RoamUserCompletionhandler? = nil)
   @objc public static func updateUser(_ description: Swift.String? = nil, _ metadata: Swift.Dictionary<Swift.String, Any>? = nil)
@@ -264,11 +264,11 @@ extension Roam.Reachability {
   @objc public static func enableAccuracyEngine()
   @objc public static func disableAccuracyEngine()
   @objc public static func updateLocationWhenStationary(_ value: Swift.Int)
-  @objc public static func setBatchReceiverConfig(networkState: Roam.RoamNetworkState, batchCount: Swift.Int, batchWindow: Swift.Int, handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
-  @objc public static func getBatchReceiverConfig(handler: (_ config: Roam.RoamBatchConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func setBatchReceiverConfig(networkState: Roam.RoamNetworkState, batchCount: Swift.Int, batchWindow: Swift.Int, handler: @escaping Roam.RoamBatchConfigCompletionhandler)
+  @objc public static func getBatchReceiverConfig(handler: @escaping Roam.RoamBatchConfigCompletionhandler)
   @objc public static func resetBatchReceiverConfig(handler: Roam.RoamBatchConfigCompletionhandler? = nil)
-  @objc public static func setTrackingConfig(accuracy: Swift.Int, timeout: Swift.Int, discardLocation: Swift.Bool, handler: (_ config: Roam.RoamLocationConfig?, _ error: Roam.RoamError?) -> Swift.Void)
-  @objc public static func getTrackingConfig(handler: (_ config: Roam.RoamLocationConfig?, _ error: Roam.RoamError?) -> Swift.Void)
+  @objc public static func setTrackingConfig(accuracy: Swift.Int, timeout: Swift.Int, discardLocation: Swift.Bool, handler: @escaping Roam.RoamTrackingConfigCompletionhandler)
+  @objc public static func getTrackingConfig(handler: @escaping Roam.RoamTrackingConfigCompletionhandler)
   @objc public static func resetTrackingConfig(handler: Roam.RoamTrackingConfigCompletionhandler? = nil)
   @objc public static func requestActivityPermission()
   @objc public static func checkActivityPermission() -> Swift.Bool
@@ -715,6 +715,10 @@ extension UIKit.UIDevice {
   @objc public var localeCountry: Swift.String
   @objc public var localeLanguage: Swift.String
   @objc public var carrierName: Swift.String
+  @objc public var mcc: Swift.String
+  @objc public var mnc: Swift.String
+  @objc public var carrierIsoCountryCode: Swift.String
+  @objc public var rat: Swift.String
   @objc public var appInstallationDate: Swift.String
   @objc public var appVersion: Swift.String
   @objc public var centroid: Roam.RoamCentroid?

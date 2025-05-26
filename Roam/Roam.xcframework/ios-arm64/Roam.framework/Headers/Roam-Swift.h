@@ -508,8 +508,8 @@ SWIFT_CLASS("_TtC4Roam8Position")
 @end
 
 @protocol RoamDelegate;
-@class RoamUser;
 @class RoamError;
+@class RoamUser;
 enum RoamTrackingMode : NSInteger;
 @class RoamTrackingCustomMethods;
 @class CLLocation;
@@ -533,7 +533,7 @@ SWIFT_CLASS("_TtC4Roam4Roam")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
-+ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
++ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
 + (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
@@ -579,11 +579,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Nul
 + (void)enableAccuracyEngine;
 + (void)disableAccuracyEngine;
 + (void)updateLocationWhenStationary:(NSInteger)value;
-+ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getBatchReceiverConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getBatchReceiverConfigWithHandler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getTrackingConfigWithHandler:(SWIFT_NOESCAPE void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
++ (void)getTrackingConfigWithHandler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
 + (void)requestActivityPermission;
 + (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
@@ -786,6 +786,10 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull localeCountry;
 @property (nonatomic, copy) NSString * _Nonnull localeLanguage;
 @property (nonatomic, copy) NSString * _Nonnull carrierName;
+@property (nonatomic, copy) NSString * _Nonnull mcc;
+@property (nonatomic, copy) NSString * _Nonnull mnc;
+@property (nonatomic, copy) NSString * _Nonnull carrierIsoCountryCode;
+@property (nonatomic, copy) NSString * _Nonnull rat;
 @property (nonatomic, copy) NSString * _Nonnull appInstallationDate;
 @property (nonatomic, copy) NSString * _Nonnull appVersion;
 @property (nonatomic, strong) RoamCentroid * _Nullable centroid;

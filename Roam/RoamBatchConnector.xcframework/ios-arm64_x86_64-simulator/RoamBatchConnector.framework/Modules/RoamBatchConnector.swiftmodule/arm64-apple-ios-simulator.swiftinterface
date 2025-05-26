@@ -69,6 +69,10 @@ import _SwiftConcurrencyShims
   @objc public var locationEvents: Swift.Bool
   @objc public var publishOnly: Swift.Bool
   @objc public var eventListener: Swift.Bool
+  @objc public var mobileCountryCode: Swift.Bool
+  @objc public var mobileNetworkCode: Swift.Bool
+  @objc public var carrierIsoCountryCode: Swift.Bool
+  @objc public var radioAccessTechnology: Swift.Bool
   @objc public func enableAll()
   @objc override dynamic public init()
   @objc deinit
@@ -135,6 +139,10 @@ extension BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var bundle_id: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var carrier_iso_country_code: Swift.String? {
     @objc get
     @objc set
   }
@@ -234,7 +242,15 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var mcc: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var metadata: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var mnc: Swift.String? {
     @objc get
     @objc set
   }
@@ -263,6 +279,10 @@ extension BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var publish_only: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var rat: Swift.String? {
     @objc get
     @objc set
   }
