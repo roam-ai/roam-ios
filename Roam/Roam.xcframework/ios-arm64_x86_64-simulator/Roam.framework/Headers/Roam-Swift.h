@@ -533,6 +533,7 @@ SWIFT_CLASS("_TtC4Roam4Roam")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
++ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
 + (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
 + (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
@@ -799,6 +800,10 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull sdkVerison;
 @property (nonatomic, copy) NSArray<RoamGeofenceEvent *> * _Nonnull localGeofenceEvents;
 @property (nonatomic, copy) NSArray<BluetoothSignal *> * _Nonnull bluetoothSignalStrengths;
+@property (nonatomic, copy) NSString * _Nonnull wifiBSSID;
+@property (nonatomic, copy) NSString * _Nonnull wifiProxySettingHost;
+@property (nonatomic, copy) NSString * _Nonnull wifiProxySettingPort;
+@property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1924,6 +1929,7 @@ SWIFT_CLASS("_TtC4Roam4Roam")
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
++ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
 + (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
 + (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
 + (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
@@ -2190,6 +2196,10 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull sdkVerison;
 @property (nonatomic, copy) NSArray<RoamGeofenceEvent *> * _Nonnull localGeofenceEvents;
 @property (nonatomic, copy) NSArray<BluetoothSignal *> * _Nonnull bluetoothSignalStrengths;
+@property (nonatomic, copy) NSString * _Nonnull wifiBSSID;
+@property (nonatomic, copy) NSString * _Nonnull wifiProxySettingHost;
+@property (nonatomic, copy) NSString * _Nonnull wifiProxySettingPort;
+@property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

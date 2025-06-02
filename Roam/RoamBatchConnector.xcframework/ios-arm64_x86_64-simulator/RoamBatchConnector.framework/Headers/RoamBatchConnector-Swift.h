@@ -375,7 +375,11 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_bssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_host;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_port;
 @property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_subnet_mask;
 @end
 
 
@@ -475,6 +479,10 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL mobileNetworkCode;
 @property (nonatomic) BOOL carrierIsoCountryCode;
 @property (nonatomic) BOOL radioAccessTechnology;
+@property (nonatomic) BOOL wifiBSSID;
+@property (nonatomic) BOOL wifiProxySettingHost;
+@property (nonatomic) BOOL wifiProxySettingPort;
+@property (nonatomic) BOOL wifiSubnetMask;
 - (void)enableAll;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -864,7 +872,11 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable tz_offset;
 @property (nonatomic, copy) NSString * _Nullable user_id;
 @property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_bssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_host;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_port;
 @property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_subnet_mask;
 @end
 
 
@@ -964,6 +976,10 @@ SWIFT_CLASS("_TtC18RoamBatchConnector16RoamBatchPublish")
 @property (nonatomic) BOOL mobileNetworkCode;
 @property (nonatomic) BOOL carrierIsoCountryCode;
 @property (nonatomic) BOOL radioAccessTechnology;
+@property (nonatomic) BOOL wifiBSSID;
+@property (nonatomic) BOOL wifiProxySettingHost;
+@property (nonatomic) BOOL wifiProxySettingPort;
+@property (nonatomic) BOOL wifiSubnetMask;
 - (void)enableAll;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end

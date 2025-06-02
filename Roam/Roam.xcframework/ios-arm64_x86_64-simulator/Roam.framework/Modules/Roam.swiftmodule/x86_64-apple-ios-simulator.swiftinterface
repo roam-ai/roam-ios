@@ -20,6 +20,7 @@ import ExternalAccessory
 import Foundation
 import MachO
 import Network
+import NetworkExtension
 import ObjectiveC
 @_exported import Roam
 import Swift
@@ -218,6 +219,7 @@ extension Reachability {
     @objc get
     @objc set
   }
+  @objc public static func initialize(_ publishKey: Swift.String?, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil)
   @objc public static func initialize(_ publishKey: Swift.String?, _ baseUrl: Swift.String? = nil, _ iOTEndPoint: Swift.String? = nil, completion: ((_ success: Swift.Bool, _ error: RoamError?) -> Swift.Void)? = nil)
   @objc public static func createUser(_ description: Swift.String, _ metadata: Swift.Dictionary<Swift.String, Any>? = nil, handler: RoamUserCompletionhandler? = nil)
   @objc public static func getUser(_ userId: Swift.String, handler: RoamUserCompletionhandler? = nil)
@@ -724,6 +726,10 @@ extension UIKit.UIDevice {
   @objc public var sdkVerison: Swift.String
   @objc public var localGeofenceEvents: [RoamGeofenceEvent]
   @objc public var bluetoothSignalStrengths: [BluetoothSignal]
+  @objc public var wifiBSSID: Swift.String
+  @objc public var wifiProxySettingHost: Swift.String
+  @objc public var wifiProxySettingPort: Swift.String
+  @objc public var wifiSubnetMask: Swift.String
   @objc public func toJson() -> Swift.String?
   @objc deinit
 }

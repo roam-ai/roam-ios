@@ -73,6 +73,10 @@ import _SwiftConcurrencyShims
   @objc public var mobileNetworkCode: Swift.Bool
   @objc public var carrierIsoCountryCode: Swift.Bool
   @objc public var radioAccessTechnology: Swift.Bool
+  @objc public var wifiBSSID: Swift.Bool
+  @objc public var wifiProxySettingHost: Swift.Bool
+  @objc public var wifiProxySettingPort: Swift.Bool
+  @objc public var wifiSubnetMask: Swift.Bool
   @objc public func enableAll()
   @objc override dynamic public init()
   @objc deinit
@@ -326,7 +330,23 @@ extension BatchLocationModel {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var wifi_bssid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_proxy_setting_host: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_proxy_setting_port: Swift.String? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var wifi_ssid: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var wifi_subnet_mask: Swift.String? {
     @objc get
     @objc set
   }

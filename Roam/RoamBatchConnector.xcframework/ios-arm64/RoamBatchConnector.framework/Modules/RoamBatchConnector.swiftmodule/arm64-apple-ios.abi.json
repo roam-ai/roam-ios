@@ -5601,6 +5601,378 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "wifiBSSID",
+            "printedName": "wifiBSSID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(py)wifiBSSID",
+            "mangledName": "$s18RoamBatchConnector0aB7PublishC9wifiBSSIDSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)wifiBSSID",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC9wifiBSSIDSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)setWifiBSSID:",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC9wifiBSSIDSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RoamBatchConnector0aB7PublishC9wifiBSSIDSbvM",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC9wifiBSSIDSbvM",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifiProxySettingHost",
+            "printedName": "wifiProxySettingHost",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(py)wifiProxySettingHost",
+            "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingHostSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)wifiProxySettingHost",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingHostSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)setWifiProxySettingHost:",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingHostSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RoamBatchConnector0aB7PublishC20wifiProxySettingHostSbvM",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingHostSbvM",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifiProxySettingPort",
+            "printedName": "wifiProxySettingPort",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(py)wifiProxySettingPort",
+            "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingPortSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)wifiProxySettingPort",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingPortSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)setWifiProxySettingPort:",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingPortSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RoamBatchConnector0aB7PublishC20wifiProxySettingPortSbvM",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC20wifiProxySettingPortSbvM",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifiSubnetMask",
+            "printedName": "wifiSubnetMask",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(py)wifiSubnetMask",
+            "mangledName": "$s18RoamBatchConnector0aB7PublishC14wifiSubnetMaskSbvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)wifiSubnetMask",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC14wifiSubnetMaskSbvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@RoamBatchConnector@objc(cs)RoamBatchPublish(im)setWifiSubnetMask:",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC14wifiSubnetMaskSbvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18RoamBatchConnector0aB7PublishC14wifiSubnetMaskSbvM",
+                "mangledName": "$s18RoamBatchConnector0aB7PublishC14wifiSubnetMaskSbvM",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "enableAll",
             "printedName": "enableAll()",
@@ -11832,6 +12204,315 @@
           },
           {
             "kind": "Var",
+            "name": "wifi_bssid",
+            "printedName": "wifi_bssid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)wifi_bssid",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC10wifi_bssidSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)wifi_bssid",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10wifi_bssidSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setWifi_bssid:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC10wifi_bssidSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifi_proxy_setting_host",
+            "printedName": "wifi_proxy_setting_host",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)wifi_proxy_setting_host",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_hostSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)wifi_proxy_setting_host",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_hostSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setWifi_proxy_setting_host:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_hostSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifi_proxy_setting_port",
+            "printedName": "wifi_proxy_setting_port",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)wifi_proxy_setting_port",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_portSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)wifi_proxy_setting_port",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_portSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setWifi_proxy_setting_port:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC23wifi_proxy_setting_portSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "wifi_ssid",
             "printedName": "wifi_ssid",
             "children": [
@@ -11922,6 +12603,109 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setWifi_ssid:",
                 "mangledName": "$s18RoamBatchConnector0B13LocationModelC9wifi_ssidSSSgvs",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "wifi_subnet_mask",
+            "printedName": "wifi_subnet_mask",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(py)wifi_subnet_mask",
+            "mangledName": "$s18RoamBatchConnector0B13LocationModelC16wifi_subnet_maskSSSgvp",
+            "moduleName": "RoamBatchConnector",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)wifi_subnet_mask",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC16wifi_subnet_maskSSSgvg",
+                "moduleName": "RoamBatchConnector",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@RoamBatchConnector@objc(cs)BatchLocationModel(im)setWifi_subnet_mask:",
+                "mangledName": "$s18RoamBatchConnector0B13LocationModelC16wifi_subnet_maskSSSgvs",
                 "moduleName": "RoamBatchConnector",
                 "implicit": true,
                 "declAttributes": [
@@ -13208,6 +13992,34 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3177,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3233,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3289,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamBatchPublish.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3339,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/APIManager.swift",
       "kind": "StringLiteral",
       "offset": 578,
@@ -13364,331 +14176,359 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2193,
+      "offset": 2333,
       "length": 15,
       "value": "\"tracking_mode\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2301,
+      "offset": 2441,
       "length": 21,
       "value": "\"horizontal_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2355,
+      "offset": 2495,
       "length": 19,
       "value": "\"vertical_accuracy\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2423,
+      "offset": 2563,
       "length": 13,
       "value": "\"app_context\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2463,
+      "offset": 2603,
       "length": 13,
       "value": "\"recorded_at\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2501,
+      "offset": 2641,
       "length": 11,
       "value": "\"tz_offset\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2682,
       "length": 16,
       "value": "\"battery_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2591,
+      "offset": 2731,
       "length": 19,
       "value": "\"battery_remaining\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2639,
+      "offset": 2779,
       "length": 15,
       "value": "\"battery_saver\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2684,
+      "offset": 2824,
       "length": 16,
       "value": "\"network_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2728,
+      "offset": 2868,
       "length": 14,
       "value": "\"network_type\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2771,
+      "offset": 2911,
       "length": 15,
       "value": "\"network_state\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2821,
+      "offset": 2961,
       "length": 21,
       "value": "\"location_permission\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 3008,
       "length": 12,
       "value": "\"gps_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2908,
+      "offset": 3048,
       "length": 14,
       "value": "\"device_model\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 2957,
+      "offset": 3097,
       "length": 21,
       "value": "\"device_manufacturer\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3005,
+      "offset": 3145,
       "length": 13,
       "value": "\"device_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3048,
+      "offset": 3188,
       "length": 16,
       "value": "\"kernel_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3090,
+      "offset": 3230,
       "length": 12,
       "value": "\"ip_address\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3134,
+      "offset": 3274,
       "length": 19,
       "value": "\"public_ip_address\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
+      "offset": 3318,
       "length": 11,
       "value": "\"wifi_ssid\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3219,
+      "offset": 3359,
       "length": 16,
       "value": "\"locale_country\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3266,
+      "offset": 3406,
       "length": 17,
       "value": "\"locale_language\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3311,
+      "offset": 3451,
       "length": 14,
       "value": "\"carrier_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3349,
+      "offset": 3489,
       "length": 10,
       "value": "\"app_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3395,
+      "offset": 3535,
       "length": 23,
       "value": "\"app_installation_date\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3445,
+      "offset": 3585,
       "length": 13,
       "value": "\"app_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3485,
+      "offset": 3625,
       "length": 13,
       "value": "\"system_name\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3557,
+      "offset": 3697,
       "length": 13,
       "value": "\"sdk_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3597,
+      "offset": 3737,
       "length": 13,
       "value": "\"location_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3633,
+      "offset": 3773,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3664,
+      "offset": 3804,
       "length": 8,
       "value": "\"app_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3735,
+      "offset": 3875,
       "length": 23,
       "value": "\"local_geofence_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3799,
+      "offset": 3939,
       "length": 28,
       "value": "\"bluetooth_signal_strengths\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3903,
+      "offset": 4043,
       "length": 12,
       "value": "\"os_version\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3936,
+      "offset": 4076,
       "length": 6,
       "value": "\"idfv\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 3963,
+      "offset": 4103,
       "length": 6,
       "value": "\"idfa\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4014,
+      "offset": 4154,
       "length": 11,
       "value": "\"bundle_id\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4078,
+      "offset": 4218,
       "length": 19,
       "value": "\"location_listener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4141,
+      "offset": 4281,
       "length": 31,
       "value": "\"location_authorization_status\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4201,
+      "offset": 4341,
       "length": 15,
       "value": "\"nearby_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4243,
+      "offset": 4383,
       "length": 13,
       "value": "\"app_details\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4287,
+      "offset": 4427,
       "length": 17,
       "value": "\"geofence_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4332,
+      "offset": 4472,
       "length": 14,
       "value": "\"trips_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4377,
+      "offset": 4517,
       "length": 17,
       "value": "\"location_events\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4424,
+      "offset": 4564,
       "length": 16,
       "value": "\"event_listener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
       "kind": "StringLiteral",
-      "offset": 4521,
+      "offset": 4661,
       "length": 26,
       "value": "\"carrier_iso_country_code\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4731,
+      "length": 12,
+      "value": "\"wifi_bssid\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4780,
+      "length": 25,
+      "value": "\"wifi_proxy_setting_host\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4842,
+      "length": 25,
+      "value": "\"wifi_proxy_setting_port\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/RoamNative\/roam-ios-core\/Features\/RoamBatchConnector\/RoamBatchConnector\/Model\/RoamLocationModel.swift",
+      "kind": "StringLiteral",
+      "offset": 4898,
+      "length": 18,
+      "value": "\"wifi_subnet_mask\""
     }
   ]
 }
