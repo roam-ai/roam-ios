@@ -578,3 +578,9 @@ These updates are aimed at enhancing the depth and reliability of location data,
 - **Enhanced Tracking Accuracy**: Location tracking algorithms have been fine-tuned to deliver more reliable and precise data.
 
 These updates are crafted to enhance your experience with Roam SDK, offering more control, better efficiency, and higher tracking fidelity. For any questions or feedback, our support team is always here to help.
+
+
+## 0.2.0-beta.1
+
+- **Improved stability and performance.**
+- **Infrastructure enhancements to support future growth. **

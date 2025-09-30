@@ -308,34 +308,84 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("BatchLocation")
-@interface BatchLocation : NSManagedObject
+SWIFT_CLASS_NAMED("BatchLocationModel")
+@interface BatchLocationModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
-@interface BatchLocation (SWIFT_EXTENSION(Roam))
+@class NSString;
+@class NSData;
+
+@interface BatchLocationModel (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
-@property (nonatomic) int16_t batteryRemaining;
+@property (nonatomic, copy) NSString * _Nullable app_context;
+@property (nonatomic, copy) NSString * _Nullable app_details;
+@property (nonatomic, copy) NSString * _Nullable app_id;
+@property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_name;
+@property (nonatomic, copy) NSString * _Nullable app_version;
+@property (nonatomic) int16_t battery_remaining;
+@property (nonatomic) BOOL battery_saver;
+@property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
+@property (nonatomic, copy) NSString * _Nullable bundle_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_iso_country_code;
+@property (nonatomic, copy) NSString * _Nullable carrier_name;
+@property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic, copy) NSString * _Nullable device_manufacturer;
+@property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable device_name;
+@property (nonatomic) BOOL event_listener;
+@property (nonatomic) BOOL geofence_events;
+@property (nonatomic) BOOL gps_status;
+@property (nonatomic) double horizontal_accuracy;
+@property (nonatomic, copy) NSString * _Nullable idfa;
+@property (nonatomic, copy) NSString * _Nullable idfv;
+@property (nonatomic, copy) NSString * _Nullable ip_address;
+@property (nonatomic, copy) NSString * _Nullable kernel_version;
 @property (nonatomic) double latitude;
+@property (nonatomic, copy) NSString * _Nullable locale_country;
+@property (nonatomic, copy) NSString * _Nullable locale_language;
+@property (nonatomic, copy) NSData * _Nullable localGeofenceEvents;
+@property (nonatomic) int16_t location_authorization_status;
+@property (nonatomic) BOOL location_events;
+@property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic) BOOL location_listener;
+@property (nonatomic) BOOL location_permission;
 @property (nonatomic) double longitude;
-@property (nonatomic) BOOL networkStatus;
-@property (nonatomic) double pace;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, copy) NSString * _Nullable mcc;
+@property (nonatomic, copy) NSData * _Nullable metadata;
+@property (nonatomic, copy) NSString * _Nullable mnc;
+@property (nonatomic) BOOL nearby_events;
+@property (nonatomic, copy) NSString * _Nullable network_interface_name;
+@property (nonatomic, copy) NSString * _Nullable network_state;
+@property (nonatomic) BOOL network_status;
+@property (nonatomic, copy) NSString * _Nullable network_type;
+@property (nonatomic, copy) NSString * _Nullable os_version;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address_api;
+@property (nonatomic) BOOL publish_only;
+@property (nonatomic, copy) NSString * _Nullable rat;
+@property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable sdk_version;
 @property (nonatomic, copy) NSString * _Nullable source;
-@property (nonatomic) double speed;
-@property (nonatomic, copy) NSString * _Nullable timezoneOffset;
-@property (nonatomic, copy) NSString * _Nullable updateAt;
-@property (nonatomic) double verticalAccuracy;
+@property (nonatomic) int32_t speed;
+@property (nonatomic, copy) NSString * _Nullable system_name;
+@property (nonatomic, copy) NSString * _Nullable tracking_mode;
+@property (nonatomic) BOOL trips_events;
+@property (nonatomic, copy) NSString * _Nullable tz_offset;
+@property (nonatomic, copy) NSString * _Nullable user_id;
+@property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_bssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_host;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_port;
+@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_subnet_mask;
 @end
 
-@class NSData;
 
 SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 @interface BluetoothSignal : NSObject
@@ -351,151 +401,21 @@ SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 
 
 
-
-
-SWIFT_CLASS("_TtC4Roam10JWTDecoder")
-@interface JWTDecoder : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
-  LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
-  LocationAccuracyKCLLocationAccuracyBest = 2,
-  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 3,
-  LocationAccuracyKCLLocationAccuracyHundredMeters = 4,
-  LocationAccuracyKCLLocationAccuracyKilometer = 5,
-  LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
-};
-
-
-SWIFT_CLASS_NAMED("MqttLocationData")
-@interface MqttLocationData : NSManagedObject
+SWIFT_CLASS_NAMED("CSVFilesDataModel")
+@interface CSVFilesDataModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSDate;
 
-@interface MqttLocationData (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic, copy) NSString * _Nullable app_context;
-@property (nonatomic, copy) NSString * _Nullable app_details;
-@property (nonatomic, copy) NSString * _Nullable app_id;
-@property (nonatomic, copy) NSString * _Nullable app_installation_date;
-@property (nonatomic, copy) NSString * _Nullable app_name;
-@property (nonatomic, copy) NSString * _Nullable app_version;
-@property (nonatomic) int16_t battery_remaining;
-@property (nonatomic) BOOL battery_saver;
-@property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
-@property (nonatomic, copy) NSString * _Nullable bundle_id;
-@property (nonatomic, copy) NSString * _Nullable carrier_name;
-@property (nonatomic, copy) NSData * _Nullable centroid;
-@property (nonatomic) double course;
-@property (nonatomic, copy) NSString * _Nullable device_manufacturer;
-@property (nonatomic, copy) NSString * _Nullable device_model;
-@property (nonatomic, copy) NSString * _Nullable device_name;
-@property (nonatomic) BOOL event_listener;
-@property (nonatomic) BOOL geofence_events;
-@property (nonatomic, copy) NSData * _Nullable geofenceEvents;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) double horizontal_accuracy;
-@property (nonatomic, copy) NSString * _Nullable idfa;
-@property (nonatomic, copy) NSString * _Nullable idfv;
-@property (nonatomic, copy) NSString * _Nullable ip_address;
-@property (nonatomic, copy) NSString * _Nullable kernel_version;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable locale_country;
-@property (nonatomic, copy) NSString * _Nullable locale_language;
-@property (nonatomic) int16_t location_authorization_status;
-@property (nonatomic) BOOL location_events;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic) BOOL location_listener;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) double longitude;
-@property (nonatomic) int16_t mqtt_id;
-@property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
-@property (nonatomic) BOOL nearby_events;
-@property (nonatomic, copy) NSString * _Nullable network_state;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic, copy) NSString * _Nullable network_type;
-@property (nonatomic, copy) NSString * _Nullable os_version;
-@property (nonatomic, copy) NSString * _Nullable public_ip_address;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic, copy) NSString * _Nullable source;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable system_name;
-@property (nonatomic, copy) NSString * _Nullable tracking_mode;
-@property (nonatomic) BOOL trips_events;
-@property (nonatomic, copy) NSString * _Nullable tz_offset;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic) double vertical_accuracy;
-@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@interface CSVFilesDataModel (SWIFT_EXTENSION(Roam))
+@property (nonatomic, copy) NSString * _Nullable filename;
+@property (nonatomic, copy) NSString * _Nullable filepath;
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic) int16_t locationcount;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
 @end
 
-
-SWIFT_CLASS_NAMED("MyTrip")
-@interface MyTrip : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class MyTripRoute;
-@class NSSet;
-
-@interface MyTrip (SWIFT_EXTENSION(Roam))
-- (void)addRouteObject:(MyTripRoute * _Nonnull)value;
-- (void)removeRouteObject:(MyTripRoute * _Nonnull)value;
-- (void)addRoute:(NSSet * _Nonnull)values;
-- (void)removeRoute:(NSSet * _Nonnull)values;
-@end
-
-
-@interface MyTrip (SWIFT_EXTENSION(Roam))
-@property (nonatomic) double altitude;
-@property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double elevation_gain;
-@property (nonatomic) int16_t event_count;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic) BOOL isQuickTrip;
-@property (nonatomic) double latitude;
-@property (nonatomic) int16_t location_count;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic) double longitude;
-@property (nonatomic) double pace;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable start_time;
-@property (nonatomic, copy) NSString * _Nullable status;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable update_time;
-@property (nonatomic, strong) NSSet * _Nullable route;
-@end
-
-
-SWIFT_CLASS_NAMED("MyTripRoute")
-@interface MyTripRoute : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MyTripRoute (SWIFT_EXTENSION(Roam))
-@property (nonatomic) double accuracy;
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double elevation_gain;
-@property (nonatomic, copy) NSString * _Nullable entityId;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic) double speed;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, strong) MyTrip * _Nullable trip;
-@end
 
 
 
@@ -509,112 +429,27 @@ SWIFT_CLASS("_TtC4Roam8Position")
 
 @protocol RoamDelegate;
 @class RoamError;
-@class RoamUser;
-enum RoamTrackingMode : NSInteger;
-@class RoamTrackingCustomMethods;
-@class CLLocation;
-@class RoamPublish;
-@class RoamTripResponse;
-@class RoamTripError;
-@class RoamTrip;
-@class RoamActiveTripResponse;
-@class RoamTripDelete;
-@class RoamTripSync;
-@class RoamTripListener;
-@class UNNotificationResponse;
-enum RoamSubscribe : NSInteger;
 enum RoamTrackingState : NSInteger;
-enum RoamNetworkState : NSInteger;
-@class RoamBatchConfig;
-@class RoamLocationConfig;
+@class NSNumber;
+@class RoamBatchPublish;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
-+ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
-+ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
-+ (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
-+ (void)logoutUserWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
-+ (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)initialize:(NSString * _Nullable)publishKey;
++ (void)initialize:(NSString * _Nullable)publishKey completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
++ (void)startTrackingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrackingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
-+ (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
-+ (void)startTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)startTrip:(RoamTrip * _Nonnull)trip :(enum RoamTrackingMode)trackingMethod :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)endTrip:(NSString * _Nonnull)tripId :(BOOL)forceStopTracking handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)resumeTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getActiveTrips:(BOOL)isLocal handler:(void (^ _Nullable)(RoamActiveTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)deleteTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripDelete * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)syncTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripSync * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)createTrip:(RoamTrip * _Nonnull)trip handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)updateTrip:(RoamTrip * _Nonnull)trip handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTripSummary:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTripStatus:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripListener * _Nullable, RoamError * _Nullable))handler;
-+ (void)toggleEventsWithGeofence:(BOOL)Geofence Trip:(BOOL)Trip Location:(BOOL)Location MovingGeofence:(BOOL)MovingGeofence handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)toggleListenerWithEvents:(BOOL)Events Locations:(BOOL)Locations handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getEventsStatusWithHandler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getListenerStatusWithHandler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
-+ (void)subscribeTrip:(NSString * _Nonnull)tripId;
-+ (void)unsubscribeTrip:(NSString * _Nullable)tripId;
-+ (void)subscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nullable)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
-+ (void)offlineLocationTracking:(BOOL)offlineTracking;
-+ (void)publishSave:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)publishOnly:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)stopPublishingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)enableAccuracyEngine:(NSInteger)accuracy;
-+ (void)enableAccuracyEngine;
-+ (void)disableAccuracyEngine;
-+ (void)updateLocationWhenStationary:(NSInteger)value;
-+ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getBatchReceiverConfigWithHandler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getTrackingConfigWithHandler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)requestActivityPermission;
-+ (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
-/// Toggle various security settings for the Roam SDK.
-/// \param networkEnabled A boolean indicating whether network security checks should be enabled.
-///
-/// \param deviceRooted A boolean indicating whether rooted/jailbroken device security checks should be enabled.
-///
-/// \param bluetoothEnabled A boolean indicating whether Bluetooth security checks should be enabled.
-///
-/// \param externalAccessoryEnabled A boolean indicating whether external accessory security checks should be enabled.
-///
-/// \param verifyMotion A boolean indicating whether Motion Detection security checks should be enabled.
-///
-+ (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled verifyMotion:(BOOL)verifyMotion;
++ (void)setConfigWithEnable:(BOOL)enable syncHour:(NSNumber * _Nullable)syncHour publish:(RoamBatchPublish * _Nonnull)publish;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSNumber;
-
-SWIFT_CLASS("_TtC4Roam22RoamActiveTripResponse")
-@interface RoamActiveTripResponse : NSObject
-@property (nonatomic, strong) NSNumber * _Nonnull code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic) BOOL has_more;
-@property (nonatomic, strong) RoamTripError * _Nullable error;
-@property (nonatomic, copy) NSArray<RoamTrip *> * _Nonnull trips;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -628,6 +463,79 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam16RoamBatchPublish")
+@interface RoamBatchPublish : NSObject
+@property (nonatomic) BOOL trackingMode;
+@property (nonatomic) BOOL latitude;
+@property (nonatomic) BOOL longitude;
+@property (nonatomic) BOOL speed;
+@property (nonatomic) BOOL altitude;
+@property (nonatomic) BOOL course;
+@property (nonatomic) BOOL horizontalAccuracy;
+@property (nonatomic) BOOL verticalAccuracy;
+@property (nonatomic) BOOL activity;
+@property (nonatomic) BOOL appContext;
+@property (nonatomic) BOOL recordedAt;
+@property (nonatomic) BOOL tzOffset;
+@property (nonatomic) BOOL batteryStatus;
+@property (nonatomic) BOOL batteryRemaining;
+@property (nonatomic) BOOL batterySaver;
+@property (nonatomic) BOOL networkStatus;
+@property (nonatomic) BOOL networkType;
+@property (nonatomic) BOOL networkState;
+@property (nonatomic) BOOL locationPermission;
+@property (nonatomic) BOOL gpsStatus;
+@property (nonatomic) BOOL deviceModel;
+@property (nonatomic) BOOL deviceManufacturer;
+@property (nonatomic) BOOL deviceName;
+@property (nonatomic) BOOL kernelVersion;
+@property (nonatomic) BOOL ipAddress;
+@property (nonatomic) BOOL publicIpAddress;
+@property (nonatomic) BOOL wifiSSID;
+@property (nonatomic) BOOL localeCountry;
+@property (nonatomic) BOOL localeLanguage;
+@property (nonatomic) BOOL carrierName;
+@property (nonatomic) BOOL appName;
+@property (nonatomic) BOOL appInstallationDate;
+@property (nonatomic) BOOL appVersion;
+@property (nonatomic) BOOL systemName;
+@property (nonatomic) BOOL centroid;
+@property (nonatomic) BOOL metadata;
+@property (nonatomic) BOOL sdkVersion;
+@property (nonatomic) BOOL locationId;
+@property (nonatomic) BOOL userId;
+@property (nonatomic) BOOL appId;
+@property (nonatomic) BOOL localGeofenceEvents;
+@property (nonatomic) BOOL bluetoothSignalStrengths;
+@property (nonatomic) BOOL osVersion;
+@property (nonatomic) BOOL idfv;
+@property (nonatomic) BOOL idfa;
+@property (nonatomic) BOOL source;
+@property (nonatomic) BOOL bundleId;
+@property (nonatomic) BOOL locationListener;
+@property (nonatomic) BOOL locationAuthorizationStatus;
+@property (nonatomic) BOOL nearbyEvents;
+@property (nonatomic) BOOL appDetails;
+@property (nonatomic) BOOL geofenceEvents;
+@property (nonatomic) BOOL tripsEvents;
+@property (nonatomic) BOOL locationEvents;
+@property (nonatomic) BOOL publishOnly;
+@property (nonatomic) BOOL eventListener;
+@property (nonatomic) BOOL mobileCountryCode;
+@property (nonatomic) BOOL mobileNetworkCode;
+@property (nonatomic) BOOL carrierIsoCountryCode;
+@property (nonatomic) BOOL radioAccessTechnology;
+@property (nonatomic) BOOL wifiBSSID;
+@property (nonatomic) BOOL wifiProxySettingHost;
+@property (nonatomic) BOOL wifiProxySettingPort;
+@property (nonatomic) BOOL wifiSubnetMask;
+@property (nonatomic) BOOL networkInterfaceName;
+@property (nonatomic) BOOL publicIpAddressFromApi;
+- (nonnull instancetype)enableAll SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC4Roam12RoamCentroid")
 @interface RoamCentroid : NSObject
 @property (nonatomic, readonly, copy) NSArray<Position *> * _Nonnull positions;
@@ -636,38 +544,12 @@ SWIFT_CLASS("_TtC4Roam12RoamCentroid")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RoamTripDestination;
-@class RoamTripOrigin;
-
-SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
-@interface RoamCreateTrip : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Null_unspecified destinations;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Null_unspecified origins;
-@property (nonatomic, copy) NSString * _Null_unspecified tripTrackingUrl;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified metaData;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class RoamLocation;
-@class RoamEvents;
-@class RoamLocationReceived;
-@class RoamTripStatus;
 
 SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 @protocol RoamDelegate
 - (void)didUpdateLocation:(NSArray<RoamLocation *> * _Nonnull)locations;
 @optional
-- (void)didReceiveEvents:(RoamEvents * _Nonnull)events;
-- (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
-- (void)onReceiveTrip:(NSArray<RoamTripStatus *> * _Nonnull)tripStatus;
 - (void)onError:(RoamError * _Nonnull)error;
 @end
 
@@ -676,33 +558,6 @@ SWIFT_CLASS("_TtC4Roam9RoamError")
 @interface RoamError : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable code;
 @property (nonatomic, readonly, copy) NSString * _Nullable message;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam10RoamEvents")
-@interface RoamEvents : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, copy) NSString * _Nullable eventDescription;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull course;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, copy) NSString * _Nullable eventSource;
-@property (nonatomic, copy) NSString * _Nullable eventType;
-@property (nonatomic, copy) NSString * _Nullable eventVersion;
-@property (nonatomic, copy) NSString * _Nullable geofenceId;
-@property (nonatomic, strong) NSNumber * _Nonnull horizontalAccuracy;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable coordinates;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic, copy) NSString * _Nullable nearbyUserId;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-@property (nonatomic, strong) NSNumber * _Nonnull speed;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -727,30 +582,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamGeofence
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RoamTripEvent;
-
-SWIFT_CLASS("_TtC4Roam11RoamGetTrip")
-@interface RoamGetTrip : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Null_unspecified destinations;
-@property (nonatomic, strong) NSNumber * _Nonnull distanceCovered;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, copy) NSArray<RoamTripEvent *> * _Null_unspecified events;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isPaused;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Null_unspecified origins;
-@property (nonatomic, copy) NSString * _Null_unspecified projectId;
-@property (nonatomic, copy) NSString * _Null_unspecified tripEndedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified tripStartedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class CLLocation;
 
 SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @interface RoamLocation : NSObject
@@ -804,6 +636,8 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull wifiProxySettingHost;
 @property (nonatomic, copy) NSString * _Nonnull wifiProxySettingPort;
 @property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
+@property (nonatomic, copy) NSString * _Nonnull networkInterfaceName;
+@property (nonatomic, copy) NSString * _Nonnull publicIpAddressFromApi;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -816,172 +650,17 @@ SWIFT_CLASS("_TtC4Roam27RoamLocationBatchDispatcher")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
-@interface RoamLocationConfig : NSObject
-@property (nonatomic) NSInteger accuracy;
-@property (nonatomic) NSInteger timeout;
-@property (nonatomic) BOOL discardLocation;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam32RoamLocationCustomMqttDispatcher")
-@interface RoamLocationCustomMqttDispatcher : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
-@interface RoamLocationReceived : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified activity;
-@property (nonatomic, strong) NSNumber * _Null_unspecified altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull latitude;
-@property (nonatomic, strong) NSNumber * _Nonnull longitude;
-@property (nonatomic, strong) NSNumber * _Null_unspecified course;
-@property (nonatomic, copy) NSString * _Null_unspecified eventSource;
-@property (nonatomic, copy) NSString * _Null_unspecified eventType;
-@property (nonatomic, copy) NSString * _Null_unspecified eventVersion;
-@property (nonatomic, strong) NSNumber * _Null_unspecified horizontalAccuracy;
-@property (nonatomic, copy) NSString * _Null_unspecified locationId;
-@property (nonatomic, copy) NSString * _Null_unspecified recordedAt;
-@property (nonatomic, strong) NSNumber * _Null_unspecified speed;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, strong) NSNumber * _Null_unspecified verticalAccuracy;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaData;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 typedef SWIFT_ENUM(NSInteger, RoamNetworkState, open) {
   RoamNetworkStateOnline = 0,
   RoamNetworkStateOffline = 1,
   RoamNetworkStateBoth = 2,
 };
 
-
-SWIFT_CLASS("_TtC4Roam11RoamPublish")
-@interface RoamPublish : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meta_data;
-@property (nonatomic) BOOL user_id;
-@property (nonatomic) BOOL app_id;
-@property (nonatomic) BOOL recorded_at;
-@property (nonatomic) BOOL tz_offset;
-@property (nonatomic) BOOL geofence_events;
-@property (nonatomic) BOOL trips_events;
-@property (nonatomic) BOOL location_events;
-@property (nonatomic) BOOL nearby_events;
-@property (nonatomic) BOOL location_listener;
-@property (nonatomic) BOOL event_listener;
-@property (nonatomic) BOOL app_context;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) BOOL battery_status;
-@property (nonatomic) BOOL battery_saver;
-@property (nonatomic) BOOL battery_remaining;
-@property (nonatomic) BOOL device_model;
-@property (nonatomic) BOOL device_manufacturer;
-@property (nonatomic) BOOL os_version;
-@property (nonatomic) BOOL tracking_mode;
-@property (nonatomic) BOOL altitude;
-@property (nonatomic) BOOL speed;
-@property (nonatomic) BOOL vertical_accuracy;
-@property (nonatomic) BOOL horizontal_accuracy;
-@property (nonatomic) BOOL course;
-@property (nonatomic) BOOL activity;
-@property (nonatomic) BOOL network_type;
-@property (nonatomic) BOOL network_state;
-@property (nonatomic) BOOL bundle_id;
-@property (nonatomic) BOOL kernel_version;
-@property (nonatomic) BOOL ip_address;
-@property (nonatomic) BOOL public_ip_address;
-@property (nonatomic) BOOL device_name;
-@property (nonatomic) BOOL system_name;
-@property (nonatomic) BOOL idfv;
-@property (nonatomic) BOOL idfa;
-@property (nonatomic) BOOL wifi_ssid;
-@property (nonatomic) BOOL locale_country;
-@property (nonatomic) BOOL locale_language;
-@property (nonatomic) BOOL carrier_name;
-@property (nonatomic) BOOL app_installation_date;
-@property (nonatomic) BOOL app_version;
-@property (nonatomic) BOOL app_name;
-@property (nonatomic) BOOL centroid;
-@property (nonatomic) BOOL local_geofence_events;
-@property (nonatomic) BOOL bluetooth_signal_strengths;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)enableAll;
-@end
-
-@class RoamPublishTripStop;
-
-SWIFT_CLASS("_TtC4Roam15RoamPublishTrip")
-@interface RoamPublishTrip : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meta_data;
-@property (nonatomic, copy) NSString * _Nullable trip_description;
-@property (nonatomic, copy) NSString * _Nullable trip_name;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSArray<RoamPublishTripStop *> * _Nullable stops;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamPublishTripStop")
-@interface RoamPublishTripStop : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable stop_metadata;
-@property (nonatomic, copy) NSString * _Nullable stop_description;
-@property (nonatomic, copy) NSString * _Nullable stop_name;
-@property (nonatomic, copy) NSString * _Nullable stop_address;
-@property (nonatomic, strong) NSNumber * _Nullable stop_geometryRadius;
-@property (nonatomic, strong) NSNumber * _Nullable stop_latitude;
-@property (nonatomic, strong) NSNumber * _Nullable stop_longitude;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam13RoamStartTrip")
-@interface RoamStartTrip : NSObject
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Nullable destinations;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Nullable origins;
-@property (nonatomic, copy) NSString * _Nullable tripTrackingUrl;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meteData;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSString * _Nullable status;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 typedef SWIFT_ENUM(NSInteger, RoamSubscribe, open) {
   RoamSubscribeBoth = 0,
   RoamSubscribeLocation = 1,
   RoamSubscribeEvents = 2,
 };
-
-
-SWIFT_CLASS("_TtC4Roam25RoamTrackingCustomMethods")
-@interface RoamTrackingCustomMethods : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
-@interface RoamTrackingCustomMethodsObjcWrapper : NSObject
-@property (nonatomic, readonly, strong) RoamTrackingCustomMethods * _Nonnull customMethods;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
-@end
 
 /// An enumeration representing the tracking modes for roaming.
 /// <ul>
@@ -1010,379 +689,6 @@ typedef SWIFT_ENUM(NSInteger, RoamTrackingState, open) {
   RoamTrackingStateForeground = 1,
   RoamTrackingStateBackground = 2,
 };
-
-@class RoamTripEvents;
-@class RoamTripStop;
-@class RoamTripRoutes;
-@class RoamTripUser;
-
-SWIFT_CLASS("_TtC4Roam8RoamTrip")
-@interface RoamTrip : NSObject
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic, copy) NSString * _Nullable tripState;
-@property (nonatomic, copy) NSString * _Nullable tripName;
-@property (nonatomic, strong) NSNumber * _Nonnull totalDistance;
-@property (nonatomic, strong) NSNumber * _Nonnull totalDuration;
-@property (nonatomic, strong) NSNumber * _Nonnull totalElevationGain;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSString * _Nullable startedAt;
-@property (nonatomic, copy) NSString * _Nullable endedAt;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSString * _Nullable syncStatus;
-@property (nonatomic, copy) NSArray<RoamTripEvents *> * _Nonnull events;
-@property (nonatomic, copy) NSArray<RoamTripStop *> * _Nonnull stops;
-@property (nonatomic, copy) NSArray<RoamTripRoutes *> * _Nonnull routes;
-@property (nonatomic, strong) RoamTripUser * _Nullable user;
-/// Instantiate the instance using the passed dictionary values to set the properties values
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripDelete")
-@interface RoamTripDelete : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable messageDescription;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic) BOOL isDeleted;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamTripDestination")
-@interface RoamTripDestination : NSObject
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic, copy) NSString * _Null_unspecified locType;
-@property (nonatomic) BOOL reached;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class RoamTripErrors;
-
-SWIFT_CLASS("_TtC4Roam13RoamTripError")
-@interface RoamTripError : NSObject
-@property (nonatomic, strong) NSNumber * _Nonnull code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic, copy) NSArray<RoamTripErrors *> * _Nonnull errors;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripErrors")
-@interface RoamTripErrors : NSObject
-@property (nonatomic, copy) NSString * _Nullable field;
-@property (nonatomic, copy) NSString * _Nullable message;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam13RoamTripEvent")
-@interface RoamTripEvent : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified eventType;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, copy) NSString * _Null_unspecified userLocationId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripEvents")
-@interface RoamTripEvents : NSObject
-@property (nonatomic, copy) NSString * _Nullable eventsId;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSString * _Nullable eventType;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable eventSource;
-@property (nonatomic, copy) NSString * _Nullable eventVersion;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16RoamTripListener")
-@interface RoamTripListener : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull tripId;
-@property (nonatomic, readonly) double speed;
-@property (nonatomic, readonly) double distance;
-@property (nonatomic, readonly) double duration;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripOrigin")
-@interface RoamTripOrigin : NSObject
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic, copy) NSString * _Null_unspecified locType;
-@property (nonatomic) BOOL reached;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16RoamTripResponse")
-@interface RoamTripResponse : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic, strong) RoamTrip * _Nullable trip;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam24RoamTripRoutecoordinates")
-@interface RoamTripRoutecoordinates : NSObject
-@property (nonatomic, copy) NSString * _Nullable type;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
-@interface RoamTripRoutes : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, strong) RoamTripRoutecoordinates * _Nullable coordinates;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripStatus")
-@interface RoamTripStatus : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull tripId;
-@property (nonatomic, copy) NSString * _Nonnull tripState;
-@property (nonatomic, readonly) double speed;
-@property (nonatomic, readonly) double distance;
-@property (nonatomic, readonly) double duration;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull recordedAt;
-@property (nonatomic, readonly) double pace;
-@property (nonatomic, readonly) double latitude;
-@property (nonatomic, readonly) double longitude;
-@property (nonatomic, readonly) double altitude;
-@property (nonatomic, readonly) double elevationGain;
-@property (nonatomic, readonly) double totalElevationGain;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripStop")
-@interface RoamTripStop : NSObject
-@property (nonatomic, copy) NSString * _Nullable stopId;
-@property (nonatomic, copy) NSString * _Nullable stopName;
-@property (nonatomic, copy) NSString * _Nullable stopDescription;
-@property (nonatomic, copy) NSString * _Nullable address;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSString * _Nullable arrivedAt;
-@property (nonatomic, copy) NSString * _Nullable departedAt;
-@property (nonatomic, copy) NSString * _Nullable geometryType;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic, strong) NSNumber * _Nonnull geometryRadius;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable geometryCoordinates;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class RoamTripSummaryRoute;
-
-SWIFT_CLASS("_TtC4Roam15RoamTripSummary")
-@interface RoamTripSummary : NSObject
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable tripState;
-@property (nonatomic, copy) NSString * _Nullable tripName;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic, copy) NSString * _Nullable startedAt;
-@property (nonatomic, copy) NSString * _Nullable endedAt;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable updateAt;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Distance;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Duration;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Elevation_gain;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable startedLocation;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable endLocation;
-@property (nonatomic, copy) NSArray<RoamTripSummaryRoute *> * _Nonnull routes;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull route_index;
-@property (nonatomic, copy) NSArray<RoamTripEvents *> * _Nonnull events;
-@property (nonatomic, strong) RoamTripUser * _Nullable user;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam20RoamTripSummaryRoute")
-@interface RoamTripSummaryRoute : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable coordinates;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripSync")
-@interface RoamTripSync : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable messageDescription;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic) BOOL isSynced;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripUser")
-@interface RoamTripUser : NSObject
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSString * _Nullable userName;
-@property (nonatomic, copy) NSString * _Nullable userDescription;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam8RoamUser")
-@interface RoamUser : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull userId;
-@property (nonatomic, readonly, copy) NSString * _Nullable userDescription;
-@property (nonatomic) BOOL geofenceEvents;
-@property (nonatomic) BOOL eventsListener;
-@property (nonatomic) BOOL locationListener;
-@property (nonatomic) BOOL locationEvents;
-@property (nonatomic) BOOL tripsEvents;
-@property (nonatomic) BOOL nearbyEvents;
-@property (nonatomic, readonly, copy) NSString * _Nonnull account_id;
-@property (nonatomic, readonly, copy) NSString * _Nonnull project_id;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS_NAMED("TripEventsLocal")
-@interface TripEventsLocal : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class TripsLocal;
-
-@interface TripEventsLocal (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable created_at;
-@property (nonatomic, copy) NSString * _Nullable entityId;
-@property (nonatomic, copy) NSString * _Nullable event_source;
-@property (nonatomic, copy) NSString * _Nullable event_type;
-@property (nonatomic, copy) NSString * _Nullable event_version;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic, strong) TripsLocal * _Nullable trip;
-@end
-
-
-SWIFT_CLASS_NAMED("TripStop")
-@interface TripStop : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface TripStop (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable address;
-@property (nonatomic, copy) NSString * _Nullable arrivedAt;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable departedAt;
-@property (nonatomic) double geometryRadius;
-@property (nonatomic, copy) NSString * _Nullable geometryType;
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable metadata;
-@property (nonatomic, copy) NSString * _Nullable stopAddress;
-@property (nonatomic, copy) NSString * _Nullable stopDescription;
-@property (nonatomic, copy) NSString * _Nullable stopId;
-@property (nonatomic, copy) NSString * _Nullable stopName;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, strong) TripsLocal * _Nullable trip;
-@end
-
-
-SWIFT_CLASS_NAMED("TripsLocal")
-@interface TripsLocal : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable created_at;
-@property (nonatomic) double distance_covered;
-@property (nonatomic) double duration;
-@property (nonatomic) BOOL is_deleted;
-@property (nonatomic) BOOL is_ended;
-@property (nonatomic) BOOL is_online;
-@property (nonatomic) BOOL is_paused;
-@property (nonatomic) BOOL is_started;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic, copy) NSString * _Nullable metadata;
-@property (nonatomic, copy) NSString * _Nullable sync_status;
-@property (nonatomic) BOOL synced;
-@property (nonatomic, copy) NSString * _Nullable trip_description;
-@property (nonatomic, copy) NSString * _Nullable trip_ended_at;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable trip_name;
-@property (nonatomic, copy) NSString * _Nullable trip_started_at;
-@property (nonatomic, copy) NSString * _Nullable trip_state;
-@property (nonatomic, copy) NSString * _Nullable updated_at;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic, strong) NSSet * _Nullable events;
-@property (nonatomic, strong) NSSet * _Nullable stop;
-@end
-
 
 
 
@@ -1704,34 +1010,84 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS_NAMED("BatchLocation")
-@interface BatchLocation : NSManagedObject
+SWIFT_CLASS_NAMED("BatchLocationModel")
+@interface BatchLocationModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSString;
 
-@interface BatchLocation (SWIFT_EXTENSION(Roam))
+@class NSString;
+@class NSData;
+
+@interface BatchLocationModel (SWIFT_EXTENSION(Roam))
 @property (nonatomic, copy) NSString * _Nullable activity;
 @property (nonatomic) double altitude;
-@property (nonatomic) int16_t batteryRemaining;
+@property (nonatomic, copy) NSString * _Nullable app_context;
+@property (nonatomic, copy) NSString * _Nullable app_details;
+@property (nonatomic, copy) NSString * _Nullable app_id;
+@property (nonatomic, copy) NSString * _Nullable app_installation_date;
+@property (nonatomic, copy) NSString * _Nullable app_name;
+@property (nonatomic, copy) NSString * _Nullable app_version;
+@property (nonatomic) int16_t battery_remaining;
+@property (nonatomic) BOOL battery_saver;
+@property (nonatomic, copy) NSString * _Nullable battery_status;
+@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
+@property (nonatomic, copy) NSString * _Nullable bundle_id;
+@property (nonatomic, copy) NSString * _Nullable carrier_iso_country_code;
+@property (nonatomic, copy) NSString * _Nullable carrier_name;
+@property (nonatomic, copy) NSData * _Nullable centroid;
 @property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double horizontalAccuracy;
+@property (nonatomic, copy) NSString * _Nullable device_manufacturer;
+@property (nonatomic, copy) NSString * _Nullable device_model;
+@property (nonatomic, copy) NSString * _Nullable device_name;
+@property (nonatomic) BOOL event_listener;
+@property (nonatomic) BOOL geofence_events;
+@property (nonatomic) BOOL gps_status;
+@property (nonatomic) double horizontal_accuracy;
+@property (nonatomic, copy) NSString * _Nullable idfa;
+@property (nonatomic, copy) NSString * _Nullable idfv;
+@property (nonatomic, copy) NSString * _Nullable ip_address;
+@property (nonatomic, copy) NSString * _Nullable kernel_version;
 @property (nonatomic) double latitude;
+@property (nonatomic, copy) NSString * _Nullable locale_country;
+@property (nonatomic, copy) NSString * _Nullable locale_language;
+@property (nonatomic, copy) NSData * _Nullable localGeofenceEvents;
+@property (nonatomic) int16_t location_authorization_status;
+@property (nonatomic) BOOL location_events;
+@property (nonatomic, copy) NSString * _Nullable location_id;
+@property (nonatomic) BOOL location_listener;
+@property (nonatomic) BOOL location_permission;
 @property (nonatomic) double longitude;
-@property (nonatomic) BOOL networkStatus;
-@property (nonatomic) double pace;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
+@property (nonatomic, copy) NSString * _Nullable mcc;
+@property (nonatomic, copy) NSData * _Nullable metadata;
+@property (nonatomic, copy) NSString * _Nullable mnc;
+@property (nonatomic) BOOL nearby_events;
+@property (nonatomic, copy) NSString * _Nullable network_interface_name;
+@property (nonatomic, copy) NSString * _Nullable network_state;
+@property (nonatomic) BOOL network_status;
+@property (nonatomic, copy) NSString * _Nullable network_type;
+@property (nonatomic, copy) NSString * _Nullable os_version;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address;
+@property (nonatomic, copy) NSString * _Nullable public_ip_address_api;
+@property (nonatomic) BOOL publish_only;
+@property (nonatomic, copy) NSString * _Nullable rat;
+@property (nonatomic, copy) NSString * _Nullable recorded_at;
+@property (nonatomic, copy) NSString * _Nullable sdk_version;
 @property (nonatomic, copy) NSString * _Nullable source;
-@property (nonatomic) double speed;
-@property (nonatomic, copy) NSString * _Nullable timezoneOffset;
-@property (nonatomic, copy) NSString * _Nullable updateAt;
-@property (nonatomic) double verticalAccuracy;
+@property (nonatomic) int32_t speed;
+@property (nonatomic, copy) NSString * _Nullable system_name;
+@property (nonatomic, copy) NSString * _Nullable tracking_mode;
+@property (nonatomic) BOOL trips_events;
+@property (nonatomic, copy) NSString * _Nullable tz_offset;
+@property (nonatomic, copy) NSString * _Nullable user_id;
+@property (nonatomic) double vertical_accuracy;
+@property (nonatomic, copy) NSString * _Nullable wifi_bssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_host;
+@property (nonatomic, copy) NSString * _Nullable wifi_proxy_setting_port;
+@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@property (nonatomic, copy) NSString * _Nullable wifi_subnet_mask;
 @end
 
-@class NSData;
 
 SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 @interface BluetoothSignal : NSObject
@@ -1747,151 +1103,21 @@ SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 
 
 
-
-
-SWIFT_CLASS("_TtC4Roam10JWTDecoder")
-@interface JWTDecoder : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-typedef SWIFT_ENUM(NSInteger, LocationAccuracy, open) {
-  LocationAccuracyKCLLocationAccuracyBestForNavigation = 1,
-  LocationAccuracyKCLLocationAccuracyBest = 2,
-  LocationAccuracyKCLLocationAccuracyNearestTenMeters = 3,
-  LocationAccuracyKCLLocationAccuracyHundredMeters = 4,
-  LocationAccuracyKCLLocationAccuracyKilometer = 5,
-  LocationAccuracyKCLLocationAccuracyThreeKilometers = 6,
-};
-
-
-SWIFT_CLASS_NAMED("MqttLocationData")
-@interface MqttLocationData : NSManagedObject
+SWIFT_CLASS_NAMED("CSVFilesDataModel")
+@interface CSVFilesDataModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class NSDate;
 
-@interface MqttLocationData (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic, copy) NSString * _Nullable app_context;
-@property (nonatomic, copy) NSString * _Nullable app_details;
-@property (nonatomic, copy) NSString * _Nullable app_id;
-@property (nonatomic, copy) NSString * _Nullable app_installation_date;
-@property (nonatomic, copy) NSString * _Nullable app_name;
-@property (nonatomic, copy) NSString * _Nullable app_version;
-@property (nonatomic) int16_t battery_remaining;
-@property (nonatomic) BOOL battery_saver;
-@property (nonatomic, copy) NSString * _Nullable battery_status;
-@property (nonatomic, copy) NSData * _Nullable bluetooth_signal_strengths;
-@property (nonatomic, copy) NSString * _Nullable bundle_id;
-@property (nonatomic, copy) NSString * _Nullable carrier_name;
-@property (nonatomic, copy) NSData * _Nullable centroid;
-@property (nonatomic) double course;
-@property (nonatomic, copy) NSString * _Nullable device_manufacturer;
-@property (nonatomic, copy) NSString * _Nullable device_model;
-@property (nonatomic, copy) NSString * _Nullable device_name;
-@property (nonatomic) BOOL event_listener;
-@property (nonatomic) BOOL geofence_events;
-@property (nonatomic, copy) NSData * _Nullable geofenceEvents;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) double horizontal_accuracy;
-@property (nonatomic, copy) NSString * _Nullable idfa;
-@property (nonatomic, copy) NSString * _Nullable idfv;
-@property (nonatomic, copy) NSString * _Nullable ip_address;
-@property (nonatomic, copy) NSString * _Nullable kernel_version;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable locale_country;
-@property (nonatomic, copy) NSString * _Nullable locale_language;
-@property (nonatomic) int16_t location_authorization_status;
-@property (nonatomic) BOOL location_events;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic) BOOL location_listener;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) double longitude;
-@property (nonatomic) int16_t mqtt_id;
-@property (nonatomic, copy) NSDate * _Nullable mqttLocation_time;
-@property (nonatomic) BOOL nearby_events;
-@property (nonatomic, copy) NSString * _Nullable network_state;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic, copy) NSString * _Nullable network_type;
-@property (nonatomic, copy) NSString * _Nullable os_version;
-@property (nonatomic, copy) NSString * _Nullable public_ip_address;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic, copy) NSString * _Nullable source;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable system_name;
-@property (nonatomic, copy) NSString * _Nullable tracking_mode;
-@property (nonatomic) BOOL trips_events;
-@property (nonatomic, copy) NSString * _Nullable tz_offset;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic) double vertical_accuracy;
-@property (nonatomic, copy) NSString * _Nullable wifi_ssid;
+@interface CSVFilesDataModel (SWIFT_EXTENSION(Roam))
+@property (nonatomic, copy) NSString * _Nullable filename;
+@property (nonatomic, copy) NSString * _Nullable filepath;
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic) int16_t locationcount;
+@property (nonatomic, copy) NSDate * _Nullable timestamp;
 @end
 
-
-SWIFT_CLASS_NAMED("MyTrip")
-@interface MyTrip : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class MyTripRoute;
-@class NSSet;
-
-@interface MyTrip (SWIFT_EXTENSION(Roam))
-- (void)addRouteObject:(MyTripRoute * _Nonnull)value;
-- (void)removeRouteObject:(MyTripRoute * _Nonnull)value;
-- (void)addRoute:(NSSet * _Nonnull)values;
-- (void)removeRoute:(NSSet * _Nonnull)values;
-@end
-
-
-@interface MyTrip (SWIFT_EXTENSION(Roam))
-@property (nonatomic) double altitude;
-@property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double elevation_gain;
-@property (nonatomic) int16_t event_count;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic) BOOL isQuickTrip;
-@property (nonatomic) double latitude;
-@property (nonatomic) int16_t location_count;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic) double longitude;
-@property (nonatomic) double pace;
-@property (nonatomic) int16_t speed;
-@property (nonatomic, copy) NSString * _Nullable start_time;
-@property (nonatomic, copy) NSString * _Nullable status;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable update_time;
-@property (nonatomic, strong) NSSet * _Nullable route;
-@end
-
-
-SWIFT_CLASS_NAMED("MyTripRoute")
-@interface MyTripRoute : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface MyTripRoute (SWIFT_EXTENSION(Roam))
-@property (nonatomic) double accuracy;
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic) double altitude;
-@property (nonatomic) double course;
-@property (nonatomic) double distance;
-@property (nonatomic) double duration;
-@property (nonatomic) double elevation_gain;
-@property (nonatomic, copy) NSString * _Nullable entityId;
-@property (nonatomic) double latitude;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable recorded_at;
-@property (nonatomic) double speed;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, strong) MyTrip * _Nullable trip;
-@end
 
 
 
@@ -1905,112 +1131,27 @@ SWIFT_CLASS("_TtC4Roam8Position")
 
 @protocol RoamDelegate;
 @class RoamError;
-@class RoamUser;
-enum RoamTrackingMode : NSInteger;
-@class RoamTrackingCustomMethods;
-@class CLLocation;
-@class RoamPublish;
-@class RoamTripResponse;
-@class RoamTripError;
-@class RoamTrip;
-@class RoamActiveTripResponse;
-@class RoamTripDelete;
-@class RoamTripSync;
-@class RoamTripListener;
-@class UNNotificationResponse;
-enum RoamSubscribe : NSInteger;
 enum RoamTrackingState : NSInteger;
-enum RoamNetworkState : NSInteger;
-@class RoamBatchConfig;
-@class RoamLocationConfig;
+@class NSNumber;
+@class RoamBatchPublish;
 
 SWIFT_CLASS("_TtC4Roam4Roam")
 @interface Roam : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) id <RoamDelegate> _Null_unspecified delegate;)
 + (id <RoamDelegate> _Null_unspecified)delegate SWIFT_WARN_UNUSED_RESULT;
 + (void)setDelegate:(id <RoamDelegate> _Null_unspecified)value;
-+ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint;
-+ (void)initialize:(NSString * _Nullable)publishKey :(NSString * _Nullable)baseUrl :(NSString * _Nullable)iOTEndPoint completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
-+ (void)createUser:(NSString * _Nonnull)description :(NSDictionary<NSString *, id> * _Nullable)metadata handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getUser:(NSString * _Nonnull)userId handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateUser:(NSString * _Nullable)description :(NSDictionary<NSString *, id> * _Nullable)metadata;
-+ (void)logoutUserWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)setDeviceToken:(NSData * _Nonnull)deviceToken;
-+ (void)startTracking:(enum RoamTrackingMode)trackingMethod options:(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
++ (void)initialize:(NSString * _Nullable)publishKey;
++ (void)initialize:(NSString * _Nullable)publishKey completion:(void (^ _Nullable)(BOOL, RoamError * _Nullable))completion;
++ (void)startTrackingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)stopTrackingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)requestLocation;
 + (BOOL)isLocationEnabled SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isLocationTracking SWIFT_WARN_UNUSED_RESULT;
 + (NSInteger)locationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
-+ (void)getCurrentLocation:(NSInteger)accuracy handler:(void (^ _Nullable)(CLLocation * _Nullable, RoamError * _Nullable))handler;
-+ (void)updateCurrentLocation:(NSInteger)accuracy :(RoamPublish * _Nullable)publish;
-+ (void)startTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)startTrip:(RoamTrip * _Nonnull)trip :(enum RoamTrackingMode)trackingMethod :(RoamTrackingCustomMethods * _Nullable)options handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)endTrip:(NSString * _Nonnull)tripId :(BOOL)forceStopTracking handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)pauseTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)resumeTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getActiveTrips:(BOOL)isLocal handler:(void (^ _Nullable)(RoamActiveTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)deleteTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripDelete * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)syncTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripSync * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)createTrip:(RoamTrip * _Nonnull)trip handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)updateTrip:(RoamTrip * _Nonnull)trip handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTrip:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTripSummary:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripResponse * _Nullable, RoamTripError * _Nullable))handler;
-+ (void)getTripStatus:(NSString * _Nonnull)tripId handler:(void (^ _Nullable)(RoamTripListener * _Nullable, RoamError * _Nullable))handler;
-+ (void)toggleEventsWithGeofence:(BOOL)Geofence Trip:(BOOL)Trip Location:(BOOL)Location MovingGeofence:(BOOL)MovingGeofence handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)toggleListenerWithEvents:(BOOL)Events Locations:(BOOL)Locations handler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getEventsStatusWithHandler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)getListenerStatusWithHandler:(void (^ _Nullable)(RoamUser * _Nullable, RoamError * _Nullable))handler;
-+ (void)notificationOpenedHandler:(UNNotificationResponse * _Nonnull)resposne;
 + (void)setLoggerEnabledWithLogger:(BOOL)logger;
-+ (void)subscribeTrip:(NSString * _Nonnull)tripId;
-+ (void)unsubscribeTrip:(NSString * _Nullable)tripId;
-+ (void)subscribe:(enum RoamSubscribe)type :(NSString * _Nonnull)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)unsubscribe:(enum RoamSubscribe)type :(NSString * _Nullable)userId handler:(void (^ _Nullable)(NSString * _Nullable, NSString * _Nullable, RoamError * _Nullable))handler;
 + (void)setTrackingInAppState:(enum RoamTrackingState)state;
-+ (void)offlineLocationTracking:(BOOL)offlineTracking;
-+ (void)publishSave:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)publishOnly:(RoamPublish * _Nullable)publish handler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)stopPublishingWithHandler:(void (^ _Nullable)(NSString * _Nullable, RoamError * _Nullable))handler;
-+ (void)enableAccuracyEngine:(NSInteger)accuracy;
-+ (void)enableAccuracyEngine;
-+ (void)disableAccuracyEngine;
-+ (void)updateLocationWhenStationary:(NSInteger)value;
-+ (void)setBatchReceiverConfigWithNetworkState:(enum RoamNetworkState)networkState batchCount:(NSInteger)batchCount batchWindow:(NSInteger)batchWindow handler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getBatchReceiverConfigWithHandler:(void (^ _Nonnull)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)resetBatchReceiverConfigWithHandler:(void (^ _Nullable)(RoamBatchConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)setTrackingConfigWithAccuracy:(NSInteger)accuracy timeout:(NSInteger)timeout discardLocation:(BOOL)discardLocation handler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)getTrackingConfigWithHandler:(void (^ _Nonnull)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)resetTrackingConfigWithHandler:(void (^ _Nullable)(RoamLocationConfig * _Nullable, RoamError * _Nullable))handler;
-+ (void)requestActivityPermission;
-+ (BOOL)checkActivityPermission SWIFT_WARN_UNUSED_RESULT;
-/// Toggle various security settings for the Roam SDK.
-/// \param networkEnabled A boolean indicating whether network security checks should be enabled.
-///
-/// \param deviceRooted A boolean indicating whether rooted/jailbroken device security checks should be enabled.
-///
-/// \param bluetoothEnabled A boolean indicating whether Bluetooth security checks should be enabled.
-///
-/// \param externalAccessoryEnabled A boolean indicating whether external accessory security checks should be enabled.
-///
-/// \param verifyMotion A boolean indicating whether Motion Detection security checks should be enabled.
-///
-+ (void)toggleSecurityWithNetworkEnabled:(BOOL)networkEnabled deviceRooted:(BOOL)deviceRooted bluetoothEnabled:(BOOL)bluetoothEnabled externalAccessoryEnabled:(BOOL)externalAccessoryEnabled verifyMotion:(BOOL)verifyMotion;
++ (void)setConfigWithEnable:(BOOL)enable syncHour:(NSNumber * _Nullable)syncHour publish:(RoamBatchPublish * _Nonnull)publish;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class NSNumber;
-
-SWIFT_CLASS("_TtC4Roam22RoamActiveTripResponse")
-@interface RoamActiveTripResponse : NSObject
-@property (nonatomic, strong) NSNumber * _Nonnull code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic) BOOL has_more;
-@property (nonatomic, strong) RoamTripError * _Nullable error;
-@property (nonatomic, copy) NSArray<RoamTrip *> * _Nonnull trips;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -2024,6 +1165,79 @@ SWIFT_CLASS("_TtC4Roam15RoamBatchConfig")
 @end
 
 
+SWIFT_CLASS("_TtC4Roam16RoamBatchPublish")
+@interface RoamBatchPublish : NSObject
+@property (nonatomic) BOOL trackingMode;
+@property (nonatomic) BOOL latitude;
+@property (nonatomic) BOOL longitude;
+@property (nonatomic) BOOL speed;
+@property (nonatomic) BOOL altitude;
+@property (nonatomic) BOOL course;
+@property (nonatomic) BOOL horizontalAccuracy;
+@property (nonatomic) BOOL verticalAccuracy;
+@property (nonatomic) BOOL activity;
+@property (nonatomic) BOOL appContext;
+@property (nonatomic) BOOL recordedAt;
+@property (nonatomic) BOOL tzOffset;
+@property (nonatomic) BOOL batteryStatus;
+@property (nonatomic) BOOL batteryRemaining;
+@property (nonatomic) BOOL batterySaver;
+@property (nonatomic) BOOL networkStatus;
+@property (nonatomic) BOOL networkType;
+@property (nonatomic) BOOL networkState;
+@property (nonatomic) BOOL locationPermission;
+@property (nonatomic) BOOL gpsStatus;
+@property (nonatomic) BOOL deviceModel;
+@property (nonatomic) BOOL deviceManufacturer;
+@property (nonatomic) BOOL deviceName;
+@property (nonatomic) BOOL kernelVersion;
+@property (nonatomic) BOOL ipAddress;
+@property (nonatomic) BOOL publicIpAddress;
+@property (nonatomic) BOOL wifiSSID;
+@property (nonatomic) BOOL localeCountry;
+@property (nonatomic) BOOL localeLanguage;
+@property (nonatomic) BOOL carrierName;
+@property (nonatomic) BOOL appName;
+@property (nonatomic) BOOL appInstallationDate;
+@property (nonatomic) BOOL appVersion;
+@property (nonatomic) BOOL systemName;
+@property (nonatomic) BOOL centroid;
+@property (nonatomic) BOOL metadata;
+@property (nonatomic) BOOL sdkVersion;
+@property (nonatomic) BOOL locationId;
+@property (nonatomic) BOOL userId;
+@property (nonatomic) BOOL appId;
+@property (nonatomic) BOOL localGeofenceEvents;
+@property (nonatomic) BOOL bluetoothSignalStrengths;
+@property (nonatomic) BOOL osVersion;
+@property (nonatomic) BOOL idfv;
+@property (nonatomic) BOOL idfa;
+@property (nonatomic) BOOL source;
+@property (nonatomic) BOOL bundleId;
+@property (nonatomic) BOOL locationListener;
+@property (nonatomic) BOOL locationAuthorizationStatus;
+@property (nonatomic) BOOL nearbyEvents;
+@property (nonatomic) BOOL appDetails;
+@property (nonatomic) BOOL geofenceEvents;
+@property (nonatomic) BOOL tripsEvents;
+@property (nonatomic) BOOL locationEvents;
+@property (nonatomic) BOOL publishOnly;
+@property (nonatomic) BOOL eventListener;
+@property (nonatomic) BOOL mobileCountryCode;
+@property (nonatomic) BOOL mobileNetworkCode;
+@property (nonatomic) BOOL carrierIsoCountryCode;
+@property (nonatomic) BOOL radioAccessTechnology;
+@property (nonatomic) BOOL wifiBSSID;
+@property (nonatomic) BOOL wifiProxySettingHost;
+@property (nonatomic) BOOL wifiProxySettingPort;
+@property (nonatomic) BOOL wifiSubnetMask;
+@property (nonatomic) BOOL networkInterfaceName;
+@property (nonatomic) BOOL publicIpAddressFromApi;
+- (nonnull instancetype)enableAll SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC4Roam12RoamCentroid")
 @interface RoamCentroid : NSObject
 @property (nonatomic, readonly, copy) NSArray<Position *> * _Nonnull positions;
@@ -2032,38 +1246,12 @@ SWIFT_CLASS("_TtC4Roam12RoamCentroid")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RoamTripDestination;
-@class RoamTripOrigin;
-
-SWIFT_CLASS("_TtC4Roam14RoamCreateTrip")
-@interface RoamCreateTrip : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Null_unspecified destinations;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Null_unspecified origins;
-@property (nonatomic, copy) NSString * _Null_unspecified tripTrackingUrl;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Null_unspecified metaData;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 @class RoamLocation;
-@class RoamEvents;
-@class RoamLocationReceived;
-@class RoamTripStatus;
 
 SWIFT_PROTOCOL("_TtP4Roam12RoamDelegate_")
 @protocol RoamDelegate
 - (void)didUpdateLocation:(NSArray<RoamLocation *> * _Nonnull)locations;
 @optional
-- (void)didReceiveEvents:(RoamEvents * _Nonnull)events;
-- (void)didReceiveUserLocation:(RoamLocationReceived * _Nonnull)location;
-- (void)onReceiveTrip:(NSArray<RoamTripStatus *> * _Nonnull)tripStatus;
 - (void)onError:(RoamError * _Nonnull)error;
 @end
 
@@ -2072,33 +1260,6 @@ SWIFT_CLASS("_TtC4Roam9RoamError")
 @interface RoamError : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable code;
 @property (nonatomic, readonly, copy) NSString * _Nullable message;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam10RoamEvents")
-@interface RoamEvents : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, copy) NSString * _Nullable eventDescription;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull course;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, copy) NSString * _Nullable eventSource;
-@property (nonatomic, copy) NSString * _Nullable eventType;
-@property (nonatomic, copy) NSString * _Nullable eventVersion;
-@property (nonatomic, copy) NSString * _Nullable geofenceId;
-@property (nonatomic, strong) NSNumber * _Nonnull horizontalAccuracy;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable coordinates;
-@property (nonatomic, copy) NSString * _Nullable locationId;
-@property (nonatomic, copy) NSString * _Nullable nearbyUserId;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-@property (nonatomic, strong) NSNumber * _Nonnull speed;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, strong) NSNumber * _Nonnull veritcalAccuracy;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable location_metadata;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2123,30 +1284,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) RoamGeofence
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class RoamTripEvent;
-
-SWIFT_CLASS("_TtC4Roam11RoamGetTrip")
-@interface RoamGetTrip : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Null_unspecified destinations;
-@property (nonatomic, strong) NSNumber * _Nonnull distanceCovered;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, copy) NSArray<RoamTripEvent *> * _Null_unspecified events;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isPaused;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Null_unspecified origins;
-@property (nonatomic, copy) NSString * _Null_unspecified projectId;
-@property (nonatomic, copy) NSString * _Null_unspecified tripEndedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified tripStartedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class CLLocation;
 
 SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @interface RoamLocation : NSObject
@@ -2200,6 +1338,8 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull wifiProxySettingHost;
 @property (nonatomic, copy) NSString * _Nonnull wifiProxySettingPort;
 @property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
+@property (nonatomic, copy) NSString * _Nonnull networkInterfaceName;
+@property (nonatomic, copy) NSString * _Nonnull publicIpAddressFromApi;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -2212,172 +1352,17 @@ SWIFT_CLASS("_TtC4Roam27RoamLocationBatchDispatcher")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-
-SWIFT_CLASS("_TtC4Roam18RoamLocationConfig")
-@interface RoamLocationConfig : NSObject
-@property (nonatomic) NSInteger accuracy;
-@property (nonatomic) NSInteger timeout;
-@property (nonatomic) BOOL discardLocation;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam32RoamLocationCustomMqttDispatcher")
-@interface RoamLocationCustomMqttDispatcher : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam20RoamLocationReceived")
-@interface RoamLocationReceived : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified activity;
-@property (nonatomic, strong) NSNumber * _Null_unspecified altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull latitude;
-@property (nonatomic, strong) NSNumber * _Nonnull longitude;
-@property (nonatomic, strong) NSNumber * _Null_unspecified course;
-@property (nonatomic, copy) NSString * _Null_unspecified eventSource;
-@property (nonatomic, copy) NSString * _Null_unspecified eventType;
-@property (nonatomic, copy) NSString * _Null_unspecified eventVersion;
-@property (nonatomic, strong) NSNumber * _Null_unspecified horizontalAccuracy;
-@property (nonatomic, copy) NSString * _Null_unspecified locationId;
-@property (nonatomic, copy) NSString * _Null_unspecified recordedAt;
-@property (nonatomic, strong) NSNumber * _Null_unspecified speed;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, strong) NSNumber * _Null_unspecified verticalAccuracy;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metaData;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 typedef SWIFT_ENUM(NSInteger, RoamNetworkState, open) {
   RoamNetworkStateOnline = 0,
   RoamNetworkStateOffline = 1,
   RoamNetworkStateBoth = 2,
 };
 
-
-SWIFT_CLASS("_TtC4Roam11RoamPublish")
-@interface RoamPublish : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meta_data;
-@property (nonatomic) BOOL user_id;
-@property (nonatomic) BOOL app_id;
-@property (nonatomic) BOOL recorded_at;
-@property (nonatomic) BOOL tz_offset;
-@property (nonatomic) BOOL geofence_events;
-@property (nonatomic) BOOL trips_events;
-@property (nonatomic) BOOL location_events;
-@property (nonatomic) BOOL nearby_events;
-@property (nonatomic) BOOL location_listener;
-@property (nonatomic) BOOL event_listener;
-@property (nonatomic) BOOL app_context;
-@property (nonatomic) BOOL network_status;
-@property (nonatomic) BOOL gps_status;
-@property (nonatomic) BOOL location_permission;
-@property (nonatomic) BOOL battery_status;
-@property (nonatomic) BOOL battery_saver;
-@property (nonatomic) BOOL battery_remaining;
-@property (nonatomic) BOOL device_model;
-@property (nonatomic) BOOL device_manufacturer;
-@property (nonatomic) BOOL os_version;
-@property (nonatomic) BOOL tracking_mode;
-@property (nonatomic) BOOL altitude;
-@property (nonatomic) BOOL speed;
-@property (nonatomic) BOOL vertical_accuracy;
-@property (nonatomic) BOOL horizontal_accuracy;
-@property (nonatomic) BOOL course;
-@property (nonatomic) BOOL activity;
-@property (nonatomic) BOOL network_type;
-@property (nonatomic) BOOL network_state;
-@property (nonatomic) BOOL bundle_id;
-@property (nonatomic) BOOL kernel_version;
-@property (nonatomic) BOOL ip_address;
-@property (nonatomic) BOOL public_ip_address;
-@property (nonatomic) BOOL device_name;
-@property (nonatomic) BOOL system_name;
-@property (nonatomic) BOOL idfv;
-@property (nonatomic) BOOL idfa;
-@property (nonatomic) BOOL wifi_ssid;
-@property (nonatomic) BOOL locale_country;
-@property (nonatomic) BOOL locale_language;
-@property (nonatomic) BOOL carrier_name;
-@property (nonatomic) BOOL app_installation_date;
-@property (nonatomic) BOOL app_version;
-@property (nonatomic) BOOL app_name;
-@property (nonatomic) BOOL centroid;
-@property (nonatomic) BOOL local_geofence_events;
-@property (nonatomic) BOOL bluetooth_signal_strengths;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)enableAll;
-@end
-
-@class RoamPublishTripStop;
-
-SWIFT_CLASS("_TtC4Roam15RoamPublishTrip")
-@interface RoamPublishTrip : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meta_data;
-@property (nonatomic, copy) NSString * _Nullable trip_description;
-@property (nonatomic, copy) NSString * _Nullable trip_name;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSArray<RoamPublishTripStop *> * _Nullable stops;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamPublishTripStop")
-@interface RoamPublishTripStop : NSObject
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable stop_metadata;
-@property (nonatomic, copy) NSString * _Nullable stop_description;
-@property (nonatomic, copy) NSString * _Nullable stop_name;
-@property (nonatomic, copy) NSString * _Nullable stop_address;
-@property (nonatomic, strong) NSNumber * _Nullable stop_geometryRadius;
-@property (nonatomic, strong) NSNumber * _Nullable stop_latitude;
-@property (nonatomic, strong) NSNumber * _Nullable stop_longitude;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam13RoamStartTrip")
-@interface RoamStartTrip : NSObject
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSArray<RoamTripDestination *> * _Nullable destinations;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic) BOOL isEnded;
-@property (nonatomic) BOOL isStarted;
-@property (nonatomic, copy) NSArray<RoamTripOrigin *> * _Nullable origins;
-@property (nonatomic, copy) NSString * _Nullable tripTrackingUrl;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable meteData;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSString * _Nullable status;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 typedef SWIFT_ENUM(NSInteger, RoamSubscribe, open) {
   RoamSubscribeBoth = 0,
   RoamSubscribeLocation = 1,
   RoamSubscribeEvents = 2,
 };
-
-
-SWIFT_CLASS("_TtC4Roam25RoamTrackingCustomMethods")
-@interface RoamTrackingCustomMethods : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam36RoamTrackingCustomMethodsObjcWrapper")
-@interface RoamTrackingCustomMethodsObjcWrapper : NSObject
-@property (nonatomic, readonly, strong) RoamTrackingCustomMethods * _Nonnull customMethods;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (void)setUpCustomOptionsWithDesiredAccuracy:(enum LocationAccuracy)desiredAccuracy useVisit:(BOOL)useVisit showsBackgroundLocationIndicator:(BOOL)showsBackgroundLocationIndicator distanceFilter:(CLLocationDistance)distanceFilter useSignificant:(BOOL)useSignificant useRegionMonitoring:(BOOL)useRegionMonitoring useDynamicGeofencRadius:(BOOL)useDynamicGeofencRadius geofenceRadius:(NSInteger)geofenceRadius allowBackgroundLocationUpdates:(BOOL)allowBackgroundLocationUpdates activityType:(CLActivityType)activityType pausesLocationUpdatesAutomatically:(BOOL)pausesLocationUpdatesAutomatically useStandardLocationServices:(BOOL)useStandardLocationServices accuracyFilter:(NSInteger)accuracyFilter updateInterval:(NSInteger)updateInterval;
-@end
 
 /// An enumeration representing the tracking modes for roaming.
 /// <ul>
@@ -2406,379 +1391,6 @@ typedef SWIFT_ENUM(NSInteger, RoamTrackingState, open) {
   RoamTrackingStateForeground = 1,
   RoamTrackingStateBackground = 2,
 };
-
-@class RoamTripEvents;
-@class RoamTripStop;
-@class RoamTripRoutes;
-@class RoamTripUser;
-
-SWIFT_CLASS("_TtC4Roam8RoamTrip")
-@interface RoamTrip : NSObject
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic, copy) NSString * _Nullable tripState;
-@property (nonatomic, copy) NSString * _Nullable tripName;
-@property (nonatomic, strong) NSNumber * _Nonnull totalDistance;
-@property (nonatomic, strong) NSNumber * _Nonnull totalDuration;
-@property (nonatomic, strong) NSNumber * _Nonnull totalElevationGain;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSString * _Nullable startedAt;
-@property (nonatomic, copy) NSString * _Nullable endedAt;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic) BOOL isLocal;
-@property (nonatomic, copy) NSString * _Nullable syncStatus;
-@property (nonatomic, copy) NSArray<RoamTripEvents *> * _Nonnull events;
-@property (nonatomic, copy) NSArray<RoamTripStop *> * _Nonnull stops;
-@property (nonatomic, copy) NSArray<RoamTripRoutes *> * _Nonnull routes;
-@property (nonatomic, strong) RoamTripUser * _Nullable user;
-/// Instantiate the instance using the passed dictionary values to set the properties values
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripDelete")
-@interface RoamTripDelete : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable messageDescription;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic) BOOL isDeleted;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam19RoamTripDestination")
-@interface RoamTripDestination : NSObject
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic, copy) NSString * _Null_unspecified locType;
-@property (nonatomic) BOOL reached;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class RoamTripErrors;
-
-SWIFT_CLASS("_TtC4Roam13RoamTripError")
-@interface RoamTripError : NSObject
-@property (nonatomic, strong) NSNumber * _Nonnull code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic, copy) NSArray<RoamTripErrors *> * _Nonnull errors;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripErrors")
-@interface RoamTripErrors : NSObject
-@property (nonatomic, copy) NSString * _Nullable field;
-@property (nonatomic, copy) NSString * _Nullable message;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam13RoamTripEvent")
-@interface RoamTripEvent : NSObject
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified eventType;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic) BOOL isDeleted;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified userId;
-@property (nonatomic, copy) NSString * _Null_unspecified userLocationId;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripEvents")
-@interface RoamTripEvents : NSObject
-@property (nonatomic, copy) NSString * _Nullable eventsId;
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSString * _Nullable eventType;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable eventSource;
-@property (nonatomic, copy) NSString * _Nullable eventVersion;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16RoamTripListener")
-@interface RoamTripListener : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull tripId;
-@property (nonatomic, readonly) double speed;
-@property (nonatomic, readonly) double distance;
-@property (nonatomic, readonly) double duration;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripOrigin")
-@interface RoamTripOrigin : NSObject
-@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified coordinates;
-@property (nonatomic, copy) NSString * _Null_unspecified createdAt;
-@property (nonatomic, copy) NSString * _Null_unspecified id;
-@property (nonatomic, copy) NSString * _Null_unspecified locType;
-@property (nonatomic) BOOL reached;
-@property (nonatomic, copy) NSString * _Null_unspecified tripId;
-@property (nonatomic, copy) NSString * _Null_unspecified updatedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam16RoamTripResponse")
-@interface RoamTripResponse : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable errorDescription;
-@property (nonatomic, strong) RoamTrip * _Nullable trip;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam24RoamTripRoutecoordinates")
-@interface RoamTripRoutecoordinates : NSObject
-@property (nonatomic, copy) NSString * _Nullable type;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull coordinates;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripRoutes")
-@interface RoamTripRoutes : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, strong) RoamTripRoutecoordinates * _Nullable coordinates;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam14RoamTripStatus")
-@interface RoamTripStatus : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull tripId;
-@property (nonatomic, copy) NSString * _Nonnull tripState;
-@property (nonatomic, readonly) double speed;
-@property (nonatomic, readonly) double distance;
-@property (nonatomic, readonly) double duration;
-@property (nonatomic, readonly, copy) NSString * _Nonnull startedTime;
-@property (nonatomic, readonly, copy) NSString * _Nonnull recordedAt;
-@property (nonatomic, readonly) double pace;
-@property (nonatomic, readonly) double latitude;
-@property (nonatomic, readonly) double longitude;
-@property (nonatomic, readonly) double altitude;
-@property (nonatomic, readonly) double elevationGain;
-@property (nonatomic, readonly) double totalElevationGain;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripStop")
-@interface RoamTripStop : NSObject
-@property (nonatomic, copy) NSString * _Nullable stopId;
-@property (nonatomic, copy) NSString * _Nullable stopName;
-@property (nonatomic, copy) NSString * _Nullable stopDescription;
-@property (nonatomic, copy) NSString * _Nullable address;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, copy) NSString * _Nullable createdAt;
-@property (nonatomic, copy) NSString * _Nullable arrivedAt;
-@property (nonatomic, copy) NSString * _Nullable departedAt;
-@property (nonatomic, copy) NSString * _Nullable geometryType;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic, strong) NSNumber * _Nonnull geometryRadius;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable geometryCoordinates;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class RoamTripSummaryRoute;
-
-SWIFT_CLASS("_TtC4Roam15RoamTripSummary")
-@interface RoamTripSummary : NSObject
-@property (nonatomic, copy) NSString * _Nullable tripId;
-@property (nonatomic, copy) NSString * _Nullable tripState;
-@property (nonatomic, copy) NSString * _Nullable tripName;
-@property (nonatomic, copy) NSString * _Nullable tripDescription;
-@property (nonatomic, copy) NSString * _Nullable startedAt;
-@property (nonatomic, copy) NSString * _Nullable endedAt;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable updateAt;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Distance;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Duration;
-@property (nonatomic, strong) NSNumber * _Nonnull total_Elevation_gain;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable startedLocation;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable endLocation;
-@property (nonatomic, copy) NSArray<RoamTripSummaryRoute *> * _Nonnull routes;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nonnull route_index;
-@property (nonatomic, copy) NSArray<RoamTripEvents *> * _Nonnull events;
-@property (nonatomic, strong) RoamTripUser * _Nullable user;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam20RoamTripSummaryRoute")
-@interface RoamTripSummaryRoute : NSObject
-@property (nonatomic, copy) NSString * _Nullable activity;
-@property (nonatomic, strong) NSNumber * _Nonnull altitude;
-@property (nonatomic, strong) NSNumber * _Nonnull elevationGain;
-@property (nonatomic, strong) NSNumber * _Nonnull distance;
-@property (nonatomic, strong) NSNumber * _Nonnull duration;
-@property (nonatomic, copy) NSArray<NSNumber *> * _Nullable coordinates;
-@property (nonatomic, copy) NSString * _Nullable recordedAt;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripSync")
-@interface RoamTripSync : NSObject
-@property (nonatomic, strong) NSNumber * _Nullable code;
-@property (nonatomic, copy) NSString * _Nullable message;
-@property (nonatomic, copy) NSString * _Nullable messageDescription;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic) BOOL isSynced;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam12RoamTripUser")
-@interface RoamTripUser : NSObject
-@property (nonatomic, copy) NSString * _Nullable userId;
-@property (nonatomic, copy) NSString * _Nullable userName;
-@property (nonatomic, copy) NSString * _Nullable userDescription;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-SWIFT_CLASS("_TtC4Roam8RoamUser")
-@interface RoamUser : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nonnull userId;
-@property (nonatomic, readonly, copy) NSString * _Nullable userDescription;
-@property (nonatomic) BOOL geofenceEvents;
-@property (nonatomic) BOOL eventsListener;
-@property (nonatomic) BOOL locationListener;
-@property (nonatomic) BOOL locationEvents;
-@property (nonatomic) BOOL tripsEvents;
-@property (nonatomic) BOOL nearbyEvents;
-@property (nonatomic, readonly, copy) NSString * _Nonnull account_id;
-@property (nonatomic, readonly, copy) NSString * _Nonnull project_id;
-@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nullable metadata;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-
-SWIFT_CLASS_NAMED("TripEventsLocal")
-@interface TripEventsLocal : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-@class TripsLocal;
-
-@interface TripEventsLocal (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable created_at;
-@property (nonatomic, copy) NSString * _Nullable entityId;
-@property (nonatomic, copy) NSString * _Nullable event_source;
-@property (nonatomic, copy) NSString * _Nullable event_type;
-@property (nonatomic, copy) NSString * _Nullable event_version;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic, strong) TripsLocal * _Nullable trip;
-@end
-
-
-SWIFT_CLASS_NAMED("TripStop")
-@interface TripStop : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface TripStop (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable address;
-@property (nonatomic, copy) NSString * _Nullable arrivedAt;
-@property (nonatomic, copy) NSString * _Nullable createAt;
-@property (nonatomic, copy) NSString * _Nullable departedAt;
-@property (nonatomic) double geometryRadius;
-@property (nonatomic, copy) NSString * _Nullable geometryType;
-@property (nonatomic) double latitude;
-@property (nonatomic) double longitude;
-@property (nonatomic, copy) NSString * _Nullable metadata;
-@property (nonatomic, copy) NSString * _Nullable stopAddress;
-@property (nonatomic, copy) NSString * _Nullable stopDescription;
-@property (nonatomic, copy) NSString * _Nullable stopId;
-@property (nonatomic, copy) NSString * _Nullable stopName;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable updatedAt;
-@property (nonatomic, strong) TripsLocal * _Nullable trip;
-@end
-
-
-SWIFT_CLASS_NAMED("TripsLocal")
-@interface TripsLocal : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)removeEventsObject:(TripEventsLocal * _Nonnull)value;
-- (void)addEvents:(NSSet * _Nonnull)values;
-- (void)removeEvents:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-- (void)addStopObject:(TripStop * _Nonnull)value;
-- (void)removeStopObject:(TripStop * _Nonnull)value;
-- (void)addStop:(NSSet * _Nonnull)values;
-- (void)removeStop:(NSSet * _Nonnull)values;
-@end
-
-
-@interface TripsLocal (SWIFT_EXTENSION(Roam))
-@property (nonatomic, copy) NSString * _Nullable created_at;
-@property (nonatomic) double distance_covered;
-@property (nonatomic) double duration;
-@property (nonatomic) BOOL is_deleted;
-@property (nonatomic) BOOL is_ended;
-@property (nonatomic) BOOL is_online;
-@property (nonatomic) BOOL is_paused;
-@property (nonatomic) BOOL is_started;
-@property (nonatomic, copy) NSString * _Nullable location_id;
-@property (nonatomic, copy) NSString * _Nullable metadata;
-@property (nonatomic, copy) NSString * _Nullable sync_status;
-@property (nonatomic) BOOL synced;
-@property (nonatomic, copy) NSString * _Nullable trip_description;
-@property (nonatomic, copy) NSString * _Nullable trip_ended_at;
-@property (nonatomic, copy) NSString * _Nullable trip_id;
-@property (nonatomic, copy) NSString * _Nullable trip_name;
-@property (nonatomic, copy) NSString * _Nullable trip_started_at;
-@property (nonatomic, copy) NSString * _Nullable trip_state;
-@property (nonatomic, copy) NSString * _Nullable updated_at;
-@property (nonatomic, copy) NSString * _Nullable user_id;
-@property (nonatomic, strong) NSSet * _Nullable events;
-@property (nonatomic, strong) NSSet * _Nullable stop;
-@end
-
 
 
 
