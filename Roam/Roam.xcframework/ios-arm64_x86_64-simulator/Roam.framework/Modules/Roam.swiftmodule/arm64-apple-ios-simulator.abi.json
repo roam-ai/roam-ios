@@ -31414,182 +31414,210 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4658,
+      "offset": 4663,
+      "length": 20,
+      "value": "\"isLocationTracking\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4699,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 4773,
       "length": 12,
       "value": "\"RoamUserID\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4686,
+      "offset": 4801,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 4874,
+      "offset": 4989,
       "length": 17,
       "value": "\"kLoggingEnabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 4907,
+      "offset": 5022,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5080,
+      "offset": 5195,
       "length": 19,
       "value": "\"lastSavedLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5196,
+      "offset": 5311,
       "length": 16,
       "value": "\"lastSavedVisit\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5306,
+      "offset": 5421,
       "length": 15,
       "value": "\"RoamAccountId\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5337,
+      "offset": 5452,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5401,
+      "offset": 5516,
       "length": 11,
       "value": "\"RoamAppId\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5428,
+      "offset": 5543,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5488,
+      "offset": 5603,
       "length": 17,
       "value": "\"USER_API_CALLED\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 5521,
+      "offset": 5636,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5723,
+      "offset": 5838,
       "length": 11,
       "value": "\"idfaValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5811,
+      "offset": 5926,
       "length": 21,
       "value": "\"RoamPubliciPAddress\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5848,
+      "offset": 5963,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5918,
+      "offset": 6033,
       "length": 14,
       "value": "\"kNetworkType\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 5948,
+      "offset": 6063,
       "length": 14,
       "value": "\"NoConnection\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6026,
+      "offset": 6141,
       "length": 22,
       "value": "\"kAccuracyFilterValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6137,
+      "offset": 6252,
       "length": 26,
       "value": "\"KLocationEventsSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6179,
+      "offset": 6294,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6263,
+      "offset": 6378,
       "length": 28,
       "value": "\"RoamOfflinetrackingenabled\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "BooleanLiteral",
-      "offset": 6307,
+      "offset": 6422,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6387,
+      "offset": 6502,
       "length": 26,
       "value": "\"kLocationPublishSettings\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6517,
+      "offset": 6632,
       "length": 13,
       "value": "\"MotionSpeed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "Array",
-      "offset": 6546,
+      "offset": 6661,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
       "kind": "StringLiteral",
-      "offset": 6757,
+      "offset": 6734,
+      "length": 36,
+      "value": "\"isPendingOpenSourceLocationCapture\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6786,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/SharedUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 7021,
       "length": 12,
       "value": "\"kappsState\""
     },
@@ -32499,7 +32527,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 11674,
+      "offset": 11656,
       "length": 1,
       "value": "5"
     },
@@ -32982,7 +33010,7 @@
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Core\/RoamActiveTracking.swift",
       "kind": "StringLiteral",
-      "offset": 524,
+      "offset": 522,
       "length": 33,
       "value": "\"com.yourapp.locationUpdateQueue\""
     },
@@ -33128,64 +33156,71 @@
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
+      "kind": "StringLiteral",
+      "offset": 518,
+      "length": 6,
+      "value": "\"Open\""
+    },
+    {
+      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 791,
+      "offset": 814,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 809,
+      "offset": 832,
       "length": 6,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 880,
+      "offset": 903,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 891,
+      "offset": 914,
       "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 908,
+      "offset": 931,
       "length": 4,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 2313,
+      "offset": 2336,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 2324,
+      "offset": 2347,
       "length": 8,
       "value": "2"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 2342,
+      "offset": 2365,
       "length": 6,
       "value": "3"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppEnum.swift",
       "kind": "IntegerLiteral",
-      "offset": 2358,
+      "offset": 2381,
       "length": 6,
       "value": "4"
     },
@@ -33550,475 +33585,468 @@
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
       "offset": 235,
-      "length": 7,
-      "value": "\"0.2.0\""
+      "length": 14,
+      "value": "\"0.2.0-beta.2\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 281,
+      "offset": 278,
       "length": 18,
       "value": "\"MotionPublishKey\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 327,
+      "offset": 324,
       "length": 16,
       "value": "\"MotionSDKToken\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 371,
+      "offset": 368,
       "length": 19,
       "value": "\"MotionDeviceToken\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 418,
+      "offset": 415,
       "length": 19,
       "value": "\"GeoSparkUserAppId\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 464,
+      "offset": 461,
       "length": 19,
       "value": "\"GeoSparkAccountId\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 510,
+      "offset": 507,
       "length": 19,
       "value": "\"GeoSparkProjectId\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "IntegerLiteral",
-      "offset": 559,
+      "offset": 556,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 596,
+      "offset": 593,
       "length": 19,
       "value": "\"MotionSDKGeofence\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 665,
+      "offset": 662,
       "length": 22,
       "value": "\"MotionGeofenceEvents\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 717,
       "length": 18,
       "value": "\"MotionDeleteUser\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 771,
+      "offset": 768,
       "length": 20,
       "value": "\"MotionMotionEvents\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 825,
+      "offset": 822,
       "length": 18,
       "value": "\"MotionTripEvents\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 877,
+      "offset": 874,
       "length": 20,
       "value": "\"MotionNearbyEvents\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 931,
+      "offset": 928,
       "length": 22,
       "value": "\"MotionLocationEvents\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 987,
+      "offset": 984,
       "length": 21,
       "value": "\"MotionEventListener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1042,
+      "offset": 1039,
       "length": 24,
       "value": "\"MotionLocationListener\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1100,
+      "offset": 1097,
       "length": 25,
       "value": "\"MotionListenerSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1159,
+      "offset": 1156,
       "length": 29,
       "value": "\"MotionLocationUserSubscribe\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1222,
+      "offset": 1219,
       "length": 27,
       "value": "\"MotionSubscribeTripStatus\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1344,
+      "offset": 1341,
       "length": 3,
       "value": "\"W\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1377,
+      "offset": 1374,
       "length": 3,
       "value": "\"R\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1407,
       "length": 3,
       "value": "\"C\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1475,
       "length": 3,
       "value": "\"A\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1511,
+      "offset": 1508,
       "length": 5,
       "value": "\"all\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1547,
+      "offset": 1544,
       "length": 8,
       "value": "\"manual\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1618,
+      "offset": 1615,
       "length": 16,
       "value": "\"current_motion\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1665,
+      "offset": 1662,
       "length": 19,
       "value": "\"CurrentConfidence\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1714,
+      "offset": 1711,
       "length": 12,
       "value": "\"stationary\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1756,
+      "offset": 1753,
       "length": 8,
       "value": "\"moving\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1822,
-      "length": 20,
-      "value": "\"isLocationTracking\""
-    },
-    {
-      "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
-      "kind": "StringLiteral",
-      "offset": 1881,
+      "offset": 1880,
       "length": 22,
       "value": "\"TripLocationTracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
+      "offset": 1941,
       "length": 17,
       "value": "\"currentLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 1998,
+      "offset": 1997,
       "length": 21,
       "value": "\"MotionFirstLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2058,
+      "offset": 2057,
       "length": 22,
       "value": "\"MotionInsideGeofence\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2119,
+      "offset": 2118,
       "length": 16,
       "value": "\"SetDeviceToken\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2235,
+      "offset": 2234,
       "length": 21,
       "value": "\"kIsLocationUpdating\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2295,
+      "offset": 2294,
       "length": 21,
       "value": "\"kStationaryLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2377,
+      "offset": 2376,
       "length": 27,
       "value": "\"NetworkChangeNotification\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2456,
+      "offset": 2455,
       "length": 15,
       "value": "\"getMotionLogs\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2505,
+      "offset": 2504,
       "length": 33,
       "value": "\"location recorded successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2572,
+      "offset": 2571,
       "length": 9,
       "value": "\"GPSData\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2677,
+      "offset": 2676,
       "length": 14,
       "value": "\"StopTracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2725,
+      "offset": 2724,
       "length": 39,
       "value": "\"location count recorded successfully.\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2796,
+      "offset": 2795,
       "length": 15,
       "value": "\"geospark:trip\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2832,
+      "offset": 2831,
       "length": 5,
       "value": "\"1.0\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2872,
+      "offset": 2871,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2946,
+      "offset": 2945,
       "length": 17,
       "value": "\"awsidentitypath\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 2986,
+      "offset": 2985,
       "length": 16,
       "value": "\"awsIotEndPoint\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3024,
+      "offset": 3023,
       "length": 15,
       "value": "\"awsRegionType\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3061,
+      "offset": 3060,
       "length": 15,
       "value": "\"awsPassPhrase\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3107,
+      "offset": 3106,
       "length": 14,
       "value": "\"devmotionsdk\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3163,
+      "offset": 3162,
       "length": 3,
       "value": "\"B\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3193,
+      "offset": 3192,
       "length": 3,
       "value": "\"F\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3223,
+      "offset": 3222,
       "length": 3,
       "value": "\"T\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3249,
+      "offset": 3248,
       "length": 14,
       "value": "\"UserAppState\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3300,
+      "offset": 3299,
       "length": 18,
       "value": "\"location_tracker\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3359,
+      "offset": 3358,
       "length": 24,
       "value": "\"updateLocationMetaData\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3422,
+      "offset": 3421,
       "length": 29,
       "value": "\"updateLocationMetaDataValue\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3515,
+      "offset": 3514,
       "length": 32,
       "value": "\"shadow_state_location_tracking\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3587,
+      "offset": 3586,
       "length": 22,
       "value": "\"shadow_state_pub_sub\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3649,
+      "offset": 3648,
       "length": 40,
       "value": "\"shadow_state_location_tracking_changed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3729,
+      "offset": 3728,
       "length": 30,
       "value": "\"shadow_state_pub_sub_changed\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3831,
+      "offset": 3830,
       "length": 21,
       "value": "\"LocationPublishSave\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3897,
+      "offset": 3896,
       "length": 26,
       "value": "\"LocationPublishMeta_data\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 3967,
+      "offset": 3966,
       "length": 20,
       "value": "\"LimitExceedMessage\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4033,
+      "offset": 4032,
       "length": 25,
       "value": "\"CustomTimeFirstLocation\""
     },
     {
       "filePath": "\/Users\/dinesh\/Documents\/Roam\/GitHub\/Plugin-iOS-Roam\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
       "kind": "StringLiteral",
-      "offset": 4103,
+      "offset": 4102,
       "length": 36,
       "value": "\"BatchReceiverConfigBatchWindowDate\""
     },

@@ -584,3 +584,8 @@ These updates are crafted to enhance your experience with Roam SDK, offering mor
 
 - **Improved stability and performance.**
 - **Infrastructure enhancements to support future growth. **
+
+
+## 0.2.0-beta.2
+
+- **Improved stability and performance.**
