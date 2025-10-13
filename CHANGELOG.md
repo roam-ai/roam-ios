@@ -589,3 +589,7 @@ These updates are crafted to enhance your experience with Roam SDK, offering mor
 ## 0.2.0-beta.2
 
 - **Improved stability and performance.**
+
+## 0.2.0-beta.3
+
+- **Improved stability and performance.**
