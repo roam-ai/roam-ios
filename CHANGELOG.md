@@ -593,3 +593,20 @@ These updates are crafted to enhance your experience with Roam SDK, offering mor
 ## 0.2.0-beta.3
 
 - **Improved stability and performance.**
+
+
+## 0.2.0
+
+**Enhanced SDK Quality and Performance Optimization**
+
+We're thrilled to present Roam iOS SDK version 0.2.0, focusing on improving the overall quality and performance of the SDK. In this update, we've made the following enhancements:
+
+Improved SDK Stability and Reliability:
+We've fine-tuned the SDK to ensure smoother performance, increased stability, and a more consistent experience across various Android environments.
+
+Optimized Performance:
+The SDK has been optimized for better memory and resource management, leading to faster execution and improved efficiency during location tracking operations.
+
+These improvements are aimed at providing developers with a more robust, efficient, and seamless integration experience. We're committed to continuously enhancing the Roam SDK to deliver top-quality performance and reliability.
+
+If you have any questions, concerns, or feedback, our support team is always here to assist you
