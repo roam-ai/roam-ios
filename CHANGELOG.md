@@ -610,3 +610,9 @@ The SDK has been optimized for better memory and resource management, leading to
 These improvements are aimed at providing developers with a more robust, efficient, and seamless integration experience. We're committed to continuously enhancing the Roam SDK to deliver top-quality performance and reliability.
 
 If you have any questions, concerns, or feedback, our support team is always here to assist you
+
+
+## 0.1.35-beta.1
+
+- **Improved stability and performance.**
+- **Infrastructure enhancements**

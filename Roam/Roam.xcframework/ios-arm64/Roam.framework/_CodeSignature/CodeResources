@@ -4,9 +4,85 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/AWSAuthCore.framework/AWSAuthCore</key>
+		<data>
+		hz12MStnx8fqSwpWJVoVTKkxGCI=
+		</data>
+		<key>Frameworks/AWSAuthCore.framework/Info.plist</key>
+		<data>
+		SB2eYbmC5m7Zwy6o+Bms49G18H4=
+		</data>
+		<key>Frameworks/AWSAuthCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		4bjZ4Oe5fk2PFdDVay6PJ84Zwe8=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/AWSCognitoIdentityProvider</key>
+		<data>
+		Iahwkw1v0jN+9EdI0XXOk+/6fgk=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/Info.plist</key>
+		<data>
+		srymmS1bDSeqHKyxPLKpKRemz+0=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/_CodeSignature/CodeResources</key>
+		<data>
+		MDuK7IhLCu++/60ga2uSi/ZTEIQ=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF</key>
+		<data>
+		uwlxETIvdkjLZN8BcOLfarbGrHg=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/Info.plist</key>
+		<data>
+		58QyadtvTyXzTDAdVYLXhK5svRU=
+		</data>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/_CodeSignature/CodeResources</key>
+		<data>
+		rKZTO0SynUJiY2eBcLASUsMWTzg=
+		</data>
+		<key>Frameworks/AWSCore.framework/AWSCore</key>
+		<data>
+		SFQTJ5xZm/VioTeBYv62nYR7NZ8=
+		</data>
+		<key>Frameworks/AWSCore.framework/Info.plist</key>
+		<data>
+		vWvvIht+S71Gw7hjDx8ssX7TtAc=
+		</data>
+		<key>Frameworks/AWSCore.framework/_CodeSignature/CodeResources</key>
+		<data>
+		9bwGNLw4ByKGcTpl4Yk6iFsddYk=
+		</data>
+		<key>Frameworks/AWSCore.framework/strip-frameworks.sh</key>
+		<data>
+		bENFeKfMHTdHyWS5AygjhdAo44Q=
+		</data>
+		<key>Frameworks/AWSIoT.framework/AWSIoT</key>
+		<data>
+		qAkRdnsGv/8qtKsB4KuF62V/tto=
+		</data>
+		<key>Frameworks/AWSIoT.framework/Info.plist</key>
+		<data>
+		ti/Uu/vsaTZmlcp4cMPSa7qZXtk=
+		</data>
+		<key>Frameworks/AWSIoT.framework/_CodeSignature/CodeResources</key>
+		<data>
+		ss8OOySVdtGubojsLdJroXvBv60=
+		</data>
+		<key>Frameworks/AWSMobileClientXCF.framework/AWSMobileClientXCF</key>
+		<data>
+		xlxwenkhQNBSLXSBoxT1Mp12pyk=
+		</data>
+		<key>Frameworks/AWSMobileClientXCF.framework/Info.plist</key>
+		<data>
+		YQvW+1KlbbRvCXC9HAWI6P0L/m4=
+		</data>
+		<key>Frameworks/AWSMobileClientXCF.framework/_CodeSignature/CodeResources</key>
+		<data>
+		jaxONC+q9SejT9pVZA1Sno9xrJw=
+		</data>
 		<key>Headers/Roam-Swift.h</key>
 		<data>
-		q7/3S+zVIFNc3rXNeWMyMlgaV0w=
+		KOe9JETa4Ryu09zR9IpSJ2X1LN0=
 		</data>
 		<key>Headers/Roam.h</key>
 		<data>
@@ -18,44 +94,177 @@
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		dl8UT+ih7JpzkIbZNFFjcilzYjU=
+		VOmOvUN48kw99bf/15asGJ1Vctg=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		RWOIIUeuK+/rR5voX2P+6MgiUAE=
+		B8PpJIAHoveqtjJPOC2AVaJ4Xf8=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NlXlaL6zHWNgd1pgzhhL14aTizI=
+		sHb8QcWdeQ2mGjnyQ/jz/DuMc58=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		RWOIIUeuK+/rR5voX2P+6MgiUAE=
+		B8PpJIAHoveqtjJPOC2AVaJ4Xf8=
 		</data>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		PA39ipghdDFZoQsa+6SD/8SrM3U=
+		pNseW7u4skU+xHjFrzzG0/nKFHM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		HGzwruz/J/tGILWH/+e4NKKaFI4=
 		</data>
-		<key>RoamBatchConnectorDataModel.momd/RoamBatchConnectorDataModel.mom</key>
+		<key>RoamModel.momd/MotionModel.mom</key>
 		<data>
-		BPDrAFgjnKiPgjUK7PWEX2fmwTg=
+		OI6TOL8m5SYqZNWiVJiy/CeG6uQ=
 		</data>
-		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
+		<key>RoamModel.momd/VersionInfo.plist</key>
 		<data>
-		u30snDiq8UB+3f0Purwde/CG5d4=
+		8OtiNTd0pLavJ7CO88wfqu5j+k4=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/AWSAuthCore.framework/AWSAuthCore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TwhEnFIYq0JesMLjWuT6b/s/dmzfr1UJ6QC5/qrJPQw=
+			</data>
+		</dict>
+		<key>Frameworks/AWSAuthCore.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			saCYcPGdDUnY46WYokBON1GZ7BIJe11bPIby/jLgx/c=
+			</data>
+		</dict>
+		<key>Frameworks/AWSAuthCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8y1Q3lPqBKWRobxKUypcXsw0Lt7+IkE9fhTl8HynYkc=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/AWSCognitoIdentityProvider</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			In1qdx5ZN1sa3DZ73Wm/pJ5pufwdtagxgIuEOlwv+LY=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RodM1phU5mH3SB6NagbQU875dWQVeRVTSE3kW8LKuqU=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProvider.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pD6iFlsp+2ktsCZIU5a3PJOqgWYD5DcQLv6ozPgZU8Q=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/AWSCognitoIdentityProviderASF</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IXjsmqtsJCS2iRxaQP+VGNnwWe93yETjFqy275dD5xA=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pbVZMIYPwMFm4mhUkhHhlmuLHAG2o13L3xLNbfllA8c=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCognitoIdentityProviderASF.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jSoHY0pM5THApzcq9fFwEoDfF5J93QewafyDIVDDvY8=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCore.framework/AWSCore</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SzmA/vQXZyD9lchaPdxemPsczFkS+23JDxvmLxlG828=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCore.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4yVkcvKVXNsGsLXmswsU6iDcHGeZzcl+iFU01F4e+sA=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCore.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			es7pi1Mk9vFXw47FoJHFzwVl1yWNk9dze35C8qRTm7E=
+			</data>
+		</dict>
+		<key>Frameworks/AWSCore.framework/strip-frameworks.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			TdoX67LzludHG3MJM/ykgPmTswRtyXdokveq/f6XloI=
+			</data>
+		</dict>
+		<key>Frameworks/AWSIoT.framework/AWSIoT</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CJ+gkHIcT0QDrsjNNaJzsWI9a4Z4OHxeYBWs7pOhhPw=
+			</data>
+		</dict>
+		<key>Frameworks/AWSIoT.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6HTzznrwNMeWdzpDI9Dq98T0Axu6xQaNezOWMCTdd+I=
+			</data>
+		</dict>
+		<key>Frameworks/AWSIoT.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZLfiabAov51nO+CQ4UNH20U5rm6Zy10G72+I9UbRyI4=
+			</data>
+		</dict>
+		<key>Frameworks/AWSMobileClientXCF.framework/AWSMobileClientXCF</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KDEBDmPbzhUhg1ywylpcEKG4XEeuRlOWMpMb5OzP81k=
+			</data>
+		</dict>
+		<key>Frameworks/AWSMobileClientXCF.framework/Info.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xb+6GJGGq7Ju/PVwIm6fpvuXGQkTuTfl3C/aZ7tmE0U=
+			</data>
+		</dict>
+		<key>Frameworks/AWSMobileClientXCF.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			GmLlm2wpxZNiNdOQ+BMIHbhMUUeGxmWvQBjYIjerVP4=
+			</data>
+		</dict>
 		<key>Headers/Roam-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IQ3NQl5LKOr/VHoaSNA5yhs37ouGfVft8KxR0N2avcg=
+			wT6+LGiba7VDVeOwmBrSPqxxPEwP/Fo8uekHGxM/tr8=
 			</data>
 		</dict>
 		<key>Headers/Roam.h</key>
@@ -69,35 +278,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TdxHYlnJfDWG37LVkh5xjTPFXlENWxZ3Echp+CkBBQ0=
+			/KItirHs+ucwAlDGauAIwKHEXYIwSV/o0yY9g7AsKus=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+DcZOylRaDQADAD6+sGenPlask+HzYJ00vmoCteWz8=
+			tuFSmVE1HSiohswEDv6ta9RJahZmu9q7zZbbbptrhCU=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Jbb5ZVGNR0BLNZEDzXo3dFoI4IBa8FfiCefT3Ao8b5A=
+			9FGnmO/8XPSJUM5PbxE5KmZ2zYolEGIbMllVl2F0DIU=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			P+DcZOylRaDQADAD6+sGenPlask+HzYJ00vmoCteWz8=
+			tuFSmVE1HSiohswEDv6ta9RJahZmu9q7zZbbbptrhCU=
 			</data>
 		</dict>
 		<key>Modules/Roam.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R1OBjoblxqrMEGBFGXrcNtTmHVZQ1QWcElsF15h2FhY=
+			YTaQMlGiRYZ/3dyne4ZB23c/liSyh8fgBD6SxMjmNSc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -107,18 +316,18 @@
 			27xNXnZSIHcm3AbQEqYLKi6pWNJYY6hE7AWYt5YpT/U=
 			</data>
 		</dict>
-		<key>RoamBatchConnectorDataModel.momd/RoamBatchConnectorDataModel.mom</key>
+		<key>RoamModel.momd/MotionModel.mom</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cqDfoL4Gsh0n68CaA4zf0BTNaaQe37fqKTfyPcH/Vrw=
+			7zIqaFVCeIYcXDP8ioHmN9IczYvKzvahM3HEsIIY6mI=
 			</data>
 		</dict>
-		<key>RoamBatchConnectorDataModel.momd/VersionInfo.plist</key>
+		<key>RoamModel.momd/VersionInfo.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfDNWq9s52C+u7y9JnRH5ln/xgAzX7kqtGRHz7Eyl/8=
+			CJhdvozvxzmA6U+4/NDnCYPcPC5a85QGtc3ty/YbKqc=
 			</data>
 		</dict>
 	</dict>
