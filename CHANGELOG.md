@@ -616,3 +616,8 @@ If you have any questions, concerns, or feedback, our support team is always her
 
 - **Improved stability and performance.**
 - **Infrastructure enhancements**
+
+## 0.1.35-beta.2
+
+- **Improved stability and performance.**
+- **Fixed Minor Bugs**
