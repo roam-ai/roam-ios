@@ -1,11 +1,11 @@
 
 Pod::Spec.new do |s|
   s.name                  = 'roam-ios'
-  s.version               = '0.1.35-beta.3'
+  s.version               = '0.2.1'
   s.summary               = 'High accuracy and battery efficient location SDK for iOS by Roam.ai'
   s.homepage              = 'https://roam.ai'
   s.social_media_url      = 'https://twitter.com/roam_ai'
-  s.author                = { 'Roam B.V' => 'sdk@roam-geo.com' }
+  s.author                = { 'Roam B.V' => 'support@roam.ai' }
   s.platform              = :ios
   s.source                = { :git => 'https://github.com/roam-ai/roam-ios.git', :tag => s.version.to_s }
   s.swift_version = '5.0'
@@ -17,8 +17,9 @@ Pod::Spec.new do |s|
     
  # ============================ Core Module ============================
   s.subspec 'Roam' do |core|
-    core.vendored_frameworks = 'Roam/Roam.xcframework','Roam/AWSAuthCore.xcframework', 'Roam/AWSCognitoIdentityProvider.xcframework', 'Roam/AWSCognitoIdentityProviderASF.xcframework', 'Roam/AWSCore.xcframework','Roam/AWSIoT.xcframework','Roam/AWSMobileClientXCF.xcframework'
+    core.vendored_frameworks = 'Roam/Roam.xcframework'
   end
+
   
 # ======================= RoamGeofence Module =======================
   s.subspec 'RoamGeofence' do |geofence|

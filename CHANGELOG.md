@@ -612,17 +612,12 @@ These improvements are aimed at providing developers with a more robust, efficie
 If you have any questions, concerns, or feedback, our support team is always here to assist you
 
 
-## 0.1.35-beta.1
+## 0.2.1
+**Improved Stability and Smoother Performance**
+We're excited to release version 0.3.0 of the Roam iOS SDK, focusing on delivering a more reliable and seamless experience for all developers.
 
-- **Improved stability and performance.**
-- **Infrastructure enhancements**
+Enhanced SDK Stability
+We’ve made several refinements behind the scenes to ensure more consistent behavior and smoother operation during location tracking.
 
-## 0.1.35-beta.2
-
-- **Improved stability and performance.**
-- **Fixed Minor Bugs**
-
-
-## 0.1.35-beta.3
-
-- **Fixed Minor Bugs**
+Better Performance & Responsiveness
+Internal optimizations help the SDK run more efficiently, improving speed and reducing unnecessary processing for a smoother overall experience.
