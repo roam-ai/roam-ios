@@ -401,6 +401,7 @@ SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 
 
 
+
 SWIFT_CLASS_NAMED("CSVFilesDataModel")
 @interface CSVFilesDataModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -588,7 +589,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @interface RoamLocation : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable userId;
 @property (nonatomic, readonly, copy) NSString * _Nullable activity;
-@property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
+@property (nonatomic, readonly, strong) CLLocation * _Nullable location;
 @property (nonatomic, readonly, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
 @property (nonatomic) NSInteger batteryRemaining;
@@ -1103,6 +1104,7 @@ SWIFT_CLASS("_TtC4Roam15BluetoothSignal")
 
 
 
+
 SWIFT_CLASS_NAMED("CSVFilesDataModel")
 @interface CSVFilesDataModel : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -1290,7 +1292,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @interface RoamLocation : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nullable userId;
 @property (nonatomic, readonly, copy) NSString * _Nullable activity;
-@property (nonatomic, readonly, strong) CLLocation * _Nonnull location;
+@property (nonatomic, readonly, strong) CLLocation * _Nullable location;
 @property (nonatomic, readonly, copy) NSString * _Nullable timezoneOffset;
 @property (nonatomic, readonly, copy) NSString * _Nullable recordedAt;
 @property (nonatomic) NSInteger batteryRemaining;

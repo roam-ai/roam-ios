@@ -3453,17 +3453,13 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
         "name": "UserNotifications",
         "printedName": "UserNotifications",
         "declKind": "Import",
-        "moduleName": "Roam"
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -4214,17 +4210,13 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "Roam"
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -10257,13 +10249,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
         "kind": "TypeDecl",
         "name": "RoamDelegate",
         "printedName": "RoamDelegate",
@@ -10346,7 +10331,8 @@
         "sugared_genericSig": "<Self : AnyObject>",
         "declAttributes": [
           "AccessControl",
-          "ObjC"
+          "ObjC",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -11903,14 +11889,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "CoreLocation.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
+                "name": "Optional",
+                "printedName": "CoreLocation.CLLocation?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CLLocation",
+                    "printedName": "CoreLocation.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
             "usr": "c:@M@Roam@objc(cs)RoamLocation(py)location",
-            "mangledName": "$s4Roam0A8LocationC8locationSo10CLLocationCvp",
+            "mangledName": "$s4Roam0A8LocationC8locationSo10CLLocationCSgvp",
             "moduleName": "Roam",
             "declAttributes": [
               "Final",
@@ -11928,14 +11922,22 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "CLLocation",
-                    "printedName": "CoreLocation.CLLocation",
-                    "usr": "c:objc(cs)CLLocation"
+                    "name": "Optional",
+                    "printedName": "CoreLocation.CLLocation?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CLLocation",
+                        "printedName": "CoreLocation.CLLocation",
+                        "usr": "c:objc(cs)CLLocation"
+                      }
+                    ],
+                    "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
                 "usr": "c:@M@Roam@objc(cs)RoamLocation(im)location",
-                "mangledName": "$s4Roam0A8LocationC8locationSo10CLLocationCvg",
+                "mangledName": "$s4Roam0A8LocationC8locationSo10CLLocationCSgvg",
                 "moduleName": "Roam",
                 "implicit": true,
                 "declAttributes": [
@@ -23094,13 +23096,6 @@
       },
       {
         "kind": "Import",
-        "name": "Roam",
-        "printedName": "Roam",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -23472,17 +23467,13 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
-        "moduleName": "Roam"
+        "moduleName": "Roam",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -23537,13 +23528,6 @@
         "kind": "Import",
         "name": "NetworkExtension",
         "printedName": "NetworkExtension",
-        "declKind": "Import",
-        "moduleName": "Roam"
-      },
-      {
-        "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
         "declKind": "Import",
         "moduleName": "Roam"
       },
@@ -31685,6 +31669,13 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Core\/RoamSettings.swift",
+      "kind": "BooleanLiteral",
+      "offset": 650,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Networking\/HTTPMethod.swift",
       "kind": "StringLiteral",
       "offset": 248,
@@ -32527,7 +32518,7 @@
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Constants\/Utilis\/Location\/LocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 11656,
+      "offset": 11706,
       "length": 1,
       "value": "5"
     },
@@ -33010,7 +33001,7 @@
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Core\/RoamActiveTracking.swift",
       "kind": "StringLiteral",
-      "offset": 522,
+      "offset": 706,
       "length": 33,
       "value": "\"com.yourapp.locationUpdateQueue\""
     },
@@ -33586,7 +33577,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 7,
-      "value": "\"0.2.0\""
+      "value": "\"0.2.1\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
@@ -34053,350 +34044,350 @@
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 477,
+      "offset": 478,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 522,
+      "offset": 523,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 704,
+      "offset": 705,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2681,
+      "offset": 2683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 2715,
+      "offset": 2717,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 2753,
+      "offset": 2755,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 2877,
+      "offset": 2879,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 9512,
+      "offset": 9516,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 9552,
+      "offset": 9556,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 9596,
+      "offset": 9600,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "IntegerLiteral",
-      "offset": 9726,
+      "offset": 9730,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 9799,
+      "offset": 9803,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 9846,
+      "offset": 9850,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 9896,
+      "offset": 9900,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 9943,
+      "offset": 9947,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "BooleanLiteral",
-      "offset": 9992,
+      "offset": 9996,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10035,
+      "offset": 10039,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10084,
+      "offset": 10088,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10132,
+      "offset": 10136,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10177,
+      "offset": 10181,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10227,
+      "offset": 10231,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10273,
+      "offset": 10277,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10325,
+      "offset": 10329,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10372,
+      "offset": 10376,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10419,
+      "offset": 10423,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10465,
+      "offset": 10469,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10506,
+      "offset": 10510,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10547,
+      "offset": 10551,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10592,
+      "offset": 10596,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10642,
+      "offset": 10646,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10693,
+      "offset": 10697,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10741,
+      "offset": 10745,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10795,
+      "offset": 10799,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10849,
+      "offset": 10853,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10907,
+      "offset": 10911,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 10959,
+      "offset": 10963,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11015,
+      "offset": 11019,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11062,
+      "offset": 11066,
       "length": 9,
       "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11151,
+      "offset": 11155,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11191,
+      "offset": 11195,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11226,
+      "offset": 11230,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11266,
+      "offset": 11270,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "Array",
-      "offset": 11323,
+      "offset": 11327,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "Array",
-      "offset": 11388,
+      "offset": 11392,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11432,
+      "offset": 11436,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11482,
+      "offset": 11486,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11532,
+      "offset": 11536,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11576,
+      "offset": 11580,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11631,
+      "offset": 11635,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Response\/Expose\/RoamLocation.swift",
       "kind": "StringLiteral",
-      "offset": 11683,
+      "offset": 11687,
       "length": 2,
       "value": "\"\""
     },
@@ -35817,14 +35808,14 @@
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/RoamBatchConnector\/RoamBatchProcessing.swift",
       "kind": "StringLiteral",
-      "offset": 1811,
+      "offset": 1813,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/RoamBatchConnector\/RoamBatchProcessing.swift",
       "kind": "BooleanLiteral",
-      "offset": 1868,
+      "offset": 1870,
       "length": 5,
       "value": "false"
     },
@@ -35936,14 +35927,14 @@
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Utilities\/Extensions\/CLLocation + Extension.swift",
       "kind": "FloatLiteral",
-      "offset": 643,
+      "offset": 461,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Utilities\/Extensions\/CLLocation + Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 1241,
+      "offset": 1096,
       "length": 2,
       "value": "35"
     },
