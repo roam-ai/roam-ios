@@ -334,6 +334,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable carrier_iso_country_code;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
+@property (nonatomic, copy) NSData * _Nullable consent_context;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
@@ -532,6 +533,7 @@ SWIFT_CLASS("_TtC4Roam16RoamBatchPublish")
 @property (nonatomic) BOOL wifiSubnetMask;
 @property (nonatomic) BOOL networkInterfaceName;
 @property (nonatomic) BOOL publicIpAddressFromApi;
+@property (nonatomic) BOOL consentContext;
 - (nonnull instancetype)enableAll SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -639,6 +641,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
 @property (nonatomic, copy) NSString * _Nonnull networkInterfaceName;
 @property (nonatomic, copy) NSString * _Nonnull publicIpAddressFromApi;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull consentContext;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -1037,6 +1040,7 @@ SWIFT_CLASS_NAMED("BatchLocationModel")
 @property (nonatomic, copy) NSString * _Nullable carrier_iso_country_code;
 @property (nonatomic, copy) NSString * _Nullable carrier_name;
 @property (nonatomic, copy) NSData * _Nullable centroid;
+@property (nonatomic, copy) NSData * _Nullable consent_context;
 @property (nonatomic) double course;
 @property (nonatomic, copy) NSString * _Nullable device_manufacturer;
 @property (nonatomic, copy) NSString * _Nullable device_model;
@@ -1235,6 +1239,7 @@ SWIFT_CLASS("_TtC4Roam16RoamBatchPublish")
 @property (nonatomic) BOOL wifiSubnetMask;
 @property (nonatomic) BOOL networkInterfaceName;
 @property (nonatomic) BOOL publicIpAddressFromApi;
+@property (nonatomic) BOOL consentContext;
 - (nonnull instancetype)enableAll SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -1342,6 +1347,7 @@ SWIFT_CLASS("_TtC4Roam12RoamLocation")
 @property (nonatomic, copy) NSString * _Nonnull wifiSubnetMask;
 @property (nonatomic, copy) NSString * _Nonnull networkInterfaceName;
 @property (nonatomic, copy) NSString * _Nonnull publicIpAddressFromApi;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull consentContext;
 - (NSString * _Nullable)toJson SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");

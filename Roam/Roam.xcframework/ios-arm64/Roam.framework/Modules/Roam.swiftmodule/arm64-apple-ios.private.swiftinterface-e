@@ -306,6 +306,7 @@ extension UIKit.UIDevice {
   @objc public var wifiSubnetMask: Swift.String
   @objc public var networkInterfaceName: Swift.String
   @objc public var publicIpAddressFromApi: Swift.String
+  @objc public var consentContext: [Swift.String : Any]
   @objc public func toJson() -> Swift.String?
   @objc deinit
 }
@@ -383,6 +384,7 @@ public typealias RoamStatusErrorHandler = ((_ status: Swift.String?, _ error: Ro
   @objc public var wifiSubnetMask: Swift.Bool
   @objc public var networkInterfaceName: Swift.Bool
   @objc public var publicIpAddressFromApi: Swift.Bool
+  @objc public var consentContext: Swift.Bool
   @objc public func enableAll() -> Self
   @objc override dynamic public init()
   @objc deinit
@@ -472,6 +474,10 @@ extension Roam.BatchLocationModel {
     @objc set
   }
   @objc @NSManaged dynamic public var centroid: Foundation.Data? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var consent_context: Foundation.Data? {
     @objc get
     @objc set
   }
