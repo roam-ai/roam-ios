@@ -632,3 +632,12 @@ Added Consent Management (CMP) support to ensure compliant location data collect
 
 Enhanced Stability for Large Datasets:
 Improved handling of large volumes of location data for smoother and more reliable processing.
+
+## 0.2.3
+**Optimizations and Battery Efficiency Improvements**
+
+This release focuses on internal optimizations to improve overall efficiency and reduce battery consumption.
+Battery Usage Optimizations
+
+- Improved background processing and data handling to minimize battery drain.
+- Optimized location data flow and async operations for better power efficiency.

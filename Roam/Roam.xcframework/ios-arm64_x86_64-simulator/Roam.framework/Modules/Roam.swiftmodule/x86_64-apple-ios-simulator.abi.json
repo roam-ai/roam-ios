@@ -33944,7 +33944,7 @@
       "kind": "StringLiteral",
       "offset": 235,
       "length": 7,
-      "value": "\"0.2.2\""
+      "value": "\"0.2.3\""
     },
     {
       "filePath": "\/Users\/dineshkumara\/Documents\/GitHub\/Plug-in\/roam-ios-core\/Roam\/Constants\/AppConstant\/AppDefaults.swift",
